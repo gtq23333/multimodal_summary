@@ -1,0 +1,9 @@
+outputs/
+src/configs/trial_10.yaml
+src/configs/*.local.yaml
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*

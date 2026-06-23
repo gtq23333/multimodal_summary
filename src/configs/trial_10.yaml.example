@@ -1,0 +1,104 @@
+# =============================================================================
+# M3-Sum 试跑配置示例 — 复制为 trial_10.yaml 后填写 API Key
+#   cp trial_10.yaml.example trial_10.yaml
+# trial_10.yaml 已加入 .gitignore，不会提交到 Git
+# 启动:  cd src && python scripts/run_trial.py
+# =============================================================================
+
+paths:
+  annotation_config: "../../data_annotation/config.yaml"
+  manifest: "../../data/trial_10/manifest.json"
+  ground_truth_dir: "../../data/trial_10/ground_truth"
+  problem_mds_root: "../../usable_data/problem_mds"
+  output_dir: "../../outputs/trial_10"
+  acceptance_csv: "../../data/trial_10/acceptance_review.csv"
+
+# ---------- OpenAI 兼容 API（直接在此粘贴，无需环境变量）----------
+api:
+  # 平台 Base URL（OpenAI 兼容），示例:
+  #   OpenAI 官方: https://api.openai.com/v1
+  #   其他平台:    https://your-platform.com/v1
+  base_url: "https://your-platform.com/v1"
+  # 在此粘贴 API Key
+  api_key: "sk-your-key-here"
+
+models:
+  # 模型名按你所用平台填写
+  llm: "your-llm-model"
+  embed: "your-embed-model"
+  vlm: "your-vlm-model"
+
+# ---------- 检索 / 重排超参 ----------
+retrieval:
+  top_p: 20
+  bm25_weight: 0.4
+  vector_weight: 0.6
+
+rerank:
+  alpha: 0.5
+  distance_tiers: [1.0, 0.7, 0.4]
+
+caption_regex:
+  patterns:
+    - "见图\\s*[\\d\\.]+"
+    - "如图\\s*[\\d\\.]+\\s*所示"
+    - "图\\s*[\\d\\.]+"
+    - "表\\s*[\\d\\.]+"
+
+# ---------- 试跑样本 ----------
+trial:
+  gt_mode: "insertions_only"
+  sample_ids:
+    - "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c"
+    - "2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d"
+    - "2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165"
+    - "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2"
+    - "2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe"
+    - "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925"
+    - "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c"
+    - "2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5"
+    - "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451"
+    - "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545"
+
+# ---------- 运行控制（核心） ----------
+run:
+  stage: "2"
+  mode: "dry_run"
+  vlm_mode: "caption"
+  force_rerun: false
+  use_cache: true
+  sample_id: null
+  smoke_test: false
+  auto_prepare_manifest: true
+  auto_sanity_check: true
+  auto_eval: true
+
+sanity_check:
+  stage: "auto"
+
+eval:
+  init_acceptance_csv: true
+  export_html_report: true
+  export_csv_summary: true
+  export_markdown_summary: true
+
+stage2_eval:
+  jaccard_k: 3
+  maxsim_k: 3
+  clip_model: "OFA-Sys/chinese-clip-vit-base-patch16"
+  methods:
+    - "Proposed"
+    - "Layout-Order"
+    - "Caption-BM25"
+    - "Caption-Dense-v4"
+    - "Zero-shot-CLIP"
+
+cluster_prior:
+  enabled: true
+  path: "../m3sum/cluster_prior.json"
+  clip_model: "OFA-Sys/chinese-clip-vit-base-patch16"
+  threshold_mode: "top1_margin"
+  tau_grid: [0.72, 0.75, 0.78]
+  beta_grid: [0.15, 0.25, 0.35]
+  margin_tau: 0.03
+  fusion_modes: ["additive", "multiplicative"]

@@ -1,0 +1,6 @@
+# 可选：敏感信息放此文件，会自动合并覆盖 trial_10.yaml 同名字段
+# 复制为 trial_10.local.yaml 后填写（该文件已加入 .gitignore）
+
+api:
+  base_url: "https://your-platform.com/v1"
+  api_key: "sk-your-key-here"

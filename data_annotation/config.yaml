@@ -1,0 +1,15 @@
+paths:
+  md_corpus_root: "../usable_data/cleaned_excellent_paper_mds"
+  mineru_corpus_root: "C:/Users/32780/Desktop/数模论文信息/minerU提取文件语料库/国赛"
+  annotation_output_dir: "./annotations"
+  progress_file: "./progress.json"
+
+annotation:
+  context_window_chars: 30
+  abstract_separator: "##############"
+
+image_filter:
+  strategy: "body_with_caption"
+
+tool:
+  version: "0.1.0"

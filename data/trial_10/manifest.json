@@ -1,0 +1,77 @@
+{
+  "trial_name": "trial_10",
+  "gt_mode": "insertions_only",
+  "sample_count": 10,
+  "samples": [
+    {
+      "paper_id": "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c",
+      "problem_key": "2016_A",
+      "annotation_path": "data_annotation\\annotations\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c.json",
+      "problem_md_path": "usable_data\\problem_mds\\2016_A.doc-fc19516d-4637-4bf5-b7f7-a9d91d6d0da7.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c.json"
+    },
+    {
+      "paper_id": "2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d",
+      "problem_key": "2016_B",
+      "annotation_path": "data_annotation\\annotations\\2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d.json",
+      "problem_md_path": "usable_data\\problem_mds\\2016_B.doc-53e12864-abb2-4030-bf2f-f8b5939e816c.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d.json"
+    },
+    {
+      "paper_id": "2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165",
+      "problem_key": "2016_B",
+      "annotation_path": "data_annotation\\annotations\\2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165.json",
+      "problem_md_path": "usable_data\\problem_mds\\2016_B.doc-53e12864-abb2-4030-bf2f-f8b5939e816c.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165.json"
+    },
+    {
+      "paper_id": "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2",
+      "problem_key": "2017_B",
+      "annotation_path": "data_annotation\\annotations\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2.json",
+      "problem_md_path": "usable_data\\problem_mds\\2017_B.docx-dd76d7af-cfee-42bf-81ae-4a38760ee378.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2.json"
+    },
+    {
+      "paper_id": "2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe",
+      "problem_key": "2017_B",
+      "annotation_path": "data_annotation\\annotations\\2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe.json",
+      "problem_md_path": "usable_data\\problem_mds\\2017_B.docx-dd76d7af-cfee-42bf-81ae-4a38760ee378.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe.json"
+    },
+    {
+      "paper_id": "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925",
+      "problem_key": "2017_D",
+      "annotation_path": "data_annotation\\annotations\\2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925.json",
+      "problem_md_path": "usable_data\\problem_mds\\2017_D.docx-b67ae65b-06c6-4e10-8698-ab751245dbfb.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925.json"
+    },
+    {
+      "paper_id": "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c",
+      "problem_key": "2018_A",
+      "annotation_path": "data_annotation\\annotations\\2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c.json",
+      "problem_md_path": "usable_data\\problem_mds\\2018_A.docx-bca051b3-4a5a-4cc0-a1ac-db7c2e558b2b.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c.json"
+    },
+    {
+      "paper_id": "2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5",
+      "problem_key": "2018_A",
+      "annotation_path": "data_annotation\\annotations\\2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5.json",
+      "problem_md_path": "usable_data\\problem_mds\\2018_A.docx-bca051b3-4a5a-4cc0-a1ac-db7c2e558b2b.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5.json"
+    },
+    {
+      "paper_id": "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451",
+      "problem_key": "2018_C",
+      "annotation_path": "data_annotation\\annotations\\2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451.json",
+      "problem_md_path": "usable_data\\problem_mds\\2018_C.docx-69c648de-170c-4ed7-8777-b26566175e3c.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451.json"
+    },
+    {
+      "paper_id": "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545",
+      "problem_key": "2018_D",
+      "annotation_path": "data_annotation\\annotations\\2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545.json",
+      "problem_md_path": "usable_data\\problem_mds\\2018_D.docx-7a547b78-ac3e-43ce-8224-024d0b337606.md",
+      "ground_truth_path": "data\\trial_10\\ground_truth\\2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545.json"
+    }
+  ]
+}

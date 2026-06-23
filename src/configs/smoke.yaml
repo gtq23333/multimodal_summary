@@ -1,0 +1,63 @@
+# =============================================================================
+# 冒烟专用配置 — 复制为 trial_10.yaml 或直接:
+#   python scripts/run_trial.py configs/smoke.yaml
+# =============================================================================
+
+paths:
+  annotation_config: "../../data_annotation/config.yaml"
+  manifest: "../../data/trial_10/manifest.json"
+  ground_truth_dir: "../../data/trial_10/ground_truth"
+  problem_mds_root: "../../usable_data/problem_mds"
+  output_dir: "../../outputs/trial_10_smoke"
+  acceptance_csv: "../../data/trial_10/acceptance_review.csv"
+
+api:
+  base_url: "https://api.openai.com/v1"
+  api_key: ""
+
+models:
+  llm: "gpt-4o-mini"
+  embed: "text-embedding-3-small"
+  vlm: "gpt-4o"
+
+retrieval:
+  top_p: 20
+  bm25_weight: 0.4
+  vector_weight: 0.6
+
+rerank:
+  alpha: 0.6
+  distance_tiers: [1.0, 0.7, 0.4]
+
+caption_regex:
+  patterns:
+    - "见图\\s*[\\d\\.]+"
+    - "如图\\s*[\\d\\.]+\\s*所示"
+    - "图\\s*[\\d\\.]+"
+    - "表\\s*[\\d\\.]+"
+
+trial:
+  gt_mode: "insertions_only"
+  sample_ids:
+    - "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c"
+
+run:
+  stage: "all"
+  mode: "dry_run"
+  vlm_mode: "caption"
+  force_rerun: true
+  use_cache: false
+  sample_id: null
+  smoke_test: true
+  auto_prepare_manifest: true
+  auto_sanity_check: true
+  auto_eval: true
+
+sanity_check:
+  stage: "auto"
+
+eval:
+  init_acceptance_csv: false
+  export_html_report: true
+  export_csv_summary: true
+  export_markdown_summary: true

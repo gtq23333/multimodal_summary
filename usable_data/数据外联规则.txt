@@ -1,0 +1,5 @@
+C:\cursor_workspace\multimodal_summary_20260620\usable_data\cleaned_excellent_paper_mds中，
+的文件前缀名可以视为业务外键，能在：
+C:\Users\32780\Desktop\数模论文信息\minerU提取文件语料库\国赛中，对应到同名文件夹，其中的/images文件夹
+中有提取自论文的图片，图片命名为图片哈希码，该哈希码在cleaned_excellent_paper_mds的md中有占位。
+其中的不叫"layout.json的另一个**对象json文件**"中有更易于提取的结构化图注。（由于文件夹是mineru格式化输出的，所以只会有两个json文件，***_content_list）
