@@ -16,7 +16,7 @@ from pathlib import Path
 SRC_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SRC_ROOT))
 
-DEFAULT_CONFIG = SRC_ROOT / "configs" / "trial_10.yaml"
+DEFAULT_CONFIG = SRC_ROOT / "configs" / "trial_20.yaml"
 
 
 def main() -> None:

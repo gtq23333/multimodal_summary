@@ -32,6 +32,46 @@ def jaccard_at_k(ranked_ids: list[str], gold: set[str], k: int = 3) -> float:
     return len(pred_set & gold) / len(union)
 
 
+def image_precision_at_k(ranked_ids: list[str], gold: set[str], k: int = 3) -> float:
+    """
+    Image Precision (IP@K) — MSMO 多模态摘要标准图像指标 (Zhu et al., 2018)。
+
+    IP = |rec_img ∩ ref_img| / |rec_img|
+
+    - rec_img：系统推荐的 Top-K 图片（本任务固定为 Top-3）
+    - ref_img：人工标注参考图片集合（ground truth）
+
+    在固定 K 槽位推荐下等价于 Precision@K；分母为推荐数 K（非 |GT|）。
+    K ≤ 0 或无推荐时返回 0.0。
+    """
+    if k <= 0:
+        return 0.0
+    rec = ranked_ids[:k]
+    if not rec:
+        return 0.0
+    return len(set(rec) & gold) / k
+
+
+def image_recall_at_k(ranked_ids: list[str], gold: set[str], k: int = 3) -> float:
+    """
+    Image Recall (IR@K) — MSMO / MMAE 标准图像指标，与 IP 成对使用。
+
+    IR = |rec_img ∩ ref_img| / |ref_img|
+
+    衡量参考 GT 图片中有多少比例被 Top-K 短名单覆盖。
+    Stage-2 作为「召回+重排」时，IR@K 表示送入 Stage-3 VLM/LLM 确认前的 GT 覆盖率；
+    K 固定为 3 时，|GT|>K 的论文 IR 上限为 K/|GT|。
+
+    G 为空时返回 0.0。
+    """
+    if not gold:
+        return 0.0
+    if k <= 0 or not ranked_ids:
+        return 0.0
+    rec = set(ranked_ids[:k])
+    return len(rec & gold) / len(gold)
+
+
 def average_precision(ranked_ids: list[str], gold: set[str]) -> float:
     """
     Average Precision（单篇 AP）。

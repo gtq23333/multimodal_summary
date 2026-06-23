@@ -13,10 +13,12 @@ from m3sum.stage2_rerank.caption_refs import (
 )
 from m3sum.stage2_rerank.co_occurrence import (
     QueryBlockPair,
+    LinkFusionParams,
     collect_figure_evidence_blocks,
     cosine_sim,
     evidence_debug,
-    link_score,
+    fuse_direct_and_link,
+    link_score_gated,
 )
 from m3sum.stage2_rerank.hybrid_retriever import HybridRetriever
 from m3sum.stage2_rerank.caption_regex import match_caption_blocks
@@ -80,14 +82,26 @@ def layout_prior(figure: FigureMeta, figure_index: FigureRef | None) -> tuple[fl
     return 1.0 / math.log2(1.0 + layout_index), layout_index
 
 
-def type_prior(caption: str) -> float:
-    """启发式图表类型先验：方法图升权，局部数据图降权。"""
+def type_prior(caption: str, *, method_boost: float = 1.15, data_penalty: float = 0.92) -> float:
+    """启发式图表类型先验：方法图略升权，局部数据图略降权（幅度已弱化）。"""
     lower_caption = (caption or "").lower()
     if any(keyword in lower_caption for keyword in METHOD_FIGURE_KEYWORDS):
-        return 1.5
+        return method_boost
     if any(keyword in lower_caption for keyword in DATA_FIGURE_KEYWORDS):
-        return 0.8
+        return data_penalty
     return 1.0
+
+
+def _link_params_from_config(raw: dict[str, Any] | None) -> LinkFusionParams:
+    rr = raw or {}
+    return LinkFusionParams(
+        alpha=float(rr.get("alpha", 0.5)),
+        alpha_local=float(rr.get("alpha_local", 0.75)),
+        local_gamma=float(rr.get("local_gamma", 0.35)),
+        local_cap=float(rr.get("local_cap", 0.75)),
+        local_window_mode=str(rr.get("local_window_mode", "deictic_only")),
+        explicit_link_threshold=float(rr.get("explicit_link_threshold", 0.12)),
+    )
 
 
 def rerank_figures(
@@ -104,6 +118,7 @@ def rerank_figures(
     hybrid: HybridRetriever,
     top_k: int = 3,
     cluster_debug_by_hash: dict[str, dict[str, Any]] | None = None,
+    rerank_raw: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     query_block_pairs: list[QueryBlockPair] = []
     cq_blocks_for_debug: list[Block] = []
@@ -121,20 +136,36 @@ def rerank_figures(
     caption_result = match_caption_blocks(blocks, caption_patterns)
     cf_blocks = caption_result.matched_blocks
 
+    link_params = _link_params_from_config(rerank_raw)
+    type_method_boost = float((rerank_raw or {}).get("type_method_boost", 1.15))
+    type_data_penalty = float((rerank_raw or {}).get("type_data_penalty", 0.92))
+
     all_scores: list[dict[str, Any]] = []
     for fig in figures:
         figure_index = parse_figure_index_from_caption(fig.caption)
-        evidence_blocks = collect_figure_evidence_blocks(fig, figure_index, blocks)
+        evidence_blocks = collect_figure_evidence_blocks(
+            fig,
+            figure_index,
+            blocks,
+            local_window_mode=link_params.local_window_mode,
+        )
         s_direct = direct_similarity(sub_queries, fig, query_embeddings, figure_embeddings)
-        s_link, link_debug = link_score(
+        s_link, _, _, link_debug = link_score_gated(
             query_block_pairs,
             evidence_blocks,
             block_embeddings,
             distance_tiers,
+            link_params,
         )
+        effective_alpha = float(link_debug.get("effective_alpha", alpha))
+        semantic_base = fuse_direct_and_link(s_direct, s_link, effective_alpha)
         p_layout, layout_index = layout_prior(fig, figure_index)
-        p_type = type_prior(fig.caption)
-        score = (alpha * s_direct + (1 - alpha) * s_link) * p_layout * p_type
+        p_type = type_prior(
+            fig.caption,
+            method_boost=type_method_boost,
+            data_penalty=type_data_penalty,
+        )
+        score = semantic_base * p_layout * p_type
         item = {
                 "image_hash": fig.image_hash,
                 "caption": fig.caption,
@@ -150,6 +181,8 @@ def rerank_figures(
                 "debug": {
                     "link": link_debug,
                     "evidence_count": len(evidence_blocks),
+                    "effective_alpha": effective_alpha,
+                    "semantic_base": round(semantic_base, 6),
                 },
                 "pos": fig.pos,
             }

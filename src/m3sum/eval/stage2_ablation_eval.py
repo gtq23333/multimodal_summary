@@ -11,6 +11,8 @@ from m3sum.config import PipelineConfig
 from m3sum.eval.stage2_rerank_metrics import (
     average_precision,
     compute_mrr,
+    image_precision_at_k,
+    image_recall_at_k,
     jaccard_at_k,
     maxsim_at_k,
     r_precision,
@@ -52,6 +54,8 @@ def _metric_row(
         "paper_id": sample.paper_id,
         "method_name": method_name,
         "r_precision": round(r_precision(ranked_ids, gold), 6),
+        "ip@3": round(image_precision_at_k(ranked_ids, gold, k=k_jaccard), 6),
+        "ir@3": round(image_recall_at_k(ranked_ids, gold, k=k_jaccard), 6),
         "jaccard@3": round(jaccard_at_k(ranked_ids, gold, k=k_jaccard), 6),
         "maxsim@3": round(ms, 6) if ms == ms else None,
         "map": round(average_precision(ranked_ids, gold), 6),
@@ -92,6 +96,8 @@ def _evaluate_config(
 def _aggregate(df: pd.DataFrame) -> dict[str, float]:
     return {
         "r_precision": float(df["r_precision"].mean()),
+        "ip@3": float(df["ip@3"].mean()),
+        "ir@3": float(df["ir@3"].mean()),
         "map": float(df["map"].mean()),
         "mrr": float(df["mrr"].mean()),
         "jaccard@3": float(df["jaccard@3"].mean()),

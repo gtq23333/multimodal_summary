@@ -46,8 +46,9 @@ def main() -> None:
             }
         )
 
+    trial_name = config.config_path.stem
     manifest = {
-        "trial_name": "trial_10",
+        "trial_name": trial_name,
         "gt_mode": config.gt_mode,
         "sample_count": len(samples),
         "samples": samples,

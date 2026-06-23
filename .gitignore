@@ -1,5 +1,6 @@
 outputs/
 src/configs/trial_10.yaml
+src/configs/trial_20.yaml
 src/configs/*.local.yaml
 __pycache__/
 *.py[cod]

@@ -12,6 +12,8 @@ from m3sum.config import PipelineConfig, resolve_api_credentials
 from m3sum.eval.stage2_rerank_metrics import (
     average_precision,
     compute_mrr,
+    image_precision_at_k,
+    image_recall_at_k,
     jaccard_at_k,
     maxsim_at_k,
     r_precision,
@@ -40,6 +42,8 @@ ZH_COLUMNS = {
     "paper_id": "论文ID",
     "method_name": "方法名称",
     "r_precision": "R-Precision",
+    "ip@3": "Image Precision (IP@3)",
+    "ir@3": "Image Recall (IR@3)",
     "jaccard@3": "Jaccard@3",
     "maxsim@3": "MaxSim@3",
     "map": "AP/MAP",
@@ -64,23 +68,11 @@ def _build_rankers(
     """构建 method_name -> ranker 映射，并初始化 CLIP 缓存（若需要）。"""
     rankers: dict[str, Stage2Ranker] = {}
     dry_run = config.dry_run
+    clip_cache: ClipImageEmbeddingCache | None = None
+    clip_encoder = None
 
     rankers["Layout-Order"] = LayoutOrderRanker()
     rankers["Caption-BM25"] = CaptionBM25Ranker()
-    rankers["Proposed"] = ProposedRanker(config, dry_run=dry_run)
-
-    embedder = None
-    if not dry_run and any(m in config.stage2_eval_methods for m in ("Caption-Dense-v4",)):
-        creds = resolve_api_credentials(config)
-        embedder = OpenAIEmbedder(config.embed_model, creds)
-    rankers["Caption-Dense-v4"] = CaptionDenseRanker(
-        config.stage2_eval_text_cache_dir,
-        embedder,
-        dry_run=dry_run,
-    )
-
-    clip_cache: ClipImageEmbeddingCache | None = None
-    clip_encoder = None
 
     if not skip_clip:
         if dry_run:
@@ -96,6 +88,22 @@ def _build_rankers(
                 clip_encoder=clip_encoder,
                 dry_run=False,
             )
+
+    rankers["Proposed"] = ProposedRanker(
+        config,
+        dry_run=dry_run,
+        image_cache=clip_cache,
+    )
+
+    embedder = None
+    if not dry_run and any(m in config.stage2_eval_methods for m in ("Caption-Dense-v4",)):
+        creds = resolve_api_credentials(config)
+        embedder = OpenAIEmbedder(config.embed_model, creds)
+    rankers["Caption-Dense-v4"] = CaptionDenseRanker(
+        config.stage2_eval_text_cache_dir,
+        embedder,
+        dry_run=dry_run,
+    )
 
     if "Zero-shot-CLIP" in config.stage2_eval_methods and not skip_clip:
         rankers["Zero-shot-CLIP"] = ZeroshotClipRanker(
@@ -274,6 +282,8 @@ def run_stage2_reranking_eval(
             gold = sample.ground_truth_ids
 
             rp = r_precision(ranked_ids, gold)
+            ip = image_precision_at_k(ranked_ids, gold, k=jaccard_k)
+            ir = image_recall_at_k(ranked_ids, gold, k=jaccard_k)
             jac = jaccard_at_k(ranked_ids, gold, k=jaccard_k)
             ap = average_precision(ranked_ids, gold)
             mrr_val = compute_mrr(ranked_ids, gold)
@@ -293,13 +303,17 @@ def run_stage2_reranking_eval(
             top3 = ranked_ids[:3]
             logger.info(
                 "  paper_id=%s | method=%s | 候选数=%d | GT=%s | top3=%s | "
-                "R-Precision=%.4f | Jaccard@%d=%.4f | MaxSim@%d=%s | AP=%.4f | MRR=%.4f",
+                "R-Precision=%.4f | IP@%d=%.4f | IR@%d=%.4f | Jaccard@%d=%.4f | MaxSim@%d=%s | AP=%.4f | MRR=%.4f",
                 sample.paper_id,
                 method_name,
                 len(sample.figures),
                 [h[:12] + "..." for h in sorted(gold)],
                 [h[:12] + "..." for h in top3],
                 rp,
+                jaccard_k,
+                ip,
+                jaccard_k,
+                ir,
                 jaccard_k,
                 jac,
                 maxsim_k,
@@ -328,6 +342,8 @@ def run_stage2_reranking_eval(
                 "method_name": method_name,
                 "metrics": {
                     "r_precision": rp,
+                    f"ip@{jaccard_k}": ip,
+                    f"ir@{jaccard_k}": ir,
                     f"jaccard@{jaccard_k}": jac,
                     f"maxsim@{maxsim_k}": ms if ms == ms else None,
                     "map": ap,
@@ -345,6 +361,8 @@ def run_stage2_reranking_eval(
                     "paper_id": sample.paper_id,
                     "method_name": method_name,
                     "r_precision": round(rp, 6),
+                    "ip@3": round(ip, 6),
+                    "ir@3": round(ir, 6),
                     "jaccard@3": round(jac, 6),
                     "maxsim@3": round(ms, 6) if ms == ms else None,
                     "map": round(ap, 6),
@@ -400,5 +418,12 @@ def run_stage2_reranking_eval(
         logger.info("可视化报告: %s", viz_paths.get("html_report"))
     except Exception as exc:
         logger.warning("可视化生成失败（不影响 CSV 结果）: %s", exc)
+
+    try:
+        from m3sum.eval.legacy_compare_eval import run_legacy_compare_eval
+
+        run_legacy_compare_eval(config, skip_clip=skip_clip, force_legacy_rerun=False)
+    except Exception as exc:
+        logger.warning("Legacy 对比评估失败（不影响主结果）: %s", exc)
 
     return df

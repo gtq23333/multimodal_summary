@@ -14,7 +14,7 @@ from m3sum.data.corpus_adapter import CorpusAdapter
 from m3sum.data.schema import QueryBundle, SubQuery
 from m3sum.stage1_query.query_builder import build_queries
 from m3sum.stage2_rerank.hybrid_retriever import EmbeddingCache, HybridRetriever
-from m3sum.stage2_rerank.reranker import rerank_figures
+from m3sum.stage2_rerank.rerank_legacy import rerank_figures_legacy
 from m3sum.stage3_generation.adaptive_generator import generate_summary
 from m3sum.stage3_generation.vlm_describer import describe_figures
 
@@ -76,6 +76,7 @@ class PipelineRunner:
             vector_weight=config.vector_weight,
             top_p=config.top_p,
         )
+        self._clip_cache = None
 
     def run_stage1(self, paper_id: str, force: bool = False) -> dict[str, Any]:
         out_path = self.config.stage1_dir / f"{paper_id}.json"
@@ -122,7 +123,7 @@ class PipelineRunner:
                 vec = self.embedder.embed_one(q.query + " " + " ".join(q.keywords))
                 query_embeddings.append(np.array(vec, dtype=np.float32))
 
-        result = rerank_figures(
+        result = rerank_figures_legacy(
             paper_id=paper_id,
             sub_queries=query_bundle.sub_queries,
             blocks=doc.blocks,
@@ -132,6 +133,73 @@ class PipelineRunner:
             query_embeddings=query_embeddings,
             caption_patterns=self.config.caption_patterns,
             alpha=self.config.alpha,
+            distance_tiers=self.config.distance_tiers,
+            hybrid=self.hybrid,
+        )
+
+        if self.config.cluster_prior_enabled and not self.dry_run:
+            from m3sum.stage2_rerank.clip_utils import ClipImageEmbeddingCache, load_clip_model
+            from m3sum.stage2_rerank.main_method import finalize_stage2_with_cluster
+
+            if self._clip_cache is None:
+                encoder = load_clip_model(self.config.cluster_prior_clip_model)
+                self._clip_cache = ClipImageEmbeddingCache(
+                    self.config.stage2_eval_clip_cache_dir,
+                    clip_encoder=encoder,
+                    dry_run=False,
+                )
+            fig_embs_clip = self._clip_cache.load_or_compute(paper_id, doc.figures)
+            result = finalize_stage2_with_cluster(
+                self.config,
+                result,
+                doc.figures,
+                fig_embs_clip,
+            )
+
+        _save_json(out_path, result)
+        return result
+
+    def run_stage2_legacy(self, paper_id: str, force: bool = False) -> dict[str, Any]:
+        """运行改造前 LG-JSSF，写入 stage2_legacy/。"""
+        out_path = self.config.output_dir / "stage2_legacy" / f"{paper_id}.json"
+        if self.from_cache and not force and out_path.is_file():
+            return _load_json(out_path)
+
+        stage1_path = self.config.stage1_dir / f"{paper_id}.json"
+        if not stage1_path.is_file():
+            self.run_stage1(paper_id)
+
+        stage1 = _load_json(stage1_path)
+        query_bundle = _query_bundle_from_dict(stage1)
+        doc = self.corpus.load_document(paper_id)
+
+        block_embs, fig_embs = self.embed_cache.load_or_compute(
+            paper_id,
+            doc.blocks,
+            doc.figures,
+            dry_run=self.dry_run,
+        )
+
+        query_embeddings: list[np.ndarray] = []
+        for q in query_bundle.sub_queries:
+            if self.dry_run:
+                dim = next(iter(block_embs.values())).shape[0] if block_embs else 64
+                query_embeddings.append(np.random.randn(dim).astype(np.float32))
+            else:
+                vec = self.embedder.embed_one(q.query + " " + " ".join(q.keywords))
+                query_embeddings.append(np.array(vec, dtype=np.float32))
+
+        legacy_rr = self.config.raw.get("rerank_legacy", {})
+        result = rerank_figures_legacy(
+            paper_id=paper_id,
+            sub_queries=query_bundle.sub_queries,
+            blocks=doc.blocks,
+            figures=doc.figures,
+            block_embeddings=block_embs,
+            figure_embeddings=fig_embs,
+            query_embeddings=query_embeddings,
+            caption_patterns=self.config.caption_patterns,
+            alpha=float(legacy_rr.get("alpha", 0.5)),
             distance_tiers=self.config.distance_tiers,
             hybrid=self.hybrid,
         )

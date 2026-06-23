@@ -155,3 +155,52 @@ class ClusterPriorScorer:
             cluster_gate_passed=gate_passed,
         )
         return prior, debug
+
+    @staticmethod
+    def _apply_query_boost(prior: float, top1_label: str | None, query_text: str) -> float:
+        """赛题文本与 cluster 类型匹配时略增 prior。"""
+        if not prior or not top1_label or not query_text:
+            return prior
+        hints: dict[str, tuple[str, ...]] = {
+            "4": ("流程", "算法", "步骤", "框架", "flowchart"),
+            "6": ("树", "网络", "结构", "层次"),
+            "7": ("数据", "统计", "曲线", "结果", "对比"),
+            "9": ("示意", "坐标", "几何", "受力", "投影"),
+        }
+        keywords = hints.get(str(top1_label), ())
+        if any(k in query_text for k in keywords):
+            return prior * 1.12
+        return prior
+
+    def score_with_context(
+        self,
+        image_embedding: np.ndarray | None,
+        query_text: str = "",
+    ) -> tuple[float, ClusterPriorDebug]:
+        prior, debug = self.score(image_embedding)
+        if query_text and debug.cluster_gate_passed:
+            boosted = self._apply_query_boost(prior, debug.cluster_top1_label, query_text)
+            debug = ClusterPriorDebug(
+                cluster_top1_label=debug.cluster_top1_label,
+                cluster_top1_sim=debug.cluster_top1_sim,
+                cluster_top2_label=debug.cluster_top2_label,
+                cluster_top2_sim=debug.cluster_top2_sim,
+                cluster_margin=debug.cluster_margin,
+                cluster_prior_raw=debug.cluster_prior_raw,
+                cluster_prior=boosted,
+                cluster_gate_passed=debug.cluster_gate_passed,
+                cluster_fusion_mode=debug.cluster_fusion_mode,
+            )
+            return boosted, debug
+        return prior, debug
+
+
+def normalize_priors_relative(priors: list[float]) -> list[float]:
+    """同一 paper 内 min-max 归一化 cluster prior，避免全体同向平移。"""
+    if not priors:
+        return priors
+    arr = np.array(priors, dtype=np.float64)
+    if arr.max() - arr.min() < 1e-8:
+        return [0.0] * len(priors)
+    normed = (arr - arr.min()) / (arr.max() - arr.min())
+    return [float(x) for x in normed]
