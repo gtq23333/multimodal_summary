@@ -12,7 +12,7 @@ sys.path.insert(0, str(SRC_ROOT))
 from m3sum.config import load_config
 from m3sum.eval.stage2_reranking_viz import load_results_and_visualize
 
-DEFAULT_CONFIG = SRC_ROOT / "configs" / "trial_10.yaml"
+DEFAULT_CONFIG = SRC_ROOT / "configs" / "trial_20.yaml"
 
 
 def main() -> None:
@@ -22,8 +22,12 @@ def main() -> None:
     csv_path = config.eval_dir / "stage2_reranking_eval_results.csv"
     if not csv_path.is_file():
         print(f"未找到结果文件: {csv_path}")
-        print("请先运行: python scripts/evaluate_stage2_reranking.py")
+        print(f"配置: {config_path}")
+        print("请先运行: python scripts/evaluate_stage2_reranking.py <config.yaml>")
         sys.exit(1)
+
+    print(f"读取: {csv_path}")
+    print(f"配置: {config_path}")
 
     paths = load_results_and_visualize(csv_path, config.eval_dir)
     print("可视化已生成：")

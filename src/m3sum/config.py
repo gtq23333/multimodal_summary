@@ -98,6 +98,10 @@ class PipelineConfig:
         return self.output_dir / "cache" / "stage2_eval" / "clip_embeddings"
 
     @property
+    def stage2_eval_vl_rerank_cache_dir(self) -> Path:
+        return self.output_dir / "cache" / "stage2_eval" / "vl_rerank"
+
+    @property
     def cluster_prior_cache_dir(self) -> Path:
         return self.output_dir / "cache" / "stage2_eval" / "cluster_prior_clip"
 
@@ -201,6 +205,9 @@ def load_config(config_path: Path) -> PipelineConfig:
                 "methods",
                 [
                     "Proposed",
+                    "Qwen3-VL-Rerank-ImgCap+Link",
+                    "Qwen3-VL-Rerank-ImgCap",
+                    "Qwen3-VL-Rerank-Img",
                     "Layout-Order",
                     "Caption-BM25",
                     "Caption-Dense-v4",

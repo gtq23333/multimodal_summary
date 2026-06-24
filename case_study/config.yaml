@@ -1,0 +1,11 @@
+trial_config: "../src/configs/trial_20.yaml"
+data_dir: "./data"
+
+export:
+  max_rank: 10
+  skip_clip: false
+
+ui:
+  default_k: 3
+  k_options: [3, 5, 10]
+  default_method: "Proposed"

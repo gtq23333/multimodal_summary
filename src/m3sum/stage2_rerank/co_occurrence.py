@@ -215,6 +215,28 @@ def link_score_legacy(
     return best_score, best_debug
 
 
+def select_best_link_evidence(
+    query_block_pairs: list[QueryBlockPair],
+    evidence_blocks: list[FigureEvidenceBlock],
+    block_embeddings: dict[str, np.ndarray],
+    distance_tiers: list[float],
+) -> tuple[FigureEvidenceBlock | None, dict[str, Any]]:
+    """返回 S_link 最大匹配对应的 evidence block（legacy 全局 max 逻辑）。"""
+    _, debug = link_score_legacy(
+        query_block_pairs,
+        evidence_blocks,
+        block_embeddings,
+        distance_tiers,
+    )
+    matched_id = debug.get("matched_evidence_block")
+    if not matched_id:
+        return None, debug
+    for evidence in evidence_blocks:
+        if evidence.block.block_id == matched_id:
+            return evidence, debug
+    return None, debug
+
+
 def caption_or_neighbors_have_deictic(
     figure: FigureMeta,
     blocks: list[Block],

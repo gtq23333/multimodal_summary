@@ -88,10 +88,14 @@ stage2_eval:
   clip_model: "OFA-Sys/chinese-clip-vit-base-patch16"
   methods:
     - "Proposed"
+    - "Qwen3-VL-Rerank-ImgCap"
+    - "Qwen3-VL-Rerank-Img"
     - "Layout-Order"
     - "Caption-BM25"
     - "Caption-Dense-v4"
     - "Zero-shot-CLIP"
+  vl_rerank_instruct: "Given a query describing information needs for a mathematical modeling paper summary, retrieve the most relevant figures."
+  vl_rerank_img_cap_instruct: "Given a query describing information needs for a mathematical modeling paper summary, retrieve the most relevant figure entries. Each entry includes the figure image and its caption text."
 
 cluster_prior:
   enabled: true

@@ -23,6 +23,9 @@ METRIC_ZH = {
 
 METHOD_ORDER = [
     "Proposed",
+    "Qwen3-VL-Rerank-ImgCap+Link",
+    "Qwen3-VL-Rerank-ImgCap",
+    "Qwen3-VL-Rerank-Img",
     "Layout-Order",
     "Caption-BM25",
     "Caption-Dense-v4",
@@ -31,6 +34,9 @@ METHOD_ORDER = [
 
 METHOD_COLORS = {
     "Proposed": "#e63946",
+    "Qwen3-VL-Rerank-ImgCap+Link": "#6a1b9a",
+    "Qwen3-VL-Rerank-ImgCap": "#8e44ad",
+    "Qwen3-VL-Rerank-Img": "#c39bd3",
     "Layout-Order": "#457b9d",
     "Caption-BM25": "#2a9d8f",
     "Caption-Dense-v4": "#e9c46a",
@@ -39,11 +45,20 @@ METHOD_COLORS = {
 
 METHOD_ZH = {
     "Proposed": "Proposed（本文方法）",
+    "Qwen3-VL-Rerank-ImgCap+Link": "Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）",
+    "Qwen3-VL-Rerank-ImgCap": "Qwen3-VL-Rerank-ImgCap（强基线）",
+    "Qwen3-VL-Rerank-Img": "Qwen3-VL-Rerank-Img（弱基线）",
     "Layout-Order": "Layout-Order",
     "Caption-BM25": "Caption-BM25",
     "Caption-Dense-v4": "Caption-Dense-v4",
     "Zero-shot-CLIP": "Zero-shot CLIP",
 }
+
+
+def _available_metric_cols(df: pd.DataFrame, candidates: list[str] | None = None) -> list[str]:
+    """按 METRIC_COLS 顺序返回 DataFrame 中实际存在的指标列。"""
+    candidates = candidates or METRIC_COLS
+    return [col for col in candidates if col in df.columns]
 
 
 def _setup_matplotlib_zh() -> None:
@@ -55,9 +70,10 @@ def _short_paper_id(paper_id: str) -> str:
     return paper_id.split(".pdf")[0] if ".pdf" in paper_id else paper_id[:20]
 
 
-def aggregate_by_method(df: pd.DataFrame) -> pd.DataFrame:
+def aggregate_by_method(df: pd.DataFrame, metric_cols: list[str] | None = None) -> pd.DataFrame:
     """按方法聚合：均值、标准差、样本数。"""
-    agg = df.groupby("method_name")[METRIC_COLS].agg(["mean", "std", "count"])
+    metric_cols = metric_cols or _available_metric_cols(df)
+    agg = df.groupby("method_name")[metric_cols].agg(["mean", "std", "count"])
     agg.columns = ["_".join(col).strip() for col in agg.columns]
     agg = agg.reset_index()
     method_rank = {m: i for i, m in enumerate(METHOD_ORDER)}
@@ -65,15 +81,16 @@ def aggregate_by_method(df: pd.DataFrame) -> pd.DataFrame:
     return agg.sort_values("_order").drop(columns=["_order"]).reset_index(drop=True)
 
 
-def build_summary_table(df: pd.DataFrame) -> pd.DataFrame:
+def build_summary_table(df: pd.DataFrame, metric_cols: list[str] | None = None) -> pd.DataFrame:
     """简洁汇总表：每方法一行，指标为 mean ± std。"""
+    metric_cols = metric_cols or _available_metric_cols(df)
     rows: list[dict[str, Any]] = []
     for method in METHOD_ORDER:
         sub = df[df["method_name"] == method]
         if sub.empty:
             continue
         row: dict[str, Any] = {"method_name": method, "method_zh": METHOD_ZH.get(method, method), "n_papers": len(sub)}
-        for col in METRIC_COLS:
+        for col in metric_cols:
             mean = sub[col].mean()
             std = sub[col].std()
             row[f"{col}_mean"] = round(mean, 4)
@@ -83,16 +100,21 @@ def build_summary_table(df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def compute_win_rates(df: pd.DataFrame, reference: str = "Proposed") -> pd.DataFrame:
+def compute_win_rates(
+    df: pd.DataFrame,
+    reference: str = "Proposed",
+    metric_cols: list[str] | None = None,
+) -> pd.DataFrame:
     """
     逐样本比较：reference 相对各 baseline 在各指标上的「胜率」。
     胜率 = reference 分数严格高于 baseline 的论文比例。
     """
+    metric_cols = metric_cols or _available_metric_cols(df)
     papers = df["paper_id"].unique()
     baselines = [m for m in METHOD_ORDER if m != reference]
 
     rows: list[dict[str, Any]] = []
-    for metric in METRIC_COLS:
+    for metric in metric_cols:
         for baseline in baselines:
             wins = ties = losses = 0
             for paper in papers:
@@ -145,12 +167,13 @@ def _grouped_bar_offsets(n_groups: int, group_width: float = 0.82) -> tuple[floa
     return bar_width * 0.92, offsets
 
 
-def plot_method_bar_chart(df: pd.DataFrame) -> plt.Figure:
+def plot_method_bar_chart(df: pd.DataFrame, metric_cols: list[str] | None = None) -> plt.Figure:
     """分组柱状图：每个指标一个子图，对比各方法均值。"""
+    metric_cols = metric_cols or _available_metric_cols(df)
     _setup_matplotlib_zh()
-    summary = aggregate_by_method(df)
+    summary = aggregate_by_method(df, metric_cols)
     methods = [m for m in METHOD_ORDER if m in summary["method_name"].values]
-    n_metrics = len(METRIC_COLS)
+    n_metrics = len(metric_cols)
     ncols, nrows = _subplot_grid(n_metrics, max_cols=4)
 
     fig, axes = plt.subplots(
@@ -162,7 +185,7 @@ def plot_method_bar_chart(df: pd.DataFrame) -> plt.Figure:
     )
     axes_flat = axes.flatten()
 
-    for idx, metric in enumerate(METRIC_COLS):
+    for idx, metric in enumerate(metric_cols):
         ax = axes_flat[idx]
         means = [summary.loc[summary["method_name"] == m, f"{metric}_mean"].iloc[0] for m in methods]
         stds = [summary.loc[summary["method_name"] == m, f"{metric}_std"].iloc[0] for m in methods]
@@ -194,24 +217,25 @@ def plot_method_bar_chart(df: pd.DataFrame) -> plt.Figure:
     return fig
 
 
-def plot_heatmap(df: pd.DataFrame) -> plt.Figure:
+def plot_heatmap(df: pd.DataFrame, metric_cols: list[str] | None = None) -> plt.Figure:
     """热力图：方法 × 指标，颜色为均值。"""
+    metric_cols = metric_cols or _available_metric_cols(df)
     _setup_matplotlib_zh()
-    summary = aggregate_by_method(df)
+    summary = aggregate_by_method(df, metric_cols)
     methods = [m for m in METHOD_ORDER if m in summary["method_name"].values]
     matrix = np.array(
-        [[summary.loc[summary["method_name"] == m, f"{c}_mean"].iloc[0] for c in METRIC_COLS] for m in methods]
+        [[summary.loc[summary["method_name"] == m, f"{c}_mean"].iloc[0] for c in metric_cols] for m in methods]
     )
 
-    fig, ax = plt.subplots(figsize=(max(11, len(METRIC_COLS) * 1.15), 4.8))
+    fig, ax = plt.subplots(figsize=(max(11, len(metric_cols) * 1.15), 4.8))
     im = ax.imshow(matrix, aspect="auto", cmap="YlOrRd", vmin=0, vmax=1)
-    ax.set_xticks(range(len(METRIC_COLS)))
-    ax.set_xticklabels([METRIC_ZH[c] for c in METRIC_COLS], rotation=35, ha="right", fontsize=9)
+    ax.set_xticks(range(len(metric_cols)))
+    ax.set_xticklabels([METRIC_ZH[c] for c in metric_cols], rotation=35, ha="right", fontsize=9)
     ax.set_yticks(range(len(methods)))
     ax.set_yticklabels([METHOD_ZH.get(m, m) for m in methods])
 
     for i in range(len(methods)):
-        for j in range(len(METRIC_COLS)):
+        for j in range(len(metric_cols)):
             val = matrix[i, j]
             color = "white" if val > 0.55 else "black"
             ax.text(j, i, f"{val:.3f}", ha="center", va="center", color=color, fontsize=10)
@@ -222,10 +246,11 @@ def plot_heatmap(df: pd.DataFrame) -> plt.Figure:
     return fig
 
 
-def plot_proposed_delta(df: pd.DataFrame) -> plt.Figure:
+def plot_proposed_delta(df: pd.DataFrame, metric_cols: list[str] | None = None) -> plt.Figure:
     """Proposed 相对各 baseline 的平均分差（正值=Proposed 更好）。"""
+    metric_cols = metric_cols or _available_metric_cols(df)
     _setup_matplotlib_zh()
-    summary = build_summary_table(df)
+    summary = build_summary_table(df, metric_cols)
     proposed = summary[summary["method_name"] == "Proposed"]
     if proposed.empty:
         fig, ax = plt.subplots()
@@ -233,7 +258,7 @@ def plot_proposed_delta(df: pd.DataFrame) -> plt.Figure:
         return fig
 
     baselines = [m for m in METHOD_ORDER if m != "Proposed" and m in summary["method_name"].values]
-    n_metrics = len(METRIC_COLS)
+    n_metrics = len(metric_cols)
     n_baselines = len(baselines)
     bar_width, _ = _grouped_bar_offsets(n_baselines, group_width=0.78)
     fig, ax = plt.subplots(figsize=(max(12, n_metrics * 1.6), 4.8))
@@ -241,13 +266,13 @@ def plot_proposed_delta(df: pd.DataFrame) -> plt.Figure:
 
     for i, baseline in enumerate(baselines):
         base_row = summary[summary["method_name"] == baseline].iloc[0]
-        deltas = [proposed.iloc[0][f"{c}_mean"] - base_row[f"{c}_mean"] for c in METRIC_COLS]
+        deltas = [proposed.iloc[0][f"{c}_mean"] - base_row[f"{c}_mean"] for c in metric_cols]
         offset = (i - (n_baselines - 1) / 2) * bar_width
         ax.bar(x + offset, deltas, width=bar_width, label=METHOD_ZH.get(baseline, baseline), alpha=0.85)
 
     ax.axhline(0, color="#333", linewidth=0.8, linestyle="-")
     ax.set_xticks(x)
-    ax.set_xticklabels([METRIC_ZH[c] for c in METRIC_COLS])
+    ax.set_xticklabels([METRIC_ZH[c] for c in metric_cols])
     ax.set_ylabel("Proposed 平均分 − Baseline 平均分")
     ax.set_title("Proposed 相对各 Baseline 的平均优势（>0 表示 Proposed 更好）", fontweight="bold")
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.14), fontsize=8, ncol=min(4, n_baselines))
@@ -301,7 +326,14 @@ def plot_ablation_chart(
         plot_df = ablation_df[ablation_df["method_name"].isin(method_filter)].copy()
     else:
         plot_df = ablation_df.copy()
-    metrics = ["r_precision", "ip@3", "ir@3", "map", "mrr"]
+    metrics = _available_metric_cols(
+        plot_df,
+        ["r_precision", "ip@3", "ir@3", "map", "mrr"],
+    )
+    if not metrics:
+        fig, ax = plt.subplots()
+        ax.text(0.5, 0.5, "无可用消融指标", ha="center")
+        return fig
     summary = plot_df.groupby("method_name")[metrics].mean().reset_index()
 
     if method_filter:
@@ -382,26 +414,30 @@ def export_stage2_reranking_visuals(
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    summary_df = build_summary_table(df)
-    agg_df = aggregate_by_method(df)
-    win_df = compute_win_rates(df)
+    metric_cols = _available_metric_cols(df)
+    if not metric_cols:
+        raise ValueError("结果 CSV 中未找到任何已知指标列，请检查 stage2_reranking_eval_results.csv 格式。")
+
+    summary_df = build_summary_table(df, metric_cols)
+    agg_df = aggregate_by_method(df, metric_cols)
+    win_df = compute_win_rates(df, metric_cols=metric_cols)
 
     summary_csv = output_dir / "stage2_reranking_summary.csv"
     summary_zh_csv = output_dir / "stage2_reranking_summary_zh.csv"
     win_csv = output_dir / "stage2_reranking_win_rates.csv"
 
-    summary_df[["method_name", "method_zh", "n_papers"] + METRIC_COLS].rename(
+    summary_df[["method_name", "method_zh", "n_papers"] + metric_cols].rename(
         columns={"method_name": "方法", "method_zh": "方法名称", "n_papers": "论文数", **METRIC_ZH}
     ).to_csv(summary_zh_csv, index=False, encoding="utf-8-sig")
 
-    export_cols = ["method_name", "n_papers"] + [f"{c}_mean" for c in METRIC_COLS] + [f"{c}_std" for c in METRIC_COLS]
+    export_cols = ["method_name", "n_papers"] + [f"{c}_mean" for c in metric_cols] + [f"{c}_std" for c in metric_cols]
     summary_df[export_cols].to_csv(summary_csv, index=False, encoding="utf-8-sig")
     win_df.to_csv(win_csv, index=False, encoding="utf-8-sig")
 
     charts = {
-        "bar": plot_method_bar_chart(df),
-        "heatmap": plot_heatmap(df),
-        "delta": plot_proposed_delta(df),
+        "bar": plot_method_bar_chart(df, metric_cols),
+        "heatmap": plot_heatmap(df, metric_cols),
+        "delta": plot_proposed_delta(df, metric_cols),
         "per_paper": plot_per_paper_jaccard(df),
     }
     ablation_df = ablation_df if ablation_df is not None else pd.DataFrame()
@@ -446,6 +482,7 @@ def export_stage2_reranking_visuals(
             win_df,
             b64,
             len(df["paper_id"].unique()),
+            metric_cols=metric_cols,
             ablation_df=ablation_df,
             grid_df=grid_df,
         ),
@@ -466,12 +503,14 @@ def _build_html(
     win_df: pd.DataFrame,
     b64: dict[str, str],
     n_papers: int,
+    metric_cols: list[str] | None = None,
     ablation_df: pd.DataFrame | None = None,
     grid_df: pd.DataFrame | None = None,
 ) -> str:
+    metric_cols = metric_cols or _available_metric_cols(summary_df, METRIC_COLS)
     summary_rows = ""
     for _, row in summary_df.iterrows():
-        cells = "".join(f"<td>{row[c]}</td>" for c in METRIC_COLS)
+        cells = "".join(f"<td>{row[c]}</td>" for c in metric_cols)
         summary_rows += (
             f"<tr class=\"{'proposed' if row['method_name']=='Proposed' else ''}\">"
             f"<td><b>{row['method_zh']}</b></td><td>{int(row['n_papers'])}</td>{cells}</tr>\n"
@@ -487,17 +526,16 @@ def _build_html(
 
     ablation_sections = ""
     if ablation_df is not None and not ablation_df.empty:
-        ablation_summary = ablation_df.groupby("method_name")[["r_precision", "ip@3", "ir@3", "map", "mrr"]].mean().reset_index()
+        ablation_metrics = _available_metric_cols(
+            ablation_df,
+            ["r_precision", "ip@3", "ir@3", "map", "mrr"],
+        )
+        ablation_summary = ablation_df.groupby("method_name")[ablation_metrics].mean().reset_index()
+        ablation_headers = "".join(f"<th>{METRIC_ZH.get(c, c)}</th>" for c in ablation_metrics)
         ablation_rows = ""
         for _, row in ablation_summary.iterrows():
-            ablation_rows += (
-                f"<tr><td>{row['method_name']}</td>"
-                f"<td>{row['r_precision']:.3f}</td>"
-                f"<td>{row['ip@3']:.3f}</td>"
-                f"<td>{row['ir@3']:.3f}</td>"
-                f"<td>{row['map']:.3f}</td>"
-                f"<td>{row['mrr']:.3f}</td></tr>\n"
-            )
+            ablation_cells = "".join(f"<td>{row[c]:.3f}</td>" for c in ablation_metrics)
+            ablation_rows += f"<tr><td>{row['method_name']}</td>{ablation_cells}</tr>\n"
         ablation_sections += f"""
 <div class="card">
 <h2>7. ClusterPrior 与递增式消融</h2>
@@ -514,7 +552,7 @@ def _build_html(
 <div class="card">
 <h2>9. 消融汇总表</h2>
 <table class="summary-table">
-<tr><th>方法</th><th>R-Precision</th><th>IP@3</th><th>IR@3</th><th>MAP</th><th>MRR</th></tr>
+<tr><th>方法</th>{ablation_headers}</tr>
 {ablation_rows}
 </table>
 </div>
@@ -530,7 +568,7 @@ def _build_html(
 </div>
 """
 
-    metric_headers = "".join(f"<th>{METRIC_ZH[c]}</th>" for c in METRIC_COLS)
+    metric_headers = "".join(f"<th>{METRIC_ZH[c]}</th>" for c in metric_cols)
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -619,9 +657,20 @@ table.summary-table {{ display: block; overflow-x: auto; white-space: nowrap; }}
 
 def load_results_and_visualize(results_csv: Path, output_dir: Path | None = None) -> dict[str, Path]:
     """从已有 CSV 生成可视化（无需重新跑评估）。"""
+    import warnings
+
     results_csv = Path(results_csv)
     output_dir = output_dir or results_csv.parent
     df = pd.read_csv(results_csv)
+
+    metric_cols = _available_metric_cols(df)
+    missing = [c for c in METRIC_COLS if c not in metric_cols]
+    if missing:
+        warnings.warn(
+            f"结果 CSV 缺少指标列 {missing}，图表将仅展示 {metric_cols}。"
+            "若需 IP@3/IR@3，请用 trial_20 配置重新运行 evaluate_stage2_reranking.py。",
+            stacklevel=2,
+        )
 
     ablation_df = pd.DataFrame()
     ablation_path = output_dir / "stage2_ablation_results.csv"

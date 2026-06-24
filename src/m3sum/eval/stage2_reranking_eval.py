@@ -23,6 +23,13 @@ from m3sum.stage2_rerank.baselines.caption_bm25 import CaptionBM25Ranker
 from m3sum.stage2_rerank.baselines.caption_dense import CaptionDenseRanker
 from m3sum.stage2_rerank.baselines.layout_order import LayoutOrderRanker
 from m3sum.stage2_rerank.baselines.proposed import ProposedRanker
+from m3sum.stage2_rerank.baselines.qwen3_vl_rerank import (
+    Qwen3VLRerankImgCapLinkRanker,
+    Qwen3VLRerankImgCapRanker,
+    Qwen3VLRerankImgRanker,
+    build_vl_rerank_client,
+)
+from m3sum.stage2_rerank.figure_link_context import build_figure_link_context_selector
 from m3sum.stage2_rerank.baselines.zeroshot_clip import ZeroshotClipRanker
 from m3sum.stage2_rerank.clip_utils import ClipImageEmbeddingCache, load_clip_model
 from m3sum.stage2_rerank.figure_number import parse_figure_number
@@ -32,6 +39,9 @@ logger = logging.getLogger(__name__)
 
 METHOD_LABELS = {
     "Proposed": "Proposed",
+    "Qwen3-VL-Rerank-Img": "Qwen3-VL-Rerank-Img",
+    "Qwen3-VL-Rerank-ImgCap+Link": "Qwen3-VL-Rerank-ImgCap+Link",
+    "Qwen3-VL-Rerank-ImgCap": "Qwen3-VL-Rerank-ImgCap",
     "Layout-Order": "Layout-Order",
     "Caption-BM25": "Caption-BM25",
     "Caption-Dense-v4": "Caption-Dense-v4",
@@ -59,6 +69,14 @@ def _is_flowchart_caption(caption: str) -> bool:
 
 def _figure_lookup(sample) -> dict[str, Any]:
     return {f.image_hash: f for f in sample.figures}
+
+
+def build_stage2_rankers(
+    config: PipelineConfig,
+    skip_clip: bool,
+) -> tuple[dict[str, Stage2Ranker], ClipImageEmbeddingCache | None, Any]:
+    """构建 method_name -> ranker 映射，并初始化 CLIP 缓存（若需要）。"""
+    return _build_rankers(config, skip_clip=skip_clip)
 
 
 def _build_rankers(
@@ -109,6 +127,35 @@ def _build_rankers(
         rankers["Zero-shot-CLIP"] = ZeroshotClipRanker(
             clip_encoder=clip_encoder,
             image_cache_dir=config.stage2_eval_clip_cache_dir,
+            dry_run=dry_run,
+        )
+
+    vl_img_methods = {"Qwen3-VL-Rerank-Img", "Qwen3-VL-Rerank"}
+    if vl_img_methods & set(config.stage2_eval_methods):
+        vl_client = build_vl_rerank_client(config, dry_run=dry_run, img_cap=False)
+        rankers["Qwen3-VL-Rerank-Img"] = Qwen3VLRerankImgRanker(
+            config.stage2_eval_vl_rerank_cache_dir,
+            vl_client,
+            dry_run=dry_run,
+        )
+
+    if "Qwen3-VL-Rerank-ImgCap+Link" in config.stage2_eval_methods:
+        vl_link_client = build_vl_rerank_client(
+            config, dry_run=dry_run, img_cap_link=True
+        )
+        context_selector = build_figure_link_context_selector(config, dry_run=dry_run)
+        rankers["Qwen3-VL-Rerank-ImgCap+Link"] = Qwen3VLRerankImgCapLinkRanker(
+            config.stage2_eval_vl_rerank_cache_dir,
+            vl_link_client,
+            context_selector,
+            dry_run=dry_run,
+        )
+
+    if "Qwen3-VL-Rerank-ImgCap" in config.stage2_eval_methods:
+        vl_cap_client = build_vl_rerank_client(config, dry_run=dry_run, img_cap=True)
+        rankers["Qwen3-VL-Rerank-ImgCap"] = Qwen3VLRerankImgCapRanker(
+            config.stage2_eval_vl_rerank_cache_dir,
+            vl_cap_client,
             dry_run=dry_run,
         )
 
@@ -425,5 +472,33 @@ def run_stage2_reranking_eval(
         run_legacy_compare_eval(config, skip_clip=skip_clip, force_legacy_rerun=False)
     except Exception as exc:
         logger.warning("Legacy 对比评估失败（不影响主结果）: %s", exc)
+
+    if config.raw.get("case_study_export", False):
+        try:
+            import importlib.util
+
+            case_study_root = Path(__file__).resolve().parents[3] / "case_study"
+            cs_config = case_study_root / "config.yaml"
+            export_script = case_study_root / "scripts" / "export_case_study_data.py"
+            if cs_config.is_file() and export_script.is_file():
+                spec = importlib.util.spec_from_file_location(
+                    "export_case_study_data",
+                    export_script,
+                )
+                mod = importlib.util.module_from_spec(spec)
+                assert spec.loader is not None
+                spec.loader.exec_module(mod)
+                mod.export_case_study_data(
+                    cs_config,
+                    trial_config_override=config.config_path,
+                )
+                logger.info("Case Study 数据已导出: %s", case_study_root / "data")
+            else:
+                logger.warning(
+                    "case_study_export 已启用但未找到配置或脚本: %s",
+                    case_study_root,
+                )
+        except Exception as exc:
+            logger.warning("Case Study 导出失败（不影响 eval 结果）: %s", exc)
 
     return df
