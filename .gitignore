@@ -1,10 +1,12 @@
-outputs/
-src/configs/trial_10.yaml
-src/configs/trial_20.yaml
+# 本地密钥覆盖（trial_*.local.yaml 专用于放真实 key）
 src/configs/*.local.yaml
+
+# Python 运行时产物
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+
+# 环境变量密钥
 .env
 .env.*

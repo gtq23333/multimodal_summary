@@ -1,0 +1,457 @@
+{
+  "paper_id": "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545",
+  "top3_figures": [
+    {
+      "image_hash": "e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e",
+      "caption": "图3颜色装配问题流程图",
+      "score": 0.544035,
+      "s_direct": 0.450759,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.5,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_112",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "最终得到流程图图3，且有以下准则："
+        },
+        {
+          "block_id": "b_118",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "动力、驱动属性优先级高于  $S$  类车、白色车、棕色车优先级为第二优先级，当  $S$  类车的间隔排序与驱动、动力冲突时，考虑到驱动、动力装配顺序出现异常"
+        },
+        {
+          "block_id": "b_120",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.1.3驱动属性的装配算法设计"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_120",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_120",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 3,
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_18",
+          "b_53",
+          "b_167",
+          "b_22",
+          "b_168"
+        ]
+      },
+      "pos": 119,
+      "rank": 1
+    },
+    {
+      "image_hash": "cfe682066869be7228c8ebc83633109ca53c0fa6f41091e7a8c7f3269a2ac4ec",
+      "caption": "图4驱动装配问题流程图",
+      "score": 0.465005,
+      "s_direct": 0.439612,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.5,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_128",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\n\\begin{array}{c}\\max D = \\frac{p_2}{g}, \\\\ s.t. = \\left\\{ \\begin{array}{l} g "
+        },
+        {
+          "block_id": "b_130",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.1.4动力属性的装配算法设计"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_130",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_130",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 2,
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_18",
+          "b_53",
+          "b_167",
+          "b_22",
+          "b_168"
+        ]
+      },
+      "pos": 129,
+      "rank": 2
+    },
+    {
+      "image_hash": "1748643b5eeb1cfdaa71753c86efe8f025e6523d8ee724df0b3641273e4b42fb",
+      "caption": "图1白班黑车与其它颜色车的顺序图",
+      "score": 0.326889,
+      "s_direct": 0.310931,
+      "s_link": 0.342847,
+      "s_co": 0.342847,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_71",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": false,
+          "text_snippet": "针对颜色属性进行分析，因为黑车需要连续50到70辆车喷涂，中间需要间隔其他颜色的车至少20辆，且根据数据处理可知黑车的总数量最多。所以需要将黑车分为两班做，两班"
+        },
+        {
+          "block_id": "b_74",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "使一班A1型号装配顺序最后部分为黑车，A2型号的装配顺序前列为黑车，因为所以可以将两种型号的黑车一起连续排列为第二组黑车。"
+        },
+        {
+          "block_id": "b_76",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "晚班的考虑情况与白班相同，第三组同第一组，第四组同第二组（若A2型号黑车在白班喷涂完则第四组黑车全为A1型号）。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_86",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_74",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.857119,
+          "distance_weight": 0.4,
+          "s_link": 0.342847
+        },
+        "evidence_count": 3,
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_18",
+          "b_53",
+          "b_167",
+          "b_22",
+          "b_168"
+        ]
+      },
+      "pos": 75,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e",
+      "caption": "图3颜色装配问题流程图",
+      "score": 0.544035,
+      "s_direct": 0.450759,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.5,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_112",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "最终得到流程图图3，且有以下准则："
+        },
+        {
+          "block_id": "b_118",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "动力、驱动属性优先级高于  $S$  类车、白色车、棕色车优先级为第二优先级，当  $S$  类车的间隔排序与驱动、动力冲突时，考虑到驱动、动力装配顺序出现异常"
+        },
+        {
+          "block_id": "b_120",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.1.3驱动属性的装配算法设计"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_120",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_120",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 3,
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_18",
+          "b_53",
+          "b_167",
+          "b_22",
+          "b_168"
+        ]
+      },
+      "pos": 119,
+      "rank": 1
+    },
+    {
+      "image_hash": "cfe682066869be7228c8ebc83633109ca53c0fa6f41091e7a8c7f3269a2ac4ec",
+      "caption": "图4驱动装配问题流程图",
+      "score": 0.465005,
+      "s_direct": 0.439612,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.5,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_128",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\n\\begin{array}{c}\\max D = \\frac{p_2}{g}, \\\\ s.t. = \\left\\{ \\begin{array}{l} g "
+        },
+        {
+          "block_id": "b_130",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.1.4动力属性的装配算法设计"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_130",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_130",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 2,
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_18",
+          "b_53",
+          "b_167",
+          "b_22",
+          "b_168"
+        ]
+      },
+      "pos": 129,
+      "rank": 2
+    },
+    {
+      "image_hash": "1748643b5eeb1cfdaa71753c86efe8f025e6523d8ee724df0b3641273e4b42fb",
+      "caption": "图1白班黑车与其它颜色车的顺序图",
+      "score": 0.326889,
+      "s_direct": 0.310931,
+      "s_link": 0.342847,
+      "s_co": 0.342847,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_71",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": false,
+          "text_snippet": "针对颜色属性进行分析，因为黑车需要连续50到70辆车喷涂，中间需要间隔其他颜色的车至少20辆，且根据数据处理可知黑车的总数量最多。所以需要将黑车分为两班做，两班"
+        },
+        {
+          "block_id": "b_74",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "使一班A1型号装配顺序最后部分为黑车，A2型号的装配顺序前列为黑车，因为所以可以将两种型号的黑车一起连续排列为第二组黑车。"
+        },
+        {
+          "block_id": "b_76",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "晚班的考虑情况与白班相同，第三组同第一组，第四组同第二组（若A2型号黑车在白班喷涂完则第四组黑车全为A1型号）。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_86",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_74",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.857119,
+          "distance_weight": 0.4,
+          "s_link": 0.342847
+        },
+        "evidence_count": 3,
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_18",
+          "b_53",
+          "b_167",
+          "b_22",
+          "b_168"
+        ]
+      },
+      "pos": 75,
+      "rank": 3
+    },
+    {
+      "image_hash": "478918bed5ce90e43ff395806336ec7778f9325ceac62795b4f7855b0c7eea3c",
+      "caption": "图2喷涂线介绍图",
+      "score": 0.18171,
+      "s_direct": 0.286238,
+      "s_link": 0.289769,
+      "s_co": 0.289769,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_95",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": false,
+          "text_snippet": "蓝车要求必须与白车间隔排序，且由图2可知蓝车只能在C1喷涂线上喷涂，单数装配顺序的车才进入C1喷涂线，所以当第一组黑车为单数时，下一辆车为白车，再后一辆是蓝车…"
+        },
+        {
+          "block_id": "b_96",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\nW = L + 1. \\tag{4}\n$$"
+        },
+        {
+          "block_id": "b_98",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 步骤3：金色、  $R$  类车装配顺序"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_86",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_95",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 0.724423,
+          "distance_weight": 0.4,
+          "s_link": 0.289769
+        },
+        "evidence_count": 3
+      },
+      "pos": 97,
+      "rank": 4
+    },
+    {
+      "image_hash": "12b6aa3ed6ab1839efa507bd798d6a040c770190fbf635f2d0939ec10982eb6b",
+      "caption": "图5改变黑车数量后的对比分析图",
+      "score": 0.178945,
+      "s_direct": 0.383537,
+      "s_link": 0.541596,
+      "s_co": 0.541596,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_181",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "用C- Free软件运行附录2.1代码将所得表8和表9的数据按顺序输入，并将所得运行结果运用SPSS软件进行处理得到图6改变黑车数量后的对比分析图。"
+        },
+        {
+          "block_id": "b_183",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过图6可只有第一组黑色车、车第三组黑色车和白色车的数量有所变化，并且第一组的黑色车数量改变最大，改变后的黑车数较未改变的黑车数减少了8辆，并通过计算可知第一组"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_179",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_181",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.773708,
+          "distance_weight": 0.7,
+          "s_link": 0.541596
+        },
+        "evidence_count": 2
+      },
+      "pos": 182,
+      "rank": 5
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 41,
+    "query_block_pair_count": 60,
+    "cf_count": 32,
+    "caption_refs_sample": [
+      "图1",
+      "图1",
+      "图1",
+      "图1",
+      "图1",
+      "图1",
+      "图1",
+      "图1",
+      "图2",
+      "图1"
+    ]
+  }
+}

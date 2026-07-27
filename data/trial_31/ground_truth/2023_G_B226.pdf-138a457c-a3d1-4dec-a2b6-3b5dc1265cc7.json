@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.1.0",
+  "paper_id": "2023_G_B226.pdf-138a457c-a3d1-4dec-a2b6-3b5dc1265cc7",
+  "sources": {
+    "annotation_path": "C:\\cursor_workspace\\multimodal_summary_20260620\\data_annotation\\annotations\\2023_G_B226.pdf-138a457c-a3d1-4dec-a2b6-3b5dc1265cc7.json",
+    "problem_md_path": "C:\\cursor_workspace\\multimodal_summary_20260620\\usable_data\\problem_mds\\2023_B.pdf-7f869431-5add-42cc-a6f9-de15e8e012e2.md"
+  },
+  "retrieval_gt": {
+    "relevant_figure_hashes": [
+      "12eec5b5cbd4f1cc81683097a4aa07e75efa370d7b4631d1122383504c56eaeb",
+      "be469d28a1a90aec0fc2e4f2512f4daf341ab317ccbb267b1e68a0bcb112b1f6",
+      "a1e47c97e1c9317833d5727644cdeffd35c777dbb4e3cc84e5c14e51e9f0e863",
+      "28aa0370ebe23139d6b562eca304b4ad5a613a34b65ff998ecdc17b7109e7be9",
+      "fea55e5bf16ce4cd9a213e701ede7b7f71f0c1c76f27ab764c7de2e1f90c084d",
+      "d8dd23716c6f2d209b4d75c79ad8161c35e1a1cbb63d4e0f6321eccc5881ba9c",
+      "aab331823d88069475e7b846c343818da3bcb1765188bac79c17da841416a3fd",
+      "505722209f9281239c24bef0122c40fa911abdbb23dadf1b724058e963f3aa6e"
+    ],
+    "note": "暂等于 insertions，后续可扩展为 2-8 张"
+  },
+  "insertion_gt": {
+    "selected_hashes": [
+      "12eec5b5cbd4f1cc81683097a4aa07e75efa370d7b4631d1122383504c56eaeb",
+      "be469d28a1a90aec0fc2e4f2512f4daf341ab317ccbb267b1e68a0bcb112b1f6",
+      "a1e47c97e1c9317833d5727644cdeffd35c777dbb4e3cc84e5c14e51e9f0e863",
+      "28aa0370ebe23139d6b562eca304b4ad5a613a34b65ff998ecdc17b7109e7be9",
+      "fea55e5bf16ce4cd9a213e701ede7b7f71f0c1c76f27ab764c7de2e1f90c084d",
+      "d8dd23716c6f2d209b4d75c79ad8161c35e1a1cbb63d4e0f6321eccc5881ba9c",
+      "aab331823d88069475e7b846c343818da3bcb1765188bac79c17da841416a3fd",
+      "505722209f9281239c24bef0122c40fa911abdbb23dadf1b724058e963f3aa6e"
+    ],
+    "reference_text": "多波束测深系统是由单波束测深发展而来的水深测量系统，研究多波束测线布设对于海洋测绘具有重要意义。本文建立测线优化模型，运用各类几何方法、向量分析、最小二乘法、贪心算法、模拟退火等方法研究多波束测深的覆盖宽度、相邻条带之间的重叠率以及测线布设问题。\n\n针对问题一：首先简要介绍多波束测量仪的工作原理，以海域中心点为坐标原点建立合适的坐标系。其次利用相似三角形原理计算海水深度，并通过几何知识推导关键角的关系式，然后基于正弦定理计算覆盖宽度。接着利用几何知识推导重叠率的计算公式并代入变量计算。最后得到特定位置处的指标，存放在result1. xlsx中。同时进行结果分析，并利用控制变量法探究覆盖宽度、重叠率随各参数的变化。\n\n针对问题二：以海域坡面中心为坐标原点建立三维空间坐标系，参考问题一，首先利用向量分析，根据向量叉乘得到测线方向与其在水平面上的投影组成的平面和海底坡面的交线的点向式方程，代入相应坐标求得海水深度。其次，利用线面角计算公式求得水平面与覆盖宽度所在直线的夹角。然后根据问题一建立的模型求解得到特定位置处的覆盖宽度，存放在result2. xlsx中。最后进行结果分析以及原因分析。\n\n针对问题三：对于一个具体的矩形海域，首先利用数学证明得到平行等深线走向进行测线布设是最佳方案。其次建立以测线总长度最短为目标，以测线完全覆盖海域、相邻条带之间的重叠率的取值范围为约束条件，建立单目标优化模型。然后基于贪心算法的循环遍历法，确定最优测线布设为34条，得到测线总长度为  $125936m$  。最后利用模拟退火对测线布设仿真检验，发现两种方法计算得到的误差很小，由此验证了模型的可靠性，并对开角、坡度进行灵敏度分析。\n\n针对问题四：首先利用单波束测量数据确定海域初貌，发现其地形起伏大，难以求解测线布设。其次参考问题三，利用等深线图对该海域进行初步划分。基于最小二乘法将各划分区域拟合成便于求解的坡面方程，通过粒子群算法求解得到坡面方程，并对拟合效果不佳的区域进行进一步划分。然后仍以测线的总长度最小为优化目标，修正问题三的约束条件，建立单目标优化模型。仍采用贪心算法求解各区域测线布设，得到测线的总长度、漏测海区占总待测海域面积的百分比、叠率超过  $20\\%$  部分的总长度分别为622海里、  $3.48\\%$  、30海里。最后进行结果分析和原因分析。\n\n文章的最后，对本文建立的模型进行评价，并在考虑检查线的情况对模型进行一定程度的改进。",
+    "multimodal_sequence": [
+      {
+        "type": "text",
+        "content": "多波束测深系统是由单波束测深发展而来的水深测量系统，研究多波束测线布设对于海洋测绘具有重要意义。本文建立测线优化模型，运用各类几何方法、向量分析、最小二乘法、贪心算法、模拟退火等方法研究多波束测深的覆盖宽度、相邻条带之间的重叠率以及测线布设问题。\n\n针对问题一：首先简要介绍多波束测量仪的工作原理，以海域中心点为坐标原点建立合适的坐标系。"
+      },
+      {
+        "type": "image",
+        "image_hash": "12eec5b5cbd4f1cc81683097a4aa07e75efa370d7b4631d1122383504c56eaeb",
+        "image_filename": "12eec5b5cbd4f1cc81683097a4aa07e75efa370d7b4631d1122383504c56eaeb.jpg",
+        "img_path": "images/12eec5b5cbd4f1cc81683097a4aa07e75efa370d7b4631d1122383504c56eaeb.jpg",
+        "source_type": "image",
+        "caption": "图1：多波束测深原理图"
+      },
+      {
+        "type": "image",
+        "image_hash": "be469d28a1a90aec0fc2e4f2512f4daf341ab317ccbb267b1e68a0bcb112b1f6",
+        "image_filename": "be469d28a1a90aec0fc2e4f2512f4daf341ab317ccbb267b1e68a0bcb112b1f6.jpg",
+        "img_path": "images/be469d28a1a90aec0fc2e4f2512f4daf341ab317ccbb267b1e68a0bcb112b1f6.jpg",
+        "source_type": "image",
+        "caption": "图2：多波束测量坐标系的建立"
+      },
+      {
+        "type": "text",
+        "content": "其次利用相似三角形原理计算海水深度，并通过几何知识推导关键角的关系式，然后基于正弦定理计算覆盖宽度。接着利用几何知识推导重叠率的计算公式并代入变量计算。最后得到特定位置处的指标，存放在result1. xlsx中。同时进行结果分析，并利用控制变量法探究覆盖宽度、重叠率随各参数的变化。"
+      },
+      {
+        "type": "image",
+        "image_hash": "a1e47c97e1c9317833d5727644cdeffd35c777dbb4e3cc84e5c14e51e9f0e863",
+        "image_filename": "a1e47c97e1c9317833d5727644cdeffd35c777dbb4e3cc84e5c14e51e9f0e863.jpg",
+        "img_path": "images/a1e47c97e1c9317833d5727644cdeffd35c777dbb4e3cc84e5c14e51e9f0e863.jpg",
+        "source_type": "image",
+        "caption": "图4：覆盖宽度计算"
+      },
+      {
+        "type": "image",
+        "image_hash": "28aa0370ebe23139d6b562eca304b4ad5a613a34b65ff998ecdc17b7109e7be9",
+        "image_filename": "28aa0370ebe23139d6b562eca304b4ad5a613a34b65ff998ecdc17b7109e7be9.jpg",
+        "img_path": "images/28aa0370ebe23139d6b562eca304b4ad5a613a34b65ff998ecdc17b7109e7be9.jpg",
+        "source_type": "image",
+        "caption": "图5：相邻条带之间的重叠"
+      },
+      {
+        "type": "text",
+        "content": "\n\n针对问题二：以海域坡面中心为坐标原点建立三维空间坐标系，"
+      },
+      {
+        "type": "image",
+        "image_hash": "fea55e5bf16ce4cd9a213e701ede7b7f71f0c1c76f27ab764c7de2e1f90c084d",
+        "image_filename": "fea55e5bf16ce4cd9a213e701ede7b7f71f0c1c76f27ab764c7de2e1f90c084d.jpg",
+        "img_path": "images/fea55e5bf16ce4cd9a213e701ede7b7f71f0c1c76f27ab764c7de2e1f90c084d.jpg",
+        "source_type": "image",
+        "caption": "图10：问题二坐标系"
+      },
+      {
+        "type": "text",
+        "content": "参考问题一，首先利用向量分析，根据向量叉乘得到测线方向与其在水平面上的投影组成的平面和海底坡面的交线的点向式方程，代入相应坐标求得海水深度。其次，利用线面角计算公式求得水平面与覆盖宽度所在直线的夹角。然后根据问题一建立的模型求解得到特定位置处的覆盖宽度，存放在result2. xlsx中。最后进行结果分析以及原因分析。"
+      },
+      {
+        "type": "image",
+        "image_hash": "d8dd23716c6f2d209b4d75c79ad8161c35e1a1cbb63d4e0f6321eccc5881ba9c",
+        "image_filename": "d8dd23716c6f2d209b4d75c79ad8161c35e1a1cbb63d4e0f6321eccc5881ba9c.jpg",
+        "img_path": "images/d8dd23716c6f2d209b4d75c79ad8161c35e1a1cbb63d4e0f6321eccc5881ba9c.jpg",
+        "source_type": "image",
+        "caption": "图9：问题二求解流程"
+      },
+      {
+        "type": "text",
+        "content": "\n\n针对问题三：对于一个具体的矩形海域，"
+      },
+      {
+        "type": "image",
+        "image_hash": "aab331823d88069475e7b846c343818da3bcb1765188bac79c17da841416a3fd",
+        "image_filename": "aab331823d88069475e7b846c343818da3bcb1765188bac79c17da841416a3fd.jpg",
+        "img_path": "images/aab331823d88069475e7b846c343818da3bcb1765188bac79c17da841416a3fd.jpg",
+        "source_type": "image",
+        "caption": "图15：待测矩形海域"
+      },
+      {
+        "type": "text",
+        "content": "首先利用数学证明得到平行等深线走向进行测线布设是最佳方案。其次建立以测线总长度最短为目标，以测线完全覆盖海域、相邻条带之间的重叠率的取值范围为约束条件，建立单目标优化模型。然后基于贪心算法的循环遍历法，确定最优测线布设为34条，得到测线总长度为  $125936m$  。最后利用模拟退火对测线布设仿真检验，发现两种方法计算得到的误差很小，由此验证了模型的可靠性，并对开角、坡度进行灵敏度分析。"
+      },
+      {
+        "type": "image",
+        "image_hash": "505722209f9281239c24bef0122c40fa911abdbb23dadf1b724058e963f3aa6e",
+        "image_filename": "505722209f9281239c24bef0122c40fa911abdbb23dadf1b724058e963f3aa6e.jpg",
+        "img_path": "images/505722209f9281239c24bef0122c40fa911abdbb23dadf1b724058e963f3aa6e.jpg",
+        "source_type": "image",
+        "caption": "图17：最优测线布设求解流程"
+      },
+      {
+        "type": "text",
+        "content": "\n\n针对问题四：首先利用单波束测量数据确定海域初貌，发现其地形起伏大，难以求解测线布设。其次参考问题三，利用等深线图对该海域进行初步划分。基于最小二乘法将各划分区域拟合成便于求解的坡面方程，通过粒子群算法求解得到坡面方程，并对拟合效果不佳的区域进行进一步划分。然后仍以测线的总长度最小为优化目标，修正问题三的约束条件，建立单目标优化模型。仍采用贪心算法求解各区域测线布设，得到测线的总长度、漏测海区占总待测海域面积的百分比、叠率超过  $20\\%$  部分的总长度分别为622海里、  $3.48\\%$  、30海里。最后进行结果分析和原因分析。\n\n文章的最后，对本文建立的模型进行评价，并在考虑检查线的情况对模型进行一定程度的改进。"
+      }
+    ]
+  }
+}

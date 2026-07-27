@@ -17,8 +17,20 @@ class CaptionDenseRanker:
 
     method_name = "Caption-Dense-v4"
 
-    def __init__(self, cache_dir: Path, embedder, dry_run: bool = False):
-        self.cache = TextEmbeddingCache(cache_dir, embedder, dry_run=dry_run)
+    def __init__(
+        self,
+        cache_dir: Path,
+        embedder,
+        dry_run: bool = False,
+        *,
+        query_use_keywords: bool = True,
+    ):
+        self.cache = TextEmbeddingCache(
+            cache_dir,
+            embedder,
+            dry_run=dry_run,
+            query_use_keywords=query_use_keywords,
+        )
 
     def rank(self, sample: Stage2Sample) -> list:
         if not sample.figures:

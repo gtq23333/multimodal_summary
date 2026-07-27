@@ -1,0 +1,97 @@
+﻿metric,metric_zh,baseline,baseline_zh,wins,ties,losses,win_rate
+r_precision,R-Precision,Proposed-v2,Proposed-v2（候选池增强）,4,27,0,0.129
+r_precision,R-Precision,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,9,14,8,0.29
+r_precision,R-Precision,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,16,11,4,0.516
+r_precision,R-Precision,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,12,10,9,0.387
+r_precision,R-Precision,Layout-Order,Layout-Order,9,18,4,0.29
+r_precision,R-Precision,Caption-BM25,Caption-BM25,20,7,4,0.645
+r_precision,R-Precision,Caption-Dense-v4,Caption-Dense-v4,19,11,1,0.613
+r_precision,R-Precision,Zero-shot-CLIP,Zero-shot CLIP,20,6,5,0.645
+ip@3,IP@3,Proposed-v2,Proposed-v2（候选池增强）,1,28,2,0.032
+ip@3,IP@3,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,9,15,7,0.29
+ip@3,IP@3,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,13,12,6,0.419
+ip@3,IP@3,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,12,11,8,0.387
+ip@3,IP@3,Layout-Order,Layout-Order,9,19,3,0.29
+ip@3,IP@3,Caption-BM25,Caption-BM25,18,9,4,0.581
+ip@3,IP@3,Caption-Dense-v4,Caption-Dense-v4,19,10,2,0.613
+ip@3,IP@3,Zero-shot-CLIP,Zero-shot CLIP,18,8,5,0.581
+ir@3,IR@3,Proposed-v2,Proposed-v2（候选池增强）,1,28,2,0.032
+ir@3,IR@3,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,9,15,7,0.29
+ir@3,IR@3,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,13,12,6,0.419
+ir@3,IR@3,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,12,11,8,0.387
+ir@3,IR@3,Layout-Order,Layout-Order,9,19,3,0.29
+ir@3,IR@3,Caption-BM25,Caption-BM25,18,9,4,0.581
+ir@3,IR@3,Caption-Dense-v4,Caption-Dense-v4,19,10,2,0.613
+ir@3,IR@3,Zero-shot-CLIP,Zero-shot CLIP,18,8,5,0.581
+ir@4,IR@4,Proposed-v2,Proposed-v2（候选池增强）,2,28,1,0.065
+ir@4,IR@4,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,7,16,8,0.226
+ir@4,IR@4,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,12,11,8,0.387
+ir@4,IR@4,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,10,14,7,0.323
+ir@4,IR@4,Layout-Order,Layout-Order,10,17,4,0.323
+ir@4,IR@4,Caption-BM25,Caption-BM25,18,11,2,0.581
+ir@4,IR@4,Caption-Dense-v4,Caption-Dense-v4,20,8,3,0.645
+ir@4,IR@4,Zero-shot-CLIP,Zero-shot CLIP,18,9,4,0.581
+ir@5,IR@5,Proposed-v2,Proposed-v2（候选池增强）,2,28,1,0.065
+ir@5,IR@5,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,9,15,7,0.29
+ir@5,IR@5,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,11,15,5,0.355
+ir@5,IR@5,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,10,15,6,0.323
+ir@5,IR@5,Layout-Order,Layout-Order,11,16,4,0.355
+ir@5,IR@5,Caption-BM25,Caption-BM25,20,10,1,0.645
+ir@5,IR@5,Caption-Dense-v4,Caption-Dense-v4,17,13,1,0.548
+ir@5,IR@5,Zero-shot-CLIP,Zero-shot CLIP,17,11,3,0.548
+ir@6,IR@6,Proposed-v2,Proposed-v2（候选池增强）,2,28,1,0.065
+ir@6,IR@6,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,8,15,8,0.258
+ir@6,IR@6,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,11,15,5,0.355
+ir@6,IR@6,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,8,17,6,0.258
+ir@6,IR@6,Layout-Order,Layout-Order,11,15,5,0.355
+ir@6,IR@6,Caption-BM25,Caption-BM25,18,13,0,0.581
+ir@6,IR@6,Caption-Dense-v4,Caption-Dense-v4,17,13,1,0.548
+ir@6,IR@6,Zero-shot-CLIP,Zero-shot CLIP,13,16,2,0.419
+ir@7,IR@7,Proposed-v2,Proposed-v2（候选池增强）,1,29,1,0.032
+ir@7,IR@7,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,7,16,8,0.226
+ir@7,IR@7,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,10,15,6,0.323
+ir@7,IR@7,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,8,15,8,0.258
+ir@7,IR@7,Layout-Order,Layout-Order,10,16,5,0.323
+ir@7,IR@7,Caption-BM25,Caption-BM25,13,17,1,0.419
+ir@7,IR@7,Caption-Dense-v4,Caption-Dense-v4,16,14,1,0.516
+ir@7,IR@7,Zero-shot-CLIP,Zero-shot CLIP,12,16,3,0.387
+ir@8,IR@8,Proposed-v2,Proposed-v2（候选池增强）,1,30,0,0.032
+ir@8,IR@8,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,6,17,8,0.194
+ir@8,IR@8,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,9,16,6,0.29
+ir@8,IR@8,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,6,17,8,0.194
+ir@8,IR@8,Layout-Order,Layout-Order,9,17,5,0.29
+ir@8,IR@8,Caption-BM25,Caption-BM25,12,17,2,0.387
+ir@8,IR@8,Caption-Dense-v4,Caption-Dense-v4,17,13,1,0.548
+ir@8,IR@8,Zero-shot-CLIP,Zero-shot CLIP,11,16,4,0.355
+jaccard@3,Jaccard@3,Proposed-v2,Proposed-v2（候选池增强）,1,28,2,0.032
+jaccard@3,Jaccard@3,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,9,15,7,0.29
+jaccard@3,Jaccard@3,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,13,12,6,0.419
+jaccard@3,Jaccard@3,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,12,11,8,0.387
+jaccard@3,Jaccard@3,Layout-Order,Layout-Order,9,19,3,0.29
+jaccard@3,Jaccard@3,Caption-BM25,Caption-BM25,18,9,4,0.581
+jaccard@3,Jaccard@3,Caption-Dense-v4,Caption-Dense-v4,19,10,2,0.613
+jaccard@3,Jaccard@3,Zero-shot-CLIP,Zero-shot CLIP,18,8,5,0.581
+maxsim@3,MaxSim@3,Proposed-v2,Proposed-v2（候选池增强）,3,25,3,0.097
+maxsim@3,MaxSim@3,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,13,5,13,0.419
+maxsim@3,MaxSim@3,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,15,2,14,0.484
+maxsim@3,MaxSim@3,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,12,2,17,0.387
+maxsim@3,MaxSim@3,Layout-Order,Layout-Order,12,9,10,0.387
+maxsim@3,MaxSim@3,Caption-BM25,Caption-BM25,23,1,7,0.742
+maxsim@3,MaxSim@3,Caption-Dense-v4,Caption-Dense-v4,22,1,8,0.71
+maxsim@3,MaxSim@3,Zero-shot-CLIP,Zero-shot CLIP,20,2,9,0.645
+map,MAP (AP),Proposed-v2,Proposed-v2（候选池增强）,9,13,9,0.29
+map,MAP (AP),Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,16,5,10,0.516
+map,MAP (AP),Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,20,3,8,0.645
+map,MAP (AP),Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,17,2,12,0.548
+map,MAP (AP),Layout-Order,Layout-Order,14,6,11,0.452
+map,MAP (AP),Caption-BM25,Caption-BM25,23,1,7,0.742
+map,MAP (AP),Caption-Dense-v4,Caption-Dense-v4,25,3,3,0.806
+map,MAP (AP),Zero-shot-CLIP,Zero-shot CLIP,22,2,7,0.71
+mrr,MRR,Proposed-v2,Proposed-v2（候选池增强）,0,28,3,0.0
+mrr,MRR,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,11,15,5,0.355
+mrr,MRR,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,15,11,5,0.484
+mrr,MRR,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,15,11,5,0.484
+mrr,MRR,Layout-Order,Layout-Order,3,24,4,0.097
+mrr,MRR,Caption-BM25,Caption-BM25,16,11,4,0.516
+mrr,MRR,Caption-Dense-v4,Caption-Dense-v4,22,8,1,0.71
+mrr,MRR,Zero-shot-CLIP,Zero-shot CLIP,20,8,3,0.645

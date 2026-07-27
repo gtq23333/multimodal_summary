@@ -9,12 +9,52 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-METRIC_COLS = ["r_precision", "ip@3", "ir@3", "jaccard@3", "maxsim@3", "map", "mrr"]
+METRIC_COLS = [
+    "r_precision",
+    "ip@3",
+    "ir@3",
+    "ir@4",
+    "ir@5",
+    "ir@6",
+    "ir@7",
+    "ir@8",
+    "jaccard@3",
+    "maxsim@3",
+    "map",
+    "mrr",
+]
+
+BAR_METRIC_COLS = ["r_precision", "ip@3", "ir@3", "jaccard@3", "maxsim@3", "map", "mrr"]
+
+RECALL_METRIC_COLS = ["ir@3", "ir@4", "ir@5", "ir@6", "ir@7", "ir@8"]
+
+ABLATION_CORE_METRIC_COLS = ["r_precision", "ip@3", "ir@3", "jaccard@3", "map", "mrr"]
+
+ABLATION_RECALL_METRIC_COLS = ["ir@3", "ir@4", "ir@5", "ir@6", "ir@7"]
+
+ABLATION_TABLE_METRIC_COLS = [
+    "r_precision",
+    "ip@3",
+    "ir@3",
+    "ir@4",
+    "ir@5",
+    "ir@6",
+    "ir@7",
+    "ir@8",
+    "jaccard@3",
+    "map",
+    "mrr",
+]
 
 METRIC_ZH = {
     "r_precision": "R-Precision",
     "ip@3": "IP@3",
     "ir@3": "IR@3",
+    "ir@4": "IR@4",
+    "ir@5": "IR@5",
+    "ir@6": "IR@6",
+    "ir@7": "IR@7",
+    "ir@8": "IR@8",
     "jaccard@3": "Jaccard@3",
     "maxsim@3": "MaxSim@3",
     "map": "MAP (AP)",
@@ -23,6 +63,7 @@ METRIC_ZH = {
 
 METHOD_ORDER = [
     "Proposed",
+    "Proposed-v2",
     "Qwen3-VL-Rerank-ImgCap+Link",
     "Qwen3-VL-Rerank-ImgCap",
     "Qwen3-VL-Rerank-Img",
@@ -34,6 +75,7 @@ METHOD_ORDER = [
 
 METHOD_COLORS = {
     "Proposed": "#e63946",
+    "Proposed-v2": "#f77f00",
     "Qwen3-VL-Rerank-ImgCap+Link": "#6a1b9a",
     "Qwen3-VL-Rerank-ImgCap": "#8e44ad",
     "Qwen3-VL-Rerank-Img": "#c39bd3",
@@ -45,6 +87,7 @@ METHOD_COLORS = {
 
 METHOD_ZH = {
     "Proposed": "Proposed（本文方法）",
+    "Proposed-v2": "Proposed-v2（候选池增强）",
     "Qwen3-VL-Rerank-ImgCap+Link": "Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）",
     "Qwen3-VL-Rerank-ImgCap": "Qwen3-VL-Rerank-ImgCap（强基线）",
     "Qwen3-VL-Rerank-Img": "Qwen3-VL-Rerank-Img（弱基线）",
@@ -52,6 +95,25 @@ METHOD_ZH = {
     "Caption-BM25": "Caption-BM25",
     "Caption-Dense-v4": "Caption-Dense-v4",
     "Zero-shot-CLIP": "Zero-shot CLIP",
+}
+
+ABLATION_INCREMENTAL_ORDER = [
+    "DirectOnly",
+    "Direct+Link",
+    "Direct+Link+Layout",
+    "Direct+Link+Layout+Type",
+    "LG-JSSF",
+    "LG-JSSF+ClusterAdd",
+    "LG-JSSF+ClusterMul",
+]
+
+RECALL_BAR_COLORS = {
+    "ir@3": "#1d3557",
+    "ir@4": "#457b9d",
+    "ir@5": "#2a9d8f",
+    "ir@6": "#e9c46a",
+    "ir@7": "#e76f51",
+    "ir@8": "#f4a261",
 }
 
 
@@ -315,10 +377,34 @@ def plot_per_paper_jaccard(df: pd.DataFrame, metric: str = "jaccard@3") -> plt.F
     return fig
 
 
+def _ablation_chart_layout(n_methods: int, n_metrics: int) -> dict[str, float | int]:
+    """按方法数与指标数自适应图表尺寸，避免柱/图例重叠。"""
+    group_width = max(0.40, min(0.88, 0.90 - 0.055 * max(0, n_metrics - 3)))
+    fig_w = max(13.0, n_methods * (0.72 + 0.11 * n_metrics))
+    fig_h = 5.4 + 0.22 * max(0, n_metrics - 4)
+    legend_rows = (n_metrics + 3) // 4
+    bottom = 0.26 + 0.07 * legend_rows
+    legend_y = -0.18 - 0.075 * legend_rows
+    xtick_fs = 7 if n_methods >= 7 else 8
+    legend_fs = 7 if n_metrics >= 5 else 8
+    legend_ncol = min(4, max(2, n_metrics))
+    return {
+        "group_width": group_width,
+        "fig_w": fig_w,
+        "fig_h": fig_h,
+        "bottom": bottom,
+        "legend_y": legend_y,
+        "xtick_fs": xtick_fs,
+        "legend_fs": legend_fs,
+        "legend_ncol": legend_ncol,
+    }
+
+
 def plot_ablation_chart(
     ablation_df: pd.DataFrame,
     title: str,
     method_filter: list[str] | None = None,
+    metric_cols: list[str] | None = None,
 ) -> plt.Figure:
     """消融分组柱状图：多指标并列，按方法分组。"""
     _setup_matplotlib_zh()
@@ -326,10 +412,8 @@ def plot_ablation_chart(
         plot_df = ablation_df[ablation_df["method_name"].isin(method_filter)].copy()
     else:
         plot_df = ablation_df.copy()
-    metrics = _available_metric_cols(
-        plot_df,
-        ["r_precision", "ip@3", "ir@3", "map", "mrr"],
-    )
+    default_metrics = metric_cols or ABLATION_CORE_METRIC_COLS
+    metrics = _available_metric_cols(plot_df, default_metrics)
     if not metrics:
         fig, ax = plt.subplots()
         ax.text(0.5, 0.5, "无可用消融指标", ha="center")
@@ -343,10 +427,9 @@ def plot_ablation_chart(
 
     n_methods = len(summary)
     n_metrics = len(metrics)
-    bar_width, offsets = _grouped_bar_offsets(n_metrics, group_width=0.86)
-    fig_w = max(11, n_methods * 1.45)
-    fig_h = 5.8 if n_methods >= 6 else 5.2
-    fig, ax = plt.subplots(figsize=(fig_w, fig_h))
+    layout = _ablation_chart_layout(n_methods, n_metrics)
+    bar_width, offsets = _grouped_bar_offsets(n_metrics, group_width=layout["group_width"])
+    fig, ax = plt.subplots(figsize=(layout["fig_w"], layout["fig_h"]))
     x = np.arange(n_methods)
 
     for i, metric in enumerate(metrics):
@@ -354,24 +437,137 @@ def plot_ablation_chart(
             x + offsets[i],
             summary[metric],
             width=bar_width,
-            label=METRIC_ZH[metric],
+            label=METRIC_ZH.get(metric, metric),
             alpha=0.88,
         )
     ax.set_xticks(x)
-    ax.set_xticklabels(summary["method_name"], rotation=40, ha="right", fontsize=8)
+    ax.set_xticklabels(
+        summary["method_name"],
+        rotation=42,
+        ha="right",
+        fontsize=layout["xtick_fs"],
+    )
     ax.set_ylim(0, 1.05)
-    ax.set_title(title, fontweight="bold", pad=10)
+    ax.set_title(title, fontweight="bold", pad=10, fontsize=11)
     ax.grid(axis="y", alpha=0.3, linestyle="--")
     ax.legend(
         loc="upper center",
-        bbox_to_anchor=(0.5, -0.22 if n_methods >= 6 else -0.18),
-        ncol=min(5, n_metrics),
-        fontsize=8,
+        bbox_to_anchor=(0.5, layout["legend_y"]),
+        ncol=int(layout["legend_ncol"]),
+        fontsize=layout["legend_fs"],
         frameon=False,
     )
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
-    fig.subplots_adjust(bottom=0.28 if n_methods >= 6 else 0.24)
+    fig.subplots_adjust(bottom=layout["bottom"])
+    return fig
+
+
+def _ablation_drop_one_order(ablation_df: pd.DataFrame, fusion: str) -> list[str]:
+    """fusion: 'Add' | 'Mul'"""
+    suffix = f"({fusion})"
+    full = f"FullCluster{fusion}"
+    methods = [
+        m
+        for m in ablation_df["method_name"].unique()
+        if m == full or (m.startswith("w/o") and m.endswith(suffix))
+    ]
+    order = {full: 0}
+    for i, m in enumerate(sorted(m for m in methods if m != full), start=1):
+        order[m] = i
+    return sorted(methods, key=lambda m: order.get(m, 99))
+
+
+def _draw_ablation_recall_panel(
+    ax: plt.Axes,
+    summary: pd.DataFrame,
+    metrics: list[str],
+    title: str,
+) -> None:
+    n_methods = len(summary)
+    n_metrics = len(metrics)
+    layout = _ablation_chart_layout(n_methods, n_metrics)
+    bar_width, offsets = _grouped_bar_offsets(n_metrics, group_width=layout["group_width"])
+    x = np.arange(n_methods)
+
+    for i, metric in enumerate(metrics):
+        ax.bar(
+            x + offsets[i],
+            summary[metric],
+            width=bar_width,
+            label=METRIC_ZH.get(metric, metric),
+            color=RECALL_BAR_COLORS.get(metric),
+            alpha=0.92,
+        )
+    ax.set_xticks(x)
+    ax.set_xticklabels(
+        summary["method_name"],
+        rotation=42,
+        ha="right",
+        fontsize=layout["xtick_fs"],
+    )
+    ax.set_ylim(0, 1.05)
+    ax.set_ylabel("Image Recall")
+    ax.set_title(title, fontweight="bold", fontsize=10, pad=8)
+    ax.grid(axis="y", alpha=0.3, linestyle="--")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+
+
+def plot_ablation_recall_bars(ablation_df: pd.DataFrame) -> plt.Figure:
+    """
+    消融专用：单图三面板，仅展示 IR@3/4/5/6/7 分组条形统计。
+    上：递增式消融；中：FullClusterAdd + drop-one；下：FullClusterMul + drop-one。
+    """
+    _setup_matplotlib_zh()
+    metrics = _available_metric_cols(ablation_df, ABLATION_RECALL_METRIC_COLS)
+    if not metrics:
+        fig, ax = plt.subplots()
+        ax.text(0.5, 0.5, "无可用 IR@K 消融指标", ha="center")
+        return fig
+
+    panels: list[tuple[list[str], str]] = [
+        (ABLATION_INCREMENTAL_ORDER, "递增式消融"),
+        (_ablation_drop_one_order(ablation_df, "Add"), "FullClusterAdd 与 Drop-one（Additive）"),
+        (_ablation_drop_one_order(ablation_df, "Mul"), "FullClusterMul 与 Drop-one（Multiplicative）"),
+    ]
+    panels = [(methods, title) for methods, title in panels if methods]
+
+    max_methods = max(len(m) for m, _ in panels)
+    layout = _ablation_chart_layout(max_methods, len(metrics))
+    fig_h = 4.2 * len(panels) + 0.6 * layout["legend_ncol"]
+    fig, axes = plt.subplots(
+        len(panels),
+        1,
+        figsize=(max(14.0, layout["fig_w"]), fig_h),
+        squeeze=False,
+    )
+
+    for ax_row, (methods, title) in zip(axes.flatten(), panels):
+        plot_df = ablation_df[ablation_df["method_name"].isin(methods)]
+        summary = plot_df.groupby("method_name")[metrics].mean().reset_index()
+        order = {m: i for i, m in enumerate(methods)}
+        summary["_order"] = summary["method_name"].map(lambda m: order.get(m, 999))
+        summary = summary.sort_values("_order").drop(columns=["_order"])
+        _draw_ablation_recall_panel(ax_row, summary, metrics, title)
+
+    handles, labels = axes.flatten()[0].get_legend_handles_labels()
+    fig.legend(
+        handles,
+        labels,
+        loc="upper center",
+        bbox_to_anchor=(0.5, 0.02),
+        ncol=len(metrics),
+        fontsize=8,
+        frameon=False,
+    )
+    fig.suptitle(
+        "消融实验 Image Recall（IR@3 / IR@4 / IR@5 / IR@6 / IR@7）",
+        fontsize=12,
+        fontweight="bold",
+        y=0.995,
+    )
+    fig.subplots_adjust(hspace=0.58, bottom=0.10, top=0.93)
     return fig
 
 
@@ -418,6 +614,9 @@ def export_stage2_reranking_visuals(
     if not metric_cols:
         raise ValueError("结果 CSV 中未找到任何已知指标列，请检查 stage2_reranking_eval_results.csv 格式。")
 
+    bar_metric_cols = _available_metric_cols(df, BAR_METRIC_COLS)
+    recall_metric_cols = _available_metric_cols(df, RECALL_METRIC_COLS)
+
     summary_df = build_summary_table(df, metric_cols)
     agg_df = aggregate_by_method(df, metric_cols)
     win_df = compute_win_rates(df, metric_cols=metric_cols)
@@ -435,34 +634,40 @@ def export_stage2_reranking_visuals(
     win_df.to_csv(win_csv, index=False, encoding="utf-8-sig")
 
     charts = {
-        "bar": plot_method_bar_chart(df, metric_cols),
-        "heatmap": plot_heatmap(df, metric_cols),
-        "delta": plot_proposed_delta(df, metric_cols),
+        "bar": plot_method_bar_chart(df, bar_metric_cols or metric_cols),
+        "heatmap": plot_heatmap(df, bar_metric_cols or metric_cols),
+        "delta": plot_proposed_delta(df, bar_metric_cols or metric_cols),
         "per_paper": plot_per_paper_jaccard(df),
     }
+    if recall_metric_cols:
+        charts["ir_recall"] = plot_method_bar_chart(
+            df,
+            recall_metric_cols,
+        )
     ablation_df = ablation_df if ablation_df is not None else pd.DataFrame()
     grid_df = grid_df if grid_df is not None else pd.DataFrame()
     if not ablation_df.empty:
-        incremental = [
-            "DirectOnly",
-            "Direct+Link",
-            "Direct+Link+Layout",
-            "Direct+Link+Layout+Type",
-            "LG-JSSF",
-            "LG-JSSF+ClusterAdd",
-            "LG-JSSF+ClusterMul",
+        incremental = ABLATION_INCREMENTAL_ORDER
+        drop_one = [
+            m
+            for m in ablation_df["method_name"].unique()
+            if m.startswith("w/o") or m.startswith("FullCluster")
         ]
-        drop_one = [m for m in ablation_df["method_name"].unique() if m.startswith("w/o") or m.startswith("FullCluster")]
+        ablation_recall_cols = _available_metric_cols(ablation_df, ABLATION_RECALL_METRIC_COLS)
         charts["ablation_incremental"] = plot_ablation_chart(
             ablation_df,
             "递增式消融：核心模块逐步加入",
             incremental,
+            metric_cols=ABLATION_CORE_METRIC_COLS,
         )
         charts["ablation_drop_one"] = plot_ablation_chart(
             ablation_df,
             "Drop-one 消融：从 FullCluster 移除单个模块",
             drop_one,
+            metric_cols=ABLATION_CORE_METRIC_COLS,
         )
+        if ablation_recall_cols:
+            charts["ablation_recall"] = plot_ablation_recall_bars(ablation_df)
     if not grid_df.empty:
         charts["cluster_grid"] = plot_cluster_grid(grid_df)
     png_paths: dict[str, Path] = {}
@@ -526,20 +731,27 @@ def _build_html(
 
     ablation_sections = ""
     if ablation_df is not None and not ablation_df.empty:
-        ablation_metrics = _available_metric_cols(
-            ablation_df,
-            ["r_precision", "ip@3", "ir@3", "map", "mrr"],
-        )
+        ablation_metrics = _available_metric_cols(ablation_df, ABLATION_TABLE_METRIC_COLS)
         ablation_summary = ablation_df.groupby("method_name")[ablation_metrics].mean().reset_index()
         ablation_headers = "".join(f"<th>{METRIC_ZH.get(c, c)}</th>" for c in ablation_metrics)
         ablation_rows = ""
         for _, row in ablation_summary.iterrows():
             ablation_cells = "".join(f"<td>{row[c]:.3f}</td>" for c in ablation_metrics)
             ablation_rows += f"<tr><td>{row['method_name']}</td>{ablation_cells}</tr>\n"
+        incremental_recall_img = ""
+        if b64.get("ablation_recall"):
+            incremental_recall_img = f"""
+<div class="card">
+<h2>8b. 消融 Image Recall 条形图 <span class="tag">IR@3/4/5/6/7</span></h2>
+<p class="note">仅展示召回率指标：上为递增式消融，中为 FullClusterAdd 及 drop-one，下为 FullClusterMul 及 drop-one。K 越大表示从更深候选池中统计 GT 覆盖率。</p>
+<div class="chart-wrap"><img src="data:image/png;base64,{b64['ablation_recall']}" alt="ablation recall bars"></div>
+</div>
+"""
+        drop_one_recall_img = ""
         ablation_sections += f"""
 <div class="card">
 <h2>7. ClusterPrior 与递增式消融</h2>
-<p class="note">展示 Direct、Link、Layout、Type 与 ClusterPrior 逐步加入后的效果。</p>
+<p class="note">展示 Direct、Link、Layout、Type 与 ClusterPrior 逐步加入后的核心指标。</p>
 <div class="chart-wrap"><img src="data:image/png;base64,{b64.get('ablation_incremental', '')}" alt="incremental ablation"></div>
 </div>
 
@@ -548,9 +760,11 @@ def _build_html(
 <p class="note">从 FullCluster 中移除单个模块，观察各指标的变化。</p>
 <div class="chart-wrap"><img src="data:image/png;base64,{b64.get('ablation_drop_one', '')}" alt="drop-one ablation"></div>
 </div>
+{incremental_recall_img}
 
 <div class="card">
 <h2>9. 消融汇总表</h2>
+<p class="note">含 IR@3/4/5/6/7；列较多时可横向滚动查看。</p>
 <table class="summary-table">
 <tr><th>方法</th>{ablation_headers}</tr>
 {ablation_rows}
@@ -569,6 +783,15 @@ def _build_html(
 """
 
     metric_headers = "".join(f"<th>{METRIC_ZH[c]}</th>" for c in metric_cols)
+    ir_recall_section = ""
+    if b64.get("ir_recall"):
+        ir_recall_section = f"""
+<div class="card">
+<h2>2b. Image Recall 多档 K 对比 <span class="tag">IR@3/4/5/6/7</span></h2>
+<p class="note">扩大 Top-K 窗口后的 GT 覆盖率；|GT|&gt;3 时 IR@4/5/6/7 可观察更深候选池的召回增益。</p>
+<div class="chart-wrap"><img src="data:image/png;base64,{b64['ir_recall']}" alt="ir recall chart"></div>
+</div>
+"""
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -587,8 +810,9 @@ tr.proposed {{ background: #fff5f5; }}
 tr.proposed td:first-child {{ color: #e63946; }}
 img {{ max-width: 100%; height: auto; border-radius: 6px; margin: .5rem 0; }}
 .chart-wrap {{ overflow-x: auto; margin: .5rem 0; padding-bottom: .25rem; }}
-.chart-wrap img {{ max-width: none; width: 100%; min-width: 720px; }}
-table.summary-table {{ display: block; overflow-x: auto; white-space: nowrap; }}
+.chart-wrap img {{ max-width: none; width: 100%; min-width: 820px; }}
+table.summary-table {{ display: block; overflow-x: auto; white-space: nowrap; font-size: .82rem; }}
+table.summary-table th, table.summary-table td {{ padding: .45rem .55rem; }}
 .grid {{ display: grid; grid-template-columns: 1fr; gap: 1rem; }}
 .note {{ font-size: .85rem; color: #636e72; line-height: 1.6; }}
 .tag {{ display: inline-block; background: #ffeef0; color: #e63946; padding: .15rem .5rem; border-radius: 4px; font-size: .8rem; }}
@@ -612,6 +836,7 @@ table.summary-table {{ display: block; overflow-x: auto; white-space: nowrap; }}
 <p class="note">每个子图对应一个指标；误差棒为标准差；红色为 Proposed。</p>
 <div class="chart-wrap"><img src="data:image/png;base64,{b64['bar']}" alt="bar chart"></div>
 </div>
+{ir_recall_section}
 
 <div class="card">
 <h2>3. 方法 × 指标 热力图</h2>
@@ -643,7 +868,7 @@ table.summary-table {{ display: block; overflow-x: auto; white-space: nowrap; }}
 <p><b>如何解读：</b></p>
 <ul>
 <li><b>Image Precision (IP@3)</b>：MSMO 标准，|Top-3 命中 GT| / 3 — 推荐精确率，Stage-3 输入质量。</li>
-<li><b>Image Recall (IR@3)</b>：MSMO 标准，|Top-3 命中 GT| / |GT| — GT 覆盖率，Stage-3 可挽救上限（GT 未进 Top-3 则 VLM 无法补回）。</li>
+<li><b>Image Recall (IR@K)</b>：|Top-K 命中 GT| / |GT|；IR@3 对应 Stage-3 输入槽位，IR@4/5/6/7 用于观察扩大候选窗口后的 GT 覆盖率。</li>
 <li><b>R-Precision</b>：取 Top-|GT| 的 recall 式指标；|GT|&gt;3 时比 IR@3 多看更深层候选。</li>
 <li><b>Exact-match 指标</b>（Jaccard@3、MAP、MRR）衡量排序与 ID 命中。</li>
 <li><b>MaxSim@3</b> 是软视觉相似度，高 MaxSim + 低 Jaccard 可能意味着「视觉相似但未 exact match」。</li>
@@ -668,7 +893,7 @@ def load_results_and_visualize(results_csv: Path, output_dir: Path | None = None
     if missing:
         warnings.warn(
             f"结果 CSV 缺少指标列 {missing}，图表将仅展示 {metric_cols}。"
-            "若需 IP@3/IR@3，请用 trial_20 配置重新运行 evaluate_stage2_reranking.py。",
+            "若需完整指标列，请用最新配置重新运行 evaluate_stage2_reranking.py。",
             stacklevel=2,
         )
 

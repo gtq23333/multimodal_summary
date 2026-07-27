@@ -1,0 +1,908 @@
+{
+  "paper_id": "2018_G_A440.pdf-065775f5-ff13-48f5-b12d-623da439971f",
+  "top3_figures": [
+    {
+      "image_hash": "87e2b518560908a3c9480ca8a88a6dfb816089d1c7a938ebdcaa972ab4a530ac",
+      "caption": "图1：一维传热模型",
+      "score": 0.680547,
+      "s_direct": 0.626198,
+      "s_link": 0.330593,
+      "s_co": 0.330593,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_60",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "因而考虑进行简化，建立一维传热模型，仅研究热量由作业服外层到皮肤表面的传热过程，并建立坐标系如下。"
+        },
+        {
+          "block_id": "b_62",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3 辐射传热"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_243",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_60",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.826482,
+          "distance_weight": 0.4,
+          "s_link": 0.330593,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.478395,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_215",
+          "b_69",
+          "b_75",
+          "b_236",
+          "b_73"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.839912,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.803199,
+          "cluster_margin": 0.036713,
+          "cluster_prior_raw": 0.808607,
+          "cluster_prior": 0.808607,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.808607
+        }
+      },
+      "pos": 61,
+      "rank": 1,
+      "score_base": 0.478395
+    },
+    {
+      "image_hash": "536ef319d4b8ba47add8608ee370bc5423f95b8fd41523b659631cebe77c1531",
+      "caption": "图3：离散示意图",
+      "score": 0.557462,
+      "s_direct": 0.4113,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_103",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "传热问题数值求解的基本思想是将时间、空间上中的连续物理量离散在各个节点上，用有限差分法求解物理量的数值解[4]。"
+        },
+        {
+          "block_id": "b_105",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# (1)差分格式"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_103",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_103",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.70565,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_215",
+          "b_69",
+          "b_75",
+          "b_236",
+          "b_73"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.89158,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.827796,
+          "cluster_margin": 0.063784,
+          "cluster_prior_raw": 0.818547,
+          "cluster_prior": 0.818547,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.818547
+        }
+      },
+      "pos": 104,
+      "rank": 2,
+      "score_base": 0.352825
+    },
+    {
+      "image_hash": "4d9fceafb60ccf89e311930acc009504aac78f354da3875ce8fafb3a2179f9a5",
+      "caption": "图6：稳态作业服温度分布",
+      "score": 0.46945,
+      "s_direct": 0.544517,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_126",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据所求得的两端换热系数，运用非稳态传热模型，计算温度分布。绘制出皮肤温度与时间- 空间的三维温度分布图和稳态温度的空间分布图如下："
+        },
+        {
+          "block_id": "b_129",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "部分温度分布数据如下，其中具体的温度分布信息，见支撑材料中 problem1. xlsx 文件。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_126",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_126",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.772258,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.831702,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.791548,
+          "cluster_margin": 0.040154,
+          "cluster_prior_raw": 0.777463,
+          "cluster_prior": 0.777463,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.777463
+        }
+      },
+      "pos": 128,
+      "rank": 3,
+      "score_base": 0.275084
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "87e2b518560908a3c9480ca8a88a6dfb816089d1c7a938ebdcaa972ab4a530ac",
+      "caption": "图1：一维传热模型",
+      "score": 0.680547,
+      "s_direct": 0.626198,
+      "s_link": 0.330593,
+      "s_co": 0.330593,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_60",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "因而考虑进行简化，建立一维传热模型，仅研究热量由作业服外层到皮肤表面的传热过程，并建立坐标系如下。"
+        },
+        {
+          "block_id": "b_62",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3 辐射传热"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_243",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_60",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.826482,
+          "distance_weight": 0.4,
+          "s_link": 0.330593,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.478395,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_215",
+          "b_69",
+          "b_75",
+          "b_236",
+          "b_73"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.839912,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.803199,
+          "cluster_margin": 0.036713,
+          "cluster_prior_raw": 0.808607,
+          "cluster_prior": 0.808607,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.808607
+        }
+      },
+      "pos": 61,
+      "rank": 1,
+      "score_base": 0.478395
+    },
+    {
+      "image_hash": "536ef319d4b8ba47add8608ee370bc5423f95b8fd41523b659631cebe77c1531",
+      "caption": "图3：离散示意图",
+      "score": 0.557462,
+      "s_direct": 0.4113,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_103",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "传热问题数值求解的基本思想是将时间、空间上中的连续物理量离散在各个节点上，用有限差分法求解物理量的数值解[4]。"
+        },
+        {
+          "block_id": "b_105",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# (1)差分格式"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_103",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_103",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.70565,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_215",
+          "b_69",
+          "b_75",
+          "b_236",
+          "b_73"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.89158,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.827796,
+          "cluster_margin": 0.063784,
+          "cluster_prior_raw": 0.818547,
+          "cluster_prior": 0.818547,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.818547
+        }
+      },
+      "pos": 104,
+      "rank": 2,
+      "score_base": 0.352825
+    },
+    {
+      "image_hash": "4d9fceafb60ccf89e311930acc009504aac78f354da3875ce8fafb3a2179f9a5",
+      "caption": "图6：稳态作业服温度分布",
+      "score": 0.46945,
+      "s_direct": 0.544517,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_126",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据所求得的两端换热系数，运用非稳态传热模型，计算温度分布。绘制出皮肤温度与时间- 空间的三维温度分布图和稳态温度的空间分布图如下："
+        },
+        {
+          "block_id": "b_129",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "部分温度分布数据如下，其中具体的温度分布信息，见支撑材料中 problem1. xlsx 文件。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_126",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_126",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.772258,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.831702,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.791548,
+          "cluster_margin": 0.040154,
+          "cluster_prior_raw": 0.777463,
+          "cluster_prior": 0.777463,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.777463
+        }
+      },
+      "pos": 128,
+      "rank": 3,
+      "score_base": 0.275084
+    },
+    {
+      "image_hash": "8582ce5f467f4eecd0c155e7051520ea3b189513485ebb2fb23566eab2cd978c",
+      "caption": "图4：模拟计算数据与实测数据拟合图",
+      "score": 0.456133,
+      "s_direct": 0.460322,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 0.8,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_121",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据上述求解步骤进行求解，搜索得到最优拟合的对流传热系数：  $h_{1} = 113 \\mathrm{W / (m^2\\cdot k)}$ ；  $h_{2}"
+        },
+        {
+          "block_id": "b_123",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在该复合传热系数下，计算值与实测值拟合的残差平方和为：3.6552；误差极差为：0.0061，拟合结果较好。此时显式差分的傅里叶网格数最大值为：  $F o_{"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_123",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_123",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.730161,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.885925,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.819308,
+          "cluster_margin": 0.066617,
+          "cluster_prior_raw": 0.818247,
+          "cluster_prior": 0.818247,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.818247
+        }
+      },
+      "pos": 122,
+      "rank": 4,
+      "score_base": 0.251571
+    },
+    {
+      "image_hash": "73a4299b765ddf797c787d0e3352d0be915e68173d43801daef506b023304942",
+      "caption": "图2：材料接触面",
+      "score": 0.436629,
+      "s_direct": 0.422375,
+      "s_link": 0.272344,
+      "s_co": 0.272344,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_92",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "式中：  $i$  表示各个接触面。"
+        },
+        {
+          "block_id": "b_94",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.2.4换热系数参数估计"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_113",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_94",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.680861,
+          "distance_weight": 0.4,
+          "s_link": 0.272344,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.34736,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.92346,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.88276,
+          "cluster_margin": 0.0407,
+          "cluster_prior_raw": 0.869879,
+          "cluster_prior": 0.869879,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.869879
+        }
+      },
+      "pos": 93,
+      "rank": 5,
+      "score_base": 0.21916
+    },
+    {
+      "image_hash": "d93db4c96bf00945287507b01fe780c313f225ffec59da379c75a160170b4314",
+      "caption": "图10：（a）固定第二层厚度  $d_{2}$ （b）固定第四层厚度  $d_{4}$",
+      "score": 0.42499,
+      "s_direct": 0.515247,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_220",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "分别绘制出图形如下："
+        },
+        {
+          "block_id": "b_222",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对结果分析可以明显得出：在第二层厚度固定时（图a）， $\\mathbf{d}_4$  的变化对稳态的温度大小有明显的影响，而达到稳态的时间基本没有变化；固定第四"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_222",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_222",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.757624,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.896643,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.827463,
+          "cluster_margin": 0.06918,
+          "cluster_prior_raw": 0.823951,
+          "cluster_prior": 0.823951,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.823951
+        }
+      },
+      "pos": 221,
+      "rank": 6,
+      "score_base": 0.219002
+    },
+    {
+      "image_hash": "def735d7c46e5b231fa9b18239b8238c3d4cc77e4c211394fe5eff9214d59937",
+      "caption": "图5：作业服时间-空间温度分布",
+      "score": 0.424811,
+      "s_direct": 0.442134,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_178",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "(2) 从结果分析：根据问题一稳态作业服温度分布图5，可见第二层温度梯度最小，两端温差最小，第二层厚度的变化对最大温度的影响占次要因素，第二层主要起延缓传热过程"
+        },
+        {
+          "block_id": "b_126",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据所求得的两端换热系数，运用非稳态传热模型，计算温度分布。绘制出皮肤温度与时间- 空间的三维温度分布图和稳态温度的空间分布图如下："
+        },
+        {
+          "block_id": "b_129",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "部分温度分布数据如下，其中具体的温度分布信息，见支撑材料中 problem1. xlsx 文件。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_126",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_126",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.721067,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_215",
+          "b_69",
+          "b_75",
+          "b_236",
+          "b_73"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.876543,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.8552,
+          "cluster_margin": 0.021344,
+          "cluster_prior_raw": 0.820091,
+          "cluster_prior": 0.583455,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.583455
+        }
+      },
+      "pos": 127,
+      "rank": 7,
+      "score_base": 0.278947
+    },
+    {
+      "image_hash": "7c2e0da2992d57e8620efc5ecfe60a258e75af28ecf5533bc12e72bc4e7861c2",
+      "caption": "图9：不同厚度T-t关系",
+      "score": 0.343203,
+      "s_direct": 0.538523,
+      "s_link": 0.530098,
+      "s_co": 0.530098,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_179",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "下图绘制出不同材料厚度下，皮肤外层温度与时间的数值关系："
+        },
+        {
+          "block_id": "b_181",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "可见皮肤外层温度与厚度  $d_{2}$  满足单调减关系，但厚度对最大温度的影响不大；第二层厚度的调节对达到稳态的收敛时间影响较大，因为厚度的增加必然导致传热"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_184",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_181",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.757283,
+          "distance_weight": 0.7,
+          "s_link": 0.530098,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.534311,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.85217,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.825008,
+          "cluster_margin": 0.027162,
+          "cluster_prior_raw": 0.805654,
+          "cluster_prior": 0.729437,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.729437
+        }
+      },
+      "pos": 180,
+      "rank": 8,
+      "score_base": 0.160844
+    },
+    {
+      "image_hash": "79daf6b49aabacda36fbdfa9126979b84ea1cc38d2edbf19757ca0d88db356f3",
+      "caption": "图7：考虑辐射传热拟合图像",
+      "score": 0.341001,
+      "s_direct": 0.525687,
+      "s_link": 0.301599,
+      "s_co": 0.301599,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_138",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "同样的步骤建立换热系数  $h_{1}$  和  $h_{2}$  与实测温度值的数值关系，最佳拟合情况时结果如下："
+        },
+        {
+          "block_id": "b_140",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "此时同样可以达到较好的拟合结果，与不考虑辐射传热相比，传热系数  $h_I$  保持不变，  $h_2$  由  $8.344\\mathrm{W / (m^2\\"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_113",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_138",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.753997,
+          "distance_weight": 0.4,
+          "s_link": 0.301599,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.413643,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.884099,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.808705,
+          "cluster_margin": 0.075394,
+          "cluster_prior_raw": 0.812482,
+          "cluster_prior": 0.812482,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.812482
+        }
+      },
+      "pos": 139,
+      "rank": 9,
+      "score_base": 0.137881
+    },
+    {
+      "image_hash": "32eda2092e6b642e1c5ddab0c6cb02208799b9e7d05c20eaeeb5078669d214d2",
+      "caption": "图8：皮肤温度随时间变化",
+      "score": 0.324457,
+      "s_direct": 0.408561,
+      "s_link": 0.329885,
+      "s_co": 0.329885,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_172",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "绘制出最优厚度  $d_{2} = 17.5\\mathrm{mm}$  时，皮肤外侧温度随时间变化图。"
+        },
+        {
+          "block_id": "b_174",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "故作业服第二层厚度的最优设计为： $17.5\\mathrm{mm}$ ，在  $t = 55\\mathrm{min}$  时，皮肤表面温度为  $43.9998"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_19",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_174",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.824713,
+          "distance_weight": 0.4,
+          "s_link": 0.329885,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.369223,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.892487,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.862074,
+          "cluster_margin": 0.030413,
+          "cluster_prior_raw": 0.831921,
+          "cluster_prior": 0.831921,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.831921
+        }
+      },
+      "pos": 173,
+      "rank": 10,
+      "score_base": 0.116477
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 40,
+    "query_block_pair_count": 60,
+    "cf_count": 7,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图3",
+      "图4",
+      "图5",
+      "图5",
+      "图6"
+    ],
+    "rerank_profile": "legacy",
+    "main_method": "LG-JSSF-Legacy+ClusterAdd",
+    "query_use_keywords": false
+  }
+}

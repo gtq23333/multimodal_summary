@@ -1,0 +1,265 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "Dynamic-Union-PQL__top11__end_to_end_vlm__qwen3_6-27b",
+  "created_at": "2026-07-10T05:26:14.537110+00:00",
+  "paper_id": "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c",
+  "method_name": "Dynamic-Union-PQL",
+  "pool_size": 11,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c",
+    "method_name": "Dynamic-Union-PQL",
+    "pool_size": 11,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "71ee36554e663752a11f9be25a786b674a2aa044a9fc9f4cbcb4c156a309c124",
+        "rank": 1,
+        "score": 0.047907090265630725,
+        "caption": "图5.2.4 构件投影示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\71ee36554e663752a11f9be25a786b674a2aa044a9fc9f4cbcb4c156a309c124.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "29714b771ac5c9bbd7139eb2684dd162f2087c7e5db10c188714f0a564f78381",
+        "rank": 2,
+        "score": 0.04767399003253049,
+        "caption": "图5.1.1 系统空间坐标系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\29714b771ac5c9bbd7139eb2684dd162f2087c7e5db10c188714f0a564f78381.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "e94a792514d0519b16593ed4079490a6469416765c973952db936a0214431e0d",
+        "rank": 3,
+        "score": 0.0471386476426799,
+        "caption": "图5.2.1浮标受力示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\e94a792514d0519b16593ed4079490a6469416765c973952db936a0214431e0d.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "c666acc38d85752a433fb6448de40948913eaf210f0f878fd08a935a6dfd1dc5",
+        "rank": 4,
+        "score": 0.031544957774465976,
+        "caption": "图5.4.1 搜索算法流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\c666acc38d85752a433fb6448de40948913eaf210f0f878fd08a935a6dfd1dc5.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "117f08088aad3b865bc6681049f561e3c73a5a08a397f50658d892d483427679",
+        "rank": 5,
+        "score": 0.015873015873015872,
+        "caption": "图 6.3.2 锚链形状示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\117f08088aad3b865bc6681049f561e3c73a5a08a397f50658d892d483427679.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "633fa56cfacb0050939add871ebe9a2d4b8907985651658121cfbde44ffca437",
+        "rank": 6,
+        "score": 0.015873015873015872,
+        "caption": "图7.1.1构件投影示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\633fa56cfacb0050939add871ebe9a2d4b8907985651658121cfbde44ffca437.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "af0e8d4a4c0f83fcd282d5322862772278620e889d38dc45e87f36c37a478ce5",
+        "rank": 7,
+        "score": 0.015873015873015872,
+        "caption": "图5.2.2钢管受力示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\af0e8d4a4c0f83fcd282d5322862772278620e889d38dc45e87f36c37a478ce5.jpg"
+      },
+      {
+        "candidate_id": "C8",
+        "image_hash": "10e21aaabc5fd7753f63c15676c2cd0246b463356a982408f787d8cdaebc8789",
+        "rank": 8,
+        "score": 0.015625,
+        "caption": "图5.2.3钢桶受力示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\10e21aaabc5fd7753f63c15676c2cd0246b463356a982408f787d8cdaebc8789.jpg"
+      },
+      {
+        "candidate_id": "C9",
+        "image_hash": "8797554b8270f2743ff6b471a71f2add14841ccf03bae5d62a79f82728b52d0c",
+        "rank": 9,
+        "score": 0.015625,
+        "caption": "图7.2.1浮标在yoz面投影",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\8797554b8270f2743ff6b471a71f2add14841ccf03bae5d62a79f82728b52d0c.jpg"
+      },
+      {
+        "candidate_id": "C10",
+        "image_hash": "739fee2ec817f2d0179f095bce47886ead25600dceac198243e32dfb2efb65f3",
+        "rank": 10,
+        "score": 0.015384615384615385,
+        "caption": "图7.2.2浮标在xoy面投影",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\739fee2ec817f2d0179f095bce47886ead25600dceac198243e32dfb2efb65f3.jpg"
+      },
+      {
+        "candidate_id": "C11",
+        "image_hash": "336c4cd9106501f9f66108e919525d1aa6166a8aeff0eebddd0b534f09a29144",
+        "rank": 11,
+        "score": 0.015151515151515152,
+        "caption": "图5.3.1 完全沉底链环受力图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c\\images\\336c4cd9106501f9f66108e919525d1aa6166a8aeff0eebddd0b534f09a29144.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "29714b771ac5c9bbd7139eb2684dd162f2087c7e5db10c188714f0a564f78381",
+      "c666acc38d85752a433fb6448de40948913eaf210f0f878fd08a935a6dfd1dc5"
+    ],
+    "retrieval_metrics": {
+      "ip@11": 0.181818,
+      "ir@11": 1.0,
+      "jaccard@11": 0.181818
+    },
+    "reference_summary": null,
+    "reference_sequence": null,
+    "pool_metadata": {
+      "pool_type": "dynamic_union",
+      "source_methods": [
+        "Proposed",
+        "Qwen3-VL-Rerank-ImgCap+Link",
+        "Layout-Order"
+      ],
+      "source_top_k": 6,
+      "rrf_k": 60,
+      "nominal_budget": 18,
+      "actual_candidate_count": 11
+    }
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "分析",
+        "text": "一、问题重述近浅海观测网的传输节点由浮标系统、系泊系统和水声通讯系统组成（如图1所示）。某型传输节点的浮标系统可简化为底面直径 $2\\mathrm{m}$ 、高 $2\\mathrm{m}$ 的圆柱体，浮标的质量为 $1000\\mathrm{kg}$ 。系泊系统由钢管、钢桶、重物球、电焊锚链和特制的抗拖移锚组成。锚的质量为 $600\\mathrm{kg}$ ，锚链选用无档普通链环，近浅海观测网的常用型号及其参数在附表中列出。钢管共4节，每节长度 $1\\mathrm{m}$ ，直径为 $50\\mathrm{mm}$ ，每节钢管的质量为 $10\\mathrm{kg}$ 。要求锚链末端与锚的链接处的切线方向与海床的夹角不超过16度，否则锚会被拖行，致使节点移位丢失。水声通讯系统安装在一个长 $1\\mathrm{m}$ 、外径 $30\\mathrm{cm}$ 的密封圆柱形钢桶内，设备和钢桶总质量为 $100\\mathrm{kg}$ 。钢桶上接第4节钢管，下接电焊锚链。钢桶竖直时，水声通讯设备的工作效果最佳。若钢桶倾斜，则影响设备的工作效果。钢桶的倾斜角度（钢桶与竖直线的夹角）超过5度时，设备的工作效果较差。为了控制钢桶的倾斜角度，钢桶与电焊锚链链接处可悬挂重物球。系泊系统的设计问题就是确定锚链的型号、长度和重物球的质量，使得浮标的吃水深度和游动区域及钢桶的倾斜角度尽可能小。"
+      },
+      {
+        "block_id": "b_15",
+        "block_idx": 15,
+        "query_dimension": "分析",
+        "text": "为了满足钢桶的倾斜角度不超过5度，锚链在锚点与海床的夹角不超过16度的要求，需要建立以重物配重为决策变量，海水深度为几何约束条件的多目标非线性规划模型。由于数据规模不大，本文采用循环搜索算法对模型进行求解。"
+      },
+      {
+        "block_id": "b_17",
+        "block_idx": 17,
+        "query_dimension": "分析",
+        "text": "为了分析在海水深度、海水速度，风速变化情况下钢桶、钢管的倾斜角度、锚链形状、浮标的吃水深度和游动区域，需要依据问题二的思路建立多目标非线性规划模型，决策变量为锚链型号、锚链长度以及重物配重。"
+      },
+      {
+        "block_id": "b_10",
+        "block_idx": 10,
+        "query_dimension": "分析",
+        "text": "问题一要求建立系泊系统内钢桶和各节钢管倾斜角度，锚链形状和浮标吃水深度变化的数学模型，因此需要对不同结构分别进行受力分析，从而找到题目要求的各个参数的递推关系，进而构建本问题的非线性方程组。"
+      },
+      {
+        "block_id": "b_1",
+        "block_idx": 1,
+        "query_dimension": "分析",
+        "text": "问题1：某型传输节点选用Ⅱ型电焊锚链 $22.05\\mathrm{m}$ ，选用的重物球的质量为 $1200\\mathrm{kg}$ 。现将该型传输节点布放在水深 $18\\mathrm{m}$ 、海床平坦、海水密度为 $1.025\\times 10^{3}\\mathrm{kg} / \\mathrm{m}^{3}$ 的海域。若海水静止，分别计算海面风速为 $12\\mathrm{m / s}$ 和 $24\\mathrm{m / s}$ 时钢桶和各节钢管的倾斜角度、锚链形状、浮标的吃水深度和游动区域。"
+      },
+      {
+        "block_id": "b_3",
+        "block_idx": 3,
+        "query_dimension": "分析",
+        "text": "问题3：由于潮汐等因素的影响，布放海域的实测水深介于 $16\\mathrm{m}\\sim 20\\mathrm{m}$ 之间。布放点的海水速度最大可达到 $1.5\\mathrm{m / s}$ 、风速最大可达到 $36\\mathrm{m / s}$ 。请给出考虑风力、水流力和水深情况下的系泊系统设计，分析不同情况下钢桶、钢管的倾斜角度、锚链形状、浮标的吃水深度和游动区域。"
+      },
+      {
+        "block_id": "b_71",
+        "block_idx": 71,
+        "query_dimension": "分析",
+        "text": "锚链各节链环的受力情况与各节钢管受力情况相似，因此上文中的钢管递推关系式同样适用于锚链链环。但对于链环浮力的计算，题中只给出了各节链环的质量，体积是"
+      },
+      {
+        "block_id": "b_2",
+        "block_idx": 2,
+        "query_dimension": "分析",
+        "text": "问题2：在问题1的假设下，计算海面风速为 $36\\mathrm{m / s}$ 时钢桶和各节钢管的倾斜角度、锚链形状和浮标的游动区域。请调节重物球的质量，使得钢桶的倾斜角度不超过5度，锚链在锚点与海床的夹角不超过16度。"
+      },
+      {
+        "block_id": "b_274",
+        "block_idx": 274,
+        "query_dimension": "建模",
+        "text": "本文的亮点之一是建立的非线性规划模型，将系泊系统的实际问题通过目标函数的设计转化为优化问题，本文的另一个亮点在于对多元非线性方程组的求解设计的基于最小二乘法的搜索算法以及在保证求解精度条件下，当模型解空间较大时设计的变步长搜索算法，且在能够接受的时间内提高了搜索精度。"
+      },
+      {
+        "block_id": "b_104",
+        "block_idx": 104,
+        "query_dimension": "建模",
+        "text": "对于系泊系统状态模型的求解，难以直接通过大量状态方程得到定解，所以联立非线性方程组求定解方法不适用。因此本文采用一种基于最小二乘思想的循环搜索算法对模型进行求解。"
+      },
+      {
+        "block_id": "b_145",
+        "block_idx": 145,
+        "query_dimension": "建模",
+        "text": "综合以上分析，并结合问题一模型中系统中各构件作用力与倾角的递推关系得到系泊系统的优化模型为："
+      },
+      {
+        "block_id": "b_106",
+        "block_idx": 106,
+        "query_dimension": "建模",
+        "text": "描述系泊系统状态模型中的未知变量包括吃水深度 $h$ ，钢桶，各节钢管以及锚链刚体的倾斜角度 $\\theta_{i}$ ，由模型的可确定各个倾斜角度 $\\theta_{i}$ 与钢桶吃水深度 $h$ 的递推关系，故倾斜角度可由钢桶的倾斜角度确定，故风速 $\\nu$ 确定的情况下，系泊系统的状态可由吃水深度 $h$ 一个变量确定。因此将吃水深度 $h$ 为连续变量，故将其离散化进行定步长搜索可对模型进行求解，具体算法步骤如图5.4.1所示："
+      },
+      {
+        "block_id": "b_240",
+        "block_idx": 240,
+        "query_dimension": "建模",
+        "text": "与问题二相同，选取浮标吃水深度，浮标游动半径以及钢桶倾斜角作为优化目标建立多目标优化模型。同样本问模型需要满足问题二中约束条件，这里不再赘述。"
+      },
+      {
+        "block_id": "b_128",
+        "block_idx": 128,
+        "query_dimension": "求解",
+        "text": "本问首先要根据问题一中模型计算海面风速为 $36m / s$ 时系统的各状态参数。接着题目要求通过调节重物球的质量来使钢桶倾角和锚链在锚点与海床的夹角小于给定阈值，由此可以通过问题一模型计算得到重物球的质量范围。但结合题目背景考虑，本文建立优化模型，在满足约束范围内搜索重物球的最优质量使得系统达到最优状态。"
+      },
+      {
+        "block_id": "b_254",
+        "block_idx": 254,
+        "query_dimension": "求解",
+        "text": "由于决策变量增加直接导致问题三模型解空间过大，因此为了保证求解的时效性与准确性本文采用变步长搜索算法对模型进行求解。"
+      },
+      {
+        "block_id": "b_12",
+        "block_idx": 12,
+        "query_dimension": "求解",
+        "text": "此外，为了求解出海面风速为 $12\\mathrm{m / s}$ 和 $24\\mathrm{m / s}$ 时钢桶和各节钢管的倾斜角度、锚链形状、浮标的吃水深度和游动区域，需要求解之前构建的非线性方程，进而确定各个参数。考虑到解空间不大，因此本文采用基于最小二乘法的搜索算法进行求解。"
+      },
+      {
+        "block_id": "b_111",
+        "block_idx": 111,
+        "query_dimension": "求解",
+        "text": "取变量 $h$ 步长没原步长的 $\\frac{1}{50}$ ，则算法精度应提高50倍，定义相对优化量 $q$ 为目标函数优化量与理论优化量的比值："
+      }
+    ],
+    "body_char_count": 72984
+  },
+  "generated_summary": "针对近浅海观测网传输节点系泊系统设计问题，本文建立了系泊系统状态模型、多目标非线性规划模型，并设计了相应的求解算法。\n\n针对问题一，首先对浮标、钢管、钢桶及锚链进行受力分析，推导各构件作用力与倾角的递推关系。结合海水深度的几何约束，即各构件在竖直方向投影总长度等于海床深度，建立系泊系统状态模型 [Insert Figure C1]。考虑到锚链可能提前触底，对模型进行修正。针对复杂多元非线性方程组，设计了基于最小二乘思想的循环搜索算法进行求解 [Insert Figure C4]，计算了不同风速下钢桶和钢管的倾斜角度、锚链形状、浮标吃水深度和游动区域。\n\n针对问题二，在问题一模型基础上，计算风速为36m/s时的系统状态。为满足钢桶倾斜角度不超过5度、锚链在锚点与海床夹角不超过16度的要求，以重物球质量为决策变量，建立多目标非线性规划模型，优化目标包括浮标吃水深度、游动区域和钢桶倾斜角度。采用熵权法确定目标权重，利用循环搜索算法求解，得到满足设计要求的重物球质量范围及最佳配重。\n\n针对问题三，考虑海水流速和水深变化，建立系泊系统三维状态模型。将水流力分解到不同投影面进行受力分析，结合多目标优化模型，采用变步长搜索算法求解，分析了不同环境参数下系泊系统的状态变化。\n\n本文通过机理分析与多目标规划相结合，有效解决了系泊系统的设计优化问题，为近浅海观测网的布放提供了理论依据。图 [Insert Figure C5] 展示了风速为36m/s时锚链的形状，直观反映了系统在高风速下的受力状态。",
+  "inserted_figures": [
+    "71ee36554e663752a11f9be25a786b674a2aa044a9fc9f4cbcb4c156a309c124",
+    "c666acc38d85752a433fb6448de40948913eaf210f0f878fd08a935a6dfd1dc5",
+    "117f08088aad3b865bc6681049f561e3c73a5a08a397f50658d892d483427679"
+  ],
+  "selected_image_hashes": [
+    "71ee36554e663752a11f9be25a786b674a2aa044a9fc9f4cbcb4c156a309c124",
+    "c666acc38d85752a433fb6448de40948913eaf210f0f878fd08a935a6dfd1dc5",
+    "117f08088aad3b865bc6681049f561e3c73a5a08a397f50658d892d483427679"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C4]",
+    "[Insert Figure C5]"
+  ],
+  "rationale": "C1（构件投影示意图）直观展示了系泊系统状态模型的核心几何约束（竖直投影累加等于水深），有助于理解建模过程；C4（搜索算法流程图）清晰呈现了基于最小二乘思想的循环搜索算法步骤，服务于算法流程的理解；C5（锚链形状示意图）展示了高风速下锚链的具体形态，作为核心结果直观反映了系统状态。这三张图分别覆盖了建模、求解和结果展示，具有显著的认知增益。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

@@ -1,0 +1,584 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "All-Figures__top44__text_rag_then_rewrite__qwen3_6-27b",
+  "created_at": "2026-07-10T05:50:43.444307+00:00",
+  "paper_id": "2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376",
+  "method_name": "All-Figures",
+  "pool_size": 44,
+  "strategy": "text_rag_then_rewrite",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376",
+    "method_name": "All-Figures",
+    "pool_size": 44,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "c6fa9eec45154c1c71e538be188bddd44f603ea869f78c4578ecfad108674741",
+        "rank": 1,
+        "score": null,
+        "caption": "图1用户、系统、任务三者逻辑关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\c6fa9eec45154c1c71e538be188bddd44f603ea869f78c4578ecfad108674741.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "4bd9aa350a8c99c28311f23570348042dfeca30bfab43a0c0393c52124cc0287",
+        "rank": 2,
+        "score": null,
+        "caption": "图2UML时序关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\4bd9aa350a8c99c28311f23570348042dfeca30bfab43a0c0393c52124cc0287.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "7fdc07c4560b092a9cda390259d578be11f2cb74f8d6bf5048f1ee8ee3638303",
+        "rank": 3,
+        "score": null,
+        "caption": "图3任务点与周围用户分布情况1",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\7fdc07c4560b092a9cda390259d578be11f2cb74f8d6bf5048f1ee8ee3638303.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "0142ea7bb1c32242127e7bf1f057a6aa153bbe69179eddc97a4307567a215167",
+        "rank": 4,
+        "score": null,
+        "caption": "图4任务点与周围用户分布情况2",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\0142ea7bb1c32242127e7bf1f057a6aa153bbe69179eddc97a4307567a215167.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "44b93aaf4838090216b7e20f28fedc03e99eef62d3bf48663b431360db3f0fb3",
+        "rank": 5,
+        "score": null,
+        "caption": "图5多任务用户选择分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\44b93aaf4838090216b7e20f28fedc03e99eef62d3bf48663b431360db3f0fb3.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "6026b674a45cfc969905e20e10c527190cb88f818aa28fcdbd2f9ef14b88e6ea",
+        "rank": 6,
+        "score": null,
+        "caption": "图6用户期望范围与任务限额分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\6026b674a45cfc969905e20e10c527190cb88f818aa28fcdbd2f9ef14b88e6ea.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "efde1a80ad71a55b2bc434ff3e1775932f4d133b74da8e00504375d5861e2819",
+        "rank": 7,
+        "score": null,
+        "caption": "图7用户任务限额覆盖区域示意图 图8用户任务限额与定价关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\efde1a80ad71a55b2bc434ff3e1775932f4d133b74da8e00504375d5861e2819.jpg"
+      },
+      {
+        "candidate_id": "C8",
+        "image_hash": "4bb5413435fe174451da43c74e02eb0afe6af4d3e079c141fa2f43a732fd1e67",
+        "rank": 8,
+        "score": null,
+        "caption": "图9用户平均距离与定价关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\4bb5413435fe174451da43c74e02eb0afe6af4d3e079c141fa2f43a732fd1e67.jpg"
+      },
+      {
+        "candidate_id": "C9",
+        "image_hash": "1afb07c33dc9bb1ee261b4b45b75ff95ad0253f78b9758b798a60702d790aba9",
+        "rank": 9,
+        "score": null,
+        "caption": "图10任务与用户交互流程",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\1afb07c33dc9bb1ee261b4b45b75ff95ad0253f78b9758b798a60702d790aba9.jpg"
+      },
+      {
+        "candidate_id": "C10",
+        "image_hash": "4099b9a125f3d7f3980e700740580647bdff571d29bc494b3ad395ec3c384ecb",
+        "rank": 10,
+        "score": null,
+        "caption": "图11可达距离示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\4099b9a125f3d7f3980e700740580647bdff571d29bc494b3ad395ec3c384ecb.jpg"
+      },
+      {
+        "candidate_id": "C11",
+        "image_hash": "5c5a17c36f7deca684b29ab5a4c3a8aa4dee5177eadc7be6313144b3a74ac476",
+        "rank": 11,
+        "score": null,
+        "caption": "图12（a）维度排序后LOF值（b）经度排序后的LOF值（c）每个任务点对应的LOF值三维图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\5c5a17c36f7deca684b29ab5a4c3a8aa4dee5177eadc7be6313144b3a74ac476.jpg"
+      },
+      {
+        "candidate_id": "C12",
+        "image_hash": "776469970f73378fa92741143fff60a1114862a06d16235addfdca3cc5914413",
+        "rank": 12,
+        "score": null,
+        "caption": "图13LOF值与定价关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\776469970f73378fa92741143fff60a1114862a06d16235addfdca3cc5914413.jpg"
+      },
+      {
+        "candidate_id": "C13",
+        "image_hash": "ebaf92431e73bd7cf018508e081ac228f6fe95ad93504050e0433ce51b95ccae",
+        "rank": 13,
+        "score": null,
+        "caption": "图14定价与因素1的关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\ebaf92431e73bd7cf018508e081ac228f6fe95ad93504050e0433ce51b95ccae.jpg"
+      },
+      {
+        "candidate_id": "C14",
+        "image_hash": "8f9f374b92fa926bf6c09c9ea9ea1e9e2da5269807768f1f92d1ec96262be406",
+        "rank": 14,
+        "score": null,
+        "caption": "图  $1530\\%$  数据对结果进行检验",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\8f9f374b92fa926bf6c09c9ea9ea1e9e2da5269807768f1f92d1ec96262be406.jpg"
+      },
+      {
+        "candidate_id": "C15",
+        "image_hash": "fe81fe8771f5d564a8c947703030d88dfe5ef4d9f65435f2cfbfd06416ac47de",
+        "rank": 15,
+        "score": null,
+        "caption": "图16定价与密度因素2的关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\fe81fe8771f5d564a8c947703030d88dfe5ef4d9f65435f2cfbfd06416ac47de.jpg"
+      },
+      {
+        "candidate_id": "C16",
+        "image_hash": "ddb0d050524362e3b2c61f8ccfcc3f8c1f0d239b260164c7fc2886ef6b0ef3aa",
+        "rank": 16,
+        "score": null,
+        "caption": "图  $1730\\%$  数据对结果进行检验",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\ddb0d050524362e3b2c61f8ccfcc3f8c1f0d239b260164c7fc2886ef6b0ef3aa.jpg"
+      },
+      {
+        "candidate_id": "C17",
+        "image_hash": "a3ef5da69a1110b08f575f09f71655af16d11b07ca7e176b1ccaa190d91614f2",
+        "rank": 17,
+        "score": null,
+        "caption": "图18定价与LOF值的关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\a3ef5da69a1110b08f575f09f71655af16d11b07ca7e176b1ccaa190d91614f2.jpg"
+      },
+      {
+        "candidate_id": "C18",
+        "image_hash": "aeb92833e9ea175d8e59f257690835d55185cfb07172d350f325e19bd6118cca",
+        "rank": 18,
+        "score": null,
+        "caption": "图  $19.30\\%$  数据对结果进行检验",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\aeb92833e9ea175d8e59f257690835d55185cfb07172d350f325e19bd6118cca.jpg"
+      },
+      {
+        "candidate_id": "C19",
+        "image_hash": "4b2cb1026e612cf41122edce9180be64b75b690a75971e02c56f855d60d6bc4a",
+        "rank": 19,
+        "score": null,
+        "caption": "图20价格分布热力图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\4b2cb1026e612cf41122edce9180be64b75b690a75971e02c56f855d60d6bc4a.jpg"
+      },
+      {
+        "candidate_id": "C20",
+        "image_hash": "6ba8aab9c1eee37b1871db67ff85b641ef54f8961f89c7d45a7491a45219aa66",
+        "rank": 20,
+        "score": null,
+        "caption": "图21已完成与未完成任务散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\6ba8aab9c1eee37b1871db67ff85b641ef54f8961f89c7d45a7491a45219aa66.jpg"
+      },
+      {
+        "candidate_id": "C21",
+        "image_hash": "34b58739616cec19ab82c3fbc450675d4cef83b85d0781df5c10093927849e7e",
+        "rank": 21,
+        "score": null,
+        "caption": "图22已完成与未完成任务拟合曲线对比",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\34b58739616cec19ab82c3fbc450675d4cef83b85d0781df5c10093927849e7e.jpg"
+      },
+      {
+        "candidate_id": "C22",
+        "image_hash": "cdeae69c095c5006212451e851b0741929e09a6fc2f9c3e1eb3f7d1c6dc667d4",
+        "rank": 22,
+        "score": null,
+        "caption": "图23已完成与未完成任务散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\cdeae69c095c5006212451e851b0741929e09a6fc2f9c3e1eb3f7d1c6dc667d4.jpg"
+      },
+      {
+        "candidate_id": "C23",
+        "image_hash": "5687f630213c78f891abc1ead14c97845d411e1d39b18f01d0aeb3167e9cc9ee",
+        "rank": 23,
+        "score": null,
+        "caption": "图24已完成与未完成任务拟合曲线对比",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\5687f630213c78f891abc1ead14c97845d411e1d39b18f01d0aeb3167e9cc9ee.jpg"
+      },
+      {
+        "candidate_id": "C24",
+        "image_hash": "44a4a804b1c669a0ca129a4f3db5e3a16a29c987ea6ebf7c881f72847623f015",
+        "rank": 24,
+        "score": null,
+        "caption": "图25已完成与未完成任务散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\44a4a804b1c669a0ca129a4f3db5e3a16a29c987ea6ebf7c881f72847623f015.jpg"
+      },
+      {
+        "candidate_id": "C25",
+        "image_hash": "d7ab0df4eadd39b9722786539913c28aa3987281d53859c316d14b9687b98581",
+        "rank": 25,
+        "score": null,
+        "caption": "图26已完成与未完成任务散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\d7ab0df4eadd39b9722786539913c28aa3987281d53859c316d14b9687b98581.jpg"
+      },
+      {
+        "candidate_id": "C26",
+        "image_hash": "5fcd141128e22e728f5127f34be9e08c97351c39305691cfe8c9d740af23992f",
+        "rank": 26,
+        "score": null,
+        "caption": "图27自变量与因变量逻辑关系结构",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\5fcd141128e22e728f5127f34be9e08c97351c39305691cfe8c9d740af23992f.jpg"
+      },
+      {
+        "candidate_id": "C27",
+        "image_hash": "74185712c04eeb8c8f042b4c46a910ec55064d56cd6d5d0c8c6aca4b92a8472e",
+        "rank": 27,
+        "score": null,
+        "caption": "图28合理定价范围",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\74185712c04eeb8c8f042b4c46a910ec55064d56cd6d5d0c8c6aca4b92a8472e.jpg"
+      },
+      {
+        "candidate_id": "C28",
+        "image_hash": "491a91a5a6e975735cfeb44e0cbfa1aa26eff68050177d9d72ac5f5f8fae9390",
+        "rank": 28,
+        "score": null,
+        "caption": "图29成功执行/未成功执行任务曲面与合理定价范围",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\491a91a5a6e975735cfeb44e0cbfa1aa26eff68050177d9d72ac5f5f8fae9390.jpg"
+      },
+      {
+        "candidate_id": "C29",
+        "image_hash": "3295afc595ecd7c0189e396b25676e4f35938dd24f138b98b9b8242f04c57f93",
+        "rank": 29,
+        "score": null,
+        "caption": "图30结果展示与对比",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\3295afc595ecd7c0189e396b25676e4f35938dd24f138b98b9b8242f04c57f93.jpg"
+      },
+      {
+        "candidate_id": "C30",
+        "image_hash": "e9e1692dee91581dd363035e8c1d00bb6e09886ddbddafdc87daaa344e470072",
+        "rank": 30,
+        "score": null,
+        "caption": "注：半径与任务点得分有关",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\e9e1692dee91581dd363035e8c1d00bb6e09886ddbddafdc87daaa344e470072.jpg"
+      },
+      {
+        "candidate_id": "C31",
+        "image_hash": "ebe08983990f5419fb76a106ebf9c6e210ea79eae51c244a604697397021868f",
+        "rank": 31,
+        "score": null,
+        "caption": "图32算法流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\ebe08983990f5419fb76a106ebf9c6e210ea79eae51c244a604697397021868f.jpg"
+      },
+      {
+        "candidate_id": "C32",
+        "image_hash": "36432a499cb8c8f3f007f6a9b89259632649f7b5a46efacab3eb203ec706ed48",
+        "rank": 32,
+        "score": null,
+        "caption": "图33不合理打包（左），合理打包（右）",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\36432a499cb8c8f3f007f6a9b89259632649f7b5a46efacab3eb203ec706ed48.jpg"
+      },
+      {
+        "candidate_id": "C33",
+        "image_hash": "46dfa9ad7f610cfa9efc167552aa893defaaa0d37f978ddd780d78ad5a0a8d04",
+        "rank": 33,
+        "score": null,
+        "caption": "图34打包结果局部展示",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\46dfa9ad7f610cfa9efc167552aa893defaaa0d37f978ddd780d78ad5a0a8d04.jpg"
+      },
+      {
+        "candidate_id": "C34",
+        "image_hash": "55b236b0ce0ddde3b5fa01b1068144802277d08ab316e2ec3ecdad3942c9d862",
+        "rank": 34,
+        "score": null,
+        "caption": "图35打包成功执行率改变情况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\55b236b0ce0ddde3b5fa01b1068144802277d08ab316e2ec3ecdad3942c9d862.jpg"
+      },
+      {
+        "candidate_id": "C35",
+        "image_hash": "261b40ab834ffbb71a59b29fab6308f17b1c5d85703218dc98d3453caf27050e",
+        "rank": 35,
+        "score": null,
+        "caption": "图36任务点等效距离示意",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\261b40ab834ffbb71a59b29fab6308f17b1c5d85703218dc98d3453caf27050e.jpg"
+      },
+      {
+        "candidate_id": "C36",
+        "image_hash": "c9d8f6f292d157551346c0eb3e58068b2135e776ea053b5e42e0ffb1e0916569",
+        "rank": 36,
+        "score": null,
+        "caption": "图37定价流程",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\c9d8f6f292d157551346c0eb3e58068b2135e776ea053b5e42e0ffb1e0916569.jpg"
+      },
+      {
+        "candidate_id": "C37",
+        "image_hash": "55e5066c4aa79f7bb0a0e5f0a81bb388c36bcb18a9a0ab94dc80ef5d23229f1f",
+        "rank": 37,
+        "score": null,
+        "caption": "图38定价与任务成功执行率分布",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\55e5066c4aa79f7bb0a0e5f0a81bb388c36bcb18a9a0ab94dc80ef5d23229f1f.jpg"
+      },
+      {
+        "candidate_id": "C38",
+        "image_hash": "7696e38bfee4fd1fa6704ca528ed533a55bc7e751986f5464cc8df01497f73a8",
+        "rank": 38,
+        "score": null,
+        "caption": "图39平均距离假定参数波动影响",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\7696e38bfee4fd1fa6704ca528ed533a55bc7e751986f5464cc8df01497f73a8.jpg"
+      },
+      {
+        "candidate_id": "C39",
+        "image_hash": "3eb618d30fb17090c09239e866191e92d7ecb1597dc5663592cc3473ba83f810",
+        "rank": 39,
+        "score": null,
+        "caption": "图40覆盖半径假定参数波动影响",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\3eb618d30fb17090c09239e866191e92d7ecb1597dc5663592cc3473ba83f810.jpg"
+      },
+      {
+        "candidate_id": "C40",
+        "image_hash": "b76ff888f98c5809591cc86b6c80efa969bfc58d8fc143ddf86faf8cf3a4a8cd",
+        "rank": 40,
+        "score": null,
+        "caption": "图41商家任务定价对系统利润的影响",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\b76ff888f98c5809591cc86b6c80efa969bfc58d8fc143ddf86faf8cf3a4a8cd.jpg"
+      },
+      {
+        "candidate_id": "C41",
+        "image_hash": "77deadbf885d9084065a167a9e2dcf9b337aa217acf5e360406003af36dc73c5",
+        "rank": 41,
+        "score": null,
+        "caption": "图42K值波动对LOF离群因子的影响",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\77deadbf885d9084065a167a9e2dcf9b337aa217acf5e360406003af36dc73c5.jpg"
+      },
+      {
+        "candidate_id": "C42",
+        "image_hash": "844fe672ef2e4c783b372a51724f8ce425d14d9f861117622295b2a633a00c0c",
+        "rank": 42,
+        "score": null,
+        "caption": "图 43 因素 1 回归灵敏度分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\844fe672ef2e4c783b372a51724f8ce425d14d9f861117622295b2a633a00c0c.jpg"
+      },
+      {
+        "candidate_id": "C43",
+        "image_hash": "4423b539d8374ccd66f3b8d3fc56c1fd958fe7668322f915a1e2bc02670588d4",
+        "rank": 43,
+        "score": null,
+        "caption": "图 44 因素 2 回归灵敏度分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\4423b539d8374ccd66f3b8d3fc56c1fd958fe7668322f915a1e2bc02670588d4.jpg"
+      },
+      {
+        "candidate_id": "C44",
+        "image_hash": "0095a18cf322bc1d8e6d2af060a1fec4f95da52ef17e317fafa400a303b4ba59",
+        "rank": 44,
+        "score": null,
+        "caption": "图45因素3回归灵敏度分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376\\images\\0095a18cf322bc1d8e6d2af060a1fec4f95da52ef17e317fafa400a303b4ba59.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "36432a499cb8c8f3f007f6a9b89259632649f7b5a46efacab3eb203ec706ed48",
+      "491a91a5a6e975735cfeb44e0cbfa1aa26eff68050177d9d72ac5f5f8fae9390",
+      "c6fa9eec45154c1c71e538be188bddd44f603ea869f78c4578ecfad108674741",
+      "c9d8f6f292d157551346c0eb3e58068b2135e776ea053b5e42e0ffb1e0916569"
+    ],
+    "retrieval_metrics": {
+      "ip@44": 0.090909,
+      "ir@44": 1.0,
+      "jaccard@44": 0.090909
+    },
+    "reference_summary": null,
+    "reference_sequence": null,
+    "pool_metadata": {
+      "pool_type": "all_figures",
+      "actual_candidate_count": 44
+    }
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_5",
+        "block_idx": 5,
+        "query_dimension": "分析",
+        "text": "1. 研究附件一中项目的任务定价规律，分析任务未完成的原因。2. 为附件一中的项目设计新的任务定价方案，并和原方案进行比较。3. 实际情况下，多个任务可能因为位置比较集中，导致用户会争相选择，一种考虑是将这些任务联合在一起打包发布。在这种考虑下，如何修改前面的定价模型，对最终的任务完成情况又有什么影响？4. 对附件三中的新项目给出你的任务定价方案，并评价该方案的实施效果。"
+      },
+      {
+        "block_id": "b_144",
+        "block_idx": 144,
+        "query_dimension": "分析",
+        "text": "图像有一个交点。大量的点都集中在交点之前，此时的拟合图像中，未完成任务的拟合曲线低于已完成任务的拟合曲线，这说明这部分定价忽略了任务点与离任务点最近用户的距离因素而导致定价偏低，没有用户去选择执行这些任务。对于交点以后的曲线走势，我们的解释是该段样本数据过少，有部分偶然离群点对拟合结果影响较大，导致未完成任务的曲线略高于已完成曲线。"
+      },
+      {
+        "block_id": "b_139",
+        "block_idx": 139,
+        "query_dimension": "分析",
+        "text": "我们可以发现，图像有两个交点。大量的点都集中在第一个交点之前，此时的拟合图像中，未完成任务的拟合曲线低于已完成任务的拟合曲线，这说明这部分定价忽略了任务点附近用户限额因素而导致定价偏低，没有用户去选择执行这些任务。对于 $①$ 交点与 $(2)$ 交点中间的函数图像分布，我们的解释是该段样本数据过少，存在一定偶然性，导致未完成任务的曲线略高于已完成曲线。 $(2)$ 交点以后的曲线情况恢复正常。"
+      },
+      {
+        "block_id": "b_136",
+        "block_idx": 136,
+        "query_dimension": "分析",
+        "text": "上文中我们已经给出影响定价的因素，包括用户与任务（任务附近用户限额情况、距离任务最近的用户距离均值）、任务与任务之间的关系，得到了一定的定价规律。对于任务未完成的原因，我们在下文对每个因素进行分析，观察已完成任务与未完成任务之间的差异。"
+      },
+      {
+        "block_id": "b_2",
+        "block_idx": 2,
+        "query_dimension": "分析",
+        "text": "附件一是已结束项目的任务数据，包含了每个任务的位置、定价和完成情况（“1”表示完成，“0”表示未完成）；附件二是会员信息数据，包含了会员的位置、信誉值、参考其信誉给出的任务开始预订时间和预订限额，原则上会员信誉越高，越优先开始挑选任务，其配额也就越大（任务分配时实际上是根据预订限额所占比例进行配发）；附件三是一个新的检查项目任务数据，只有任务的位置信息。"
+      },
+      {
+        "block_id": "b_16",
+        "block_idx": 16,
+        "query_dimension": "分析",
+        "text": "我们可以对以上因素量化，并分别将定价与以上因素进行函数拟合，利用拟合度判断定价是否与以上因素有关。接着根据有关的因素对完成的任务与未完成的任务分别进行分析，判断任务未完成的具体原因。"
+      },
+      {
+        "block_id": "b_19",
+        "block_idx": 19,
+        "query_dimension": "分析",
+        "text": "接下去可以建立优化模型并求解。根据给出的数据集，我们寻找成功执行的任务定价与未成功执行任务的定价之间的差距，并寻找合理的定价区间。以该区间为约束，分别就成功率最高及定价总和最低为目标，将其划分为两个优化模型并求解能得出总定价固定的情况下成功率最高的定价方案以及成功率固定总定价最低的定价方案。得出方案后可以就成功率与定价与原方案进行对比来判断新定价获得的效果。"
+      },
+      {
+        "block_id": "b_15",
+        "block_idx": 15,
+        "query_dimension": "分析",
+        "text": "问题一要求我们探索定价规律及研究任务未完成的原因。从系统角度出发考虑每个任务的定价有两个方向：任务与用户的关系、任务与任务的关系。从这两个角度考虑，我们可以进一步分析任务与用户的关系主要有任务周围用户数量，任务周围用户密度等；任务与任务之间的关系主要为任务的离群程度。"
+      },
+      {
+        "block_id": "b_21",
+        "block_idx": 21,
+        "query_dimension": "建模",
+        "text": "问题三要求考虑多任务打包发布，修改定价并分析对任务完成情况的影响。由于本题任务点分布不均匀，我们考虑对DBSCAN算法进行改进：算法的半径改为得分半径，成功率高的点得分高，成功率低的点得分低。为了提高成功率，我们将成功率低的点与成功率高的点打包。打包后还需要分析打包的合理性，即打包任务周边会员的信誉、限额等因素，如果合理就保留该包，不合理就打散该包。"
+      },
+      {
+        "block_id": "b_225",
+        "block_idx": 225,
+        "query_dimension": "建模",
+        "text": "该算法的重点是每个任务点的半径刻画，也即我们提到的得分。我们的目的地尽量联合成功执行率高的与低的任务点并打包。同时，考虑到实际任务执行用户不可能一次性做太多任务，因此规定打包任务数量上限不超过4个。对于打包完的集合，我们需要根据其周围的用户分布以及用户情况来判断打包是否合理，并将不合理的包打散。合理打包与不合理打包的示意如下："
+      },
+      {
+        "block_id": "b_220",
+        "block_idx": 220,
+        "query_dimension": "建模",
+        "text": "联合打包模型建立第一步为确定如何划分的依据。打包实际上就是分类的一种，我们将具有某些性质的任务点分为一类。我们能想到一些聚类方式如K- means聚类、层次聚类等，以上的聚类方法一般只适用于凸样本集的聚类。不适合本文任务点分布情况，为此，我们提出一种改进的基于DBSCAN的聚类算法。"
+      },
+      {
+        "block_id": "b_149",
+        "block_idx": 149,
+        "query_dimension": "建模",
+        "text": "图像有一个交点。考虑到 $90\\%$ 以上的点的LOF值小于等于1，大量的点都集中在交点之前，此时的拟合图像中，未完成任务的拟合曲线低于已完成任务的拟合曲线，这说明这部分定价忽略了任务离群程度因素而导致定价偏低，没有用户去选择执行这些任务。对于有部分点LOF值较高如 $\\mathrm{LOF} = 2.2$ 、1.75、1.55的离群任务也被完成的情况，我们寻找到这些点对应的地理位置发现都是在东边的边界处，且附近没有邻近的用户。"
+      },
+      {
+        "block_id": "b_333",
+        "block_idx": 333,
+        "query_dimension": "建模",
+        "text": "(1) 本文采用的机理分析方法，结合回归分析、检验，能用于多目标数据挖掘、优化问题上；(2) 本文采用的LOF离群度检验的算法能用于推广用于电子商务犯罪和信用卡欺诈的侦查、网络入侵检测、生态系统失调检测、公共卫生、医疗和天文学上稀有的未知种类的天体发现等领域中，具有一定的启发作用；(3) 本文改进的DBSCAN算法能发现任意形状的聚类簇，同时过滤噪声，使用者可以根据需求定义聚类强度，能用于很多的分类问题上。"
+      },
+      {
+        "block_id": "b_269",
+        "block_idx": 269,
+        "query_dimension": "建模",
+        "text": "为了简化模型，我们提出一个综合因素评价体系，并结合数据特点，建立一个综合了一下五个因素的整体指标：任务价格的影响程度 $w_{p}$ 、离任务的距离 $w_{d}$ 、任务与任务之间的离散程度 $w_{s}$ 、任务自身的难易程度 $w_{c}$ 、到达任务的交通便利程度 $w_{t}$ ，如下："
+      },
+      {
+        "block_id": "b_24",
+        "block_idx": 24,
+        "query_dimension": "求解",
+        "text": "问题四给出了一个新项目，要求给出我们的定价方案及评估方案实施效果。"
+      },
+      {
+        "block_id": "b_258",
+        "block_idx": 258,
+        "query_dimension": "求解",
+        "text": "该流程包含了上文的最优定价选择以及如何打包与打包任务定价的最优方案，并且对打包方案进行检测，在实际应用中具有较好的实用性。"
+      },
+      {
+        "block_id": "b_254",
+        "block_idx": 254,
+        "query_dimension": "求解",
+        "text": "# 5.4. 新项目的任务定价方案与实施效果"
+      },
+      {
+        "block_id": "b_327",
+        "block_idx": 327,
+        "query_dimension": "求解",
+        "text": "本文采用了一些创新算法，如研究任务与任务的关系时采用了LOF离群因子进行分析；在研究如何打包任务时，对DBSCAN算法进行改进，接着对打包后的包进行可行性分析，与原方案对比后发现表现良好。"
+      },
+      {
+        "block_id": "b_211",
+        "block_idx": 211,
+        "query_dimension": "求解",
+        "text": "对于题中所给数据，我们计算得到其任务总价为57707.5，平均任务执行率为 $62.5\\%$ 。也即我们对题中任务定价优化时， $M = 57707.5$ ， $N = 62.5\\%$ 。由于算法需要遍历搜寻最优解，搜索全局最优解较为费时，我们采用遗传算法求取局部最优解来近似代替全局最优解，并各取了50组数据点进行曲线拟合，将优化结果展示在图像上，我们以任务定价总额最小为目标进行优化得到下图的拟合曲线1，以平均成功率最高为目标进行优化得到下图的拟合曲线2."
+      },
+      {
+        "block_id": "b_18",
+        "block_idx": 18,
+        "query_dimension": "求解",
+        "text": "问题二要求我们设计新的任务定价方案，并和原方案进行比较。这是一个博弈问题的优化，博弈双方是定价与成功率。我们的目标是成功率尽可能高，定价尽可能低。成功率除了与定价有关，还与问题一中的若干影响因素有关。我们可以回归分析得到成功率关于以上因素的函数关系。"
+      }
+    ],
+    "body_char_count": 94026
+  },
+  "generated_summary": "针对“拍照赚钱”众包平台任务定价不合理导致执行失败的问题，本文基于历史任务与会员数据，系统研究了任务定价规律、优化方案及联合打包策略。首先，从任务与用户交互及任务空间分布两个维度出发，量化了周围用户限额总量、最近用户平均距离及任务离群度等关键影响因素 [Insert Figure C26]，通过非线性回归分析与LOF离群因子计算揭示了定价规律。分析发现，任务未完成的核心原因是原定价偏低，未能充分补偿用户距离成本与限额约束 [Insert Figure C21]。其次，构建以任务平均成功率最大化和定价总额最小化为目标的多目标优化模型，结合层次分析法确定因素权重，划定合理定价区间 [Insert Figure C28]，并采用遗传算法求解。结果表明，新方案在保持原成功率前提下可使定价总额降低2.9%，或在同等定价下使成功率提升9.4% [Insert Figure C29]。进一步地，针对位置集中任务，提出基于改进DBSCAN算法的联合打包模型，引入任务与用户动态得分半径机制，将低成功率任务与高成功率任务捆绑发布 [Insert Figure C32]，打包后任务平均成功率提升2.3%，最高提升7.2% [Insert Figure C34]。最后，将优化模型与打包策略应用于新项目定价，并建立用户行为仿真模拟模型进行效果检验，结果显示理论成功率与模拟结果偏差控制在20%以内。灵敏度与鲁棒性分析验证了模型的稳定性。本文方法有效平衡了平台成本与任务执行效率，可为移动互联网众包平台的任务定价与资源调度提供科学依据。",
+  "inserted_figures": [
+    "5fcd141128e22e728f5127f34be9e08c97351c39305691cfe8c9d740af23992f",
+    "6ba8aab9c1eee37b1871db67ff85b641ef54f8961f89c7d45a7491a45219aa66",
+    "491a91a5a6e975735cfeb44e0cbfa1aa26eff68050177d9d72ac5f5f8fae9390",
+    "3295afc595ecd7c0189e396b25676e4f35938dd24f138b98b9b8242f04c57f93",
+    "36432a499cb8c8f3f007f6a9b89259632649f7b5a46efacab3eb203ec706ed48",
+    "5687f630213c78f891abc1ead14c97845d411e1d39b18f01d0aeb3167e9cc9ee"
+  ],
+  "selected_image_hashes": [
+    "5fcd141128e22e728f5127f34be9e08c97351c39305691cfe8c9d740af23992f",
+    "6ba8aab9c1eee37b1871db67ff85b641ef54f8961f89c7d45a7491a45219aa66",
+    "491a91a5a6e975735cfeb44e0cbfa1aa26eff68050177d9d72ac5f5f8fae9390",
+    "3295afc595ecd7c0189e396b25676e4f35938dd24f138b98b9b8242f04c57f93",
+    "36432a499cb8c8f3f007f6a9b89259632649f7b5a46efacab3eb203ec706ed48",
+    "5687f630213c78f891abc1ead14c97845d411e1d39b18f01d0aeb3167e9cc9ee"
+  ],
+  "placeholders": [
+    "[Insert Figure C26]",
+    "[Insert Figure C21]",
+    "[Insert Figure C28]",
+    "[Insert Figure C29]",
+    "[Insert Figure C32]",
+    "[Insert Figure C34]"
+  ],
+  "rationale": "C26展示了自变量（限额、距离、离群度）与因变量（定价、执行率）的逻辑关系，对应摘要中影响因素的量化分析；C21通过拟合曲线对比直观展示了原定价偏低导致任务未完成的问题；C28展示了成功/未成功任务曲面及合理定价区间，对应优化模型的区间划定；C29展示了定价总额与执行率的权衡结果，对应优化效果数据；C32直观对比了不合理与合理打包策略，对应联合打包模型；C34展示了打包后成功率的变化曲面，对应打包效果数据。这些图片覆盖了从问题分析、模型构建到策略优化的全过程，有效降低了理解成本。",
+  "text_rag_summary": "针对“拍照赚钱”众包平台任务定价不合理导致执行失败的问题，本文基于历史任务与会员数据，系统研究了任务定价规律、优化方案及联合打包策略。首先，从任务与用户交互及任务空间分布两个维度出发，量化了周围用户限额总量、最近用户平均距离及任务离群度等关键影响因素，通过非线性回归分析与LOF离群因子计算揭示了定价规律，指出任务未完成的核心原因是原定价偏低，未能充分补偿用户距离成本与限额约束。其次，构建以任务平均成功率最大化和定价总额最小化为目标的多目标优化模型，结合层次分析法确定因素权重，划定合理定价区间，并采用遗传算法求解。结果表明，新方案在保持原成功率前提下可使定价总额降低2.9%，或在同等定价下使成功率提升9.4%。进一步地，针对位置集中任务，提出基于改进DBSCAN算法的联合打包模型，引入任务与用户动态得分半径机制，将低成功率任务与高成功率任务捆绑发布，打包后任务平均成功率提升2.3%，最高提升7.2%。最后，将优化模型与打包策略应用于新项目定价，并建立用户行为仿真模拟模型进行效果检验，结果显示理论成功率与模拟结果偏差控制在20%以内。灵敏度与鲁棒性分析验证了模型的稳定性。本文方法有效平衡了平台成本与任务执行效率，可为移动互联网众包平台的任务定价与资源调度提供科学依据。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

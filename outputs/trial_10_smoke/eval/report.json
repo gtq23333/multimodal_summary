@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-06-22T14:31:26.782272+00:00",
+  "run_mode": "dry_run",
+  "run_stage": "all",
+  "vlm_mode": "caption",
+  "gt_mode": "insertions_only",
+  "sample_count": 1,
+  "retrieval": {
+    "Hit@1": 0.0,
+    "Hit@3": 0.0,
+    "MRR": 0.0,
+    "gt_in_top_p_recall": 1.0,
+    "n": 1
+  },
+  "insertion": {
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "F1": 0.0,
+    "n": 1
+  },
+  "generation": {
+    "ROUGE-L": 1.0,
+    "n": 1
+  },
+  "acceptance": {
+    "rate": null,
+    "pending_reviews": 1
+  },
+  "per_paper": {
+    "retrieval": [
+      {
+        "paper_id": "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c",
+        "hit@1": 0.0,
+        "hit@3": 0.0,
+        "mrr": 0.0,
+        "gt_in_pool": 1.0
+      }
+    ],
+    "insertion": [
+      {
+        "paper_id": "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      }
+    ],
+    "detail": [
+      {
+        "paper_id": "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c",
+        "paper_short": "2018_G_A229",
+        "gold_figures": [
+          "6fcb8006b5290b81f7d9690a378351710d0a335fdf20bc7fd8f990b7762617e9"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "8dd9cd6b37f4...",
+            "caption": "图5.7四个不同时刻下热防护服的温度场分布图",
+            "score": 0.408075
+          },
+          {
+            "rank": 2,
+            "image_hash": "04149c4ded82...",
+            "caption": "图5.11第Ⅱ层与第IV层所有组合解示意图",
+            "score": 0.312872
+          },
+          {
+            "rank": 3,
+            "image_hash": "b87b495de639...",
+            "caption": "图5.1热传导实例示意图 发动机中的强制对流散热 灯泡中的辐射散热",
+            "score": -0.04753
+          }
+        ],
+        "inserted": [
+          "8dd9cd6b37f4817ae67e1bf861d78003059aa241bc19955fd54f3076f46b0311"
+        ],
+        "gold_inserted": [
+          "6fcb8006b5290b81f7d9690a378351710d0a335fdf20bc7fd8f990b7762617e9"
+        ],
+        "rouge_l": 1.0
+      }
+    ]
+  }
+}

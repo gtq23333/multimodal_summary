@@ -1,0 +1,933 @@
+{
+  "paper_id": "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2",
+  "top3_figures": [
+    {
+      "image_hash": "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270",
+      "caption": "图7打包任务点的算法流程图",
+      "score": 0.581173,
+      "s_direct": 0.528268,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.5,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_134",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "对任务点进行打包的算法流程图如下图7所示："
+        },
+        {
+          "block_id": "b_136",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "圆域内打包任务点的挑选公式如下："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_134",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_134",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "7",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.764134,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 19,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_5",
+          "b_4",
+          "b_10",
+          "b_180"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.858009,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.790022,
+          "cluster_margin": 0.067988,
+          "cluster_prior_raw": 0.796425,
+          "cluster_prior": 0.796425,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.796425
+        }
+      },
+      "pos": 135,
+      "rank": 1,
+      "score_base": 0.382067
+    },
+    {
+      "image_hash": "15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da",
+      "caption": "图1 任务分布情况图",
+      "score": 0.556708,
+      "s_direct": 0.461896,
+      "s_link": 0.65152,
+      "s_co": 0.65152,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_26",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "广州市、佛山市、东莞市、深圳市四个城市，如图1所示（蓝色点代表任务已完成，橙色点表示任务未完成）。"
+        },
+        {
+          "block_id": "b_70",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": false,
+          "text_snippet": "观察图1可知，Z3的任务基本都已完成，而Z1任务基本都未完成，这两个区域的任务完成情况比较特殊，故主要研究Z3区域。"
+        },
+        {
+          "block_id": "b_28",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "同样地，将附件二会员坐标导入地图中进行标注，发现有些会员位于广东省外或远离这四个城市，因此我们剔除这些会员信息以及会员编号为B1174的错误信息共13个样本信息"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_71",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_70",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 0.65152,
+          "distance_weight": 1.0,
+          "s_link": 0.65152,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.556708,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 19,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_5",
+          "b_4",
+          "b_10",
+          "b_180"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.630687,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.581941,
+          "cluster_margin": 0.048745,
+          "cluster_prior_raw": 0.583837,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 27,
+      "rank": 2,
+      "score_base": 0.556708
+    },
+    {
+      "image_hash": "b9166ba70baa55c24a4af80bb195ee6607c04f569b551b6b61072d3ce2898de4",
+      "caption": "图3定价模型拟合与实际定价对比图",
+      "score": 0.460246,
+      "s_direct": 0.511152,
+      "s_link": 0.545907,
+      "s_co": 0.545907,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_68",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "图3表示了(7)的拟合情况，从杂乱的任务点定价散点中找出最贴合实际的一般规律。"
+        },
+        {
+          "block_id": "b_66",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "这也符合之前定价规律的探究，即偏僻程度、任务密度与定价成正相关，会员密度与定价成负相关。且偏僻程度对定价产生主要影响作用。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_71",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_68",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.779867,
+          "distance_weight": 0.7,
+          "s_link": 0.545907,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.528529,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 19,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_5",
+          "b_4",
+          "b_10",
+          "b_180"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.876794,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.77031,
+          "cluster_margin": 0.106485,
+          "cluster_prior_raw": 0.783927,
+          "cluster_prior": 0.783927,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.783927
+        }
+      },
+      "pos": 67,
+      "rank": 3,
+      "score_base": 0.264265
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270",
+      "caption": "图7打包任务点的算法流程图",
+      "score": 0.581173,
+      "s_direct": 0.528268,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.5,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_134",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "对任务点进行打包的算法流程图如下图7所示："
+        },
+        {
+          "block_id": "b_136",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "圆域内打包任务点的挑选公式如下："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_134",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_134",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "7",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.764134,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 19,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_5",
+          "b_4",
+          "b_10",
+          "b_180"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.858009,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.790022,
+          "cluster_margin": 0.067988,
+          "cluster_prior_raw": 0.796425,
+          "cluster_prior": 0.796425,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.796425
+        }
+      },
+      "pos": 135,
+      "rank": 1,
+      "score_base": 0.382067
+    },
+    {
+      "image_hash": "15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da",
+      "caption": "图1 任务分布情况图",
+      "score": 0.556708,
+      "s_direct": 0.461896,
+      "s_link": 0.65152,
+      "s_co": 0.65152,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_26",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "广州市、佛山市、东莞市、深圳市四个城市，如图1所示（蓝色点代表任务已完成，橙色点表示任务未完成）。"
+        },
+        {
+          "block_id": "b_70",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": false,
+          "text_snippet": "观察图1可知，Z3的任务基本都已完成，而Z1任务基本都未完成，这两个区域的任务完成情况比较特殊，故主要研究Z3区域。"
+        },
+        {
+          "block_id": "b_28",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "同样地，将附件二会员坐标导入地图中进行标注，发现有些会员位于广东省外或远离这四个城市，因此我们剔除这些会员信息以及会员编号为B1174的错误信息共13个样本信息"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_71",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_70",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 0.65152,
+          "distance_weight": 1.0,
+          "s_link": 0.65152,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.556708,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 19,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_5",
+          "b_4",
+          "b_10",
+          "b_180"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.630687,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.581941,
+          "cluster_margin": 0.048745,
+          "cluster_prior_raw": 0.583837,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 27,
+      "rank": 2,
+      "score_base": 0.556708
+    },
+    {
+      "image_hash": "b9166ba70baa55c24a4af80bb195ee6607c04f569b551b6b61072d3ce2898de4",
+      "caption": "图3定价模型拟合与实际定价对比图",
+      "score": 0.460246,
+      "s_direct": 0.511152,
+      "s_link": 0.545907,
+      "s_co": 0.545907,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_68",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "图3表示了(7)的拟合情况，从杂乱的任务点定价散点中找出最贴合实际的一般规律。"
+        },
+        {
+          "block_id": "b_66",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "这也符合之前定价规律的探究，即偏僻程度、任务密度与定价成正相关，会员密度与定价成负相关。且偏僻程度对定价产生主要影响作用。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_71",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_68",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.779867,
+          "distance_weight": 0.7,
+          "s_link": 0.545907,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.528529,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 19,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_5",
+          "b_4",
+          "b_10",
+          "b_180"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.876794,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.77031,
+          "cluster_margin": 0.106485,
+          "cluster_prior_raw": 0.783927,
+          "cluster_prior": 0.783927,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.783927
+        }
+      },
+      "pos": 67,
+      "rank": 3,
+      "score_base": 0.264265
+    },
+    {
+      "image_hash": "edafb23ffa858042efcef27823786bd2f02e224a6ad90309044d1c101aed3b77",
+      "caption": "图2 会员分布聚类图",
+      "score": 0.420224,
+      "s_direct": 0.3622,
+      "s_link": 0.332929,
+      "s_co": 0.332929,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_28",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "同样地，将附件二会员坐标导入地图中进行标注，发现有些会员位于广东省外或远离这四个城市，因此我们剔除这些会员信息以及会员编号为B1174的错误信息共13个样本信息"
+        },
+        {
+          "block_id": "b_30",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据会员分布划分3个区域：蓝色区域（Z1)主要覆盖深圳市；红色区域（Z2)主要覆盖广州市和佛山市；绿色区域（Z3）主要覆盖东莞市。将三个类的质点作为三个区域中心"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_23",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_28",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 0.475612,
+          "distance_weight": 0.7,
+          "s_link": 0.332929,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.347565,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.887126,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.832075,
+          "cluster_margin": 0.055051,
+          "cluster_prior_raw": 0.803742,
+          "cluster_prior": 0.803742,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.803742
+        }
+      },
+      "pos": 29,
+      "rank": 4,
+      "score_base": 0.219289
+    },
+    {
+      "image_hash": "abe169c9b3ad8e61a053365d760e28783370d0a579a94aded1462138ff8b51a5",
+      "caption": "图8打包点的分布图",
+      "score": 0.414568,
+      "s_direct": 0.366824,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_143",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": true,
+          "text_snippet": "图8中，彩色点表示打包点，蓝色点为独立的任务点。"
+        },
+        {
+          "block_id": "b_141",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用MATLAB进行求解，得到下图结果。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_141",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_141",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.683412,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.89177,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.812262,
+          "cluster_margin": 0.079508,
+          "cluster_prior_raw": 0.795901,
+          "cluster_prior": 0.795901,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.795901
+        }
+      },
+      "pos": 142,
+      "rank": 5,
+      "score_base": 0.215592
+    },
+    {
+      "image_hash": "3f19f272ff71a13269fd149469bcdb8d16da73dab1a5b93c8df6f5c9b27ae948",
+      "caption": "图9打包前后任务完成情况对比图",
+      "score": 0.391424,
+      "s_direct": 0.396804,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_145",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过计算，得到如下结果："
+        },
+        {
+          "block_id": "b_147",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过对比可以发现，打包后任务完成率可以提高  $3.7\\%$ ，对任务完成情况有"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_145",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_145",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.698402,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.782873,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.728447,
+          "cluster_margin": 0.054426,
+          "cluster_prior_raw": 0.724736,
+          "cluster_prior": 0.724736,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.724736
+        }
+      },
+      "pos": 146,
+      "rank": 6,
+      "score_base": 0.21024
+    },
+    {
+      "image_hash": "0f0018a9be78459dc0b7eff2c3b1766227c8f69cf0b96db5bf1e2006fc59bdac",
+      "caption": "图4未完成任务的定价评估状况",
+      "score": 0.379948,
+      "s_direct": 0.430057,
+      "s_link": 0.571016,
+      "s_co": 0.571016,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_115",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "如图4所示："
+        },
+        {
+          "block_id": "b_74",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "定价偏低，小于0时定价偏高。"
+        },
+        {
+          "block_id": "b_76",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们发现  $89\\%$  的未完成任务实际定价均小于计算定价，相比于已完成的任务点，他们的定价偏低。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_73",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_74",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.571016,
+          "distance_weight": 1.0,
+          "s_link": 0.571016,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.500537,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.729301,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.661858,
+          "cluster_margin": 0.067443,
+          "cluster_prior_raw": 0.657516,
+          "cluster_prior": 0.657516,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.657516
+        }
+      },
+      "pos": 75,
+      "rank": 7,
+      "score_base": 0.21557
+    },
+    {
+      "image_hash": "8b16749a6b300925a31b29bbce5dfcdfc3323bd0ba1064882dc7a19805915c89",
+      "caption": "图5线性价格战略的交易效率",
+      "score": 0.347474,
+      "s_direct": 0.386286,
+      "s_link": 0.389332,
+      "s_co": 0.389332,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_115",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如图4所示："
+        },
+        {
+          "block_id": "b_117",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设新任务定价："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_122",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_117",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.556189,
+          "distance_weight": 0.7,
+          "s_link": 0.389332,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.387809,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.8419,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.789288,
+          "cluster_margin": 0.052612,
+          "cluster_prior_raw": 0.789796,
+          "cluster_prior": 0.789796,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.789796
+        }
+      },
+      "pos": 116,
+      "rank": 8,
+      "score_base": 0.150025
+    },
+    {
+      "image_hash": "ea5bdf8dd7ec1bc07de4b1d0314f8b7f596203072026261652db03f648ad4bf7",
+      "caption": "图11 新任务聚类分析图",
+      "score": 0.306756,
+      "s_direct": 0.443721,
+      "s_link": 0.318476,
+      "s_co": 0.318476,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_153",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": true,
+          "text_snippet": "从图中可以看出，任务点主要分布在广州市和深圳市。对任务点进行聚类，结果如图11所示。"
+        },
+        {
+          "block_id": "b_155",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过聚类将附件三数据分为两个区域并确定出两个区域的中心点。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_150",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_155",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.454965,
+          "distance_weight": 0.7,
+          "s_link": 0.318476,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.381098,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.891166,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.819119,
+          "cluster_margin": 0.072047,
+          "cluster_prior_raw": 0.801804,
+          "cluster_prior": 0.801804,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.801804
+        }
+      },
+      "pos": 154,
+      "rank": 9,
+      "score_base": 0.106305
+    },
+    {
+      "image_hash": "9f8550f3a2f716509bb19f9846caa0f19a4ddaaa842e0cb353e0b8ee12a2c19a",
+      "caption": "图10 附件三任务点分布情况",
+      "score": 0.123038,
+      "s_direct": 0.410443,
+      "s_link": 0.440841,
+      "s_co": 0.440841,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_151",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": true,
+          "text_snippet": "将附件三中的任务点标记在谷歌地图上进行分析，如图10。"
+        },
+        {
+          "block_id": "b_153",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从图中可以看出，任务点主要分布在广州市和深圳市。对任务点进行聚类，结果如图11所示。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_150",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_151",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "10",
+          "raw_cosine": 0.440841,
+          "distance_weight": 1.0,
+          "s_link": 0.440841,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.425642,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.629084,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.603201,
+          "cluster_margin": 0.025883,
+          "cluster_prior_raw": 0.593077,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 152,
+      "rank": 10,
+      "score_base": 0.123038
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 48,
+    "query_block_pair_count": 60,
+    "cf_count": 19,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图1",
+      "图1",
+      "图2",
+      "图3",
+      "图3",
+      "图3",
+      "图1",
+      "图3"
+    ],
+    "rerank_profile": "legacy",
+    "main_method": "LG-JSSF-Legacy+ClusterAdd"
+  }
+}

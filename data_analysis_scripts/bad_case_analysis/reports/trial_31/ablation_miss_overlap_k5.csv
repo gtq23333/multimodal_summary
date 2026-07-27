@@ -1,0 +1,6 @@
+﻿drop_method,k,miss_jaccard_with_full,only_full_miss,only_drop_miss,shared_miss
+w/o S_link (Add),5,0.5333,10,18,32
+w/o P_layout (Add),5,0.5738,7,19,35
+w/o P_type (Add),5,0.8913,1,4,41
+w/o ClusterPrior (Add),5,0.8667,3,3,39
+w/o LocalWindow (Add),5,0.5333,10,18,32

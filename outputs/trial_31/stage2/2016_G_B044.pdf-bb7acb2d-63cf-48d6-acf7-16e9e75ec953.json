@@ -1,0 +1,1382 @@
+{
+  "paper_id": "2016_G_B044.pdf-bb7acb2d-63cf-48d6-acf7-16e9e75ec953",
+  "top3_figures": [
+    {
+      "image_hash": "39c940a5bf6b7f096fc2adced3a0d6f67c47d153ffb01c266509fe1a2b0cecaa",
+      "caption": "图1 小区影响范围交通平面图",
+      "score": 1.009916,
+      "s_direct": 0.639435,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_25",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "构建一般意义上的小区交通平面图如图1所示，受小区开放影响的周边道路定义为与穿行小区的车流存在合流和分流现象的道路  $(1)$  和  $(2)$ ，以及小区内"
+        },
+        {
+          "block_id": "b_33",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": false,
+          "text_snippet": "式中，  $n$  为受影响周边道路有信号灯的交叉路口数量，  $m$  为小区出入口数量，  $Y D T_{i}^{b}$  为小区开放前周边道路上第  $"
+        },
+        {
+          "block_id": "b_27",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由引言可知，小区开放从两方面对周边道路通行产生了反向的影响：一方面，小区开放后，内部道路可以分担周边道路的车流量，减少周边道路的通行压力，路网密度增大，从而"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_27",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_27",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.819717,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 9,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_6",
+          "b_10",
+          "b_8",
+          "b_28"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.815628,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.748208,
+          "cluster_margin": 0.06742,
+          "cluster_prior_raw": 0.760792,
+          "cluster_prior": 0.760792,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.760792
+        }
+      },
+      "pos": 26,
+      "rank": 1,
+      "score_base": 0.819717
+    },
+    {
+      "image_hash": "ab998ef33369c27b8d3e2d99e1a65eff41efb794d45ca8dcbbc9b49fd2a1b21e",
+      "caption": "图6 类型1小区开放对平均延时的影响",
+      "score": 0.49126,
+      "s_direct": 0.649148,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_109",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "假设小区内部路长  $s_c = 100s_0$ ，  $t_g / T = 0.25$ ，  $T = 20$ ，小区周边道路车流量  $R = 0.5$ 。"
+        },
+        {
+          "block_id": "b_111",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可知，小区开放后明显降低了平均延误时间。这是由于该小区周边道路只受到有信号灯的交叉路口的延误时间  $YDT$  的影响，当小区开放后，小区内部道路③分担"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_111",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_111",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.824574,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 9,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_6",
+          "b_10",
+          "b_8",
+          "b_28"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.864795,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.785237,
+          "cluster_margin": 0.079558,
+          "cluster_prior_raw": 0.790164,
+          "cluster_prior": 0.790164,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.790164
+        }
+      },
+      "pos": 110,
+      "rank": 2,
+      "score_base": 0.293719
+    },
+    {
+      "image_hash": "35979eb47c1ed294514260c349f0507504e7f6a0a102f704d0f79dac27af4217",
+      "caption": "图7 类型1小区内道路距离对平均延时的影响",
+      "score": 0.480336,
+      "s_direct": 0.669659,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_115",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "保持其他变量不变，当小区内部道路距离  $s_c$  发生变化时，得到平均延时的数值变化如图所示："
+        },
+        {
+          "block_id": "b_117",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可知，当其他变量一定时，平均延迟时间与小区内道路距离呈正相关关系。小区内部道路距离越短，则开放小区后对周边道路通行的正效应越大。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_117",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_117",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.83483,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 9,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_6",
+          "b_10",
+          "b_8",
+          "b_28"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.86413,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.80086,
+          "cluster_margin": 0.06327,
+          "cluster_prior_raw": 0.808241,
+          "cluster_prior": 0.808241,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.808241
+        }
+      },
+      "pos": 116,
+      "rank": 3,
+      "score_base": 0.278277
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "39c940a5bf6b7f096fc2adced3a0d6f67c47d153ffb01c266509fe1a2b0cecaa",
+      "caption": "图1 小区影响范围交通平面图",
+      "score": 1.009916,
+      "s_direct": 0.639435,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_25",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "构建一般意义上的小区交通平面图如图1所示，受小区开放影响的周边道路定义为与穿行小区的车流存在合流和分流现象的道路  $(1)$  和  $(2)$ ，以及小区内"
+        },
+        {
+          "block_id": "b_33",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": false,
+          "text_snippet": "式中，  $n$  为受影响周边道路有信号灯的交叉路口数量，  $m$  为小区出入口数量，  $Y D T_{i}^{b}$  为小区开放前周边道路上第  $"
+        },
+        {
+          "block_id": "b_27",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由引言可知，小区开放从两方面对周边道路通行产生了反向的影响：一方面，小区开放后，内部道路可以分担周边道路的车流量，减少周边道路的通行压力，路网密度增大，从而"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_27",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_27",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.819717,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 9,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_6",
+          "b_10",
+          "b_8",
+          "b_28"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.815628,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.748208,
+          "cluster_margin": 0.06742,
+          "cluster_prior_raw": 0.760792,
+          "cluster_prior": 0.760792,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.760792
+        }
+      },
+      "pos": 26,
+      "rank": 1,
+      "score_base": 0.819717
+    },
+    {
+      "image_hash": "ab998ef33369c27b8d3e2d99e1a65eff41efb794d45ca8dcbbc9b49fd2a1b21e",
+      "caption": "图6 类型1小区开放对平均延时的影响",
+      "score": 0.49126,
+      "s_direct": 0.649148,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_109",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "假设小区内部路长  $s_c = 100s_0$ ，  $t_g / T = 0.25$ ，  $T = 20$ ，小区周边道路车流量  $R = 0.5$ 。"
+        },
+        {
+          "block_id": "b_111",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可知，小区开放后明显降低了平均延误时间。这是由于该小区周边道路只受到有信号灯的交叉路口的延误时间  $YDT$  的影响，当小区开放后，小区内部道路③分担"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_111",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_111",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.824574,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 9,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_6",
+          "b_10",
+          "b_8",
+          "b_28"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.864795,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.785237,
+          "cluster_margin": 0.079558,
+          "cluster_prior_raw": 0.790164,
+          "cluster_prior": 0.790164,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.790164
+        }
+      },
+      "pos": 110,
+      "rank": 2,
+      "score_base": 0.293719
+    },
+    {
+      "image_hash": "35979eb47c1ed294514260c349f0507504e7f6a0a102f704d0f79dac27af4217",
+      "caption": "图7 类型1小区内道路距离对平均延时的影响",
+      "score": 0.480336,
+      "s_direct": 0.669659,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_115",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "保持其他变量不变，当小区内部道路距离  $s_c$  发生变化时，得到平均延时的数值变化如图所示："
+        },
+        {
+          "block_id": "b_117",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可知，当其他变量一定时，平均延迟时间与小区内道路距离呈正相关关系。小区内部道路距离越短，则开放小区后对周边道路通行的正效应越大。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_117",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_117",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.83483,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 9,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_6",
+          "b_10",
+          "b_8",
+          "b_28"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.86413,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.80086,
+          "cluster_margin": 0.06327,
+          "cluster_prior_raw": 0.808241,
+          "cluster_prior": 0.808241,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.808241
+        }
+      },
+      "pos": 116,
+      "rank": 3,
+      "score_base": 0.278277
+    },
+    {
+      "image_hash": "625ef1d3b4f071593d0c993ce813e04404ba3450bd30d8e54db764b7a90c01cb",
+      "caption": "图11 类型1小区周边道路车流量对平均延时的影响（二维图）",
+      "score": 0.443192,
+      "s_direct": 0.706164,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_131",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为更直观的反映二者的关系，绘出不同  $R$  值下的平均延迟时间随研究时间  $t$  的变化示意图："
+        },
+        {
+          "block_id": "b_134",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图直观可知，保持其他变量不变时，小区周边道路车流量  $R$  变化时，小区开放前后平均延迟时间的差值并非随之单调变化，即存在一个最优的周边道路车流量  $"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_134",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_134",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.853082,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.900507,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.830692,
+          "cluster_margin": 0.069814,
+          "cluster_prior_raw": 0.820923,
+          "cluster_prior": 0.820923,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.820923
+        }
+      },
+      "pos": 133,
+      "rank": 4,
+      "score_base": 0.237961
+    },
+    {
+      "image_hash": "768114fb1b5003f403aa6f511dcbf15618de9d2c26a3237fe6f011ac7feae41b",
+      "caption": "图12 类型1小区周边道路车流量对平均延时的影响（三维图）",
+      "score": 0.439999,
+      "s_direct": 0.711972,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_134",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图直观可知，保持其他变量不变时，小区周边道路车流量  $R$  变化时，小区开放前后平均延迟时间的差值并非随之单调变化，即存在一个最优的周边道路车流量  $"
+        },
+        {
+          "block_id": "b_136",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从上图可以看出，前后延时差  $\\Delta DT$  一直为正。前后延时差  $\\Delta DT$  随着车流量  $R$  的变化呈现出一个先增后减的趋势"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_134",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_134",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.855986,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.902746,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.847813,
+          "cluster_margin": 0.054933,
+          "cluster_prior_raw": 0.834717,
+          "cluster_prior": 0.834717,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.834717
+        }
+      },
+      "pos": 135,
+      "rank": 5,
+      "score_base": 0.23132
+    },
+    {
+      "image_hash": "d155fb24b48d430d0221669f406864b3302995971541344e69241ea08dde3bf0",
+      "caption": "图2小区出入口示意图",
+      "score": 0.433532,
+      "s_direct": 0.515878,
+      "s_link": 0.308619,
+      "s_co": 0.308619,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_45",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "绘制小区出入口示意图如下图所示，可知在主路右转进入小区的交通模式下，主路右转车辆减速或停车等待进入小区，容易在转弯节点（小区入口）处形成局部交通瓶颈，从而引起主"
+        },
+        {
+          "block_id": "b_47",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由参考文献[4]可知，在干扰车流  $①$  的影响下，主流向通行能力  $C_1$  的计算公式为："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_18",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_45",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.771547,
+          "distance_weight": 0.4,
+          "s_link": 0.308619,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.412248,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.763743,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.674001,
+          "cluster_margin": 0.089742,
+          "cluster_prior_raw": 0.69373,
+          "cluster_prior": 0.69373,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.69373
+        }
+      },
+      "pos": 46,
+      "rank": 6,
+      "score_base": 0.2601
+    },
+    {
+      "image_hash": "c398a576b4226fdece1c309ace61e4ea616293200919cfe0428f21c2b7a78a9c",
+      "caption": "图14 类型2小区开放对平均延时之差的影响",
+      "score": 0.417256,
+      "s_direct": 0.64697,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_141",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "假设小区内部路长  $s_c = 80s_0$ ，  $t_g / T = 0.25$ ，  $T = 20$ ，小区周边道路车流量  $R = 0.35$ ，"
+        },
+        {
+          "block_id": "b_143",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可知，小区开放后对平均延误时间的影响有正效应也有负效应，且波动很大。在观察时间初期，开放前后平均延时差值多为负值，即小区开放对周边道路通行产生了不利影响，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_141",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_141",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.823485,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.916826,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.825651,
+          "cluster_margin": 0.091175,
+          "cluster_prior_raw": 0.825914,
+          "cluster_prior": 0.825914,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.825914
+        }
+      },
+      "pos": 142,
+      "rank": 7,
+      "score_base": 0.210778
+    },
+    {
+      "image_hash": "66a77fed0d21be18889fa11a6bec812c2ffea0648d3cfd7f3d755217647e653e",
+      "caption": "图5 不存在分、合流效应的小区示意图",
+      "score": 0.411458,
+      "s_direct": 0.649031,
+      "s_link": 0.580029,
+      "s_co": 0.580029,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_76",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "其中，小区入口处的交叉口示意图如图4所示，出口方向道路有2条：右转进入小区的道路  $①$  和继续直行的道路  $(2)$  ，相当于关于是否进入小区的0- "
+        },
+        {
+          "block_id": "b_107",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "考虑如下小区类型，受小区开放影响的道路有  $①$  和  $②$  两条，因为小区出入口位于十字路口某一出口方向，因此小区出入口处不存在合流与分流的现象，车流"
+        },
+        {
+          "block_id": "b_109",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "假设小区内部路长  $s_c = 100s_0$ ，  $t_g / T = 0.25$ ，  $T = 20$ ，小区周边道路车流量  $R = 0.5$ 。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_111",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_107",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.828613,
+          "distance_weight": 0.7,
+          "s_link": 0.580029,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.61453,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.729182,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.689288,
+          "cluster_margin": 0.039895,
+          "cluster_prior_raw": 0.6949,
+          "cluster_prior": 0.6949,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.6949
+        }
+      },
+      "pos": 108,
+      "rank": 8,
+      "score_base": 0.237733
+    },
+    {
+      "image_hash": "9d931c28acf146371d42aa4a8f722c7d4f0d78155203fa894d3478f5208e4dbc",
+      "caption": "图16类型2小区开放对平均延时之差的影响（基于优化路径）",
+      "score": 0.405837,
+      "s_direct": 0.671129,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_160",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "考虑5.2.3中优化的路径选择函数，对存在分、合流效应的小区进行分析。假设小区内部道路距离  $s_c = 80s_0$  ，  $t_{\\mathrm{g}}"
+        },
+        {
+          "block_id": "b_162",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可知，在优化路径选择函数的条件下，开放前与开放后的平均延时差值均为正值，即小区开放后有效的降低了平均延时，从而对周边道路的通行有正效应。由参考文献[1]可"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_160",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_160",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.835565,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.901478,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.815111,
+          "cluster_margin": 0.086367,
+          "cluster_prior_raw": 0.805661,
+          "cluster_prior": 0.805661,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.805661
+        }
+      },
+      "pos": 161,
+      "rank": 9,
+      "score_base": 0.204421
+    },
+    {
+      "image_hash": "31f1f4d282a050e0539faaa898a564d26f5ef61df0afde38a04b6cfca37b768f",
+      "caption": "图10平均延误时间和小区内部道路节点数目关系图",
+      "score": 0.371015,
+      "s_direct": 0.642785,
+      "s_link": 0.533029,
+      "s_co": 0.533029,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_122",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": true,
+          "text_snippet": "保证其他因素不变，用计算机模拟问题二中的车辆通行模型，得到平均延误时间和小区内部道路节点数目关系如图10所示："
+        },
+        {
+          "block_id": "b_124",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可以直观的看出，小区内部道路节点数目越多，小区开放后的平均延误时间越长，即前后延时差  $\\Delta D T$  越小。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_117",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_122",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "10",
+          "raw_cosine": 0.761469,
+          "distance_weight": 0.7,
+          "s_link": 0.533029,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.587907,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.868923,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.811857,
+          "cluster_margin": 0.057066,
+          "cluster_prior_raw": 0.804288,
+          "cluster_prior": 0.804288,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.804288
+        }
+      },
+      "pos": 123,
+      "rank": 10,
+      "score_base": 0.169943
+    },
+    {
+      "image_hash": "1c6895068dc52c1407175ec187dd4401fb0e8830ebdaff553f9dff26d8368169",
+      "caption": "图15 小区内道路距离对前后延时差为负值的比率的关系",
+      "score": 0.368149,
+      "s_direct": 0.660908,
+      "s_link": 0.600626,
+      "s_co": 0.600626,
+      "p_layout": 0.25,
+      "p_type": 1.0,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_147",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "保持其他变量不变，当小区内部道路的距离  $s_c$  发生变化时，在每一个  $s_c$  的条件下，计算在研究时间内开放前后平均误差为负值的比率如图所示："
+        },
+        {
+          "block_id": "b_149",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从图上可以看出纵轴标量受随机性影响较大，难以看出相关关系。用SPSS进行相关性检验，得到结果如下："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_145",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_147",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.858037,
+          "distance_weight": 0.7,
+          "s_link": 0.600626,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.630767,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.916266,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.837211,
+          "cluster_margin": 0.079055,
+          "cluster_prior_raw": 0.841829,
+          "cluster_prior": 0.841829,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.841829
+        }
+      },
+      "pos": 148,
+      "rank": 11,
+      "score_base": 0.157692
+    },
+    {
+      "image_hash": "93f16438c034078576ccf17e10aa55552eb05e11bcd6b5a078e73fe801f1f6e6",
+      "caption": "图13 存在分、合流效应的小区示意图",
+      "score": 0.358673,
+      "s_direct": 0.645062,
+      "s_link": 0.758706,
+      "s_co": 0.758706,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_138",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（1）基本模型"
+        },
+        {
+          "block_id": "b_140",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "考虑小区类型，受小区开放影响的周边道路有  $①$  和  $②$  两条，小区出入口处存在合流与分流的现象。造成平均延误的因素有以下三点：A点的车辆分流导致的"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_141",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_140",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.758706,
+          "distance_weight": 1.0,
+          "s_link": 0.758706,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.701884,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.748593,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.719502,
+          "cluster_margin": 0.029091,
+          "cluster_prior_raw": 0.719084,
+          "cluster_prior": 0.697292,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.697292
+        }
+      },
+      "pos": 139,
+      "rank": 12,
+      "score_base": 0.18435
+    },
+    {
+      "image_hash": "851b426a64c611c89d7852058705681cbb3873810c44e167d653fd0c25192f4e",
+      "caption": "图4 小区入口处的交叉口示意图",
+      "score": 0.354616,
+      "s_direct": 0.537108,
+      "s_link": 0.289544,
+      "s_co": 0.289544,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_76",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "其中，小区入口处的交叉口示意图如图4所示，出口方向道路有2条：右转进入小区的道路  $①$  和继续直行的道路  $(2)$  ，相当于关于是否进入小区的0- "
+        },
+        {
+          "block_id": "b_79",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在这些情况下，我们假设去往不同路上的车互不干扰。在信息不完全的情况下，在驶入道路之前，车辆驾驶员无法判断哪一条道路更加通畅，因此随机选择一条道路进入。因此，定义"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_96",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_79",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.72386,
+          "distance_weight": 0.4,
+          "s_link": 0.289544,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.413326,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.771707,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.690908,
+          "cluster_margin": 0.080798,
+          "cluster_prior_raw": 0.706422,
+          "cluster_prior": 0.706422,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.706422
+        }
+      },
+      "pos": 77,
+      "rank": 13,
+      "score_base": 0.17801
+    },
+    {
+      "image_hash": "10edeb16f21a0e473c31dc908d46ed458c57e89c16a3be9b22b0d93ba5a4802c",
+      "caption": "图5 小区出口处的交叉口示意图",
+      "score": 0.341094,
+      "s_direct": 0.546651,
+      "s_link": 0.289544,
+      "s_co": 0.289544,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_76",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": true,
+          "text_snippet": "其中，小区入口处的交叉口示意图如图4所示，出口方向道路有2条：右转进入小区的道路  $①$  和继续直行的道路  $(2)$  ，相当于关于是否进入小区的0- "
+        },
+        {
+          "block_id": "b_79",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在这些情况下，我们假设去往不同路上的车互不干扰。在信息不完全的情况下，在驶入道路之前，车辆驾驶员无法判断哪一条道路更加通畅，因此随机选择一条道路进入。因此，定义"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_96",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_79",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.72386,
+          "distance_weight": 0.4,
+          "s_link": 0.289544,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.418097,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.767177,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.708649,
+          "cluster_margin": 0.058528,
+          "cluster_prior_raw": 0.717408,
+          "cluster_prior": 0.717408,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.717408
+        }
+      },
+      "pos": 78,
+      "rank": 14,
+      "score_base": 0.161742
+    },
+    {
+      "image_hash": "4b11384dd5d19f6ea743635b2cb47546ae870141a0b7171769e97a52f1c0f841",
+      "caption": "图3 一般道路上车辆运行示意图",
+      "score": 0.224438,
+      "s_direct": 0.508912,
+      "s_link": 0.296442,
+      "s_co": 0.296442,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_67",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "该模型针对的是不在交叉口的车辆的状态转移模型，计算机模拟步骤如下："
+        },
+        {
+          "block_id": "b_69",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设周边道路长度为  $s$ ，每个单位时间间隔  $\\Delta t$  内，车辆位移为  $s_0$ 。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_58",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_67",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.741105,
+          "distance_weight": 0.4,
+          "s_link": 0.296442,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.402677,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.83342,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.830051,
+          "cluster_margin": 0.003369,
+          "cluster_prior_raw": 0.822864,
+          "cluster_prior": 0.092399,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.092399
+        }
+      },
+      "pos": 68,
+      "rank": 15,
+      "score_base": 0.201339
+    },
+    {
+      "image_hash": "9d863a7d688c4e522d105903c88c1e46bdc61676f4c2f6e4bc4cbd4f50580450",
+      "caption": "图8 两节点小区示意图",
+      "score": 0.165316,
+      "s_direct": 0.515049,
+      "s_link": 0.533029,
+      "s_co": 0.533029,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_119",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": true,
+          "text_snippet": "考虑小区内部有两条道路的情况：若两条道路之间有一条道路将二者联通，如图8所示，则可认为小区内部道路节点数  $num = 2$ ；若两条道路之间有两条道路将二者"
+        },
+        {
+          "block_id": "b_122",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "保证其他因素不变，用计算机模拟问题二中的车辆通行模型，得到平均延误时间和小区内部道路节点数目关系如图10所示："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_117",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_122",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.761469,
+          "distance_weight": 0.7,
+          "s_link": 0.533029,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.524039,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.689122,
+          "cluster_top2_label": "7",
+          "cluster_top2_sim": 0.666307,
+          "cluster_margin": 0.022815,
+          "cluster_prior_raw": 0.668894,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 120,
+      "rank": 16,
+      "score_base": 0.165316
+    },
+    {
+      "image_hash": "d11552c578f18149f047ff30a34aaf0a854c5c758b049a2ce42f34e4d41390ca",
+      "caption": "图9四节点小区示意图",
+      "score": 0.160408,
+      "s_direct": 0.532696,
+      "s_link": 0.533029,
+      "s_co": 0.533029,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_119",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": true,
+          "text_snippet": "考虑小区内部有两条道路的情况：若两条道路之间有一条道路将二者联通，如图8所示，则可认为小区内部道路节点数  $num = 2$ ；若两条道路之间有两条道路将二者"
+        },
+        {
+          "block_id": "b_122",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "保证其他因素不变，用计算机模拟问题二中的车辆通行模型，得到平均延误时间和小区内部道路节点数目关系如图10所示："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_117",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_122",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.761469,
+          "distance_weight": 0.7,
+          "s_link": 0.533029,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.532862,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.679577,
+          "cluster_top2_label": "7",
+          "cluster_top2_sim": 0.65973,
+          "cluster_margin": 0.019847,
+          "cluster_prior_raw": 0.658633,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 121,
+      "rank": 17,
+      "score_base": 0.160408
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 30,
+    "query_block_pair_count": 60,
+    "cf_count": 9,
+    "caption_refs_sample": [
+      "图1",
+      "图1",
+      "图4",
+      "图5",
+      "图1",
+      "图8",
+      "图9",
+      "图10",
+      "图2",
+      "图3"
+    ],
+    "rerank_profile": "legacy",
+    "main_method": "LG-JSSF-Legacy+ClusterAdd",
+    "query_use_keywords": false
+  }
+}

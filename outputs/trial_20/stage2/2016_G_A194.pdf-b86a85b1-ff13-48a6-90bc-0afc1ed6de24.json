@@ -1,0 +1,1274 @@
+{
+  "paper_id": "2016_G_A194.pdf-b86a85b1-ff13-48a6-90bc-0afc1ed6de24",
+  "top3_figures": [
+    {
+      "image_hash": "0882057e926fdfd090bdafa61b6066920ec41a123d157058477eadf4db1d5c8e",
+      "caption": "图1传输节点示意图",
+      "score": 0.911615,
+      "s_direct": 0.431143,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_24",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "组成（如图1所示），对此，我们可建立力学分析模型，依次对浮标、钢管、钢桶和锚链的受力平衡和力矩平衡进行分析，将浮标与第一节钢管的结点记为1，以此类推将倒数第一节"
+        },
+        {
+          "block_id": "b_26",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（1）对浮标进行受力分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_24",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_24",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.715571,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 30,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_142",
+          "b_13",
+          "b_11",
+          "b_7",
+          "b_24"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.838734,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.773798,
+          "cluster_margin": 0.064936,
+          "cluster_prior_raw": 0.784173,
+          "cluster_prior": 0.784173,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.784173
+        }
+      },
+      "pos": 25,
+      "rank": 1,
+      "score_base": 0.715571
+    },
+    {
+      "image_hash": "4f533f614f8b5499b728c718540dbf9e350c90dfd1b30054dba4b6774d3e82c8",
+      "caption": "图2浮标受力分析示意图",
+      "score": 0.765136,
+      "s_direct": 0.764033,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_27",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "我们以位置相对固定的锚链末端与锚的链接点作为参考点，对浮标进行受力分析（如图2所示）。"
+        },
+        {
+          "block_id": "b_29",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "由浮标受力分析示意图（图2）可知，浮标所受钢管的拉力  $\\mathrm{T_1}$  、风力  $\\mathrm{F_{\\perp}}$  、重力  $\\ma"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_27",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_27",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.882017,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 30,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_142",
+          "b_13",
+          "b_11",
+          "b_7",
+          "b_24"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.914337,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.829736,
+          "cluster_margin": 0.084602,
+          "cluster_prior_raw": 0.834581,
+          "cluster_prior": 0.834581,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.834581
+        }
+      },
+      "pos": 28,
+      "rank": 2,
+      "score_base": 0.556491
+    },
+    {
+      "image_hash": "50d1a83095504f2d4b3880508fa57ab360268b87299dcb238d743e6892fd3442",
+      "caption": "图12二分法流程示意图",
+      "score": 0.491583,
+      "s_direct": 0.451647,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.270238,
+      "p_type": 1.5,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_127",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": false,
+          "text_snippet": "a、先人工确定出重物球质量的大致范围，再在该范围内以小步长遍历重物球质量m；b、选取浮标吃水深度的区间。以恰好提起所有重物时的浮标吃水深度为左区间，以浮标高度为"
+        },
+        {
+          "block_id": "b_128",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "e、记录满足约束条件的浮标吃水深度和重物球的质量。"
+        },
+        {
+          "block_id": "b_130",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.2模型二的求解"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_127",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_127",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "12",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.725824,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 30,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_142",
+          "b_13",
+          "b_11",
+          "b_7",
+          "b_24"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.886755,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.858672,
+          "cluster_margin": 0.028083,
+          "cluster_prior_raw": 0.843352,
+          "cluster_prior": 0.789461,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.789461
+        }
+      },
+      "pos": 129,
+      "rank": 3,
+      "score_base": 0.294218
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "0882057e926fdfd090bdafa61b6066920ec41a123d157058477eadf4db1d5c8e",
+      "caption": "图1传输节点示意图",
+      "score": 0.911615,
+      "s_direct": 0.431143,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_24",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "组成（如图1所示），对此，我们可建立力学分析模型，依次对浮标、钢管、钢桶和锚链的受力平衡和力矩平衡进行分析，将浮标与第一节钢管的结点记为1，以此类推将倒数第一节"
+        },
+        {
+          "block_id": "b_26",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（1）对浮标进行受力分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_24",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_24",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.715571,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 30,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_142",
+          "b_13",
+          "b_11",
+          "b_7",
+          "b_24"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.838734,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.773798,
+          "cluster_margin": 0.064936,
+          "cluster_prior_raw": 0.784173,
+          "cluster_prior": 0.784173,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.784173
+        }
+      },
+      "pos": 25,
+      "rank": 1,
+      "score_base": 0.715571
+    },
+    {
+      "image_hash": "4f533f614f8b5499b728c718540dbf9e350c90dfd1b30054dba4b6774d3e82c8",
+      "caption": "图2浮标受力分析示意图",
+      "score": 0.765136,
+      "s_direct": 0.764033,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_27",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "我们以位置相对固定的锚链末端与锚的链接点作为参考点，对浮标进行受力分析（如图2所示）。"
+        },
+        {
+          "block_id": "b_29",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "由浮标受力分析示意图（图2）可知，浮标所受钢管的拉力  $\\mathrm{T_1}$  、风力  $\\mathrm{F_{\\perp}}$  、重力  $\\ma"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_27",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_27",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.882017,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 30,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_142",
+          "b_13",
+          "b_11",
+          "b_7",
+          "b_24"
+        ],
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.914337,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.829736,
+          "cluster_margin": 0.084602,
+          "cluster_prior_raw": 0.834581,
+          "cluster_prior": 0.834581,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.834581
+        }
+      },
+      "pos": 28,
+      "rank": 2,
+      "score_base": 0.556491
+    },
+    {
+      "image_hash": "50d1a83095504f2d4b3880508fa57ab360268b87299dcb238d743e6892fd3442",
+      "caption": "图12二分法流程示意图",
+      "score": 0.491583,
+      "s_direct": 0.451647,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.270238,
+      "p_type": 1.5,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_127",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": false,
+          "text_snippet": "a、先人工确定出重物球质量的大致范围，再在该范围内以小步长遍历重物球质量m；b、选取浮标吃水深度的区间。以恰好提起所有重物时的浮标吃水深度为左区间，以浮标高度为"
+        },
+        {
+          "block_id": "b_128",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "e、记录满足约束条件的浮标吃水深度和重物球的质量。"
+        },
+        {
+          "block_id": "b_130",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.2模型二的求解"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_127",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_127",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "12",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.725824,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 30,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_142",
+          "b_13",
+          "b_11",
+          "b_7",
+          "b_24"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.886755,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.858672,
+          "cluster_margin": 0.028083,
+          "cluster_prior_raw": 0.843352,
+          "cluster_prior": 0.789461,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.789461
+        }
+      },
+      "pos": 129,
+      "rank": 3,
+      "score_base": 0.294218
+    },
+    {
+      "image_hash": "502461a3da48d8261c02af18afafd2f2ebbaacd1cb70cce0d3589eed980712ae",
+      "caption": "图3 钢管受力分析示意图",
+      "score": 0.444344,
+      "s_direct": 0.597543,
+      "s_link": 0.347131,
+      "s_co": 0.347131,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_41",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "对于第一节钢管，我们可对其进行受力分析（如图3所示）。"
+        },
+        {
+          "block_id": "b_43",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "由钢管受力分析示意图（图3）可知，钢管所受拉力  $\\mathrm{T}_1$  、  $\\mathrm{T}_2$  、重力  $\\mathrm{G}_1$ "
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_29",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_43",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.867828,
+          "distance_weight": 0.4,
+          "s_link": 0.347131,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.472337,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.910444,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.817501,
+          "cluster_margin": 0.092943,
+          "cluster_prior_raw": 0.832704,
+          "cluster_prior": 0.832704,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.832704
+        }
+      },
+      "pos": 42,
+      "rank": 4,
+      "score_base": 0.236169
+    },
+    {
+      "image_hash": "d2994bba14fdcf88cbb1bc6ff816b4b4498c85b75b8c16a361b59bda6af6f5da",
+      "caption": "图10 风速  $12\\mathrm{m / s}$  时锚链的形状",
+      "score": 0.375817,
+      "s_direct": 0.63232,
+      "s_link": 0.544517,
+      "s_co": 0.544517,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_113",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": true,
+          "text_snippet": "通过图9和图10的链条形状，我们可以清晰的看出，海面风速为  $12\\mathrm{m / s}$  时，有一部分锚链平铺在海床上；海面风速为  $24\\mat"
+        },
+        {
+          "block_id": "b_110",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于锚链的形状，可根据各节锚链的长度与锚链倾斜角度进行求解，借用MATLAB软件解得海面风速在  $12\\mathrm{m / s}$  和  $24\\math"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_117",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_113",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "10",
+          "raw_cosine": 0.777881,
+          "distance_weight": 0.7,
+          "s_link": 0.544517,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.588418,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.878949,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.832582,
+          "cluster_margin": 0.046368,
+          "cluster_prior_raw": 0.822904,
+          "cluster_prior": 0.822904,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.822904
+        }
+      },
+      "pos": 111,
+      "rank": 5,
+      "score_base": 0.170091
+    },
+    {
+      "image_hash": "b5c4ca5a459119f1f5c70b5857ed44667804021dc574b64af6f4ca17a36caa3e",
+      "caption": "图7 锚链受力分析示意图",
+      "score": 0.375396,
+      "s_direct": 0.693631,
+      "s_link": 0.30654,
+      "s_co": 0.30654,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_75",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "对于第一节电焊锚链，我们可对其进行受力分析（如图7示）。"
+        },
+        {
+          "block_id": "b_77",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "由锚链受力分析示意图（图7）所示，第一节锚链所受合力应该为零，即："
+        },
+        {
+          "block_id": "b_82",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": false,
+          "text_snippet": "由于电焊锚链也是刚性物体，所以电焊锚链所受拉力的方向与电焊锚链所在方向之间存在夹角，故我们可对第一节电焊锚链进行力矩平衡分析（如图7示）："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_11",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_82",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "7",
+          "raw_cosine": 0.76635,
+          "distance_weight": 0.4,
+          "s_link": 0.30654,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.500086,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.909341,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.826794,
+          "cluster_margin": 0.082547,
+          "cluster_prior_raw": 0.834805,
+          "cluster_prior": 0.834805,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.834805
+        }
+      },
+      "pos": 76,
+      "rank": 6,
+      "score_base": 0.166695
+    },
+    {
+      "image_hash": "bc6310b84f54d526ae4583f697c7e48c21382f5f9528b2ee28b6eda055f4203c",
+      "caption": "图4钢管力矩平衡分析示意图",
+      "score": 0.373039,
+      "s_direct": 0.550754,
+      "s_link": 0.246999,
+      "s_co": 0.246999,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_48",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "由于钢管是刚性物体，受到多个力的作用，所以需要对第一节钢管的力矩的平衡性进行分析（如图4所示）："
+        },
+        {
+          "block_id": "b_50",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "由力矩关系定理和钢管力矩平衡分析示意图（图4）知，可分别以节点2和节点1作为参考点，对钢管的力矩进行力矩平衡性分析可得："
+        },
+        {
+          "block_id": "b_70",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "由力矩关系定理和钢管力矩平衡分析示意图（图4）知，可分别以节点6和节点5作为参考点，对钢管的力矩进行力矩平衡性分析可得："
+        },
+        {
+          "block_id": "b_84",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "由力矩关系定理和钢管力矩平衡分析示意图（图4）知，可分别以节点7和节点6作为参考点，对钢管的力矩进行力矩平衡性分析可得："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_29",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_50",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 0.617498,
+          "distance_weight": 0.4,
+          "s_link": 0.246999,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.398877,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.913229,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.783596,
+          "cluster_margin": 0.129633,
+          "cluster_prior_raw": 0.805008,
+          "cluster_prior": 0.805008,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.805008
+        }
+      },
+      "pos": 49,
+      "rank": 7,
+      "score_base": 0.171787
+    },
+    {
+      "image_hash": "6e2fe9f0c597897bb1ffbbf35bb309619cbe10a37d97adea0c3075f3d28b1030",
+      "caption": "图5 钢桶受力分析示意图",
+      "score": 0.369171,
+      "s_direct": 0.567843,
+      "s_link": 0.255152,
+      "s_co": 0.255152,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_61",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": true,
+          "text_snippet": "对于钢桶，我们可对其进行受力分析（如图5所示）。"
+        },
+        {
+          "block_id": "b_63",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "钢桶所受合力应为零，即："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_125",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_63",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.63788,
+          "distance_weight": 0.4,
+          "s_link": 0.255152,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.411497,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.905593,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.844985,
+          "cluster_margin": 0.060607,
+          "cluster_prior_raw": 0.839926,
+          "cluster_prior": 0.839926,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.839926
+        }
+      },
+      "pos": 62,
+      "rank": 8,
+      "score_base": 0.159189
+    },
+    {
+      "image_hash": "cc34c16d5dc1782cbd115f09914dea39ad29fa7f40b90d98e97b07c1f6a62049",
+      "caption": "图11 风速  $24\\mathrm{m / s}$  时锚链的形状",
+      "score": 0.363739,
+      "s_direct": 0.607044,
+      "s_link": 0.544517,
+      "s_co": 0.544517,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_110",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于锚链的形状，可根据各节锚链的长度与锚链倾斜角度进行求解，借用MATLAB软件解得海面风速在  $12\\mathrm{m / s}$  和  $24\\math"
+        },
+        {
+          "block_id": "b_113",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过图9和图10的链条形状，我们可以清晰的看出，海面风速为  $12\\mathrm{m / s}$  时，有一部分锚链平铺在海床上；海面风速为  $24\\mat"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_117",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_113",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.777881,
+          "distance_weight": 0.7,
+          "s_link": 0.544517,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.57578,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.870886,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.829337,
+          "cluster_margin": 0.041549,
+          "cluster_prior_raw": 0.812515,
+          "cluster_prior": 0.812515,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.812515
+        }
+      },
+      "pos": 112,
+      "rank": 9,
+      "score_base": 0.16061
+    },
+    {
+      "image_hash": "308eddf0b82b8ce8babe0fb0248e11f6cdd03e10ae9d42df1f3230d3cbd74ced",
+      "caption": "图13 水深16米锚链形状",
+      "score": 0.360765,
+      "s_direct": 0.613429,
+      "s_link": 0.548125,
+      "s_co": 0.548125,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_191",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过MATLAB作图画出海水深度为  $16\\mathrm{m}$  和  $20\\mathrm{m}$  时的锚链形状图，如图和图所示："
+        },
+        {
+          "block_id": "b_195",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过观察此图，可得知海深的长度的增加会导致，锚链平躺数量会增加，导致角度的降低，所以往后的图线会越来越接近于海床面。并且在同等长度的锚链，越接近于  $0^{\\"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_188",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_191",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.783035,
+          "distance_weight": 0.7,
+          "s_link": 0.548125,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.580777,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.887783,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.853835,
+          "cluster_margin": 0.033948,
+          "cluster_prior_raw": 0.832897,
+          "cluster_prior": 0.832897,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.832897
+        }
+      },
+      "pos": 192,
+      "rank": 10,
+      "score_base": 0.152541
+    },
+    {
+      "image_hash": "a8f98364c5869c3c0b5fbc1caa30e9aa294c3b5c1430656d975fc61a3edef037",
+      "caption": "图8 锚链受力分析示意图",
+      "score": 0.357606,
+      "s_direct": 0.679906,
+      "s_link": 0.30654,
+      "s_co": 0.30654,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_82",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由于电焊锚链也是刚性物体，所以电焊锚链所受拉力的方向与电焊锚链所在方向之间存在夹角，故我们可对第一节电焊锚链进行力矩平衡分析（如图7示）："
+        },
+        {
+          "block_id": "b_84",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由力矩关系定理和钢管力矩平衡分析示意图（图4）知，可分别以节点7和节点6作为参考点，对钢管的力矩进行力矩平衡性分析可得："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_11",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_82",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.76635,
+          "distance_weight": 0.4,
+          "s_link": 0.30654,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.493223,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.912885,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.78613,
+          "cluster_margin": 0.126755,
+          "cluster_prior_raw": 0.808044,
+          "cluster_prior": 0.808044,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.808044
+        }
+      },
+      "pos": 83,
+      "rank": 11,
+      "score_base": 0.155595
+    },
+    {
+      "image_hash": "f978c29687fb913693df6cf78405aaa9c2f8d29a541d51c4d0037e32b3f00a90",
+      "caption": "图9 吃水深度与海水深度的变化曲线",
+      "score": 0.357366,
+      "s_direct": 0.534177,
+      "s_link": 0.768161,
+      "s_co": 0.768161,
+      "p_layout": 0.30103,
+      "p_type": 0.8,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_104",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": true,
+          "text_snippet": "从吃水深度与海水深度的变化曲线（见图9）可知，海水深度 H 与浮标的吃水深度 h 成正相关。浮标吃水深度越深，对应的海水深度就越深。"
+        },
+        {
+          "block_id": "b_113",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": false,
+          "text_snippet": "通过图9和图10的链条形状，我们可以清晰的看出，海面风速为  $12\\mathrm{m / s}$  时，有一部分锚链平铺在海床上；海面风速为  $24\\mat"
+        },
+        {
+          "block_id": "b_102",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据上述建立的数学模型，利用 MATLAB 软件编程可得到以吃水深度为自变量与海水深度为因变量间的变化曲线："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_105",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_104",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "9",
+          "raw_cosine": 0.768161,
+          "distance_weight": 1.0,
+          "s_link": 0.768161,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.651169,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.871467,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.814886,
+          "cluster_margin": 0.056582,
+          "cluster_prior_raw": 0.802197,
+          "cluster_prior": 0.802197,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.802197
+        }
+      },
+      "pos": 103,
+      "rank": 12,
+      "score_base": 0.156817
+    },
+    {
+      "image_hash": "2bc5cabd8836570cbb8acdd08bb2ab92fa9bbee4f31bcd4be499b5f0e063ffae",
+      "caption": "图6 钢桶力矩平衡分析示意图",
+      "score": 0.348617,
+      "s_direct": 0.555204,
+      "s_link": 0.25296,
+      "s_co": 0.25296,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_68",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": true,
+          "text_snippet": "由于钢桶也是刚性物体，受到多个力的作用，所以需要对钢桶的力矩的平衡性进行分析（如图6所示）："
+        },
+        {
+          "block_id": "b_70",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由力矩关系定理和钢管力矩平衡分析示意图（图4）知，可分别以节点6和节点5作为参考点，对钢管的力矩进行力矩平衡性分析可得："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_125",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_68",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "6",
+          "raw_cosine": 0.632401,
+          "distance_weight": 0.4,
+          "s_link": 0.25296,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.404082,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "9",
+          "cluster_top1_sim": 0.922936,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.801984,
+          "cluster_margin": 0.120952,
+          "cluster_prior_raw": 0.818722,
+          "cluster_prior": 0.818722,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.818722
+        }
+      },
+      "pos": 69,
+      "rank": 13,
+      "score_base": 0.143937
+    },
+    {
+      "image_hash": "e65949915610d44bd449d4d1b084113d1881f9bdc0c7f46a72f18f6d46a31f9d",
+      "caption": "图15 锚链形状",
+      "score": 0.338718,
+      "s_direct": 0.562986,
+      "s_link": 0.548125,
+      "s_co": 0.548125,
+      "p_layout": 0.25,
+      "p_type": 1.0,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_191",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过MATLAB作图画出海水深度为  $16\\mathrm{m}$  和  $20\\mathrm{m}$  时的锚链形状图，如图和图所示："
+        },
+        {
+          "block_id": "b_195",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过观察此图，可得知海深的长度的增加会导致，锚链平躺数量会增加，导致角度的降低，所以往后的图线会越来越接近于海床面。并且在同等长度的锚链，越接近于  $0^{\\"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_188",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_191",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.783035,
+          "distance_weight": 0.7,
+          "s_link": 0.548125,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.555555,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.861624,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.827287,
+          "cluster_margin": 0.034337,
+          "cluster_prior_raw": 0.799317,
+          "cluster_prior": 0.799317,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.799317
+        }
+      },
+      "pos": 194,
+      "rank": 14,
+      "score_base": 0.138889
+    },
+    {
+      "image_hash": "94d794120acbf3fa0f589021876af07b436536ff399b47efdd6b422135397360",
+      "caption": "图14 水深20米锚链形状",
+      "score": 0.288078,
+      "s_direct": 0.618688,
+      "s_link": 0.548125,
+      "s_co": 0.548125,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_191",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过MATLAB作图画出海水深度为  $16\\mathrm{m}$  和  $20\\mathrm{m}$  时的锚链形状图，如图和图所示："
+        },
+        {
+          "block_id": "b_195",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过观察此图，可得知海深的长度的增加会导致，锚链平躺数量会增加，导致角度的降低，所以往后的图线会越来越接近于海床面。并且在同等长度的锚链，越接近于  $0^{\\"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_188",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_191",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.783035,
+          "distance_weight": 0.7,
+          "s_link": 0.548125,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.583406,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.856706,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.836051,
+          "cluster_margin": 0.020655,
+          "cluster_prior_raw": 0.806118,
+          "cluster_prior": 0.555,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.555
+        }
+      },
+      "pos": 193,
+      "rank": 15,
+      "score_base": 0.149327
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 37,
+    "query_block_pair_count": 60,
+    "cf_count": 30,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图2",
+      "图3",
+      "图3",
+      "图4",
+      "图4",
+      "图5",
+      "图6",
+      "图4"
+    ],
+    "rerank_profile": "legacy",
+    "main_method": "LG-JSSF-Legacy+ClusterAdd"
+  }
+}

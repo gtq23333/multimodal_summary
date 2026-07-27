@@ -1,0 +1,36 @@
+﻿metric,metric_zh,baseline,baseline_zh,wins,ties,losses,win_rate
+r_precision,R-Precision,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,0,0,0,0.0
+r_precision,R-Precision,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,0,0,0,0.0
+r_precision,R-Precision,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,0,0,0,0.0
+r_precision,R-Precision,Layout-Order,Layout-Order,3,7,0,0.3
+r_precision,R-Precision,Caption-BM25,Caption-BM25,5,5,0,0.5
+r_precision,R-Precision,Caption-Dense-v4,Caption-Dense-v4,2,8,0,0.2
+r_precision,R-Precision,Zero-shot-CLIP,Zero-shot CLIP,6,4,0,0.6
+jaccard@3,Jaccard@3,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,0,0,0,0.0
+jaccard@3,Jaccard@3,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,0,0,0,0.0
+jaccard@3,Jaccard@3,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,0,0,0,0.0
+jaccard@3,Jaccard@3,Layout-Order,Layout-Order,5,5,0,0.5
+jaccard@3,Jaccard@3,Caption-BM25,Caption-BM25,7,3,0,0.7
+jaccard@3,Jaccard@3,Caption-Dense-v4,Caption-Dense-v4,4,5,1,0.4
+jaccard@3,Jaccard@3,Zero-shot-CLIP,Zero-shot CLIP,6,4,0,0.6
+maxsim@3,MaxSim@3,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,0,0,0,0.0
+maxsim@3,MaxSim@3,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,0,0,0,0.0
+maxsim@3,MaxSim@3,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,0,0,0,0.0
+maxsim@3,MaxSim@3,Layout-Order,Layout-Order,8,1,1,0.8
+maxsim@3,MaxSim@3,Caption-BM25,Caption-BM25,10,0,0,1.0
+maxsim@3,MaxSim@3,Caption-Dense-v4,Caption-Dense-v4,7,0,3,0.7
+maxsim@3,MaxSim@3,Zero-shot-CLIP,Zero-shot CLIP,8,0,2,0.8
+map,MAP (AP),Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,0,0,0,0.0
+map,MAP (AP),Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,0,0,0,0.0
+map,MAP (AP),Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,0,0,0,0.0
+map,MAP (AP),Layout-Order,Layout-Order,7,1,2,0.7
+map,MAP (AP),Caption-BM25,Caption-BM25,9,0,1,0.9
+map,MAP (AP),Caption-Dense-v4,Caption-Dense-v4,4,2,4,0.4
+map,MAP (AP),Zero-shot-CLIP,Zero-shot CLIP,9,0,1,0.9
+mrr,MRR,Qwen3-VL-Rerank-ImgCap+Link,Qwen3-VL-Rerank-ImgCap+Link（S_link chunk）,0,0,0,0.0
+mrr,MRR,Qwen3-VL-Rerank-ImgCap,Qwen3-VL-Rerank-ImgCap（强基线）,0,0,0,0.0
+mrr,MRR,Qwen3-VL-Rerank-Img,Qwen3-VL-Rerank-Img（弱基线）,0,0,0,0.0
+mrr,MRR,Layout-Order,Layout-Order,3,7,0,0.3
+mrr,MRR,Caption-BM25,Caption-BM25,8,2,0,0.8
+mrr,MRR,Caption-Dense-v4,Caption-Dense-v4,4,6,0,0.4
+mrr,MRR,Zero-shot-CLIP,Zero-shot CLIP,6,3,1,0.6

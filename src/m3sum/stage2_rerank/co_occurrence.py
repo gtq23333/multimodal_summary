@@ -61,6 +61,20 @@ class FigureEvidenceBlock:
     also_local: bool = False
 
 
+@dataclass(frozen=True)
+class LinkSummaryFeatures:
+    """面向摘要候选图 proposal 的可解释 Link 特征。"""
+
+    link_peak: float
+    link_topk_mean: float
+    link_query_coverage: float
+    link_source_balance: float
+    link_explicit_strength: float
+    link_local_strength: float
+    evidence_count: int
+    debug: dict[str, Any]
+
+
 def _nearest_text_block(
     blocks: list[Block],
     pos: int,
@@ -213,6 +227,129 @@ def link_score_legacy(
                 }
 
     return best_score, best_debug
+
+
+def link_score_summary_features(
+    query_block_pairs: list[QueryBlockPair],
+    evidence_blocks: list[FigureEvidenceBlock],
+    block_embeddings: dict[str, np.ndarray],
+    distance_tiers: list[float],
+    *,
+    top_k: int = 3,
+    coverage_threshold: float = 0.35,
+) -> LinkSummaryFeatures:
+    """
+    计算比 legacy global-max 更稳健的 Link 特征。
+
+    - peak: 保留最强单点匹配；
+    - topk_mean: source-wise Top-K 均值，降低偶然峰值影响；
+    - query_coverage: sub-query 被 evidence 稳定响应的比例；
+    - source_balance: explicit/local_prev/local_next 响应是否均衡。
+    """
+    source_scores: dict[str, list[float]] = {
+        "explicit_ref": [],
+        "local_prev": [],
+        "local_next": [],
+    }
+    query_best: dict[int, float] = {}
+    best_score = 0.0
+    best_debug: dict[str, Any] = {
+        "matched_query_block": None,
+        "matched_query_idx": None,
+        "matched_evidence_block": None,
+        "evidence_source": None,
+        "matched_ref": None,
+        "raw_cosine": 0.0,
+        "distance_weight": 0.0,
+        "s_link": 0.0,
+        "rerank_profile": "summary_features",
+    }
+
+    for pair in query_block_pairs:
+        q_emb = block_embeddings.get(pair.block.block_id)
+        if q_emb is None:
+            continue
+        for evidence in evidence_blocks:
+            if pair.block.block_id == evidence.block.block_id:
+                continue
+            e_emb = block_embeddings.get(evidence.block.block_id)
+            if e_emb is None:
+                continue
+            raw_sim = cosine_sim(q_emb, e_emb)
+            weight = distance_weight(
+                block_distance(pair.block.block_idx, evidence.block.block_idx),
+                distance_tiers,
+            )
+            score = raw_sim * weight
+            source_scores.setdefault(evidence.source, []).append(score)
+            query_best[pair.query_idx] = max(query_best.get(pair.query_idx, 0.0), score)
+            if score > best_score:
+                best_score = score
+                best_debug = {
+                    "matched_query_block": pair.block.block_id,
+                    "matched_query_idx": pair.query_idx,
+                    "matched_evidence_block": evidence.block.block_id,
+                    "evidence_source": evidence.source,
+                    "matched_ref": figure_ref_to_str(evidence.matched_ref),
+                    "raw_cosine": round(raw_sim, 6),
+                    "distance_weight": round(weight, 6),
+                    "s_link": round(score, 6),
+                    "rerank_profile": "summary_features",
+                }
+
+    def topk_mean(scores: list[float]) -> float:
+        positive = sorted((s for s in scores if s > 0.0), reverse=True)[: max(top_k, 1)]
+        return float(np.mean(positive)) if positive else 0.0
+
+    source_topk = {source: topk_mean(scores) for source, scores in source_scores.items()}
+    nonzero_source_values = [v for v in source_topk.values() if v > 0.0]
+    link_topk_mean = float(np.mean(nonzero_source_values)) if nonzero_source_values else 0.0
+    explicit_strength = source_topk.get("explicit_ref", 0.0)
+    local_values = [
+        source_topk.get("local_prev", 0.0),
+        source_topk.get("local_next", 0.0),
+    ]
+    local_strength = max(local_values)
+
+    n_query_indices = len({pair.query_idx for pair in query_block_pairs})
+    if n_query_indices:
+        covered = sum(1 for score in query_best.values() if score >= coverage_threshold)
+        query_coverage = covered / n_query_indices
+    else:
+        query_coverage = 0.0
+
+    if len(nonzero_source_values) <= 1:
+        source_balance = 0.0
+    else:
+        mean_val = float(np.mean(nonzero_source_values))
+        std_val = float(np.std(nonzero_source_values))
+        source_balance = max(0.0, 1.0 - std_val / (mean_val + 1e-9))
+
+    debug = dict(best_debug)
+    debug.update(
+        {
+            "link_peak": round(best_score, 6),
+            "link_topk_mean": round(link_topk_mean, 6),
+            "link_query_coverage": round(query_coverage, 6),
+            "link_source_balance": round(source_balance, 6),
+            "link_explicit_strength": round(explicit_strength, 6),
+            "link_local_strength": round(local_strength, 6),
+            "source_topk": {k: round(v, 6) for k, v in source_topk.items()},
+            "query_best": {str(k): round(v, 6) for k, v in query_best.items()},
+            "coverage_threshold": coverage_threshold,
+            "top_k": top_k,
+        }
+    )
+    return LinkSummaryFeatures(
+        link_peak=best_score,
+        link_topk_mean=link_topk_mean,
+        link_query_coverage=query_coverage,
+        link_source_balance=source_balance,
+        link_explicit_strength=explicit_strength,
+        link_local_strength=local_strength,
+        evidence_count=len(evidence_blocks),
+        debug=debug,
+    )
 
 
 def select_best_link_evidence(

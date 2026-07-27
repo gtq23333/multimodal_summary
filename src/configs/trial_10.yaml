@@ -1,0 +1,144 @@
+# =============================================================================
+# M3-Sum 试跑配置 — 修改本文件即可，无需命令行传参
+# 启动:  cd src && python scripts/run_trial.py
+# =============================================================================
+
+paths:
+  annotation_config: "../../data_annotation/config.yaml"
+  manifest: "../../data/trial_10/manifest.json"
+  ground_truth_dir: "../../data/trial_10/ground_truth"
+  problem_mds_root: "../../usable_data/problem_mds"
+  output_dir: "../../outputs/trial_10"
+  acceptance_csv: "../../data/trial_10/acceptance_review.csv"
+
+# ---------- OpenAI 兼容 API（直接在此粘贴，无需环境变量）----------
+api:
+  # 平台 Base URL（OpenAI 兼容），示例:
+  #   OpenAI 官方: https://api.openai.com/v1
+  #   其他平台:    https://your-platform.com/v1
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  # 在此粘贴 API Key
+  api_key: "sk-your api key"
+
+
+models:
+  # 模型名按你所用平台填写
+  llm: "qwen3.7-max"
+  embed: "text-embedding-v4"
+  vlm: "qwen3.7-max"
+
+# ---------- 检索 / 重排超参 ----------
+retrieval:
+  top_p: 20
+  bm25_weight: 0.4
+  vector_weight: 0.6
+
+rerank:
+  alpha: 0.5
+  alpha_local: 0.75
+  local_gamma: 0.35
+  local_cap: 0.75
+  local_window_mode: "deictic_only"
+  explicit_link_threshold: 0.12
+  type_method_boost: 1.15
+  type_data_penalty: 0.92
+  distance_tiers: [1.0, 0.7, 0.4]
+
+caption_regex:
+  patterns:
+    - "见图\\s*[\\d\\.]+"
+    - "如图\\s*[\\d\\.]+\\s*所示"
+    - "图\\s*[\\d\\.]+"
+    - "表\\s*[\\d\\.]+"
+
+# ---------- 试跑样本 ----------
+trial:
+  gt_mode: "insertions_only"
+  sample_ids:
+    - "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c"
+    - "2016_G_A194.pdf-b86a85b1-ff13-48a6-90bc-0afc1ed6de24"
+    - "2016_G_A433.pdf-ace5f580-0291-4b74-8e8a-3e24514c4563"
+    - "2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d"
+    - "2016_G_B044.pdf-bb7acb2d-63cf-48d6-acf7-16e9e75ec953"
+    - "2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072"
+    - "2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165"
+    - "2017_G_A156.pdf-526d4bc0-c508-47e0-9181-6bcff011181f"
+    - "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2"
+    - "2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe"
+    - "2017_G_B248.pdf-ceeb3cc2-f05c-4906-833a-5eb02870f643"
+    - "2017_G_B315.pdf-11a42682-c012-4452-b69e-37bc3de34fc6"
+    - "2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376"
+    - "2017_G_D002.pdf-34552dc9-fe7d-49e0-90b4-279a27481fa2"
+    - "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925"
+    - "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c"
+    - "2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5"
+    - "2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a"
+    - "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451"
+    - "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545"
+
+# ---------- 运行控制（核心） ----------
+run:
+  # 运行阶段:
+  #   "1"   — 仅阶段一：赛题 → 3 路子查询
+  #   "2"   — 仅阶段二：图表检索 + 布局重排（图片选择验证）
+  #   "3"   — 仅阶段三：VLM 描述 + 摘要生成 + 插入决策
+  #   "all" — 三阶段完整多模态摘要管线
+  stage: "2"
+
+  # 运行模式:
+  #   "dry_run" — 零 API 成本冒烟（随机向量 + 模板输出，验证链路与评测脚本）
+  #   "live"    — 真实调用 API（需在下方 api 段填写 base_url + api_key）
+  mode: "live"
+
+  # Stage3 图表文字化:
+  #   "caption" — 直接用图注（低成本，先验证插入决策）
+  #   "vlm"     — gpt-4o 视觉描述（完整流程）
+  vlm_mode: "caption"
+
+  force_rerun: false
+  use_cache: true
+
+  # 限定单篇调试：填 paper_id 或留 null 跑全部 sample_ids
+  sample_id: null
+  # sample_id: "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c"
+
+  # 冒烟模式：true 时仅跑 sample_ids 的第一篇（覆盖 sample_id）
+  smoke_test: false
+
+  # 流水线结束后自动执行
+  auto_prepare_manifest: true
+  auto_sanity_check: true
+  auto_eval: true
+
+sanity_check:
+  # 0=语料  1=子查询  2=检索重排  3=生成  auto=按 run.stage 推断
+  stage: "auto"
+
+eval:
+  init_acceptance_csv: true
+  export_html_report: true
+  export_csv_summary: true
+  export_markdown_summary: true
+
+stage2_eval:
+  jaccard_k: 3
+  maxsim_k: 3
+  clip_model: "OFA-Sys/chinese-clip-vit-base-patch16"
+  methods:
+    - "Proposed"
+    - "Layout-Order"
+    - "Caption-BM25"
+    - "Caption-Dense-v4"
+    - "Zero-shot-CLIP"
+
+cluster_prior:
+  enabled: true
+  path: "../m3sum/cluster_prior.json"
+  clip_model: "OFA-Sys/chinese-clip-vit-base-patch16"
+  threshold_mode: "top1_margin"
+  tau_grid: [0.72, 0.75, 0.78]
+  beta_grid: [0.12, 0.18, 0.25]
+  margin_tau: 0.05
+  fusion_modes: ["multiplicative", "additive"]
+  relative_prior: true
+  query_conditioned: true

@@ -1,0 +1,154 @@
+# =============================================================================
+# M3-Sum 试跑配置 — 20 篇标注样本（含 LG-JSSF 优化）
+# 启动:  cd src && python scripts/run_trial.py configs/trial_20.yaml
+# =============================================================================
+
+paths:
+  annotation_config: "../../data_annotation/config.yaml"
+  manifest: "../../data/trial_20/manifest.json"
+  ground_truth_dir: "../../data/trial_20/ground_truth"
+  problem_mds_root: "../../usable_data/problem_mds"
+  output_dir: "../../outputs/trial_20"
+  acceptance_csv: "../../data/trial_20/acceptance_review.csv"
+
+api:
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  api_key: "sk-your api key"
+
+models:
+  llm: "qwen3.7-max"
+  embed: "text-embedding-v4"
+  vlm: "qwen3.7-max"
+
+retrieval:
+  top_p: 20
+  bm25_weight: 0.4
+  vector_weight: 0.6
+
+rerank:
+  alpha: 0.5
+  local_window_mode: "always"
+  distance_tiers: [1.0, 0.7, 0.4]
+
+# 已废弃的改造版参数（仅 legacy 对比 / 消融参考）
+rerank_experimental:
+  alpha: 0.5
+  alpha_local: 0.75
+  local_gamma: 0.35
+  local_cap: 0.75
+  local_window_mode: "deictic_only"
+  explicit_link_threshold: 0.12
+  type_method_boost: 1.15
+  type_data_penalty: 0.92
+  distance_tiers: [1.0, 0.7, 0.4]
+
+rerank_legacy:
+  alpha: 0.5
+  local_window_mode: "always"
+
+legacy_cluster_prior:
+  enabled: true
+  tau: 0.72
+  beta: 0.25
+  margin_tau: 0.03
+
+caption_regex:
+  patterns:
+    - "见图\\s*[\\d\\.]+"
+    - "如图\\s*[\\d\\.]+\\s*所示"
+    - "图\\s*[\\d\\.]+"
+    - "表\\s*[\\d\\.]+"
+
+trial:
+  gt_mode: "insertions_only"
+  sample_ids:
+    - "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c"
+    - "2016_G_A194.pdf-b86a85b1-ff13-48a6-90bc-0afc1ed6de24"
+    - "2016_G_A433.pdf-ace5f580-0291-4b74-8e8a-3e24514c4563"
+    - "2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d"
+    - "2016_G_B044.pdf-bb7acb2d-63cf-48d6-acf7-16e9e75ec953"
+    - "2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072"
+    - "2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165"
+    - "2017_G_A156.pdf-526d4bc0-c508-47e0-9181-6bcff011181f"
+    - "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2"
+    - "2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe"
+    - "2017_G_B248.pdf-ceeb3cc2-f05c-4906-833a-5eb02870f643"
+    - "2017_G_B315.pdf-11a42682-c012-4452-b69e-37bc3de34fc6"
+    - "2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376"
+    - "2017_G_D002.pdf-34552dc9-fe7d-49e0-90b4-279a27481fa2"
+    - "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925"
+    - "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c"
+    - "2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5"
+    - "2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a"
+    - "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451"
+    - "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545"
+
+run:
+  stage: "2"
+  mode: "live"
+  vlm_mode: "caption"
+  force_rerun: false
+  use_cache: true
+  sample_id: null
+  smoke_test: false
+  auto_prepare_manifest: true
+  auto_sanity_check: true
+  auto_eval: true
+
+sanity_check:
+  stage: "auto"
+
+eval:
+  init_acceptance_csv: true
+  export_html_report: true
+  export_csv_summary: true
+  export_markdown_summary: true
+
+stage2_eval:
+  jaccard_k: 3
+  maxsim_k: 3
+  recall_ks: [4, 5, 6, 7, 8]
+  clip_model: "OFA-Sys/chinese-clip-vit-base-patch16"
+  methods:
+    - "Proposed"
+    - "Proposed-v2"
+    - "Qwen3-VL-Rerank-ImgCap+Link"
+    - "Qwen3-VL-Rerank-ImgCap"
+    - "Qwen3-VL-Rerank-Img"
+    - "Layout-Order"
+    - "Caption-BM25"
+    - "Caption-Dense-v4"
+    - "Zero-shot-CLIP"
+  vl_rerank_instruct: "Given a query describing information needs for a mathematical modeling paper summary, retrieve the most relevant figures."
+  vl_rerank_img_cap_instruct: "Given a query describing information needs for a mathematical modeling paper summary, retrieve the most relevant figure entries. Each entry includes the figure image and its caption text."
+  vl_rerank_img_cap_link_instruct: "Given a query describing information needs for a mathematical modeling paper summary, retrieve the most relevant figure entries. Each entry includes the figure image, its caption, and the most relevant text chunk linked to the query via co-occurrence."
+
+summary_proposal:
+  legacy_blend: 0.55
+  link_top_k: 3
+  link_coverage_threshold: 0.35
+  direct_coverage_threshold: 0.35
+  weights:
+    layout: 0.30
+    relevance: 0.35
+    type: 0.12
+    generality: 0.13
+    cluster: 0.10
+
+cluster_prior:
+  enabled: true
+  path: "../m3sum/cluster_prior.json"
+  clip_model: "OFA-Sys/chinese-clip-vit-base-patch16"
+  threshold_mode: "top1_margin"
+  # 主方法（Proposed = Legacy LG-JSSF + ClusterAdd）固定超参
+  main_tau: 0.72
+  main_beta: 0.25
+  main_margin_tau: 0.03
+  tau_grid: [0.72, 0.75, 0.78]
+  beta_grid: [0.12, 0.18, 0.25]
+  margin_tau: 0.03
+  fusion_modes: ["multiplicative", "additive"]
+  relative_prior: true
+  query_conditioned: true
+  best_tau: 0.72
+  best_beta: 0.25

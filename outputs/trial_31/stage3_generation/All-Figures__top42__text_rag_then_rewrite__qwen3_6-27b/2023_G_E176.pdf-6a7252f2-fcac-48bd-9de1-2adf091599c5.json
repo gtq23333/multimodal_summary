@@ -1,0 +1,553 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "All-Figures__top42__text_rag_then_rewrite__qwen3_6-27b",
+  "created_at": "2026-07-10T06:28:37.592049+00:00",
+  "paper_id": "2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5",
+  "method_name": "All-Figures",
+  "pool_size": 42,
+  "strategy": "text_rag_then_rewrite",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5",
+    "method_name": "All-Figures",
+    "pool_size": 42,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66",
+        "rank": 1,
+        "score": null,
+        "caption": "图1研究路径",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "6c358f6aa3dd1ba2bd75cf3d509f8e80bf863cb064c3ee9b73bf66f9b445191a",
+        "rank": 2,
+        "score": null,
+        "caption": "图2含沙量时序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\6c358f6aa3dd1ba2bd75cf3d509f8e80bf863cb064c3ee9b73bf66f9b445191a.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "e9b28d6af8eb7eaf1d86da72a3e20a682007eb6352003327545457e7cd10e9f9",
+        "rank": 3,
+        "score": null,
+        "caption": "图3剔除离群点后的含沙量时序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\e9b28d6af8eb7eaf1d86da72a3e20a682007eb6352003327545457e7cd10e9f9.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "7430f086203f5a3e1c90a32d4d66ed5ab423f169f22e351ca9292cdb61e5195b",
+        "rank": 4,
+        "score": null,
+        "caption": "图4含沙量的月份指数",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\7430f086203f5a3e1c90a32d4d66ed5ab423f169f22e351ca9292cdb61e5195b.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "63ca8fb5b5bb48073baa5c44891b3292202fb75d7e2f6a6bba1a6e7a987e0bab",
+        "rank": 5,
+        "score": null,
+        "caption": "图5含沙量的季度指数",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\63ca8fb5b5bb48073baa5c44891b3292202fb75d7e2f6a6bba1a6e7a987e0bab.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "233d1bdd93dcbbf984c88d5663749d808d75c3ddd45494dfac53f4f74e14d67b",
+        "rank": 6,
+        "score": null,
+        "caption": "图62016-2017年含沙量函数拟合效果",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\233d1bdd93dcbbf984c88d5663749d808d75c3ddd45494dfac53f4f74e14d67b.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "d8583fcdc69716ef28c4498314350328fa43414f65811b6599a1d9b635932bba",
+        "rank": 7,
+        "score": null,
+        "caption": "图72018-2021年含沙量函数拟合效果",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\d8583fcdc69716ef28c4498314350328fa43414f65811b6599a1d9b635932bba.jpg"
+      },
+      {
+        "candidate_id": "C8",
+        "image_hash": "9e44f1b4f1ad6ef6ebb590b2f8d65043a06a22f765a5e3b938291e3988f0d17d",
+        "rank": 8,
+        "score": null,
+        "caption": "图8水位、水流量、含沙量的散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\9e44f1b4f1ad6ef6ebb590b2f8d65043a06a22f765a5e3b938291e3988f0d17d.jpg"
+      },
+      {
+        "candidate_id": "C9",
+        "image_hash": "a4da69339ae730f955214a3ccb52abd8f777685dd2ed3ee488abb675ea1d3c5b",
+        "rank": 9,
+        "score": null,
+        "caption": "图9标准化残差直方图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\a4da69339ae730f955214a3ccb52abd8f777685dd2ed3ee488abb675ea1d3c5b.jpg"
+      },
+      {
+        "candidate_id": "C10",
+        "image_hash": "c404086d1f2a4e44aa06a629dd7697d16c4fd129351b3b13e5963792ccd534f8",
+        "rank": 10,
+        "score": null,
+        "caption": "图10标准化残差与标准化预测值的散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\c404086d1f2a4e44aa06a629dd7697d16c4fd129351b3b13e5963792ccd534f8.jpg"
+      },
+      {
+        "candidate_id": "C11",
+        "image_hash": "c51f7f4af8c43df6b57a62e914b2da06ae92483c5d958952eae8b23b1af56a1c",
+        "rank": 11,
+        "score": null,
+        "caption": "图11标准化残差直方图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\c51f7f4af8c43df6b57a62e914b2da06ae92483c5d958952eae8b23b1af56a1c.jpg"
+      },
+      {
+        "candidate_id": "C12",
+        "image_hash": "a927324983c3dc48224b3b7f37d70a1c6dfa13e9504a616255b10b1b27001e18",
+        "rank": 12,
+        "score": null,
+        "caption": "图12标准化残差与标准化预测值的散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\a927324983c3dc48224b3b7f37d70a1c6dfa13e9504a616255b10b1b27001e18.jpg"
+      },
+      {
+        "candidate_id": "C13",
+        "image_hash": "d242b3ed19cbf928521d8424b174d7d55d263e7c3f4dcfe00725112700d18055",
+        "rank": 13,
+        "score": null,
+        "caption": "图13年总流量",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\d242b3ed19cbf928521d8424b174d7d55d263e7c3f4dcfe00725112700d18055.jpg"
+      },
+      {
+        "candidate_id": "C14",
+        "image_hash": "dbb1abfddb1b0c2f35ef5590717edd449b4a871ebff293302d9d7ab39b5f73be",
+        "rank": 14,
+        "score": null,
+        "caption": "图14年总含沙量",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\dbb1abfddb1b0c2f35ef5590717edd449b4a871ebff293302d9d7ab39b5f73be.jpg"
+      },
+      {
+        "candidate_id": "C15",
+        "image_hash": "df95f7a5744c939c8421c6c001b17983b6b54aa5d2035d8da10827f6f0fcb56b",
+        "rank": 15,
+        "score": null,
+        "caption": "图15水通量的月份指数",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\df95f7a5744c939c8421c6c001b17983b6b54aa5d2035d8da10827f6f0fcb56b.jpg"
+      },
+      {
+        "candidate_id": "C16",
+        "image_hash": "73042851d4f83924320a5b4771cf768862fea8b10db88ae619fb3f6e49a3b605",
+        "rank": 16,
+        "score": null,
+        "caption": "图16沙通量的月份指数",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\73042851d4f83924320a5b4771cf768862fea8b10db88ae619fb3f6e49a3b605.jpg"
+      },
+      {
+        "candidate_id": "C17",
+        "image_hash": "71ea6f9125af05aeb687b27a9e9f9b1ab25e21e9af9653b133e862301040ec8b",
+        "rank": 17,
+        "score": null,
+        "caption": "图17水通量的时序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\71ea6f9125af05aeb687b27a9e9f9b1ab25e21e9af9653b133e862301040ec8b.jpg"
+      },
+      {
+        "candidate_id": "C18",
+        "image_hash": "bf25e0e6ca5003a5f075a276c5bee6e1994a59337577d634ef38fe14d043f022",
+        "rank": 18,
+        "score": null,
+        "caption": "图18沙通量的时序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\bf25e0e6ca5003a5f075a276c5bee6e1994a59337577d634ef38fe14d043f022.jpg"
+      },
+      {
+        "candidate_id": "C19",
+        "image_hash": "f4e9ba1cd712e6d1ec3ca78de84e911294b5c13d2344fdba3ce9de1621a49db5",
+        "rank": 19,
+        "score": null,
+        "caption": "图19 水通量的时序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\f4e9ba1cd712e6d1ec3ca78de84e911294b5c13d2344fdba3ce9de1621a49db5.jpg"
+      },
+      {
+        "candidate_id": "C20",
+        "image_hash": "938ab01a73f33970c57c300debed9742b964f972bd19e8f0638ee92745cff60e",
+        "rank": 20,
+        "score": null,
+        "caption": "图20 沙通量的时序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\938ab01a73f33970c57c300debed9742b964f972bd19e8f0638ee92745cff60e.jpg"
+      },
+      {
+        "candidate_id": "C21",
+        "image_hash": "3237d677f918d4fb8b15558f4a7d169bf09225c2fb7984d7add647ababcaad4e",
+        "rank": 21,
+        "score": null,
+        "caption": "图21 水通量的趋势检验",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\3237d677f918d4fb8b15558f4a7d169bf09225c2fb7984d7add647ababcaad4e.jpg"
+      },
+      {
+        "candidate_id": "C22",
+        "image_hash": "572dd955cb9cc059810cdab9daf14b3385278ca64fa90c0bf9b28de0137c10f3",
+        "rank": 22,
+        "score": null,
+        "caption": "图22沙通量的趋势检验",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\572dd955cb9cc059810cdab9daf14b3385278ca64fa90c0bf9b28de0137c10f3.jpg"
+      },
+      {
+        "candidate_id": "C23",
+        "image_hash": "e4e97d96847c435c399185b0db85c1bdf33788cab3857c75b01dad6a11737bcd",
+        "rank": 23,
+        "score": null,
+        "caption": "图23水通量的突变点",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\e4e97d96847c435c399185b0db85c1bdf33788cab3857c75b01dad6a11737bcd.jpg"
+      },
+      {
+        "candidate_id": "C24",
+        "image_hash": "3b3abce0137f9418f35a88075ffe3eb59c19346b41ced6ca6bd99ca44904a9d8",
+        "rank": 24,
+        "score": null,
+        "caption": "图24沙通量的突变点",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\3b3abce0137f9418f35a88075ffe3eb59c19346b41ced6ca6bd99ca44904a9d8.jpg"
+      },
+      {
+        "candidate_id": "C25",
+        "image_hash": "b2f340a7c5cd27452dee2ed4be1d1f088d825f36fab5c06d8e54c72486729ef0",
+        "rank": 25,
+        "score": null,
+        "caption": "2016-2021月均径流量小波等值线图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\b2f340a7c5cd27452dee2ed4be1d1f088d825f36fab5c06d8e54c72486729ef0.jpg"
+      },
+      {
+        "candidate_id": "C26",
+        "image_hash": "900ac4531e866df6cdc602b9cff49c1005aab0fe13a5169880bfca9e54c1afee",
+        "rank": 26,
+        "score": null,
+        "caption": "图26水通量小波方差分析图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\900ac4531e866df6cdc602b9cff49c1005aab0fe13a5169880bfca9e54c1afee.jpg"
+      },
+      {
+        "candidate_id": "C27",
+        "image_hash": "4d603b8e643ee2831ac177821cbf52fd092426e3876b8438650a1512dd66d501",
+        "rank": 27,
+        "score": null,
+        "caption": "图27 沙通量小波等值线图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\4d603b8e643ee2831ac177821cbf52fd092426e3876b8438650a1512dd66d501.jpg"
+      },
+      {
+        "candidate_id": "C28",
+        "image_hash": "0e16fb806e030661057a80e8554ed190c2e8f12b78f6cada732f64aa3ac210a0",
+        "rank": 28,
+        "score": null,
+        "caption": "图28 沙通量小波方差分析图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\0e16fb806e030661057a80e8554ed190c2e8f12b78f6cada732f64aa3ac210a0.jpg"
+      },
+      {
+        "candidate_id": "C29",
+        "image_hash": "10c33d23df50452518a5f5d3ca50b447afdce7e0328016bda3f1bbe9056e3392",
+        "rank": 29,
+        "score": null,
+        "caption": "图29水通量  $1\\mathrm{n}(R / S)$  与  $\\ln (\\sigma)$  的散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\10c33d23df50452518a5f5d3ca50b447afdce7e0328016bda3f1bbe9056e3392.jpg"
+      },
+      {
+        "candidate_id": "C30",
+        "image_hash": "87defdc2c8c67563de189ee83b23ffd02a24cdea29c113de46b3d4c26da20930",
+        "rank": 30,
+        "score": null,
+        "caption": "图30沙通量  $1\\mathrm{n}(R / S)$  与  $\\ln (\\sigma)$  的散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\87defdc2c8c67563de189ee83b23ffd02a24cdea29c113de46b3d4c26da20930.jpg"
+      },
+      {
+        "candidate_id": "C31",
+        "image_hash": "00486f9473809d2e5bba8aab65834246baf2f4c8972f2c433b6dd05f4b3013b2",
+        "rank": 31,
+        "score": null,
+        "caption": "图31水通量的拟合效果比较",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\00486f9473809d2e5bba8aab65834246baf2f4c8972f2c433b6dd05f4b3013b2.jpg"
+      },
+      {
+        "candidate_id": "C32",
+        "image_hash": "88633052bbe0d2732addff9c4607e66613d2a893bca0660856f9de318cfd5838",
+        "rank": 32,
+        "score": null,
+        "caption": "图32沙通量的拟合效果比较",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\88633052bbe0d2732addff9c4607e66613d2a893bca0660856f9de318cfd5838.jpg"
+      },
+      {
+        "candidate_id": "C33",
+        "image_hash": "aa4f2496f399499155ebe288c660e61602a1308a51af7c84e4435866c606adb1",
+        "rank": 33,
+        "score": null,
+        "caption": "图33 水通量过去值与未来值的比较",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\aa4f2496f399499155ebe288c660e61602a1308a51af7c84e4435866c606adb1.jpg"
+      },
+      {
+        "candidate_id": "C34",
+        "image_hash": "ea471e037f87e49a01688859bd66070b345e384ef18e71c559526df8ec2a68c0",
+        "rank": 34,
+        "score": null,
+        "caption": "图34 沙通量过去值与未来值的比较",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\ea471e037f87e49a01688859bd66070b345e384ef18e71c559526df8ec2a68c0.jpg"
+      },
+      {
+        "candidate_id": "C35",
+        "image_hash": "72a5e75b9fd9bf7bbaead386c556a0d41883bdba0dea40ef77aacf21b7cb96e2",
+        "rank": 35,
+        "score": null,
+        "caption": "图35 水通量小波等值线图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\72a5e75b9fd9bf7bbaead386c556a0d41883bdba0dea40ef77aacf21b7cb96e2.jpg"
+      },
+      {
+        "candidate_id": "C36",
+        "image_hash": "901e95c2be94cc804a4f544cd8b683e0266ba2f5f5481747e5520a0a4fb070fb",
+        "rank": 36,
+        "score": null,
+        "caption": "图36 沙通量小波等值线图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\901e95c2be94cc804a4f544cd8b683e0266ba2f5f5481747e5520a0a4fb070fb.jpg"
+      },
+      {
+        "candidate_id": "C37",
+        "image_hash": "d7fb39cbac881df395e3505a58b7f4f63f3c59699296c10dc4a060c98a615da2",
+        "rank": 37,
+        "score": null,
+        "caption": "图37河道断面示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\d7fb39cbac881df395e3505a58b7f4f63f3c59699296c10dc4a060c98a615da2.jpg"
+      },
+      {
+        "candidate_id": "C38",
+        "image_hash": "49c358b3446a23f77ce42eaf726f8142a48f428cb0084c8e61828442833bafd5",
+        "rank": 38,
+        "score": null,
+        "caption": "图38河底高程的变化情况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\49c358b3446a23f77ce42eaf726f8142a48f428cb0084c8e61828442833bafd5.jpg"
+      },
+      {
+        "candidate_id": "C39",
+        "image_hash": "074786d0f08392947cb02b2077c0ad1542d54a7e32ffecd0e05ac6755b91bb9b",
+        "rank": 39,
+        "score": null,
+        "caption": "图39水通量的变化情况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\074786d0f08392947cb02b2077c0ad1542d54a7e32ffecd0e05ac6755b91bb9b.jpg"
+      },
+      {
+        "candidate_id": "C40",
+        "image_hash": "494009ba8e5d3ae2cdf70fc2ef2822134e1d1530ddfa176aa0bd127b1bf90fa4",
+        "rank": 40,
+        "score": null,
+        "caption": "图40日均水通量的变化情况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\494009ba8e5d3ae2cdf70fc2ef2822134e1d1530ddfa176aa0bd127b1bf90fa4.jpg"
+      },
+      {
+        "candidate_id": "C41",
+        "image_hash": "df0c30d13463af87ecbf151155f4be0a02f00d39c2df20a7d2f6a3bdaae3e254",
+        "rank": 41,
+        "score": null,
+        "caption": "图40日均水通量的变化情况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\df0c30d13463af87ecbf151155f4be0a02f00d39c2df20a7d2f6a3bdaae3e254.jpg"
+      },
+      {
+        "candidate_id": "C42",
+        "image_hash": "47d3ad028759870628cda2608da3cd0a9831e8d5060f9d981c5ccc5ecb5da519",
+        "rank": 42,
+        "score": null,
+        "caption": "图41河底高程未来10年的变化情况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\47d3ad028759870628cda2608da3cd0a9831e8d5060f9d981c5ccc5ecb5da519.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "47d3ad028759870628cda2608da3cd0a9831e8d5060f9d981c5ccc5ecb5da519",
+      "4d603b8e643ee2831ac177821cbf52fd092426e3876b8438650a1512dd66d501",
+      "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66"
+    ],
+    "retrieval_metrics": {
+      "ip@42": 0.071429,
+      "ir@42": 1.0,
+      "jaccard@42": 0.071429
+    },
+    "reference_summary": null,
+    "reference_sequence": null,
+    "pool_metadata": {
+      "pool_type": "all_figures",
+      "actual_candidate_count": 42
+    }
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_3",
+        "block_idx": 3,
+        "query_dimension": "分析",
+        "text": "（2）分析水沙通量的突变性、季节性和周期性等特性，研究水沙通量的变化规律。"
+      },
+      {
+        "block_id": "b_113",
+        "block_idx": 113,
+        "query_dimension": "分析",
+        "text": "问题分析：水通量就是径流量（亿m3），沙通量就是排沙量（亿吨），研究它们的变化规律，需要从统计特征、季节性、周期性和突变性四个方面来入手。"
+      },
+      {
+        "block_id": "b_9",
+        "block_idx": 9,
+        "query_dimension": "分析",
+        "text": "针对问题(2)，水通量就是径流量（亿m3），沙通量就是排沙量（亿吨），研究它们的变化规律，需要从统计特征、季节性、周期性和突变性四个方面来入手。季节性可通过月份指数、季度指数来描述。周期性可通过时序图、建立三角函数来解决。突变性可通过非参数Mann- Kendall检验法来解决。"
+      },
+      {
+        "block_id": "b_306",
+        "block_idx": 306,
+        "query_dimension": "分析",
+        "text": "（2）在分析水沙通量的季节性时，仍然建立了季节指数；在分析周期性时，建立了三角函数；在分析突变性时，分别使用M-K检验法和Fisher最优分割法进行交叉验证，可靠性强；为了详细寻找周期性和突变点，还使用了小波变换法，进一步验证了结论的正确性。"
+      },
+      {
+        "block_id": "b_114",
+        "block_idx": 114,
+        "query_dimension": "分析",
+        "text": "建模思路：首先，研究水沙通量的季节性，包括月份指数、月份分布、统计特征等。其次，研究水沙通量的周期性，包括时序图、即三角函数等。第三，研究水、沙通量的突变点，使用非参数Mann- Kendall检验法来解决。"
+      },
+      {
+        "block_id": "b_312",
+        "block_idx": 312,
+        "query_dimension": "分析",
+        "text": "本文所使用的模型或方法可以推广到水文资料分析问题中，还可以推广到其它有关季节性、周期性、突变性等问题的分析中。"
+      },
+      {
+        "block_id": "b_10",
+        "block_idx": 10,
+        "query_dimension": "分析",
+        "text": "针对问题(3)，为预测水沙通量的变化趋势，我们借鉴R/S分析法分析水沙通量的分形特征和长期记忆过程，以判断其未来存在相同趋势、反转趋势或随机趋势。为了制订采样监测方案，使用小波分析法分析信号不同周期的时间演变规律，以掌握其丰枯旱涝情况，再根据这些情况制订最优的采样监测方案。"
+      },
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "分析",
+        "text": "通过研究黄河水沙通量的变化规律可以对沿黄流域的环境治理、气候变化和人民生活的影响做出一定判断，以及对优化黄河流域水资源分配、协调人地关系、调水调沙、防洪减灾提供帮助。对黄河的治理发展有重要的理论指导意义。"
+      },
+      {
+        "block_id": "b_188",
+        "block_idx": 188,
+        "query_dimension": "建模",
+        "text": "问题分析：题目要求预测未来2年水沙通量的变化趋势，并制订未来2年最优的采样监测方案。为预测水沙通量的变化趋势，使用R/S分析法分析水沙通量的分形特征和长期记忆过程，以判断其未来是否存在相同趋势、反转趋势或随机趋势。为预测未来2年的水沙通量数据，可建立傅里叶级数去逼近。为制订采样监测方案，使用小波分析法分析信号不同周期的时间演变规律，以掌握其丰枯旱涝情况，再根据这些情况把最优方案问题转化为背包问题，从而通过建立0- 1规划模型来制订最优的采样监测方案。"
+      },
+      {
+        "block_id": "b_307",
+        "block_idx": 307,
+        "query_dimension": "建模",
+        "text": "（3）在分析水沙通量的趋势性时，使用R/S分析法；在预测未来2年的水沙通量时，建立了傅里叶级数，预测精度较高；在建立最优采样监测方案时巧妙转化为背包问题，存在最优解。"
+      },
+      {
+        "block_id": "b_189",
+        "block_idx": 189,
+        "query_dimension": "建模",
+        "text": "建模思路：首先，使用R/S分析法研究水沙通量是否在未来2年存在反转趋势。其次，建立傅里叶级数，预测未来2年的水沙通量数据。第三，使用小波分析法掌握其丰枯旱涝情况，再建立0- 1规划模型，获得最优的采样监测方案。仍然把水沙通量整理成以“月”为时间点的时间序列。"
+      },
+      {
+        "block_id": "b_61",
+        "block_idx": 61,
+        "query_dimension": "建模",
+        "text": "基于以上结论，可分别建立含沙量与水位、含沙量与水流量的回归方程，但不能以水位、水流量为自变量建立二元回归模型，这是因为水位与水流量高度相关的缘故。"
+      },
+      {
+        "block_id": "b_4",
+        "block_idx": 4,
+        "query_dimension": "建模",
+        "text": "（3）根据水沙通量的变化规律，预测该水文站未来两年水沙通量的变化趋势，并为该水文站制订未来两年最优的采样监测方案，使其既能及时掌握水沙通量的动态变化情况，又能最大程度地减少监测成本资源。"
+      },
+      {
+        "block_id": "b_229",
+        "block_idx": 229,
+        "query_dimension": "建模",
+        "text": "为制定最优的采样监测方案，基本思路是：在水沙通量变化平缓的时间点减少采样次数，相反，在水沙通量变化急剧的时间点增加采样次数。"
+      },
+      {
+        "block_id": "b_239",
+        "block_idx": 239,
+        "query_dimension": "建模",
+        "text": "建模思路：以时间点“月”为例，首先，对历年每月的水沙通量所携带的信息进行度量，并汇总成月均信息量。其次，对未来2年每月的水沙通量所携带的信息进行度量。第三，以月均信息量为约束条件，以总监测次数最小为目标，建立0- 1规划模型。"
+      },
+      {
+        "block_id": "b_33",
+        "block_idx": 33,
+        "query_dimension": "建模",
+        "text": "建模思路：首先，研究含沙量与时间的关系，画时序图观察是否存在某种趋势，计算季节指数观察是否存在旺季和淡季。其次，以含沙量为因变量，以水位、水流量为自变量，建立回归方程。"
+      },
+      {
+        "block_id": "b_8",
+        "block_idx": 8,
+        "query_dimension": "求解",
+        "text": "针对问题(1)，该问题分为两个方面，一是研究水位、水流量、时间与含沙量的关系，二是估算近六年的该水文站的年总流水量和年总排沙量。对于含沙量与时间的关系，可以通过时序图、季节指数、时间趋势等方法来描述。对于含沙量与水位的关系，可以通过相关分析、回归分析来解决。然后定义年总流水量和年总排沙量，并计算6年的数值结果。"
+      },
+      {
+        "block_id": "b_228",
+        "block_idx": 228,
+        "query_dimension": "求解",
+        "text": "# 5.3.3制订水沙通量的最优采样监测方案"
+      }
+    ],
+    "body_char_count": 71608
+  },
+  "generated_summary": "针对黄河小浪底水库下游水文站近6年水沙监测数据，本文围绕含沙量关系刻画、水沙通量演变规律分析、未来趋势预测与最优监测方案制定以及“调水调沙”效果评估与河床演变预测展开研究。[Insert Figure C1] 首先，通过时序图与季节指数分析含沙量时间分布特征，建立含沙量随时间变化的分段正弦函数模型；针对水位与水流量高度相关的问题，分别构建含沙量与水位、水流量的双对数回归方程，揭示其非线性弹性关系，[Insert Figure C8] 并基于日数据累加估算出近6年年均总水流量约324.73亿立方米、年均总排沙量约1.99亿吨。其次，综合运用月份指数、三角函数拟合、小波变换、M-K检验与Fisher最优分割法，系统刻画水沙通量的季节性、周期性与突变性特征，发现水沙通量呈显著年周期与约20月主周期振荡，且于2018年前后发生显著突变。[Insert Figure C23] 再次，引入R/S分析法判定水沙通量未来呈趋势反转特征，采用傅里叶级数逼近实现未来两年水沙通量的高精度预测；[Insert Figure C33] 结合小波分析识别丰枯演变规律，将监测方案优化转化为背包问题，建立以总监测次数最小为目标的0-1规划模型，得出在变化平缓期减少采样、变化剧烈期加密采样的最优策略。最后，利用微元法计算断面平均河底高程，[Insert Figure C37] 定量评估每年6-7月“调水调沙”对河床冲刷与水沙通量的实际效果，并构建GM(1,1)灰色模型预测若不进行调水调沙，10年后该站河底高程将持续抬升至约64.79米。[Insert Figure C42] 本文模型交叉验证充分、预测精度较高，所提方法可为黄河流域水沙动态监测、水资源优化配置及防洪减灾提供科学依据，具有较好的水文资料分析推广价值。",
+  "inserted_figures": [
+    "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66",
+    "9e44f1b4f1ad6ef6ebb590b2f8d65043a06a22f765a5e3b938291e3988f0d17d",
+    "e4e97d96847c435c399185b0db85c1bdf33788cab3857c75b01dad6a11737bcd",
+    "00486f9473809d2e5bba8aab65834246baf2f4c8972f2c433b6dd05f4b3013b2",
+    "d7fb39cbac881df395e3505a58b7f4f63f3c59699296c10dc4a060c98a615da2",
+    "47d3ad028759870628cda2608da3cd0a9831e8d5060f9d981c5ccc5ecb5da519"
+  ],
+  "selected_image_hashes": [
+    "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66",
+    "9e44f1b4f1ad6ef6ebb590b2f8d65043a06a22f765a5e3b938291e3988f0d17d",
+    "e4e97d96847c435c399185b0db85c1bdf33788cab3857c75b01dad6a11737bcd",
+    "00486f9473809d2e5bba8aab65834246baf2f4c8972f2c433b6dd05f4b3013b2",
+    "d7fb39cbac881df395e3505a58b7f4f63f3c59699296c10dc4a060c98a615da2",
+    "47d3ad028759870628cda2608da3cd0a9831e8d5060f9d981c5ccc5ecb5da519"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C8]",
+    "[Insert Figure C23]",
+    "[Insert Figure C33]",
+    "[Insert Figure C37]",
+    "[Insert Figure C42]"
+  ],
+  "rationale": "C1为研究路径图，置于开头帮助读者快速理解文章整体框架；C8展示了水位、流量与含沙量的散点关系，对应双对数回归方程的构建；C23直观展示了水通量在2018年前后的显著突变，对应突变性分析结论；C33展示了水通量的未来预测值，对应傅里叶级数逼近的高精度预测结果；C37为河道断面示意图，解释了微元法计算河底高程的物理背景；C42展示了未来10年河底高程的预测趋势，对应GM(1,1)模型的最终预测结果。",
+  "text_rag_summary": "针对黄河小浪底水库下游水文站近6年水沙监测数据，本文围绕含沙量关系刻画、水沙通量演变规律分析、未来趋势预测与最优监测方案制定以及“调水调沙”效果评估与河床演变预测展开研究。首先，通过时序图与季节指数分析含沙量时间分布特征，建立含沙量随时间变化的分段正弦函数模型；针对水位与水流量高度相关的问题，分别构建含沙量与水位、水流量的双对数回归方程，揭示其非线性弹性关系，并基于日数据累加估算出近6年年均总水流量约324.73亿立方米、年均总排沙量约1.99亿吨。其次，综合运用月份指数、三角函数拟合、小波变换、M-K检验与Fisher最优分割法，系统刻画水沙通量的季节性、周期性与突变性特征，发现水沙通量呈显著年周期与约20月主周期振荡，且于2018年前后发生显著突变。再次，引入R/S分析法判定水沙通量未来呈趋势反转特征，采用傅里叶级数逼近实现未来两年水沙通量的高精度预测；结合小波分析识别丰枯演变规律，将监测方案优化转化为背包问题，建立以总监测次数最小为目标的0-1规划模型，得出在变化平缓期减少采样、变化剧烈期加密采样的最优策略。最后，利用微元法计算断面平均河底高程，定量评估每年6-7月“调水调沙”对河床冲刷与水沙通量的实际效果，并构建GM(1,1)灰色模型预测若不进行调水调沙，10年后该站河底高程将持续抬升至约64.79米。本文模型交叉验证充分、预测精度较高，所提方法可为黄河流域水沙动态监测、水资源优化配置及防洪减灾提供科学依据，具有较好的水文资料分析推广价值。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

@@ -16,8 +16,19 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
+from app.widgets.scroll_utils import ScrollWidthSyncMixin
+
 MAX_IMAGE_WIDTH = 360
 MAX_IMAGE_HEIGHT = 220
+
+
+def _format_score(score: Any) -> str:
+    if score is None:
+        return "-"
+    try:
+        return f"{float(score):.4f}"
+    except (TypeError, ValueError):
+        return "-"
 
 
 def _load_pixmap(image_path: str) -> QPixmap | None:
@@ -57,9 +68,8 @@ class _FigureCard(QFrame):
         layout = QVBoxLayout(self)
         header = QHBoxLayout()
         rank = item.get("rank", "?")
-        score = item.get("score", 0)
         header.addWidget(QLabel(f"#{rank}"))
-        header.addWidget(QLabel(f"score={float(score):.4f}"))
+        header.addWidget(QLabel(f"score={_format_score(item.get('score'))}"))
         if is_gt:
             gt_badge = QLabel("✓ GT")
             gt_badge.setStyleSheet("color: #27ae60; font-weight: bold;")
@@ -73,10 +83,11 @@ class _FigureCard(QFrame):
         img_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         if pix is not None:
             img_label.setPixmap(pix)
+            img_label.setFixedSize(pix.size())
         else:
             img_label.setText(f"[图片不可用]\n{image_path}")
             img_label.setWordWrap(True)
-        layout.addWidget(img_label)
+        layout.addWidget(img_label, alignment=Qt.AlignmentFlag.AlignCenter)
 
         caption = (item.get("caption") or "").strip()
         cap = QLabel(caption[:240] + ("..." if len(caption) > 240 else ""))
@@ -100,16 +111,17 @@ class _FigureCard(QFrame):
             layout.addWidget(debug_label)
 
 
-class _MethodTab(QWidget):
+class _MethodTab(ScrollWidthSyncMixin, QWidget):
     def __init__(self, method_name: str, parent=None):
         super().__init__(parent)
         self.method_name = method_name
         self._scroll = QScrollArea()
-        self._scroll.setWidgetResizable(True)
         self._container = QWidget()
         self._grid = QGridLayout(self._container)
         self._grid.setAlignment(Qt.AlignmentFlag.AlignTop)
         self._scroll.setWidget(self._container)
+        self.bind_scroll_width(self._scroll, self._container)
+
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
         layout.addWidget(self._scroll)
@@ -125,6 +137,7 @@ class _MethodTab(QWidget):
         for idx, row in enumerate(ranked[:k]):
             card = _FigureCard(row, show_debug=show_debug)
             self._grid.addWidget(card, idx // 2, idx % 2)
+        self.sync_scroll_width()
 
 
 class MethodRankPanel(QWidget):

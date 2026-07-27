@@ -87,6 +87,7 @@ class FigureLinkContextSelector:
             bm25_weight=config.bm25_weight,
             vector_weight=config.vector_weight,
             top_p=config.top_p,
+            query_use_keywords=config.query_use_keywords,
         )
         self.embed_cache = EmbeddingCache(
             config.embed_cache_dir,
@@ -109,7 +110,9 @@ class FigureLinkContextSelector:
                 dim = next(iter(block_embs.values())).shape[0] if block_embs else 64
                 query_embeddings.append(np.random.randn(dim).astype(np.float32))
             else:
-                vec = self.embedder.embed_one(q.query + " " + " ".join(q.keywords))
+                vec = self.embedder.embed_one(
+                    q.search_text(use_keywords=self.config.query_use_keywords)
+                )
                 query_embeddings.append(np.array(vec, dtype=np.float32))
         self._query_emb_cache[paper_id] = query_embeddings
         return query_embeddings

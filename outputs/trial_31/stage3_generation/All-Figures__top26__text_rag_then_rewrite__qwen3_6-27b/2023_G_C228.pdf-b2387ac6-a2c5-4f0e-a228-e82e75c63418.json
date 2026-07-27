@@ -1,0 +1,408 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "All-Figures__top26__text_rag_then_rewrite__qwen3_6-27b",
+  "created_at": "2026-07-10T06:26:43.693854+00:00",
+  "paper_id": "2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418",
+  "method_name": "All-Figures",
+  "pool_size": 26,
+  "strategy": "text_rag_then_rewrite",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418",
+    "method_name": "All-Figures",
+    "pool_size": 26,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "07cedc2ab0e17f72e484bcbf8046f5d85bac047371b8c1aac7534adc214b5153",
+        "rank": 1,
+        "score": null,
+        "caption": "图1 各类型蔬菜占比",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\07cedc2ab0e17f72e484bcbf8046f5d85bac047371b8c1aac7534adc214b5153.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "bfb8649b24a3ad5cd8bb20f9ddf0814f5cdc9580acb1ce12df185db7878d559b",
+        "rank": 2,
+        "score": null,
+        "caption": "图2 打折与退货的关系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\bfb8649b24a3ad5cd8bb20f9ddf0814f5cdc9580acb1ce12df185db7878d559b.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "71a26329c979e5f3922e67183ad53fcb1e8fd9f4c68e83eaa69534b1af56acef",
+        "rank": 3,
+        "score": null,
+        "caption": "图3 商品加成率分布图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\71a26329c979e5f3922e67183ad53fcb1e8fd9f4c68e83eaa69534b1af56acef.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "11cec3116fd20d8ae5de6b6f28afd04d8840220f9a54e503f893f84ecf69abf9",
+        "rank": 4,
+        "score": null,
+        "caption": "图4 三年间蔬菜总销量曲线图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\11cec3116fd20d8ae5de6b6f28afd04d8840220f9a54e503f893f84ecf69abf9.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "d894d15af3b23ef015342f6327ae1db7071272b9c5e2e098118c07caaab90ebe",
+        "rank": 5,
+        "score": null,
+        "caption": "图5 月总销售量自相关函数图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\d894d15af3b23ef015342f6327ae1db7071272b9c5e2e098118c07caaab90ebe.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "4845b520fa1e86ab17448848c5f1185394b6c11b3dfc96349f992fffd9746df7",
+        "rank": 6,
+        "score": null,
+        "caption": "图6 年时间序列分解",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\4845b520fa1e86ab17448848c5f1185394b6c11b3dfc96349f992fffd9746df7.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "d5f03b6ac8454485fa24eb3535388d9b7ac00a017b2aa74862f607df94d8c31f",
+        "rank": 7,
+        "score": null,
+        "caption": "图7 周总销售量周期性分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\d5f03b6ac8454485fa24eb3535388d9b7ac00a017b2aa74862f607df94d8c31f.jpg"
+      },
+      {
+        "candidate_id": "C8",
+        "image_hash": "438209ac53dfba66f52e9d73db554691ed1f962497d8a9f279df96ddfddc5ff3",
+        "rank": 8,
+        "score": null,
+        "caption": "图8 日总销售量周期性分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\438209ac53dfba66f52e9d73db554691ed1f962497d8a9f279df96ddfddc5ff3.jpg"
+      },
+      {
+        "candidate_id": "C9",
+        "image_hash": "cc4d9521bf5b04293e36e0c9a1cb5a8a18bf9256b20e6637c72363430a31de26",
+        "rank": 9,
+        "score": null,
+        "caption": "图9 三年间总销量趋势图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\cc4d9521bf5b04293e36e0c9a1cb5a8a18bf9256b20e6637c72363430a31de26.jpg"
+      },
+      {
+        "candidate_id": "C10",
+        "image_hash": "7ddc80eaafd71104858d8840893b1577be9f88082bccf842c4c1f32207ac762e",
+        "rank": 10,
+        "score": null,
+        "caption": "图10 三年间各品类销量变化图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\7ddc80eaafd71104858d8840893b1577be9f88082bccf842c4c1f32207ac762e.jpg"
+      },
+      {
+        "candidate_id": "C11",
+        "image_hash": "aa47068ea761653dbf7ce74066eb925511bbf51014c9073fc92b66645de1f256",
+        "rank": 11,
+        "score": null,
+        "caption": "图11 三年间各类单品总销量曲线图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\aa47068ea761653dbf7ce74066eb925511bbf51014c9073fc92b66645de1f256.jpg"
+      },
+      {
+        "candidate_id": "C12",
+        "image_hash": "cc6d74077cf359cf48f8940f52a0d4e87b78dc049cc72eb5afe263ff22c2e509",
+        "rank": 12,
+        "score": null,
+        "caption": "图12 典型品类单品销量占比",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\cc6d74077cf359cf48f8940f52a0d4e87b78dc049cc72eb5afe263ff22c2e509.jpg"
+      },
+      {
+        "candidate_id": "C13",
+        "image_hash": "6c369dffa4b8d81d80775ec00c3b8df5c4fbcf9ccf19309c74d62ea5f5d6e9da",
+        "rank": 13,
+        "score": null,
+        "caption": "图13 各单品总销量与累计销量占比分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\6c369dffa4b8d81d80775ec00c3b8df5c4fbcf9ccf19309c74d62ea5f5d6e9da.jpg"
+      },
+      {
+        "candidate_id": "C14",
+        "image_hash": "e6773111eea09e0ea9c3869b6a02d13eb23b5a6d60b28463cc52d51021a7d6db",
+        "rank": 14,
+        "score": null,
+        "caption": "图14 单笔销量与日销售数蜂窝图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\e6773111eea09e0ea9c3869b6a02d13eb23b5a6d60b28463cc52d51021a7d6db.jpg"
+      },
+      {
+        "candidate_id": "C15",
+        "image_hash": "12c48fd8ae712e0fc15cacab7a1bbb598955442d1a2a1a38b93ee151fce6a680",
+        "rank": 15,
+        "score": null,
+        "caption": "图15 各品类销售总量的偏相关性分析",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\12c48fd8ae712e0fc15cacab7a1bbb598955442d1a2a1a38b93ee151fce6a680.jpg"
+      },
+      {
+        "candidate_id": "C16",
+        "image_hash": "2dee8bdaffdb61d3967e08e6f56be155f7d73b1f676148f3aacba9a5d6d06782",
+        "rank": 16,
+        "score": null,
+        "caption": "图16 问题二主体思路",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\2dee8bdaffdb61d3967e08e6f56be155f7d73b1f676148f3aacba9a5d6d06782.jpg"
+      },
+      {
+        "candidate_id": "C17",
+        "image_hash": "09ea96bbfd2b9cf18b03f93270e36c4747c95d777cd4710436209199fd2caad3",
+        "rank": 17,
+        "score": null,
+        "caption": "图17 花叶类预测",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\09ea96bbfd2b9cf18b03f93270e36c4747c95d777cd4710436209199fd2caad3.jpg"
+      },
+      {
+        "candidate_id": "C18",
+        "image_hash": "7637e762c620004d2e55679e2f2b18ec3bcbd919f6d8cea1d70360706cba3c84",
+        "rank": 18,
+        "score": null,
+        "caption": "图18 生鲜商超每日收益折线图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\7637e762c620004d2e55679e2f2b18ec3bcbd919f6d8cea1d70360706cba3c84.jpg"
+      },
+      {
+        "candidate_id": "C19",
+        "image_hash": "95da0dabfffe7cbdc366b25ff236f9d622799a5c8e1a2ea9b3e84100d56ed6f8",
+        "rank": 19,
+        "score": null,
+        "caption": "图19 NSGA2求解结果",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\95da0dabfffe7cbdc366b25ff236f9d622799a5c8e1a2ea9b3e84100d56ed6f8.jpg"
+      },
+      {
+        "candidate_id": "C20",
+        "image_hash": "020a04ed632feab60a48f753254d383f55bec55f1e55fefb0493430f27114010",
+        "rank": 20,
+        "score": null,
+        "caption": "图20 LSTM模型稳定性检验（以辣椒的成本为例）",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\020a04ed632feab60a48f753254d383f55bec55f1e55fefb0493430f27114010.jpg"
+      },
+      {
+        "candidate_id": "C21",
+        "image_hash": "b3e5bae416251564717ad632788b7a133c5c24ea10a510ddcda9d2dcf7e6abc5",
+        "rank": 21,
+        "score": null,
+        "caption": "图21 花叶类LSTM",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\b3e5bae416251564717ad632788b7a133c5c24ea10a510ddcda9d2dcf7e6abc5.jpg"
+      },
+      {
+        "candidate_id": "C22",
+        "image_hash": "af1fcee1a84068b540161fc23c093fa283cd5de8ad4f8c25ed26c42824de58fe",
+        "rank": 22,
+        "score": null,
+        "caption": "图22 花菜类LSTM",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\af1fcee1a84068b540161fc23c093fa283cd5de8ad4f8c25ed26c42824de58fe.jpg"
+      },
+      {
+        "candidate_id": "C23",
+        "image_hash": "3bd1b6040a0e80d12751f97af18e44f47dbb0953c58c3f7599c9fe82ce531bea",
+        "rank": 23,
+        "score": null,
+        "caption": "图23 水生根茎类LSTM",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\3bd1b6040a0e80d12751f97af18e44f47dbb0953c58c3f7599c9fe82ce531bea.jpg"
+      },
+      {
+        "candidate_id": "C24",
+        "image_hash": "e54cf4716e907b4f5ff15d857b4fba6b3149d312432129b6e5026c7fcaa41c4b",
+        "rank": 24,
+        "score": null,
+        "caption": "图24 茄类 LSTM",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\e54cf4716e907b4f5ff15d857b4fba6b3149d312432129b6e5026c7fcaa41c4b.jpg"
+      },
+      {
+        "candidate_id": "C25",
+        "image_hash": "dfc57067bce010abd123f8c979ac963835d99eceda67580d971ed0f9682a154f",
+        "rank": 25,
+        "score": null,
+        "caption": "图25 辣椒类 LSTM",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\dfc57067bce010abd123f8c979ac963835d99eceda67580d971ed0f9682a154f.jpg"
+      },
+      {
+        "candidate_id": "C26",
+        "image_hash": "2426d3d6b75f0cbd8e24852a64424746d0c1ee0ab1a22b60036817eabb0c7518",
+        "rank": 26,
+        "score": null,
+        "caption": "图26 食用菌 LSTM",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418\\images\\2426d3d6b75f0cbd8e24852a64424746d0c1ee0ab1a22b60036817eabb0c7518.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "2dee8bdaffdb61d3967e08e6f56be155f7d73b1f676148f3aacba9a5d6d06782"
+    ],
+    "retrieval_metrics": {
+      "ip@26": 0.038462,
+      "ir@26": 1.0,
+      "jaccard@26": 0.038462
+    },
+    "reference_summary": null,
+    "reference_sequence": null,
+    "pool_metadata": {
+      "pool_type": "all_figures",
+      "actual_candidate_count": 26
+    }
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_69",
+        "block_idx": 69,
+        "query_dimension": "分析",
+        "text": "- 首先，对销售总量进行时间上的分布规律分析，观察外部因素对总体销售量的影响；- 其次，对各品类不同时间维度上的销量分布分析，发掘人们对各个品类的不同需求；- 最后，基于单品的时间分类对各单品探究其时间分布规律。"
+      },
+      {
+        "block_id": "b_11",
+        "block_idx": 11,
+        "query_dimension": "分析",
+        "text": "3.1 问题一的分析问题一主要要求我们分析数据，探究各个品类及单品销售量存在的规律与关系。但是由于题目未明确给出具体的探究方向，因此需要先考虑从哪几个角度入手。考虑到销售量的分布规律可分为随时间的分布规律、随每个订单的分布规律、随每个品类的分布规律三个角度；相互关系也可分为品类间的相互关系以及单品间的相互关系，从这几个角度出发即可以较为完整并且清晰地刻画销售量地分布规律与相互关系。同时为了了解分析结果的准确性与其背后的影响因素，可以结合生活实际经验以及经济学理论对其进行解释验证。"
+      },
+      {
+        "block_id": "b_133",
+        "block_idx": 133,
+        "query_dimension": "分析",
+        "text": "由于各品类销售量的数据为时间序列，直接进行相关性计算容易受时间上的宏观因素影响，并不能判断两种单品之间销量的关系。因此本文选择偏相关性分析确定两种品类之间的相互关系。"
+      },
+      {
+        "block_id": "b_4",
+        "block_idx": 4,
+        "query_dimension": "分析",
+        "text": "问题一：分析数据，找出各蔬菜品类及单品销售量的分布规律与相互关系；问题二：分析各蔬菜品类的销售总量与成本加成定价的关系，并以商超利润最大为目标。给出各蔬菜品类未来一周的日补货总量与定价策略；问题三：根据过去一周的可售品种，在满足单品数在27到33的范围、且各单品订购量大于2.5千克的条件下，给出7月1日单品补货量和定价策略；问题四：分析可能影响蔬菜补货与定价决策效果的其他因素，对上述问题进行改进说明。"
+      },
+      {
+        "block_id": "b_139",
+        "block_idx": 139,
+        "query_dimension": "分析",
+        "text": "FP- growth是一种经典的频繁项集和关联规则的挖掘算法，相较于Apriori算法而言其更适合在大规模的数据集上挖掘商品之间的关联规则。假定商家先前选定当日可售单品时综合考虑了销量因素，那么则可以用FP- growth挖掘单品之间的相关规则。模型建立具体步骤如下："
+      },
+      {
+        "block_id": "b_66",
+        "block_idx": 66,
+        "query_dimension": "分析",
+        "text": "问题一要求探究各个品类及单品的蔬菜销售量的分布规律以及相互关系。由于能够考虑的方面很多，我们将问题聚焦为探究以下三个部分："
+      },
+      {
+        "block_id": "b_61",
+        "block_idx": 61,
+        "query_dimension": "分析",
+        "text": "观察蔬菜销售数据发现, 部分蔬菜在供应上未呈现周期规律性, 并且供应天数极少销售量同样极少。本文认为该类蔬菜可能为某段时间突然出现的特殊品种蔬菜, 存在供应链不稳定, 或者市场需求量极少的情况, 并不存在稳定销售以及供应规律, 在数据分析中属于无关数据, 对蔬菜总销量以及未来预测无有利贡献, 因此本文不予进行考虑。本文对无关数据进行如下处理:"
+      },
+      {
+        "block_id": "b_71",
+        "block_idx": 71,
+        "query_dimension": "分析",
+        "text": "商品销售模式根据其单笔平均销量以及出售次数的情况可以分为三种：多量少笔、少量多笔、以及零散销售。对每种单品以及品类的总销售量在每笔销售量上的分布情况分析，可以得到蔬菜销售分布规律。"
+      },
+      {
+        "block_id": "b_288",
+        "block_idx": 288,
+        "query_dimension": "建模",
+        "text": "分析相关文献[4]可知，当前产品常用的定价方法有：成本导向定价法、竞争导向定价法、需求导向定价法。本文主要采用成本导向定价法，以商超获得经济效益最大为目标确定定价策略。尽管成本导向型定价策略最为直观便捷，但是其只从内部条件出发考虑经济效益，并不能很好适应现实的销售环境。在现实生活中与其他生鲜商超的竞争关系、消费者对商品定价的感知情况及社会经济发展水平，均会产生长远影响。因此本文兼顾成本、竞争与需求这三个重要因素给出商超制定补货和定价决策提出三点建议。"
+      },
+      {
+        "block_id": "b_243",
+        "block_idx": 243,
+        "query_dimension": "建模",
+        "text": "问题三同样是一道最优化问题，需要给出商超的补货与定价策略。但与问题二不同的是商超补货决策受到销售单品总数与最小陈列量的限制，同时需要满足保障消费者需求与提高商超收益，因此本问需要重新对每种单品的销售量与成本损耗进行预测。此外，问题二的决策变量为连续型，而问题三的决策变量为离散型 $+$ 连续型（混合型），两问需要选择不同的优化算法求解。"
+      },
+      {
+        "block_id": "b_13",
+        "block_idx": 13,
+        "query_dimension": "建模",
+        "text": "3.2 问题二的分析问题二可以分为三步进行逐一求解。首先分析销售总量与成本加成定价的关系；其次对蔬菜各品类未来一周的销售水平、批发价格进行预测；最后综合销售总量与定价的关系分析结果以及未来一周的预测结果，构建收益最大化决策模型进行求解。其中需要注意的是，销量总量与成本加成定价可能受多种因素的影响，需要建立合适的模型刻画定价与销量的关系。"
+      },
+      {
+        "block_id": "b_2",
+        "block_idx": 2,
+        "query_dimension": "建模",
+        "text": "- 一般而言，商家对蔬菜定价采用”成本加成定价“方法；- 蔬菜商品运送过程中会产生损耗，商家会对运损严重的品质较差的商品进行打折；- 蔬菜类商品的需求量、供给量与时间存在关联关系，在4月至10月供给量较为丰富；- 商超销售空间有限制，只能进货一定数量的蔬菜种类；- 附件中给出某商超经销的蔬菜品类与单品信息、2020年7月1日至2023年6月30日各商品的销售明细与批发价、商品近期损耗率。"
+      },
+      {
+        "block_id": "b_313",
+        "block_idx": 313,
+        "query_dimension": "建模",
+        "text": "1. 在问题一中对数据出现的信息与规律进行现实意义的解释说明，对数据进行更本质的分析；2. 参考大量相关领域的文献，选取恰当的经济学模型对数据进行分析预测，引入外生变量对时间序列预测进行优化，采用双对数需求模型对预测销量进行修正；3. 基于数据特征选择合适的优化模型，建立改进版全局粒子群算法求解模型以及多目标遗传算法求解模型，时先进的算法技术更好的贴合题目信息；4. 问题四不局限于关注商超内部因素对自身发展的影响，而是基于商超与社会、与竞争对手、与顾客之间的关系对商朝的长期发展提供有效的建议。"
+      },
+      {
+        "block_id": "b_171",
+        "block_idx": 171,
+        "query_dimension": "建模",
+        "text": "为了更好的对未来七天的定价以及补货情况进行决策，需要对未来七天的销量、品类平均成本、品类平均损耗率、损耗折扣进行确定。"
+      },
+      {
+        "block_id": "b_235",
+        "block_idx": 235,
+        "query_dimension": "建模",
+        "text": "对收益数据的波动情况进行进一步的观察发现，生鲜商超的每日收益在每年的六月于十二月出会出现一个相对平缓的谷值，根据2023年六月末的数据以及往年变化趋势合理推测在一般情况下该生鲜商超在七月初的收益额约在1000至1500间波动，而采用本文中确定的补货定价方案均大于1740元，最大可达1810元，可以对收益额产生一个明显的提升效果。"
+      },
+      {
+        "block_id": "b_277",
+        "block_idx": 277,
+        "query_dimension": "求解",
+        "text": "由于本问决策变量中既含有0- 1变量又含有连续变量，粒子群算法和传统遗传算法的性能较差，需要使用混合编码和多目标规划的优化算法。本文采用多目标遗传算法NSGA- II，并对其加以改进。相对于传统的多目标遗传算法，NSGA- II引入了非支配排序技术，能够将个体按照非支配性进行分级，保留多个非支配解，找到更多的高质量解；同时引入了克努森分配距离，确保前沿中的个体分布更加均匀，提高了解的多样性[1]。"
+      },
+      {
+        "block_id": "b_15",
+        "block_idx": 15,
+        "query_dimension": "求解",
+        "text": "3.3 问题三的分析问题三是混合多目标规划问题。尽管题中要求在满足需求量的前提下进行最大收益优化，但是由于单品数量的限制，无法完全满足顾客的购买需求，因此本题应为一个多目标优化类问题，应对顾客需求满足程度与收益情况进行综合优化。但其中需要注意的是顾客的需求度并不能完全简单地与销售量对等，需寻找评价指标综合销量与销售次数等其他因素，得到需求度。此外需要选择合适的优化算法方能求解。"
+      },
+      {
+        "block_id": "b_693",
+        "block_idx": 693,
+        "query_dimension": "求解",
+        "text": "该程序为粒子群算法求解第二问（连续型非线性规划）"
+      },
+      {
+        "block_id": "b_265",
+        "block_idx": 265,
+        "query_dimension": "求解",
+        "text": "由于销售空间的限制，商超补货的单品数限制在27至33之间，且补货单品的最小陈列量为 $2.5\\mathrm{kg}$ ，同时总销量不能高于补货量，因此约束1、2为："
+      }
+    ],
+    "body_char_count": 91930
+  },
+  "generated_summary": "针对生鲜商超蔬菜类商品保鲜期短、补货决策复杂及定价策略单一等问题，本文基于历史销售流水、批发价格与损耗率数据，构建了涵盖销售规律挖掘、需求预测与补货定价联合决策的数学模型。首先，通过数据清洗、聚合与异常值处理，将蔬菜按供应周期划分为常年性、季节性与时令性三类 [Insert Figure C1]。针对问题一，采用自相关函数（ACF）与时间序列分解揭示销量在年、周、日维度的周期波动规律，结合偏相关性分析与FP-Growth算法量化了品类间的替代互补关系及单品间的强关联规则，发现单品销量呈显著长尾分布 [Insert Figure C13] 且存在多量少笔、少量多笔等销售模式。针对问题二，构建双对数需求模型估计各品类需求价格弹性，利用LSTM网络预测未来七日销量与成本，并引入价格弹性修正函数刻画定价对销量的动态影响；建立以商超收益最大化为目标的连续非线性规划模型 [Insert Figure C16]，采用融入先验知识与罚函数的改进GBest-PSO算法求解，所得策略使日均收益稳定在1740元以上 [Insert Figure C18]，较历史平均水平显著提升。针对问题三，在可售单品总数（27-33个）与最小陈列量（2.5kg）约束下，采用VIKOR方法综合评价单品需求度，构建兼顾收益最大化与市场需求满足率的双目标混合整数规划模型，利用改进的NSGA-II算法结合BG-RI混合编码与全局存档机制求解Pareto前沿最优解 [Insert Figure C19]，实现了空间限制下的供需平衡与利润提升。针对问题四，从竞争导向、需求导向与宏观环境角度，建议采集竞争对手定价、消费者价格敏感度及当地居民收入数据，以完善交叉弹性测算与长期需求预测。本文模型有效解决了生鲜蔬菜补货与定价的联合决策难题，为商超精细化运营提供了科学依据与可操作的决策方案。",
+  "inserted_figures": [
+    "07cedc2ab0e17f72e484bcbf8046f5d85bac047371b8c1aac7534adc214b5153",
+    "2dee8bdaffdb61d3967e08e6f56be155f7d73b1f676148f3aacba9a5d6d06782",
+    "7637e762c620004d2e55679e2f2b18ec3bcbd919f6d8cea1d70360706cba3c84",
+    "95da0dabfffe7cbdc366b25ff236f9d622799a5c8e1a2ea9b3e84100d56ed6f8"
+  ],
+  "selected_image_hashes": [
+    "07cedc2ab0e17f72e484bcbf8046f5d85bac047371b8c1aac7534adc214b5153",
+    "2dee8bdaffdb61d3967e08e6f56be155f7d73b1f676148f3aacba9a5d6d06782",
+    "7637e762c620004d2e55679e2f2b18ec3bcbd919f6d8cea1d70360706cba3c84",
+    "95da0dabfffe7cbdc366b25ff236f9d622799a5c8e1a2ea9b3e84100d56ed6f8"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C13]",
+    "[Insert Figure C16]",
+    "[Insert Figure C18]",
+    "[Insert Figure C19]"
+  ],
+  "rationale": "1. C1（各类型蔬菜占比）直观展示了数据预处理后的分类结果，对应摘要中“将蔬菜按供应周期划分为常年性、季节性与时令性三类”。\n2. C13（各单品总销量与累计销量占比分析）是典型的帕累托图，直观呈现了摘要中提到的“单品销量呈显著长尾分布”这一关键销售规律。\n3. C16（问题二主体思路）作为流程图，清晰展示了LSTM预测、双对数需求函数与GBest-PSO优化模型的联合架构，极大降低了复杂模型的理解成本。\n4. C18（生鲜商超每日收益折线图）展示了优化策略实施后的收益情况，对应摘要中“日均收益稳定在1740元以上”的关键结果。\n5. C19（NSGA2求解结果/Pareto Front）展示了多目标优化下的Pareto前沿，对应摘要中“求解Pareto前沿最优解”的结果。",
+  "text_rag_summary": "针对生鲜商超蔬菜类商品保鲜期短、补货决策复杂及定价策略单一等问题，本文基于历史销售流水、批发价格与损耗率数据，构建了涵盖销售规律挖掘、需求预测与补货定价联合决策的数学模型。首先，通过数据清洗、聚合与异常值处理，将蔬菜按供应周期划分为常年性、季节性与时令性三类。针对问题一，采用自相关函数（ACF）与时间序列分解揭示销量在年、周、日维度的周期波动规律，结合偏相关性分析与FP-Growth算法量化了品类间的替代互补关系及单品间的强关联规则，发现单品销量呈显著长尾分布且存在多量少笔、少量多笔等销售模式。针对问题二，构建双对数需求模型估计各品类需求价格弹性，利用LSTM网络预测未来七日销量与成本，并引入价格弹性修正函数刻画定价对销量的动态影响；建立以商超收益最大化为目标的连续非线性规划模型，采用融入先验知识与罚函数的改进GBest-PSO算法求解，所得策略使日均收益稳定在1740元以上，较历史平均水平显著提升。针对问题三，在可售单品总数（27-33个）与最小陈列量（2.5kg）约束下，采用VIKOR方法综合评价单品需求度，构建兼顾收益最大化与市场需求满足率的双目标混合整数规划模型，利用改进的NSGA-II算法结合BG-RI混合编码与全局存档机制求解Pareto前沿最优解，实现了空间限制下的供需平衡与利润提升。针对问题四，从竞争导向、需求导向与宏观环境角度，建议采集竞争对手定价、消费者价格敏感度及当地居民收入数据，以完善交叉弹性测算与长期需求预测。本文模型有效解决了生鲜蔬菜补货与定价的联合决策难题，为商超精细化运营提供了科学依据与可操作的决策方案。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

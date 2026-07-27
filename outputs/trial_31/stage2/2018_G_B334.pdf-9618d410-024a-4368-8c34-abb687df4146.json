@@ -1,0 +1,667 @@
+{
+  "paper_id": "2018_G_B334.pdf-9618d410-024a-4368-8c34-abb687df4146",
+  "top3_figures": [
+    {
+      "image_hash": "889d4bc5d542eaf54f56c93e99312cff04b35246da7c7d4b620a481663f94956",
+      "caption": "图1 带约束的队列调度示意图",
+      "score": 0.922091,
+      "s_direct": 0.437688,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_42",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": false,
+          "text_snippet": "从图1可知，在任意时刻，对应有各个队列（CNC）的状态：空闲、工作；同时还可以隐性的反应RGV的状态：移动、清洗等。从时间维度对其进行离散化处理，由此可以构建不"
+        },
+        {
+          "block_id": "b_39",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了便于进一步分析该模型，我们将原来的站点抽象为可以并行工作的任务队列，如下所示："
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "经过该过程原问题被转换为：带约束条件的多队列任务最优调度问题，同时，为我们从时间维度对系统基于事件进行状态划分提供了视角。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_42",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_42",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.718844,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 6,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_1",
+          "b_0",
+          "b_19",
+          "b_115",
+          "b_121"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.900479,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.8723,
+          "cluster_margin": 0.028179,
+          "cluster_prior_raw": 0.865524,
+          "cluster_prior": 0.812986,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.812986
+        }
+      },
+      "pos": 40,
+      "rank": 1,
+      "score_base": 0.718844
+    },
+    {
+      "image_hash": "bf317e4e318aedb3bae59c11dcfff990b335038700b345ca1500029a1a0268e6",
+      "caption": "图2 最优状态转移图模型示意图",
+      "score": 0.663396,
+      "s_direct": 0.460602,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_44",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于情况一，我们建立最优状态转移图模型来描述整个RGV- CNC系统的调度过程。"
+        },
+        {
+          "block_id": "b_46",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先，我们建立系统的状态向量  $V_{k}$ ，该状态向量描述了在某一时刻整个系统所处的状态。由于以秒为处理单位会出现大量的重复状态和重复计算，我们从RGV运"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_44",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_44",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.730301,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 6,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_1",
+          "b_0",
+          "b_19",
+          "b_115",
+          "b_121"
+        ],
+        "cluster": {
+          "cluster_top1_label": "6",
+          "cluster_top1_sim": 0.883599,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.809139,
+          "cluster_margin": 0.074459,
+          "cluster_prior_raw": 0.810509,
+          "cluster_prior": 0.810509,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.810509
+        }
+      },
+      "pos": 45,
+      "rank": 2,
+      "score_base": 0.460769
+    },
+    {
+      "image_hash": "0cd2bba7d38b744a57650c6b557c72e63dac6fb13d4e230160d194bcb3e6b2b6",
+      "caption": "图6 改进遗传算法流程图",
+      "score": 0.599803,
+      "s_direct": 0.476957,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.5,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_181",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "(a) 可以进一步深入研究系统状态的特性，例如：周期性、波动性等。通过对特性进行概括和证明，并据此改进优化过程，有助于进一步提升模型的求解精度和求解速度。(b)"
+        },
+        {
+          "block_id": "b_183",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据迭代时收敛情况，在求解时间和解的质量之间作出权衡。此外，还可以使用其他近似求解算法完成对模型的求解。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_181",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_181",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.738479,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 6,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_1",
+          "b_0",
+          "b_19",
+          "b_115",
+          "b_121"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.89295,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.796047,
+          "cluster_margin": 0.096903,
+          "cluster_prior_raw": 0.820905,
+          "cluster_prior": 0.820905,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.820905
+        }
+      },
+      "pos": 182,
+      "rank": 3,
+      "score_base": 0.394577
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "889d4bc5d542eaf54f56c93e99312cff04b35246da7c7d4b620a481663f94956",
+      "caption": "图1 带约束的队列调度示意图",
+      "score": 0.922091,
+      "s_direct": 0.437688,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_42",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": false,
+          "text_snippet": "从图1可知，在任意时刻，对应有各个队列（CNC）的状态：空闲、工作；同时还可以隐性的反应RGV的状态：移动、清洗等。从时间维度对其进行离散化处理，由此可以构建不"
+        },
+        {
+          "block_id": "b_39",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了便于进一步分析该模型，我们将原来的站点抽象为可以并行工作的任务队列，如下所示："
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "经过该过程原问题被转换为：带约束条件的多队列任务最优调度问题，同时，为我们从时间维度对系统基于事件进行状态划分提供了视角。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_42",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_42",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.718844,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 6,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_1",
+          "b_0",
+          "b_19",
+          "b_115",
+          "b_121"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.900479,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.8723,
+          "cluster_margin": 0.028179,
+          "cluster_prior_raw": 0.865524,
+          "cluster_prior": 0.812986,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.812986
+        }
+      },
+      "pos": 40,
+      "rank": 1,
+      "score_base": 0.718844
+    },
+    {
+      "image_hash": "bf317e4e318aedb3bae59c11dcfff990b335038700b345ca1500029a1a0268e6",
+      "caption": "图2 最优状态转移图模型示意图",
+      "score": 0.663396,
+      "s_direct": 0.460602,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_44",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于情况一，我们建立最优状态转移图模型来描述整个RGV- CNC系统的调度过程。"
+        },
+        {
+          "block_id": "b_46",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先，我们建立系统的状态向量  $V_{k}$ ，该状态向量描述了在某一时刻整个系统所处的状态。由于以秒为处理单位会出现大量的重复状态和重复计算，我们从RGV运"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_44",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_44",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.730301,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 6,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_1",
+          "b_0",
+          "b_19",
+          "b_115",
+          "b_121"
+        ],
+        "cluster": {
+          "cluster_top1_label": "6",
+          "cluster_top1_sim": 0.883599,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.809139,
+          "cluster_margin": 0.074459,
+          "cluster_prior_raw": 0.810509,
+          "cluster_prior": 0.810509,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.810509
+        }
+      },
+      "pos": 45,
+      "rank": 2,
+      "score_base": 0.460769
+    },
+    {
+      "image_hash": "0cd2bba7d38b744a57650c6b557c72e63dac6fb13d4e230160d194bcb3e6b2b6",
+      "caption": "图6 改进遗传算法流程图",
+      "score": 0.599803,
+      "s_direct": 0.476957,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.5,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_181",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "(a) 可以进一步深入研究系统状态的特性，例如：周期性、波动性等。通过对特性进行概括和证明，并据此改进优化过程，有助于进一步提升模型的求解精度和求解速度。(b)"
+        },
+        {
+          "block_id": "b_183",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据迭代时收敛情况，在求解时间和解的质量之间作出权衡。此外，还可以使用其他近似求解算法完成对模型的求解。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_181",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_181",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.738479,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 6,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_1",
+          "b_0",
+          "b_19",
+          "b_115",
+          "b_121"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.89295,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.796047,
+          "cluster_margin": 0.096903,
+          "cluster_prior_raw": 0.820905,
+          "cluster_prior": 0.820905,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.820905
+        }
+      },
+      "pos": 182,
+      "rank": 3,
+      "score_base": 0.394577
+    },
+    {
+      "image_hash": "948adb7c4056eac2035808aedee8843001e42a618e301602eded839847787fa1",
+      "caption": "图 3 CNC 刀片类型比例与系统产出关系图",
+      "score": 0.563888,
+      "s_direct": 0.414493,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_134",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "根据前文提到的系统均衡优化原则，我们认为系统中拥有两种不同型号的 CNC 的情况下，总体效率最高的 CNC 的比例被达到当且尽量两类 CNC 处理物料的时间代价"
+        },
+        {
+          "block_id": "b_132",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "2. 如果评估值最小的 CNC 违反约束，则选择评估值次小，如此往复，直到找到不违反约束的目标 CNC。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_134",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_134",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.707246,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.915438,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.849702,
+          "cluster_margin": 0.065736,
+          "cluster_prior_raw": 0.841059,
+          "cluster_prior": 0.841059,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.841059
+        }
+      },
+      "pos": 133,
+      "rank": 4,
+      "score_base": 0.353623
+    },
+    {
+      "image_hash": "ee89cfb4a490f38dbde2ee8c10bd45a14ad1245075ec7d9a29dd00c249c83d0f",
+      "caption": "图5 优化后RGV的运动路线和各项操作时间图",
+      "score": 0.555072,
+      "s_direct": 0.749278,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_164",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td>CNC编号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6"
+        },
+        {
+          "block_id": "b_166",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "的时、空分布情况。其中绿色实线部分描述了在CNC只安装二种类型刀片时移动的路径情况并且此时RGV是携带物料进行“搬运”操作；而绿色虚线部分则是描述其不带任何货物"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_166",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_166",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.874639,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.914219,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.877252,
+          "cluster_margin": 0.036968,
+          "cluster_prior_raw": 0.866861,
+          "cluster_prior": 0.866861,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.866861
+        }
+      },
+      "pos": 165,
+      "rank": 5,
+      "score_base": 0.338356
+    },
+    {
+      "image_hash": "245cb74b0096327f9e71fe370b7a11fafaf353f3091cd7686d89933c3fba68fb",
+      "caption": "图4 优化后RGV的运动路线和各项操作时间图",
+      "score": 0.466207,
+      "s_direct": 0.741577,
+      "s_link": 0.413615,
+      "s_co": 0.413615,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_150",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据定义3，CNC满载条件下的系统具有工作上限，将其定义为超额上限值。超额上限值高于理论最优解且接近该模型的最优解，这是因为CNC满载条件在系统运行过"
+        },
+        {
+          "block_id": "b_152",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "程中是较难满足的，因此系统在时间上会有一定的损耗，导致减少规定时间内生产的熟料数目。因此以该上界作为近似解的评估标准具有较大参考价值。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_148",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_150",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.590879,
+          "distance_weight": 0.7,
+          "s_link": 0.413615,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.577596,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.9182,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.883039,
+          "cluster_margin": 0.035161,
+          "cluster_prior_raw": 0.869797,
+          "cluster_prior": 0.869797,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.869797
+        }
+      },
+      "pos": 151,
+      "rank": 6,
+      "score_base": 0.248757
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 33,
+    "query_block_pair_count": 60,
+    "cf_count": 6,
+    "caption_refs_sample": [
+      "图1",
+      "图1",
+      "图3",
+      "图1",
+      "图2",
+      "图3"
+    ],
+    "rerank_profile": "legacy",
+    "main_method": "LG-JSSF-Legacy+ClusterAdd",
+    "query_use_keywords": false
+  }
+}

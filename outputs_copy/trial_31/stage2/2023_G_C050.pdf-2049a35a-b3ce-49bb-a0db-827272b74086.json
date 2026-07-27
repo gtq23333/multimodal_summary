@@ -1,0 +1,1121 @@
+{
+  "paper_id": "2023_G_C050.pdf-2049a35a-b3ce-49bb-a0db-827272b74086",
+  "top3_figures": [
+    {
+      "image_hash": "8a8719e629b9ba32ff32624ec03f44bc33306c62c193979330cd2ac2e00743d6",
+      "caption": "图2六大品类蔬菜的品种丰富度占比图",
+      "score": 0.32619,
+      "s_direct": 0.033997,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_27",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "蔬菜的品种丰富度可以为商超提供洞察消费者需求、增加竞争优势和挖掘市场潜力的机会，有助于商家优化产品组合、关注热门品种、提高销售额和满足消费者的多样化需求，六大品"
+        },
+        {
+          "block_id": "b_29",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "由图2可知，花叶类蔬菜占品种数量的  $40\\%$  ，品种丰富，意味着市场上有各种各样的花叶类蔬菜可供选择。相比之下，花菜类蔬菜的品种数量只占  $2\\%$ "
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_27",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_27",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.516999,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 36,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_43",
+          "b_76",
+          "b_363",
+          "b_45",
+          "b_4"
+        ]
+      },
+      "pos": 28,
+      "rank": 1
+    },
+    {
+      "image_hash": "7ed945807f8aa390363f6ddd3d80df369d15671f903ab94cdca0bb03f28f25a5",
+      "caption": "图4六大品类蔬菜损耗率直方图",
+      "score": 0.221853,
+      "s_direct": 0.030255,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_35",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "蔬菜损耗率的分布情况可以帮助商家成本管理和供应链优化，推动可持续发展，并提高商超的市场竞争力。六大蔬菜品类的损耗率如图4所示："
+        },
+        {
+          "block_id": "b_37",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "由图4可知，花菜类、水生根茎类以及花叶类的蔬菜损耗率都在  $10\\%$  以上，损耗率较高，较难保存。茄类的损耗率大约为  $7\\%$  ，较容易保存，意味着"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_35",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_35",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.515128,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 36,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_43",
+          "b_76",
+          "b_363",
+          "b_45",
+          "b_4"
+        ]
+      },
+      "pos": 36,
+      "rank": 2
+    },
+    {
+      "image_hash": "b2dacf1275c819a682758e4e6c1f0b2cd58945b8ab1752249373deb53f9f2c7d",
+      "caption": "（1）蔬菜六大品类总销售量分布情况 图5蔬菜六大品类的总销售量分布图",
+      "score": 0.19621,
+      "s_direct": 0.014389,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_64",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": true,
+          "text_snippet": "通过图5可以看出，花叶类蔬菜的销售量占比高达  $42\\%$  ，位居销售量最高位，是消费者最喜爱的品类之一。其次是辣椒类和食用菌，占据相当大的市场份额。这些数"
+        },
+        {
+          "block_id": "b_62",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "6.2.2 数据可视化处理直观观测数据通过数据描述性分析，首先对蔬菜六大品类及各单品的销售量进行基本情况了解。再对数据进行可视化处理，直观观测数据的模式和趋势，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_62",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_62",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.507194,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 36,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_43",
+          "b_76",
+          "b_363",
+          "b_45",
+          "b_4"
+        ]
+      },
+      "pos": 63,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "8a8719e629b9ba32ff32624ec03f44bc33306c62c193979330cd2ac2e00743d6",
+      "caption": "图2六大品类蔬菜的品种丰富度占比图",
+      "score": 0.32619,
+      "s_direct": 0.033997,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_27",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "蔬菜的品种丰富度可以为商超提供洞察消费者需求、增加竞争优势和挖掘市场潜力的机会，有助于商家优化产品组合、关注热门品种、提高销售额和满足消费者的多样化需求，六大品"
+        },
+        {
+          "block_id": "b_29",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "由图2可知，花叶类蔬菜占品种数量的  $40\\%$  ，品种丰富，意味着市场上有各种各样的花叶类蔬菜可供选择。相比之下，花菜类蔬菜的品种数量只占  $2\\%$ "
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_27",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_27",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.516999,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 36,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_43",
+          "b_76",
+          "b_363",
+          "b_45",
+          "b_4"
+        ]
+      },
+      "pos": 28,
+      "rank": 1
+    },
+    {
+      "image_hash": "7ed945807f8aa390363f6ddd3d80df369d15671f903ab94cdca0bb03f28f25a5",
+      "caption": "图4六大品类蔬菜损耗率直方图",
+      "score": 0.221853,
+      "s_direct": 0.030255,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_35",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "蔬菜损耗率的分布情况可以帮助商家成本管理和供应链优化，推动可持续发展，并提高商超的市场竞争力。六大蔬菜品类的损耗率如图4所示："
+        },
+        {
+          "block_id": "b_37",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "由图4可知，花菜类、水生根茎类以及花叶类的蔬菜损耗率都在  $10\\%$  以上，损耗率较高，较难保存。茄类的损耗率大约为  $7\\%$  ，较容易保存，意味着"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_35",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_35",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.515128,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 36,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_43",
+          "b_76",
+          "b_363",
+          "b_45",
+          "b_4"
+        ]
+      },
+      "pos": 36,
+      "rank": 2
+    },
+    {
+      "image_hash": "b2dacf1275c819a682758e4e6c1f0b2cd58945b8ab1752249373deb53f9f2c7d",
+      "caption": "（1）蔬菜六大品类总销售量分布情况 图5蔬菜六大品类的总销售量分布图",
+      "score": 0.19621,
+      "s_direct": 0.014389,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_64",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": true,
+          "text_snippet": "通过图5可以看出，花叶类蔬菜的销售量占比高达  $42\\%$  ，位居销售量最高位，是消费者最喜爱的品类之一。其次是辣椒类和食用菌，占据相当大的市场份额。这些数"
+        },
+        {
+          "block_id": "b_62",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "6.2.2 数据可视化处理直观观测数据通过数据描述性分析，首先对蔬菜六大品类及各单品的销售量进行基本情况了解。再对数据进行可视化处理，直观观测数据的模式和趋势，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_62",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_62",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.507194,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 36,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_43",
+          "b_76",
+          "b_363",
+          "b_45",
+          "b_4"
+        ]
+      },
+      "pos": 63,
+      "rank": 3
+    },
+    {
+      "image_hash": "30ebdfdc2572fc5c067acfd334b77d733d393929bf357a3e171dbd6d17f7e188",
+      "caption": "图1总体思路图",
+      "score": 0.17342,
+      "s_direct": 0.03179,
+      "s_link": 0.315049,
+      "s_co": 0.315049,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_18",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "# 文章总体思路图如图1所示："
+        },
+        {
+          "block_id": "b_20",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 三、模型假设"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_15",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_20",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.45007,
+          "distance_weight": 0.7,
+          "s_link": 0.315049,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.17342,
+        "rerank_profile": "legacy"
+      },
+      "pos": 19,
+      "rank": 4
+    },
+    {
+      "image_hash": "7afb0e5abaddfb22f2a0a44826b7b5c76125aeed5bc453e4d2b073d8d53dc8f4",
+      "caption": "图7单品蔬菜的分布情况",
+      "score": 0.166622,
+      "s_direct": -0.000266,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_72",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "由图7可知，各类单品蔬菜都在特定阶段呈现明显的高峰和低谷阶段，说明它们的销售量可能受到季节性的影响。"
+        },
+        {
+          "block_id": "b_70",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由于篇幅有限制，本文此处只展示花叶类和茄类的分布情况，其余单品见附件。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_70",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.499867,
+        "rerank_profile": "legacy"
+      },
+      "pos": 71,
+      "rank": 5
+    },
+    {
+      "image_hash": "0d92d482cbbc2d6b4f0603c4c55d4d530f0b47e052ad9af070814e3639240a1f",
+      "caption": "图8 成本加成定价定义",
+      "score": 0.165206,
+      "s_direct": 0.047383,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_131",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "成本加成定价法含义直观，使用简便，在定价实践中运用较为广泛[2]。这种方法是指在商品成本的基础上，根据零售主体的需求加上适当比例的利润，最终形成商品的零售价格。"
+        },
+        {
+          "block_id": "b_133",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 7.2 第一问：Pearson 相关系数判断线性关系"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_133",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_133",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.523692,
+        "rerank_profile": "legacy"
+      },
+      "pos": 132,
+      "rank": 6
+    },
+    {
+      "image_hash": "c736ce025745d6df8cdb6e123bd86052005729238201665fdd82205e7b5123bc",
+      "caption": "图3六大品类蔬菜12个季度的平均销售量折线图",
+      "score": 0.115442,
+      "s_direct": 0.042077,
+      "s_link": 0.535133,
+      "s_co": 0.535133,
+      "p_layout": 0.5,
+      "p_type": 0.8,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_31",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "蔬菜12个季度的平均销售量情况可以帮助商超了解销售趋势、预测市场需求、调整产品组合和制定竞争策略。对商超进行决策制定、业务规划和市场运营都非常有价值。六大品类蔬"
+        },
+        {
+          "block_id": "b_33",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "由图3知，花叶类较其他五类蔬菜全年销售量较高。花叶类、辣椒类、食用菌和水生根茎类销售量峰值的出现规律都呈现出周期性，大都在每年的一三四季度出现峰值。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_27",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_31",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.764476,
+          "distance_weight": 0.7,
+          "s_link": 0.535133,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.288605,
+        "rerank_profile": "legacy"
+      },
+      "pos": 32,
+      "rank": 7
+    },
+    {
+      "image_hash": "325a83f6a36a2b2f23ed6813d64845dd7b2af59ac788b8a91dcb2642e78f135c",
+      "caption": "图5蔬菜六大品类的总销售量分布图 图6蔬菜六大品类日销量分布图",
+      "score": 0.100975,
+      "s_direct": 0.013215,
+      "s_link": 0.50882,
+      "s_co": 0.50882,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_64",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "通过图5可以看出，花叶类蔬菜的销售量占比高达  $42\\%$  ，位居销售量最高位，是消费者最喜爱的品类之一。其次是辣椒类和食用菌，占据相当大的市场份额。这些数"
+        },
+        {
+          "block_id": "b_65",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# （2）蔬菜六大品类日销量分布情况"
+        },
+        {
+          "block_id": "b_67",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由图6可知，六类蔬菜的日销售量在2020年7月至2023年6月30日都有其高峰和低谷，呈现出明显的季节性波动。这意味着人们对不同品类的蔬菜的需求在不同"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_62",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_65",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.726886,
+          "distance_weight": 0.7,
+          "s_link": 0.50882,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.261018,
+        "rerank_profile": "legacy"
+      },
+      "pos": 66,
+      "rank": 8
+    },
+    {
+      "image_hash": "e68a55dcc5b40106d4dd7e1a1b6edd10e9f04f2044299fb47a84e03b5f4372ff",
+      "caption": "图12六大蔬菜品类未来一周补货量(左)与定价(右)",
+      "score": 0.065298,
+      "s_direct": 0.001177,
+      "s_link": 0.482083,
+      "s_co": 0.482083,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_233",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td rowspan=\"2\">日期</td><td colspan=\"2\">花菜类</td><td colspan=\"2\">食用菌</t"
+        },
+        {
+          "block_id": "b_235",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 八、问题三模型的建立与求解"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_237",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_233",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.688691,
+          "distance_weight": 0.7,
+          "s_link": 0.482083,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.24163,
+        "rerank_profile": "legacy"
+      },
+      "pos": 234,
+      "rank": 9
+    },
+    {
+      "image_hash": "a9c2ee39cb8114a37842de5ce266799d747d844fd416415a4d44914cc8aa018e",
+      "caption": "图9花菜类（左）和食用菌（右）",
+      "score": 0.049252,
+      "s_direct": 0.016834,
+      "s_link": 0.310387,
+      "s_co": 0.310387,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_223",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "以近半年各蔬菜品类销售情况为基础做出预测折线图，各蔬菜品类预测结果如下："
+        },
+        {
+          "block_id": "b_227",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "未来一周各蔬菜品类日销量预测如下表："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_169",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_223",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.775968,
+          "distance_weight": 0.4,
+          "s_link": 0.310387,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.163611,
+        "rerank_profile": "legacy"
+      },
+      "pos": 224,
+      "rank": 10
+    },
+    {
+      "image_hash": "835d7cb110966796fe1b0bffac311e5a2ccbd9d8ca4a9e480a6f824f505de936",
+      "caption": "图10花叶类（左）和辣椒类（右） 图11茄类（左）和水生根类（右）",
+      "score": 0.047929,
+      "s_direct": 0.021227,
+      "s_link": 0.310387,
+      "s_co": 0.310387,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_223",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "以近半年各蔬菜品类销售情况为基础做出预测折线图，各蔬菜品类预测结果如下："
+        },
+        {
+          "block_id": "b_227",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "未来一周各蔬菜品类日销量预测如下表："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_169",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_223",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.775968,
+          "distance_weight": 0.4,
+          "s_link": 0.310387,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.165807,
+        "rerank_profile": "legacy"
+      },
+      "pos": 225,
+      "rank": 11
+    },
+    {
+      "image_hash": "e2f509005d95e7ca9b759e51dc85ddc7ed6ea3c2f986a9e5687673fa97e1bdf7",
+      "caption": "图14前三年退货记录图",
+      "score": 0.039641,
+      "s_direct": 0.049945,
+      "s_link": 0.259804,
+      "s_co": 0.259804,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_338",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": true,
+          "text_snippet": "由图14可知，芜湖青椒、西兰花和西峡香菇的退货记录较高，由此商超可以联系退货的顾客，了解退货原因，如若是产品质量问题，可以强化质量控制，确保商品能够以最佳状态到"
+        },
+        {
+          "block_id": "b_336",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "本文收集了2020年7月1日—2023年6月30日三年期间的退货记录，如下表（由于篇幅原因，此处只展示部分单品数据，其余见附录）"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_323",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_338",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "14",
+          "raw_cosine": 0.649511,
+          "distance_weight": 0.4,
+          "s_link": 0.259804,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.154875,
+        "rerank_profile": "legacy"
+      },
+      "pos": 337,
+      "rank": 12
+    },
+    {
+      "image_hash": "ba19999bb780354dde64e9c4fbfc766f45b1818987b6028f636dfea0ff3fedfc",
+      "caption": "图13三个指标与六大蔬菜品类季度平均销售量标准化折线图",
+      "score": 0.037131,
+      "s_direct": 0.023636,
+      "s_link": 0.329787,
+      "s_co": 0.329787,
+      "p_layout": 0.26265,
+      "p_type": 0.8,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_304",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用MATLAB软件求解，得到三个指标与蔬菜品类季度平均销售量的标准化折线图如下（由于篇幅有限，本文此处只展示花菜类和辣椒类的标准化折线图，其余见附件）"
+        },
+        {
+          "block_id": "b_306",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "经过将原指标值标准化的处理，可以观察到季度各蔬菜品类的单品蔬菜销售种数、节气期间特征单品蔬菜销量和节日期间特征单品蔬菜销量与相应蔬菜品类的季度平均销售量呈现出令"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_53",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_304",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.824468,
+          "distance_weight": 0.4,
+          "s_link": 0.329787,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.176712,
+        "rerank_profile": "legacy"
+      },
+      "pos": 305,
+      "rank": 13
+    },
+    {
+      "image_hash": "0d9f0add5c8d1e35cade0e7b2951fe50f1cf7f5d4a3d5c90e4270ea6ce06fb44",
+      "caption": "图15前三十种单品蔬菜打折次数",
+      "score": 0.03711,
+      "s_direct": 0.029039,
+      "s_link": 0.267838,
+      "s_co": 0.267838,
+      "p_layout": 0.25,
+      "p_type": 1.0,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_343",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "本文收集了2020年7月1日—2023年6月30日三年期间的单品蔬菜的打折次数，如下表（由于篇幅原因，此处只展示前三十种单品数据，其余见附录）"
+        },
+        {
+          "block_id": "b_345",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可知，净藕的打折次数颇多，可能意味着销售状况不理想或市场竞争激烈。商家可以通过分析销售数据、消费者反馈和竞争情况来确定适当的销售策略和促销措"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_237",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_343",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.669596,
+          "distance_weight": 0.4,
+          "s_link": 0.267838,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.148439,
+        "rerank_profile": "legacy"
+      },
+      "pos": 344,
+      "rank": 14
+    },
+    {
+      "image_hash": "d8648f612dc5ffb5e89b3174969b42c98fbee842842201ad6e43accbb3914925",
+      "caption": "附录2：补充表格、图片",
+      "score": 0.035916,
+      "s_direct": 0.027896,
+      "s_link": 0.271637,
+      "s_co": 0.271637,
+      "p_layout": 0.239812,
+      "p_type": 1.0,
+      "figure_index": null,
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_370",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "单品蔬菜的分布情况图"
+        },
+        {
+          "block_id": "b_375",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "单品销售量统计学指标表"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_370",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.679094,
+          "distance_weight": 0.4,
+          "s_link": 0.271637,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.149767,
+        "rerank_profile": "legacy"
+      },
+      "pos": 372,
+      "rank": 15
+    },
+    {
+      "image_hash": "e0914a77265e50a0f9c34f80481c07c464b9a292e21f870e49b0a84d2b180e18",
+      "caption": "辣椒类蔬菜单品的销售量分布图",
+      "score": 0.034967,
+      "s_direct": 0.014214,
+      "s_link": 0.271637,
+      "s_co": 0.271637,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": null,
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_370",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "单品蔬菜的分布情况图"
+        },
+        {
+          "block_id": "b_375",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "单品销售量统计学指标表"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_370",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.679094,
+          "distance_weight": 0.4,
+          "s_link": 0.271637,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.142926,
+        "rerank_profile": "legacy"
+      },
+      "pos": 371,
+      "rank": 16
+    },
+    {
+      "image_hash": "e9e4372e214bea2ce8fc0ae489719160ededdccc1c17ad029472fca247940414",
+      "caption": "食用菌类蔬菜单品的销售量分布图 花菜类蔬菜单品的销售量分布图",
+      "score": 0.034184,
+      "s_direct": 0.023841,
+      "s_link": 0.271637,
+      "s_co": 0.271637,
+      "p_layout": 0.231378,
+      "p_type": 1.0,
+      "figure_index": null,
+      "layout_index": 19.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_370",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "单品蔬菜的分布情况图"
+        },
+        {
+          "block_id": "b_375",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "单品销售量统计学指标表"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_370",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.679094,
+          "distance_weight": 0.4,
+          "s_link": 0.271637,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.147739,
+        "rerank_profile": "legacy"
+      },
+      "pos": 374,
+      "rank": 17
+    },
+    {
+      "image_hash": "303137c8e38f29f46742284cc77a45c5f276a5e3a8fd9f615727697ca8b0a1d1",
+      "caption": "水生根茎类蔬菜单品的销售量分布图",
+      "score": 0.03096,
+      "s_direct": -0.008606,
+      "s_link": 0.271637,
+      "s_co": 0.271637,
+      "p_layout": 0.235409,
+      "p_type": 1.0,
+      "figure_index": null,
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_370",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "单品蔬菜的分布情况图"
+        },
+        {
+          "block_id": "b_375",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "单品销售量统计学指标表"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_370",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.679094,
+          "distance_weight": 0.4,
+          "s_link": 0.271637,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.131515,
+        "rerank_profile": "legacy"
+      },
+      "pos": 373,
+      "rank": 18
+    },
+    {
+      "image_hash": "87d62284b861e4d84166b7b11ff817abf89e4198cda84d01205e6deee8b31f55",
+      "caption": "单品蔬菜打折次数直方图 三个指标与六大蔬菜品类季度平均销售量标准化折线图",
+      "score": 0.024838,
+      "s_direct": 0.034872,
+      "s_link": 0.242032,
+      "s_co": 0.242032,
+      "p_layout": 0.224244,
+      "p_type": 0.8,
+      "figure_index": null,
+      "layout_index": 21.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_389",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 前三年单品蔬菜退货记录图"
+        },
+        {
+          "block_id": "b_393",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 附录3：代码"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_237",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_389",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.60508,
+          "distance_weight": 0.4,
+          "s_link": 0.242032,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.138452,
+        "rerank_profile": "legacy"
+      },
+      "pos": 391,
+      "rank": 19
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 48,
+    "query_block_pair_count": 60,
+    "cf_count": 36,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图2",
+      "图3",
+      "图3",
+      "图4",
+      "图4",
+      "图1",
+      "图1",
+      "图2"
+    ],
+    "rerank_profile": "legacy",
+    "query_use_keywords": false
+  }
+}

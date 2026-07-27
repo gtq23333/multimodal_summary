@@ -1,0 +1,531 @@
+{
+  "generated_at": "2026-06-22T14:38:31.733031+00:00",
+  "run_mode": "live",
+  "run_stage": "2",
+  "vlm_mode": "caption",
+  "gt_mode": "insertions_only",
+  "sample_count": 10,
+  "retrieval": {
+    "Hit@1": 0.2,
+    "Hit@3": 0.6,
+    "MRR": 0.3833,
+    "gt_in_top_p_recall": 1.0,
+    "n": 10
+  },
+  "insertion": {
+    "Precision": 0.2,
+    "Recall": 0.0667,
+    "F1": 0.1,
+    "n": 10
+  },
+  "generation": {
+    "ROUGE-L": 1.0,
+    "n": 10
+  },
+  "acceptance": {
+    "rate": null,
+    "pending_reviews": 10
+  },
+  "per_paper": {
+    "retrieval": [
+      {
+        "paper_id": "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c",
+        "hit@1": 0.0,
+        "hit@3": 0.0,
+        "mrr": 0.0,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d",
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "mrr": 1.0,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165",
+        "hit@1": 0.0,
+        "hit@3": 1.0,
+        "mrr": 0.3333333333333333,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2",
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "mrr": 1.0,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe",
+        "hit@1": 0.0,
+        "hit@3": 1.0,
+        "mrr": 0.5,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925",
+        "hit@1": 0.0,
+        "hit@3": 0.0,
+        "mrr": 0.0,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c",
+        "hit@1": 0.0,
+        "hit@3": 0.0,
+        "mrr": 0.0,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5",
+        "hit@1": 0.0,
+        "hit@3": 0.0,
+        "mrr": 0.0,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451",
+        "hit@1": 0.0,
+        "hit@3": 1.0,
+        "mrr": 0.5,
+        "gt_in_pool": 1.0
+      },
+      {
+        "paper_id": "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545",
+        "hit@1": 0.0,
+        "hit@3": 1.0,
+        "mrr": 0.5,
+        "gt_in_pool": 1.0
+      }
+    ],
+    "insertion": [
+      {
+        "paper_id": "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      {
+        "paper_id": "2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d",
+        "Precision": 1.0,
+        "Recall": 0.3333,
+        "F1": 0.5
+      },
+      {
+        "paper_id": "2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      {
+        "paper_id": "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2",
+        "Precision": 1.0,
+        "Recall": 0.3333,
+        "F1": 0.5
+      },
+      {
+        "paper_id": "2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      {
+        "paper_id": "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      {
+        "paper_id": "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      {
+        "paper_id": "2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      {
+        "paper_id": "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      {
+        "paper_id": "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545",
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      }
+    ],
+    "detail": [
+      {
+        "paper_id": "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c",
+        "paper_short": "2016_G_A028",
+        "gold_figures": [
+          "c666acc38d85752a433fb6448de40948913eaf210f0f878fd08a935a6dfd1dc5",
+          "29714b771ac5c9bbd7139eb2684dd162f2087c7e5db10c188714f0a564f78381"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "117f08088aad...",
+            "caption": "图 6.3.2 锚链形状示意图",
+            "score": 0.547223
+          },
+          {
+            "rank": 2,
+            "image_hash": "1cca10c8897c...",
+            "caption": "图5.4.3锚链形状示意图",
+            "score": 0.392529
+          },
+          {
+            "rank": 3,
+            "image_hash": "af0e8d4a4c0f...",
+            "caption": "图5.2.2钢管受力示意图",
+            "score": 0.293476
+          }
+        ],
+        "inserted": [
+          "117f08088aad3b865bc6681049f561e3c73a5a08a397f50658d892d483427679"
+        ],
+        "gold_inserted": [
+          "c666acc38d85752a433fb6448de40948913eaf210f0f878fd08a935a6dfd1dc5",
+          "29714b771ac5c9bbd7139eb2684dd162f2087c7e5db10c188714f0a564f78381"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d",
+        "paper_short": "2016_G_B022",
+        "gold_figures": [
+          "46e05dd89c89ba225cfc2d8ad8e496c4c31c1f2ce62761a8f1cb154e94f3f315",
+          "ffd57342253e426fd8d4b55154b2af4991d0188d41fcf35f851726fc578f060e",
+          "4fe8fdf8aa4029e6a78d72f75a4d2c3fb5622e82d221facc9fac68296ab15309"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "ffd57342253e...",
+            "caption": "图16敏感性分析结果",
+            "score": 0.216927
+          },
+          {
+            "rank": 2,
+            "image_hash": "231d0f431e00...",
+            "caption": "图15高峰期已开放小区仿真图",
+            "score": 0.199524
+          },
+          {
+            "rank": 3,
+            "image_hash": "fffc1c5e4473...",
+            "caption": "图14高峰期未开放小区仿真图",
+            "score": 0.168325
+          }
+        ],
+        "inserted": [
+          "ffd57342253e426fd8d4b55154b2af4991d0188d41fcf35f851726fc578f060e"
+        ],
+        "gold_inserted": [
+          "46e05dd89c89ba225cfc2d8ad8e496c4c31c1f2ce62761a8f1cb154e94f3f315",
+          "ffd57342253e426fd8d4b55154b2af4991d0188d41fcf35f851726fc578f060e",
+          "4fe8fdf8aa4029e6a78d72f75a4d2c3fb5622e82d221facc9fac68296ab15309"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165",
+        "paper_short": "2016_G_B294",
+        "gold_figures": [
+          "4c80655608c268bfd0651ba6ce441cdccd9e62f16d483a5500a7761767742b18",
+          "6bb60d338e4cb2afb069709c4fe80fa77b1158dc898273edf04ac274054b54aa",
+          "d75eec99d039666c9adef8a87404ee89e0088b124a7e8ae64473cb98478c214b"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "5a3d5e16154b...",
+            "caption": "图10 小区三及周边道路情况",
+            "score": 0.663778
+          },
+          {
+            "rank": 2,
+            "image_hash": "957c9175f7b5...",
+            "caption": "图11 左为小区开放前 右为开放后",
+            "score": 0.193373
+          },
+          {
+            "rank": 3,
+            "image_hash": "4c80655608c2...",
+            "caption": "图1层次分析图示",
+            "score": 0.108753
+          }
+        ],
+        "inserted": [
+          "5a3d5e16154bd1fb7dfc3a5f0a595b4877df4fa1673a546b2c7d53b5d6e9dd07"
+        ],
+        "gold_inserted": [
+          "4c80655608c268bfd0651ba6ce441cdccd9e62f16d483a5500a7761767742b18",
+          "6bb60d338e4cb2afb069709c4fe80fa77b1158dc898273edf04ac274054b54aa",
+          "d75eec99d039666c9adef8a87404ee89e0088b124a7e8ae64473cb98478c214b"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2",
+        "paper_short": "2017_G_B104",
+        "gold_figures": [
+          "15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da",
+          "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270",
+          "9f8550f3a2f716509bb19f9846caa0f19a4ddaaa842e0cb353e0b8ee12a2c19a"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "9a4b14c8e856...",
+            "caption": "图7打包任务点的算法流程图",
+            "score": 0.306118
+          },
+          {
+            "rank": 2,
+            "image_hash": "edafb23ffa85...",
+            "caption": "图2 会员分布聚类图",
+            "score": 0.260867
+          },
+          {
+            "rank": 3,
+            "image_hash": "15f3cea67abd...",
+            "caption": "图1 任务分布情况图",
+            "score": 0.230889
+          }
+        ],
+        "inserted": [
+          "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270"
+        ],
+        "gold_inserted": [
+          "15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da",
+          "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270",
+          "9f8550f3a2f716509bb19f9846caa0f19a4ddaaa842e0cb353e0b8ee12a2c19a"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe",
+        "paper_short": "2017_G_B154",
+        "gold_figures": [
+          "9d22e9c63d341b398c25603a57e22f8c5ae5c4c1cabefb4f8a845a311ee3b8f5",
+          "1b8e42e424f380b48538ee13a4aceef114ec751c2bfcddc40f1d1730ce0a400b",
+          "16c4432b4e07e0cbfa3859ae3b387c35e31427442529062daa4ef60879d1d673"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "bf1eaa91de97...",
+            "caption": "图21活跃度较低的地点包内每个任务的平均定价与总收益期望的关系",
+            "score": 0.619222
+          },
+          {
+            "rank": 2,
+            "image_hash": "1b8e42e424f3...",
+            "caption": "图14各个任务点处的行动力消耗",
+            "score": 0.590621
+          },
+          {
+            "rank": 3,
+            "image_hash": "83e6cc3c24f0...",
+            "caption": "图18活跃度中等的地点不打包每个任务的平均定价与总收益期望的关系",
+            "score": 0.585069
+          }
+        ],
+        "inserted": [
+          "bf1eaa91de97d6adb83b9bc2d50c3f9d3f60c7ab98fc95f27766adaba8111590"
+        ],
+        "gold_inserted": [
+          "9d22e9c63d341b398c25603a57e22f8c5ae5c4c1cabefb4f8a845a311ee3b8f5",
+          "1b8e42e424f380b48538ee13a4aceef114ec751c2bfcddc40f1d1730ce0a400b",
+          "16c4432b4e07e0cbfa3859ae3b387c35e31427442529062daa4ef60879d1d673"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925",
+        "paper_short": "2017_G_D035",
+        "gold_figures": [
+          "471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "4f8401a644fa...",
+            "caption": "图5所示（程序和结果见附录1）。图5 起点  $22\\rightarrow$  终点12的最短路径",
+            "score": 1.297255
+          },
+          {
+            "rank": 2,
+            "image_hash": "4deff488b53a...",
+            "caption": "图6 最短回路",
+            "score": 1.259682
+          },
+          {
+            "rank": 3,
+            "image_hash": "4b5b0c143927...",
+            "caption": "图3 巡检问题的无向赋权图",
+            "score": 0.936036
+          }
+        ],
+        "inserted": [
+          "4f8401a644fa243b2e86109327a4fd2af63e8c183add1be0f2ba2b6bc96971f3"
+        ],
+        "gold_inserted": [
+          "471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c",
+        "paper_short": "2018_G_A229",
+        "gold_figures": [
+          "6fcb8006b5290b81f7d9690a378351710d0a335fdf20bc7fd8f990b7762617e9"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "6786c53c31ef...",
+            "caption": "图5.4热传导方程的网格划分",
+            "score": 1.414398
+          },
+          {
+            "rank": 2,
+            "image_hash": "8dd9cd6b37f4...",
+            "caption": "图5.7四个不同时刻下热防护服的温度场分布图",
+            "score": 1.324439
+          },
+          {
+            "rank": 3,
+            "image_hash": "241bd6e688b8...",
+            "caption": "图5.9第  $\\mathrm{II}$  层最优厚度下皮肤外侧温度分布图",
+            "score": 1.265699
+          }
+        ],
+        "inserted": [
+          "6786c53c31ef19fbdd636fa29a276022845766fb15f39e667a9d7a0c5eb5eeeb"
+        ],
+        "gold_inserted": [
+          "6fcb8006b5290b81f7d9690a378351710d0a335fdf20bc7fd8f990b7762617e9"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2018_G_A466.pdf-f42c5f5a-ee2d-4f66-84b0-d3e32153a4e5",
+        "paper_short": "2018_G_A466",
+        "gold_figures": [
+          "2c438777da1e87279ec9bb2634a1b0895b0eb62d1f53a8eb1c59ceb8df251e9c"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "0124f34fde38...",
+            "caption": "图8: 温度超过  $44^{\\circ}\\mathrm{C}$  时长与II层厚度关系",
+            "score": 1.413197
+          },
+          {
+            "rank": 2,
+            "image_hash": "eb9c23055ddd...",
+            "caption": "图7: 温度超过  $44^{\\circ}\\mathrm{C}$  的时长与II层厚度关系",
+            "score": 1.39276
+          },
+          {
+            "rank": 3,
+            "image_hash": "9b5add204ed3...",
+            "caption": "图10：符合条件的(d2,d4)范围图",
+            "score": 1.250807
+          }
+        ],
+        "inserted": [
+          "0124f34fde3812988e92fcad87f84f2ea69274e4933e339ba23a97607b32f7eb"
+        ],
+        "gold_inserted": [
+          "2c438777da1e87279ec9bb2634a1b0895b0eb62d1f53a8eb1c59ceb8df251e9c"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451",
+        "paper_short": "2018_G_C008",
+        "gold_figures": [
+          "52ab1afa884f8692f5ac04e9f5b26762d43ef9fb5d9316a03826e604bbf093da",
+          "6e9ff918b2015bfca950af2bd29ce3b00c608adee57489207eb7645cf43c699a",
+          "a3ddcdf0742c840a0a342572b82d78cdd5d4d2c3e7de7bb92376783e6a7d6e7d"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "f1a7cd1c21d2...",
+            "caption": "图52015年-2017年季节消费会员人数",
+            "score": 0.161569
+          },
+          {
+            "rank": 2,
+            "image_hash": "6e9ff918b201...",
+            "caption": "图6会员与非会员每日消费总金额情况",
+            "score": 0.147321
+          },
+          {
+            "rank": 3,
+            "image_hash": "a3ddcdf0742c...",
+            "caption": "图1会员消费特征指标",
+            "score": 0.123682
+          }
+        ],
+        "inserted": [
+          "f1a7cd1c21d2aa403dd01b32eb661272a3571dcf5cf41add36400321f56b15a6"
+        ],
+        "gold_inserted": [
+          "52ab1afa884f8692f5ac04e9f5b26762d43ef9fb5d9316a03826e604bbf093da",
+          "6e9ff918b2015bfca950af2bd29ce3b00c608adee57489207eb7645cf43c699a",
+          "a3ddcdf0742c840a0a342572b82d78cdd5d4d2c3e7de7bb92376783e6a7d6e7d"
+        ],
+        "rouge_l": 1.0
+      },
+      {
+        "paper_id": "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545",
+        "paper_short": "2018_G_D029",
+        "gold_figures": [
+          "e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e",
+          "cfe682066869be7228c8ebc83633109ca53c0fa6f41091e7a8c7f3269a2ac4ec"
+        ],
+        "pred_top3": [
+          {
+            "rank": 1,
+            "image_hash": "12b6aa3ed6ab...",
+            "caption": "图5改变黑车数量后的对比分析图",
+            "score": 1.199884
+          },
+          {
+            "rank": 2,
+            "image_hash": "e03c8d26acae...",
+            "caption": "图3颜色装配问题流程图",
+            "score": 0.734247
+          },
+          {
+            "rank": 3,
+            "image_hash": "1748643b5eeb...",
+            "caption": "图1白班黑车与其它颜色车的顺序图",
+            "score": 0.660544
+          }
+        ],
+        "inserted": [
+          "12b6aa3ed6ab1839efa507bd798d6a040c770190fbf635f2d0939ec10982eb6b"
+        ],
+        "gold_inserted": [
+          "e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e",
+          "cfe682066869be7228c8ebc83633109ca53c0fa6f41091e7a8c7f3269a2ac4ec"
+        ],
+        "rouge_l": 1.0
+      }
+    ]
+  }
+}

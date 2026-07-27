@@ -9,11 +9,11 @@ from PyQt6.QtWidgets import (
     QFrame,
     QLabel,
     QScrollArea,
-    QSizePolicy,
-    QTextEdit,
     QVBoxLayout,
     QWidget,
 )
+
+from app.widgets.scroll_utils import ScrollWidthSyncMixin
 
 MAX_IMAGE_WIDTH = 420
 MAX_IMAGE_HEIGHT = 280
@@ -36,15 +36,15 @@ def _load_pixmap(image_path: str) -> QPixmap | None:
     )
 
 
-class GtSequencePanel(QWidget):
+class GtSequencePanel(ScrollWidthSyncMixin, QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         self._scroll = QScrollArea()
-        self._scroll.setWidgetResizable(True)
         self._container = QWidget()
         self._layout = QVBoxLayout(self._container)
         self._layout.setAlignment(Qt.AlignmentFlag.AlignTop)
         self._scroll.setWidget(self._container)
+        self.bind_scroll_width(self._scroll, self._container)
 
         root = QVBoxLayout(self)
         title = QLabel("GT 标注序列")
@@ -64,12 +64,18 @@ class GtSequencePanel(QWidget):
         for item in sequence:
             block_type = item.get("type", "text")
             if block_type == "text":
-                text = item.get("text") or item.get("content") or ""
-                editor = QTextEdit()
-                editor.setReadOnly(True)
-                editor.setPlainText(text.strip())
-                editor.setMaximumHeight(min(220, max(80, len(text) // 4 + 60)))
-                self._layout.addWidget(editor)
+                text = (item.get("text") or item.get("content") or "").strip()
+                if not text:
+                    continue
+                text_label = QLabel(text)
+                text_label.setWordWrap(True)
+                text_label.setTextInteractionFlags(
+                    Qt.TextInteractionFlag.TextSelectableByMouse
+                )
+                text_label.setStyleSheet(
+                    "padding: 8px; background: #fafafa; border-radius: 4px;"
+                )
+                self._layout.addWidget(text_label)
             elif block_type == "image":
                 card = QFrame()
                 card.setFrameShape(QFrame.Shape.StyledPanel)
@@ -91,14 +97,11 @@ class GtSequencePanel(QWidget):
                 img_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
                 if pix is not None:
                     img_label.setPixmap(pix)
+                    img_label.setFixedSize(pix.size())
                 else:
                     img_label.setText(f"[图片不可用]\n{image_path}")
                     img_label.setWordWrap(True)
-                img_label.setSizePolicy(
-                    QSizePolicy.Policy.Expanding,
-                    QSizePolicy.Policy.Preferred,
-                )
-                card_layout.addWidget(img_label)
+                card_layout.addWidget(img_label, alignment=Qt.AlignmentFlag.AlignCenter)
 
                 caption = item.get("caption") or item.get("figure_caption") or ""
                 if caption:
@@ -108,4 +111,4 @@ class GtSequencePanel(QWidget):
                     card_layout.addWidget(cap_label)
 
                 self._layout.addWidget(card)
-        self._layout.addStretch(1)
+        self.sync_scroll_width()

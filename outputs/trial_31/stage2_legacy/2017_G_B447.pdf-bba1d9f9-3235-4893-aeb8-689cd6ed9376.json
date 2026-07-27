@@ -1,0 +1,2379 @@
+{
+  "paper_id": "2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376",
+  "top3_figures": [
+    {
+      "image_hash": "c6fa9eec45154c1c71e538be188bddd44f603ea869f78c4578ecfad108674741",
+      "caption": "图1用户、系统、任务三者逻辑关系",
+      "score": 0.490174,
+      "s_direct": 0.442201,
+      "s_link": 0.538148,
+      "s_co": 0.538148,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_31",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "图1表明了用户、系统、任务三者之间的逻辑关系，图2表明了一个活动过程的时序关系。在系统中，有  $n$  个用户与  $m$  个任务，用户可以通过挑选来选择任"
+        },
+        {
+          "block_id": "b_28",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先，为了明确人机交互的原理与流程，我们先对整个流程进行具体分析。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_31",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 0.538148,
+          "distance_weight": 1.0,
+          "s_link": 0.538148,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.490174,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 31,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_5",
+          "b_27",
+          "b_15",
+          "b_16",
+          "b_136"
+        ]
+      },
+      "pos": 29,
+      "rank": 1
+    },
+    {
+      "image_hash": "4bd9aa350a8c99c28311f23570348042dfeca30bfab43a0c0393c52124cc0287",
+      "caption": "图2UML时序关系",
+      "score": 0.269971,
+      "s_direct": 0.317641,
+      "s_link": 0.538148,
+      "s_co": 0.538148,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_31",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "图1表明了用户、系统、任务三者之间的逻辑关系，图2表明了一个活动过程的时序关系。在系统中，有  $n$  个用户与  $m$  个任务，用户可以通过挑选来选择任"
+        },
+        {
+          "block_id": "b_28",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先，为了明确人机交互的原理与流程，我们先对整个流程进行具体分析。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_31",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 0.538148,
+          "distance_weight": 1.0,
+          "s_link": 0.538148,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.427894,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 31,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_5",
+          "b_27",
+          "b_15",
+          "b_16",
+          "b_136"
+        ]
+      },
+      "pos": 30,
+      "rank": 2
+    },
+    {
+      "image_hash": "7fdc07c4560b092a9cda390259d578be11f2cb74f8d6bf5048f1ee8ee3638303",
+      "caption": "图3任务点与周围用户分布情况1",
+      "score": 0.219235,
+      "s_direct": 0.512644,
+      "s_link": 0.364297,
+      "s_co": 0.364297,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_35",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "考虑两种可能存在的情况，如图3、图4所示（用户点点径越大说明该用户预订任务限额越大）。"
+        },
+        {
+          "block_id": "b_38",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$\\bullet$  情况1：一定范围内用户数量较多，但离任务点的平均距离较远。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_35",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.520425,
+          "distance_weight": 0.7,
+          "s_link": 0.364297,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.438471,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 31,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_5",
+          "b_27",
+          "b_15",
+          "b_16",
+          "b_136"
+        ]
+      },
+      "pos": 36,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "c6fa9eec45154c1c71e538be188bddd44f603ea869f78c4578ecfad108674741",
+      "caption": "图1用户、系统、任务三者逻辑关系",
+      "score": 0.490174,
+      "s_direct": 0.442201,
+      "s_link": 0.538148,
+      "s_co": 0.538148,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_31",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "图1表明了用户、系统、任务三者之间的逻辑关系，图2表明了一个活动过程的时序关系。在系统中，有  $n$  个用户与  $m$  个任务，用户可以通过挑选来选择任"
+        },
+        {
+          "block_id": "b_28",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先，为了明确人机交互的原理与流程，我们先对整个流程进行具体分析。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_31",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 0.538148,
+          "distance_weight": 1.0,
+          "s_link": 0.538148,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.490174,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 31,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_5",
+          "b_27",
+          "b_15",
+          "b_16",
+          "b_136"
+        ]
+      },
+      "pos": 29,
+      "rank": 1
+    },
+    {
+      "image_hash": "4bd9aa350a8c99c28311f23570348042dfeca30bfab43a0c0393c52124cc0287",
+      "caption": "图2UML时序关系",
+      "score": 0.269971,
+      "s_direct": 0.317641,
+      "s_link": 0.538148,
+      "s_co": 0.538148,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_31",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "图1表明了用户、系统、任务三者之间的逻辑关系，图2表明了一个活动过程的时序关系。在系统中，有  $n$  个用户与  $m$  个任务，用户可以通过挑选来选择任"
+        },
+        {
+          "block_id": "b_28",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先，为了明确人机交互的原理与流程，我们先对整个流程进行具体分析。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_31",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 0.538148,
+          "distance_weight": 1.0,
+          "s_link": 0.538148,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.427894,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 31,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_5",
+          "b_27",
+          "b_15",
+          "b_16",
+          "b_136"
+        ]
+      },
+      "pos": 30,
+      "rank": 2
+    },
+    {
+      "image_hash": "7fdc07c4560b092a9cda390259d578be11f2cb74f8d6bf5048f1ee8ee3638303",
+      "caption": "图3任务点与周围用户分布情况1",
+      "score": 0.219235,
+      "s_direct": 0.512644,
+      "s_link": 0.364297,
+      "s_co": 0.364297,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_35",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "考虑两种可能存在的情况，如图3、图4所示（用户点点径越大说明该用户预订任务限额越大）。"
+        },
+        {
+          "block_id": "b_38",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$\\bullet$  情况1：一定范围内用户数量较多，但离任务点的平均距离较远。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_35",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.520425,
+          "distance_weight": 0.7,
+          "s_link": 0.364297,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.438471,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 31,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_5",
+          "b_27",
+          "b_15",
+          "b_16",
+          "b_136"
+        ]
+      },
+      "pos": 36,
+      "rank": 3
+    },
+    {
+      "image_hash": "c9d8f6f292d157551346c0eb3e58068b2135e776ea053b5e42e0ffb1e0916569",
+      "caption": "图37定价流程",
+      "score": 0.218209,
+      "s_direct": 0.526861,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.190551,
+      "p_type": 1.5,
+      "figure_index": "37",
+      "layout_index": 37.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_256",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "总结上文的定价方案，我们给出定价流程图，如下："
+        },
+        {
+          "block_id": "b_258",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "该流程包含了上文的最优定价选择以及如何打包与打包任务定价的最优方案，并且对打包方案进行检测，在实际应用中具有较好的实用性。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_258",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_258",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.763431,
+        "rerank_profile": "legacy"
+      },
+      "pos": 257,
+      "rank": 4
+    },
+    {
+      "image_hash": "ebe08983990f5419fb76a106ebf9c6e210ea79eae51c244a604697397021868f",
+      "caption": "图32算法流程图",
+      "score": 0.217391,
+      "s_direct": 0.462144,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.19824,
+      "p_type": 1.5,
+      "figure_index": "32",
+      "layout_index": 32.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_222",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如图31所示，  $\\pmb{o}$  为随机任务点，以一定半径画圆（该半径与该任务的综合得分有关，在下文具体介绍)，覆盖到周围能覆盖的最大可达对象，即对于  "
+        },
+        {
+          "block_id": "b_225",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "该算法的重点是每个任务点的半径刻画，也即我们提到的得分。我们的目的地尽量联合成功执行率高的与低的任务点并打包。同时，考虑到实际任务执行用户不可能一次性做太多任务"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_225",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_225",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.731072,
+        "rerank_profile": "legacy"
+      },
+      "pos": 224,
+      "rank": 5
+    },
+    {
+      "image_hash": "0142ea7bb1c32242127e7bf1f057a6aa153bbe69179eddc97a4307567a215167",
+      "caption": "图4任务点与周围用户分布情况2",
+      "score": 0.185666,
+      "s_direct": 0.497907,
+      "s_link": 0.364297,
+      "s_co": 0.364297,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_35",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "考虑两种可能存在的情况，如图3、图4所示（用户点点径越大说明该用户预订任务限额越大）。"
+        },
+        {
+          "block_id": "b_38",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$\\bullet$  情况1：一定范围内用户数量较多，但离任务点的平均距离较远。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_35",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 0.520425,
+          "distance_weight": 0.7,
+          "s_link": 0.364297,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.431102,
+        "rerank_profile": "legacy"
+      },
+      "pos": 37,
+      "rank": 6
+    },
+    {
+      "image_hash": "fe81fe8771f5d564a8c947703030d88dfe5ef4d9f65435f2cfbfd06416ac47de",
+      "caption": "图16定价与密度因素2的关系",
+      "score": 0.179825,
+      "s_direct": 0.470056,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_111",
+          "source": "explicit_ref",
+          "matched_ref": "16",
+          "also_local": false,
+          "text_snippet": "我们随机抽取  $70\\%$  已有数据进行拟合后的得到回归结果如下，最终得到的拟合曲线如图16所示。"
+        },
+        {
+          "block_id": "b_114",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "当函数后半部分呈现下降趋势，即离任务近的人越少定价反而越低，这是不符合常理的。由于后半段有几个离群点干扰了函数拟合导致了这种结果。我们会在模型灵敏度分析中具体分"
+        },
+        {
+          "block_id": "b_117",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用  $70\\%$  数据得出函数曲线（即得出定价的一个影响因素与定价的关系）后，我们利用剩余  $30\\%$  数据对结果进行检验，如图17所示。结果的检验"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_114",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_114",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.735028,
+        "rerank_profile": "legacy"
+      },
+      "pos": 115,
+      "rank": 7
+    },
+    {
+      "image_hash": "1afb07c33dc9bb1ee261b4b45b75ff95ad0253f78b9758b798a60702d790aba9",
+      "caption": "图10任务与用户交互流程",
+      "score": 0.154684,
+      "s_direct": 0.459446,
+      "s_link": 0.254046,
+      "s_co": 0.254046,
+      "p_layout": 0.289065,
+      "p_type": 1.5,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_58",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "以上的用户与任务间的影响是一个双向的过程，为了更好地展示影响关系，我们用下图展示其逻辑："
+        },
+        {
+          "block_id": "b_60",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# (3) 任务的离群程度  $O$"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_227",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_58",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.635114,
+          "distance_weight": 0.4,
+          "s_link": 0.254046,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.356746,
+        "rerank_profile": "legacy"
+      },
+      "pos": 59,
+      "rank": 8
+    },
+    {
+      "image_hash": "b76ff888f98c5809591cc86b6c80efa969bfc58d8fc143ddf86faf8cf3a4a8cd",
+      "caption": "图41商家任务定价对系统利润的影响",
+      "score": 0.152324,
+      "s_direct": 0.642761,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.185449,
+      "p_type": 1.0,
+      "figure_index": "41",
+      "layout_index": 41.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_311",
+          "source": "explicit_ref",
+          "matched_ref": "41",
+          "also_local": true,
+          "text_snippet": "图41为商家任务定价对系统利润的影响，我们发现可以较好地用一次函数进行拟合。该定价直接影响系统利润，商家给每个任务的定价越高，系统就会越看重成功率因素，以至系统"
+        },
+        {
+          "block_id": "b_308",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图40为覆盖半径选择对定价的影响，我们发现覆盖半径越高，定价越高，且呈现指数型增长，覆盖半径越大，定价越低，但是其趋势减缓。这可能是由于一个任务周围的用户再多也"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_311",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_311",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "41",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.821381,
+        "rerank_profile": "legacy"
+      },
+      "pos": 309,
+      "rank": 9
+    },
+    {
+      "image_hash": "6026b674a45cfc969905e20e10c527190cb88f818aa28fcdbd2f9ef14b88e6ea",
+      "caption": "图6用户期望范围与任务限额分析",
+      "score": 0.147891,
+      "s_direct": 0.562505,
+      "s_link": 0.267859,
+      "s_co": 0.267859,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_44",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": true,
+          "text_snippet": "将其期望执行任务的范围进行模拟，我们大致可以得出如图6所示的用户期望范围。也即用户任务限额越大其期望的覆盖范围也越广，但是这个范围也有一个上限，即一个用户的覆盖"
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "择  $b$  任务进行执行。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_227",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_44",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "6",
+          "raw_cosine": 0.669648,
+          "distance_weight": 0.4,
+          "s_link": 0.267859,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.415182,
+        "rerank_profile": "legacy"
+      },
+      "pos": 43,
+      "rank": 10
+    },
+    {
+      "image_hash": "6ba8aab9c1eee37b1871db67ff85b641ef54f8961f89c7d45a7491a45219aa66",
+      "caption": "图21已完成与未完成任务散点图",
+      "score": 0.147004,
+      "s_direct": 0.638887,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.224244,
+      "p_type": 0.8,
+      "figure_index": "21",
+      "layout_index": 21.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_138",
+          "source": "explicit_ref",
+          "matched_ref": "21",
+          "also_local": false,
+          "text_snippet": "我们在图中表示出已完成与未完成的任务分布情况，如图21所示，为了观察其原因，我们对已完成与未完成任务的散点分别进行函数拟合，得到如图22的函数图像。"
+        },
+        {
+          "block_id": "b_139",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现，图像有两个交点。大量的点都集中在第一个交点之前，此时的拟合图像中，未完成任务的拟合曲线低于已完成任务的拟合曲线，这说明这部分定价忽略了任务点附近用"
+        },
+        {
+          "block_id": "b_142",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# (2) 离任务点最近用户的平均距离因素"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_139",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_139",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.819444,
+        "rerank_profile": "legacy"
+      },
+      "pos": 140,
+      "rank": 11
+    },
+    {
+      "image_hash": "efde1a80ad71a55b2bc434ff3e1775932f4d133b74da8e00504375d5861e2819",
+      "caption": "图7用户任务限额覆盖区域示意图 图8用户任务限额与定价关系",
+      "score": 0.144528,
+      "s_direct": 0.577999,
+      "s_link": 0.289169,
+      "s_co": 0.289169,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_47",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "其中，气泡面积越大说明该用户任务限额越大，期望覆盖面积越广。可以将其近似作为影响人数的因素，即任务限额越大，该用户能完成周围任务的可能性越大。"
+        },
+        {
+          "block_id": "b_49",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设定价为  $p$ ，用户限额总和为  $s$ ，根据散点分布情况，我们猜想的定价与限额总额的函数关系为："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_139",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_49",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.722922,
+          "distance_weight": 0.4,
+          "s_link": 0.289169,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.433584,
+        "rerank_profile": "legacy"
+      },
+      "pos": 48,
+      "rank": 12
+    },
+    {
+      "image_hash": "e9e1692dee91581dd363035e8c1d00bb6e09886ddbddafdc87daaa344e470072",
+      "caption": "注：半径与任务点得分有关",
+      "score": 0.143854,
+      "s_direct": 0.438542,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.2,
+      "p_type": 1.0,
+      "figure_index": null,
+      "layout_index": 31.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_222",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如图31所示，  $\\pmb{o}$  为随机任务点，以一定半径画圆（该半径与该任务的综合得分有关，在下文具体介绍)，覆盖到周围能覆盖的最大可达对象，即对于  "
+        },
+        {
+          "block_id": "b_225",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "该算法的重点是每个任务点的半径刻画，也即我们提到的得分。我们的目的地尽量联合成功执行率高的与低的任务点并打包。同时，考虑到实际任务执行用户不可能一次性做太多任务"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_225",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_225",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.719271,
+        "rerank_profile": "legacy"
+      },
+      "pos": 223,
+      "rank": 13
+    },
+    {
+      "image_hash": "44b93aaf4838090216b7e20f28fedc03e99eef62d3bf48663b431360db3f0fb3",
+      "caption": "图5多任务用户选择分析",
+      "score": 0.142634,
+      "s_direct": 0.469547,
+      "s_link": 0.267859,
+      "s_co": 0.267859,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_40",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "同时，我们考虑到用户预订任务限额的问题，对于预订任务限额较小的用户，根据用户心理，在相同定价的情况下，用户更愿意选择离自己距离较近的点，示意图如图5所示，1用户"
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "择  $b$  任务进行执行。"
+        },
+        {
+          "block_id": "b_44",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "将其期望执行任务的范围进行模拟，我们大致可以得出如图6所示的用户期望范围。也即用户任务限额越大其期望的覆盖范围也越广，但是这个范围也有一个上限，即一个用户的覆盖"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_227",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_44",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.669648,
+          "distance_weight": 0.4,
+          "s_link": 0.267859,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.368703,
+        "rerank_profile": "legacy"
+      },
+      "pos": 42,
+      "rank": 14
+    },
+    {
+      "image_hash": "cdeae69c095c5006212451e851b0741929e09a6fc2f9c3e1eb3f7d1c6dc667d4",
+      "caption": "图23已完成与未完成任务散点图",
+      "score": 0.141858,
+      "s_direct": 0.626031,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.218104,
+      "p_type": 0.8,
+      "figure_index": "23",
+      "layout_index": 23.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_143",
+          "source": "explicit_ref",
+          "matched_ref": "23",
+          "also_local": false,
+          "text_snippet": "同上，我们做出已完成与未完成任务的散点图，用曲线进行拟合来研究已完成与未完成任务的差异，得到图23、图24。"
+        },
+        {
+          "block_id": "b_144",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图像有一个交点。大量的点都集中在交点之前，此时的拟合图像中，未完成任务的拟合曲线低于已完成任务的拟合曲线，这说明这部分定价忽略了任务点与离任务点最近用户的距离因"
+        },
+        {
+          "block_id": "b_147",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# (3) 任务离群程度因素"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_144",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_144",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.813016,
+        "rerank_profile": "legacy"
+      },
+      "pos": 145,
+      "rank": 15
+    },
+    {
+      "image_hash": "261b40ab834ffbb71a59b29fab6308f17b1c5d85703218dc98d3453caf27050e",
+      "caption": "图36任务点等效距离示意",
+      "score": 0.140815,
+      "s_direct": 0.467138,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.191959,
+      "p_type": 1.0,
+      "figure_index": "36",
+      "layout_index": 36.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_245",
+          "source": "explicit_ref",
+          "matched_ref": "36",
+          "also_local": false,
+          "text_snippet": "图36中，设  $a_1$  与  $T_1$  、  $T_2$  、  $T_3$  、  $T_4$  任务的直线距离分别为  $d_1$  、  $d_"
+        },
+        {
+          "block_id": "b_242",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先寻找该中心点最近的用户距离，将该用户到这若干个任务点的折线距离转换成直线，示意图如下图所示。  $a_{1}$  为距离打包任务最的用户，且其用户得分半径覆"
+        },
+        {
+          "block_id": "b_244",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在任务的定价方案确定之前，我们先猜测定价  $p$  由两部分组成，即任务本身价值  $p_1$  与路途费用  $p_2$  。而对于打包任务来说，任务本身价"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_244",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_244",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.733569,
+        "rerank_profile": "legacy"
+      },
+      "pos": 243,
+      "rank": 16
+    },
+    {
+      "image_hash": "4bb5413435fe174451da43c74e02eb0afe6af4d3e079c141fa2f43a732fd1e67",
+      "caption": "图9用户平均距离与定价关系",
+      "score": 0.140663,
+      "s_direct": 0.607901,
+      "s_link": 0.326644,
+      "s_co": 0.326644,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_53",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们推断任务周围的用户密度即距离任务最近的用户的平均距离也对定价有影响。这是第二个影响密度进而影响定价的因素。"
+        },
+        {
+          "block_id": "b_55",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设定价为  $p$  ，距离均值为  $d_{ave}$  ，根据散点分布情况，我们猜想的定价与密度因素2的函数关系为："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_136",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_53",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.81661,
+          "distance_weight": 0.4,
+          "s_link": 0.326644,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.467273,
+        "rerank_profile": "legacy"
+      },
+      "pos": 54,
+      "rank": 17
+    },
+    {
+      "image_hash": "36432a499cb8c8f3f007f6a9b89259632649f7b5a46efacab3eb203ec706ed48",
+      "caption": "图33不合理打包（左），合理打包（右）",
+      "score": 0.139996,
+      "s_direct": 0.424447,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.196562,
+      "p_type": 1.0,
+      "figure_index": "33",
+      "layout_index": 33.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_227",
+          "source": "explicit_ref",
+          "matched_ref": "33",
+          "also_local": true,
+          "text_snippet": "如图33所示，某个区域有三个预打包任务  $T_{1}$  ，  $T_{2}$  ，  $T_{3}$  ，左图有两个用户  $a_1$ $a_2$  ，此时"
+        },
+        {
+          "block_id": "b_225",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "该算法的重点是每个任务点的半径刻画，也即我们提到的得分。我们的目的地尽量联合成功执行率高的与低的任务点并打包。同时，考虑到实际任务执行用户不可能一次性做太多任务"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_227",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_227",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "33",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.712224,
+        "rerank_profile": "legacy"
+      },
+      "pos": 226,
+      "rank": 18
+    },
+    {
+      "image_hash": "34b58739616cec19ab82c3fbc450675d4cef83b85d0781df5c10093927849e7e",
+      "caption": "图22已完成与未完成任务拟合曲线对比",
+      "score": 0.138604,
+      "s_direct": 0.567457,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.221065,
+      "p_type": 0.8,
+      "figure_index": "22",
+      "layout_index": 22.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_138",
+          "source": "explicit_ref",
+          "matched_ref": "22",
+          "also_local": false,
+          "text_snippet": "我们在图中表示出已完成与未完成的任务分布情况，如图21所示，为了观察其原因，我们对已完成与未完成任务的散点分别进行函数拟合，得到如图22的函数图像。"
+        },
+        {
+          "block_id": "b_139",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现，图像有两个交点。大量的点都集中在第一个交点之前，此时的拟合图像中，未完成任务的拟合曲线低于已完成任务的拟合曲线，这说明这部分定价忽略了任务点附近用"
+        },
+        {
+          "block_id": "b_142",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# (2) 离任务点最近用户的平均距离因素"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_139",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_139",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.783729,
+        "rerank_profile": "legacy"
+      },
+      "pos": 141,
+      "rank": 19
+    },
+    {
+      "image_hash": "d7ab0df4eadd39b9722786539913c28aa3987281d53859c316d14b9687b98581",
+      "caption": "图26已完成与未完成任务散点图",
+      "score": 0.138379,
+      "s_direct": 0.644939,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.21031,
+      "p_type": 0.8,
+      "figure_index": "26",
+      "layout_index": 26.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_148",
+          "source": "explicit_ref",
+          "matched_ref": "26",
+          "also_local": false,
+          "text_snippet": "同上，我们做出已完成与未完成任务的散点图，用曲线进行拟合来研究已完成与未完成任务的差异，得到图25、图26。"
+        },
+        {
+          "block_id": "b_150",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们猜测，题中所给的用户地理位置只是一部分，这部分任务可能被边界以外的用户所执行。因此在之后的考虑当中，我们不考虑这三个离群度高却被完成的任务。"
+        },
+        {
+          "block_id": "b_153",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.问题二：新的任务定价方案及和原方案的比较"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_153",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_153",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.822469,
+        "rerank_profile": "legacy"
+      },
+      "pos": 152,
+      "rank": 20
+    },
+    {
+      "image_hash": "44a4a804b1c669a0ca129a4f3db5e3a16a29c987ea6ebf7c881f72847623f015",
+      "caption": "图25已完成与未完成任务散点图",
+      "score": 0.137857,
+      "s_direct": 0.619969,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.212746,
+      "p_type": 0.8,
+      "figure_index": "25",
+      "layout_index": 25.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_148",
+          "source": "explicit_ref",
+          "matched_ref": "25",
+          "also_local": false,
+          "text_snippet": "同上，我们做出已完成与未完成任务的散点图，用曲线进行拟合来研究已完成与未完成任务的差异，得到图25、图26。"
+        },
+        {
+          "block_id": "b_150",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们猜测，题中所给的用户地理位置只是一部分，这部分任务可能被边界以外的用户所执行。因此在之后的考虑当中，我们不考虑这三个离群度高却被完成的任务。"
+        },
+        {
+          "block_id": "b_153",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.问题二：新的任务定价方案及和原方案的比较"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_153",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_153",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.809985,
+        "rerank_profile": "legacy"
+      },
+      "pos": 151,
+      "rank": 21
+    },
+    {
+      "image_hash": "5687f630213c78f891abc1ead14c97845d411e1d39b18f01d0aeb3167e9cc9ee",
+      "caption": "图24已完成与未完成任务拟合曲线对比",
+      "score": 0.135772,
+      "s_direct": 0.576262,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.215338,
+      "p_type": 0.8,
+      "figure_index": "24",
+      "layout_index": 24.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_143",
+          "source": "explicit_ref",
+          "matched_ref": "24",
+          "also_local": false,
+          "text_snippet": "同上，我们做出已完成与未完成任务的散点图，用曲线进行拟合来研究已完成与未完成任务的差异，得到图23、图24。"
+        },
+        {
+          "block_id": "b_144",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图像有一个交点。大量的点都集中在交点之前，此时的拟合图像中，未完成任务的拟合曲线低于已完成任务的拟合曲线，这说明这部分定价忽略了任务点与离任务点最近用户的距离因"
+        },
+        {
+          "block_id": "b_147",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# (3) 任务离群程度因素"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_144",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_144",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.788131,
+        "rerank_profile": "legacy"
+      },
+      "pos": 146,
+      "rank": 22
+    },
+    {
+      "image_hash": "ddb0d050524362e3b2c61f8ccfcc3f8c1f0d239b260164c7fc2886ef6b0ef3aa",
+      "caption": "图  $1730\\%$  数据对结果进行检验",
+      "score": 0.13538,
+      "s_direct": 0.411306,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.239812,
+      "p_type": 0.8,
+      "figure_index": null,
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_114",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "当函数后半部分呈现下降趋势，即离任务近的人越少定价反而越低，这是不符合常理的。由于后半段有几个离群点干扰了函数拟合导致了这种结果。我们会在模型灵敏度分析中具体分"
+        },
+        {
+          "block_id": "b_117",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用  $70\\%$  数据得出函数曲线（即得出定价的一个影响因素与定价的关系）后，我们利用剩余  $30\\%$  数据对结果进行检验，如图17所示。结果的检验"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_114",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_114",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.705653,
+        "rerank_profile": "legacy"
+      },
+      "pos": 116,
+      "rank": 23
+    },
+    {
+      "image_hash": "491a91a5a6e975735cfeb44e0cbfa1aa26eff68050177d9d72ac5f5f8fae9390",
+      "caption": "图29成功执行/未成功执行任务曲面与合理定价范围",
+      "score": 0.135106,
+      "s_direct": 0.616395,
+      "s_link": 0.709504,
+      "s_co": 0.709504,
+      "p_layout": 0.203795,
+      "p_type": 1.0,
+      "figure_index": "29",
+      "layout_index": 29.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_203",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\nf\\left(P_{F}\\right) = -0.75x^{2} + 3.82x - 0.11y^{2} - 2.11y + 1.61x\\cdot y +"
+        },
+        {
+          "block_id": "b_205",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "去除噪声的  $R^{2}$  分别为0.7780和0.8523。为了更好地展示合理定价范围，我们在同一三维坐标系中画出两个曲面定价函数的分布情况，如上所示。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_206",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_205",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.709504,
+          "distance_weight": 1.0,
+          "s_link": 0.709504,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.662949,
+        "rerank_profile": "legacy"
+      },
+      "pos": 204,
+      "rank": 24
+    },
+    {
+      "image_hash": "844fe672ef2e4c783b372a51724f8ce425d14d9f861117622295b2a633a00c0c",
+      "caption": "图 43 因素 1 回归灵敏度分析",
+      "score": 0.12895,
+      "s_direct": 0.407992,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.183169,
+      "p_type": 1.0,
+      "figure_index": "43",
+      "layout_index": 43.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_317",
+          "source": "explicit_ref",
+          "matched_ref": "43",
+          "also_local": true,
+          "text_snippet": "图 43 给出了用户密度对定价的回归函数的灵敏度，当参数负向波动时的影响大于正向波动时的影响。总体来说因素 1 的灵敏度不大。"
+        },
+        {
+          "block_id": "b_315",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在第二问推演定价规律时，一共有三个回归函数，分别是距离任务一定范围内的人数、距离任务一定范围内的用户密度、任务的离群程度，而在回归分析时，每个函数都有若干个系数"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_315",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_315",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.703996,
+        "rerank_profile": "legacy"
+      },
+      "pos": 316,
+      "rank": 25
+    },
+    {
+      "image_hash": "55e5066c4aa79f7bb0a0e5f0a81bb388c36bcb18a9a0ab94dc80ef5d23229f1f",
+      "caption": "图38定价与任务成功执行率分布",
+      "score": 0.127685,
+      "s_direct": 0.689616,
+      "s_link": 0.660114,
+      "s_co": 0.660114,
+      "p_layout": 0.1892,
+      "p_type": 1.0,
+      "figure_index": "38",
+      "layout_index": 38.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_263",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了更清楚体现我们的结果，我们将其部分结果表示在地图上，其中方框内的数字表示该范围区域内的平均定价，用热力图表示其任务成功执行率。"
+        },
+        {
+          "block_id": "b_265",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.5.仿真模拟模型"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_266",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_265",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.660114,
+          "distance_weight": 1.0,
+          "s_link": 0.660114,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.674865,
+        "rerank_profile": "legacy"
+      },
+      "pos": 264,
+      "rank": 26
+    },
+    {
+      "image_hash": "77deadbf885d9084065a167a9e2dcf9b337aa217acf5e360406003af36dc73c5",
+      "caption": "图42K值波动对LOF离群因子的影响",
+      "score": 0.125467,
+      "s_direct": 0.361637,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.184289,
+      "p_type": 1.0,
+      "figure_index": "42",
+      "layout_index": 42.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_312",
+          "source": "explicit_ref",
+          "matched_ref": "42",
+          "also_local": false,
+          "text_snippet": "图42为  $k$  值波动对LOF离群因子的影响，该因子为决定任务与任务之间关"
+        },
+        {
+          "block_id": "b_308",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图40为覆盖半径选择对定价的影响，我们发现覆盖半径越高，定价越高，且呈现指数型增长，覆盖半径越大，定价越低，但是其趋势减缓。这可能是由于一个任务周围的用户再多也"
+        },
+        {
+          "block_id": "b_311",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图41为商家任务定价对系统利润的影响，我们发现可以较好地用一次函数进行拟合。该定价直接影响系统利润，商家给每个任务的定价越高，系统就会越看重成功率因素，以至系统"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_311",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_311",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.680819,
+        "rerank_profile": "legacy"
+      },
+      "pos": 310,
+      "rank": 27
+    },
+    {
+      "image_hash": "3295afc595ecd7c0189e396b25676e4f35938dd24f138b98b9b8242f04c57f93",
+      "caption": "图30结果展示与对比",
+      "score": 0.114879,
+      "s_direct": 0.422828,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.201849,
+      "p_type": 0.8,
+      "figure_index": "30",
+      "layout_index": 30.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_211",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于题中所给数据，我们计算得到其任务总价为57707.5，平均任务执行率为  $62.5\\%$  。也即我们对题中任务定价优化时，  $M = 57707.5$"
+        },
+        {
+          "block_id": "b_213",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在图中我们标志出原来的定价方案得出的定价总额与平均执行率数据点，如图中“X\"处所示，坐标为（57707.5.0.625）。经过我们的算法优化之后，我们可以用56"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_211",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_211",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.711414,
+        "rerank_profile": "legacy"
+      },
+      "pos": 212,
+      "rank": 28
+    },
+    {
+      "image_hash": "ebaf92431e73bd7cf018508e081ac228f6fe95ad93504050e0433ce51b95ccae",
+      "caption": "图14定价与因素1的关系",
+      "score": 0.107011,
+      "s_direct": 0.503651,
+      "s_link": 0.332507,
+      "s_co": 0.332507,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_101",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": false,
+          "text_snippet": "我们将任务点附近的半径  $r$  限设为1km，同时将任务点为圆心、1km为半径的圆内所有用户任务限额进行累加，近似当做该任务点周围的限额总量。我们在图像上观"
+        },
+        {
+          "block_id": "b_105",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用  $70\\%$  数据得出函数曲线（即得出定价的一个影响因素与定价的关系）后，我们利用剩余  $30\\%$  数据对结果进行检验，如图15所示。结果的检验"
+        },
+        {
+          "block_id": "b_108",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "表2检验结果示意"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_139",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_101",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "14",
+          "raw_cosine": 0.831268,
+          "distance_weight": 0.4,
+          "s_link": 0.332507,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.418079,
+        "rerank_profile": "legacy"
+      },
+      "pos": 106,
+      "rank": 29
+    },
+    {
+      "image_hash": "4b2cb1026e612cf41122edce9180be64b75b690a75971e02c56f855d60d6bc4a",
+      "caption": "图20价格分布热力图",
+      "score": 0.105558,
+      "s_direct": 0.464121,
+      "s_link": 0.463165,
+      "s_co": 0.463165,
+      "p_layout": 0.22767,
+      "p_type": 1.0,
+      "figure_index": "20",
+      "layout_index": 20.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_132",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# (4) 地域分布造成的价格影响"
+        },
+        {
+          "block_id": "b_134",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "猜想定价分布与任务所在地理位置有一定关系，做出价格分布热力图，观察确实有分布趋势影响。中心有两块非常明显的高价区域，而右上方和右下方有两个非常明显的低价区域。我"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_139",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_134",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.661664,
+          "distance_weight": 0.7,
+          "s_link": 0.463165,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.463643,
+        "rerank_profile": "legacy"
+      },
+      "pos": 133,
+      "rank": 30
+    },
+    {
+      "image_hash": "776469970f73378fa92741143fff60a1114862a06d16235addfdca3cc5914413",
+      "caption": "图13LOF值与定价关系",
+      "score": 0.099212,
+      "s_direct": 0.478711,
+      "s_link": 0.276761,
+      "s_co": 0.276761,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_85",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在上图中，我们很明显看到越离群的点LOF值越高。"
+        },
+        {
+          "block_id": "b_87",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设定价为  $p$  ，LOF值为  $L$  ，根据散点分布情况，我们猜想定价与LOF离群度的函数关系为："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_149",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_87",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.691902,
+          "distance_weight": 0.4,
+          "s_link": 0.276761,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.377736,
+        "rerank_profile": "legacy"
+      },
+      "pos": 86,
+      "rank": 31
+    },
+    {
+      "image_hash": "55b236b0ce0ddde3b5fa01b1068144802277d08ab316e2ec3ecdad3942c9d862",
+      "caption": "图35打包成功执行率改变情况",
+      "score": 0.098342,
+      "s_direct": 0.457876,
+      "s_link": 0.558968,
+      "s_co": 0.558968,
+      "p_layout": 0.193426,
+      "p_type": 1.0,
+      "figure_index": "35",
+      "layout_index": 35.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_237",
+          "source": "explicit_ref",
+          "matched_ref": "35",
+          "also_local": true,
+          "text_snippet": "我们利用遗传算法对以上改善的DBSCAN算法进行求解，最终得到如图34所示的结果（局部）。我们可以发现，很多预成功率较小的点与成功率较大的点打包，试图提升打包任"
+        },
+        {
+          "block_id": "b_240",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3.2. 打包任务定价方案"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_244",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_240",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.798525,
+          "distance_weight": 0.7,
+          "s_link": 0.558968,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.508422,
+        "rerank_profile": "legacy"
+      },
+      "pos": 239,
+      "rank": 32
+    },
+    {
+      "image_hash": "5c5a17c36f7deca684b29ab5a4c3a8aa4dee5177eadc7be6313144b3a74ac476",
+      "caption": "图12（a）维度排序后LOF值（b）经度排序后的LOF值（c）每个任务点对应的LOF值三维图",
+      "score": 0.095079,
+      "s_direct": 0.440576,
+      "s_link": 0.263089,
+      "s_co": 0.263089,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_83",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "据上文的LOF算法分析，我们对各个点的LOF值进行求解并绘制在图像上方便我们直观上进行观察规律，在我们进行计算的时候我们固定  $k$  值大小为3。"
+        },
+        {
+          "block_id": "b_85",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在上图中，我们很明显看到越离群的点LOF值越高。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_149",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_85",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.657723,
+          "distance_weight": 0.4,
+          "s_link": 0.263089,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.351832,
+        "rerank_profile": "legacy"
+      },
+      "pos": 84,
+      "rank": 33
+    },
+    {
+      "image_hash": "4423b539d8374ccd66f3b8d3fc56c1fd958fe7668322f915a1e2bc02670588d4",
+      "caption": "图 44 因素 2 回归灵敏度分析",
+      "score": 0.087534,
+      "s_direct": 0.408339,
+      "s_link": 0.553107,
+      "s_co": 0.553107,
+      "p_layout": 0.182088,
+      "p_type": 1.0,
+      "figure_index": "44",
+      "layout_index": 44.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_319",
+          "source": "explicit_ref",
+          "matched_ref": "44",
+          "also_local": true,
+          "text_snippet": "图 44 给出了任务周围用户数量对定价的回归函数的灵敏度，当波动为  $- 5.0\\%$  时，出现与两个回归函数的交叉，即在波动在该值时减少了离群值对函数的影"
+        },
+        {
+          "block_id": "b_317",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图 43 给出了用户密度对定价的回归函数的灵敏度，当参数负向波动时的影响大于正向波动时的影响。总体来说因素 1 的灵敏度不大。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_315",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_319",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "44",
+          "raw_cosine": 0.790153,
+          "distance_weight": 0.7,
+          "s_link": 0.553107,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.480723,
+        "rerank_profile": "legacy"
+      },
+      "pos": 318,
+      "rank": 34
+    },
+    {
+      "image_hash": "a3ef5da69a1110b08f575f09f71655af16d11b07ca7e176b1ccaa190d91614f2",
+      "caption": "图18定价与LOF值的关系",
+      "score": 0.085503,
+      "s_direct": 0.449376,
+      "s_link": 0.277047,
+      "s_co": 0.277047,
+      "p_layout": 0.235409,
+      "p_type": 1.0,
+      "figure_index": "18",
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_121",
+          "source": "explicit_ref",
+          "matched_ref": "18",
+          "also_local": false,
+          "text_snippet": "我们随机抽取  $70\\%$  已有数据进行拟合后的得到回归结果如下，最终得到的拟合曲线如图18所示。"
+        },
+        {
+          "block_id": "b_126",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了验证LOF值与定价的关系，我们对随机  $70\\%$  已有数据的LOF值与定价进行拟合，如图19所示："
+        },
+        {
+          "block_id": "b_129",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用  $70\\%$  数据得出函数曲线（即得出定价的一个影响因素与定价的关系）后，我们利用剩余  $30\\%$  数据对结果进行检验，如图所示。结果的检验均方"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_139",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_129",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.692618,
+          "distance_weight": 0.4,
+          "s_link": 0.277047,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.363212,
+        "rerank_profile": "legacy"
+      },
+      "pos": 127,
+      "rank": 35
+    },
+    {
+      "image_hash": "0095a18cf322bc1d8e6d2af060a1fec4f95da52ef17e317fafa400a303b4ba59",
+      "caption": "图45因素3回归灵敏度分析",
+      "score": 0.085377,
+      "s_direct": 0.39006,
+      "s_link": 0.553107,
+      "s_co": 0.553107,
+      "p_layout": 0.181043,
+      "p_type": 1.0,
+      "figure_index": "45",
+      "layout_index": 45.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_321",
+          "source": "explicit_ref",
+          "matched_ref": "45",
+          "also_local": true,
+          "text_snippet": "图45给出了LOF值对定价的回归函数的灵敏度，当参数波动为  $+5.0\\%$  时，回归函数图像出现明显波动，而其余的值波动性较小。因此我们猜测函数在波动较小"
+        },
+        {
+          "block_id": "b_319",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图 44 给出了任务周围用户数量对定价的回归函数的灵敏度，当波动为  $- 5.0\\%$  时，出现与两个回归函数的交叉，即在波动在该值时减少了离群值对函数的影"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_315",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_319",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.790153,
+          "distance_weight": 0.7,
+          "s_link": 0.553107,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.471584,
+        "rerank_profile": "legacy"
+      },
+      "pos": 320,
+      "rank": 36
+    },
+    {
+      "image_hash": "3eb618d30fb17090c09239e866191e92d7ecb1597dc5663592cc3473ba83f810",
+      "caption": "图40覆盖半径假定参数波动影响",
+      "score": 0.084335,
+      "s_direct": 0.399521,
+      "s_link": 0.504139,
+      "s_co": 0.504139,
+      "p_layout": 0.186652,
+      "p_type": 1.0,
+      "figure_index": "40",
+      "layout_index": 40.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_308",
+          "source": "explicit_ref",
+          "matched_ref": "40",
+          "also_local": false,
+          "text_snippet": "图40为覆盖半径选择对定价的影响，我们发现覆盖半径越高，定价越高，且呈现指数型增长，覆盖半径越大，定价越低，但是其趋势减缓。这可能是由于一个任务周围的用户再多也"
+        },
+        {
+          "block_id": "b_304",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于这些主观选择的因素，我们对其进行鲁棒性分析来观察当这些因素与我们假定因素不同时对模型结果的影响来观察模型是否鲁棒。为了观察效果，我们直接做出四个主观假定值与"
+        },
+        {
+          "block_id": "b_307",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图39为平均距离选择的人数波动对定价的影响，我们发现从计算的最近人数为4个开始，我们的波动比例就基本稳定，即我们取5个最近用户计算平均值合理。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_311",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_308",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "40",
+          "raw_cosine": 0.720198,
+          "distance_weight": 0.7,
+          "s_link": 0.504139,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.45183,
+        "rerank_profile": "legacy"
+      },
+      "pos": 306,
+      "rank": 37
+    },
+    {
+      "image_hash": "74185712c04eeb8c8f042b4c46a910ec55064d56cd6d5d0c8c6aca4b92a8472e",
+      "caption": "图28合理定价范围",
+      "score": 0.080697,
+      "s_direct": 0.453301,
+      "s_link": 0.33075,
+      "s_co": 0.33075,
+      "p_layout": 0.205847,
+      "p_type": 1.0,
+      "figure_index": "28",
+      "layout_index": 28.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_185",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在执行的任务定价与未被执行的定价之间有一个的区域，我们称之为合理定价范围，即被执行的任务定价略微降低或未被执行的任务定价略微提高，在这个范围内都有可能被执行，合"
+        },
+        {
+          "block_id": "b_187",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设  $P_F$  为失败任务的定价，  $P_S$  为成功任务的定价，合理定价区间应该满足："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_206",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_185",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.826876,
+          "distance_weight": 0.4,
+          "s_link": 0.33075,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.392026,
+        "rerank_profile": "legacy"
+      },
+      "pos": 186,
+      "rank": 38
+    },
+    {
+      "image_hash": "7696e38bfee4fd1fa6704ca528ed533a55bc7e751986f5464cc8df01497f73a8",
+      "caption": "图39平均距离假定参数波动影响",
+      "score": 0.079658,
+      "s_direct": 0.414459,
+      "s_link": 0.433409,
+      "s_co": 0.433409,
+      "p_layout": 0.187902,
+      "p_type": 1.0,
+      "figure_index": "39",
+      "layout_index": 39.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_307",
+          "source": "explicit_ref",
+          "matched_ref": "39",
+          "also_local": true,
+          "text_snippet": "图39为平均距离选择的人数波动对定价的影响，我们发现从计算的最近人数为4个开始，我们的波动比例就基本稳定，即我们取5个最近用户计算平均值合理。"
+        },
+        {
+          "block_id": "b_304",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于这些主观选择的因素，我们对其进行鲁棒性分析来观察当这些因素与我们假定因素不同时对模型结果的影响来观察模型是否鲁棒。为了观察效果，我们直接做出四个主观假定值与"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_311",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_307",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "39",
+          "raw_cosine": 0.619156,
+          "distance_weight": 0.7,
+          "s_link": 0.433409,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.423934,
+        "rerank_profile": "legacy"
+      },
+      "pos": 305,
+      "rank": 39
+    },
+    {
+      "image_hash": "4099b9a125f3d7f3980e700740580647bdff571d29bc494b3ad395ec3c384ecb",
+      "caption": "图11可达距离示意图",
+      "score": 0.076546,
+      "s_direct": 0.336761,
+      "s_link": 0.212066,
+      "s_co": 0.212066,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_71",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\nd_{k}(p,q) = \\max \\left\\{d_{q},d(p,q)\\right\\} \\tag{3}\n$$"
+        },
+        {
+          "block_id": "b_73",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "4）计算任务点  $p$  的局部可达密度  $\\rho_{k}(p)$"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_315",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_73",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.530164,
+          "distance_weight": 0.4,
+          "s_link": 0.212066,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.274413,
+        "rerank_profile": "legacy"
+      },
+      "pos": 72,
+      "rank": 40
+    },
+    {
+      "image_hash": "46dfa9ad7f610cfa9efc167552aa893defaaa0d37f978ddd780d78ad5a0a8d04",
+      "caption": "图34打包结果局部展示",
+      "score": 0.074657,
+      "s_direct": 0.398377,
+      "s_link": 0.558968,
+      "s_co": 0.558968,
+      "p_layout": 0.194959,
+      "p_type": 0.8,
+      "figure_index": "34",
+      "layout_index": 34.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_237",
+          "source": "explicit_ref",
+          "matched_ref": "34",
+          "also_local": true,
+          "text_snippet": "我们利用遗传算法对以上改善的DBSCAN算法进行求解，最终得到如图34所示的结果（局部）。我们可以发现，很多预成功率较小的点与成功率较大的点打包，试图提升打包任"
+        },
+        {
+          "block_id": "b_240",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3.2. 打包任务定价方案"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_244",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_240",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.798525,
+          "distance_weight": 0.7,
+          "s_link": 0.558968,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.478672,
+        "rerank_profile": "legacy"
+      },
+      "pos": 238,
+      "rank": 41
+    },
+    {
+      "image_hash": "8f9f374b92fa926bf6c09c9ea9ea1e9e2da5269807768f1f92d1ec96262be406",
+      "caption": "图  $1530\\%$  数据对结果进行检验",
+      "score": 0.07035,
+      "s_direct": 0.426385,
+      "s_link": 0.277116,
+      "s_co": 0.277116,
+      "p_layout": 0.25,
+      "p_type": 0.8,
+      "figure_index": null,
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_105",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用  $70\\%$  数据得出函数曲线（即得出定价的一个影响因素与定价的关系）后，我们利用剩余  $30\\%$  数据对结果进行检验，如图15所示。结果的检验"
+        },
+        {
+          "block_id": "b_108",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "表2检验结果示意"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_139",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_105",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.692791,
+          "distance_weight": 0.4,
+          "s_link": 0.277116,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.351751,
+        "rerank_profile": "legacy"
+      },
+      "pos": 107,
+      "rank": 42
+    },
+    {
+      "image_hash": "5fcd141128e22e728f5127f34be9e08c97351c39305691cfe8c9d740af23992f",
+      "caption": "图27自变量与因变量逻辑关系结构",
+      "score": 0.069034,
+      "s_direct": 0.366486,
+      "s_link": 0.297256,
+      "s_co": 0.297256,
+      "p_layout": 0.208015,
+      "p_type": 1.0,
+      "figure_index": "27",
+      "layout_index": 27.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_174",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在考虑自变量范围时，我们需要明确自变量的数量及与因变量的关系，我们绘制其逻辑框图如下。"
+        },
+        {
+          "block_id": "b_176",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们对逻辑结构进行如下说明："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_177",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_174",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.424651,
+          "distance_weight": 0.7,
+          "s_link": 0.297256,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.331871,
+        "rerank_profile": "legacy"
+      },
+      "pos": 175,
+      "rank": 43
+    },
+    {
+      "image_hash": "aeb92833e9ea175d8e59f257690835d55185cfb07172d350f325e19bd6118cca",
+      "caption": "图  $19.30\\%$  数据对结果进行检验",
+      "score": 0.065398,
+      "s_direct": 0.429565,
+      "s_link": 0.277047,
+      "s_co": 0.277047,
+      "p_layout": 0.231378,
+      "p_type": 0.8,
+      "figure_index": null,
+      "layout_index": 19.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_126",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了验证LOF值与定价的关系，我们对随机  $70\\%$  已有数据的LOF值与定价进行拟合，如图19所示："
+        },
+        {
+          "block_id": "b_129",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用  $70\\%$  数据得出函数曲线（即得出定价的一个影响因素与定价的关系）后，我们利用剩余  $30\\%$  数据对结果进行检验，如图所示。结果的检验均方"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_139",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_129",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.692618,
+          "distance_weight": 0.4,
+          "s_link": 0.277047,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.353306,
+        "rerank_profile": "legacy"
+      },
+      "pos": 128,
+      "rank": 44
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 44,
+    "query_block_pair_count": 60,
+    "cf_count": 31,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图3",
+      "图4",
+      "图5",
+      "图6",
+      "图1",
+      "图14",
+      "图15",
+      "图2"
+    ],
+    "rerank_profile": "legacy"
+  }
+}

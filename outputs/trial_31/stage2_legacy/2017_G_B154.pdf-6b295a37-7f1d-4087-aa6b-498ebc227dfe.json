@@ -1,0 +1,1345 @@
+{
+  "paper_id": "2017_G_B154.pdf-6b295a37-7f1d-4087-aa6b-498ebc227dfe",
+  "top3_figures": [
+    {
+      "image_hash": "16c4432b4e07e0cbfa3859ae3b387c35e31427442529062daa4ef60879d1d673",
+      "caption": "图1 任务点按照价格区间分类的空间分布图",
+      "score": 0.851824,
+      "s_direct": 0.703649,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_27",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "本文考虑到，项目的定价规律主要受到项目的地理位置、当地人的收入预期、当地社会的社会人文特征的影响。我们首先利用了地图无忧软件按照价格区间进行分类，绘制了如下任务"
+        },
+        {
+          "block_id": "b_29",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "因此我们利用ISODATA算法对于这些任务点数据进行聚类分析，我们在每轮迭代过程中，样本进行重新调整类别之后计算类内及类间有关参数，并和设定的门限比较，确定是两"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_29",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_29",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.851824,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_7",
+          "b_4",
+          "b_10",
+          "b_27",
+          "b_8"
+        ]
+      },
+      "pos": 28,
+      "rank": 1
+    },
+    {
+      "image_hash": "0532a7df8fc2da4a7d972f3e9c3c09ade701f316a36ca7f6a2faa1b440430e9e",
+      "caption": "图2定价67元以下未完成的密度图",
+      "score": 0.319408,
+      "s_direct": 0.510847,
+      "s_link": 0.501651,
+      "s_co": 0.501651,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_48",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们利用百度地图开放平台将任务点按照价格区间以及完成的情况进行了地图的绘制，采用了密度图的形式进行了反应，通过对于下图的分析"
+        },
+        {
+          "block_id": "b_52",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现未完成的任务主要集中在广州市以及深圳市，而东莞市的任务则大多都被很好地完成了。我们通过查阅三处城市的社会经济特征，发现东莞市的经济发展状况比广州市和"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_47",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_48",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.501651,
+          "distance_weight": 1.0,
+          "s_link": 0.501651,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.506249,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_7",
+          "b_4",
+          "b_10",
+          "b_27",
+          "b_8"
+        ]
+      },
+      "pos": 49,
+      "rank": 2
+    },
+    {
+      "image_hash": "7c24ac52fbbc36c4ea3354eca6f8b62a4a0838c448717234172c9e138eecd524",
+      "caption": "图5定价67元以下完成的密度图",
+      "score": 0.28648,
+      "s_direct": 0.481082,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_52",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现未完成的任务主要集中在广州市以及深圳市，而东莞市的任务则大多都被很好地完成了。我们通过查阅三处城市的社会经济特征，发现东莞市的经济发展状况比广州市和"
+        },
+        {
+          "block_id": "b_56",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过上图我们发现定价高的任务完成的情况较好，在城市中心的任务完成情况也较好。在市中心是因为交通便利，会员容易到达，也因为市中心的人员更加密集，周围分布的会员多，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_56",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.740541,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_7",
+          "b_4",
+          "b_10",
+          "b_27",
+          "b_8"
+        ]
+      },
+      "pos": 53,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "16c4432b4e07e0cbfa3859ae3b387c35e31427442529062daa4ef60879d1d673",
+      "caption": "图1 任务点按照价格区间分类的空间分布图",
+      "score": 0.851824,
+      "s_direct": 0.703649,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_27",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "本文考虑到，项目的定价规律主要受到项目的地理位置、当地人的收入预期、当地社会的社会人文特征的影响。我们首先利用了地图无忧软件按照价格区间进行分类，绘制了如下任务"
+        },
+        {
+          "block_id": "b_29",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "因此我们利用ISODATA算法对于这些任务点数据进行聚类分析，我们在每轮迭代过程中，样本进行重新调整类别之后计算类内及类间有关参数，并和设定的门限比较，确定是两"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_29",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_29",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.851824,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_7",
+          "b_4",
+          "b_10",
+          "b_27",
+          "b_8"
+        ]
+      },
+      "pos": 28,
+      "rank": 1
+    },
+    {
+      "image_hash": "0532a7df8fc2da4a7d972f3e9c3c09ade701f316a36ca7f6a2faa1b440430e9e",
+      "caption": "图2定价67元以下未完成的密度图",
+      "score": 0.319408,
+      "s_direct": 0.510847,
+      "s_link": 0.501651,
+      "s_co": 0.501651,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_48",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们利用百度地图开放平台将任务点按照价格区间以及完成的情况进行了地图的绘制，采用了密度图的形式进行了反应，通过对于下图的分析"
+        },
+        {
+          "block_id": "b_52",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现未完成的任务主要集中在广州市以及深圳市，而东莞市的任务则大多都被很好地完成了。我们通过查阅三处城市的社会经济特征，发现东莞市的经济发展状况比广州市和"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_47",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_48",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.501651,
+          "distance_weight": 1.0,
+          "s_link": 0.501651,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.506249,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_7",
+          "b_4",
+          "b_10",
+          "b_27",
+          "b_8"
+        ]
+      },
+      "pos": 49,
+      "rank": 2
+    },
+    {
+      "image_hash": "7c24ac52fbbc36c4ea3354eca6f8b62a4a0838c448717234172c9e138eecd524",
+      "caption": "图5定价67元以下完成的密度图",
+      "score": 0.28648,
+      "s_direct": 0.481082,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_52",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现未完成的任务主要集中在广州市以及深圳市，而东莞市的任务则大多都被很好地完成了。我们通过查阅三处城市的社会经济特征，发现东莞市的经济发展状况比广州市和"
+        },
+        {
+          "block_id": "b_56",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过上图我们发现定价高的任务完成的情况较好，在城市中心的任务完成情况也较好。在市中心是因为交通便利，会员容易到达，也因为市中心的人员更加密集，周围分布的会员多，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_56",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.740541,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 7,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_7",
+          "b_4",
+          "b_10",
+          "b_27",
+          "b_8"
+        ]
+      },
+      "pos": 53,
+      "rank": 3
+    },
+    {
+      "image_hash": "486d07e8481e3cf01d862984a7666e156e4485b7db4124674ecbb2096f8c43e8",
+      "caption": "图6定价67-70元完成的密度图",
+      "score": 0.258406,
+      "s_direct": 0.450877,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_52",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现未完成的任务主要集中在广州市以及深圳市，而东莞市的任务则大多都被很好地完成了。我们通过查阅三处城市的社会经济特征，发现东莞市的经济发展状况比广州市和"
+        },
+        {
+          "block_id": "b_56",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过上图我们发现定价高的任务完成的情况较好，在城市中心的任务完成情况也较好。在市中心是因为交通便利，会员容易到达，也因为市中心的人员更加密集，周围分布的会员多，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_56",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.725439,
+        "rerank_profile": "legacy"
+      },
+      "pos": 54,
+      "rank": 4
+    },
+    {
+      "image_hash": "21c8ca9fdd545b8b8cebc87d5e5b5882e59324c95f6482b089118fefdafdeef8",
+      "caption": "图8任务每种价格的总数与完成的个数",
+      "score": 0.253287,
+      "s_direct": 0.605803,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_56",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过上图我们发现定价高的任务完成的情况较好，在城市中心的任务完成情况也较好。在市中心是因为交通便利，会员容易到达，也因为市中心的人员更加密集，周围分布的会员多，"
+        },
+        {
+          "block_id": "b_59",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们结合上面的两张图综合分析可以看出，在价格为74元时完成率很低是由于价格在74元的任务总数较少，导致偶然性带来的波动较大，可以舍弃这一组数据。总的来看，我们发"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_56",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.802901,
+        "rerank_profile": "legacy"
+      },
+      "pos": 57,
+      "rank": 5
+    },
+    {
+      "image_hash": "7d4384118765c66b3bb4b7207070081f9dc385163be25cc7d9938d7354943327",
+      "caption": "图3定价67-70元未完成的密度图",
+      "score": 0.245645,
+      "s_direct": 0.480927,
+      "s_link": 0.501651,
+      "s_co": 0.501651,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_48",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们利用百度地图开放平台将任务点按照价格区间以及完成的情况进行了地图的绘制，采用了密度图的形式进行了反应，通过对于下图的分析"
+        },
+        {
+          "block_id": "b_52",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现未完成的任务主要集中在广州市以及深圳市，而东莞市的任务则大多都被很好地完成了。我们通过查阅三处城市的社会经济特征，发现东莞市的经济发展状况比广州市和"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_47",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_48",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.501651,
+          "distance_weight": 1.0,
+          "s_link": 0.501651,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.491289,
+        "rerank_profile": "legacy"
+      },
+      "pos": 50,
+      "rank": 6
+    },
+    {
+      "image_hash": "5cf720adb2e66d56011f32d8be9bd0aea23980f73ae57eb3c11520880f9fca19",
+      "caption": "图9任务每种价格完成率",
+      "score": 0.24471,
+      "s_direct": 0.625818,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_56",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过上图我们发现定价高的任务完成的情况较好，在城市中心的任务完成情况也较好。在市中心是因为交通便利，会员容易到达，也因为市中心的人员更加密集，周围分布的会员多，"
+        },
+        {
+          "block_id": "b_59",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们结合上面的两张图综合分析可以看出，在价格为74元时完成率很低是由于价格在74元的任务总数较少，导致偶然性带来的波动较大，可以舍弃这一组数据。总的来看，我们发"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_56",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.812909,
+        "rerank_profile": "legacy"
+      },
+      "pos": 58,
+      "rank": 7
+    },
+    {
+      "image_hash": "af16a99cd619a23557a56a57874ec2fa5ac15e4efed3db4e31bedfa49ea87796",
+      "caption": "图7定价70-76元完成的密度图",
+      "score": 0.242265,
+      "s_direct": 0.453589,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_52",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现未完成的任务主要集中在广州市以及深圳市，而东莞市的任务则大多都被很好地完成了。我们通过查阅三处城市的社会经济特征，发现东莞市的经济发展状况比广州市和"
+        },
+        {
+          "block_id": "b_56",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过上图我们发现定价高的任务完成的情况较好，在城市中心的任务完成情况也较好。在市中心是因为交通便利，会员容易到达，也因为市中心的人员更加密集，周围分布的会员多，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_56",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.726795,
+        "rerank_profile": "legacy"
+      },
+      "pos": 55,
+      "rank": 8
+    },
+    {
+      "image_hash": "60c99a52920e487e8545d837e568a09e19e72a5c5a7d42fb2e94ed81bb86debb",
+      "caption": "图4定价70-76元未完成的密度图",
+      "score": 0.213786,
+      "s_direct": 0.491139,
+      "s_link": 0.501651,
+      "s_co": 0.501651,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_48",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们利用百度地图开放平台将任务点按照价格区间以及完成的情况进行了地图的绘制，采用了密度图的形式进行了反应，通过对于下图的分析"
+        },
+        {
+          "block_id": "b_52",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们可以发现未完成的任务主要集中在广州市以及深圳市，而东莞市的任务则大多都被很好地完成了。我们通过查阅三处城市的社会经济特征，发现东莞市的经济发展状况比广州市和"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_47",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_48",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.501651,
+          "distance_weight": 1.0,
+          "s_link": 0.501651,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.496395,
+        "rerank_profile": "legacy"
+      },
+      "pos": 51,
+      "rank": 9
+    },
+    {
+      "image_hash": "50d92412dd98c0e7946be4133cda73e0908eb03f0f992a7866cf6a2a668871e4",
+      "caption": "图16活跃度较大的地点不打包每个任务的平均定价与总收益期望的关系",
+      "score": 0.200545,
+      "s_direct": 0.639442,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_157",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们的打包算法是区别对待不同位置的任务，在已算得各分类区域的打包情况后，我们利用5.2中的模型求出公司的收益期望与打包后的包内平均每个任务的定价价格之间的关系："
+        },
+        {
+          "block_id": "b_164",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从上面的图中，横向分析发现打包后公司为获得最大收益期望所需确定的包内每个任务的平均价格相比于不打包时公司确定的每个任务的平均价格大大价低，而且公司能够获得的收益"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_157",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_157",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.819721,
+        "rerank_profile": "legacy"
+      },
+      "pos": 158,
+      "rank": 10
+    },
+    {
+      "image_hash": "8f7855a392be23fe6e52af61293883bca2fd2ae6525e56ea4eb6a0fc66be5707",
+      "caption": "图17活跃度较大的地点包内每个任务的平均定价与总收益期望的关系",
+      "score": 0.193251,
+      "s_direct": 0.611681,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.239812,
+      "p_type": 1.0,
+      "figure_index": "17",
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_157",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们的打包算法是区别对待不同位置的任务，在已算得各分类区域的打包情况后，我们利用5.2中的模型求出公司的收益期望与打包后的包内平均每个任务的定价价格之间的关系："
+        },
+        {
+          "block_id": "b_164",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从上面的图中，横向分析发现打包后公司为获得最大收益期望所需确定的包内每个任务的平均价格相比于不打包时公司确定的每个任务的平均价格大大价低，而且公司能够获得的收益"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_157",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_157",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.80584,
+        "rerank_profile": "legacy"
+      },
+      "pos": 161,
+      "rank": 11
+    },
+    {
+      "image_hash": "83e6cc3c24f028cf4eed00780a66dc0fe9d2688be568839713bf853ed766f0a0",
+      "caption": "图18活跃度中等的地点不打包每个任务的平均定价与总收益期望的关系",
+      "score": 0.19057,
+      "s_direct": 0.619053,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.235409,
+      "p_type": 1.0,
+      "figure_index": "18",
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_157",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们的打包算法是区别对待不同位置的任务，在已算得各分类区域的打包情况后，我们利用5.2中的模型求出公司的收益期望与打包后的包内平均每个任务的定价价格之间的关系："
+        },
+        {
+          "block_id": "b_164",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从上面的图中，横向分析发现打包后公司为获得最大收益期望所需确定的包内每个任务的平均价格相比于不打包时公司确定的每个任务的平均价格大大价低，而且公司能够获得的收益"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_157",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_157",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.809526,
+        "rerank_profile": "legacy"
+      },
+      "pos": 159,
+      "rank": 12
+    },
+    {
+      "image_hash": "6d5c3166a62afe03c94c614c50ca40c7981d78a6a6438e9d85c9a92283967bc5",
+      "caption": "图20活跃度较低的地点不打包每个任务的平均定价与总收益期望的关系",
+      "score": 0.187761,
+      "s_direct": 0.649416,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.22767,
+      "p_type": 1.0,
+      "figure_index": "20",
+      "layout_index": 20.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_157",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们的打包算法是区别对待不同位置的任务，在已算得各分类区域的打包情况后，我们利用5.2中的模型求出公司的收益期望与打包后的包内平均每个任务的定价价格之间的关系："
+        },
+        {
+          "block_id": "b_164",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从上面的图中，横向分析发现打包后公司为获得最大收益期望所需确定的包内每个任务的平均价格相比于不打包时公司确定的每个任务的平均价格大大价低，而且公司能够获得的收益"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_157",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_157",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.824708,
+        "rerank_profile": "legacy"
+      },
+      "pos": 160,
+      "rank": 13
+    },
+    {
+      "image_hash": "8913f91f008b2c674bc1ffa664d0a7d5d96e5cf1dfcc85b33824a26f4828cd32",
+      "caption": "图19活跃度中等的地点包内每个任务的平均定价与总收益期望的关系",
+      "score": 0.184184,
+      "s_direct": 0.592059,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.231378,
+      "p_type": 1.0,
+      "figure_index": "19",
+      "layout_index": 19.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_157",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们的打包算法是区别对待不同位置的任务，在已算得各分类区域的打包情况后，我们利用5.2中的模型求出公司的收益期望与打包后的包内平均每个任务的定价价格之间的关系："
+        },
+        {
+          "block_id": "b_164",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从上面的图中，横向分析发现打包后公司为获得最大收益期望所需确定的包内每个任务的平均价格相比于不打包时公司确定的每个任务的平均价格大大价低，而且公司能够获得的收益"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_157",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_157",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.796029,
+        "rerank_profile": "legacy"
+      },
+      "pos": 162,
+      "rank": 14
+    },
+    {
+      "image_hash": "bf1eaa91de97d6adb83b9bc2d50c3f9d3f60c7ab98fc95f27766adaba8111590",
+      "caption": "图21活跃度较低的地点包内每个任务的平均定价与总收益期望的关系",
+      "score": 0.181784,
+      "s_direct": 0.621304,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.224244,
+      "p_type": 1.0,
+      "figure_index": "21",
+      "layout_index": 21.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_157",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们的打包算法是区别对待不同位置的任务，在已算得各分类区域的打包情况后，我们利用5.2中的模型求出公司的收益期望与打包后的包内平均每个任务的定价价格之间的关系："
+        },
+        {
+          "block_id": "b_164",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从上面的图中，横向分析发现打包后公司为获得最大收益期望所需确定的包内每个任务的平均价格相比于不打包时公司确定的每个任务的平均价格大大价低，而且公司能够获得的收益"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_157",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_157",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.810652,
+        "rerank_profile": "legacy"
+      },
+      "pos": 163,
+      "rank": 15
+    },
+    {
+      "image_hash": "9d22e9c63d341b398c25603a57e22f8c5ae5c4c1cabefb4f8a845a311ee3b8f5",
+      "caption": "图12任务价格与被完成概率的关系",
+      "score": 0.181684,
+      "s_direct": 0.727495,
+      "s_link": 0.617128,
+      "s_co": 0.617128,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_110",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "任取一点（23.00,113.80）为例，我们可以得到其任务价格与被完成概率的关系以及任务价格与收益期望的关系："
+        },
+        {
+          "block_id": "b_113",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "据此，我们将（23.00,113.80）处的任务价格定为45元，可以使得公司获得更大的收益。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_109",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_110",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.617128,
+          "distance_weight": 1.0,
+          "s_link": 0.617128,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.672311,
+        "rerank_profile": "legacy"
+      },
+      "pos": 111,
+      "rank": 16
+    },
+    {
+      "image_hash": "e40200731cfe01a00a0e7c473e0e8a82dabc239ab2a6406a7b450047132ebc3d",
+      "caption": "图13任务价格与收益期望的关系",
+      "score": 0.164182,
+      "s_direct": 0.63307,
+      "s_link": 0.617128,
+      "s_co": 0.617128,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_110",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "任取一点（23.00,113.80）为例，我们可以得到其任务价格与被完成概率的关系以及任务价格与收益期望的关系："
+        },
+        {
+          "block_id": "b_113",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "据此，我们将（23.00,113.80）处的任务价格定为45元，可以使得公司获得更大的收益。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_109",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_110",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.617128,
+          "distance_weight": 1.0,
+          "s_link": 0.617128,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.625099,
+        "rerank_profile": "legacy"
+      },
+      "pos": 112,
+      "rank": 17
+    },
+    {
+      "image_hash": "a30f119d3bf3d66daccf7c4cd08536ea1f128899790d85ab7094509528b5c896",
+      "caption": "图23 新项目需要的行动力分布",
+      "score": 0.14477,
+      "s_direct": 0.540274,
+      "s_link": 0.787252,
+      "s_co": 0.787252,
+      "p_layout": 0.218104,
+      "p_type": 1.0,
+      "figure_index": "23",
+      "layout_index": 23.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_173",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "原任务的行动力以及新项目的行动力分布如下："
+        },
+        {
+          "block_id": "b_176",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如图所示，我们发现东莞为的行动力饱和区，广州为行动力消耗饱和区。若仍由之前的模型，只考虑任务由最近城市的用户来完成，是不合理的，必须考虑行动力的流通，即行动力饱"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_172",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_173",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.787252,
+          "distance_weight": 1.0,
+          "s_link": 0.787252,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.663763,
+        "rerank_profile": "legacy"
+      },
+      "pos": 175,
+      "rank": 18
+    },
+    {
+      "image_hash": "7c6c04fa3ae44abe21c4088f0a5b5b1cd1549010635e4272bbf4facfe24b5b70",
+      "caption": "图22 原项目需要的行动力分布",
+      "score": 0.144191,
+      "s_direct": 0.517257,
+      "s_link": 0.787252,
+      "s_co": 0.787252,
+      "p_layout": 0.221065,
+      "p_type": 1.0,
+      "figure_index": "22",
+      "layout_index": 22.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_173",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "原任务的行动力以及新项目的行动力分布如下："
+        },
+        {
+          "block_id": "b_176",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如图所示，我们发现东莞为的行动力饱和区，广州为行动力消耗饱和区。若仍由之前的模型，只考虑任务由最近城市的用户来完成，是不合理的，必须考虑行动力的流通，即行动力饱"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_172",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_173",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.787252,
+          "distance_weight": 1.0,
+          "s_link": 0.787252,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.652255,
+        "rerank_profile": "legacy"
+      },
+      "pos": 174,
+      "rank": 19
+    },
+    {
+      "image_hash": "5e82682ba0722d84f558a245e05d5dac42514161ce641369d862b4b70afe93a2",
+      "caption": "图10各地区活跃度指标函数分布图",
+      "score": 0.128017,
+      "s_direct": 0.487894,
+      "s_link": 0.397838,
+      "s_co": 0.397838,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_73",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "利用MATLAB得出各个地区的活跃度如下图："
+        },
+        {
+          "block_id": "b_75",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "所以任务被完成的可能性大小取决于任务吸引力c和任务所在地区活跃度a，据此我们得到任务被完成的可能性  $\\mathfrak{p}_{\\mathrm{i}}$"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_68",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_73",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.568339,
+          "distance_weight": 0.7,
+          "s_link": 0.397838,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.442866,
+        "rerank_profile": "legacy"
+      },
+      "pos": 74,
+      "rank": 20
+    },
+    {
+      "image_hash": "1b8e42e424f380b48538ee13a4aceef114ec751c2bfcddc40f1d1730ce0a400b",
+      "caption": "图14各个任务点处的行动力消耗",
+      "score": 0.094084,
+      "s_direct": 0.451821,
+      "s_link": 0.283328,
+      "s_co": 0.283328,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_139",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "将E(Acm)在地图上表现出来，得到："
+        },
+        {
+          "block_id": "b_141",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "可以看到，距离市中心越近的任务，E(Acm)越大，按照公式"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_23",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_141",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.70832,
+          "distance_weight": 0.4,
+          "s_link": 0.283328,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.367575,
+        "rerank_profile": "legacy"
+      },
+      "pos": 140,
+      "rank": 21
+    },
+    {
+      "image_hash": "7c85217b3b9a51f06f971e6ea4f7b3e5921450207dbad16456d05fb01052a2e1",
+      "caption": "图25 新项目各个任务完成能力最大用户所属城市",
+      "score": 0.089957,
+      "s_direct": 0.567655,
+      "s_link": 0.278019,
+      "s_co": 0.278019,
+      "p_layout": 0.212746,
+      "p_type": 1.0,
+      "figure_index": "25",
+      "layout_index": 25.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_188",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们利用MATLAB将用户按城市聚类，则根据结果，我们可以画出各个任务完成能力最大的用户分别从属于哪个城市："
+        },
+        {
+          "block_id": "b_191",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从图中，我们发现，由于广州、深圳行动力消耗饱和，东莞行动力饱和，导致广州、深圳部分靠近东莞的任务更可能被东莞用户完成，而不是当地用户。根据这一结论，为了更好的组"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_29",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_188",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.695047,
+          "distance_weight": 0.4,
+          "s_link": 0.278019,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.422837,
+        "rerank_profile": "legacy"
+      },
+      "pos": 190,
+      "rank": 22
+    },
+    {
+      "image_hash": "e197e2c9fe018bc230d3465b965f87d9b66f2ee9e78c71702a182a943f2fc524",
+      "caption": "图11积分划分情况图",
+      "score": 0.08684,
+      "s_direct": 0.401263,
+      "s_link": 0.221372,
+      "s_co": 0.221372,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_77",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对  $p$  进行运算，为了方便求解，将其划分为13块进行运算，划分如下："
+        },
+        {
+          "block_id": "b_79",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据积分中值定理，我们可以得到："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_23",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_77",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.553431,
+          "distance_weight": 0.4,
+          "s_link": 0.221372,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.311318,
+        "rerank_profile": "legacy"
+      },
+      "pos": 78,
+      "rank": 23
+    },
+    {
+      "image_hash": "7b10ac7e853e5930bee2ddc658a67131125b5054f2545fee9583f6bd364cac05",
+      "caption": "图24用户所属城市区分图",
+      "score": 0.06766,
+      "s_direct": 0.350392,
+      "s_link": 0.278019,
+      "s_co": 0.278019,
+      "p_layout": 0.215338,
+      "p_type": 1.0,
+      "figure_index": "24",
+      "layout_index": 24.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_188",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们利用MATLAB将用户按城市聚类，则根据结果，我们可以画出各个任务完成能力最大的用户分别从属于哪个城市："
+        },
+        {
+          "block_id": "b_191",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从图中，我们发现，由于广州、深圳行动力消耗饱和，东莞行动力饱和，导致广州、深圳部分靠近东莞的任务更可能被东莞用户完成，而不是当地用户。根据这一结论，为了更好的组"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_29",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_188",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.695047,
+          "distance_weight": 0.4,
+          "s_link": 0.278019,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.314205,
+        "rerank_profile": "legacy"
+      },
+      "pos": 189,
+      "rank": 24
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 39,
+    "query_block_pair_count": 60,
+    "cf_count": 7,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图3",
+      "图4",
+      "图5",
+      "图6",
+      "图6"
+    ],
+    "rerank_profile": "legacy"
+  }
+}

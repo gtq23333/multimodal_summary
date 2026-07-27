@@ -1,0 +1,1519 @@
+{
+  "paper_id": "2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072",
+  "top3_figures": [
+    {
+      "image_hash": "39bceff768d6259a3ad74d7a6bbe2bc071547d3938b4a597118a9fa10d491ef1",
+      "caption": "图1 问题一分析流程图",
+      "score": 1.111299,
+      "s_direct": 0.481732,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.5,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_8",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "2.1 问题一的分析问题一要求选取合适的指标并建立评价体系，用以评价小区由“封闭”变为“开放”后对周边道路通行的影响。首先，根据指标选取的一般原则客观地选出评价"
+        },
+        {
+          "block_id": "b_10",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 2.2 问题二的分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_8",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_8",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.740866,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 55,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_4",
+          "b_11",
+          "b_398",
+          "b_6"
+        ]
+      },
+      "pos": 9,
+      "rank": 1
+    },
+    {
+      "image_hash": "43edda1fa1bf888165bfc485c82648ff38510257ca869ee0ca12b67840e96049",
+      "caption": "图3“开放式小区”近似电路图",
+      "score": 0.378636,
+      "s_direct": 0.514544,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_130",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "如图3所示，当小区被打开时，从小区内多了一条可以通过的路。因为车流密度保持不变，这时小区周围的主干路上车流量依然为  $Q$  ，而小区内的路相当于电路中的一条"
+        },
+        {
+          "block_id": "b_135",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "若小区为开放式的，如图3所示，增加一条道路后，小区内的支路分担了干路上的车流量。各条路上能够通过的车流量不变，而在小区内增加一条道路就会增加整个道路的车流量，即"
+        },
+        {
+          "block_id": "b_136",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\nt^{\\prime} = \\frac{Q_{0}^{\\prime}}{Q_{1} + Q_{2}}\n$$"
+        },
+        {
+          "block_id": "b_139",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.3结果分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_135",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_135",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.757272,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 55,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_4",
+          "b_11",
+          "b_398",
+          "b_6"
+        ]
+      },
+      "pos": 138,
+      "rank": 2
+    },
+    {
+      "image_hash": "daf61f1e40b9ab64242fd41f4201f28c61f633369404cac08206b465d6508dbe",
+      "caption": "图4开放小区以T字型交叉路口模型图",
+      "score": 0.362479,
+      "s_direct": 0.683301,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_150",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "1） $T$  字型交叉路口分析模型：考虑到国内大多数开放小区以  $T$  字型交叉路口为例，而小区开放后也是以增加  $T$  字型交叉路口数对周围主干道的"
+        },
+        {
+          "block_id": "b_203",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "图4中从  $C$  流入主干道的部分通行能力自然考虑在  $B$  、  $C$  所处直行道上，而从  $B$  、  $C$  流入  $A$  的部分通"
+        },
+        {
+          "block_id": "b_152",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "2）车流速度  $V$  计算模型[2]"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_203",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_203",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.841651,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 55,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_4",
+          "b_11",
+          "b_398",
+          "b_6"
+        ]
+      },
+      "pos": 151,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "39bceff768d6259a3ad74d7a6bbe2bc071547d3938b4a597118a9fa10d491ef1",
+      "caption": "图1 问题一分析流程图",
+      "score": 1.111299,
+      "s_direct": 0.481732,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.5,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_8",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "2.1 问题一的分析问题一要求选取合适的指标并建立评价体系，用以评价小区由“封闭”变为“开放”后对周边道路通行的影响。首先，根据指标选取的一般原则客观地选出评价"
+        },
+        {
+          "block_id": "b_10",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 2.2 问题二的分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_8",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_8",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.740866,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 55,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_4",
+          "b_11",
+          "b_398",
+          "b_6"
+        ]
+      },
+      "pos": 9,
+      "rank": 1
+    },
+    {
+      "image_hash": "43edda1fa1bf888165bfc485c82648ff38510257ca869ee0ca12b67840e96049",
+      "caption": "图3“开放式小区”近似电路图",
+      "score": 0.378636,
+      "s_direct": 0.514544,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_130",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "如图3所示，当小区被打开时，从小区内多了一条可以通过的路。因为车流密度保持不变，这时小区周围的主干路上车流量依然为  $Q$  ，而小区内的路相当于电路中的一条"
+        },
+        {
+          "block_id": "b_135",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "若小区为开放式的，如图3所示，增加一条道路后，小区内的支路分担了干路上的车流量。各条路上能够通过的车流量不变，而在小区内增加一条道路就会增加整个道路的车流量，即"
+        },
+        {
+          "block_id": "b_136",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\nt^{\\prime} = \\frac{Q_{0}^{\\prime}}{Q_{1} + Q_{2}}\n$$"
+        },
+        {
+          "block_id": "b_139",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.3结果分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_135",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_135",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.757272,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 55,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_4",
+          "b_11",
+          "b_398",
+          "b_6"
+        ]
+      },
+      "pos": 138,
+      "rank": 2
+    },
+    {
+      "image_hash": "daf61f1e40b9ab64242fd41f4201f28c61f633369404cac08206b465d6508dbe",
+      "caption": "图4开放小区以T字型交叉路口模型图",
+      "score": 0.362479,
+      "s_direct": 0.683301,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_150",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "1） $T$  字型交叉路口分析模型：考虑到国内大多数开放小区以  $T$  字型交叉路口为例，而小区开放后也是以增加  $T$  字型交叉路口数对周围主干道的"
+        },
+        {
+          "block_id": "b_203",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "图4中从  $C$  流入主干道的部分通行能力自然考虑在  $B$  、  $C$  所处直行道上，而从  $B$  、  $C$  流入  $A$  的部分通"
+        },
+        {
+          "block_id": "b_152",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "2）车流速度  $V$  计算模型[2]"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_203",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_203",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.841651,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 55,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_4",
+          "b_11",
+          "b_398",
+          "b_6"
+        ]
+      },
+      "pos": 151,
+      "rank": 3
+    },
+    {
+      "image_hash": "bc133c126d2a7c987ac407f15abbba204ed8809fe4871861a3be3e23393ee37c",
+      "caption": "图2“封闭式小区”近似电路图",
+      "score": 0.319546,
+      "s_direct": 0.471852,
+      "s_link": 0.541086,
+      "s_co": 0.541086,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_119",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": false,
+          "text_snippet": "如图2所示，导线相当于小区周围的主干路，  $U_{0}$  为电压，  $C$  是电容，将联通的整个电路当成小区周围主干路的环境。现在要从  $\\mathc"
+        },
+        {
+          "block_id": "b_125",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": false,
+          "text_snippet": "当小区没有打开，中间没有可供外来车辆通过的道路时，如图2所示，从  $\\mathcal{A}$  行驶到 $B$  只能从小区周围的干路通过。在电路中，设电压不"
+        },
+        {
+          "block_id": "b_136",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\nt^{\\prime} = \\frac{Q_{0}^{\\prime}}{Q_{1} + Q_{2}}\n$$"
+        },
+        {
+          "block_id": "b_139",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.3结果分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_135",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_136",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.541086,
+          "distance_weight": 1.0,
+          "s_link": 0.541086,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.506469,
+        "rerank_profile": "legacy"
+      },
+      "pos": 137,
+      "rank": 4
+    },
+    {
+      "image_hash": "4f22a358b7e238855ca215a7dd8d950b8d1a5ccc6143d33e683f1db7d935f418",
+      "caption": "图5小区开放程度偏大",
+      "score": 0.306665,
+      "s_direct": 0.585436,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_265",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "本文用不同类型的简易小区模型进行对道路通行能力影响的研究。针对三种影响关系，本文列出9类小区模型（10幅图片，见图5~14）进行定量计算和对比分析。查阅相关道路"
+        },
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_286",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "图5小区内部开放程度较小，特点："
+        },
+        {
+          "block_id": "b_292",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "图6、图5差异："
+        },
+        {
+          "block_id": "b_293",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图6开放程度偏小，图5开放程度大。结合式（7）～（11）带入自建数据，运用EXCEL软件求得：图8模式小区对道路通行能力影响值为  $C_"
+        },
+        {
+          "block_id": "b_273",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step1：考虑小区结构差异对周边道路通行能力的影响"
+        },
+        {
+          "block_id": "b_278",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图8环形开放小区，特点："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_293",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_293",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "5",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 7,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.792718,
+        "rerank_profile": "legacy"
+      },
+      "pos": 274,
+      "rank": 5
+    },
+    {
+      "image_hash": "3fd10399513de6119641c95a571ecbe23f9cec75cf905e144854aae587bbfd25",
+      "caption": "图6小区开放程度偏小",
+      "score": 0.277966,
+      "s_direct": 0.560697,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_284",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "图6小区内部开放程度较大，特点："
+        },
+        {
+          "block_id": "b_290",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "图7、图6差异："
+        },
+        {
+          "block_id": "b_291",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图7是封闭小区，图6是开放小区。"
+        },
+        {
+          "block_id": "b_292",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "图6、图5差异："
+        },
+        {
+          "block_id": "b_293",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图6开放程度偏小，图5开放程度大。结合式（7）～（11）带入自建数据，运用EXCEL软件求得：图8模式小区对道路通行能力影响值为  $C_"
+        },
+        {
+          "block_id": "b_273",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step1：考虑小区结构差异对周边道路通行能力的影响"
+        },
+        {
+          "block_id": "b_278",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图8环形开放小区，特点："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_293",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_293",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "6",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 8,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.780348,
+        "rerank_profile": "legacy"
+      },
+      "pos": 275,
+      "rank": 6
+    },
+    {
+      "image_hash": "e9271be4f78387cabc2b01af79311bc5ce91f726f60578d10386c2e6e3f7d8a6",
+      "caption": "图7封闭型参考小区",
+      "score": 0.261224,
+      "s_direct": 0.567341,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_282",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": false,
+          "text_snippet": "图7是基本封闭型小区参考模型（国内大多数情况简例)，特点："
+        },
+        {
+          "block_id": "b_290",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": false,
+          "text_snippet": "图7、图6差异："
+        },
+        {
+          "block_id": "b_291",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图7是封闭小区，图6是开放小区。"
+        },
+        {
+          "block_id": "b_293",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图6开放程度偏小，图5开放程度大。结合式（7）～（11）带入自建数据，运用EXCEL软件求得：图8模式小区对道路通行能力影响值为  $C_"
+        },
+        {
+          "block_id": "b_273",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step1：考虑小区结构差异对周边道路通行能力的影响"
+        },
+        {
+          "block_id": "b_278",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图8环形开放小区，特点："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_293",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_293",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "7",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 7,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.783671,
+        "rerank_profile": "legacy"
+      },
+      "pos": 276,
+      "rank": 7
+    },
+    {
+      "image_hash": "151815083df7a2bb503cf6ca3e183be09aef953086441411d6d43e65d83203b2",
+      "caption": "图8环形开放小区",
+      "score": 0.231005,
+      "s_direct": 0.464536,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_269",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": false,
+          "text_snippet": "图8小区三面主干道是双行道，设有交通信号灯；一面主干道是单行道，没有交通信号灯。本文综合考虑直道、进出小区的单向性，故将图8的通行能力换算成同等条件下双行道的一"
+        },
+        {
+          "block_id": "b_270",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": false,
+          "text_snippet": "图9小区因主干道是单行道，无交通信号灯。本文综合考虑直道、进出小区的单向特性和所建模型，故将图8的通行能力换算成同等条件下双行道的一半。"
+        },
+        {
+          "block_id": "b_278",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": true,
+          "text_snippet": "图8环形开放小区，特点："
+        },
+        {
+          "block_id": "b_293",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图6开放程度偏小，图5开放程度大。结合式（7）～（11）带入自建数据，运用EXCEL软件求得：图8模式小区对道路通行能力影响值为  $C_"
+        },
+        {
+          "block_id": "b_273",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step1：考虑小区结构差异对周边道路通行能力的影响"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_293",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_293",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "8",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 6,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.732268,
+        "rerank_profile": "legacy"
+      },
+      "pos": 277,
+      "rank": 8
+    },
+    {
+      "image_hash": "bbeaf52801f257face11bc915d6bf662c8fef914307dce600e2429f3b826e673",
+      "caption": "图9主干道为单车道",
+      "score": 0.224092,
+      "s_direct": 0.488836,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_270",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": false,
+          "text_snippet": "图9小区因主干道是单行道，无交通信号灯。本文综合考虑直道、进出小区的单向特性和所建模型，故将图8的通行能力换算成同等条件下双行道的一半。"
+        },
+        {
+          "block_id": "b_303",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": false,
+          "text_snippet": "图9主干道为单车道，特点："
+        },
+        {
+          "block_id": "b_307",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": false,
+          "text_snippet": "图10、图9差异："
+        },
+        {
+          "block_id": "b_308",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图10双车道主干道，图9单车道主干道。结合式（7）～（11）带入自建数据，运用EXCEL软件求得：图11模式小区对道路通行能力影响值为  "
+        },
+        {
+          "block_id": "b_295",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step2：考虑周边道路结构差异对周边道路通行能力的影响"
+        },
+        {
+          "block_id": "b_299",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图11是基本封闭型小区参考模型（国内大多数情况简例），特点："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_308",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_308",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "9",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 7,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.744418,
+        "rerank_profile": "legacy"
+      },
+      "pos": 296,
+      "rank": 9
+    },
+    {
+      "image_hash": "866363cc019bfd790c94dae36724c290e4eb4b911346fb9beda894e735e477c4",
+      "caption": "图11封闭型参考小区",
+      "score": 0.217157,
+      "s_direct": 0.556997,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_299",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": true,
+          "text_snippet": "图11是基本封闭型小区参考模型（国内大多数情况简例），特点："
+        },
+        {
+          "block_id": "b_305",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": false,
+          "text_snippet": "图11、图10差异："
+        },
+        {
+          "block_id": "b_306",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图11是封闭小区，图10是开放小区。"
+        },
+        {
+          "block_id": "b_308",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图10双车道主干道，图9单车道主干道。结合式（7）～（11）带入自建数据，运用EXCEL软件求得：图11模式小区对道路通行能力影响值为  "
+        },
+        {
+          "block_id": "b_295",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step2：考虑周边道路结构差异对周边道路通行能力的影响"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_308",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_308",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "11",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 6,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.778498,
+        "rerank_profile": "legacy"
+      },
+      "pos": 298,
+      "rank": 10
+    },
+    {
+      "image_hash": "9761e99a6acdcf2f80ce15914d7be15eeb718caa8c4c967a5c0655d8a2af943e",
+      "caption": "图10主干道为双车道",
+      "score": 0.216754,
+      "s_direct": 0.499692,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_301",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": false,
+          "text_snippet": "图10主干道为双车道，特点："
+        },
+        {
+          "block_id": "b_305",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": false,
+          "text_snippet": "图11、图10差异："
+        },
+        {
+          "block_id": "b_306",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图11是封闭小区，图10是开放小区。"
+        },
+        {
+          "block_id": "b_307",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": false,
+          "text_snippet": "图10、图9差异："
+        },
+        {
+          "block_id": "b_308",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图10双车道主干道，图9单车道主干道。结合式（7）～（11）带入自建数据，运用EXCEL软件求得：图11模式小区对道路通行能力影响值为  "
+        },
+        {
+          "block_id": "b_295",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step2：考虑周边道路结构差异对周边道路通行能力的影响"
+        },
+        {
+          "block_id": "b_299",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图11是基本封闭型小区参考模型（国内大多数情况简例），特点："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_308",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_308",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "10",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 8,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.749846,
+        "rerank_profile": "legacy"
+      },
+      "pos": 297,
+      "rank": 11
+    },
+    {
+      "image_hash": "e968ab47c9caf67bbfa53a79bcf72af67bb96e83b58809fd366d1c51a9396c6e",
+      "caption": "图12车流量较大",
+      "score": 0.21439,
+      "s_direct": 0.586672,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_318",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": false,
+          "text_snippet": "图12主干道车流量较大，特点："
+        },
+        {
+          "block_id": "b_322",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": false,
+          "text_snippet": "图13、图12差异："
+        },
+        {
+          "block_id": "b_323",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图13主干道车流量平缓，图12主干道车流量较大。结合式（7）～（11）带入自建数据，运用EXCEL软件求：图14模式小区对道路通行能力影响"
+        },
+        {
+          "block_id": "b_310",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step3：考虑车流量差异（小区位置）对周边道路通行能力的影响"
+        },
+        {
+          "block_id": "b_314",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图14是基本封闭型小区参考模型（国内大多数情况简例），特点："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_323",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_323",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "12",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 6,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.793336,
+        "rerank_profile": "legacy"
+      },
+      "pos": 311,
+      "rank": 12
+    },
+    {
+      "image_hash": "e7be01aab9fb7af4ea966f99e86a14d63812ac9a74c347ce604bec2e750a8dc9",
+      "caption": "图13车流量平缓",
+      "score": 0.208354,
+      "s_direct": 0.586553,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_316",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": false,
+          "text_snippet": "图13主干道车流量平缓，特点："
+        },
+        {
+          "block_id": "b_320",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": false,
+          "text_snippet": "图14、图13差异："
+        },
+        {
+          "block_id": "b_321",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图14是封闭小区，图13是开放小区。"
+        },
+        {
+          "block_id": "b_322",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": false,
+          "text_snippet": "图13、图12差异："
+        },
+        {
+          "block_id": "b_323",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图13主干道车流量平缓，图12主干道车流量较大。结合式（7）～（11）带入自建数据，运用EXCEL软件求：图14模式小区对道路通行能力影响"
+        },
+        {
+          "block_id": "b_310",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step3：考虑车流量差异（小区位置）对周边道路通行能力的影响"
+        },
+        {
+          "block_id": "b_314",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图14是基本封闭型小区参考模型（国内大多数情况简例），特点："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_323",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_323",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "13",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 8,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.793276,
+        "rerank_profile": "legacy"
+      },
+      "pos": 312,
+      "rank": 13
+    },
+    {
+      "image_hash": "fe846ca2d0bd38764c39ffa56bf99ced7ef758b4cfa10d6252c0485f7019f4c1",
+      "caption": "图14封闭型参考小区",
+      "score": 0.198323,
+      "s_direct": 0.549651,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": false,
+          "text_snippet": "<table><tr><td>参数\n小区类型</td><td>Tc</td><td>tg</td><td>ti</td><td>β1</td></tr><tr>"
+        },
+        {
+          "block_id": "b_314",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": true,
+          "text_snippet": "图14是基本封闭型小区参考模型（国内大多数情况简例），特点："
+        },
+        {
+          "block_id": "b_320",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": false,
+          "text_snippet": "图14、图13差异："
+        },
+        {
+          "block_id": "b_321",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图14是封闭小区，图13是开放小区。"
+        },
+        {
+          "block_id": "b_323",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": false,
+          "text_snippet": "$\\bullet$  图13主干道车流量平缓，图12主干道车流量较大。结合式（7）～（11）带入自建数据，运用EXCEL软件求：图14模式小区对道路通行能力影响"
+        },
+        {
+          "block_id": "b_310",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step3：考虑车流量差异（小区位置）对周边道路通行能力的影响"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_323",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_323",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "14",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 6,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.774825,
+        "rerank_profile": "legacy"
+      },
+      "pos": 313,
+      "rank": 14
+    },
+    {
+      "image_hash": "6a7c9aa3f30a1d06d78a824ca00ca136a717fe9bb7d9b9339a87d6dd6135da09",
+      "caption": "图19  $Q - m$  关系图",
+      "score": 0.098016,
+      "s_direct": 0.381496,
+      "s_link": 0.465741,
+      "s_co": 0.465741,
+      "p_layout": 0.231378,
+      "p_type": 1.0,
+      "figure_index": "19",
+      "layout_index": 19.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_376",
+          "source": "explicit_ref",
+          "matched_ref": "19",
+          "also_local": true,
+          "text_snippet": "$Q = 76.02(- 4192m^2 - 179.8m + 112.9) - 0.53(- 4192m^2 - 179.8m + 112.9)^2$  (2"
+        },
+        {
+          "block_id": "b_378",
+          "source": "explicit_ref",
+          "matched_ref": "19",
+          "also_local": true,
+          "text_snippet": "由图19可以明显地看出，当  $m$  越大时，  $Q$  越小；反之，  $Q$  越大，即小区内街道通行能力越强，所以充分体现出“禁摩”措施对小区内街道通"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_383",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_378",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "19",
+          "raw_cosine": 0.665344,
+          "distance_weight": 0.7,
+          "s_link": 0.465741,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.423618,
+        "rerank_profile": "legacy"
+      },
+      "pos": 377,
+      "rank": 15
+    },
+    {
+      "image_hash": "7effe8fbc1c227a6bd099e89c0d553f9ce6748abe62ae7cb77e96a6ef28f4f67",
+      "caption": "图15  $k - \\nu$  关系图",
+      "score": 0.076751,
+      "s_direct": 0.362289,
+      "s_link": 0.251723,
+      "s_co": 0.251723,
+      "p_layout": 0.25,
+      "p_type": 1.0,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_352",
+          "source": "explicit_ref",
+          "matched_ref": "15",
+          "also_local": true,
+          "text_snippet": "应用表7的统计数据，对（16）式采用线性回归模型进行分析，运用MATLAB[2]软件编程（见附录程序2），得到  $k - \\nu$  的关系，见图15："
+        },
+        {
+          "block_id": "b_354",
+          "source": "explicit_ref",
+          "matched_ref": "15",
+          "also_local": true,
+          "text_snippet": "分析图15可知，小区内街道的  $k - \\nu$  成负线性相关。"
+        },
+        {
+          "block_id": "b_355",
+          "source": "explicit_ref",
+          "matched_ref": "15",
+          "also_local": false,
+          "text_snippet": "对比式（18）可得，图15拟合直线斜率："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_294",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_354",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "15",
+          "raw_cosine": 0.629307,
+          "distance_weight": 0.4,
+          "s_link": 0.251723,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.307006,
+        "rerank_profile": "legacy"
+      },
+      "pos": 353,
+      "rank": 16
+    },
+    {
+      "image_hash": "ee8adc1ac28f6db9d8ece5682b7e4bd6c042c4529f4d3d8feaa62193757458de",
+      "caption": "图16  $Q - \\nu$  关系图",
+      "score": 0.069181,
+      "s_direct": 0.346303,
+      "s_link": 0.219244,
+      "s_co": 0.219244,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_363",
+          "source": "explicit_ref",
+          "matched_ref": "16",
+          "also_local": true,
+          "text_snippet": "根据式（20）运用MATLAB软件（见附录程序3）画出  $Q$  与  $\\nu$  的关系图，见图16："
+        },
+        {
+          "block_id": "b_365",
+          "source": "explicit_ref",
+          "matched_ref": "16",
+          "also_local": true,
+          "text_snippet": "由图16可知，随着  $\\nu$  的增大，  $Q$  先增大后减少。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_135",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_365",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "16",
+          "raw_cosine": 0.54811,
+          "distance_weight": 0.4,
+          "s_link": 0.219244,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.282773,
+        "rerank_profile": "legacy"
+      },
+      "pos": 364,
+      "rank": 17
+    },
+    {
+      "image_hash": "c23030df2cf6e315792dae42110493e0bafca6257c48c02747a2501b74e0a6da",
+      "caption": "图17  $m$  、  $\\nu$  和  $k$  散点图",
+      "score": 0.068133,
+      "s_direct": 0.378771,
+      "s_link": 0.331507,
+      "s_co": 0.331507,
+      "p_layout": 0.239812,
+      "p_type": 0.8,
+      "figure_index": "17",
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_367",
+          "source": "explicit_ref",
+          "matched_ref": "17",
+          "also_local": true,
+          "text_snippet": "为研究  $m$  （为明显显示走向，故将  $m$  扩大100倍）、  $\\nu$  和  $k$  的关系，运用EXCEL软件画出9组数据中的三者散点图，"
+        },
+        {
+          "block_id": "b_369",
+          "source": "explicit_ref",
+          "matched_ref": "17",
+          "also_local": true,
+          "text_snippet": "由图17可知，  $m$  越小，  $\\nu$  越大，  $k$  随之减小，即小区内街道的通行能力越强，这也说明了开放小区内“禁摩”的措施的重要性。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_15",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_369",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "17",
+          "raw_cosine": 0.828768,
+          "distance_weight": 0.4,
+          "s_link": 0.331507,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.355139,
+        "rerank_profile": "legacy"
+      },
+      "pos": 368,
+      "rank": 18
+    },
+    {
+      "image_hash": "ec825a671452aef70eb982f050a3e9bfd98b51c9318a0a420fb4bd0743752a7d",
+      "caption": "图18  $\\nu -m$  关系图",
+      "score": 0.068003,
+      "s_direct": 0.388844,
+      "s_link": 0.1889,
+      "s_co": 0.1889,
+      "p_layout": 0.235409,
+      "p_type": 1.0,
+      "figure_index": "18",
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_371",
+          "source": "explicit_ref",
+          "matched_ref": "18",
+          "also_local": true,
+          "text_snippet": "首先利用表7数据，运用MATLAB软件（见附录程序4）根据多项式拟合模型画出 $\\nu - m$  关系图，见图18："
+        },
+        {
+          "block_id": "b_373",
+          "source": "explicit_ref",
+          "matched_ref": "18",
+          "also_local": true,
+          "text_snippet": "由图18解得："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_265",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_371",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "18",
+          "raw_cosine": 0.472251,
+          "distance_weight": 0.4,
+          "s_link": 0.1889,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.288872,
+        "rerank_profile": "legacy"
+      },
+      "pos": 372,
+      "rank": 19
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 37,
+    "query_block_pair_count": 60,
+    "cf_count": 55,
+    "caption_refs_sample": [
+      "图1",
+      "图4",
+      "图1",
+      "图1",
+      "图2",
+      "图2",
+      "图3",
+      "图3",
+      "图4",
+      "图2"
+    ],
+    "rerank_profile": "legacy"
+  }
+}

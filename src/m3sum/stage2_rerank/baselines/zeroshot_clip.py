@@ -22,6 +22,8 @@ class ZeroshotClipRanker:
         clip_encoder: ChineseCLIPWrapper | None,
         image_cache_dir: Path,
         dry_run: bool = False,
+        *,
+        query_use_keywords: bool = True,
     ):
         self.clip_encoder = clip_encoder
         self.image_cache = ClipImageEmbeddingCache(
@@ -30,14 +32,21 @@ class ZeroshotClipRanker:
             dry_run=dry_run,
         )
         self.dry_run = dry_run
+        self.query_use_keywords = query_use_keywords
         self._text_cache: dict[str, list[np.ndarray]] = {}
 
     def rank(self, sample: Stage2Sample) -> list:
         if not sample.figures:
             return []
 
-        query_texts = [q.query for q in sample.sub_queries]
-        cache_key = sample.paper_id + "::" + "|".join(query_texts)
+        query_texts = [
+            q.search_text(use_keywords=self.query_use_keywords)
+            for q in sample.sub_queries
+        ]
+        cache_key = (
+            f"{sample.paper_id}::kw={self.query_use_keywords}::"
+            + "|".join(query_texts)
+        )
         if cache_key not in self._text_cache:
             if self.dry_run:
                 dim = 512

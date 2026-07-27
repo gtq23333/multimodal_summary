@@ -1,0 +1,272 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "All-Figures__top11__end_to_end_vlm__qwen3_6-27b",
+  "created_at": "2026-07-10T06:14:45.406412+00:00",
+  "paper_id": "2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f",
+  "method_name": "All-Figures",
+  "pool_size": 11,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f",
+    "method_name": "All-Figures",
+    "pool_size": 11,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "b3a5c638ec3bc96b20e6607c450ab170e796e4c7f8242c9fe1b2ed194b083d9b",
+        "rank": 1,
+        "score": null,
+        "caption": "图1：定日镜场的大地坐标系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\b3a5c638ec3bc96b20e6607c450ab170e796e4c7f8242c9fe1b2ed194b083d9b.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "28f2d06cf2fed396550d244553ec6d27041b42bcfff16ae602b44c84ddef7e7c",
+        "rank": 2,
+        "score": null,
+        "caption": "图2：太阳方位角和高度角图示",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\28f2d06cf2fed396550d244553ec6d27041b42bcfff16ae602b44c84ddef7e7c.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "d90481329afa163704a47860f302885429ac341e6d1699b18324dbd1e2f56376",
+        "rank": 3,
+        "score": null,
+        "caption": "图3：定日镜的方位角（  $\\alpha$  ）和俯仰角（  $\\beta$  ）计算示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\d90481329afa163704a47860f302885429ac341e6d1699b18324dbd1e2f56376.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "9242e8d13d231f69d760b69d9ab9504d208c03798d662ed5f5457963d9f38304",
+        "rank": 4,
+        "score": null,
+        "caption": "图4：定日镜面的坐标系",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\9242e8d13d231f69d760b69d9ab9504d208c03798d662ed5f5457963d9f38304.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "d6b6ff838e4318f619a25f26ce5925954243b7cc823a7274d3ca662699dd5254",
+        "rank": 5,
+        "score": null,
+        "caption": "图5：光椎束的坐标系（X-Y-Z）",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\d6b6ff838e4318f619a25f26ce5925954243b7cc823a7274d3ca662699dd5254.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "1316558b3656f4a1e8ac2a502558de2aa90dd282b690f1b7404f5045272feb12",
+        "rank": 6,
+        "score": null,
+        "caption": "图6：塔损失模型",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\1316558b3656f4a1e8ac2a502558de2aa90dd282b690f1b7404f5045272feb12.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "a35bdf64f163bb4ae297e117bc0ac5059b0b021c4fb00fa267c5d2de5c9852d0",
+        "rank": 7,
+        "score": null,
+        "caption": "图7：增音不遮挡下，定日镜的阴影遮挡损伤模型图示",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\a35bdf64f163bb4ae297e117bc0ac5059b0b021c4fb00fa267c5d2de5c9852d0.jpg"
+      },
+      {
+        "candidate_id": "C8",
+        "image_hash": "917ede45cfb31c1775a9f57ac309cd6e8013745ea25f6b2184c85373723e2c1d",
+        "rank": 8,
+        "score": null,
+        "caption": "图8：余弦损失的示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\917ede45cfb31c1775a9f57ac309cd6e8013745ea25f6b2184c85373723e2c1d.jpg"
+      },
+      {
+        "candidate_id": "C9",
+        "image_hash": "5bb8bf917f7804cf3a92a2a249e60ddcf94ed09923cd3f2b322846ddb5b18221",
+        "rank": 9,
+        "score": null,
+        "caption": "图9：镜面取点步长变小，单位面积平均输出热功率变化",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\5bb8bf917f7804cf3a92a2a249e60ddcf94ed09923cd3f2b322846ddb5b18221.jpg"
+      },
+      {
+        "candidate_id": "C10",
+        "image_hash": "9f52706a91df64c17edab47ebbba27802f61500c1f4da6939431624ad2c6b9de",
+        "rank": 10,
+        "score": null,
+        "caption": "图10：蜂窝排列法确定定日镜尺寸、数目和位置（左）和计算后的图（右）",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\9f52706a91df64c17edab47ebbba27802f61500c1f4da6939431624ad2c6b9de.jpg"
+      },
+      {
+        "candidate_id": "C11",
+        "image_hash": "91ebc7caaa5b6062f6162167eae4f29d93eb5eb5f39a55ce28556cb81d6647be",
+        "rank": 11,
+        "score": null,
+        "caption": "图11：斜坡式排列",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f\\images\\91ebc7caaa5b6062f6162167eae4f29d93eb5eb5f39a55ce28556cb81d6647be.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "917ede45cfb31c1775a9f57ac309cd6e8013745ea25f6b2184c85373723e2c1d",
+      "9242e8d13d231f69d760b69d9ab9504d208c03798d662ed5f5457963d9f38304",
+      "a35bdf64f163bb4ae297e117bc0ac5059b0b021c4fb00fa267c5d2de5c9852d0",
+      "b3a5c638ec3bc96b20e6607c450ab170e796e4c7f8242c9fe1b2ed194b083d9b",
+      "d6b6ff838e4318f619a25f26ce5925954243b7cc823a7274d3ca662699dd5254"
+    ],
+    "retrieval_metrics": {
+      "ip@11": 0.454545,
+      "ir@11": 1.0,
+      "jaccard@11": 0.454545
+    },
+    "reference_summary": null,
+    "reference_sequence": null,
+    "pool_metadata": {
+      "pool_type": "all_figures",
+      "actual_candidate_count": 11
+    }
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "分析",
+        "text": "1.1 问题一的分析问题一是在定日镜场参数确定时，计算定日镜场的效率。同时，题中简化计算“年均”指标只需计算每月21日5个时间点等。为了得到最大的效率，我们认为经过定日镜中心反射后的反射光线通过集热器中心，那么其他入射光线也能大部分被集热器接受。因此，太阳位置确定后，经过定日镜中心的入射光线和反射光线确定，可根据向量法则计算定日镜的法向量，从而确定每个定日镜场的俯仰角和方位角。阴影遮挡损伤考虑塔身的阴影损伤、后排镜面接受的太阳光线被前镜阻挡的阴影损伤和后排镜面反射的太阳光线被前镜阻挡的遮挡损伤。余弦损伤考虑为入射光线和镜面法线不平行的能量损伤。最后，建立模型表示集热器的接收能量，计算定日镜场的相应量。"
+      },
+      {
+        "block_id": "b_282",
+        "block_idx": 282,
+        "query_dimension": "分析",
+        "text": "[1]张平等，太阳能塔式光热镜场光学效率计算方法[J]，技术与市场，2021，28(6):5- 8. [2]杜宇航等，塔式光热电站定日镜不同聚焦策略的影响分析[J]，动力工程学报，2020，40(5):426- 432. [3]https://baike.baidu.com/item/%E5%A4%AA%E9%98%B3%E9%AB%98%E5%BA%A6%E8%A7%92/1563831[4]https://baike.baidu.com/item/%E5%A4%AA%E9%98%B3%E6%96%B9%E4%BD%8D%E8%A7%92/2772684[5]孙浩．基于混合策略鲸鱼优化算法的定日镜场布局研究及优化[D].兰州交通大学,2023."
+      },
+      {
+        "block_id": "b_52",
+        "block_idx": 52,
+        "query_dimension": "分析",
+        "text": "为计算一束锥形光线的入射和反射受到的阴影遮挡损失和集热器吸收能量等，需要对镜面坐标系、镜场大地坐标系和光锥坐标系进行坐标变换。为此，建立定日镜场的效率计算模型，计算光学效率、输出热功率等："
+      },
+      {
+        "block_id": "b_21",
+        "block_idx": 21,
+        "query_dimension": "分析",
+        "text": "太阳光并非平行光线，而是具有一定锥形角的一束锥形光线。因此，先对太阳的一条主光线进行描述。进行在计算定日镜场效率时，需要首先需要对定日镜的入射主光线、反射主光线、法向、俯仰角和方位角进行建模。首先，根据太阳高度角和太阳方位角的定义和公式，结合下图，则可得到太阳光的入射主光线方向向量如下："
+      },
+      {
+        "block_id": "b_79",
+        "block_idx": 79,
+        "query_dimension": "分析",
+        "text": "当 $a$ 镜的入射光线未被塔身遮挡时，需要考虑后定日镜接收的太阳光被前定日镜所阻挡的阴影损失和后定日镜在反射太阳光时被前定日镜阻挡而未到达集热器上的遮挡损失。首先考虑后定日镜接收的太阳光被前定日镜所阻挡的阴影损失，求阴影遮挡损失，即计算经过 $a$ 镜坐标系中的某一点 $D_{1}(x_{1},y_{1},0)$ 的入射光线是否被 $b$ 镜遮挡，判断其与 $b$ 镜平面的交点是否在 $b$ 镜面内。"
+      },
+      {
+        "block_id": "b_97",
+        "block_idx": 97,
+        "query_dimension": "分析",
+        "text": "3）后定日镜在反射太阳光时被前定日镜阻挡而未到达集热器上的遮挡损失"
+      },
+      {
+        "block_id": "b_38",
+        "block_idx": 38,
+        "query_dimension": "分析",
+        "text": "其中 $\\vec{S} = (1,0,0),\\vec{n}_0 = (\\vec{n}_0(1),\\vec{n}_0(2),0)$ 。光学效率包含了阴影遮挡效率、余弦效率、大气透射率、集热器截断效率和镜面反射率。因此确定太阳的反射和入射及定日镜的法向调节后，需表示太阳光线入射反射造成的阴影遮挡效率、集热器接收情况和余弦效率。"
+      },
+      {
+        "block_id": "b_162",
+        "block_idx": 162,
+        "query_dimension": "分析",
+        "text": "接着判断入射光线（锥束）是否被塔身遮挡，若被塔身遮挡则造成阴影遮挡损失。然后，判断入射光线（锥束）是否被其他光镜遮挡。根据几何关系，计算所对应的反射光线（锥束)，判断是否被其他镜遮挡。若未造成遮挡，则计算集热器是否接受。之后计算定日镜场的计算。"
+      },
+      {
+        "block_id": "b_180",
+        "block_idx": 180,
+        "query_dimension": "建模",
+        "text": "根据4.3.1计算邻接矩阵，判断是否相邻。按设计要求，定日镜场的额定年平均输出热功率（以下简称额定功率）为60MW，若所有定日镜尺寸及安装高度相同，设计定日镜场的参数，使得在约束条件下，使得单位镜面面积年平均输出热功率尽量大。因此，建立以下优化模型："
+      },
+      {
+        "block_id": "b_2",
+        "block_idx": 2,
+        "query_dimension": "建模",
+        "text": "1.2 问题二的分析优化模型下，吸收塔的位置坐标、定日镜尺寸、安装高度、定日镜数量、定日镜位置为决策变量，单位面积年平均输出热功率尽量大为目标函数，每个定日镜尺寸和安装高度相同，在满足约束条件的情况下，使得目标函数尽量大。进行逐步寻优，先确定定日镜尺寸和安装高度，之后逐步寻找其他决策变量的优解，使得目标函数达到局部最优解即可。"
+      },
+      {
+        "block_id": "b_242",
+        "block_idx": 242,
+        "query_dimension": "建模",
+        "text": "按设计要求，若定日镜尺寸及安装高度可以不同，设计定日镜场的参数，使得在约束条件下，使得单位镜面面积年平均输出热功率尽量大。因此，建立以下优化模型。"
+      },
+      {
+        "block_id": "b_239",
+        "block_idx": 239,
+        "query_dimension": "建模",
+        "text": "此，此处应该是多目标优化模型，使得年平均输出热功率尽量大的情况下，单位面积镜面年平均输出热功率尽量大。"
+      },
+      {
+        "block_id": "b_4",
+        "block_idx": 4,
+        "query_dimension": "建模",
+        "text": "1.3 问题三的分析每个定日镜尺寸和安装高度不同，确定定日镜场的其他参数，在满足约束条件的情况下，使得单位面积年平均输出热功率尽量大。根据问题二的寻优过程，适当调整尺寸和高度。"
+      },
+      {
+        "block_id": "b_218",
+        "block_idx": 218,
+        "query_dimension": "建模",
+        "text": "考虑 $E_{field}$ 与第 $i$ 块面板的光学效率和面积有关。而我们认为在时刻变化时，光学效率基本变化不大。因此，为了首先满足题中的额定功率 $60\\mathrm{MW}$ ，在满足约束条件的情况下，首先需要给定宽度使得定日镜场内排列的定日镜面积尽量大，从而确定定日镜的尺寸、数目和位置。即在内径 $r = 100m$ ，外径 $R = 350m$ 的圆环中尽可能多的排列定日镜，以下我们采用蜂窝排列法，使得每个定日镜与其相邻的定日镜成为正三角形，"
+      },
+      {
+        "block_id": "b_238",
+        "block_idx": 238,
+        "query_dimension": "建模",
+        "text": "题中所述对于额定功率，只需要达到即可。而额定功率的变化，一般需要增加总反射面积，因此，对于需要达到更高的单位面积镜面年平均输出热功率，需要减少定日镜的面数。这样，使得总反射面积减少，同时额定功率减少，但是不安装的定日镜对其他定日镜造成的阴影遮挡损失会减少。因此，在计算遍历计算得到一个满足要求的年平均输出功率后，需要减少遮挡他人的定日镜或阴影遮挡损失较高的定日镜。因"
+      },
+      {
+        "block_id": "b_174",
+        "block_idx": 174,
+        "query_dimension": "建模",
+        "text": "在1月21日上午9：00，定日镜场的单位面积平均输出热功率与安装高度的变化："
+      },
+      {
+        "block_id": "b_6",
+        "block_idx": 6,
+        "query_dimension": "求解",
+        "text": "为了对模型进行合理简化，我们建立了以下的模型假设："
+      },
+      {
+        "block_id": "b_264",
+        "block_idx": 264,
+        "query_dimension": "求解",
+        "text": "同二问对于每块板的安装高度和尺寸大小可以不同，我们考虑使用第二问的结果进行进一步优化，远离吸收塔的最外围定日镜进行安装高度升高为6m，其他保持不变。最粗优化，然后通过更细的优化，即增加北方的定日镜高度，而减小南方定日镜的安装高度，使得各个定日镜被太阳照射时造成的阴影遮挡损失尽量小。类似于如下图的排列方式，使得前镜的阴影投射后镜的镜面下。"
+      },
+      {
+        "block_id": "b_227",
+        "block_idx": 227,
+        "query_dimension": "求解",
+        "text": "通过蜂窝排列法确定了圆环内能排列下符合要求的镜面全面积，蜂窝中正六边形的顶点和中心点安排定日镜。因此，确定了定日镜的数目、位置和数量后，接着寻优高度和吸收塔的位置坐标，此时计算量为 $\\mathrm{N} \\times \\mathrm{N} \\times \\tilde{h} \\times w \\times 350 \\times 350$ ，计算量大，难以全局遍历寻优。因此，我们采用蒙特卡洛模拟的方法，对 $\\mathrm{N}$ 块定日镜进行随机抽样，随机选取 $10\\%$ 的定日镜进行光学效率、单位面积输出热功率等计算，计算10次，来预测决策变量的粗略值使得 $\\mathcal{P}_s$ 最大，以此来减少计算量。之后，再进一步减少步长，计算额定功率是否达到60MW即可，作为局部最优解。"
+      }
+    ],
+    "body_char_count": 49135
+  },
+  "generated_summary": "针对塔式太阳能光热发电站定日镜场的优化设计问题，本文建立了基于光线追踪的光学效率计算模型及多参数布局优化模型，旨在最大化单位镜面面积的年平均输出热功率。\n\n针对问题一，本文建立了定日镜场的效率计算模型。首先，构建镜场大地坐标系、镜面坐标系和光锥坐标系，以描述定日镜场的几何参数及光线路径。[Insert Figure C1] 考虑到太阳光为具有一定锥形角的光束，模型通过坐标变换精确计算入射和反射光线。在效率计算中，综合考虑了塔身阴影遮挡、镜面间入射/反射遮挡、余弦损失、大气透射率及集热器截断效率等多重损失因素。利用网格化取点法（步长1.5m）对镜面进行离散化，计算得到该定日镜场的年平均光学效率为0.5362，年平均输出热功率为32.76MW，单位镜面面积年平均输出热功率为0.5215 kW/m²。\n\n针对问题二，在额定功率60MW的约束下，建立以单位镜面面积年平均输出热功率最大化为目标的优化模型。决策变量包括吸收塔位置、定日镜尺寸、安装高度及位置。为在圆环区域内最大化排列定日镜，本文采用蜂窝排列法确定初始布局，并结合蒙特卡洛模拟与参数遍历策略进行高效求解。[Insert Figure C10] 优化结果显示，吸收塔最佳位置为(0, -250)m，定日镜尺寸统一为6m×6m，安装高度4m，共布置3311面。此时，定日镜场年平均输出热功率达68.24MW，单位面积年平均输出热功率提升至0.5725 kW/m²。\n\n针对问题三，放宽定日镜尺寸和安装高度相同的限制，进一步进行非均匀布局优化。基于问题二的结果，本文提出斜坡式排列策略，即增加远离吸收塔及北方定日镜的安装高度，同时减小南方定日镜高度，以最小化阴影遮挡损失。[Insert Figure C11] 优化后，定日镜场年平均输出热功率为60.34MW，单位镜面面积年平均输出热功率为0.5062 kW/m²。本文模型有效评估了定日镜场的光学性能，并通过布局优化显著提升了能量输出效率。",
+  "inserted_figures": [
+    "b3a5c638ec3bc96b20e6607c450ab170e796e4c7f8242c9fe1b2ed194b083d9b",
+    "9f52706a91df64c17edab47ebbba27802f61500c1f4da6939431624ad2c6b9de",
+    "91ebc7caaa5b6062f6162167eae4f29d93eb5eb5f39a55ce28556cb81d6647be"
+  ],
+  "selected_image_hashes": [
+    "b3a5c638ec3bc96b20e6607c450ab170e796e4c7f8242c9fe1b2ed194b083d9b",
+    "9f52706a91df64c17edab47ebbba27802f61500c1f4da6939431624ad2c6b9de",
+    "91ebc7caaa5b6062f6162167eae4f29d93eb5eb5f39a55ce28556cb81d6647be"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C10]",
+    "[Insert Figure C11]"
+  ],
+  "rationale": "C1展示了定日镜场的大地坐标系及太阳、镜子、塔的空间几何关系，是理解整个光学效率计算模型的基础；C10展示了问题二中采用的蜂窝排列法布局，直观呈现了定日镜在圆环区域内的分布策略；C11展示了问题三中采用的斜坡式排列优化策略，体现了通过调整安装高度减少阴影遮挡的核心思想。这三张图分别对应了模型基础、问题二布局策略和问题三优化策略，具有显著的认知增益。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

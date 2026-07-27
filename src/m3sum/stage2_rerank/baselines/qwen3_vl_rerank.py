@@ -26,12 +26,15 @@ class _Qwen3VLRerankBase:
         cache_root: Path,
         client: DashScopeVLRerankClient | None,
         dry_run: bool = False,
+        *,
+        query_use_keywords: bool = True,
     ):
         self.cache = VLRerankScoreCache(
             cache_root / self.cache_subdir,
             client,
             document_mode=self.document_mode,
             dry_run=dry_run,
+            query_use_keywords=query_use_keywords,
         )
         self._context_by_figure: dict[str, str] | None = None
 
@@ -95,8 +98,15 @@ class Qwen3VLRerankImgCapLinkRanker(_Qwen3VLRerankBase):
         client: DashScopeVLRerankClient | None,
         context_selector: FigureLinkContextSelector,
         dry_run: bool = False,
+        *,
+        query_use_keywords: bool = True,
     ):
-        super().__init__(cache_root, client, dry_run=dry_run)
+        super().__init__(
+            cache_root,
+            client,
+            dry_run=dry_run,
+            query_use_keywords=query_use_keywords,
+        )
         self.context_selector = context_selector
 
     def rank(self, sample: Stage2Sample) -> list:

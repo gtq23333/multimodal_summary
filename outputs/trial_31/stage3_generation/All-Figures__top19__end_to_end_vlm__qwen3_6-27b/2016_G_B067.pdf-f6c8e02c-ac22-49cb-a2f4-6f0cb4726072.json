@@ -1,0 +1,318 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "All-Figures__top19__end_to_end_vlm__qwen3_6-27b",
+  "created_at": "2026-07-10T05:30:38.936688+00:00",
+  "paper_id": "2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072",
+  "method_name": "All-Figures",
+  "pool_size": 19,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072",
+    "method_name": "All-Figures",
+    "pool_size": 19,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "39bceff768d6259a3ad74d7a6bbe2bc071547d3938b4a597118a9fa10d491ef1",
+        "rank": 1,
+        "score": null,
+        "caption": "图1 问题一分析流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\39bceff768d6259a3ad74d7a6bbe2bc071547d3938b4a597118a9fa10d491ef1.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "bc133c126d2a7c987ac407f15abbba204ed8809fe4871861a3be3e23393ee37c",
+        "rank": 2,
+        "score": null,
+        "caption": "图2“封闭式小区”近似电路图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\bc133c126d2a7c987ac407f15abbba204ed8809fe4871861a3be3e23393ee37c.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "43edda1fa1bf888165bfc485c82648ff38510257ca869ee0ca12b67840e96049",
+        "rank": 3,
+        "score": null,
+        "caption": "图3“开放式小区”近似电路图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\43edda1fa1bf888165bfc485c82648ff38510257ca869ee0ca12b67840e96049.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "daf61f1e40b9ab64242fd41f4201f28c61f633369404cac08206b465d6508dbe",
+        "rank": 4,
+        "score": null,
+        "caption": "图4开放小区以T字型交叉路口模型图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\daf61f1e40b9ab64242fd41f4201f28c61f633369404cac08206b465d6508dbe.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "4f22a358b7e238855ca215a7dd8d950b8d1a5ccc6143d33e683f1db7d935f418",
+        "rank": 5,
+        "score": null,
+        "caption": "图5小区开放程度偏大",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\4f22a358b7e238855ca215a7dd8d950b8d1a5ccc6143d33e683f1db7d935f418.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "3fd10399513de6119641c95a571ecbe23f9cec75cf905e144854aae587bbfd25",
+        "rank": 6,
+        "score": null,
+        "caption": "图6小区开放程度偏小",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\3fd10399513de6119641c95a571ecbe23f9cec75cf905e144854aae587bbfd25.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "e9271be4f78387cabc2b01af79311bc5ce91f726f60578d10386c2e6e3f7d8a6",
+        "rank": 7,
+        "score": null,
+        "caption": "图7封闭型参考小区",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\e9271be4f78387cabc2b01af79311bc5ce91f726f60578d10386c2e6e3f7d8a6.jpg"
+      },
+      {
+        "candidate_id": "C8",
+        "image_hash": "151815083df7a2bb503cf6ca3e183be09aef953086441411d6d43e65d83203b2",
+        "rank": 8,
+        "score": null,
+        "caption": "图8环形开放小区",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\151815083df7a2bb503cf6ca3e183be09aef953086441411d6d43e65d83203b2.jpg"
+      },
+      {
+        "candidate_id": "C9",
+        "image_hash": "bbeaf52801f257face11bc915d6bf662c8fef914307dce600e2429f3b826e673",
+        "rank": 9,
+        "score": null,
+        "caption": "图9主干道为单车道",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\bbeaf52801f257face11bc915d6bf662c8fef914307dce600e2429f3b826e673.jpg"
+      },
+      {
+        "candidate_id": "C10",
+        "image_hash": "9761e99a6acdcf2f80ce15914d7be15eeb718caa8c4c967a5c0655d8a2af943e",
+        "rank": 10,
+        "score": null,
+        "caption": "图10主干道为双车道",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\9761e99a6acdcf2f80ce15914d7be15eeb718caa8c4c967a5c0655d8a2af943e.jpg"
+      },
+      {
+        "candidate_id": "C11",
+        "image_hash": "866363cc019bfd790c94dae36724c290e4eb4b911346fb9beda894e735e477c4",
+        "rank": 11,
+        "score": null,
+        "caption": "图11封闭型参考小区",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\866363cc019bfd790c94dae36724c290e4eb4b911346fb9beda894e735e477c4.jpg"
+      },
+      {
+        "candidate_id": "C12",
+        "image_hash": "e968ab47c9caf67bbfa53a79bcf72af67bb96e83b58809fd366d1c51a9396c6e",
+        "rank": 12,
+        "score": null,
+        "caption": "图12车流量较大",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\e968ab47c9caf67bbfa53a79bcf72af67bb96e83b58809fd366d1c51a9396c6e.jpg"
+      },
+      {
+        "candidate_id": "C13",
+        "image_hash": "e7be01aab9fb7af4ea966f99e86a14d63812ac9a74c347ce604bec2e750a8dc9",
+        "rank": 13,
+        "score": null,
+        "caption": "图13车流量平缓",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\e7be01aab9fb7af4ea966f99e86a14d63812ac9a74c347ce604bec2e750a8dc9.jpg"
+      },
+      {
+        "candidate_id": "C14",
+        "image_hash": "fe846ca2d0bd38764c39ffa56bf99ced7ef758b4cfa10d6252c0485f7019f4c1",
+        "rank": 14,
+        "score": null,
+        "caption": "图14封闭型参考小区",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\fe846ca2d0bd38764c39ffa56bf99ced7ef758b4cfa10d6252c0485f7019f4c1.jpg"
+      },
+      {
+        "candidate_id": "C15",
+        "image_hash": "7effe8fbc1c227a6bd099e89c0d553f9ce6748abe62ae7cb77e96a6ef28f4f67",
+        "rank": 15,
+        "score": null,
+        "caption": "图15  $k - \\nu$  关系图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\7effe8fbc1c227a6bd099e89c0d553f9ce6748abe62ae7cb77e96a6ef28f4f67.jpg"
+      },
+      {
+        "candidate_id": "C16",
+        "image_hash": "ee8adc1ac28f6db9d8ece5682b7e4bd6c042c4529f4d3d8feaa62193757458de",
+        "rank": 16,
+        "score": null,
+        "caption": "图16  $Q - \\nu$  关系图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\ee8adc1ac28f6db9d8ece5682b7e4bd6c042c4529f4d3d8feaa62193757458de.jpg"
+      },
+      {
+        "candidate_id": "C17",
+        "image_hash": "c23030df2cf6e315792dae42110493e0bafca6257c48c02747a2501b74e0a6da",
+        "rank": 17,
+        "score": null,
+        "caption": "图17  $m$  、  $\\nu$  和  $k$  散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\c23030df2cf6e315792dae42110493e0bafca6257c48c02747a2501b74e0a6da.jpg"
+      },
+      {
+        "candidate_id": "C18",
+        "image_hash": "ec825a671452aef70eb982f050a3e9bfd98b51c9318a0a420fb4bd0743752a7d",
+        "rank": 18,
+        "score": null,
+        "caption": "图18  $\\nu -m$  关系图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\ec825a671452aef70eb982f050a3e9bfd98b51c9318a0a420fb4bd0743752a7d.jpg"
+      },
+      {
+        "candidate_id": "C19",
+        "image_hash": "6a7c9aa3f30a1d06d78a824ca00ca136a717fe9bb7d9b9339a87d6dd6135da09",
+        "rank": 19,
+        "score": null,
+        "caption": "图19  $Q - m$  关系图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2016_G_B067.pdf-f6c8e02c-ac22-49cb-a2f4-6f0cb4726072\\images\\6a7c9aa3f30a1d06d78a824ca00ca136a717fe9bb7d9b9339a87d6dd6135da09.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "39bceff768d6259a3ad74d7a6bbe2bc071547d3938b4a597118a9fa10d491ef1",
+      "43edda1fa1bf888165bfc485c82648ff38510257ca869ee0ca12b67840e96049",
+      "bc133c126d2a7c987ac407f15abbba204ed8809fe4871861a3be3e23393ee37c"
+    ],
+    "retrieval_metrics": {
+      "ip@19": 0.157895,
+      "ir@19": 1.0,
+      "jaccard@19": 0.157895
+    },
+    "reference_summary": null,
+    "reference_sequence": null,
+    "pool_metadata": {
+      "pool_type": "all_figures",
+      "actual_candidate_count": 19
+    }
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_383",
+        "block_idx": 383,
+        "query_dimension": "分析",
+        "text": "·在考虑城市总体规划时，可充分考虑并利用小区内部的道路进行交通流量的分担，考虑小区开放对周边道路通行能力的影响，要结合小区的内部结构，周边道路的结构等诸多因素进行综合评价，确定如何布局的小区适合开放，确定小区的开放形式，以合理的方式来取得最大的效益。"
+      },
+      {
+        "block_id": "b_8",
+        "block_idx": 8,
+        "query_dimension": "分析",
+        "text": "2.1 问题一的分析问题一要求选取合适的指标并建立评价体系，用以评价小区由“封闭”变为“开放”后对周边道路通行的影响。首先，根据指标选取的一般原则客观地选出评价指标；其次，解释每个评价指标的含义并分析其能够进行评价的原因以及评价步骤；最后，根据选取的评价指标建立有关隶属度函数的模糊数学评价模型[1]，权重的确定选择较客观的熵权法。选取一个从封闭到逐步开放的小区为例，通过对比小区内由于增设道路方案不同时所造成的不同影响，确定小区开放后对周边道路通行能力的影响。问题一的分析过程流程图见图1。"
+      },
+      {
+        "block_id": "b_397",
+        "block_idx": 397,
+        "query_dimension": "分析",
+        "text": "1）问题一在合理选取评价指标后建立模糊综合评价模型，对6个指标进行综合分析，为避免主观评价对真实情况的影响，本文利用熵权法和隶属度相关知识，科学合理的确定了各评价指标的权重系数，使得整个评价模型的建立较为合理、准确。"
+      },
+      {
+        "block_id": "b_4",
+        "block_idx": 4,
+        "query_dimension": "分析",
+        "text": "1.2 问题提出1.为了说明小区开放对周边道路通行的影响，请选择适当的指标体系进行评价。2.为了研究小区开放对周边道路通行的影响，请建立有关车辆通行的数学模型进行分析。3.小区开放产生的效果，可能会和小区结构及周边道路结构、车流量等因素有关。请选择或构建不同类型的小区，应用前两问建立的模型，定量比较各类型小区开放前后对道路通行的影响。4.根据前三问的研究，从交通通行的角度，向城市规划和交通管理部门提出有关小区开放的合理化建议。"
+      },
+      {
+        "block_id": "b_6",
+        "block_idx": 6,
+        "query_dimension": "分析",
+        "text": "二、问题分析“封闭式小区”在建筑规划图中严格规定了边界的范围，通常只有本小区的车辆和行人才会每天进出。但有一些小区地理位置特殊，如果能提供道路让外部车辆和行人进出，就会在一定程度上增加道路面积，从而可能对其周围道路通行能力有所影响。若选择合适的指标并用指标建立适当的模型，从科学的角度定量分析则可以确定小区开放对周边道路通行的影响。"
+      },
+      {
+        "block_id": "b_11",
+        "block_idx": 11,
+        "query_dimension": "分析",
+        "text": "问题二要求建立关于车辆通行的数学模型。本文首先建立基于电路图的车辆通行模型，将小区周围的道路情况当做电路原件，从车流量、行程时间和可达性等指标出发，通过对比电路图的差异定性和定量分析小区从“封闭”变为“开放”后指标的变化情况，从而得知小区开放后对周边道路通行情况的整体影响；其次，建立理论递推模型进行细化研究，以 $T$ 字型开放路口为研究对象，综合运用第一问选出的评价指标并结合0- 1变量模型，推导出小区开放后对周边道路通行的影响情况。"
+      },
+      {
+        "block_id": "b_398",
+        "block_idx": 398,
+        "query_dimension": "分析",
+        "text": "2）问题二首先建立物理模型，整体上通达地讲述了开放小区支路后道路总的通行能力增加、拥塞问题相对减少和可达性的提高；其次以评价指标为依据，建立理论递推模型，精确地计算出小区开放前后周边道路的通行能力；最后建立多目标规划模型，意在对道路网络和小区的开放结构提出优化建议，整体模型思路清晰具有条理性。"
+      },
+      {
+        "block_id": "b_2",
+        "block_idx": 2,
+        "query_dimension": "分析",
+        "text": "要想确定“封闭式小区”是否要打开就要研究小区打开后对周边道路通行的影响，因此要建立数学模型，为科学决策提供定量依据。"
+      },
+      {
+        "block_id": "b_272",
+        "block_idx": 272,
+        "query_dimension": "建模",
+        "text": "本文以小区结构、周边道路结构和车流流量三方面为模型变量，以单变量分析法自建不同类型小区简化模型图进行研究，具体步骤如下："
+      },
+      {
+        "block_id": "b_13",
+        "block_idx": 13,
+        "query_dimension": "建模",
+        "text": "问题三要求以不同类型的小区为研究对象，研究其开放前后对道路通行的影响。本文以小区结构、周边道路结构和车流量三者为变量进行单变量分析研究，并运用CAD软件摹绘出10不同类型小区；通过查阅和参考相关文献，对各类型小区进行参数设置，并运用问题二理论递推模型进行小区开放前后道路通行能力的定量计算和比较，进而得出问题结论。"
+      },
+      {
+        "block_id": "b_400",
+        "block_idx": 400,
+        "query_dimension": "建模",
+        "text": "4）问题四在提出建议之前首先建立了交通流模型，将网络调研与统计分析相结合，以本地特定小区内部交通结构等因素进行研究测评，侧面反映出开放小区内部道路通行能力的关系和现状，是本文的一大亮点；以实际分析结果强烈建议小区内部实行“禁摩”和绿色出行的措施；最后结合本文之前模型和评价指标对城市规划和交通管理部门提出推进小区开放化的合理建议。"
+      },
+      {
+        "block_id": "b_1",
+        "block_idx": 1,
+        "query_dimension": "建模",
+        "text": "封闭的小区打开之后就成为“开放式小区”，所谓“开放式小区”是指让封闭小区内部的一些道路与外界的公路相连，使这些内部道路也能供小区以外的车辆和行人使用。但小区开放之后可能会引发一系列安全问题，除此之外，小区开放是否可以达到优化路网结构、提高道路通行能力、改善交通状况的目的以及改善效果如何，这些问题也引起了群众的热议。一种观点是：封闭式小区破坏了城市道路网结构，堵塞了城市的“毛细血管”，容易造成交通拥堵，而小区开放后道路变多、道路面积增加，道路通行能力也因此会有所提高；但也有人认为这与小区的位置、面积以及内外部道路状况等因素有关，不能一概而论。另一种观点认为：小区开放后虽然道路数量变多，道路面积变大，但小区周围主干道上进出小区交叉口的车辆也会随之增加，这可能导致主干道的通行速度减慢。"
+      },
+      {
+        "block_id": "b_265",
+        "block_idx": 265,
+        "query_dimension": "求解",
+        "text": "本文用不同类型的简易小区模型进行对道路通行能力影响的研究。针对三种影响关系，本文列出9类小区模型（10幅图片，见图5~14）进行定量计算和对比分析。查阅相关道路法规和文献，并将每幅图片中相应参数设置如表5所示："
+      },
+      {
+        "block_id": "b_394",
+        "block_idx": 394,
+        "query_dimension": "求解",
+        "text": "$\\bullet$ 在进行小区内部道路设计前，要制定出合理方案，确定具体修建几条路能够最大程度地缓解小区附近交通压力，同时还兼顾考虑了道路方向的影响。"
+      },
+      {
+        "block_id": "b_399",
+        "block_idx": 399,
+        "query_dimension": "求解",
+        "text": "3）问题三建立了单变量分析模型，以题目所给三大方面影响因素为研究方向，以控制变量为前提，并对各方面因素再次细分，研究不同类型的小区开放前后对其周边道路通行能力的影响，使得层次分明。"
+      }
+    ],
+    "body_char_count": 29886
+  },
+  "generated_summary": "针对国务院推广街区制、开放封闭小区的政策，本文研究了小区开放对周边道路通行的影响。首先，选取车流密度、车流速度、行程时间、延误时间、道路饱和度、交叉路口阻塞率6个指标，建立基于隶属度函数的模糊综合评价模型，利用熵权法客观确定指标权重，以评价小区开放前后的通行能力变化 [Insert Figure C1]。其次，建立基于“电路图”的车辆通行模型，将道路类比为电路元件，通过对比封闭与开放状态下的电路结构（并联支路），直观分析车流量增加和行程时间减少的机理 [Insert Figure C3]。同时，建立理论递推模型和多目标规划模型，量化开放对通行能力的影响。接着，针对小区结构、周边道路结构及车流量三个变量，构建10种不同类型的小区模型进行单变量分析，定量比较发现小区开放程度越大、周边路网越复杂，对通行能力的增强效果越显著。最后，建立Greenshields交通流模型，分析“禁摩”措施的影响。通过拟合车流速度、密度与摩托车比重的关系，发现摩托车比重增加会显著降低道路通行能力 [Insert Figure C19]。研究表明，小区开放总体上能优化路网、提高通行能力，建议城市规划部门综合考虑小区布局，交通管理部门实施“禁摩”等措施以最大化开放效益。",
+  "inserted_figures": [
+    "39bceff768d6259a3ad74d7a6bbe2bc071547d3938b4a597118a9fa10d491ef1",
+    "43edda1fa1bf888165bfc485c82648ff38510257ca869ee0ca12b67840e96049",
+    "6a7c9aa3f30a1d06d78a824ca00ca136a717fe9bb7d9b9339a87d6dd6135da09"
+  ],
+  "selected_image_hashes": [
+    "39bceff768d6259a3ad74d7a6bbe2bc071547d3938b4a597118a9fa10d491ef1",
+    "43edda1fa1bf888165bfc485c82648ff38510257ca869ee0ca12b67840e96049",
+    "6a7c9aa3f30a1d06d78a824ca00ca136a717fe9bb7d9b9339a87d6dd6135da09"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C3]",
+    "[Insert Figure C19]"
+  ],
+  "rationale": "C1展示了问题一评价指标体系的构建逻辑和流程，有助于理解评价模型的结构。C3展示了问题二的核心建模方法——电路类比模型，直观体现了小区开放后道路并联带来的分流效应和通行能力提升。C19展示了问题四的核心结论，即摩托车比重与车流量的负相关关系，直接支持了“禁摩”的政策建议。这三张图分别覆盖了评价流程、核心机理和关键结论，具有显著的认知增益。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

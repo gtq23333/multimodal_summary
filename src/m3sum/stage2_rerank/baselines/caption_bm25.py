@@ -15,6 +15,9 @@ class CaptionBM25Ranker:
 
     method_name = "Caption-BM25"
 
+    def __init__(self, *, query_use_keywords: bool = True):
+        self.query_use_keywords = query_use_keywords
+
     def rank(self, sample: Stage2Sample) -> list:
         if not sample.figures:
             return []
@@ -30,7 +33,7 @@ class CaptionBM25Ranker:
                 continue
             query_scores: list[float] = []
             for q in sample.sub_queries:
-                q_tokens = tokenize(q.query + " " + " ".join(q.keywords))
+                q_tokens = tokenize(q.search_text(use_keywords=self.query_use_keywords))
                 if not q_tokens:
                     query_scores.append(0.0)
                     continue

@@ -1,0 +1,1484 @@
+{
+  "paper_id": "2023_G_B226.pdf-138a457c-a3d1-4dec-a2b6-3b5dc1265cc7",
+  "top3_figures": [
+    {
+      "image_hash": "12eec5b5cbd4f1cc81683097a4aa07e75efa370d7b4631d1122383504c56eaeb",
+      "caption": "图1：多波束测深原理图",
+      "score": 0.897397,
+      "s_direct": 0.794793,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_24",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了保证模型的建立符合实际情况，首先对多波束测量仪的工作原理进行简要说明。"
+        },
+        {
+          "block_id": "b_26",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "与单波束测量不同，多波束系统工作时换能器同时发射多束声波（如左图），在垂直于航向方向上形成一个发射波束扇形声波传播区，从而得到一个条带覆盖区域内多个测点的海底深"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_26",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_26",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.897397,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 5,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_2",
+          "b_77",
+          "b_32",
+          "b_81"
+        ]
+      },
+      "pos": 25,
+      "rank": 1
+    },
+    {
+      "image_hash": "be469d28a1a90aec0fc2e4f2512f4daf341ab317ccbb267b1e68a0bcb112b1f6",
+      "caption": "图2：多波束测量坐标系的建立",
+      "score": 0.548037,
+      "s_direct": 0.737236,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_28",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据测量船的运动情况，以海域中心点为坐标原点  $O$  ，以测量船的行驶方向（测线方向）为  $x$  轴，以测线间距的分布方向为  $y$  轴，以海水深度"
+        },
+        {
+          "block_id": "b_30",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 多波束测深覆盖宽度及重叠率的计算"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_30",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_30",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.868618,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 5,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_2",
+          "b_77",
+          "b_32",
+          "b_81"
+        ]
+      },
+      "pos": 29,
+      "rank": 2
+    },
+    {
+      "image_hash": "65a5ac10881c39cb68f8cb61ad07f6744781ece4c266f183904dd88a7353b66c",
+      "caption": "图3：不同测线的海水深度",
+      "score": 0.415444,
+      "s_direct": 0.661774,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_32",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如图所示，多波束测深条带的覆盖宽度  $W$  与换能器开角  $\\theta$  、海水深度  $D$  有关。因此，计算多波束在某位置下的覆盖宽度的前提是海"
+        },
+        {
+          "block_id": "b_34",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图分析可知，测量船在坐标原点O处的海水深度为  $D_0$  ，测量船在不同位置的海水深度  $D$  可由海域中心处的海水深度  $D_0$  和该位置据"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_32",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.830887,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 5,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_2",
+          "b_77",
+          "b_32",
+          "b_81"
+        ]
+      },
+      "pos": 33,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "12eec5b5cbd4f1cc81683097a4aa07e75efa370d7b4631d1122383504c56eaeb",
+      "caption": "图1：多波束测深原理图",
+      "score": 0.897397,
+      "s_direct": 0.794793,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_24",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了保证模型的建立符合实际情况，首先对多波束测量仪的工作原理进行简要说明。"
+        },
+        {
+          "block_id": "b_26",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "与单波束测量不同，多波束系统工作时换能器同时发射多束声波（如左图），在垂直于航向方向上形成一个发射波束扇形声波传播区，从而得到一个条带覆盖区域内多个测点的海底深"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_26",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_26",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.897397,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 5,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_2",
+          "b_77",
+          "b_32",
+          "b_81"
+        ]
+      },
+      "pos": 25,
+      "rank": 1
+    },
+    {
+      "image_hash": "be469d28a1a90aec0fc2e4f2512f4daf341ab317ccbb267b1e68a0bcb112b1f6",
+      "caption": "图2：多波束测量坐标系的建立",
+      "score": 0.548037,
+      "s_direct": 0.737236,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_28",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据测量船的运动情况，以海域中心点为坐标原点  $O$  ，以测量船的行驶方向（测线方向）为  $x$  轴，以测线间距的分布方向为  $y$  轴，以海水深度"
+        },
+        {
+          "block_id": "b_30",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 多波束测深覆盖宽度及重叠率的计算"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_30",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_30",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.868618,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 5,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_2",
+          "b_77",
+          "b_32",
+          "b_81"
+        ]
+      },
+      "pos": 29,
+      "rank": 2
+    },
+    {
+      "image_hash": "65a5ac10881c39cb68f8cb61ad07f6744781ece4c266f183904dd88a7353b66c",
+      "caption": "图3：不同测线的海水深度",
+      "score": 0.415444,
+      "s_direct": 0.661774,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_32",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如图所示，多波束测深条带的覆盖宽度  $W$  与换能器开角  $\\theta$  、海水深度  $D$  有关。因此，计算多波束在某位置下的覆盖宽度的前提是海"
+        },
+        {
+          "block_id": "b_34",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图分析可知，测量船在坐标原点O处的海水深度为  $D_0$  ，测量船在不同位置的海水深度  $D$  可由海域中心处的海水深度  $D_0$  和该位置据"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_32",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_32",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.830887,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 5,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_8",
+          "b_2",
+          "b_77",
+          "b_32",
+          "b_81"
+        ]
+      },
+      "pos": 33,
+      "rank": 3
+    },
+    {
+      "image_hash": "d8dd23716c6f2d209b4d75c79ad8161c35e1a1cbb63d4e0f6321eccc5881ba9c",
+      "caption": "图9：问题二求解流程",
+      "score": 0.315245,
+      "s_direct": 0.396293,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.30103,
+      "p_type": 1.5,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_88",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "5.2 问题二：多波束测深覆盖宽度的数学模型在问题二中，已知一个矩形海域，坡度为  $\\alpha$ ，且测线方向与海底坡面的法向在水平面的投影的夹角为  $\\"
+        },
+        {
+          "block_id": "b_90",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.1多波束测深覆盖宽度模型的建立"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_88",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_88",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.698147,
+        "rerank_profile": "legacy"
+      },
+      "pos": 89,
+      "rank": 4
+    },
+    {
+      "image_hash": "f79010fc7ab1064814dc43f9f294aeb6d66880ebe72c402ac1fa8b2ad99875f4",
+      "caption": "图6：覆盖宽度随开角的变化",
+      "score": 0.294365,
+      "s_direct": 0.652773,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_78",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 多波束换能器的开角对覆盖宽度的影响"
+        },
+        {
+          "block_id": "b_80",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 多波束换能器的开角对重叠率的影响"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_80",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_80",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.826387,
+        "rerank_profile": "legacy"
+      },
+      "pos": 79,
+      "rank": 5
+    },
+    {
+      "image_hash": "783743def1bedeb799d9e72d4b3e992a88dd51fce5f0ebd2212eb34041d09356",
+      "caption": "图7：重叠率随开角的变化",
+      "score": 0.270674,
+      "s_direct": 0.624046,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_82",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "左图为覆盖宽度随换能器的开角  $\\theta$  的变化曲线。保持测线间距  $d$  不变，多次改变多波束换能器的开角  $\\theta$ ，可以发现开角越"
+        },
+        {
+          "block_id": "b_84",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 测线间距对重叠率的影响"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_82",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_82",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.812023,
+        "rerank_profile": "legacy"
+      },
+      "pos": 83,
+      "rank": 6
+    },
+    {
+      "image_hash": "2004f22e88f1973291e5571dead23371a1b9307bbbbb8896d3d81ce82cec2fa0",
+      "caption": "图8：重叠率随测线间距的变化",
+      "score": 0.212381,
+      "s_direct": 0.677863,
+      "s_link": 0.668603,
+      "s_co": 0.668603,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_84",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 测线间距对重叠率的影响"
+        },
+        {
+          "block_id": "b_86",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "测线间距对重叠率的影响左图为重叠率随测线间距的变化曲线。保持换能器的开角不变，将  $[- 800m, 800m]$  进行  $n$  等分，从而改变测线间距"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_87",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_86",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.668603,
+          "distance_weight": 1.0,
+          "s_link": 0.668603,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.673233,
+        "rerank_profile": "legacy"
+      },
+      "pos": 85,
+      "rank": 7
+    },
+    {
+      "image_hash": "a1e47c97e1c9317833d5727644cdeffd35c777dbb4e3cc84e5c14e51e9f0e863",
+      "caption": "图4：覆盖宽度计算",
+      "score": 0.209197,
+      "s_direct": 0.647236,
+      "s_link": 0.324244,
+      "s_co": 0.324244,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_39",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由式（1）我们已经得到了海水深度的计算方式，在此基础上，通过增添辅助线，结合平面几何知识和正弦定理可以给出覆盖宽度的计算公式，具体操作如下。"
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在上图中，过点  $A$  作垂线  $AE\\bot BC$  ，垂足为  $E$  ，交海底坡面  $BF$  于点  $G$  。通过查阅资料，多波束测深系"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_120",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_41",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.81061,
+          "distance_weight": 0.4,
+          "s_link": 0.324244,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.48574,
+        "rerank_profile": "legacy"
+      },
+      "pos": 40,
+      "rank": 8
+    },
+    {
+      "image_hash": "b1827b8e1ddd6969a51284c6d89fa852425b93a0fef0f4c814cbf77520631908",
+      "caption": "图18：最优测线布设",
+      "score": 0.202712,
+      "s_direct": 0.722209,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.235409,
+      "p_type": 1.0,
+      "figure_index": "18",
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_197",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "已知测线方向和所有测线的具体位置，据此就能够得到该矩形海域的测线布设方案。如下图所示，图中纵坐标零点为东海岸线，红色直线为西海岸线。"
+        },
+        {
+          "block_id": "b_199",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "上图为该矩形待测海域的最优测线布设方案，图中给出了最西边两条测线的条带宽度以及二者之间的重叠区域，可以发现最西边的测线条带宽度已经超出西海岸线，满足全覆盖测量要"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_199",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_199",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.861105,
+        "rerank_profile": "legacy"
+      },
+      "pos": 198,
+      "rank": 9
+    },
+    {
+      "image_hash": "505722209f9281239c24bef0122c40fa911abdbb23dadf1b724058e963f3aa6e",
+      "caption": "图17：最优测线布设求解流程",
+      "score": 0.191838,
+      "s_direct": 0.74492,
+      "s_link": 0.321678,
+      "s_co": 0.321678,
+      "p_layout": 0.239812,
+      "p_type": 1.5,
+      "figure_index": "17",
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_187",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3.2 基于贪心算法循环遍历确定最优测线布设"
+        },
+        {
+          "block_id": "b_189",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于上述过程建立的确定测线位置的单目标优化模型，我们基于贪心算法的思想逐步优化求解。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_201",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_187",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.804194,
+          "distance_weight": 0.4,
+          "s_link": 0.321678,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.533299,
+        "rerank_profile": "legacy"
+      },
+      "pos": 188,
+      "rank": 10
+    },
+    {
+      "image_hash": "69c264abd6427e3680b3b7680b19e87a5052b9476bc8b288c59c843cfd6d8458",
+      "caption": "图 26：多波束测线布设",
+      "score": 0.184525,
+      "s_direct": 0.754792,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.21031,
+      "p_type": 1.0,
+      "figure_index": "26",
+      "layout_index": 26.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_252",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据最终的区域划分结果，通过粒子群算法求解坡面方程、贪心算法循环遍历求解模型（11），得到各个划分区域的测线位置、测线条数、与水平面的夹角  $\\alpha$ "
+        },
+        {
+          "block_id": "b_254",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可以看出，不同区域测线的布设方向不同，这是由等深线的大致走向决定的。同时，海域西南角的测线布设相对密集；东南角的测线布设相对稀疏，这与海底地形相互印证。在"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_252",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_252",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.877396,
+        "rerank_profile": "legacy"
+      },
+      "pos": 253,
+      "rank": 11
+    },
+    {
+      "image_hash": "99e9f621635aacf464dca5973081f9499c3b7aed1539af86db817b87a83e669b",
+      "caption": "图13：三维空间到二维空间的转化",
+      "score": 0.178378,
+      "s_direct": 0.358299,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_118",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了使建模过程更加直观，做如下空间三维图和平面二维图，将多波束的扫射平面提取出来，从而将问题二与问题一相联系。在上述过程中，我们已经得到了海水深度的表达式，只需"
+        },
+        {
+          "block_id": "b_120",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从上图可以直观地看出，测量船沿着测线方向行进，在距海域中心点  $L$  处时发射多波束，波束打到海底坡面最远处的点为  $A$  、  $B$  ，图中  $"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_120",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_120",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.679149,
+        "rerank_profile": "legacy"
+      },
+      "pos": 119,
+      "rank": 12
+    },
+    {
+      "image_hash": "ab20aac9726ea2f91c35118ba10c7189a8c7445e66d3071d1869d569cf66383f",
+      "caption": "图23：待测海域初步划分",
+      "score": 0.176366,
+      "s_direct": 0.617259,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.218104,
+      "p_type": 1.0,
+      "figure_index": "23",
+      "layout_index": 23.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_227",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# $\\bullet$  基于最小二乘法确定坡面方程"
+        },
+        {
+          "block_id": "b_229",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由前面的三个问题，我们已经知道海底地形为一个坡面时覆盖宽度、重叠率的计算方式以及布设方案的确定模型。因此，在本问中，我们也希望将海底地形拟合成一个坡面以利用前文"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_229",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_229",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.80863,
+        "rerank_profile": "legacy"
+      },
+      "pos": 228,
+      "rank": 13
+    },
+    {
+      "image_hash": "17de0fbc745dfae49d7d09cfc7772811b21c10929a8adf798685d07a6b1b8c34",
+      "caption": "图20：坡度灵敏度分析",
+      "score": 0.170943,
+      "s_direct": 0.50167,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.22767,
+      "p_type": 1.0,
+      "figure_index": "20",
+      "layout_index": 20.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_212",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "5.3.4 开角、坡度的灵敏度分析基于单目标优化模型确定测线位置会受到多波束换能器的开角  $\\theta$  、海底坡度  $\\alpha$  的影响。我们通"
+        },
+        {
+          "block_id": "b_215",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "左图中，横轴代表可完全覆盖整个待测海域的测线的个数，纵轴代表每个测线的距东海岸距离。可以看出，随着开角的增大，所需要的测线个数会减少，对应最后一个测线距东海岸的"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_212",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_212",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.750835,
+        "rerank_profile": "legacy"
+      },
+      "pos": 214,
+      "rank": 14
+    },
+    {
+      "image_hash": "71d39bfe2362adc05c91b40c9d679493bafd89c3a5b3356f6ade28dce37b7222",
+      "caption": "图19：开角灵敏度分析",
+      "score": 0.166755,
+      "s_direct": 0.44141,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.231378,
+      "p_type": 1.0,
+      "figure_index": "19",
+      "layout_index": 19.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_212",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "5.3.4 开角、坡度的灵敏度分析基于单目标优化模型确定测线位置会受到多波束换能器的开角  $\\theta$  、海底坡度  $\\alpha$  的影响。我们通"
+        },
+        {
+          "block_id": "b_215",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "左图中，横轴代表可完全覆盖整个待测海域的测线的个数，纵轴代表每个测线的距东海岸距离。可以看出，随着开角的增大，所需要的测线个数会减少，对应最后一个测线距东海岸的"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_212",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_212",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.720705,
+        "rerank_profile": "legacy"
+      },
+      "pos": 213,
+      "rank": 15
+    },
+    {
+      "image_hash": "d6f13f08df47272c7bec4a6ce1d4e04ef070f4a423dbe111dea1c0bfd7946fae",
+      "caption": "图 25：海域逐步划分过程",
+      "score": 0.159582,
+      "s_direct": 0.500213,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.212746,
+      "p_type": 1.0,
+      "figure_index": "25",
+      "layout_index": 25.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_250",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "(4) 对于矩形 IV，遇到了与矩形 III 相同的情况，同样对矩形 IV 进行再分，划分为矩形 IV 和 VI，再分别求其坡面方程。"
+        },
+        {
+          "block_id": "b_252",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据最终的区域划分结果，通过粒子群算法求解坡面方程、贪心算法循环遍历求解模型（11），得到各个划分区域的测线位置、测线条数、与水平面的夹角  $\\alpha$ "
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_252",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_252",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.750107,
+        "rerank_profile": "legacy"
+      },
+      "pos": 251,
+      "rank": 16
+    },
+    {
+      "image_hash": "9cfbb00eaf7d07d8dc8d98ba7bd54a3fc705c3bd44634976df10e6e641904e75",
+      "caption": "图14：不同  $\\beta$  角对覆盖宽度的影响",
+      "score": 0.155315,
+      "s_direct": 0.613112,
+      "s_link": 0.600485,
+      "s_co": 0.600485,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_139",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$⑤$  纵向来看，每组数据中测线方向夹角为  $0^{\\circ}$  （等深线走向）时，条带的覆盖宽度达到最大值。"
+        },
+        {
+          "block_id": "b_141",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从左图可以直观看出，  $45^{\\circ}$  与  $315^{\\circ}$  、  $90^{\\circ}$  与  $270^{\\circ}$  、"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_144",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_141",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.857835,
+          "distance_weight": 0.7,
+          "s_link": 0.600485,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.606798,
+        "rerank_profile": "legacy"
+      },
+      "pos": 140,
+      "rank": 17
+    },
+    {
+      "image_hash": "fea55e5bf16ce4cd9a213e701ede7b7f71f0c1c76f27ab764c7de2e1f90c084d",
+      "caption": "图10：问题二坐标系",
+      "score": 0.155284,
+      "s_direct": 0.418541,
+      "s_link": 0.655845,
+      "s_co": 0.655845,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_92",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "以海底坡面的中心为坐标原点  $O^{\\prime}$ ，水平向右为  $x$  轴正方向，垂直向上为  $y$  轴正方向，海水深度为  $z$  轴建立新的"
+        },
+        {
+          "block_id": "b_94",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 覆盖宽度的数学模型"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_95",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_94",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.655845,
+          "distance_weight": 1.0,
+          "s_link": 0.655845,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.537193,
+        "rerank_profile": "legacy"
+      },
+      "pos": 93,
+      "rank": 18
+    },
+    {
+      "image_hash": "28aa0370ebe23139d6b562eca304b4ad5a613a34b65ff998ecdc17b7109e7be9",
+      "caption": "图5：相邻条带之间的重叠",
+      "score": 0.150358,
+      "s_direct": 0.453002,
+      "s_link": 0.324338,
+      "s_co": 0.324338,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_54",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "据此一般定义，可以在问题一中测线相互平行且海底地形为坡面的情况下计算相邻条带之间的重叠率。"
+        },
+        {
+          "block_id": "b_56",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如上图所示，假设距海域中心点  $y$  处的测线的覆盖宽度为  $HI$ ，该测线与相邻测线条带的重叠区域为  $HF$ ，则该测量条带与上一条测线的重叠率 "
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_5",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.810845,
+          "distance_weight": 0.4,
+          "s_link": 0.324338,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.38867,
+        "rerank_profile": "legacy"
+      },
+      "pos": 55,
+      "rank": 19
+    },
+    {
+      "image_hash": "6e4a221fa937807621d9b70e6f09c0d6b6d619c79a9224550f4b8664b662b524",
+      "caption": "图24：粒子群算法流程",
+      "score": 0.150069,
+      "s_direct": 0.431114,
+      "s_link": 0.498084,
+      "s_co": 0.498084,
+      "p_layout": 0.215338,
+      "p_type": 1.5,
+      "figure_index": "24",
+      "layout_index": 24.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_242",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step4判断程序是否结束：重复上述步骤直至达到迭代最大次数，停止算法，否则继续迭代。"
+        },
+        {
+          "block_id": "b_244",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# $\\bullet$  确定最优测线布设"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_246",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_244",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.711549,
+          "distance_weight": 0.7,
+          "s_link": 0.498084,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.464599,
+        "rerank_profile": "legacy"
+      },
+      "pos": 243,
+      "rank": 20
+    },
+    {
+      "image_hash": "aab331823d88069475e7b846c343818da3bcb1765188bac79c17da841416a3fd",
+      "caption": "图15：待测矩形海域",
+      "score": 0.150028,
+      "s_direct": 0.63561,
+      "s_link": 0.564613,
+      "s_co": 0.564613,
+      "p_layout": 0.25,
+      "p_type": 1.0,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_151",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "【证明】：为了证明测线沿着海水等深线方向是最佳方向，只需要证明该测线所对应的覆盖面积大于等于其他方向测线对应的覆盖面积。"
+        },
+        {
+          "block_id": "b_153",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如左图所示，在海底坡面上任取一段长度为  $i$  的测线AB，其中A在坡面上部，B在坡面下部，点o为AB的中点。过o点作一条平行于等深线且与AB等长的测线CD"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_146",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_151",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.80659,
+          "distance_weight": 0.7,
+          "s_link": 0.564613,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.600112,
+        "rerank_profile": "legacy"
+      },
+      "pos": 152,
+      "rank": 21
+    },
+    {
+      "image_hash": "474ab65de2b7dab8d93d3d58b6c01c94fe7cd25b6351011787f53865b2cc3ad0",
+      "caption": "图11：问题二几何关系分析",
+      "score": 0.126156,
+      "s_direct": 0.43906,
+      "s_link": 0.465468,
+      "s_co": 0.465468,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_97",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为了让模型的建立过程更加直观易懂，我们记测线方向与其在  $X^{\\prime}O^{\\prime}Y^{\\prime}$  面上投影组成的平面为面I，海底坡面"
+        },
+        {
+          "block_id": "b_99",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# $①$  求海底坡面的法向量  $\\overline{n_{p}}$"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_95",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_97",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.664954,
+          "distance_weight": 0.7,
+          "s_link": 0.465468,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.452264,
+        "rerank_profile": "legacy"
+      },
+      "pos": 98,
+      "rank": 22
+    },
+    {
+      "image_hash": "2a47ace6e77f265385f42893ea4c1611195f7507421e5df91cea9722897489dd",
+      "caption": "图27：多波束测深",
+      "score": 0.125123,
+      "s_direct": 0.768496,
+      "s_link": 0.434526,
+      "s_co": 0.434526,
+      "p_layout": 0.208015,
+      "p_type": 1.0,
+      "figure_index": "27",
+      "layout_index": 27.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_261",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$②$  区域II出现大量漏测，这是因为该区域的海底地形较为复杂，等深线方向极为不一致，为了降低测量工作难度，我们采用区域I的测线延伸线作为该区域的测线。区域I"
+        },
+        {
+          "block_id": "b_263",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$③$  区域III、IV、V、VI并没有出现漏测区域。这是因为对于划分的矩形区域，我们是基于贪心算法循环遍历求解测线间距的，该算法会始终让沿测线扫描形成的条带"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_266",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_263",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.620752,
+          "distance_weight": 0.7,
+          "s_link": 0.434526,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.601511,
+        "rerank_profile": "legacy"
+      },
+      "pos": 262,
+      "rank": 23
+    },
+    {
+      "image_hash": "959c233fa6d675b41bc84b10189f68a8ca235ca1bb67c277efac9a47efaad2a9",
+      "caption": "图16：矩形海域测线设计",
+      "score": 0.122335,
+      "s_direct": 0.744988,
+      "s_link": 0.255089,
+      "s_co": 0.255089,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_164",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "测线的条数  $n$  和相邻测线之间的间距，其中测线间距可以转化为不同测线的位置，以东海岸为始边，  $y_{i}$  表示测线与东海岸之间的距离，如下图所示"
+        },
+        {
+          "block_id": "b_166",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 目标函数"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_4",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_164",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.637723,
+          "distance_weight": 0.4,
+          "s_link": 0.255089,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.500039,
+        "rerank_profile": "legacy"
+      },
+      "pos": 165,
+      "rank": 24
+    },
+    {
+      "image_hash": "3ef51dd436634a4d2875ff4f2078ab5fa3131ef0821c498dc3059ffda429da49",
+      "caption": "图12：海水深度计算",
+      "score": 0.115126,
+      "s_direct": 0.570922,
+      "s_link": 0.28111,
+      "s_co": 0.28111,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_110",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设测量船距海域中心点处的距离为  $L$  ，在此处向下引垂线，作  $MH\\perp$  面  $X^{\\prime}O^{\\prime}Y^{\\prime}"
+        },
+        {
+          "block_id": "b_112",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由几何关系可知，点  $\\mathrm{H}$  的坐标可以表示为  $H = (L\\cos (\\beta - \\frac{\\pi}{2}),L\\sin (\\b"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_95",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_110",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.702775,
+          "distance_weight": 0.4,
+          "s_link": 0.28111,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.426016,
+        "rerank_profile": "legacy"
+      },
+      "pos": 111,
+      "rank": 25
+    },
+    {
+      "image_hash": "8b3dd2f9497e04f497ce92a195de50e5edd8c8a3a5589eccf6e49b5078370b08",
+      "caption": "图22：海域等深线",
+      "score": 0.109901,
+      "s_direct": 0.549951,
+      "s_link": 0.444332,
+      "s_co": 0.444332,
+      "p_layout": 0.221065,
+      "p_type": 1.0,
+      "figure_index": "22",
+      "layout_index": 22.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_220",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "以自西向东为  $x$  轴正方向，由南向北为  $y$  为正方向，海水深度方向为  $z$  轴建立三维直角坐标系。根据所给的单波束测量的海水深度数据，对其"
+        },
+        {
+          "block_id": "b_223",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "分析海底地貌图和海域等深线图可知，该海域海底的地形起伏较大，整体呈现为一个凸包。其中，可以明显看出海域东南角等深线密集，海底地形陡峭；东北角等深线较为稀疏，地形"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_218",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_220",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.63476,
+          "distance_weight": 0.7,
+          "s_link": 0.444332,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.497142,
+        "rerank_profile": "legacy"
+      },
+      "pos": 222,
+      "rank": 26
+    },
+    {
+      "image_hash": "5aa9266eb6118ae39cae5fe3ff63beb3b4ec260c3ab3ef0d06687e05efbd1535",
+      "caption": "图21：海底地貌",
+      "score": 0.106105,
+      "s_direct": 0.502,
+      "s_link": 0.444332,
+      "s_co": 0.444332,
+      "p_layout": 0.224244,
+      "p_type": 1.0,
+      "figure_index": "21",
+      "layout_index": 21.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_220",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "以自西向东为  $x$  轴正方向，由南向北为  $y$  为正方向，海水深度方向为  $z$  轴建立三维直角坐标系。根据所给的单波束测量的海水深度数据，对其"
+        },
+        {
+          "block_id": "b_223",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "分析海底地貌图和海域等深线图可知，该海域海底的地形起伏较大，整体呈现为一个凸包。其中，可以明显看出海域东南角等深线密集，海底地形陡峭；东北角等深线较为稀疏，地形"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_218",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_220",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.63476,
+          "distance_weight": 0.7,
+          "s_link": 0.444332,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.473166,
+        "rerank_profile": "legacy"
+      },
+      "pos": 221,
+      "rank": 27
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 43,
+    "query_block_pair_count": 60,
+    "cf_count": 5,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图3",
+      "图4",
+      "图5"
+    ],
+    "rerank_profile": "legacy"
+  }
+}

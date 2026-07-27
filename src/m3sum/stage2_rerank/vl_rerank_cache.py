@@ -8,8 +8,42 @@ from pathlib import Path
 from m3sum.clients.dashscope_vl_rerank import DashScopeVLRerankClient, DocumentMode
 from m3sum.data.schema import FigureMeta, SubQuery
 from m3sum.stage2_rerank.figure_filter import select_body_caption_figures
+from m3sum.stage2_rerank.query_text import sub_query_search_texts
 
 logger = logging.getLogger(__name__)
+
+_CACHE_META_KEY = "_meta"
+
+
+def _query_texts_for_cache(
+    sub_queries: list[SubQuery],
+    *,
+    query_use_keywords: bool,
+) -> list[str]:
+    return sub_query_search_texts(sub_queries, use_keywords=query_use_keywords)
+
+
+def _load_vl_rerank_cache(
+    cache_path: Path,
+    sub_queries: list[SubQuery],
+    *,
+    query_use_keywords: bool,
+) -> dict[str, dict[str, float]]:
+    if not cache_path.is_file():
+        return {}
+    raw = json.loads(cache_path.read_text(encoding="utf-8"))
+    meta = raw.get(_CACHE_META_KEY)
+    expected = _query_texts_for_cache(
+        sub_queries,
+        query_use_keywords=query_use_keywords,
+    )
+    if (
+        not meta
+        or meta.get("query_texts") != expected
+        or meta.get("query_use_keywords") != query_use_keywords
+    ):
+        return {}
+    return {k: v for k, v in raw.items() if k != _CACHE_META_KEY}
 
 
 class VLRerankScoreCache:
@@ -22,11 +56,13 @@ class VLRerankScoreCache:
         *,
         document_mode: DocumentMode,
         dry_run: bool = False,
+        query_use_keywords: bool = True,
     ):
         self.cache_dir = cache_dir
         self.client = client
         self.document_mode = document_mode
         self.dry_run = dry_run
+        self.query_use_keywords = query_use_keywords
         self.cache_dir.mkdir(parents=True, exist_ok=True)
 
     def _cache_path(self, paper_id: str) -> Path:
@@ -48,14 +84,18 @@ class VLRerankScoreCache:
         candidate_hashes = [f.image_hash for f in captioned_figs]
 
         cache_path = self._cache_path(paper_id)
-        cached: dict[str, dict[str, float]] = {}
-
-        if cache_path.is_file():
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
-        elif self.document_mode == DocumentMode.IMAGE_ONLY:
+        cached = _load_vl_rerank_cache(
+            cache_path,
+            sub_queries,
+            query_use_keywords=self.query_use_keywords,
+        )
+        if not cached and self.document_mode == DocumentMode.IMAGE_ONLY:
             legacy_path = self.cache_dir.parent / f"{paper_id}.json"
-            if legacy_path.is_file():
-                cached = json.loads(legacy_path.read_text(encoding="utf-8"))
+            cached = _load_vl_rerank_cache(
+                legacy_path,
+                sub_queries,
+                query_use_keywords=self.query_use_keywords,
+            )
 
         query_scores: list[dict[str, float]] = []
 
@@ -77,17 +117,20 @@ class VLRerankScoreCache:
             else:
                 if self.client is None:
                     raise RuntimeError("Qwen3-VL-Rerank 需要 client 或 dry_run=True")
+                query_text = sub_query.search_text(
+                    use_keywords=self.query_use_keywords
+                )
                 logger.info(
                     "  [VL-Rerank] mode=%s paper=%s query_idx=%d text=%r candidates=%d/%d",
                     self.document_mode.value,
                     paper_id,
                     q_idx,
-                    sub_query.query[:80],
+                    query_text[:80],
                     len(captioned_figs),
                     len(all_figures),
                 )
                 reranked = self.client.rerank_figures(
-                    sub_query.query,
+                    query_text,
                     captioned_figs,
                     mode=self.document_mode,
                     context_by_figure=context_by_figure,
@@ -104,11 +147,19 @@ class VLRerankScoreCache:
             merged.update(candidate_scores)
             query_scores.append(merged)
 
-        if not self.dry_run:
-            cache_path.write_text(
-                json.dumps(cached, ensure_ascii=False, indent=2),
-                encoding="utf-8",
-            )
+            if not self.dry_run:
+                payload = dict(cached)
+                payload[_CACHE_META_KEY] = {
+                    "query_use_keywords": self.query_use_keywords,
+                    "query_texts": _query_texts_for_cache(
+                        sub_queries,
+                        query_use_keywords=self.query_use_keywords,
+                    ),
+                }
+                cache_path.write_text(
+                    json.dumps(payload, ensure_ascii=False, indent=2),
+                    encoding="utf-8",
+                )
 
         return query_scores
 

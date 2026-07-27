@@ -1,0 +1,215 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "Layout-Order__top6__end_to_end_vlm__qwen3_6-27b",
+  "created_at": "2026-07-09T05:49:20.222212+00:00",
+  "paper_id": "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545",
+  "method_name": "Layout-Order",
+  "pool_size": 6,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545",
+    "method_name": "Layout-Order",
+    "pool_size": 6,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "1748643b5eeb1cfdaa71753c86efe8f025e6523d8ee724df0b3641273e4b42fb",
+        "rank": 1,
+        "score": -1.0,
+        "caption": "图1白班黑车与其它颜色车的顺序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545\\images\\1748643b5eeb1cfdaa71753c86efe8f025e6523d8ee724df0b3641273e4b42fb.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "478918bed5ce90e43ff395806336ec7778f9325ceac62795b4f7855b0c7eea3c",
+        "rank": 2,
+        "score": -2.0,
+        "caption": "图2喷涂线介绍图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545\\images\\478918bed5ce90e43ff395806336ec7778f9325ceac62795b4f7855b0c7eea3c.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e",
+        "rank": 3,
+        "score": -3.0,
+        "caption": "图3颜色装配问题流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545\\images\\e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "cfe682066869be7228c8ebc83633109ca53c0fa6f41091e7a8c7f3269a2ac4ec",
+        "rank": 4,
+        "score": -4.0,
+        "caption": "图4驱动装配问题流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545\\images\\cfe682066869be7228c8ebc83633109ca53c0fa6f41091e7a8c7f3269a2ac4ec.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "12b6aa3ed6ab1839efa507bd798d6a040c770190fbf635f2d0939ec10982eb6b",
+        "rank": 5,
+        "score": -5.0,
+        "caption": "图5改变黑车数量后的对比分析图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_D029.pdf-10d238b4-ee16-4891-9522-f7e895f2f545\\images\\12b6aa3ed6ab1839efa507bd798d6a040c770190fbf635f2d0939ec10982eb6b.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "cfe682066869be7228c8ebc83633109ca53c0fa6f41091e7a8c7f3269a2ac4ec",
+      "e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e"
+    ],
+    "retrieval_metrics": {
+      "ip@6": 0.333333,
+      "ir@6": 1.0,
+      "jaccard@6": 0.4,
+      "maxsim@6": 0.852374
+    },
+    "reference_summary": null,
+    "reference_sequence": null
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_23",
+        "block_idx": 23,
+        "query_dimension": "分析",
+        "text": "汽车生产线优化有一系列不同要求，分析附件，得知要解决的问题为最优化问题及数据排序。建立汽车装配模型，并根据不同的要求进行修改，使汽车装配模型符合题目要求。"
+      },
+      {
+        "block_id": "b_108",
+        "block_idx": 108,
+        "query_dimension": "分析",
+        "text": "对于S类车（银色、灰色车)，在满足驱动、动力的情况下尽可能将银色、灰色间隔排序，能使每条喷涂线的汽车颜色连续，符合同色车尽量连续喷涂作业的要求，能减少成本。若与驱动、动力、配置冲突，则服从下方的准则5。"
+      },
+      {
+        "block_id": "b_171",
+        "block_idx": 171,
+        "query_dimension": "分析",
+        "text": "将五个属性共同分析时，发现各属性之间有冲突，根据准则6，会有银色和灰色或棕色的车不连续在同一条喷涂线喷涂等，造成成本增加。"
+      },
+      {
+        "block_id": "b_55",
+        "block_idx": 55,
+        "query_dimension": "分析",
+        "text": "因为一天分为两班白班和晚班，总装线上和喷涂线上的各项要求对相邻的两个班次的车辆同样适用。先考虑将品牌A1和A2分别各自分为两批数量第一批尽量能多放属性为四驱的车就多安排四驱的车，若不行则将四驱车的数量平均排在两个班。"
+      },
+      {
+        "block_id": "b_30",
+        "block_idx": 30,
+        "query_dimension": "分析",
+        "text": "针对颜色属性，用Excel软件统计出各种颜色的汽车数量。以减少成本为前提，将数量最多的颜色与其它颜色在进行衔接考虑；根据题目所给要求，考虑将蓝色车辆与白色车辆分开，将金色车与红色车或黄色车分开，由于银色、灰色和棕色都可以用于相互间隔，但是棕色车与白车间隔可降低成本。所以在减少相应代价降低生产线成本的基础上安排合适的装配顺序。"
+      },
+      {
+        "block_id": "b_49",
+        "block_idx": 49,
+        "query_dimension": "分析",
+        "text": "汽车总装线的配置问题中由品牌、配置、动力、驱动、颜色5种属性确定，先将五种属性各自做出处理方案，再将各属性结合分析，确立最终汽车装配顺序。"
+      },
+      {
+        "block_id": "b_167",
+        "block_idx": 167,
+        "query_dimension": "分析",
+        "text": "将5个模型的约束条件、准则、各颜色、配置、型号、动力、驱动的车数量合并考虑，写出C语言代码[6]，见附录二的2.1。"
+      },
+      {
+        "block_id": "b_10",
+        "block_idx": 10,
+        "query_dimension": "分析",
+        "text": "3）不同颜色汽车在总装线上排列时的具体要求如下："
+      },
+      {
+        "block_id": "b_25",
+        "block_idx": 25,
+        "query_dimension": "建模",
+        "text": "使用然后使用序贯算法的思想，根据品牌、配置、动力、驱动、颜色这5个属性的优先级，将目标规划问题分解成一系列的单目标规划问题，然后根据优先级依次求解。"
+      },
+      {
+        "block_id": "b_50",
+        "block_idx": 50,
+        "query_dimension": "建模",
+        "text": "因为属性（品牌、配置、动力、驱动、颜色这5个属性）的多样性和工艺要求繁琐，难以找到使所有目标达到最佳的方案，于是采用多目标规划。将目标规划问题分解成一系列的单目标规划问题，然后根据优先级依次求解。"
+      },
+      {
+        "block_id": "b_118",
+        "block_idx": 118,
+        "query_dimension": "建模",
+        "text": "动力、驱动属性优先级高于 $S$ 类车、白色车、棕色车优先级为第二优先级，当 $S$ 类车的间隔排序与驱动、动力冲突时，考虑到驱动、动力装配顺序出现异常比 $S$ 类车的非间隔排序成本更大，所以 $S$ 类车的排序服从驱动、动力的要求。"
+      },
+      {
+        "block_id": "b_13",
+        "block_idx": 13,
+        "query_dimension": "建模",
+        "text": "（c）灰色或银色的汽车可以连续排列，或与颜色为黄、红、金中的一种颜色的汽车间隔排列；金色汽车要求与黄色或红色的汽车间隔排列；若无法满足要求，亦可以与颜色为灰、棕、银中的一种颜色的汽车间隔排列。"
+      },
+      {
+        "block_id": "b_33",
+        "block_idx": 33,
+        "query_dimension": "建模",
+        "text": "将分析后得出的品牌、配置、颜色、驱动、动力等的5种属性数据进行归类，在考虑生产成本的基础上安排合适的装配顺序，设计出算法，并写出代码。"
+      },
+      {
+        "block_id": "b_24",
+        "block_idx": 24,
+        "query_dimension": "求解",
+        "text": "因为属性和工艺要求的多样性，难以找到使所有目标达到最佳的方案，于是采用多目标规划。而序贯式算法是求解目标规划的一种早期算法，其核心是根据优先级的先后次序，将目标规划问题分解成一系列的单目标规划问题，然后再依次求解，所以可以使用序贯算法的思想。"
+      },
+      {
+        "block_id": "b_18",
+        "block_idx": 18,
+        "query_dimension": "求解",
+        "text": "（1）根据问题的背景和装配要求结合附件中的数据，建立数学模型或者设计算法，使结果能符合要求、并且生产成本较低的装配顺序。"
+      },
+      {
+        "block_id": "b_51",
+        "block_idx": 51,
+        "query_dimension": "求解",
+        "text": "而序贯算法是求解目标规划的一种早期算法，其核心是根据优先级的先后次序，将目标规划问题分解成一系列的单目标规划问题，然后再依次求解，序贯算法符合我们的解题思路。"
+      },
+      {
+        "block_id": "b_199",
+        "block_idx": 199,
+        "query_dimension": "求解",
+        "text": "[1] 卢丹丹. 房地产多目标决策模糊综合优选模型的研究[D]. 西南交通大学, 2017[2] 快速序贯算法[J]. 周世健, 夏尚坤. 解放军测绘学院学报. 1994(01)[3] 成亚君, 降低轿车涂装换色成本的途径[J]. 上海涂料, 2013, 51(11):48- 49[4] 肖芬陈立新, 山西大学商务学院, 2018年06月11日, \"互联网+\"环境下审计风险评估研究——基于模糊层次分析法, 审计广角[5] 荀志远赵琛琛吴秋琛赵辉, 青岛理工大学, 2018年08月27日, 海绵城市建设绩效评价研究——基于直觉模糊层次分析法. 工业安全与环保[6] 张智慧, C语言嵌入式系统编程软件设计架构研究, 单片机与嵌入式系统应用, 1:3- 5、10, 2018[7] 白永和, 数学建模教学模式的探索与实践分析, 信息记录材料, 9:126- 127, 2018. [8] Foulds LR. Combinatorial Optimization for undergraduate. New York: Springer- Verlag, 1984 (中译本: 沈明刚等. 组合最优化. 上海: 上海翻译出版社, 1998)"
+      },
+      {
+        "block_id": "b_174",
+        "block_idx": 174,
+        "query_dimension": "求解",
+        "text": "结合文献可知一般常规换色一次，消耗涂料 $0.5\\mathrm{kg}$ ，稀料 $2\\mathrm{kg}$ 左右。如果涂料以45元/kg计算，稀料以14元/kg计算，那么每次非黑色之间的换色消耗材料的成本约50元左右，结合损失的成本量化值，20日的成本大致为4550元。"
+      },
+      {
+        "block_id": "b_189",
+        "block_idx": 189,
+        "query_dimension": "求解",
+        "text": "（2）针对如何安排装配顺序表编译了代码，可以能更快高效地进行求解，提高了工作效率。"
+      },
+      {
+        "block_id": "b_90",
+        "block_idx": 90,
+        "query_dimension": "求解",
+        "text": "结合式1、式2、式3，可以在C- Free软件中用C语言编程来求解公式，编出的代码见附录二的2.1。根据附录二的2.1代码，可知第二组黑车应有数量为51辆，满足情况2，用式2可，A2型号装配48辆，计算出A1型号最后应喷涂的黑车数量 $B_{1}$ 为20辆，A2型号刚开始应喷涂的黑车数量 $B_{2}$ 为31辆。"
+      }
+    ],
+    "body_char_count": 83113
+  },
+  "generated_summary": "针对汽车总装线多属性装配约束及跨班次颜色排列的复杂问题，本文建立了一个基于序贯算法的多目标约束满足与排序优化模型。首先，分析品牌、配置、动力、驱动、颜色五种属性的耦合关系，确定求解优先级。针对品牌属性，遵循先A1后A2的顺序，每班各装配一半。针对最复杂的颜色属性，提出“五步确色法”：首先确定黑车分组，利用优化模型计算黑车组数及每组数量，确保黑车连续排列50-70辆且间隔满足要求，具体排列策略如图1所示。[Insert Figure C1] 随后依次确定蓝车、金色与R类车（红/黄）、S类车（银/灰）以及棕/白车的装配顺序，以最小化换色成本，整体颜色装配流程如图3所示。[Insert Figure C3] 针对驱动和动力属性，设计算法计算两驱/汽油车作为间隔的数量，若单班次无法满足间隔要求，则跨班次平均分配。最后，结合配置属性，利用C语言编写代码求解，得到9月17日至23日的装配顺序。结果表明，该模型能有效满足各项工艺约束，显著降低生产成本。",
+  "inserted_figures": [
+    "1748643b5eeb1cfdaa71753c86efe8f025e6523d8ee724df0b3641273e4b42fb",
+    "e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e"
+  ],
+  "selected_image_hashes": [
+    "1748643b5eeb1cfdaa71753c86efe8f025e6523d8ee724df0b3641273e4b42fb",
+    "e03c8d26acaeb440cfda801514615de0c96442b7dde04fa91fa54211ab59935e"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C3]"
+  ],
+  "rationale": "图C1（白班黑车顺序图）直观展示了黑车在总装线上的分组排列策略，特别是A1/A2品牌衔接处的处理，有助于理解核心约束的满足方式。图C3（颜色装配流程图）清晰展示了“五步确色法”的算法逻辑，这是解决复杂颜色约束的关键步骤，对理解建模方法至关重要。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

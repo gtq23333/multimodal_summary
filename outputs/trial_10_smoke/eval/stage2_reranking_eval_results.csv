@@ -1,0 +1,8 @@
+﻿paper_id,method_name,r_precision,jaccard@3,maxsim@3,map,mrr,ip@3,ir@3
+2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c,Proposed,0.0,0.0,,0.166667,0.166667,,
+2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c,Layout-Order,0.0,0.0,,0.2,0.2,,
+2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c,Caption-BM25,0.0,0.0,,0.1,0.1,,
+2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c,Caption-Dense-v4,0.0,0.0,,0.166667,0.166667,,
+2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c,Qwen3-VL-Rerank-ImgCap+Link,0.0,0.0,,0.166667,0.166667,0.0,0.0
+2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c,Qwen3-VL-Rerank-ImgCap,0.0,0.0,,0.142857,0.142857,0.0,0.0
+2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c,Qwen3-VL-Rerank-Img,0.0,0.0,,0.142857,0.142857,0.0,0.0

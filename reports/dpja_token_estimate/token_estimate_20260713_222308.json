@@ -1,0 +1,157 @@
+{
+  "ok_count": 4,
+  "error_count": 0,
+  "model": "qwen3.5-27b",
+  "overall": {
+    "prompt_tokens": {
+      "min": 9005,
+      "max": 27486,
+      "avg": 18763.2
+    },
+    "completion_tokens": {
+      "min": 3,
+      "max": 3049,
+      "avg": 764.5
+    },
+    "total_tokens": {
+      "min": 9008,
+      "max": 30535,
+      "avg": 19527.8
+    }
+  },
+  "by_corpus": {
+    "其它比赛": {
+      "count": 2,
+      "prompt_tokens": {
+        "min": 9005,
+        "max": 17042,
+        "avg": 13023.5
+      },
+      "completion_tokens": {
+        "min": 3,
+        "max": 3,
+        "avg": 3.0
+      },
+      "total_tokens": {
+        "min": 9008,
+        "max": 17045,
+        "avg": 13026.5
+      },
+      "body_chars": {
+        "min": 8851,
+        "max": 21948,
+        "avg": 15399.5
+      },
+      "abstract_chars": {
+        "min": 548,
+        "max": 988,
+        "avg": 768.0
+      }
+    },
+    "研赛": {
+      "count": 2,
+      "prompt_tokens": {
+        "min": 21520,
+        "max": 27486,
+        "avg": 24503.0
+      },
+      "completion_tokens": {
+        "min": 3,
+        "max": 3049,
+        "avg": 1526.0
+      },
+      "total_tokens": {
+        "min": 21523,
+        "max": 30535,
+        "avg": 26029.0
+      },
+      "body_chars": {
+        "min": 28738,
+        "max": 38262,
+        "avg": 33500.0
+      },
+      "abstract_chars": {
+        "min": 689,
+        "max": 1800,
+        "avg": 1244.5
+      }
+    }
+  },
+  "samples": [
+    {
+      "corpus": "研赛",
+      "sample": "A23103840031.pdf-65f87bbd-92e8-4bd5-8313-d7fae22bb056",
+      "model": "qwen3.5-27b",
+      "abstract_chars": 1800,
+      "body_chars": 28738,
+      "anchored_body_chars": 29147,
+      "prompt_chars": 36703,
+      "prompt_tokens": 21520,
+      "completion_tokens": 3,
+      "total_tokens": 21523,
+      "output_chars": 4,
+      "action_count": null,
+      "status": "truncated",
+      "error": "output too short, completion tokens unreliable",
+      "truncated": true
+    },
+    {
+      "corpus": "研赛",
+      "sample": "1048611A.pdf-adfc7a30-13d1-40f2-b959-a227987c5b6c",
+      "model": "qwen3.5-27b",
+      "abstract_chars": 689,
+      "body_chars": 38262,
+      "anchored_body_chars": 39127,
+      "prompt_chars": 45572,
+      "prompt_tokens": 27486,
+      "completion_tokens": 3049,
+      "total_tokens": 30535,
+      "output_chars": 7308,
+      "action_count": 7,
+      "status": "ok",
+      "error": null,
+      "truncated": false
+    },
+    {
+      "corpus": "其它比赛",
+      "sample": "4919队 A题.pdf-60c2f09d-c124-4e10-89ff-fd19a11e4041",
+      "model": "qwen3.5-27b",
+      "abstract_chars": 988,
+      "body_chars": 8851,
+      "anchored_body_chars": 9401,
+      "prompt_chars": 16145,
+      "prompt_tokens": 9005,
+      "completion_tokens": 3,
+      "total_tokens": 9008,
+      "output_chars": 4,
+      "action_count": null,
+      "status": "truncated",
+      "error": "output too short, completion tokens unreliable",
+      "truncated": true
+    },
+    {
+      "corpus": "其它比赛",
+      "sample": "1423队 A题.pdf-ca449d8d-71fc-40b3-9aa0-75f9a7e43bb0",
+      "model": "qwen3.5-27b",
+      "abstract_chars": 548,
+      "body_chars": 21948,
+      "anchored_body_chars": 23092,
+      "prompt_chars": 29396,
+      "prompt_tokens": 17042,
+      "completion_tokens": 3,
+      "total_tokens": 17045,
+      "output_chars": 4,
+      "action_count": null,
+      "status": "truncated",
+      "error": "output too short, completion tokens unreliable",
+      "truncated": true
+    }
+  ],
+  "created_at": "2026-07-13T14:23:08.427653+00:00",
+  "baseline_dir": "c:\\cursor_workspace\\Agents_abstract_system\\finetuning\\zero-shot-baseline-test",
+  "model_config": {
+    "model": "qwen3.5-27b",
+    "max_tokens": 8000,
+    "temperature": 0.1
+  }
+}

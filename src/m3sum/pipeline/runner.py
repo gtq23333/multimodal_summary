@@ -75,6 +75,7 @@ class PipelineRunner:
             bm25_weight=config.bm25_weight,
             vector_weight=config.vector_weight,
             top_p=config.top_p,
+            query_use_keywords=config.query_use_keywords,
         )
         self._clip_cache = None
 
@@ -97,7 +98,13 @@ class PipelineRunner:
     def run_stage2(self, paper_id: str, force: bool = False) -> dict[str, Any]:
         out_path = self.config.stage2_dir / f"{paper_id}.json"
         if self.from_cache and not force and out_path.is_file():
-            return _load_json(out_path)
+            cached = _load_json(out_path)
+            stored = cached.get("recall_debug", {}).get("query_use_keywords")
+            if stored is None:
+                if self.config.query_use_keywords is True:
+                    return cached
+            elif stored == self.config.query_use_keywords:
+                return cached
 
         stage1_path = self.config.stage1_dir / f"{paper_id}.json"
         if not stage1_path.is_file():
@@ -120,7 +127,9 @@ class PipelineRunner:
                 dim = next(iter(block_embs.values())).shape[0] if block_embs else 64
                 query_embeddings.append(np.random.randn(dim).astype(np.float32))
             else:
-                vec = self.embedder.embed_one(q.query + " " + " ".join(q.keywords))
+                vec = self.embedder.embed_one(
+                    q.search_text(use_keywords=self.config.query_use_keywords)
+                )
                 query_embeddings.append(np.array(vec, dtype=np.float32))
 
         result = rerank_figures_legacy(
@@ -156,6 +165,8 @@ class PipelineRunner:
                 fig_embs_clip,
             )
 
+        result.setdefault("recall_debug", {})
+        result["recall_debug"]["query_use_keywords"] = self.config.query_use_keywords
         _save_json(out_path, result)
         return result
 
@@ -186,7 +197,9 @@ class PipelineRunner:
                 dim = next(iter(block_embs.values())).shape[0] if block_embs else 64
                 query_embeddings.append(np.random.randn(dim).astype(np.float32))
             else:
-                vec = self.embedder.embed_one(q.query + " " + " ".join(q.keywords))
+                vec = self.embedder.embed_one(
+                    q.search_text(use_keywords=self.config.query_use_keywords)
+                )
                 query_embeddings.append(np.array(vec, dtype=np.float32))
 
         legacy_rr = self.config.raw.get("rerank_legacy", {})

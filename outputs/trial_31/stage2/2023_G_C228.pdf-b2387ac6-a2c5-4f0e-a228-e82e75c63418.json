@@ -1,0 +1,1991 @@
+{
+  "paper_id": "2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418",
+  "top3_figures": [
+    {
+      "image_hash": "07cedc2ab0e17f72e484bcbf8046f5d85bac047371b8c1aac7534adc214b5153",
+      "caption": "图1 各类型蔬菜占比",
+      "score": 0.743909,
+      "s_direct": 0.563048,
+      "s_link": 0.59818,
+      "s_co": 0.59818,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_43",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "经过规则3、规则4修正，分别处理了46个单品、12个单品，余下的90种蔬菜均划为季节性蔬菜，具体分类结果见支持材料，占比情况和部分结果如下："
+        },
+        {
+          "block_id": "b_45",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "表1 各类型蔬菜举例"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_39",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_43",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.854543,
+          "distance_weight": 0.7,
+          "s_link": 0.59818,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.580614,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_69",
+          "b_66",
+          "b_11",
+          "b_4",
+          "b_133"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.721748,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.670374,
+          "cluster_margin": 0.051374,
+          "cluster_prior_raw": 0.653181,
+          "cluster_prior": 0.653181,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.653181
+        }
+      },
+      "pos": 44,
+      "rank": 1,
+      "score_base": 0.580614
+    },
+    {
+      "image_hash": "d894d15af3b23ef015342f6327ae1db7071272b9c5e2e098118c07caaab90ebe",
+      "caption": "图5 月总销售量自相关函数图",
+      "score": 0.474879,
+      "s_direct": 0.552744,
+      "s_link": 0.822807,
+      "s_co": 0.822807,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_98",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "绘出自相关函数ACF图，如图5所示：结果发现，在与滞后阶段0相差12个月处自相关性达到峰值，并且超出置信区间，说明时间序列以年存在周期。观察时间序列按年进行分解"
+        },
+        {
+          "block_id": "b_92",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "总销量在三年间的变化曲线如图4所示，总体销量在2021.2- 2022.5年间处于低迷状态，并于2023年明显提高。"
+        },
+        {
+          "block_id": "b_96",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 时间分布规律之年规律："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_97",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_98",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "5",
+          "raw_cosine": 0.822807,
+          "distance_weight": 1.0,
+          "s_link": 0.822807,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.687775,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_69",
+          "b_66",
+          "b_11",
+          "b_4",
+          "b_133"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.916829,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.845269,
+          "cluster_margin": 0.07156,
+          "cluster_prior_raw": 0.835243,
+          "cluster_prior": 0.835243,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.835243
+        }
+      },
+      "pos": 94,
+      "rank": 2,
+      "score_base": 0.266068
+    },
+    {
+      "image_hash": "4845b520fa1e86ab17448848c5f1185394b6c11b3dfc96349f992fffd9746df7",
+      "caption": "图6 年时间序列分解",
+      "score": 0.422059,
+      "s_direct": 0.489711,
+      "s_link": 0.822807,
+      "s_co": 0.822807,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_98",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "绘出自相关函数ACF图，如图5所示：结果发现，在与滞后阶段0相差12个月处自相关性达到峰值，并且超出置信区间，说明时间序列以年存在周期。观察时间序列按年进行分解"
+        },
+        {
+          "block_id": "b_92",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "总销量在三年间的变化曲线如图4所示，总体销量在2021.2- 2022.5年间处于低迷状态，并于2023年明显提高。"
+        },
+        {
+          "block_id": "b_96",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 时间分布规律之年规律："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_97",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_98",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "6",
+          "raw_cosine": 0.822807,
+          "distance_weight": 1.0,
+          "s_link": 0.822807,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.656259,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.849187,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.750766,
+          "cluster_margin": 0.098422,
+          "cluster_prior_raw": 0.753182,
+          "cluster_prior": 0.753182,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.753182
+        }
+      },
+      "pos": 95,
+      "rank": 3,
+      "score_base": 0.233764
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "07cedc2ab0e17f72e484bcbf8046f5d85bac047371b8c1aac7534adc214b5153",
+      "caption": "图1 各类型蔬菜占比",
+      "score": 0.743909,
+      "s_direct": 0.563048,
+      "s_link": 0.59818,
+      "s_co": 0.59818,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_43",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "经过规则3、规则4修正，分别处理了46个单品、12个单品，余下的90种蔬菜均划为季节性蔬菜，具体分类结果见支持材料，占比情况和部分结果如下："
+        },
+        {
+          "block_id": "b_45",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "表1 各类型蔬菜举例"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_39",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_43",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.854543,
+          "distance_weight": 0.7,
+          "s_link": 0.59818,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.580614,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_69",
+          "b_66",
+          "b_11",
+          "b_4",
+          "b_133"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.721748,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.670374,
+          "cluster_margin": 0.051374,
+          "cluster_prior_raw": 0.653181,
+          "cluster_prior": 0.653181,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.653181
+        }
+      },
+      "pos": 44,
+      "rank": 1,
+      "score_base": 0.580614
+    },
+    {
+      "image_hash": "d894d15af3b23ef015342f6327ae1db7071272b9c5e2e098118c07caaab90ebe",
+      "caption": "图5 月总销售量自相关函数图",
+      "score": 0.474879,
+      "s_direct": 0.552744,
+      "s_link": 0.822807,
+      "s_co": 0.822807,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_98",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "绘出自相关函数ACF图，如图5所示：结果发现，在与滞后阶段0相差12个月处自相关性达到峰值，并且超出置信区间，说明时间序列以年存在周期。观察时间序列按年进行分解"
+        },
+        {
+          "block_id": "b_92",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "总销量在三年间的变化曲线如图4所示，总体销量在2021.2- 2022.5年间处于低迷状态，并于2023年明显提高。"
+        },
+        {
+          "block_id": "b_96",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 时间分布规律之年规律："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_97",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_98",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "5",
+          "raw_cosine": 0.822807,
+          "distance_weight": 1.0,
+          "s_link": 0.822807,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.687775,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_69",
+          "b_66",
+          "b_11",
+          "b_4",
+          "b_133"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.916829,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.845269,
+          "cluster_margin": 0.07156,
+          "cluster_prior_raw": 0.835243,
+          "cluster_prior": 0.835243,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.835243
+        }
+      },
+      "pos": 94,
+      "rank": 2,
+      "score_base": 0.266068
+    },
+    {
+      "image_hash": "4845b520fa1e86ab17448848c5f1185394b6c11b3dfc96349f992fffd9746df7",
+      "caption": "图6 年时间序列分解",
+      "score": 0.422059,
+      "s_direct": 0.489711,
+      "s_link": 0.822807,
+      "s_co": 0.822807,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_98",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "绘出自相关函数ACF图，如图5所示：结果发现，在与滞后阶段0相差12个月处自相关性达到峰值，并且超出置信区间，说明时间序列以年存在周期。观察时间序列按年进行分解"
+        },
+        {
+          "block_id": "b_92",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "总销量在三年间的变化曲线如图4所示，总体销量在2021.2- 2022.5年间处于低迷状态，并于2023年明显提高。"
+        },
+        {
+          "block_id": "b_96",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 时间分布规律之年规律："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_97",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_98",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "6",
+          "raw_cosine": 0.822807,
+          "distance_weight": 1.0,
+          "s_link": 0.822807,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.656259,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.849187,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.750766,
+          "cluster_margin": 0.098422,
+          "cluster_prior_raw": 0.753182,
+          "cluster_prior": 0.753182,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.753182
+        }
+      },
+      "pos": 95,
+      "rank": 3,
+      "score_base": 0.233764
+    },
+    {
+      "image_hash": "bfb8649b24a3ad5cd8bb20f9ddf0814f5cdc9580acb1ce12df185db7878d559b",
+      "caption": "图2 打折与退货的关系",
+      "score": 0.417227,
+      "s_direct": 0.423478,
+      "s_link": 0.353321,
+      "s_co": 0.353321,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_56",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "如图2, 对两者进行 Fisher 精确性检验可以发现 p 值小于 0.05, 说明两者存在相关关系, 具体来说即, 当打折销售时退货的概率会降低。"
+        },
+        {
+          "block_id": "b_53",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "应当注意到，少量（  $5.39\\%$  ）蔬菜由于品相等原因打折销售，极少量（  $5\\text{‰}$  ）订单由于未知因素被退货。前者因为打折而导致销售单"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_61",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 0.504744,
+          "distance_weight": 0.7,
+          "s_link": 0.353321,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.388399,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 32,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_69",
+          "b_66",
+          "b_11",
+          "b_4",
+          "b_133"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.752484,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.702882,
+          "cluster_margin": 0.049603,
+          "cluster_prior_raw": 0.688695,
+          "cluster_prior": 0.688695,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.688695
+        }
+      },
+      "pos": 54,
+      "rank": 4,
+      "score_base": 0.245053
+    },
+    {
+      "image_hash": "438209ac53dfba66f52e9d73db554691ed1f962497d8a9f279df96ddfddc5ff3",
+      "caption": "图8 日总销售量周期性分析",
+      "score": 0.415732,
+      "s_direct": 0.566916,
+      "s_link": 0.74832,
+      "s_co": 0.74832,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_105",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": true,
+          "text_snippet": "绘出自相关函数ACF图，如图8(a)，我们发现在与滞后阶段0相差13处自相关性达到峰值，而这恰好为一天中存在销量的小时数，这说明时间序列以天存在稳定规律。时间序"
+        },
+        {
+          "block_id": "b_107",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 销售量的变化趋势："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_104",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_105",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "8",
+          "raw_cosine": 0.74832,
+          "distance_weight": 1.0,
+          "s_link": 0.74832,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.657618,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.895104,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.84758,
+          "cluster_margin": 0.047525,
+          "cluster_prior_raw": 0.833107,
+          "cluster_prior": 0.833107,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.833107
+        }
+      },
+      "pos": 106,
+      "rank": 5,
+      "score_base": 0.207455
+    },
+    {
+      "image_hash": "71a26329c979e5f3922e67183ad53fcb1e8fd9f4c68e83eaa69534b1af56acef",
+      "caption": "图3 商品加成率分布图",
+      "score": 0.406752,
+      "s_direct": 0.47017,
+      "s_link": 0.377178,
+      "s_co": 0.377178,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_59",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "-  $3\\sigma$  法则: 剔除利润率偏差极大的数值- 修正处理: 将利润率大于 2 的销售记录剔除经过处理之后, 删去 16430 条销售记录, 对商"
+        },
+        {
+          "block_id": "b_53",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "应当注意到，少量（  $5.39\\%$  ）蔬菜由于品相等原因打折销售，极少量（  $5\\text{‰}$  ）订单由于未知因素被退货。前者因为打折而导致销售单"
+        },
+        {
+          "block_id": "b_56",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "如图2, 对两者进行 Fisher 精确性检验可以发现 p 值小于 0.05, 说明两者存在相关关系, 具体来说即, 当打折销售时退货的概率会降低。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_61",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_59",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.538825,
+          "distance_weight": 0.7,
+          "s_link": 0.377178,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.423674,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.86173,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.781099,
+          "cluster_margin": 0.080631,
+          "cluster_prior_raw": 0.77966,
+          "cluster_prior": 0.77966,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.77966
+        }
+      },
+      "pos": 55,
+      "rank": 6,
+      "score_base": 0.211837
+    },
+    {
+      "image_hash": "6c369dffa4b8d81d80775ec00c3b8df5c4fbcf9ccf19309c74d62ea5f5d6e9da",
+      "caption": "图13 各单品总销量与累计销量占比分析",
+      "score": 0.405299,
+      "s_direct": 0.580901,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_124",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": false,
+          "text_snippet": "绘出蔬菜每种单品总销量的的直方图以及累计销量图，如图13所示，结果发现蔬菜高销售额商品只占少部分，而大部分商品的销量相对较低，前  $30\\%$  的蔬菜单品总"
+        },
+        {
+          "block_id": "b_126",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在每种品类中，某些品类中单品销售量差异明显，有些差异较小。下图所示："
+        },
+        {
+          "block_id": "b_130",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.3.2销售模式规律"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_124",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_124",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "13",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.79045,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.880498,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.781695,
+          "cluster_margin": 0.098803,
+          "cluster_prior_raw": 0.790749,
+          "cluster_prior": 0.790749,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.790749
+        }
+      },
+      "pos": 128,
+      "rank": 7,
+      "score_base": 0.207611
+    },
+    {
+      "image_hash": "d5f03b6ac8454485fa24eb3535388d9b7ac00a017b2aa74862f607df94d8c31f",
+      "caption": "图7 周总销售量周期性分析",
+      "score": 0.398238,
+      "s_direct": 0.539561,
+      "s_link": 0.619489,
+      "s_co": 0.619489,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_101",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "绘出自相关函数ACF图，如图7(a)所示：结果发现，在与滞后阶段0相差7天处自相关性达到峰值，并且超出置信区间，说明时间序列以周存在周期。时间序列分解情况如图7"
+        },
+        {
+          "block_id": "b_103",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 时间分布规律之日规律："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_104",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_103",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.619489,
+          "distance_weight": 1.0,
+          "s_link": 0.619489,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.579525,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.88498,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.827678,
+          "cluster_margin": 0.057302,
+          "cluster_prior_raw": 0.820252,
+          "cluster_prior": 0.820252,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.820252
+        }
+      },
+      "pos": 102,
+      "rank": 8,
+      "score_base": 0.193175
+    },
+    {
+      "image_hash": "12c48fd8ae712e0fc15cacab7a1bbb598955442d1a2a1a38b93ee151fce6a680",
+      "caption": "图15 各品类销售总量的偏相关性分析",
+      "score": 0.389012,
+      "s_direct": 0.660968,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.25,
+      "p_type": 1.0,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_143",
+          "source": "explicit_ref",
+          "matched_ref": "15",
+          "also_local": true,
+          "text_snippet": "采用总销售量进刻画市场总销售额的变化，对六种品类的销售量与总销售量做偏相关性分析，结果如图15所示："
+        },
+        {
+          "block_id": "b_145",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "结果发现花叶类与水生根茎类、花叶类与辣椒类、花叶类与食用菌类有相对较强的负相关性、说明花叶类销量的提高能够对水生根茎类、辣椒类、食用菌类的总销量产生一定程度的挤"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_145",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_145",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.830484,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.812121,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.740872,
+          "cluster_margin": 0.071249,
+          "cluster_prior_raw": 0.725562,
+          "cluster_prior": 0.725562,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.725562
+        }
+      },
+      "pos": 144,
+      "rank": 9,
+      "score_base": 0.207621
+    },
+    {
+      "image_hash": "7ddc80eaafd71104858d8840893b1577be9f88082bccf842c4c1f32207ac762e",
+      "caption": "图10 三年间各品类销量变化图",
+      "score": 0.387909,
+      "s_direct": 0.557104,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_112",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": true,
+          "text_snippet": "绘出在2020.7到2023.7这段时间中六个品类的总销的变化曲线如图10所示"
+        },
+        {
+          "block_id": "b_114",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "观察图片发现各个品类均会在某一相同的节点出现尖峰或低谷，其中花叶类的波动幅度最大，同时与总销售量曲线相似度最高，而茄类较为平稳，在较低销售量水平波动不明显。这与"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_114",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_114",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.778552,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.766707,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.65465,
+          "cluster_margin": 0.112058,
+          "cluster_prior_raw": 0.651429,
+          "cluster_prior": 0.651429,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.651429
+        }
+      },
+      "pos": 113,
+      "rank": 10,
+      "score_base": 0.225052
+    },
+    {
+      "image_hash": "11cec3116fd20d8ae5de6b6f28afd04d8840220f9a54e503f893f84ecf69abf9",
+      "caption": "图4 三年间蔬菜总销量曲线图",
+      "score": 0.368527,
+      "s_direct": 0.637158,
+      "s_link": 0.521976,
+      "s_co": 0.521976,
+      "p_layout": 0.430677,
+      "p_type": 0.8,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_92",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "总销量在三年间的变化曲线如图4所示，总体销量在2021.2- 2022.5年间处于低迷状态，并于2023年明显提高。"
+        },
+        {
+          "block_id": "b_96",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 时间分布规律之年规律："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_97",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_96",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.521976,
+          "distance_weight": 1.0,
+          "s_link": 0.521976,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.579567,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.787321,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.672655,
+          "cluster_margin": 0.114666,
+          "cluster_prior_raw": 0.675367,
+          "cluster_prior": 0.675367,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.675367
+        }
+      },
+      "pos": 93,
+      "rank": 11,
+      "score_base": 0.199685
+    },
+    {
+      "image_hash": "09ea96bbfd2b9cf18b03f93270e36c4747c95d777cd4710436209199fd2caad3",
+      "caption": "图17 花叶类预测",
+      "score": 0.360349,
+      "s_direct": 0.422313,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.239812,
+      "p_type": 1.0,
+      "figure_index": "17",
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_195",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为直观体现模型的可靠性，以花叶类销量预测为例展示如下，其余可见附录G："
+        },
+        {
+          "block_id": "b_197",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 7.3商超补货与定价策略研究"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_197",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_197",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.711156,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.865117,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.753936,
+          "cluster_margin": 0.111181,
+          "cluster_prior_raw": 0.759221,
+          "cluster_prior": 0.759221,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.759221
+        }
+      },
+      "pos": 196,
+      "rank": 12,
+      "score_base": 0.170544
+    },
+    {
+      "image_hash": "af1fcee1a84068b540161fc23c093fa283cd5de8ad4f8c25ed26c42824de58fe",
+      "caption": "图22 花菜类LSTM",
+      "score": 0.357193,
+      "s_direct": 0.485,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.221065,
+      "p_type": 1.0,
+      "figure_index": "22",
+      "layout_index": 22.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_333",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td>前项</td><td>后项</td><td>前项支持者</td><td>后项支持者</td><td>总支持者</td><td>置信"
+        },
+        {
+          "block_id": "b_340",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 附录H第二题定价和补货策略"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_340",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_340",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.7425,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.877176,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.761241,
+          "cluster_margin": 0.115934,
+          "cluster_prior_raw": 0.77221,
+          "cluster_prior": 0.77221,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.77221
+        }
+      },
+      "pos": 335,
+      "rank": 13,
+      "score_base": 0.164141
+    },
+    {
+      "image_hash": "e54cf4716e907b4f5ff15d857b4fba6b3149d312432129b6e5026c7fcaa41c4b",
+      "caption": "图24 茄类 LSTM",
+      "score": 0.345266,
+      "s_direct": 0.370329,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.215338,
+      "p_type": 1.0,
+      "figure_index": "24",
+      "layout_index": 24.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_333",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td>前项</td><td>后项</td><td>前项支持者</td><td>后项支持者</td><td>总支持者</td><td>置信"
+        },
+        {
+          "block_id": "b_340",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 附录H第二题定价和补货策略"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_340",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_340",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.685164,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.887509,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.78572,
+          "cluster_margin": 0.101789,
+          "cluster_prior_raw": 0.790896,
+          "cluster_prior": 0.790896,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.790896
+        }
+      },
+      "pos": 337,
+      "rank": 14,
+      "score_base": 0.147542
+    },
+    {
+      "image_hash": "b3e5bae416251564717ad632788b7a133c5c24ea10a510ddcda9d2dcf7e6abc5",
+      "caption": "图21 花叶类LSTM",
+      "score": 0.34397,
+      "s_direct": 0.400869,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.224244,
+      "p_type": 1.0,
+      "figure_index": "21",
+      "layout_index": 21.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_333",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td>前项</td><td>后项</td><td>前项支持者</td><td>后项支持者</td><td>总支持者</td><td>置信"
+        },
+        {
+          "block_id": "b_340",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 附录H第二题定价和补货策略"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_340",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_340",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.700434,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.861316,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.733827,
+          "cluster_margin": 0.127489,
+          "cluster_prior_raw": 0.747605,
+          "cluster_prior": 0.747605,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.747605
+        }
+      },
+      "pos": 334,
+      "rank": 15,
+      "score_base": 0.157068
+    },
+    {
+      "image_hash": "2426d3d6b75f0cbd8e24852a64424746d0c1ee0ab1a22b60036817eabb0c7518",
+      "caption": "图26 食用菌 LSTM",
+      "score": 0.342713,
+      "s_direct": 0.423351,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.21031,
+      "p_type": 1.0,
+      "figure_index": "26",
+      "layout_index": 26.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_333",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td>前项</td><td>后项</td><td>前项支持者</td><td>后项支持者</td><td>总支持者</td><td>置信"
+        },
+        {
+          "block_id": "b_340",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 附录H第二题定价和补货策略"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_340",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_340",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.711676,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.871526,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.765403,
+          "cluster_margin": 0.106123,
+          "cluster_prior_raw": 0.772164,
+          "cluster_prior": 0.772164,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.772164
+        }
+      },
+      "pos": 339,
+      "rank": 16,
+      "score_base": 0.149672
+    },
+    {
+      "image_hash": "dfc57067bce010abd123f8c979ac963835d99eceda67580d971ed0f9682a154f",
+      "caption": "图25 辣椒类 LSTM",
+      "score": 0.341155,
+      "s_direct": 0.369442,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.212746,
+      "p_type": 1.0,
+      "figure_index": "25",
+      "layout_index": 25.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_333",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td>前项</td><td>后项</td><td>前项支持者</td><td>后项支持者</td><td>总支持者</td><td>置信"
+        },
+        {
+          "block_id": "b_340",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 附录H第二题定价和补货策略"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_340",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_340",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.684721,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.883845,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.773473,
+          "cluster_margin": 0.110372,
+          "cluster_prior_raw": 0.781933,
+          "cluster_prior": 0.781933,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.781933
+        }
+      },
+      "pos": 338,
+      "rank": 17,
+      "score_base": 0.145672
+    },
+    {
+      "image_hash": "3bd1b6040a0e80d12751f97af18e44f47dbb0953c58c3f7599c9fe82ce531bea",
+      "caption": "图23 水生根茎类LSTM",
+      "score": 0.339951,
+      "s_direct": 0.388501,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.218104,
+      "p_type": 1.0,
+      "figure_index": "23",
+      "layout_index": 23.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_333",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td>前项</td><td>后项</td><td>前项支持者</td><td>后项支持者</td><td>总支持者</td><td>置信"
+        },
+        {
+          "block_id": "b_340",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 附录H第二题定价和补货策略"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_340",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_340",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.694251,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.850194,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.75182,
+          "cluster_margin": 0.098374,
+          "cluster_prior_raw": 0.75413,
+          "cluster_prior": 0.75413,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.75413
+        }
+      },
+      "pos": 336,
+      "rank": 18,
+      "score_base": 0.151419
+    },
+    {
+      "image_hash": "7637e762c620004d2e55679e2f2b18ec3bcbd919f6d8cea1d70360706cba3c84",
+      "caption": "图18 生鲜商超每日收益折线图",
+      "score": 0.331538,
+      "s_direct": 0.553991,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.235409,
+      "p_type": 0.8,
+      "figure_index": "18",
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_234",
+          "source": "explicit_ref",
+          "matched_ref": "18",
+          "also_local": false,
+          "text_snippet": "未来能够好的了解收益最大优化模型的决策效果，本文对过去三年间商超每日的收益进行分析，结果如图18所示。结果发现生鲜商超的日利润基本集中在500至2000的单位内"
+        },
+        {
+          "block_id": "b_235",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对收益数据的波动情况进行进一步的观察发现，生鲜商超的每日收益在每年的六月于十二月出会出现一个相对平缓的谷值，根据2023年六月末的数据以及往年变化趋势合理推测在"
+        },
+        {
+          "block_id": "b_237",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "商超决策结果如下所示，以7.1为例（详见附录H）："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_235",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_235",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.776996,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.847866,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.737654,
+          "cluster_margin": 0.110212,
+          "cluster_prior_raw": 0.740835,
+          "cluster_prior": 0.740835,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.740835
+        }
+      },
+      "pos": 236,
+      "rank": 19,
+      "score_base": 0.146329
+    },
+    {
+      "image_hash": "e6773111eea09e0ea9c3869b6a02d13eb23b5a6d60b28463cc52d51021a7d6db",
+      "caption": "图14 单笔销量与日销售数蜂窝图",
+      "score": 0.327255,
+      "s_direct": 0.567088,
+      "s_link": 0.418951,
+      "s_co": 0.418951,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_131",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": false,
+          "text_snippet": "商品的销售模式根据其单笔销售量与销售次数的关系可以划分为三种形式，少量多笔、多量少笔以及零散销售。由于每种商品出现天数不同，因此计算每种单品的单笔销量与每日平均"
+        },
+        {
+          "block_id": "b_126",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在每种品类中，某些品类中单品销售量差异明显，有些差异较小。下图所示："
+        },
+        {
+          "block_id": "b_130",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.3.2销售模式规律"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_124",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_126",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.598502,
+          "distance_weight": 0.7,
+          "s_link": 0.418951,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.49302,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.882119,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.818964,
+          "cluster_margin": 0.063155,
+          "cluster_prior_raw": 0.804253,
+          "cluster_prior": 0.804253,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.804253
+        }
+      },
+      "pos": 129,
+      "rank": 20,
+      "score_base": 0.126192
+    },
+    {
+      "image_hash": "95da0dabfffe7cbdc366b25ff236f9d622799a5c8e1a2ea9b3e84100d56ed6f8",
+      "caption": "图19 NSGA2求解结果",
+      "score": 0.317878,
+      "s_direct": 0.44248,
+      "s_link": 0.819841,
+      "s_co": 0.819841,
+      "p_layout": 0.231378,
+      "p_type": 0.8,
+      "figure_index": "19",
+      "layout_index": 19.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_281",
+          "source": "explicit_ref",
+          "matched_ref": "19",
+          "also_local": false,
+          "text_snippet": "经过400次迭代遗传算法输出结果如图19所示，观察结果选取最优解为："
+        },
+        {
+          "block_id": "b_282",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$$\nf1 = 16686,\\quad f2 = 0.9667\n$$"
+        },
+        {
+          "block_id": "b_284",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "此时商超选择进货的部分单品（只列出每个品类的两件单品，全部进货情况见附录D）补货量及定价策略为："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_285",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_284",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.819841,
+          "distance_weight": 1.0,
+          "s_link": 0.819841,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.63116,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.877796,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.810394,
+          "cluster_margin": 0.067402,
+          "cluster_prior_raw": 0.804196,
+          "cluster_prior": 0.804196,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.804196
+        }
+      },
+      "pos": 283,
+      "rank": 21,
+      "score_base": 0.116829
+    },
+    {
+      "image_hash": "aa47068ea761653dbf7ce74066eb925511bbf51014c9073fc92b66645de1f256",
+      "caption": "图11 三年间各类单品总销量曲线图",
+      "score": 0.293936,
+      "s_direct": 0.57829,
+      "s_link": 0.57345,
+      "s_co": 0.57345,
+      "p_layout": 0.278943,
+      "p_type": 0.8,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_116",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": true,
+          "text_snippet": "做出全年供应的蔬菜、季节性蔬菜以及时令性蔬菜总销量在2020.7至2023.7的变化曲线，如图11"
+        },
+        {
+          "block_id": "b_118",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "结果发现，全年可供的蔬菜总销量随时间变化的趋势与总销量变化相似度最高，季节性蔬菜销量变化总体趋势也与总销量相似，而时令性蔬菜销量总体波动幅度最小几乎只在0附近变"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_121",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_118",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.819214,
+          "distance_weight": 0.7,
+          "s_link": 0.57345,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.57587,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.783552,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.656996,
+          "cluster_margin": 0.126556,
+          "cluster_prior_raw": 0.661711,
+          "cluster_prior": 0.661711,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.661711
+        }
+      },
+      "pos": 117,
+      "rank": 22,
+      "score_base": 0.128508
+    },
+    {
+      "image_hash": "cc4d9521bf5b04293e36e0c9a1cb5a8a18bf9256b20e6637c72363430a31de26",
+      "caption": "图9 三年间总销量趋势图",
+      "score": 0.292186,
+      "s_direct": 0.450517,
+      "s_link": 0.395056,
+      "s_co": 0.395056,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_108",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": true,
+          "text_snippet": "在2020.7至2023.7这段时间中，受到经济发展、疫情影响，人们的购物习惯可能会发生显著的变化，因此本文对时间序列随总体时间变化的影星趋势进行分析。对时间序"
+        },
+        {
+          "block_id": "b_110",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "2020年新冠疫情的爆发，给各行业包括蔬菜产业都带来了极大的冲击。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_104",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_108",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "9",
+          "raw_cosine": 0.564366,
+          "distance_weight": 0.7,
+          "s_link": 0.395056,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.422786,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.775678,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.652983,
+          "cluster_margin": 0.122695,
+          "cluster_prior_raw": 0.659657,
+          "cluster_prior": 0.659657,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.659657
+        }
+      },
+      "pos": 109,
+      "rank": 23,
+      "score_base": 0.127271
+    },
+    {
+      "image_hash": "020a04ed632feab60a48f753254d383f55bec55f1e55fefb0493430f27114010",
+      "caption": "图20 LSTM模型稳定性检验（以辣椒的成本为例）",
+      "score": 0.278455,
+      "s_direct": 0.460013,
+      "s_link": 0.261143,
+      "s_co": 0.261143,
+      "p_layout": 0.22767,
+      "p_type": 1.0,
+      "figure_index": "20",
+      "layout_index": 20.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_308",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "为分析LSTM时间序列模型预测的鲁棒性，给输入时间序列一个正态分布的微小扰动，重复输出结果如下图所示"
+        },
+        {
+          "block_id": "b_310",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在以往的数据中辣椒的成本范围在2到18元左右，当加入微小扰动后，输出范围在3.16至3.93元之间，波动幅度在  $5\\%$  以内，可以认为本文搭建的LSTM"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_313",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_308",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.373061,
+          "distance_weight": 0.7,
+          "s_link": 0.261143,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.360578,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.867096,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.779001,
+          "cluster_margin": 0.088095,
+          "cluster_prior_raw": 0.785447,
+          "cluster_prior": 0.785447,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.785447
+        }
+      },
+      "pos": 309,
+      "rank": 24,
+      "score_base": 0.082093
+    },
+    {
+      "image_hash": "2dee8bdaffdb61d3967e08e6f56be155f7d73b1f676148f3aacba9a5d6d06782",
+      "caption": "图16 问题二主体思路",
+      "score": 0.22687,
+      "s_direct": 0.32798,
+      "s_link": 0.324431,
+      "s_co": 0.324431,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_150",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 七、问题二的模型建立与求解"
+        },
+        {
+          "block_id": "b_152",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 7.1 销量与成本加成定价的关系探究"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_147",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_152",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.463473,
+          "distance_weight": 0.7,
+          "s_link": 0.324431,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.326206,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.831174,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.80877,
+          "cluster_margin": 0.022404,
+          "cluster_prior_raw": 0.787687,
+          "cluster_prior": 0.588254,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.588254
+        }
+      },
+      "pos": 151,
+      "rank": 25,
+      "score_base": 0.079806
+    },
+    {
+      "image_hash": "cc6d74077cf359cf48f8940f52a0d4e87b78dc049cc72eb5afe263ff22c2e509",
+      "caption": "图12 典型品类单品销量占比",
+      "score": 0.139479,
+      "s_direct": 0.613314,
+      "s_link": 0.418951,
+      "s_co": 0.418951,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_126",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在每种品类中，某些品类中单品销售量差异明显，有些差异较小。下图所示："
+        },
+        {
+          "block_id": "b_130",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.3.2销售模式规律"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_124",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_126",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.598502,
+          "distance_weight": 0.7,
+          "s_link": 0.418951,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.516133,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.711453,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.663765,
+          "cluster_margin": 0.047688,
+          "cluster_prior_raw": 0.639954,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 127,
+      "rank": 26,
+      "score_base": 0.139479
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 49,
+    "query_block_pair_count": 60,
+    "cf_count": 32,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图3",
+      "图4",
+      "图5",
+      "图6",
+      "图7",
+      "图8",
+      "图9",
+      "图10"
+    ],
+    "rerank_profile": "legacy",
+    "main_method": "LG-JSSF-Legacy+ClusterAdd",
+    "query_use_keywords": false
+  }
+}

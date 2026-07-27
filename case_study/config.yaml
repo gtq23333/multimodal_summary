@@ -2,8 +2,11 @@ trial_config: "../src/configs/trial_20.yaml"
 data_dir: "./data"
 
 export:
+  # from_eval：读 eval 已有产物，秒级完成，无需 CLIP/网络（baseline 仅 Top-3）
+  # rerank：重放 ranker，可得 baseline Top-10，需本地缓存；建议 skip_clip: true
+  mode: from_eval
   max_rank: 10
-  skip_clip: false
+  skip_clip: true
 
 ui:
   default_k: 3

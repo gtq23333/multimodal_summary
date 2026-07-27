@@ -1,0 +1,211 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "Layout-Order__top6__end_to_end_vlm__qwen3_6-27b",
+  "created_at": "2026-07-09T05:37:43.874814+00:00",
+  "paper_id": "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925",
+  "method_name": "Layout-Order",
+  "pool_size": 6,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925",
+    "method_name": "Layout-Order",
+    "pool_size": 6,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8",
+        "rank": 1,
+        "score": -1.0,
+        "caption": "图1 本文解题过程",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925\\images\\471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "9adc39d63a42c53f0fc395527c530a3e2c7829c02615bc2033eddb89cb94e317",
+        "rank": 2,
+        "score": -2.0,
+        "caption": "图2 问题1的解题过程",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925\\images\\9adc39d63a42c53f0fc395527c530a3e2c7829c02615bc2033eddb89cb94e317.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "4b5b0c143927eb4fd2f96fca41597b32d8afb17b04c9090ba4247ab768c8d9df",
+        "rank": 3,
+        "score": -3.0,
+        "caption": "图3 巡检问题的无向赋权图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925\\images\\4b5b0c143927eb4fd2f96fca41597b32d8afb17b04c9090ba4247ab768c8d9df.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "fad88141738f8bcc6edf31e9571af7f4c5d083d3ed85f6261ff80e0a23c57fdd",
+        "rank": 4,
+        "score": -4.0,
+        "caption": "图4累计时间演示",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925\\images\\fad88141738f8bcc6edf31e9571af7f4c5d083d3ed85f6261ff80e0a23c57fdd.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "4f8401a644fa243b2e86109327a4fd2af63e8c183add1be0f2ba2b6bc96971f3",
+        "rank": 5,
+        "score": -5.0,
+        "caption": "图5所示（程序和结果见附录1）。图5 起点  $22\\rightarrow$  终点12的最短路径",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925\\images\\4f8401a644fa243b2e86109327a4fd2af63e8c183add1be0f2ba2b6bc96971f3.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "4deff488b53af707c3aaeb93cbcbaab814a0214d566321d59f2defec5617bf62",
+        "rank": 6,
+        "score": -6.0,
+        "caption": "图6 最短回路",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925\\images\\4deff488b53af707c3aaeb93cbcbaab814a0214d566321d59f2defec5617bf62.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8"
+    ],
+    "retrieval_metrics": {
+      "ip@6": 0.166667,
+      "ir@6": 1.0,
+      "jaccard@6": 0.166667,
+      "maxsim@6": 0.691712
+    },
+    "reference_summary": null,
+    "reference_sequence": null
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "分析",
+        "text": "某化工厂有若干个点需要定期巡检以保证正常生产，已知：各个点的巡检周期、巡检耗时、两点之间的连通关系及行走所需时间，如何确定最少的巡检人数和最短巡检路线，使得所有点都能被巡检，并且耗费的人力资源尽可能少，同时每名工人在一时间段内的工作量尽量平衡？在以下条件下，解决提出的问题："
+      },
+      {
+        "block_id": "b_232",
+        "block_idx": 232,
+        "query_dimension": "分析",
+        "text": "（1）使用最短路模型，找到了26个巡检点的最短回路；（2）使用背包模型，确定了覆盖最短回路的最少人数；（3）错时上班的排班方案兼顾了问题提出的所有约束条件；（4）错时上班的排班方案每天耗费的人力资源量为0分钟；（5）错时上班的排班方案每名工作人员的工作量绝对均衡；（6）吃饭时间的微小变化对排班方案没有影响；（7）指定不同的中间点对最短路长的影响很小。"
+      },
+      {
+        "block_id": "b_43",
+        "block_idx": 43,
+        "query_dimension": "分析",
+        "text": "于是问题转化为：把时间区间 $[0,g_{n + 1}]$ 分为若干段，使得每一段的时间间隔不超过这一段里所有巡检点的最小巡检周期的条件下，至少可分为几段？这是背包问题（在总价一定的情况下物品数量最小），需要建立背包模型来解决。[5- 8]"
+      },
+      {
+        "block_id": "b_3",
+        "block_idx": 3,
+        "query_dimension": "分析",
+        "text": "题目要求：（1）把所有的巡检点都要遍历；（2）耗费的人力资源尽可能少；（3）巡检人员的工作量尽可能均衡；（4）巡检人员上班时间固定或错时上班；（5）巡检人员有休息时间和吃饭时间；（6）每天三班倒；（7）每班工作8小时；"
+      },
+      {
+        "block_id": "b_16",
+        "block_idx": 16,
+        "query_dimension": "分析",
+        "text": "（1）每天三班的上班时间为：早班（8:00-16:00）、中班（16:00-24:00）、晚班（0:00-8:00）。每班工作8小时；（2）某人的人力资源消耗量是指上班期间的空闲时间和加班时间，加班时间包括巡检耗时和走路时间，以分钟计算。（3）某班（早班、中班或晚班）的人力资源消耗量是指所有工作人员的人力资源消耗量之和，以分钟计算。（4）某天的人力资源消耗量是指早班、中班和晚班的人力资源消耗量之和，以分钟计算。（5）所有巡检人员从调度中心出发，但下班后不一定回到调度中心。"
+      },
+      {
+        "block_id": "b_7",
+        "block_idx": 7,
+        "query_dimension": "分析",
+        "text": "第2阶段，在最短回路上，按照巡检点周期要求来安排若干个工作人员，使得人员数量最少，这是一个背包问题，建立背包模型来解决。"
+      },
+      {
+        "block_id": "b_105",
+        "block_idx": 105,
+        "query_dimension": "分析",
+        "text": "在本题中，早班、中班和晚班的人力资源总耗费时间绝对均衡了，所以，如果仅从人力资源均衡角度考虑，就不必再设计轮班制度了，但如果从人性化角度考虑，很多人不愿意在晚班工作，说明早班、中班和晚班还是有差异的，故设计一个早班、中班和晚班的轮换制度，如表8所示。"
+      },
+      {
+        "block_id": "b_6",
+        "block_idx": 6,
+        "query_dimension": "分析",
+        "text": "第1阶段，要使得人力资源消耗量尽可能少，需要把26个点按照先后次序找到一个最短回路，这是一个图论问题，通过建立图论中的最短路模型来解决。但最短路模型不能得到从起点到起点的最短路，于是设定一个中间点，先求出从起点到中间点的最短路径，再从26个顶点中删去已经选中的点，再求剩下点的最短路，直到求出终点为起点的最短路为止。"
+      },
+      {
+        "block_id": "b_1",
+        "block_idx": 1,
+        "query_dimension": "建模",
+        "text": "（1）固定时间上班，不考虑巡检人员的休息时间和吃饭时间；（2）固定时间上班，考虑巡检人员的休息时间和吃饭时间；（3）错时上班，不考虑巡检人员的休息时间和吃饭时间；（4）错时上班，考虑巡检人员的休息时间和吃饭时间；每班至少需要多少人？巡检线路和时间表如何安排？"
+      },
+      {
+        "block_id": "b_115",
+        "block_idx": 115,
+        "query_dimension": "建模",
+        "text": "与问题（1）不同的是：本题要考虑巡检人员的休息时间和进餐时间，其它方面是相同的。解题思路：保持问题1得到的最短回路不变，只是在背包模型中，将休息时间和进餐时间加入到累计时间进度中，对累计时间进行调整，然后代入到背包模型中求解，即可得到每班至少需要几人，以及每个人的巡检路径和时间表。"
+      },
+      {
+        "block_id": "b_236",
+        "block_idx": 236,
+        "query_dimension": "建模",
+        "text": "推广之一：社区的孤寡老人较多，需要定期上门体检以保证他们的身体健康。每次上门对一位老人体检需要走路时间和体检时间，因为老人较多，如何确定医生人数和体检路线，可以使用本文建立的模型。"
+      },
+      {
+        "block_id": "b_18",
+        "block_idx": 18,
+        "query_dimension": "建模",
+        "text": "# 5.1问题1——固定上班时间、不考虑休息时间的巡检排班方案"
+      },
+      {
+        "block_id": "b_113",
+        "block_idx": 113,
+        "query_dimension": "建模",
+        "text": "# 5.2问题（2）——固定上班时间、考虑休息时间的巡检排班方案"
+      },
+      {
+        "block_id": "b_229",
+        "block_idx": 229,
+        "query_dimension": "求解",
+        "text": "我们曾经使用了从起点出发，指定一个中间点，再回到起点的最短路算法，但运行了大概3天还没有结果，因此，在巡检点数量比较多的情况下，如何获得更精确的最短路，这是进一步研究的方向。"
+      },
+      {
+        "block_id": "b_239",
+        "block_idx": 239,
+        "query_dimension": "求解",
+        "text": "[1] 谢金星，薛毅. 优化建模与 LINDO/LINGO 软件 [M]. 北京：清华大学出版社, 2005. [2] 吴孟达，成礼智，吴翊，王丹，数学模型教程，北京：高等教育出版社, 2013. [3] 韩中庚. 数学建模方法及应用 [M]. 北京：高等教育出版社, 2009. [4] 薛毅，陈立萍. 统计建模与 R 软件 [M]. 北京：清华大学出版社，2007. [5] 杨启帆，谈之奕. 何勇. 数学建模 [M]. 浙江：浙江大学出版社, 2010. [6] 赵静，但琦. 数学建模与数学实验 [M]. 北京：高等教育出版社，2003（2006 重印） [7] 杨启帆，边馥萍. 数学模型 [M]. 浙江大学出版社, 2010. [8] 司守奎，孙兆亮，数学建模算法与应用，北京：国防工业出版社, 2015."
+      },
+      {
+        "block_id": "b_4",
+        "block_idx": 4,
+        "query_dimension": "求解",
+        "text": "要解决的问题：（1）每班需要多少人？（2）每个工作人员的巡检路线和时间表。"
+      },
+      {
+        "block_id": "b_154",
+        "block_idx": 154,
+        "query_dimension": "求解",
+        "text": "同理，可以计算出中班的背包模型求解结果、分段结果，见附录2. 结果显示，中班与早班相同，也至少需要安排5个工人。中班巡检表如表15所示。"
+      },
+      {
+        "block_id": "b_159",
+        "block_idx": 159,
+        "query_dimension": "求解",
+        "text": "同理，可以计算出晚班的背包模型求解结果、分段结果，见附录3. 结果显示，晚班与早班相同，也至少需要安排5个工人。晚班巡检表如表16所示。"
+      }
+    ],
+    "body_char_count": 113066
+  },
+  "generated_summary": "本文针对某化工厂26个巡检点的排班问题，旨在最小化人力消耗并平衡工作量。首先，构建无向赋权图，以巡检点间行走时间为权，利用最短路模型求解遍历所有点的最短回路，总耗时72分钟。[Insert Figure C1] 其次，将巡检任务转化为时间轴上的分段覆盖问题，建立背包模型以确定满足周期约束的最少巡检人数。针对固定上班和错时上班、考虑与不考虑休息进餐时间的多种场景进行求解。结果表明：在固定上班且不考虑休息时，每班需4人；考虑休息时增至5人。而在错时上班模式下，通过合理错开出发时间，不仅每班人数维持在4-5人，更实现了人力资源消耗量为0的理想状态，且工作量绝对均衡。[Insert Figure C6] 结论显示，错时上班方案在节省人力和平衡工作量方面显著优于固定上班方案。",
+  "inserted_figures": [
+    "471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8",
+    "4deff488b53af707c3aaeb93cbcbaab814a0214d566321d59f2defec5617bf62"
+  ],
+  "selected_image_hashes": [
+    "471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8",
+    "4deff488b53af707c3aaeb93cbcbaab814a0214d566321d59f2defec5617bf62"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C6]"
+  ],
+  "rationale": "C1（解题过程流程图）清晰地展示了从最短路模型和背包模型到不同排班场景的整体逻辑架构，有助于读者快速把握文章的方法论框架。C6（最短回路图）直观呈现了最短路模型求解出的具体巡检路径，是核心建模结果的重要可视化，具有显著的认知增益。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

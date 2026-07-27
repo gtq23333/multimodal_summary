@@ -67,10 +67,12 @@ class HybridRetriever:
         bm25_weight: float = 0.4,
         vector_weight: float = 0.6,
         top_p: int = 20,
+        query_use_keywords: bool = True,
     ):
         self.bm25_weight = bm25_weight
         self.vector_weight = vector_weight
         self.top_p = top_p
+        self.query_use_keywords = query_use_keywords
 
     def search(
         self,
@@ -85,7 +87,7 @@ class HybridRetriever:
 
         corpus = [_tokenize(b.text) for b in text_blocks]
         bm25 = BM25Okapi(corpus)
-        q_tokens = _tokenize(query.query + " " + " ".join(query.keywords))
+        q_tokens = _tokenize(query.search_text(use_keywords=self.query_use_keywords))
         bm25_scores = bm25.get_scores(q_tokens)
 
         if bm25_scores.max() > bm25_scores.min():

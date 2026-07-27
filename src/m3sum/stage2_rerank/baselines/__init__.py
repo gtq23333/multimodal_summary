@@ -2,6 +2,7 @@ from m3sum.stage2_rerank.baselines.base import RankedFigure, Stage2Ranker, Stage
 from m3sum.stage2_rerank.baselines.caption_bm25 import CaptionBM25Ranker
 from m3sum.stage2_rerank.baselines.caption_dense import CaptionDenseRanker
 from m3sum.stage2_rerank.baselines.layout_order import LayoutOrderRanker
+from m3sum.stage2_rerank.baselines.proposed_v2 import ProposedV2Ranker
 from m3sum.stage2_rerank.baselines.qwen3_vl_rerank import (
     Qwen3VLRerankImgCapLinkRanker,
     Qwen3VLRerankImgCapRanker,
@@ -17,6 +18,7 @@ __all__ = [
     "CaptionBM25Ranker",
     "CaptionDenseRanker",
     "LayoutOrderRanker",
+    "ProposedV2Ranker",
     "Qwen3VLRerankImgCapLinkRanker",
     "Qwen3VLRerankImgCapRanker",
     "Qwen3VLRerankImgRanker",

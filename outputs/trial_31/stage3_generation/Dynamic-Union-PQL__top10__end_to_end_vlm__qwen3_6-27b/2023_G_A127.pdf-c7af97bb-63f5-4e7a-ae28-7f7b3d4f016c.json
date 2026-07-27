@@ -1,0 +1,282 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "Dynamic-Union-PQL__top10__end_to_end_vlm__qwen3_6-27b",
+  "created_at": "2026-07-10T06:15:25.554857+00:00",
+  "paper_id": "2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c",
+  "method_name": "Dynamic-Union-PQL",
+  "pool_size": 10,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c",
+    "method_name": "Dynamic-Union-PQL",
+    "pool_size": 10,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "c4aee13b666b07df759f8929f9036ab3e13715dfaf3621d16e723b33cba19939",
+        "rank": 1,
+        "score": 0.04841188524590165,
+        "caption": "图1：镜场坐标系示意图(左图)和镜面坐标系示意图(右图)",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\c4aee13b666b07df759f8929f9036ab3e13715dfaf3621d16e723b33cba19939.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "06a0f674bed9d94b1ada85f06fe790ce652c98f7a8d2d574b43ffbb73a532caa",
+        "rank": 2,
+        "score": 0.04839549075403121,
+        "caption": "图3：影响  $E_{field}$  计算结果的变量逻辑框图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\06a0f674bed9d94b1ada85f06fe790ce652c98f7a8d2d574b43ffbb73a532caa.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "71f9dd993043ed407486c9d5abaac4cccbc7e611c4dba8278e41637d0188612e",
+        "rank": 3,
+        "score": 0.031754032258064516,
+        "caption": "图2：镜场坐标系中入射光线示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\71f9dd993043ed407486c9d5abaac4cccbc7e611c4dba8278e41637d0188612e.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "888c253c236f3cc4af3e9a7ee29ebfca794f7d6ef5e3ee38fac41ee27a013861",
+        "rank": 4,
+        "score": 0.031746031746031744,
+        "caption": "图13：变步长搜索法寻找最佳定日镜场参数流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\888c253c236f3cc4af3e9a7ee29ebfca794f7d6ef5e3ee38fac41ee27a013861.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "b3f47488d3ff1312781403dc9bd9bf6e2a3df42e8fe3ef1159d7cde5ea3d152a",
+        "rank": 5,
+        "score": 0.030776515151515152,
+        "caption": "图4：太阳光线非垂直入射时定日镜工作状态示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\b3f47488d3ff1312781403dc9bd9bf6e2a3df42e8fe3ef1159d7cde5ea3d152a.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "179d42ddcb4793f4f87182174f6618181bafcbbf4cb81c872e5135a902fe43cf",
+        "rank": 6,
+        "score": 0.030536130536130537,
+        "caption": "图18：问题三算法求解流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\179d42ddcb4793f4f87182174f6618181bafcbbf4cb81c872e5135a902fe43cf.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "226c02af9e5f10ee542e249a33ebb11d45c833b5129b08c2b48489c4c70eeef5",
+        "rank": 7,
+        "score": 0.016129032258064516,
+        "caption": "图11：区域划分示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\226c02af9e5f10ee542e249a33ebb11d45c833b5129b08c2b48489c4c70eeef5.jpg"
+      },
+      {
+        "candidate_id": "C8",
+        "image_hash": "d08b0895daa83d1e862699bc1eafaea839a4791cbdae72d6d78521706766467d",
+        "rank": 8,
+        "score": 0.015384615384615385,
+        "caption": "图10：春分日平均光学效率分布云图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\d08b0895daa83d1e862699bc1eafaea839a4791cbdae72d6d78521706766467d.jpg"
+      },
+      {
+        "candidate_id": "C9",
+        "image_hash": "ee2a92f626acab83fac21aa39ea618c72b1e169f5b49bd6f67f9e51c122c7362",
+        "rank": 9,
+        "score": 0.015384615384615385,
+        "caption": "图5：集热器挡光阴影示意图(左图)与定日镜塔挡损失示意图(右图)",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\ee2a92f626acab83fac21aa39ea618c72b1e169f5b49bd6f67f9e51c122c7362.jpg"
+      },
+      {
+        "candidate_id": "C10",
+        "image_hash": "5790f822212056450e26af81f2f10b9fa64448a7b6ea6f32b85408fb60dc4c0d",
+        "rank": 10,
+        "score": 0.015151515151515152,
+        "caption": "图6:俯仰角  $\\alpha_{Pa}$  和方位角  $\\gamma_{Pa}$  示意图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c\\images\\5790f822212056450e26af81f2f10b9fa64448a7b6ea6f32b85408fb60dc4c0d.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "179d42ddcb4793f4f87182174f6618181bafcbbf4cb81c872e5135a902fe43cf",
+      "226c02af9e5f10ee542e249a33ebb11d45c833b5129b08c2b48489c4c70eeef5",
+      "2d46f183aac17838e6d37211c82b4f201a71dd92bbfabad5af42dbed4dc08cbd",
+      "74124e754ae065300fcca3f59fa06980e4fb3cdc4f856cbf240172050f612800",
+      "888c253c236f3cc4af3e9a7ee29ebfca794f7d6ef5e3ee38fac41ee27a013861",
+      "c4aee13b666b07df759f8929f9036ab3e13715dfaf3621d16e723b33cba19939",
+      "ee2a92f626acab83fac21aa39ea618c72b1e169f5b49bd6f67f9e51c122c7362"
+    ],
+    "retrieval_metrics": {
+      "ip@10": 0.5,
+      "ir@10": 0.714286,
+      "jaccard@10": 0.416667
+    },
+    "reference_summary": null,
+    "reference_sequence": null,
+    "pool_metadata": {
+      "pool_type": "dynamic_union",
+      "source_methods": [
+        "Proposed",
+        "Qwen3-VL-Rerank-ImgCap+Link",
+        "Layout-Order"
+      ],
+      "source_top_k": 6,
+      "rrf_k": 60,
+      "nominal_budget": 18,
+      "actual_candidate_count": 10
+    }
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_5",
+        "block_idx": 5,
+        "query_dimension": "分析",
+        "text": "问题一：它给出了吸收塔位置、定日镜尺寸和安装高度的具体数值，附件提供了定日镜场所有定日镜中心的位置坐标。要求我们建立数学模型，计算该定日镜场的年平均光学效率及输出热功率等参数，并按照指定格式将计算结果写入表1和表2。"
+      },
+      {
+        "block_id": "b_392",
+        "block_idx": 392,
+        "query_dimension": "分析",
+        "text": "十、参考文献[1] 代波涛，邵琦，郭德军. 太阳能热发电定日镜旋转角度算法研究 [J]. 汽轮机技术,2020,62(02):99-100+103. [2] 谢飞. 塔式太阳能热电系统定日镜场光学仿真与应用研究 [D]. 浙江大学,2013. [3] 郭苏，刘德有. 考虑接收塔阴影的定日镜有效利用率计算 [J]. 太阳能学报,2007(11):1182-1187. [4] 张平，奚正稳，华文瀚等. 太阳能塔式光热镜场光学效率计算方法 [J]. 技术与市场,2021,28(06):5-8. [5] O. Farges, J.J. Bezian, M. El Hafi, Global optimization of solar power tower systems using a Monte Carlo algorithm: Application to a redesign of the PS10 solar thermal power plant [J], Renewable Energy, 2018, 119:345-353. [6] 魏秀东，王瑞庭，张红鑫等. 太阳能塔式热发电聚光场的光学性能分析 [J]. 光子学报,2008(11):2279-2283. [7] 贺晓雷，于贺军，李建英等. 太阳方位角的公式求解及其应用 [J]. 太阳能学报,2008(01):69-73. [8] 程小龙. 基于光学效率的塔式电站镜场布局优化设计研究 [D]. 合肥工业大学,2018. [9] 刘建兴. 塔式光热电站光学效率建模仿真及定日镜场优化布置 [D]. 兰州交通大学,2022."
+      },
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "分析",
+        "text": "随着“双碳”目标的提出和绿色中国战略的推行，搭建新能源发电系统已经成为全体社会成员关注的焦点。定日镜场利用对太阳光的反射进行光热发电，将太阳能转化为电能。塔式电站的建设是国家推行新能源政策的战略重点之一[1]。定日镜场规划方案的制定对整个太阳能发电系统的发电效率有着至关重要的影响。在实际建设过程中，易出现因定日镜位置、数目规划不合理等问题，导致发电效率低下和建设成本高昂。"
+      },
+      {
+        "block_id": "b_21",
+        "block_idx": 21,
+        "query_dimension": "分析",
+        "text": "然后，以定日镜单位面积年平均输出功率最大化为目标，建立改进定日镜场平均输出热功率优化模型。为提高搜索效率，本文采用二分法和变步长搜索策略的遍历法解得最佳定日镜场参数。然后，根据问题一设计的计算策略，完成定日镜场年平均光学效率等物理量的计算。最后，对结果进行结果分析。"
+      },
+      {
+        "block_id": "b_18",
+        "block_idx": 18,
+        "query_dimension": "分析",
+        "text": "接着，以定日镜单位面积年平均输出功率最大化为目标，建立定日镜场平均输出热功率优化模型。由于需要确定的参数数量较多，若直接进行高精度遍历会导致计算量过大，本文采用变步长策略的遍历搜索算法，完成最佳定日镜场参数的求解。然后，根据问题一设计的计算策略，完成定日镜场年平均光学效率等物理量的计算。最后，对结果进行结果分析。"
+      },
+      {
+        "block_id": "b_340",
+        "block_idx": 340,
+        "query_dimension": "分析",
+        "text": "相较于定日镜平均输出热功率优化模型的约束条件(式(42)至式(49))，发生改变的约束条件为："
+      },
+      {
+        "block_id": "b_380",
+        "block_idx": 380,
+        "query_dimension": "分析",
+        "text": "在上文中，吸收塔高度为 $80\\mathrm{m}$ 。考虑到实际塔式发电站的塔高各有不同，为探究吸收塔高度的改变对定日镜场的平均光学效率的影响程度，我们使吸收塔高度在[50,110]范围，以 $5\\mathrm{m}$ 为步长进行调整，并计算各种光学效率及年平均输出热功率的取值。"
+      },
+      {
+        "block_id": "b_4",
+        "block_idx": 4,
+        "query_dimension": "分析",
+        "text": "问题给出了定日镜安装高度、吸收塔高度等参数的具体内涵，描述了太阳光线的形式，提供了建设定日镜场的形状与位置，并建立了镜场坐标系。同时，问题给出了吸收塔高度、集热器规格等参数的具体取值，对定日镜安装位置、镜面高度等参数作出约束，并给出了“年均”指标的具体计算时间。现要求我们解决如下三个问题："
+      },
+      {
+        "block_id": "b_260",
+        "block_idx": 260,
+        "query_dimension": "建模",
+        "text": "本文建立了定日镜平均输出热功率优化模型，在定日镜底座中心距离限制等约束条件下，确定定日镜场参数，使定日镜场的额定功率达到60MW，并实现定日镜单位面积平均输出功率最大化的目标。"
+      },
+      {
+        "block_id": "b_218",
+        "block_idx": 218,
+        "query_dimension": "建模",
+        "text": "首先，本文通过制定“吸收塔选址策略”寻找最优的集热器中心位置，通过制定“分区域同心圆规划策略”确定定日镜的数量和各定日镜的排布位置。然后，以定日镜单位面积平均输出热功率最大化为目标，建立定日镜平均输出热功率优化模型。最后，通过变步长的遍历法搜索得出最优的定日镜场参数。"
+      },
+      {
+        "block_id": "b_337",
+        "block_idx": 337,
+        "query_dimension": "建模",
+        "text": "问题的优化目标为单位镜面面积年平均输出热功率最大化。因此，目标函数为："
+      },
+      {
+        "block_id": "b_264",
+        "block_idx": 264,
+        "query_dimension": "建模",
+        "text": "问题的优化目标为单位镜面面积年平均输出热功率最大化。因此，目标函数为："
+      },
+      {
+        "block_id": "b_333",
+        "block_idx": 333,
+        "query_dimension": "建模",
+        "text": "在定日镜尺寸、安装高度可以不同的条件下，本文建立了改进定日镜平均输出热功率优化模型。在定日镜底座中心距离限制等约束条件下，确定各区域中定日镜规格向量 $\\vec{Q}_{k}(W_{a,k},W_{b,k},h_{2,k})$ 、数目 $N$ 等定日镜场参数，使定日镜场的额定功率达到60MW，并实现定日镜单位面积平均输出功率最大化的目标。"
+      },
+      {
+        "block_id": "b_217",
+        "block_idx": 217,
+        "query_dimension": "建模",
+        "text": "六、问题二模型的建立与求解问题二是问题一的反问题，要求我们确定定日镜坐标数目、位置等参数，在达到吸收塔额定功率的前提下实现定日镜单位面积平均输出功率最大化的目标。问题二的关键是确定定日镜场中定日镜的数量和位置。"
+      },
+      {
+        "block_id": "b_9",
+        "block_idx": 9,
+        "query_dimension": "求解",
+        "text": "本题的研究对象为定日镜场，研究的内容为定日镜场输出热功率的计算方法和定日镜场的优化设计。它实际上是一道优化问题，要求我们得出光学效率等物理量的计算方法，设计定日镜场的相关参数，并达到定日镜输出功率最大化的目标。"
+      },
+      {
+        "block_id": "b_1",
+        "block_idx": 1,
+        "query_dimension": "求解",
+        "text": "因此，针对定日镜场的优化设计问题，为建设部门提供年平均光学效率等参数的计算方式、针对不同的定日镜参数要求制定优化的定日镜场建设方案，是提高定日镜场发电效率和推动人与自然和谐共生的重要手段。"
+      },
+      {
+        "block_id": "b_323",
+        "block_idx": 323,
+        "query_dimension": "求解",
+        "text": "相较于问题二，在问题三中定日镜场参数的约束条件发生改变。定日镜尺寸和安装高度可以根据定日镜所处的位置而做出调整。首先，制定“定日镜规格分区域规划策略”，在每个区域内定日镜尺寸和安装高度相等。接着，根据文献，确定定日镜的宽高比。然后，建立改进定日镜平均输出热功率优化模型，并通过二分法和变步长搜索遍历法完成模型的求解。最后，进行结果分析。"
+      },
+      {
+        "block_id": "b_388",
+        "block_idx": 388,
+        "query_dimension": "求解",
+        "text": "9.2 模型的缺点1. 由于采取离散化的方式对光学效率值进行求解，模型始终存在一定误差。2. 模型空间复杂度较高，问题 3 的求解时间较长"
+      },
+      {
+        "block_id": "b_390",
+        "block_idx": 390,
+        "query_dimension": "求解",
+        "text": "9.3 模型的推广1. 改变圆形定日镜场区域半径或定日镜场区域形状进行求解。2. 将镜场土地利用率作为衡量定日镜排布及参数优化的标准之一。"
+      },
+      {
+        "block_id": "b_351",
+        "block_idx": 351,
+        "query_dimension": "求解",
+        "text": "7.3 改进定日镜平均输出热功率优化模型的求解考虑到存在多个区域，若直接采用遍历法求解 $L_{0}$ 、 $W_{a,k}$ 和 $h_{i,k}$ ，存在计算量过大的问题。本文先通过二分法搜索 $L_{0}$ 的最佳取值，再通过变步长搜索法寻找 $W_{a,k}$ 和 $h_{i,k}$ 的最佳取值。结合二分法和变步长搜索法寻找最佳的定日镜场参数流程图如图18所示"
+      }
+    ],
+    "body_char_count": 81828
+  },
+  "generated_summary": "针对塔式太阳能光热发电站定日镜场的优化设计问题，本文建立了定日镜场光学效率计算模型及布局优化模型，旨在提高光热发电效率并降低建设成本。首先，为了精确描述定日镜的反射过程，分别建立了镜场坐标系和镜面坐标系，并通过坐标转换矩阵实现两者间的转化，以此确定定日镜的法向量及姿态。[Insert Figure C1] 其次，分析了定日镜场输出热功率的计算逻辑，该功率受太阳赤纬角、当地纬度、太阳时角、海拔高度以及定日镜光学效率（包括余弦效率、阴影遮挡效率、大气透射率和集热器截断效率）等多重因素影响。[Insert Figure C2] 针对问题一，通过离散化镜面和锥形光线，设计了“无效点判断策略”和光线追迹算法，精确计算了给定布局下的年平均光学效率及输出热功率。针对问题二和问题三，提出了“分区域同心圆规划策略”，将定日镜场划分为多个区域，近区采用紧密排列，远区采用交错排列，以平衡阴影遮挡与土地利用率。[Insert Figure C7] 在此基础上，建立了以单位镜面面积年平均输出热功率最大化为目标的优化模型。对于问题二，采用变步长搜索算法求解最佳定日镜尺寸、安装高度及吸收塔位置；对于问题三，结合二分法与变步长搜索算法，进一步求解不同区域定日镜规格的最优组合。[Insert Figure C4] 求解结果表明：问题一中定日镜场年平均光学效率为0.6051，年平均输出热功率为36.99MW；问题二最优方案中吸收塔位于(0, -79)，定日镜尺寸为5.5m×5.5m，安装高度2.75m，总面数3385面，年平均输出热功率达到60.12MW；问题三通过差异化设计，年平均输出热功率进一步提升至61.86MW。本文模型为定日镜场的科学规划与高效运行提供了理论依据和技术支持。",
+  "inserted_figures": [
+    "c4aee13b666b07df759f8929f9036ab3e13715dfaf3621d16e723b33cba19939",
+    "06a0f674bed9d94b1ada85f06fe790ce652c98f7a8d2d574b43ffbb73a532caa",
+    "226c02af9e5f10ee542e249a33ebb11d45c833b5129b08c2b48489c4c70eeef5",
+    "888c253c236f3cc4af3e9a7ee29ebfca794f7d6ef5e3ee38fac41ee27a013861"
+  ],
+  "selected_image_hashes": [
+    "c4aee13b666b07df759f8929f9036ab3e13715dfaf3621d16e723b33cba19939",
+    "06a0f674bed9d94b1ada85f06fe790ce652c98f7a8d2d574b43ffbb73a532caa",
+    "226c02af9e5f10ee542e249a33ebb11d45c833b5129b08c2b48489c4c70eeef5",
+    "888c253c236f3cc4af3e9a7ee29ebfca794f7d6ef5e3ee38fac41ee27a013861"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C2]",
+    "[Insert Figure C7]",
+    "[Insert Figure C4]"
+  ],
+  "rationale": "C1展示了镜场与镜面坐标系，是几何建模的基础；C2清晰呈现了输出热功率计算的变量依赖逻辑，有助于理解模型结构；C7直观展示了核心的“分区域同心圆”布局策略，体现了建模方法的创新点；C4展示了求解优化问题的变步长搜索算法流程，说明了求解方法。这四张图分别对应了建模基础、计算逻辑、布局策略和求解算法，具有显著的认知增益。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

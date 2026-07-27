@@ -1,0 +1,7 @@
+﻿target,column,spearman_rho,p_value,n
+AllFig comprehensive,allfig_score,0.0245,0.896097,31
+Best pre-recall comprehensive,best_prerecall_score,-0.1755,0.34503,31
+AllFig − Best pre-recall,delta_allfig_minus_best,0.3315,0.068447,31
+AllFig − Proposed,delta_allfig_minus_Proposed,0.4202,0.018581,31
+AllFig − Layout,delta_allfig_minus_Layout,0.3206,0.078637,31
+AllFig − QwenVL,delta_allfig_minus_QwenVL,0.1673,0.368377,31

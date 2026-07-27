@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.1.0",
+  "paper_id": "2023_G_E032.pdf-a2ac9d24-a978-4750-bdfc-d48988ea3d38",
+  "sources": {
+    "annotation_path": "C:\\cursor_workspace\\multimodal_summary_20260620\\data_annotation\\annotations\\2023_G_E032.pdf-a2ac9d24-a978-4750-bdfc-d48988ea3d38.json",
+    "problem_md_path": "C:\\cursor_workspace\\multimodal_summary_20260620\\usable_data\\problem_mds\\2023_E.pdf-93aa644e-9c4b-476c-8c54-fdc4fd1b8eb8.md"
+  },
+  "retrieval_gt": {
+    "relevant_figure_hashes": [
+      "9898eaa95c53d9a83b3f887c78bf7f706982253fb29aaa59a241fdcdaff84b8f",
+      "cd8ca00c2fd7d1d9befc4a51394fbbc8b00f6cbd7940a7b1f179fd60cadda91a",
+      "eb86647b21d9ee5b5680cc395dc29da0ec8ca9ef869f9179644f0a97b12d21b7",
+      "162100d9ece44fcd582ebbcf02f8d1ca31bd0e823655b8deb5a76f6aeb172755",
+      "b2d7c173be54a4e390f557bf4c1b510d6a12329696d08a33603977c8a9fffc9a"
+    ],
+    "note": "暂等于 insertions，后续可扩展为 2-8 张"
+  },
+  "insertion_gt": {
+    "selected_hashes": [
+      "9898eaa95c53d9a83b3f887c78bf7f706982253fb29aaa59a241fdcdaff84b8f",
+      "cd8ca00c2fd7d1d9befc4a51394fbbc8b00f6cbd7940a7b1f179fd60cadda91a",
+      "eb86647b21d9ee5b5680cc395dc29da0ec8ca9ef869f9179644f0a97b12d21b7",
+      "162100d9ece44fcd582ebbcf02f8d1ca31bd0e823655b8deb5a76f6aeb172755",
+      "b2d7c173be54a4e390f557bf4c1b510d6a12329696d08a33603977c8a9fffc9a"
+    ],
+    "reference_text": "在对黄河进行水文研究时，常通过探究水沙关系分析水沙通量的各种特性和变化规律，从而指导水资源分配和调水调沙、防洪减灾等措施。本文在对各附件数据进行预处理后，通过回归分析、小波分析、时间序列分析方法建立水沙关系模型和水沙通量模型，利用时间序列预测模型预测水沙通量的变化趋势，优化水文站采样监测方案，分析调水调沙效果。本文主要借助Python、Excel、Matlab等软件进行相关计算。\n\n对于问题一，用\"均值替补法\"补充缺失数据后，分别研究含沙量与时间、水位、水流量的关系，并进行模型展示。针对含沙量- 水位关系和含沙量- 水流量关系分别进行回归分析，运用最小二乘法进行分段拟合，利用Matlab中多项式拟合得到分段函数，同时进行拟合度检验。最后建立年总排沙量、年总水流量模型，估算了近6年数据，又运用优化的数值积分法对上述模型进行了检验。\n\n<table><tr><td>日期</td><td>2016</td><td>2017</td><td>2018</td><td>2019</td><td>2020</td><td>2021</td></tr><tr><td>年总排沙量(亿吨)</td><td>0.182</td><td>0.191</td><td>2.918</td><td>3.051</td><td>3.510</td><td>2.239</td></tr><tr><td>年总水流量(亿m³)</td><td>143.809</td><td>153.353</td><td>388.973</td><td>387.239</td><td>433.910</td><td>472.626</td></tr></table>\n\n对于问题二，按月汇总附件1数据，将每月水沙通量的特性、变化规律通过月流量均值和月排沙量均值两要素描述。突变性利用\"累积距平法\"得到累积距平曲线，找到突变月份，利用\"M- K突变检验”，判断两要素突变时间；季节性研究通过季节分解原理得两要素的时间序列分解图，由此分析季节性变化规律；周期性研究运用小波分析法得到该水文站6年来每月“小波方差分析图”与“小波变换系数实数等值线图”，获得两要素各自的变化周期。根据各特性进一步得到水沙通量的变化规律。\n\n对于问题三，针对水沙通量趋势的预测，建立SARIMA预测模型。将2016- 2020年月流量数据作为训练集，预测2021年月水沙通量变化趋势。2021年月水沙通量作为测试集，将模型预测结果与实际数据进行拟合，观察结果，将参数进行调整，找到最优参数，建立准确SARIMA预测模型，以此预测未来两年水沙通量变化趋势。根据未来两年趋势走向图，判断出未来两年水沙通量的周期性与突变性，制定最优采样监测方案。\n\n对于问题四，从水沙通量变化、河底高程变化，水情监测数据变化三方面分析调水调沙实际效果。结合问题二水沙通量变化，调水调沙起到一定作用；结合水位、河底高程与起点距离的关系，分析了水面宽度与水深的变化；采用“断面测量法”计算了水道断面面积，采用“流速面积法”计算了水道平均流速，计算结果展示出面积增大、流速略增的趋势。得出若不调水调沙，河底高程会升高的结论。",
+    "multimodal_sequence": [
+      {
+        "type": "text",
+        "content": "在对黄河进行水文研究时，常通过探究水沙关系分析水沙通量的各种特性和变化规律，从而指导水资源分配和调水调沙、防洪减灾等措施。本文在对各附件数据进行预处理后，通过回归分析、小波分析、时间序列分析方法建立水沙关系模型和水沙通量模型，利用时间序列预测模型预测水沙通量的变化趋势，优化水文站采样监测方案，分析调水调沙效果。本文主要借助Python、Excel、Matlab等软件进行相关计算。"
+      },
+      {
+        "type": "image",
+        "image_hash": "9898eaa95c53d9a83b3f887c78bf7f706982253fb29aaa59a241fdcdaff84b8f",
+        "image_filename": "9898eaa95c53d9a83b3f887c78bf7f706982253fb29aaa59a241fdcdaff84b8f.jpg",
+        "img_path": "images/9898eaa95c53d9a83b3f887c78bf7f706982253fb29aaa59a241fdcdaff84b8f.jpg",
+        "source_type": "image",
+        "caption": "图1. 本文的研究路径"
+      },
+      {
+        "type": "text",
+        "content": "\n\n对于问题一，用\"均值替补法\"补充缺失数据后，分别研究含沙量与时间、水位、水流量的关系，并进行模型展示。"
+      },
+      {
+        "type": "image",
+        "image_hash": "cd8ca00c2fd7d1d9befc4a51394fbbc8b00f6cbd7940a7b1f179fd60cadda91a",
+        "image_filename": "cd8ca00c2fd7d1d9befc4a51394fbbc8b00f6cbd7940a7b1f179fd60cadda91a.jpg",
+        "img_path": "images/cd8ca00c2fd7d1d9befc4a51394fbbc8b00f6cbd7940a7b1f179fd60cadda91a.jpg",
+        "source_type": "image",
+        "caption": "图5. 含沙量-水流量关系图"
+      },
+      {
+        "type": "text",
+        "content": "针对含沙量- 水位关系和含沙量- 水流量关系分别进行回归分析，运用最小二乘法进行分段拟合，利用Matlab中多项式拟合得到分段函数，同时进行拟合度检验。最后建立年总排沙量、年总水流量模型，估算了近6年数据，又运用优化的数值积分法对上述模型进行了检验。\n\n<table><tr><td>日期</td><td>2016</td><td>2017</td><td>2018</td><td>2019</td><td>2020</td><td>2021</td></tr><tr><td>年总排沙量(亿吨)</td><td>0.182</td><td>0.191</td><td>2.918</td><td>3.051</td><td>3.510</td><td>2.239</td></tr><tr><td>年总水流量(亿m³)</td><td>143.809</td><td>153.353</td><td>388.973</td><td>387.239</td><td>433.910</td><td>472.626</td></tr></table>\n\n对于问题二，按月汇总附件1数据，将每月水沙通量的特性、变化规律通过月流量均值和月排沙量均值两要素描述。突变性利用\"累积距平法\"得到累积距平曲线，找到突变月份，利用\"M- K突变检验”，判断两要素突变时间；季节性研究通过季节分解原理得两要素的时间序列分解图，由此分析季节性变化规律；周期性研究运用小波分析法得到该水文站6年来每月“小波方差分析图”与“小波变换系数实数等值线图”，获得两要素各自的变化周期。根据各特性进一步得到水沙通量的变化规律。\n\n对于问题三，针对水沙通量趋势的预测，建立SARIMA预测模型。"
+      },
+      {
+        "type": "image",
+        "image_hash": "eb86647b21d9ee5b5680cc395dc29da0ec8ca9ef869f9179644f0a97b12d21b7",
+        "image_filename": "eb86647b21d9ee5b5680cc395dc29da0ec8ca9ef869f9179644f0a97b12d21b7.jpg",
+        "img_path": "images/eb86647b21d9ee5b5680cc395dc29da0ec8ca9ef869f9179644f0a97b12d21b7.jpg",
+        "source_type": "image",
+        "caption": "图17.SARIMA原理分析图"
+      },
+      {
+        "type": "text",
+        "content": "将2016- 2020年月流量数据作为训练集，预测2021年月水沙通量变化趋势。2021年月水沙通量作为测试集，将模型预测结果与实际数据进行拟合，观察结果，将参数进行调整，找到最优参数，建立准确SARIMA预测模型，以此预测未来两年水沙通量变化趋势。根据未来两年趋势走向图，判断出未来两年水沙通量的周期性与突变性，制定最优采样监测方案。\n\n对于问题四，从水沙通量变化、河底高程变化，水情监测数据变化三方面分析调水调沙实际效果。结合问题二水沙通量变化，调水调沙起到一定作用；结合水位、河底高程与起点距离的关系，分析了水面宽度与水深的变化；采用“断面测量法”计算了水道断面面积，"
+      },
+      {
+        "type": "image",
+        "image_hash": "162100d9ece44fcd582ebbcf02f8d1ca31bd0e823655b8deb5a76f6aeb172755",
+        "image_filename": "162100d9ece44fcd582ebbcf02f8d1ca31bd0e823655b8deb5a76f6aeb172755.jpg",
+        "img_path": "images/162100d9ece44fcd582ebbcf02f8d1ca31bd0e823655b8deb5a76f6aeb172755.jpg",
+        "source_type": "image",
+        "caption": "图31．求解水道断面面积示意图"
+      },
+      {
+        "type": "text",
+        "content": "采用“流速面积法”计算了水道平均流速，计算结果展示出面积增大、流速略增的趋势。"
+      },
+      {
+        "type": "image",
+        "image_hash": "b2d7c173be54a4e390f557bf4c1b510d6a12329696d08a33603977c8a9fffc9a",
+        "image_filename": "b2d7c173be54a4e390f557bf4c1b510d6a12329696d08a33603977c8a9fffc9a.jpg",
+        "img_path": "images/b2d7c173be54a4e390f557bf4c1b510d6a12329696d08a33603977c8a9fffc9a.jpg",
+        "source_type": "image",
+        "caption": "图32. 求解水道平均速度示意图"
+      },
+      {
+        "type": "text",
+        "content": "得出若不调水调沙，河底高程会升高的结论。"
+      }
+    ]
+  }
+}

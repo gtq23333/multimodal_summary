@@ -1,0 +1,3176 @@
+{
+  "paper_id": "2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5",
+  "top3_figures": [
+    {
+      "image_hash": "6c358f6aa3dd1ba2bd75cf3d509f8e80bf863cb064c3ee9b73bf66f9b445191a",
+      "caption": "图2含沙量时序图",
+      "score": 0.543875,
+      "s_direct": 0.579325,
+      "s_link": 0.504302,
+      "s_co": 0.504302,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_36",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": false,
+          "text_snippet": "画出含沙量的时序图，如图2所示。从图中可知，有几个离群点，必须剔除。剔除离群点之后，时序图如图3所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_176",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": false,
+          "text_snippet": "从图2可得出以下结论：水通量的主周期在20月附近，次周期在55月附近。"
+        },
+        {
+          "block_id": "b_38",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）含沙量随着年份存在周期性波动。"
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "分别计算12个月的月份指数和4个季度的季度指数，如图4、图5所示，从图中可得出以下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_33",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_38",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.720431,
+          "distance_weight": 0.7,
+          "s_link": 0.504302,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.541813,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 64,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_9",
+          "b_113",
+          "b_114",
+          "b_306"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.906963,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.808545,
+          "cluster_margin": 0.098418,
+          "cluster_prior_raw": 0.808115,
+          "cluster_prior": 0.808115,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.808115
+        }
+      },
+      "pos": 39,
+      "rank": 1,
+      "score_base": 0.341846
+    },
+    {
+      "image_hash": "7430f086203f5a3e1c90a32d4d66ed5ab423f169f22e351ca9292cdb61e5195b",
+      "caption": "图4含沙量的月份指数",
+      "score": 0.485435,
+      "s_direct": 0.517685,
+      "s_link": 0.790475,
+      "s_co": 0.790475,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_41",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "分别计算12个月的月份指数和4个季度的季度指数，如图4、图5所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_183",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "从图4可得出以下结论：沙通量的主周期在20月附近。"
+        },
+        {
+          "block_id": "b_43",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）每年2、3季度为旺季，每年1、4季度为淡季。"
+        },
+        {
+          "block_id": "b_46",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.1.2研究含沙量与时刻（日）的关系"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_182",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_183",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 0.790475,
+          "distance_weight": 1.0,
+          "s_link": 0.790475,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.65408,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 64,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_9",
+          "b_113",
+          "b_114",
+          "b_306"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.913453,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.817432,
+          "cluster_margin": 0.096021,
+          "cluster_prior_raw": 0.814953,
+          "cluster_prior": 0.814953,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.814953
+        }
+      },
+      "pos": 44,
+      "rank": 2,
+      "score_base": 0.281697
+    },
+    {
+      "image_hash": "e9b28d6af8eb7eaf1d86da72a3e20a682007eb6352003327545457e7cd10e9f9",
+      "caption": "图3剔除离群点后的含沙量时序图",
+      "score": 0.476066,
+      "s_direct": 0.577644,
+      "s_link": 0.504302,
+      "s_co": 0.504302,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_36",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "画出含沙量的时序图，如图2所示。从图中可知，有几个离群点，必须剔除。剔除离群点之后，时序图如图3所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_38",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）含沙量随着年份存在周期性波动。"
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "分别计算12个月的月份指数和4个季度的季度指数，如图4、图5所示，从图中可得出以下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_33",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_38",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.720431,
+          "distance_weight": 0.7,
+          "s_link": 0.504302,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.540973,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.921004,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.827869,
+          "cluster_margin": 0.093136,
+          "cluster_prior_raw": 0.822316,
+          "cluster_prior": 0.822316,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.822316
+        }
+      },
+      "pos": 40,
+      "rank": 3,
+      "score_base": 0.270487
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "6c358f6aa3dd1ba2bd75cf3d509f8e80bf863cb064c3ee9b73bf66f9b445191a",
+      "caption": "图2含沙量时序图",
+      "score": 0.543875,
+      "s_direct": 0.579325,
+      "s_link": 0.504302,
+      "s_co": 0.504302,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_36",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": false,
+          "text_snippet": "画出含沙量的时序图，如图2所示。从图中可知，有几个离群点，必须剔除。剔除离群点之后，时序图如图3所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_176",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": false,
+          "text_snippet": "从图2可得出以下结论：水通量的主周期在20月附近，次周期在55月附近。"
+        },
+        {
+          "block_id": "b_38",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）含沙量随着年份存在周期性波动。"
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "分别计算12个月的月份指数和4个季度的季度指数，如图4、图5所示，从图中可得出以下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_33",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_38",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.720431,
+          "distance_weight": 0.7,
+          "s_link": 0.504302,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.541813,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 64,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_9",
+          "b_113",
+          "b_114",
+          "b_306"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.906963,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.808545,
+          "cluster_margin": 0.098418,
+          "cluster_prior_raw": 0.808115,
+          "cluster_prior": 0.808115,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.808115
+        }
+      },
+      "pos": 39,
+      "rank": 1,
+      "score_base": 0.341846
+    },
+    {
+      "image_hash": "7430f086203f5a3e1c90a32d4d66ed5ab423f169f22e351ca9292cdb61e5195b",
+      "caption": "图4含沙量的月份指数",
+      "score": 0.485435,
+      "s_direct": 0.517685,
+      "s_link": 0.790475,
+      "s_co": 0.790475,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_41",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "分别计算12个月的月份指数和4个季度的季度指数，如图4、图5所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_183",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": false,
+          "text_snippet": "从图4可得出以下结论：沙通量的主周期在20月附近。"
+        },
+        {
+          "block_id": "b_43",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）每年2、3季度为旺季，每年1、4季度为淡季。"
+        },
+        {
+          "block_id": "b_46",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.1.2研究含沙量与时刻（日）的关系"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_182",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_183",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 0.790475,
+          "distance_weight": 1.0,
+          "s_link": 0.790475,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.65408,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 64,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_9",
+          "b_113",
+          "b_114",
+          "b_306"
+        ],
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.913453,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.817432,
+          "cluster_margin": 0.096021,
+          "cluster_prior_raw": 0.814953,
+          "cluster_prior": 0.814953,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.814953
+        }
+      },
+      "pos": 44,
+      "rank": 2,
+      "score_base": 0.281697
+    },
+    {
+      "image_hash": "e9b28d6af8eb7eaf1d86da72a3e20a682007eb6352003327545457e7cd10e9f9",
+      "caption": "图3剔除离群点后的含沙量时序图",
+      "score": 0.476066,
+      "s_direct": 0.577644,
+      "s_link": 0.504302,
+      "s_co": 0.504302,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_36",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": false,
+          "text_snippet": "画出含沙量的时序图，如图2所示。从图中可知，有几个离群点，必须剔除。剔除离群点之后，时序图如图3所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_38",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）含沙量随着年份存在周期性波动。"
+        },
+        {
+          "block_id": "b_41",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "分别计算12个月的月份指数和4个季度的季度指数，如图4、图5所示，从图中可得出以下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_33",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_38",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.720431,
+          "distance_weight": 0.7,
+          "s_link": 0.504302,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.540973,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.921004,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.827869,
+          "cluster_margin": 0.093136,
+          "cluster_prior_raw": 0.822316,
+          "cluster_prior": 0.822316,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.822316
+        }
+      },
+      "pos": 40,
+      "rank": 3,
+      "score_base": 0.270487
+    },
+    {
+      "image_hash": "9e44f1b4f1ad6ef6ebb590b2f8d65043a06a22f765a5e3b938291e3988f0d17d",
+      "caption": "图8水位、水流量、含沙量的散点图",
+      "score": 0.416325,
+      "s_direct": 0.668478,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.315465,
+      "p_type": 0.8,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_61",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "基于以上结论，可分别建立含沙量与水位、含沙量与水流量的回归方程，但不能以水位、水流量为自变量建立二元回归模型，这是因为水位与水流量高度相关的缘故。"
+        },
+        {
+          "block_id": "b_63",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2.1一元线性回归模型简介"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_61",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_61",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.834239,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.904186,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.850865,
+          "cluster_margin": 0.053321,
+          "cluster_prior_raw": 0.823145,
+          "cluster_prior": 0.823145,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.823145
+        }
+      },
+      "pos": 62,
+      "rank": 4,
+      "score_base": 0.210539
+    },
+    {
+      "image_hash": "71ea6f9125af05aeb687b27a9e9f9b1ab25e21e9af9653b133e862301040ec8b",
+      "caption": "图17水通量的时序图",
+      "score": 0.397565,
+      "s_direct": 0.624618,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.239812,
+      "p_type": 1.0,
+      "figure_index": "17",
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_137",
+          "source": "explicit_ref",
+          "matched_ref": "17",
+          "also_local": false,
+          "text_snippet": "画出水沙通量的时序图，如图17、图18所示。从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_138",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（1）水通量具有周期性，周期为365天，2018年有突变现象，且呈上升趋势。（2）沙通量具有周期性，周期为365天，2018年有突变现象，且呈下降趋势。"
+        },
+        {
+          "block_id": "b_141",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设  $p$  表示水通量（亿  $\\mathrm{m}^3$  ），  $t$  表示时刻（日），  $p$  和  $t$  的函数关系为"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_138",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_138",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.812309,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.907001,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.806013,
+          "cluster_margin": 0.100988,
+          "cluster_prior_raw": 0.811053,
+          "cluster_prior": 0.811053,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.811053
+        }
+      },
+      "pos": 139,
+      "rank": 5,
+      "score_base": 0.194802
+    },
+    {
+      "image_hash": "bf25e0e6ca5003a5f075a276c5bee6e1994a59337577d634ef38fe14d043f022",
+      "caption": "图18沙通量的时序图",
+      "score": 0.396471,
+      "s_direct": 0.59944,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.235409,
+      "p_type": 1.0,
+      "figure_index": "18",
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_137",
+          "source": "explicit_ref",
+          "matched_ref": "18",
+          "also_local": false,
+          "text_snippet": "画出水沙通量的时序图，如图17、图18所示。从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_138",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（1）水通量具有周期性，周期为365天，2018年有突变现象，且呈上升趋势。（2）沙通量具有周期性，周期为365天，2018年有突变现象，且呈下降趋势。"
+        },
+        {
+          "block_id": "b_141",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设  $p$  表示水通量（亿  $\\mathrm{m}^3$  ），  $t$  表示时刻（日），  $p$  和  $t$  的函数关系为"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_138",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_138",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.79972,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.917149,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.838353,
+          "cluster_margin": 0.078797,
+          "cluster_prior_raw": 0.83284,
+          "cluster_prior": 0.83284,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.83284
+        }
+      },
+      "pos": 140,
+      "rank": 6,
+      "score_base": 0.188261
+    },
+    {
+      "image_hash": "c51f7f4af8c43df6b57a62e914b2da06ae92483c5d958952eae8b23b1af56a1c",
+      "caption": "图11标准化残差直方图",
+      "score": 0.391634,
+      "s_direct": 0.334126,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_94",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": false,
+          "text_snippet": "画出带有正态分布概率曲线的标准化残差直方图，如图11所示，从图中可知，残差服从均值为0的正态分布。"
+        },
+        {
+          "block_id": "b_98",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）水流量每增加  $1\\%$  ，含沙量增加  $1.06\\%$  ，含沙量对水位的变化不敏感。"
+        },
+        {
+          "block_id": "b_101",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.3估算年总水流量和年总排沙量"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_101",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_101",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.667063,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.891118,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.831169,
+          "cluster_margin": 0.059949,
+          "cluster_prior_raw": 0.822244,
+          "cluster_prior": 0.822244,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.822244
+        }
+      },
+      "pos": 99,
+      "rank": 7,
+      "score_base": 0.186072
+    },
+    {
+      "image_hash": "3b3abce0137f9418f35a88075ffe3eb59c19346b41ced6ca6bd99ca44904a9d8",
+      "caption": "图24沙通量的突变点",
+      "score": 0.385113,
+      "s_direct": 0.60991,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.215338,
+      "p_type": 1.0,
+      "figure_index": "24",
+      "layout_index": 24.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_167",
+          "source": "explicit_ref",
+          "matched_ref": "24",
+          "also_local": true,
+          "text_snippet": "沙通量的突变点检验结果如图24所示，从图中可得出以下结论：在  $t = 30$  时沙流量被分为2类，说明此时为突变点，这个结论与M- K法检验法一致。"
+        },
+        {
+          "block_id": "b_169",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.5水沙通量时间尺度的变化特征"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_169",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_169",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.804955,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.905278,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.850895,
+          "cluster_margin": 0.054383,
+          "cluster_prior_raw": 0.847101,
+          "cluster_prior": 0.847101,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.847101
+        }
+      },
+      "pos": 168,
+      "rank": 8,
+      "score_base": 0.173338
+    },
+    {
+      "image_hash": "f4e9ba1cd712e6d1ec3ca78de84e911294b5c13d2344fdba3ce9de1621a49db5",
+      "caption": "图19 水通量的时序图",
+      "score": 0.384747,
+      "s_direct": 0.546631,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.231378,
+      "p_type": 1.0,
+      "figure_index": "19",
+      "layout_index": 19.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_147",
+          "source": "explicit_ref",
+          "matched_ref": "19",
+          "also_local": true,
+          "text_snippet": "拟合效果检验如图19、图20所示，从图中可知，拟合效果较好。"
+        },
+        {
+          "block_id": "b_150",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.4 水沙通量的突变性"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_150",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_150",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.773316,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.90779,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.829704,
+          "cluster_margin": 0.078086,
+          "cluster_prior_raw": 0.823276,
+          "cluster_prior": 0.823276,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.823276
+        }
+      },
+      "pos": 148,
+      "rank": 9,
+      "score_base": 0.178928
+    },
+    {
+      "image_hash": "938ab01a73f33970c57c300debed9742b964f972bd19e8f0638ee92745cff60e",
+      "caption": "图20 沙通量的时序图",
+      "score": 0.376415,
+      "s_direct": 0.567879,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.22767,
+      "p_type": 1.0,
+      "figure_index": "20",
+      "layout_index": 20.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_147",
+          "source": "explicit_ref",
+          "matched_ref": "20",
+          "also_local": true,
+          "text_snippet": "拟合效果检验如图19、图20所示，从图中可知，拟合效果较好。"
+        },
+        {
+          "block_id": "b_150",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.4 水沙通量的突变性"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_150",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_150",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.783939,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.877477,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.79761,
+          "cluster_margin": 0.079867,
+          "cluster_prior_raw": 0.79174,
+          "cluster_prior": 0.79174,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.79174
+        }
+      },
+      "pos": 149,
+      "rank": 10,
+      "score_base": 0.17848
+    },
+    {
+      "image_hash": "dbb1abfddb1b0c2f35ef5590717edd449b4a871ebff293302d9d7ab39b5f73be",
+      "caption": "图14年总含沙量",
+      "score": 0.372274,
+      "s_direct": 0.517662,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_109",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": true,
+          "text_snippet": "根据表4画出直方图，如图13、图14所示。"
+        },
+        {
+          "block_id": "b_112",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2问题（2）——研究水沙通量的变化规律"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_112",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_112",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.758831,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.780249,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.712918,
+          "cluster_margin": 0.067331,
+          "cluster_prior_raw": 0.712179,
+          "cluster_prior": 0.712179,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.712179
+        }
+      },
+      "pos": 111,
+      "rank": 11,
+      "score_base": 0.194229
+    },
+    {
+      "image_hash": "63ca8fb5b5bb48073baa5c44891b3292202fb75d7e2f6a6bba1a6e7a987e0bab",
+      "caption": "图5含沙量的季度指数",
+      "score": 0.368352,
+      "s_direct": 0.504138,
+      "s_link": 0.316043,
+      "s_co": 0.316043,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_41",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "分别计算12个月的月份指数和4个季度的季度指数，如图4、图5所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_43",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）每年2、3季度为旺季，每年1、4季度为淡季。"
+        },
+        {
+          "block_id": "b_46",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.1.2研究含沙量与时刻（日）的关系"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_31",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_46",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.790107,
+          "distance_weight": 0.4,
+          "s_link": 0.316043,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.41009,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.916559,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.845848,
+          "cluster_margin": 0.070712,
+          "cluster_prior_raw": 0.838829,
+          "cluster_prior": 0.838829,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.838829
+        }
+      },
+      "pos": 45,
+      "rank": 12,
+      "score_base": 0.158645
+    },
+    {
+      "image_hash": "d242b3ed19cbf928521d8424b174d7d55d263e7c3f4dcfe00725112700d18055",
+      "caption": "图13年总流量",
+      "score": 0.359523,
+      "s_direct": 0.434884,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_109",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": true,
+          "text_snippet": "根据表4画出直方图，如图13、图14所示。"
+        },
+        {
+          "block_id": "b_112",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2问题（2）——研究水沙通量的变化规律"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_112",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_112",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.717442,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.760494,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.687183,
+          "cluster_margin": 0.07331,
+          "cluster_prior_raw": 0.684346,
+          "cluster_prior": 0.684346,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.684346
+        }
+      },
+      "pos": 110,
+      "rank": 13,
+      "score_base": 0.188436
+    },
+    {
+      "image_hash": "ea471e037f87e49a01688859bd66070b345e384ef18e71c559526df8ec2a68c0",
+      "caption": "图34 沙通量过去值与未来值的比较",
+      "score": 0.356474,
+      "s_direct": 0.546632,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.194959,
+      "p_type": 1.0,
+      "figure_index": "34",
+      "layout_index": 34.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_225",
+          "source": "explicit_ref",
+          "matched_ref": "34",
+          "also_local": true,
+          "text_snippet": "为了比较水通量、沙通量的预测效果，画出全部6年数据与未来2年数据的时序图，如图33、图34所示，从图中可知，未来2年的预测值也具有相同的周期性，说明预测效果较好"
+        },
+        {
+          "block_id": "b_228",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3.3制订水沙通量的最优采样监测方案"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_228",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_228",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.773316,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.90731,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.825199,
+          "cluster_margin": 0.082111,
+          "cluster_prior_raw": 0.822834,
+          "cluster_prior": 0.822834,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.822834
+        }
+      },
+      "pos": 227,
+      "rank": 14,
+      "score_base": 0.150765
+    },
+    {
+      "image_hash": "aa4f2496f399499155ebe288c660e61602a1308a51af7c84e4435866c606adb1",
+      "caption": "图33 水通量过去值与未来值的比较",
+      "score": 0.353774,
+      "s_direct": 0.536343,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.196562,
+      "p_type": 1.0,
+      "figure_index": "33",
+      "layout_index": 33.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_225",
+          "source": "explicit_ref",
+          "matched_ref": "33",
+          "also_local": true,
+          "text_snippet": "为了比较水通量、沙通量的预测效果，画出全部6年数据与未来2年数据的时序图，如图33、图34所示，从图中可知，未来2年的预测值也具有相同的周期性，说明预测效果较好"
+        },
+        {
+          "block_id": "b_228",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3.3制订水沙通量的最优采样监测方案"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_228",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_228",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.768172,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.902416,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.812154,
+          "cluster_margin": 0.090262,
+          "cluster_prior_raw": 0.811123,
+          "cluster_prior": 0.811123,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.811123
+        }
+      },
+      "pos": 226,
+      "rank": 15,
+      "score_base": 0.150993
+    },
+    {
+      "image_hash": "4d603b8e643ee2831ac177821cbf52fd092426e3876b8438650a1512dd66d501",
+      "caption": "图27 沙通量小波等值线图",
+      "score": 0.353262,
+      "s_direct": 0.520107,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.208015,
+      "p_type": 1.0,
+      "figure_index": "27",
+      "layout_index": 27.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_180",
+          "source": "explicit_ref",
+          "matched_ref": "27",
+          "also_local": false,
+          "text_snippet": "画出沙通量小波等值线图，如图27所示；画出沙通量小波方差分析图，如图28所示。从图27可得出以下结论："
+        },
+        {
+          "block_id": "b_184",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "综合而言，沙通量以20月为周期振荡，且振荡幅度很大，与水通量相同。"
+        },
+        {
+          "block_id": "b_187",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3 问题（3）——预测水沙通量的未来趋势并制订采样监测方案"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_187",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_187",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.760054,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.865529,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.801464,
+          "cluster_margin": 0.064066,
+          "cluster_prior_raw": 0.780638,
+          "cluster_prior": 0.780638,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.780638
+        }
+      },
+      "pos": 185,
+      "rank": 16,
+      "score_base": 0.158102
+    },
+    {
+      "image_hash": "572dd955cb9cc059810cdab9daf14b3385278ca64fa90c0bf9b28de0137c10f3",
+      "caption": "图22沙通量的趋势检验",
+      "score": 0.351367,
+      "s_direct": 0.572911,
+      "s_link": 0.760647,
+      "s_co": 0.760647,
+      "p_layout": 0.221065,
+      "p_type": 1.0,
+      "figure_index": "22",
+      "layout_index": 22.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_158",
+          "source": "explicit_ref",
+          "matched_ref": "22",
+          "also_local": false,
+          "text_snippet": "沙通量的趋势检验结果如图22所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_159",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "UF值从  $t = 23$  开始大于0，表明序列呈上升趋势。从  $t = 30$  开始超过临界线（显著性水平为0.05时，置信水平线为±1.96)，表明"
+        },
+        {
+          "block_id": "b_161",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.4.2水沙通量的突变点"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_162",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_161",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.760647,
+          "distance_weight": 1.0,
+          "s_link": 0.760647,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.666779,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.898942,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.808053,
+          "cluster_margin": 0.090888,
+          "cluster_prior_raw": 0.815863,
+          "cluster_prior": 0.815863,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.815863
+        }
+      },
+      "pos": 160,
+      "rank": 17,
+      "score_base": 0.147401
+    },
+    {
+      "image_hash": "a927324983c3dc48224b3b7f37d70a1c6dfa13e9504a616255b10b1b27001e18",
+      "caption": "图12标准化残差与标准化预测值的散点图",
+      "score": 0.34669,
+      "s_direct": 0.376664,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.270238,
+      "p_type": 0.8,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_95",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": false,
+          "text_snippet": "以标准化预测值为横坐标，以标准化残差为纵坐标，画散点图，如图12所示，从图中可知，大多数残差随机分布在  $\\pm 3\\sigma$  以内，且没有明显的趋势，"
+        },
+        {
+          "block_id": "b_98",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）水流量每增加  $1\\%$  ，含沙量增加  $1.06\\%$  ，含沙量对水位的变化不敏感。"
+        },
+        {
+          "block_id": "b_101",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.3估算年总水流量和年总排沙量"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_101",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_101",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.688332,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.866469,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.813975,
+          "cluster_margin": 0.052494,
+          "cluster_prior_raw": 0.791518,
+          "cluster_prior": 0.791518,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.791518
+        }
+      },
+      "pos": 100,
+      "rank": 18,
+      "score_base": 0.148811
+    },
+    {
+      "image_hash": "df95f7a5744c939c8421c6c001b17983b6b54aa5d2035d8da10827f6f0fcb56b",
+      "caption": "图15水通量的月份指数",
+      "score": 0.345384,
+      "s_direct": 0.566116,
+      "s_link": 0.566111,
+      "s_co": 0.566111,
+      "p_layout": 0.25,
+      "p_type": 1.0,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_131",
+          "source": "explicit_ref",
+          "matched_ref": "15",
+          "also_local": false,
+          "text_snippet": "根据表1画出图形，如图15、图16所示。从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_133",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）沙通量每年7月-10月是旺季，每年1月-5月、11月、12月是淡季。"
+        },
+        {
+          "block_id": "b_136",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.3水沙通量的周期性"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_138",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_136",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.80873,
+          "distance_weight": 0.7,
+          "s_link": 0.566111,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.566113,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.917759,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.813662,
+          "cluster_margin": 0.104097,
+          "cluster_prior_raw": 0.815422,
+          "cluster_prior": 0.815422,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.815422
+        }
+      },
+      "pos": 134,
+      "rank": 19,
+      "score_base": 0.141528
+    },
+    {
+      "image_hash": "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66",
+      "caption": "图1研究路径",
+      "score": 0.342247,
+      "s_direct": 0.394009,
+      "s_link": 0.290484,
+      "s_co": 0.290484,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_13",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "本文研究路径如图1所示。"
+        },
+        {
+          "block_id": "b_15",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 三、符号说明"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_8",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_13",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 0.414977,
+          "distance_weight": 0.7,
+          "s_link": 0.290484,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.342246,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 64,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_3",
+          "b_9",
+          "b_113",
+          "b_114",
+          "b_306"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.719551,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.677638,
+          "cluster_margin": 0.041914,
+          "cluster_prior_raw": 0.688041,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 14,
+      "rank": 20,
+      "score_base": 0.342246
+    },
+    {
+      "image_hash": "72a5e75b9fd9bf7bbaead386c556a0d41883bdba0dea40ef77aacf21b7cb96e2",
+      "caption": "图35 水通量小波等值线图",
+      "score": 0.342208,
+      "s_direct": 0.53255,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.193426,
+      "p_type": 1.0,
+      "figure_index": "35",
+      "layout_index": 35.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_231",
+          "source": "explicit_ref",
+          "matched_ref": "35",
+          "also_local": false,
+          "text_snippet": "画出未来2年水通量、沙通量小波等值线图，如图35、图36所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_233",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）沙通量在未来2年（  $73\\sim 96$  月）的变化趋势与水通量相同，也可减少监测次数。"
+        },
+        {
+          "block_id": "b_236",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3.3.2未来2年水沙通量的采样监测方案"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_236",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_236",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.766275,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.864535,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.797215,
+          "cluster_margin": 0.06732,
+          "cluster_prior_raw": 0.775964,
+          "cluster_prior": 0.775964,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.775964
+        }
+      },
+      "pos": 234,
+      "rank": 21,
+      "score_base": 0.148218
+    },
+    {
+      "image_hash": "e4e97d96847c435c399185b0db85c1bdf33788cab3857c75b01dad6a11737bcd",
+      "caption": "图23水通量的突变点",
+      "score": 0.340176,
+      "s_direct": 0.61852,
+      "s_link": 0.530257,
+      "s_co": 0.530257,
+      "p_layout": 0.218104,
+      "p_type": 1.0,
+      "figure_index": "23",
+      "layout_index": 23.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_165",
+          "source": "explicit_ref",
+          "matched_ref": "23",
+          "also_local": true,
+          "text_snippet": "水通量的突变点检验结果如图23所示，从图中可得出以下结论：在  $t = 27$  时水流量被分为2类，说明此时为突变点，这个结论与M- K法检验法一致。"
+        },
+        {
+          "block_id": "b_167",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "沙通量的突变点检验结果如图24所示，从图中可得出以下结论：在  $t = 30$  时沙流量被分为2类，说明此时为突变点，这个结论与M- K法检验法一致。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_170",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_167",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.75751,
+          "distance_weight": 0.7,
+          "s_link": 0.530257,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.574389,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.917273,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.864623,
+          "cluster_margin": 0.05265,
+          "cluster_prior_raw": 0.859597,
+          "cluster_prior": 0.859597,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.859597
+        }
+      },
+      "pos": 166,
+      "rank": 22,
+      "score_base": 0.125277
+    },
+    {
+      "image_hash": "73042851d4f83924320a5b4771cf768862fea8b10db88ae619fb3f6e49a3b605",
+      "caption": "图16沙通量的月份指数",
+      "score": 0.337905,
+      "s_direct": 0.558759,
+      "s_link": 0.566111,
+      "s_co": 0.566111,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_131",
+          "source": "explicit_ref",
+          "matched_ref": "16",
+          "also_local": false,
+          "text_snippet": "根据表1画出图形，如图15、图16所示。从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_133",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）沙通量每年7月-10月是旺季，每年1月-5月、11月、12月是淡季。"
+        },
+        {
+          "block_id": "b_136",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.3水沙通量的周期性"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_138",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_136",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.80873,
+          "distance_weight": 0.7,
+          "s_link": 0.566111,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.562435,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.912879,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.789868,
+          "cluster_margin": 0.123011,
+          "cluster_prior_raw": 0.80122,
+          "cluster_prior": 0.80122,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.80122
+        }
+      },
+      "pos": 135,
+      "rank": 23,
+      "score_base": 0.1376
+    },
+    {
+      "image_hash": "a4da69339ae730f955214a3ccb52abd8f777685dd2ed3ee488abb675ea1d3c5b",
+      "caption": "图9标准化残差直方图",
+      "score": 0.304539,
+      "s_direct": 0.325555,
+      "s_link": 0.336546,
+      "s_co": 0.336546,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_77",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": false,
+          "text_snippet": "画出带有正态分布概率曲线的标准化残差直方图，如图9所示，从图中可知，残差服从均值为0的正态"
+        },
+        {
+          "block_id": "b_82",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）水位每增加  $1\\%$  ，含沙量增加  $36.31\\%$  ，含沙量对水位的变化非常敏感。"
+        },
+        {
+          "block_id": "b_85",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2.3含沙量与水流量的回归方程"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_61",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_85",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.841364,
+          "distance_weight": 0.4,
+          "s_link": 0.336546,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.33105,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.885916,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.825119,
+          "cluster_margin": 0.060797,
+          "cluster_prior_raw": 0.81953,
+          "cluster_prior": 0.81953,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.81953
+        }
+      },
+      "pos": 83,
+      "rank": 24,
+      "score_base": 0.099656
+    },
+    {
+      "image_hash": "3237d677f918d4fb8b15558f4a7d169bf09225c2fb7984d7add647ababcaad4e",
+      "caption": "图21 水通量的趋势检验",
+      "score": 0.302948,
+      "s_direct": 0.56366,
+      "s_link": 0.466924,
+      "s_co": 0.466924,
+      "p_layout": 0.224244,
+      "p_type": 1.0,
+      "figure_index": "21",
+      "layout_index": 21.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_155",
+          "source": "explicit_ref",
+          "matched_ref": "21",
+          "also_local": false,
+          "text_snippet": "水通量的趋势检验结果如图21所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_156",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "UF值从  $t = 23$  开始大于0，表明序列呈上升趋势。从  $t = 30$  开始超过临界线（显著性水平为0.05)，表明上升趋势显著，此后为出现突"
+        },
+        {
+          "block_id": "b_158",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "沙通量的趋势检验结果如图22所示，从图中可得出以下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_151",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_155",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "21",
+          "raw_cosine": 0.667034,
+          "distance_weight": 0.7,
+          "s_link": 0.466924,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.515292,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.84132,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.740516,
+          "cluster_margin": 0.100805,
+          "cluster_prior_raw": 0.749586,
+          "cluster_prior": 0.749586,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.749586
+        }
+      },
+      "pos": 157,
+      "rank": 25,
+      "score_base": 0.115551
+    },
+    {
+      "image_hash": "b2f340a7c5cd27452dee2ed4be1d1f088d825f36fab5c06d8e54c72486729ef0",
+      "caption": "2016-2021月均径流量小波等值线图",
+      "score": 0.302254,
+      "s_direct": 0.521466,
+      "s_link": 0.561472,
+      "s_co": 0.561472,
+      "p_layout": 0.212746,
+      "p_type": 1.0,
+      "figure_index": null,
+      "layout_index": 25.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_177",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "综合而言，水通量以20月为周期振荡，且振荡幅度很大；以55月为周期振荡，且振荡幅度较大。"
+        },
+        {
+          "block_id": "b_180",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "画出沙通量小波等值线图，如图27所示；画出沙通量小波方差分析图，如图28所示。从图27可得出以下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_182",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_177",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.802103,
+          "distance_weight": 0.7,
+          "s_link": 0.561472,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.541469,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.840124,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.774898,
+          "cluster_margin": 0.065226,
+          "cluster_prior_raw": 0.748236,
+          "cluster_prior": 0.748236,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.748236
+        }
+      },
+      "pos": 178,
+      "rank": 26,
+      "score_base": 0.115195
+    },
+    {
+      "image_hash": "88633052bbe0d2732addff9c4607e66613d2a893bca0660856f9de318cfd5838",
+      "caption": "图32沙通量的拟合效果比较",
+      "score": 0.302136,
+      "s_direct": 0.554017,
+      "s_link": 0.401744,
+      "s_co": 0.401744,
+      "p_layout": 0.19824,
+      "p_type": 1.0,
+      "figure_index": "32",
+      "layout_index": 32.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_219",
+          "source": "explicit_ref",
+          "matched_ref": "32",
+          "also_local": true,
+          "text_snippet": "拟合效果如图31、图32所示，从图中可知，拟合效果较好。"
+        },
+        {
+          "block_id": "b_222",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "预测误差估计结果如表10所示，从表中可知，预测误差较小。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_225",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_222",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.573919,
+          "distance_weight": 0.7,
+          "s_link": 0.401744,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.47788,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.920606,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.839002,
+          "cluster_margin": 0.081604,
+          "cluster_prior_raw": 0.829605,
+          "cluster_prior": 0.829605,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.829605
+        }
+      },
+      "pos": 221,
+      "rank": 27,
+      "score_base": 0.094735
+    },
+    {
+      "image_hash": "00486f9473809d2e5bba8aab65834246baf2f4c8972f2c433b6dd05f4b3013b2",
+      "caption": "图31水通量的拟合效果比较",
+      "score": 0.299914,
+      "s_direct": 0.574351,
+      "s_link": 0.401744,
+      "s_co": 0.401744,
+      "p_layout": 0.2,
+      "p_type": 1.0,
+      "figure_index": "31",
+      "layout_index": 31.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_219",
+          "source": "explicit_ref",
+          "matched_ref": "31",
+          "also_local": true,
+          "text_snippet": "拟合效果如图31、图32所示，从图中可知，拟合效果较好。"
+        },
+        {
+          "block_id": "b_222",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "预测误差估计结果如表10所示，从表中可知，预测误差较小。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_225",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_222",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.573919,
+          "distance_weight": 0.7,
+          "s_link": 0.401744,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.488047,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.902319,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.814026,
+          "cluster_margin": 0.088293,
+          "cluster_prior_raw": 0.809217,
+          "cluster_prior": 0.809217,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.809217
+        }
+      },
+      "pos": 220,
+      "rank": 28,
+      "score_base": 0.097609
+    },
+    {
+      "image_hash": "10c33d23df50452518a5f5d3ca50b447afdce7e0328016bda3f1bbe9056e3392",
+      "caption": "图29水通量  $1\\mathrm{n}(R / S)$  与  $\\ln (\\sigma)$  的散点图",
+      "score": 0.293803,
+      "s_direct": 0.510378,
+      "s_link": 0.551066,
+      "s_co": 0.551066,
+      "p_layout": 0.203795,
+      "p_type": 0.8,
+      "figure_index": "29",
+      "layout_index": 29.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_195",
+          "source": "explicit_ref",
+          "matched_ref": "29",
+          "also_local": true,
+          "text_snippet": "以全时段（2016- 2021年，一共72个月）为例，水通量、沙通量  $\\ln (R / S)$  与  $\\ln (n)$  的散点图如图29、图30所示，"
+        },
+        {
+          "block_id": "b_198",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "把全时段2016- 2021年（1- 72日）分为2个阶段：2016- 2017年（1- 24日）和2018- 2021年（25- 72日），第一阶段用于检验，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_191",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_195",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "29",
+          "raw_cosine": 0.787238,
+          "distance_weight": 0.7,
+          "s_link": 0.551066,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.530722,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.903388,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.854573,
+          "cluster_margin": 0.048815,
+          "cluster_prior_raw": 0.829104,
+          "cluster_prior": 0.829104,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.829104
+        }
+      },
+      "pos": 196,
+      "rank": 29,
+      "score_base": 0.086527
+    },
+    {
+      "image_hash": "87defdc2c8c67563de189ee83b23ffd02a24cdea29c113de46b3d4c26da20930",
+      "caption": "图30沙通量  $1\\mathrm{n}(R / S)$  与  $\\ln (\\sigma)$  的散点图",
+      "score": 0.291795,
+      "s_direct": 0.504357,
+      "s_link": 0.551066,
+      "s_co": 0.551066,
+      "p_layout": 0.201849,
+      "p_type": 0.8,
+      "figure_index": "30",
+      "layout_index": 30.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_195",
+          "source": "explicit_ref",
+          "matched_ref": "30",
+          "also_local": true,
+          "text_snippet": "以全时段（2016- 2021年，一共72个月）为例，水通量、沙通量  $\\ln (R / S)$  与  $\\ln (n)$  的散点图如图29、图30所示，"
+        },
+        {
+          "block_id": "b_198",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "把全时段2016- 2021年（1- 72日）分为2个阶段：2016- 2017年（1- 24日）和2018- 2021年（25- 72日），第一阶段用于检验，"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_191",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_195",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "30",
+          "raw_cosine": 0.787238,
+          "distance_weight": 0.7,
+          "s_link": 0.551066,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.527712,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.896931,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.849845,
+          "cluster_margin": 0.047085,
+          "cluster_prior_raw": 0.826322,
+          "cluster_prior": 0.826322,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.826322
+        }
+      },
+      "pos": 197,
+      "rank": 30,
+      "score_base": 0.085214
+    },
+    {
+      "image_hash": "c404086d1f2a4e44aa06a629dd7697d16c4fd129351b3b13e5963792ccd534f8",
+      "caption": "图10标准化残差与标准化预测值的散点图",
+      "score": 0.276564,
+      "s_direct": 0.382619,
+      "s_link": 0.336546,
+      "s_co": 0.336546,
+      "p_layout": 0.289065,
+      "p_type": 0.8,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_79",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": false,
+          "text_snippet": "以标准化预测值为横坐标，以标准化残差为纵坐标，画散点图，如图10所示，从图中可知，残差随机分布在  $\\pm 3\\sigma$  以内，且没有明显的趋势，表明残"
+        },
+        {
+          "block_id": "b_82",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）水位每增加  $1\\%$  ，含沙量增加  $36.31\\%$  ，含沙量对水位的变化非常敏感。"
+        },
+        {
+          "block_id": "b_85",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2.3含沙量与水流量的回归方程"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_61",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_85",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.841364,
+          "distance_weight": 0.4,
+          "s_link": 0.336546,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.359582,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.851958,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.794639,
+          "cluster_margin": 0.05732,
+          "cluster_prior_raw": 0.773639,
+          "cluster_prior": 0.773639,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.773639
+        }
+      },
+      "pos": 84,
+      "rank": 31,
+      "score_base": 0.083154
+    },
+    {
+      "image_hash": "d7fb39cbac881df395e3505a58b7f4f63f3c59699296c10dc4a060c98a615da2",
+      "caption": "图37河道断面示意图",
+      "score": 0.263258,
+      "s_direct": 0.456191,
+      "s_link": 0.527154,
+      "s_co": 0.527154,
+      "p_layout": 0.190551,
+      "p_type": 1.0,
+      "figure_index": "37",
+      "layout_index": 37.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_263",
+          "source": "explicit_ref",
+          "matched_ref": "37",
+          "also_local": true,
+          "text_snippet": "定义1河道断面左侧为起点桩位置，断面上测点距起点桩的距离即为起点距.河道断面如图37所示。为了计算平均河底高程，需要使用“微元法”。"
+        },
+        {
+          "block_id": "b_265",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "根据起点距的定义，使用“微元法”近似计算平均河底高程，步骤如下：第1步，把数据点  $\\left(x_{i},y_{i}\\right)$  按照起点距  $x_"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_260",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_265",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.753077,
+          "distance_weight": 0.7,
+          "s_link": 0.527154,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.491672,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.750654,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.674672,
+          "cluster_margin": 0.075982,
+          "cluster_prior_raw": 0.678278,
+          "cluster_prior": 0.678278,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.678278
+        }
+      },
+      "pos": 264,
+      "rank": 32,
+      "score_base": 0.093689
+    },
+    {
+      "image_hash": "494009ba8e5d3ae2cdf70fc2ef2822134e1d1530ddfa176aa0bd127b1bf90fa4",
+      "caption": "图40日均水通量的变化情况",
+      "score": 0.261553,
+      "s_direct": 0.606413,
+      "s_link": 0.294241,
+      "s_co": 0.294241,
+      "p_layout": 0.186652,
+      "p_type": 1.0,
+      "figure_index": "40",
+      "layout_index": 40.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_271",
+          "source": "explicit_ref",
+          "matched_ref": "40",
+          "also_local": false,
+          "text_snippet": "根据水通量的计算公式，计算水通量（亿  $\\mathrm{m}^3$  ），结果如图39、图40所示。从图39中可得出以下结论："
+        },
+        {
+          "block_id": "b_279",
+          "source": "explicit_ref",
+          "matched_ref": "40",
+          "also_local": false,
+          "text_snippet": "根据沙通量的计算公式，计算沙通量（亿吨），结果如图40所示。从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_280",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（1）“调水调沙”成效不佳，2021年与2020年相比，沙通量下降了  $45.4\\%$  。"
+        },
+        {
+          "block_id": "b_283",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.4.4未来10年河底高程的预测"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_113",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_279",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "40",
+          "raw_cosine": 0.735603,
+          "distance_weight": 0.4,
+          "s_link": 0.294241,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.450327,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.793618,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.713244,
+          "cluster_margin": 0.080374,
+          "cluster_prior_raw": 0.709992,
+          "cluster_prior": 0.709992,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.709992
+        }
+      },
+      "pos": 281,
+      "rank": 33,
+      "score_base": 0.084055
+    },
+    {
+      "image_hash": "df0c30d13463af87ecbf151155f4be0a02f00d39c2df20a7d2f6a3bdaae3e254",
+      "caption": "图40日均水通量的变化情况",
+      "score": 0.256985,
+      "s_direct": 0.606413,
+      "s_link": 0.294241,
+      "s_co": 0.294241,
+      "p_layout": 0.186652,
+      "p_type": 1.0,
+      "figure_index": "40",
+      "layout_index": 40.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_271",
+          "source": "explicit_ref",
+          "matched_ref": "40",
+          "also_local": false,
+          "text_snippet": "根据水通量的计算公式，计算水通量（亿  $\\mathrm{m}^3$  ），结果如图39、图40所示。从图39中可得出以下结论："
+        },
+        {
+          "block_id": "b_279",
+          "source": "explicit_ref",
+          "matched_ref": "40",
+          "also_local": false,
+          "text_snippet": "根据沙通量的计算公式，计算沙通量（亿吨），结果如图40所示。从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_280",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（1）“调水调沙”成效不佳，2021年与2020年相比，沙通量下降了  $45.4\\%$  。"
+        },
+        {
+          "block_id": "b_283",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.4.4未来10年河底高程的预测"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_113",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_279",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "40",
+          "raw_cosine": 0.735603,
+          "distance_weight": 0.4,
+          "s_link": 0.294241,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.450327,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.796488,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.685628,
+          "cluster_margin": 0.11086,
+          "cluster_prior_raw": 0.691722,
+          "cluster_prior": 0.691722,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.691722
+        }
+      },
+      "pos": 282,
+      "rank": 34,
+      "score_base": 0.084055
+    },
+    {
+      "image_hash": "074786d0f08392947cb02b2077c0ad1542d54a7e32ffecd0e05ac6755b91bb9b",
+      "caption": "图39水通量的变化情况",
+      "score": 0.254894,
+      "s_direct": 0.570798,
+      "s_link": 0.293215,
+      "s_co": 0.293215,
+      "p_layout": 0.187902,
+      "p_type": 1.0,
+      "figure_index": "39",
+      "layout_index": 39.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_271",
+          "source": "explicit_ref",
+          "matched_ref": "39",
+          "also_local": false,
+          "text_snippet": "根据水通量的计算公式，计算水通量（亿  $\\mathrm{m}^3$  ），结果如图39、图40所示。从图39中可得出以下结论："
+        },
+        {
+          "block_id": "b_276",
+          "source": "explicit_ref",
+          "matched_ref": "39",
+          "also_local": true,
+          "text_snippet": "从图39中可得出以下结论："
+        },
+        {
+          "block_id": "b_273",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）2018年“调水调沙”前后成效尤其不佳，水通量从9.46亿  $\\mathrm{m}^3$  下降5.49亿  $\\mathrm{m}^3$  。下降了 "
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_113",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_271",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "39",
+          "raw_cosine": 0.733038,
+          "distance_weight": 0.4,
+          "s_link": 0.293215,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.432007,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.795494,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.683008,
+          "cluster_margin": 0.112486,
+          "cluster_prior_raw": 0.694875,
+          "cluster_prior": 0.694875,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.694875
+        }
+      },
+      "pos": 275,
+      "rank": 35,
+      "score_base": 0.081175
+    },
+    {
+      "image_hash": "47d3ad028759870628cda2608da3cd0a9831e8d5060f9d981c5ccc5ecb5da519",
+      "caption": "图41河底高程未来10年的变化情况",
+      "score": 0.251824,
+      "s_direct": 0.47722,
+      "s_link": 0.303851,
+      "s_co": 0.303851,
+      "p_layout": 0.185449,
+      "p_type": 1.0,
+      "figure_index": "41",
+      "layout_index": 41.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_300",
+          "source": "explicit_ref",
+          "matched_ref": "41",
+          "also_local": true,
+          "text_snippet": "根据表14，画出河底高程的演变趋势，如图41所示。从表14和图41可知，未来如果不进行“调水调沙”，那么河底高程将持续升高，10年后将达到  $64.79\\ma"
+        },
+        {
+          "block_id": "b_302",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 六、模型的评价和推广"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_11",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_300",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "41",
+          "raw_cosine": 0.759627,
+          "distance_weight": 0.4,
+          "s_link": 0.303851,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.390535,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.841084,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.70836,
+          "cluster_margin": 0.132724,
+          "cluster_prior_raw": 0.717598,
+          "cluster_prior": 0.717598,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.717598
+        }
+      },
+      "pos": 301,
+      "rank": 36,
+      "score_base": 0.072424
+    },
+    {
+      "image_hash": "d8583fcdc69716ef28c4498314350328fa43414f65811b6599a1d9b635932bba",
+      "caption": "图72018-2021年含沙量函数拟合效果",
+      "score": 0.241741,
+      "s_direct": 0.617644,
+      "s_link": 0.560501,
+      "s_co": 0.560501,
+      "p_layout": 0.061973,
+      "p_type": 1.0,
+      "figure_index": "72018",
+      "layout_index": 72018.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_53",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "拟合效果如图6、图7所示，从图中可知，拟合精度较高。"
+        },
+        {
+          "block_id": "b_56",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2研究含沙量与水位、水流量的关系"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_61",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.800716,
+          "distance_weight": 0.7,
+          "s_link": 0.560501,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.589072,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.909053,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.834476,
+          "cluster_margin": 0.074577,
+          "cluster_prior_raw": 0.820938,
+          "cluster_prior": 0.820938,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.820938
+        }
+      },
+      "pos": 55,
+      "rank": 37,
+      "score_base": 0.036507
+    },
+    {
+      "image_hash": "49c358b3446a23f77ce42eaf726f8142a48f428cb0084c8e61828442833bafd5",
+      "caption": "图38河底高程的变化情况",
+      "score": 0.240684,
+      "s_direct": 0.423341,
+      "s_link": 0.289924,
+      "s_co": 0.289924,
+      "p_layout": 0.1892,
+      "p_type": 1.0,
+      "figure_index": "38",
+      "layout_index": 38.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_267",
+          "source": "explicit_ref",
+          "matched_ref": "38",
+          "also_local": false,
+          "text_snippet": "根据附件2的数据，计算结果如图38所示。从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_273",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）2018年“调水调沙”前后成效尤其不佳，水通量从9.46亿  $\\mathrm{m}^3$  下降5.49亿  $\\mathrm{m}^3$  。下降了 "
+        },
+        {
+          "block_id": "b_276",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从图39中可得出以下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_113",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_273",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.72481,
+          "distance_weight": 0.4,
+          "s_link": 0.289924,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.356632,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.803844,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.680068,
+          "cluster_margin": 0.123775,
+          "cluster_prior_raw": 0.692839,
+          "cluster_prior": 0.692839,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.692839
+        }
+      },
+      "pos": 274,
+      "rank": 38,
+      "score_base": 0.067475
+    },
+    {
+      "image_hash": "233d1bdd93dcbbf984c88d5663749d808d75c3ddd45494dfac53f4f74e14d67b",
+      "caption": "图62016-2017年含沙量函数拟合效果",
+      "score": 0.23443,
+      "s_direct": 0.629557,
+      "s_link": 0.560501,
+      "s_co": 0.560501,
+      "p_layout": 0.062813,
+      "p_type": 1.0,
+      "figure_index": "62016",
+      "layout_index": 62016.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_53",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "拟合效果如图6、图7所示，从图中可知，拟合精度较高。"
+        },
+        {
+          "block_id": "b_56",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2研究含沙量与水位、水流量的关系"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_61",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_56",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.800716,
+          "distance_weight": 0.7,
+          "s_link": 0.560501,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.595029,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.886202,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.794714,
+          "cluster_margin": 0.091488,
+          "cluster_prior_raw": 0.788216,
+          "cluster_prior": 0.788216,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.788216
+        }
+      },
+      "pos": 54,
+      "rank": 39,
+      "score_base": 0.037375
+    },
+    {
+      "image_hash": "0e16fb806e030661057a80e8554ed190c2e8f12b78f6cada732f64aa3ac210a0",
+      "caption": "图28 沙通量小波方差分析图",
+      "score": 0.157717,
+      "s_direct": 0.532367,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.205847,
+      "p_type": 1.0,
+      "figure_index": "28",
+      "layout_index": 28.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_180",
+          "source": "explicit_ref",
+          "matched_ref": "28",
+          "also_local": false,
+          "text_snippet": "画出沙通量小波等值线图，如图27所示；画出沙通量小波方差分析图，如图28所示。从图27可得出以下结论："
+        },
+        {
+          "block_id": "b_184",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "综合而言，沙通量以20月为周期振荡，且振荡幅度很大，与水通量相同。"
+        },
+        {
+          "block_id": "b_187",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3 问题（3）——预测水沙通量的未来趋势并制订采样监测方案"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_187",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_187",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.766184,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.592853,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.504803,
+          "cluster_margin": 0.08805,
+          "cluster_prior_raw": 0.501408,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 186,
+      "rank": 40,
+      "score_base": 0.157716
+    },
+    {
+      "image_hash": "901e95c2be94cc804a4f544cd8b683e0266ba2f5f5481747e5520a0a4fb070fb",
+      "caption": "图36 沙通量小波等值线图",
+      "score": 0.145623,
+      "s_direct": 0.517227,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.191959,
+      "p_type": 1.0,
+      "figure_index": "36",
+      "layout_index": 36.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_231",
+          "source": "explicit_ref",
+          "matched_ref": "36",
+          "also_local": false,
+          "text_snippet": "画出未来2年水通量、沙通量小波等值线图，如图35、图36所示，从图中可得出以下结论："
+        },
+        {
+          "block_id": "b_233",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "（2）沙通量在未来2年（  $73\\sim 96$  月）的变化趋势与水通量相同，也可减少监测次数。"
+        },
+        {
+          "block_id": "b_236",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.3.3.2未来2年水沙通量的采样监测方案"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_236",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_236",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.758613,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.716675,
+          "cluster_top2_label": "9",
+          "cluster_top2_sim": 0.631502,
+          "cluster_margin": 0.085173,
+          "cluster_prior_raw": 0.609794,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 235,
+      "rank": 41,
+      "score_base": 0.145622
+    },
+    {
+      "image_hash": "900ac4531e866df6cdc602b9cff49c1005aab0fe13a5169880bfca9e54c1afee",
+      "caption": "图26水通量小波方差分析图",
+      "score": 0.121146,
+      "s_direct": 0.590596,
+      "s_link": 0.561472,
+      "s_co": 0.561472,
+      "p_layout": 0.21031,
+      "p_type": 1.0,
+      "figure_index": "26",
+      "layout_index": 26.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_173",
+          "source": "explicit_ref",
+          "matched_ref": "26",
+          "also_local": false,
+          "text_snippet": "画出水通量小波等值线图，如图25所示；画出水通量小波方差分析图，如图26所示。从图25可得出以下结论："
+        },
+        {
+          "block_id": "b_177",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "综合而言，水通量以20月为周期振荡，且振荡幅度很大；以55月为周期振荡，且振荡幅度较大。"
+        },
+        {
+          "block_id": "b_180",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "画出沙通量小波等值线图，如图27所示；画出沙通量小波方差分析图，如图28所示。从图27可得出以下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_182",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_177",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.802103,
+          "distance_weight": 0.7,
+          "s_link": 0.561472,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.576034,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.66076,
+          "cluster_top2_label": "4",
+          "cluster_top2_sim": 0.576323,
+          "cluster_margin": 0.084437,
+          "cluster_prior_raw": 0.572353,
+          "cluster_prior": 0.0,
+          "cluster_gate_passed": false,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.0
+        }
+      },
+      "pos": 179,
+      "rank": 42,
+      "score_base": 0.121146
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 43,
+    "query_block_pair_count": 60,
+    "cf_count": 64,
+    "caption_refs_sample": [
+      "图1",
+      "图1",
+      "图1",
+      "图2",
+      "图3",
+      "图4",
+      "图5",
+      "图6",
+      "图7",
+      "图6"
+    ],
+    "rerank_profile": "legacy",
+    "main_method": "LG-JSSF-Legacy+ClusterAdd",
+    "query_use_keywords": false
+  }
+}

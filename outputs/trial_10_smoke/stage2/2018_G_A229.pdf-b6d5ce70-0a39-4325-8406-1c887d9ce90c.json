@@ -1,0 +1,201 @@
+{
+  "paper_id": "2018_G_A229.pdf-b6d5ce70-0a39-4325-8406-1c887d9ce90c",
+  "top3_figures": [
+    {
+      "image_hash": "8dd9cd6b37f4817ae67e1bf861d78003059aa241bc19955fd54f3076f46b0311",
+      "caption": "图5.7四个不同时刻下热防护服的温度场分布图",
+      "score": 0.408075,
+      "s_direct": 0.350458,
+      "s_co": 0.494501,
+      "pos": 124,
+      "rank": 1,
+      "debug": {
+        "matched_caption_blocks": 13,
+        "top_cq_blocks": [
+          "b_33",
+          "b_15",
+          "b_81",
+          "b_21",
+          "b_139"
+        ]
+      }
+    },
+    {
+      "image_hash": "04149c4ded827377c8412ed82c1c630772f79f900951d46cac16225caeeb2135",
+      "caption": "图5.11第Ⅱ层与第IV层所有组合解示意图",
+      "score": 0.312872,
+      "s_direct": 0.254558,
+      "s_co": 0.400342,
+      "pos": 168,
+      "rank": 2,
+      "debug": {
+        "matched_caption_blocks": 13,
+        "top_cq_blocks": [
+          "b_33",
+          "b_15",
+          "b_81",
+          "b_21",
+          "b_139"
+        ]
+      }
+    },
+    {
+      "image_hash": "b87b495de639fc2b8f97d91da3fd76138d74a430803dba267401785b33542395",
+      "caption": "图5.1热传导实例示意图 发动机中的强制对流散热 灯泡中的辐射散热",
+      "score": -0.04753,
+      "s_direct": 0.047004,
+      "s_co": -0.189331,
+      "pos": 25,
+      "rank": 3,
+      "debug": {
+        "matched_caption_blocks": 13,
+        "top_cq_blocks": [
+          "b_33",
+          "b_15",
+          "b_81",
+          "b_21",
+          "b_139"
+        ]
+      }
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "8dd9cd6b37f4817ae67e1bf861d78003059aa241bc19955fd54f3076f46b0311",
+      "caption": "图5.7四个不同时刻下热防护服的温度场分布图",
+      "score": 0.408075,
+      "s_direct": 0.350458,
+      "s_co": 0.494501,
+      "pos": 124,
+      "rank": 1,
+      "debug": {
+        "matched_caption_blocks": 13,
+        "top_cq_blocks": [
+          "b_33",
+          "b_15",
+          "b_81",
+          "b_21",
+          "b_139"
+        ]
+      }
+    },
+    {
+      "image_hash": "04149c4ded827377c8412ed82c1c630772f79f900951d46cac16225caeeb2135",
+      "caption": "图5.11第Ⅱ层与第IV层所有组合解示意图",
+      "score": 0.312872,
+      "s_direct": 0.254558,
+      "s_co": 0.400342,
+      "pos": 168,
+      "rank": 2,
+      "debug": {
+        "matched_caption_blocks": 13,
+        "top_cq_blocks": [
+          "b_33",
+          "b_15",
+          "b_81",
+          "b_21",
+          "b_139"
+        ]
+      }
+    },
+    {
+      "image_hash": "b87b495de639fc2b8f97d91da3fd76138d74a430803dba267401785b33542395",
+      "caption": "图5.1热传导实例示意图 发动机中的强制对流散热 灯泡中的辐射散热",
+      "score": -0.04753,
+      "s_direct": 0.047004,
+      "s_co": -0.189331,
+      "pos": 25,
+      "rank": 3,
+      "debug": {
+        "matched_caption_blocks": 13,
+        "top_cq_blocks": [
+          "b_33",
+          "b_15",
+          "b_81",
+          "b_21",
+          "b_139"
+        ]
+      }
+    },
+    {
+      "image_hash": "f39f46157f4396b1e6b59435ad2405f20b62fd2e3761417d9e4be8b9e31232cb",
+      "caption": "图5.2细杆示意图",
+      "score": -0.099036,
+      "s_direct": 0.273811,
+      "s_co": -0.658307,
+      "pos": 35
+    },
+    {
+      "image_hash": "b5b8a80c49564732cd92508f32f57c5c1b2829c28d0ff6da7a912e9b58565eca",
+      "caption": "图5.6温度场在不同时刻的空间分布",
+      "score": -0.107045,
+      "s_direct": 0.109185,
+      "s_co": -0.43139,
+      "pos": 122
+    },
+    {
+      "image_hash": "6fcb8006b5290b81f7d9690a378351710d0a335fdf20bc7fd8f990b7762617e9",
+      "caption": "图5.3“环境-防护服-人体”系统示意图",
+      "score": -0.13511,
+      "s_direct": 0.078316,
+      "s_co": -0.455248,
+      "pos": 65
+    },
+    {
+      "image_hash": "241bd6e688b827fb7dbffa14ab548931ea96bb580fc0dfc9541a5cc1b2f3872d",
+      "caption": "图5.9第  $\\mathrm{II}$  层最优厚度下皮肤外侧温度分布图",
+      "score": -0.183659,
+      "s_direct": 0.188479,
+      "s_co": -0.741866,
+      "pos": 157
+    },
+    {
+      "image_hash": "a0fc80f554571e5b28daeeaa0f673827824c74a1c15b560077a5e601fe2bba77",
+      "caption": "图5.10第Ⅱ层介质厚度  $0.6\\sim 17.0\\mathrm{mm}$  下皮肤外侧温度分布图",
+      "score": -0.217473,
+      "s_direct": 0.069992,
+      "s_co": -0.64867,
+      "pos": 161
+    },
+    {
+      "image_hash": "b966e0ab21083d7a68dca0bc02ef68c425e7bb6dab9f1783ac6ab39589c081de",
+      "caption": "图5.8",
+      "score": -0.236739,
+      "s_direct": 0.173628,
+      "s_co": -0.852289,
+      "pos": 146
+    },
+    {
+      "image_hash": "a1814c2018ab863f99557ba4cc6c5787f66813fe8e5ea93a75825513ae1bb2d4",
+      "caption": "图5.5假人皮肤外侧温度随时间的变化",
+      "score": -0.28315,
+      "s_direct": 0.030567,
+      "s_co": -0.753726,
+      "pos": 115
+    },
+    {
+      "image_hash": "6786c53c31ef19fbdd636fa29a276022845766fb15f39e667a9d7a0c5eb5eeeb",
+      "caption": "图5.4热传导方程的网格划分",
+      "score": -0.387636,
+      "s_direct": -0.003305,
+      "s_co": -0.964132,
+      "pos": 101
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 57,
+    "cf_count": 13,
+    "caption_refs_sample": [
+      "如图5.1所示",
+      "图5.1",
+      "如图5.2所示",
+      "图5.2",
+      "图5.4",
+      "图5.5",
+      "图5.6",
+      "图5.7",
+      "图5.6",
+      "图5.8"
+    ]
+  }
+}

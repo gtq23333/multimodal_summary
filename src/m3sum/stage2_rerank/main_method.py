@@ -42,10 +42,23 @@ def main_cluster_scorer(config: PipelineConfig) -> ClusterPriorScorer | None:
     )
 
 
-def _load_stage2_items(config: PipelineConfig, paper_id: str) -> list[dict[str, Any]]:
+def stage2_query_config_matches(config: PipelineConfig, paper_id: str) -> bool:
+    """stage2 缓存是否与当前 query_use_keywords 配置一致。"""
     path = config.stage2_dir / f"{paper_id}.json"
     if not path.is_file():
+        return False
+    data = json.loads(path.read_text(encoding="utf-8"))
+    stored = data.get("recall_debug", {}).get("query_use_keywords")
+    if stored is None:
+        # 旧缓存默认按 query+keywords 生成
+        return config.query_use_keywords is True
+    return stored == config.query_use_keywords
+
+
+def _load_stage2_items(config: PipelineConfig, paper_id: str) -> list[dict[str, Any]]:
+    if not stage2_query_config_matches(config, paper_id):
         return []
+    path = config.stage2_dir / f"{paper_id}.json"
     data = json.loads(path.read_text(encoding="utf-8"))
     return list(data.get("all_scores", []))
 

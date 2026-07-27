@@ -1,0 +1,216 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "Qwen3-VL-Rerank-ImgCap__top6__end_to_end_vlm__qwen3_6-27b",
+  "created_at": "2026-07-09T05:45:36.442665+00:00",
+  "paper_id": "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451",
+  "method_name": "Qwen3-VL-Rerank-ImgCap",
+  "pool_size": 6,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451",
+    "method_name": "Qwen3-VL-Rerank-ImgCap",
+    "pool_size": 6,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "a3ddcdf0742c840a0a342572b82d78cdd5d4d2c3e7de7bb92376783e6a7d6e7d",
+        "rank": 1,
+        "score": 0.7875924038784161,
+        "caption": "图1会员消费特征指标",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451\\images\\a3ddcdf0742c840a0a342572b82d78cdd5d4d2c3e7de7bb92376783e6a7d6e7d.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "6e9ff918b2015bfca950af2bd29ce3b00c608adee57489207eb7645cf43c699a",
+        "rank": 2,
+        "score": 0.77592280172267,
+        "caption": "图6会员与非会员每日消费总金额情况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451\\images\\6e9ff918b2015bfca950af2bd29ce3b00c608adee57489207eb7645cf43c699a.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "27621efafdfa8456ddb8d7af1a6450d19f41ee4fe58f39059a87932bfa6956e9",
+        "rank": 3,
+        "score": 0.7282074956768908,
+        "caption": "图3 会员消费宗数占比",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451\\images\\27621efafdfa8456ddb8d7af1a6450d19f41ee4fe58f39059a87932bfa6956e9.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "b6170ab1b1712fcab4d222bd45f6efa382f04f83ef1e68f9c7c14bde5a57a7fe",
+        "rank": 4,
+        "score": 0.6967433608601382,
+        "caption": "图2会员消费总金额占比",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451\\images\\b6170ab1b1712fcab4d222bd45f6efa382f04f83ef1e68f9c7c14bde5a57a7fe.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "0c990aec2758f6b99f8059a4998e86463845f26155d20ea5c6c724bf4c9a26b4",
+        "rank": 5,
+        "score": 0.6688378564588938,
+        "caption": "图4 商品购买数量占比",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451\\images\\0c990aec2758f6b99f8059a4998e86463845f26155d20ea5c6c724bf4c9a26b4.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "52ab1afa884f8692f5ac04e9f5b26762d43ef9fb5d9316a03826e604bbf093da",
+        "rank": 6,
+        "score": 0.658245920678711,
+        "caption": "图7各层评价目标",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_C008.pdf-3e10abb3-a9d0-4ecb-898d-01d2020ed451\\images\\52ab1afa884f8692f5ac04e9f5b26762d43ef9fb5d9316a03826e604bbf093da.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "52ab1afa884f8692f5ac04e9f5b26762d43ef9fb5d9316a03826e604bbf093da",
+      "6e9ff918b2015bfca950af2bd29ce3b00c608adee57489207eb7645cf43c699a",
+      "a3ddcdf0742c840a0a342572b82d78cdd5d4d2c3e7de7bb92376783e6a7d6e7d"
+    ],
+    "retrieval_metrics": {
+      "ip@6": 0.5,
+      "ir@6": 1.0,
+      "jaccard@6": 0.5,
+      "maxsim@6": 0.839942
+    },
+    "reference_summary": null,
+    "reference_sequence": null
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_24",
+        "block_idx": 24,
+        "query_dimension": "分析",
+        "text": "而对于会员与非会员群体之间的差异，我们从购买力以及购买数量的角度深入分析会员与非会员带给商场的价值差异，进而分析会员给商场带来的价值。"
+      },
+      {
+        "block_id": "b_62",
+        "block_idx": 62,
+        "query_dimension": "分析",
+        "text": "为了进一步分析客户给商场带来的价值，本文对会员和非会员的购买力进行了对比分析。同时，考虑到现有数据时间维度的不统一，本文以商场销售流水表为基准，提取时间节点为2016年1月至2017年9月的会员、非会员消费明细，开展分析。"
+      },
+      {
+        "block_id": "b_3",
+        "block_idx": 3,
+        "query_dimension": "分析",
+        "text": "(1）对该商场的会员消费特征以及会员与非会员差异进行分析，并说明会员给商场带来的价值；(2）建立刻画会员购买力的数学模型，对会员的价值进行识别；(3）在某个时间窗口，建立会员生命周期和状态划分的数学模型；(4）计算会员生命周期中非活跃会员的激活率，并确定激活率和商场促销活动之间的关系模型；(5）根据会员的喜好和商品的连带率设计促销方案帮助商家策划促销活动。"
+      },
+      {
+        "block_id": "b_57",
+        "block_idx": 57,
+        "query_dimension": "分析",
+        "text": "关注消费者对促销活动、高价商品的敏感度是分析消费者消费特征的一个很好的方向，在商场的营业中，销售特价商品和高价商品往往是商场提高盈利的渠道，所以可通过分析会员的特价商品和高价商品的消费情况来分析商场会员的消费特征。根据会员的消费明细表，可知会员的特价商品和高价商品的消费情况如表3所示。"
+      },
+      {
+        "block_id": "b_22",
+        "block_idx": 22,
+        "query_dimension": "分析",
+        "text": "对于问题一，我们运用数据统计分析的方法来对会员信息进行分析。问题中需要根据会员消费明细表分析会员的消费特征，主要从三个维度来分析：购买力、时间偏好、消费偏好，具体分析指标如下图所示："
+      },
+      {
+        "block_id": "b_66",
+        "block_idx": 66,
+        "query_dimension": "分析",
+        "text": "从会员与非会员的消费总金额情况中可以明显看出，在统计时间段内，大部分会员每日消费金额比非会员每日消费金额高，会员群体的单日消费总金额增幅较大，购买力比非会员群体高。但可以注意到在2016年1月到2016年3月这段时间会员的每日消费总金额都非常低，相反在这段时间内非会员每日消费总金额是最高的，即非会员群体是最活跃的。对于此现象，我们推测在该段时间内商场会员人数处于较少阶段，商场推出一系列促销活动，增加了非会员群体的消费金额，并借此机会发展新会员，使得非会员群体升级为会员。"
+      },
+      {
+        "block_id": "b_1",
+        "block_idx": 1,
+        "query_dimension": "分析",
+        "text": "在传统的市场营销中，想准确知道消费者的习惯、偏好、个性等影响消费者购买行为的因素是十分困难的，企业想对消费者进行精准化营销也难以实现，因此导致企业浪费了大量的营销资源。在众多大数据工具中用户画像技术是帮助企业准确识别和分析目标客户的有效工具之一，对于零售运营商的会员发展和维系，完善会员画像描绘，加强对现有会员的精细化管理，定期向其精准推送产品和服务，与会员建立稳定的关系是实体零售行业得以更好发展的有效途径。"
+      },
+      {
+        "block_id": "b_6",
+        "block_idx": 6,
+        "query_dimension": "分析",
+        "text": "假设销售数据录入系统时不存在时间差；假设销售流水表和会员消费明细表中的一条记录代表一次消费，即不存在同一次消费产生多条记录的情况；假设会员的会员卡自开卡日起，除了自行退出外不存在会员卡过期导致会员退会的情况。"
+      },
+      {
+        "block_id": "b_202",
+        "block_idx": 202,
+        "query_dimension": "建模",
+        "text": "对于非活跃会员激活率和商场促销活动之间的关系模型，考虑到商场促销活动与特价商品有关，结合非活跃会员的激活率和特价商品消费总金额在商品消费总金额中的占比，利用SAS软件做相关性分析，得到激活率和商场促销活动之间的关系模型。"
+      },
+      {
+        "block_id": "b_189",
+        "block_idx": 189,
+        "query_dimension": "建模",
+        "text": "为了更有效地对商场会员进行维系以及管理，该模型用于判别会员处于生命周期内的状态。通常情况下，会员的生命周期状态分为活跃会员、沉默会员、流失会员等。"
+      },
+      {
+        "block_id": "b_262",
+        "block_idx": 262,
+        "query_dimension": "建模",
+        "text": "在大型百货商场的背景下，本文建立了完整的会员画像刻画模型，对商场会员的消费行为进行特征分析，衡量会员对于商场的价值，根据会员生命周期状态对会员的状态进行划分，使商场能够更有效地对会员进行精细化管理以及及时制定营销策略来发展和维系会员，从而达到增益的目的。"
+      },
+      {
+        "block_id": "b_232",
+        "block_idx": 232,
+        "query_dimension": "建模",
+        "text": "比较(36)式和(37)式，可以看出在两个会员群体中激活率和商场促销活动均呈正比例关系，即商场促销活动对会员生命周期的激活率皆起着促进的作用，且其对沉默会员的促进效果优于其对流失会员的促进效果。"
+      },
+      {
+        "block_id": "b_200",
+        "block_idx": 200,
+        "query_dimension": "建模",
+        "text": "问题四中要求计算非活跃会员的激活率和确定激活率和商场促销活动之间的关系模型。"
+      },
+      {
+        "block_id": "b_221",
+        "block_idx": 221,
+        "query_dimension": "建模",
+        "text": "根据上式，可知每个流失会员与沉默会员在生命周期中非活跃会员的激活率如下表所示："
+      },
+      {
+        "block_id": "b_201",
+        "block_idx": 201,
+        "query_dimension": "建模",
+        "text": "从问题三的聚类结果中可筛选出非活跃状态的会员，给非活跃会员构建分析指标：R、F、M、T指标，针对非活跃会员的RFMT指标进行因子分析，可得到相应指标的因子得分，以每个公因子的方差贡献率作为权重系数，对每个因子进行加权求和，从而计算得到各非活跃会员的激活率。"
+      },
+      {
+        "block_id": "b_249",
+        "block_idx": 249,
+        "query_dimension": "求解",
+        "text": "通过关联规则挖掘，可以看到会员购买量前十的商品及其关联商品如上表所示。若商场要开展促销活动，可根据以上关联规则进行适当搭配销售，通过调整柜台等方式将相关商品以就近原则摆放，通过连带消费对相关联的商品进行销售。"
+      },
+      {
+        "block_id": "b_235",
+        "block_idx": 235,
+        "query_dimension": "求解",
+        "text": "连带消费是商场经营的核心，例如经典的“尿布与啤酒”的故事。连带消费是商品与商品之间具有的某种特定的关系导致的，根据会员的消费情况，对购买的商品进行关联规则挖掘；同时筛选出会员消费记录中的购买数量前十的商品作为会员的喜爱商品，结合商品之间的关联规则，开展促销活动。"
+      },
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "求解",
+        "text": "在零售行业中，会员的发展和维系对零售运营商而言至关重要，会员不但能够为运营商带来稳定的销售额和利润，而且对运营商的营销策略制定起着重要的作用。但随着电商日益发展，实体商场的会员不断流失，给零售运营商带来了严重损失，因此商家必须开展各种营销活动来吸引更多的会员以及维系旧会员。"
+      }
+    ],
+    "body_char_count": 35051
+  },
+  "generated_summary": "针对电商冲击下实体零售会员流失问题，本文基于某大型百货商场数据，构建会员画像以辅助精细化管理。首先，从购买力、时间偏好、消费偏好三个维度分析会员消费特征 [Insert Figure C1]。结果显示会员购买力集中在中低水平，偏好春夏消费，对特价和高价商品敏感。对比发现，虽然非会员总消费额略高，但会员单日消费增幅更大，具有更高的单客价值 [Insert Figure C2]。其次，建立RFMT模型刻画会员购买力。引入最近一次消费间隔(R)、频率(F)、总金额(M)及单次最高金额(T)四个指标，利用层次分析法(AHP)确定权重，并通过K-means聚类将会员划分为高价值、重要发展等8个等级 [Insert Figure C6]。接着，基于RFMT模型中的R和F指标，利用K-means聚类将会员生命周期划分为活跃、沉默和流失三种状态。随后，针对非活跃会员，采用因子分析法计算其激活率，并建立多元线性回归模型分析激活率与促销活动的关系，结果表明促销活动能显著提升激活率。最后，利用关联规则挖掘算法分析商品连带关系，筛选出热门商品及其关联商品，为商场制定搭配促销策略提供依据。",
+  "inserted_figures": [
+    "a3ddcdf0742c840a0a342572b82d78cdd5d4d2c3e7de7bb92376783e6a7d6e7d",
+    "6e9ff918b2015bfca950af2bd29ce3b00c608adee57489207eb7645cf43c699a",
+    "52ab1afa884f8692f5ac04e9f5b26762d43ef9fb5d9316a03826e604bbf093da"
+  ],
+  "selected_image_hashes": [
+    "a3ddcdf0742c840a0a342572b82d78cdd5d4d2c3e7de7bb92376783e6a7d6e7d",
+    "6e9ff918b2015bfca950af2bd29ce3b00c608adee57489207eb7645cf43c699a",
+    "52ab1afa884f8692f5ac04e9f5b26762d43ef9fb5d9316a03826e604bbf093da"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C2]",
+    "[Insert Figure C6]"
+  ],
+  "rationale": "C1 (图1) 清晰展示了会员消费特征分析的三个维度（购买力、时间偏好、消费偏好），有助于读者快速理解问题一的建模思路；C2 (图6) 直观对比了会员与非会员的每日消费总金额，有力地支撑了“会员具有更高单客价值”这一关键结论；C6 (图7) 展示了RFMT模型的层次结构，明确了模型构建的指标体系，有助于理解问题二的建模方法。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

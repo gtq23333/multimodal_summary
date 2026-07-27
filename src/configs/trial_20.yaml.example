@@ -109,9 +109,11 @@ eval:
 stage2_eval:
   jaccard_k: 3
   maxsim_k: 3
+  recall_ks: [4, 5, 6, 7, 8]
   clip_model: "OFA-Sys/chinese-clip-vit-base-patch16"
   methods:
     - "Proposed"
+    - "Proposed-v2"
     - "Qwen3-VL-Rerank-ImgCap+Link"
     - "Qwen3-VL-Rerank-ImgCap"
     - "Qwen3-VL-Rerank-Img"
@@ -122,6 +124,18 @@ stage2_eval:
   vl_rerank_instruct: "Given a query describing information needs for a mathematical modeling paper summary, retrieve the most relevant figures."
   vl_rerank_img_cap_instruct: "Given a query describing information needs for a mathematical modeling paper summary, retrieve the most relevant figure entries. Each entry includes the figure image and its caption text."
   vl_rerank_img_cap_link_instruct: "Given a query describing information needs for a mathematical modeling paper summary, retrieve the most relevant figure entries. Each entry includes the figure image, its caption, and the most relevant text chunk linked to the query via co-occurrence."
+
+summary_proposal:
+  legacy_blend: 0.55
+  link_top_k: 3
+  link_coverage_threshold: 0.35
+  direct_coverage_threshold: 0.35
+  weights:
+    layout: 0.30
+    relevance: 0.35
+    type: 0.12
+    generality: 0.13
+    cluster: 0.10
 
 cluster_prior:
   enabled: true

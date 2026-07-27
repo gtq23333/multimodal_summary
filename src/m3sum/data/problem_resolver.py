@@ -6,7 +6,7 @@ from pathlib import Path
 
 def parse_problem_key(paper_id: str) -> str:
     """2016_G_A028.pdf-uuid -> 2016_A"""
-    m = re.match(r"(\d{4})_G_([A-D])", paper_id)
+    m = re.match(r"(\d{4})_G_([A-E])", paper_id)
     if not m:
         raise ValueError(f"Cannot parse problem key from paper_id: {paper_id}")
     return f"{m.group(1)}_{m.group(2)}"

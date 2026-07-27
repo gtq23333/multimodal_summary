@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "Layout-Order__top6__end_to_end_vlm__qwen3_6-27b",
+  "created_at": "2026-07-09T06:08:03.966563+00:00",
+  "paper_id": "2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5",
+  "method_name": "Layout-Order",
+  "pool_size": 6,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5",
+    "method_name": "Layout-Order",
+    "pool_size": 6,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66",
+        "rank": 1,
+        "score": -1.0,
+        "caption": "图1研究路径",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "6c358f6aa3dd1ba2bd75cf3d509f8e80bf863cb064c3ee9b73bf66f9b445191a",
+        "rank": 2,
+        "score": -2.0,
+        "caption": "图2含沙量时序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\6c358f6aa3dd1ba2bd75cf3d509f8e80bf863cb064c3ee9b73bf66f9b445191a.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "e9b28d6af8eb7eaf1d86da72a3e20a682007eb6352003327545457e7cd10e9f9",
+        "rank": 3,
+        "score": -3.0,
+        "caption": "图3剔除离群点后的含沙量时序图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\e9b28d6af8eb7eaf1d86da72a3e20a682007eb6352003327545457e7cd10e9f9.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "7430f086203f5a3e1c90a32d4d66ed5ab423f169f22e351ca9292cdb61e5195b",
+        "rank": 4,
+        "score": -4.0,
+        "caption": "图4含沙量的月份指数",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\7430f086203f5a3e1c90a32d4d66ed5ab423f169f22e351ca9292cdb61e5195b.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "63ca8fb5b5bb48073baa5c44891b3292202fb75d7e2f6a6bba1a6e7a987e0bab",
+        "rank": 5,
+        "score": -5.0,
+        "caption": "图5含沙量的季度指数",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\63ca8fb5b5bb48073baa5c44891b3292202fb75d7e2f6a6bba1a6e7a987e0bab.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "9e44f1b4f1ad6ef6ebb590b2f8d65043a06a22f765a5e3b938291e3988f0d17d",
+        "rank": 6,
+        "score": -6.0,
+        "caption": "图8水位、水流量、含沙量的散点图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5\\images\\9e44f1b4f1ad6ef6ebb590b2f8d65043a06a22f765a5e3b938291e3988f0d17d.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "47d3ad028759870628cda2608da3cd0a9831e8d5060f9d981c5ccc5ecb5da519",
+      "4d603b8e643ee2831ac177821cbf52fd092426e3876b8438650a1512dd66d501",
+      "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66"
+    ],
+    "retrieval_metrics": {
+      "ip@6": 0.166667,
+      "ir@6": 0.333333,
+      "jaccard@6": 0.125,
+      "maxsim@6": 0.867005
+    },
+    "reference_summary": null,
+    "reference_sequence": null
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_3",
+        "block_idx": 3,
+        "query_dimension": "分析",
+        "text": "（2）分析水沙通量的突变性、季节性和周期性等特性，研究水沙通量的变化规律。"
+      },
+      {
+        "block_id": "b_113",
+        "block_idx": 113,
+        "query_dimension": "分析",
+        "text": "问题分析：水通量就是径流量（亿m3），沙通量就是排沙量（亿吨），研究它们的变化规律，需要从统计特征、季节性、周期性和突变性四个方面来入手。"
+      },
+      {
+        "block_id": "b_9",
+        "block_idx": 9,
+        "query_dimension": "分析",
+        "text": "针对问题(2)，水通量就是径流量（亿m3），沙通量就是排沙量（亿吨），研究它们的变化规律，需要从统计特征、季节性、周期性和突变性四个方面来入手。季节性可通过月份指数、季度指数来描述。周期性可通过时序图、建立三角函数来解决。突变性可通过非参数Mann- Kendall检验法来解决。"
+      },
+      {
+        "block_id": "b_306",
+        "block_idx": 306,
+        "query_dimension": "分析",
+        "text": "（2）在分析水沙通量的季节性时，仍然建立了季节指数；在分析周期性时，建立了三角函数；在分析突变性时，分别使用M-K检验法和Fisher最优分割法进行交叉验证，可靠性强；为了详细寻找周期性和突变点，还使用了小波变换法，进一步验证了结论的正确性。"
+      },
+      {
+        "block_id": "b_114",
+        "block_idx": 114,
+        "query_dimension": "分析",
+        "text": "建模思路：首先，研究水沙通量的季节性，包括月份指数、月份分布、统计特征等。其次，研究水沙通量的周期性，包括时序图、即三角函数等。第三，研究水、沙通量的突变点，使用非参数Mann- Kendall检验法来解决。"
+      },
+      {
+        "block_id": "b_312",
+        "block_idx": 312,
+        "query_dimension": "分析",
+        "text": "本文所使用的模型或方法可以推广到水文资料分析问题中，还可以推广到其它有关季节性、周期性、突变性等问题的分析中。"
+      },
+      {
+        "block_id": "b_10",
+        "block_idx": 10,
+        "query_dimension": "分析",
+        "text": "针对问题(3)，为预测水沙通量的变化趋势，我们借鉴R/S分析法分析水沙通量的分形特征和长期记忆过程，以判断其未来存在相同趋势、反转趋势或随机趋势。为了制订采样监测方案，使用小波分析法分析信号不同周期的时间演变规律，以掌握其丰枯旱涝情况，再根据这些情况制订最优的采样监测方案。"
+      },
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "分析",
+        "text": "通过研究黄河水沙通量的变化规律可以对沿黄流域的环境治理、气候变化和人民生活的影响做出一定判断，以及对优化黄河流域水资源分配、协调人地关系、调水调沙、防洪减灾提供帮助。对黄河的治理发展有重要的理论指导意义。"
+      },
+      {
+        "block_id": "b_188",
+        "block_idx": 188,
+        "query_dimension": "建模",
+        "text": "问题分析：题目要求预测未来2年水沙通量的变化趋势，并制订未来2年最优的采样监测方案。为预测水沙通量的变化趋势，使用R/S分析法分析水沙通量的分形特征和长期记忆过程，以判断其未来是否存在相同趋势、反转趋势或随机趋势。为预测未来2年的水沙通量数据，可建立傅里叶级数去逼近。为制订采样监测方案，使用小波分析法分析信号不同周期的时间演变规律，以掌握其丰枯旱涝情况，再根据这些情况把最优方案问题转化为背包问题，从而通过建立0- 1规划模型来制订最优的采样监测方案。"
+      },
+      {
+        "block_id": "b_307",
+        "block_idx": 307,
+        "query_dimension": "建模",
+        "text": "（3）在分析水沙通量的趋势性时，使用R/S分析法；在预测未来2年的水沙通量时，建立了傅里叶级数，预测精度较高；在建立最优采样监测方案时巧妙转化为背包问题，存在最优解。"
+      },
+      {
+        "block_id": "b_189",
+        "block_idx": 189,
+        "query_dimension": "建模",
+        "text": "建模思路：首先，使用R/S分析法研究水沙通量是否在未来2年存在反转趋势。其次，建立傅里叶级数，预测未来2年的水沙通量数据。第三，使用小波分析法掌握其丰枯旱涝情况，再建立0- 1规划模型，获得最优的采样监测方案。仍然把水沙通量整理成以“月”为时间点的时间序列。"
+      },
+      {
+        "block_id": "b_61",
+        "block_idx": 61,
+        "query_dimension": "建模",
+        "text": "基于以上结论，可分别建立含沙量与水位、含沙量与水流量的回归方程，但不能以水位、水流量为自变量建立二元回归模型，这是因为水位与水流量高度相关的缘故。"
+      },
+      {
+        "block_id": "b_4",
+        "block_idx": 4,
+        "query_dimension": "建模",
+        "text": "（3）根据水沙通量的变化规律，预测该水文站未来两年水沙通量的变化趋势，并为该水文站制订未来两年最优的采样监测方案，使其既能及时掌握水沙通量的动态变化情况，又能最大程度地减少监测成本资源。"
+      },
+      {
+        "block_id": "b_229",
+        "block_idx": 229,
+        "query_dimension": "建模",
+        "text": "为制定最优的采样监测方案，基本思路是：在水沙通量变化平缓的时间点减少采样次数，相反，在水沙通量变化急剧的时间点增加采样次数。"
+      },
+      {
+        "block_id": "b_239",
+        "block_idx": 239,
+        "query_dimension": "建模",
+        "text": "建模思路：以时间点“月”为例，首先，对历年每月的水沙通量所携带的信息进行度量，并汇总成月均信息量。其次，对未来2年每月的水沙通量所携带的信息进行度量。第三，以月均信息量为约束条件，以总监测次数最小为目标，建立0- 1规划模型。"
+      },
+      {
+        "block_id": "b_33",
+        "block_idx": 33,
+        "query_dimension": "建模",
+        "text": "建模思路：首先，研究含沙量与时间的关系，画时序图观察是否存在某种趋势，计算季节指数观察是否存在旺季和淡季。其次，以含沙量为因变量，以水位、水流量为自变量，建立回归方程。"
+      },
+      {
+        "block_id": "b_8",
+        "block_idx": 8,
+        "query_dimension": "求解",
+        "text": "针对问题(1)，该问题分为两个方面，一是研究水位、水流量、时间与含沙量的关系，二是估算近六年的该水文站的年总流水量和年总排沙量。对于含沙量与时间的关系，可以通过时序图、季节指数、时间趋势等方法来描述。对于含沙量与水位的关系，可以通过相关分析、回归分析来解决。然后定义年总流水量和年总排沙量，并计算6年的数值结果。"
+      },
+      {
+        "block_id": "b_228",
+        "block_idx": 228,
+        "query_dimension": "求解",
+        "text": "# 5.3.3制订水沙通量的最优采样监测方案"
+      }
+    ],
+    "body_char_count": 71608
+  },
+  "generated_summary": "本文针对黄河小浪底水库下游水文站的水沙监测数据，建立了数学模型以分析水沙通量的变化规律并制定监测方案。[Insert Figure C1] 针对问题1，通过时序图和季节指数分析含沙量与时间的关系，建立正弦函数拟合模型；利用双对数回归方程刻画含沙量与水位、水流量的非线性关系，并估算了近6年的年总水流量和年总排沙量。针对问题2，综合运用月份指数、三角函数拟合、M-K检验法、Fisher最优分割法及小波变换法，深入剖析了水沙通量的季节性、周期性和突变性特征，发现水沙通量在2018年出现显著突变，且具有明显的年周期规律。针对问题3，采用R/S分析法研判水沙通量的分形特征与长期记忆过程，利用傅里叶级数预测未来两年的水沙通量趋势；将最优监测方案问题转化为背包问题，建立0-1规划模型，确定了以月为周期的最优采样策略。针对问题4，利用微元法计算平均河底高程，评估了“调水调沙”的实际效果，并基于灰色GM(1,1)模型预测了未来十年不调沙情况下的河底高程演变趋势。研究表明，所建模型能有效揭示黄河水沙通量的时空演变规律，为优化水资源分配和防洪减灾提供了理论支持。",
+  "inserted_figures": [
+    "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66"
+  ],
+  "selected_image_hashes": [
+    "9812a729af7420e9a5eedc658deb60aad6489310c786abddc50690893f9cfe66"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]"
+  ],
+  "rationale": "C1（研究路径图）以思维导图的形式清晰地展示了整篇论文针对四个问题所采用的核心模型与方法（如双对数回归、M-K检验、R/S分析、0-1规划等）。将其插入摘要开头，能够帮助读者在阅读全文细节前快速建立对论文整体逻辑框架和建模思路的认知，具有极高的结构价值和信息密度。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

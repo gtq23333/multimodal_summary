@@ -1,0 +1,219 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "All-Figures__top7__text_rag_then_rewrite__qwen3_6-27b",
+  "created_at": "2026-07-10T06:02:44.592695+00:00",
+  "paper_id": "2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a",
+  "method_name": "All-Figures",
+  "pool_size": 7,
+  "strategy": "text_rag_then_rewrite",
+  "model": "qwen3.6-27b",
+  "candidate_pool": {
+    "paper_id": "2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a",
+    "method_name": "All-Figures",
+    "pool_size": 7,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "b75c754c6f427f3962d93eebca7cad5d66fe8163a1277618684324e361a1752a",
+        "rank": 1,
+        "score": null,
+        "caption": "图1 模型思维导图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a\\images\\b75c754c6f427f3962d93eebca7cad5d66fe8163a1277618684324e361a1752a.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "f764b25c730e120c350c16dedaf2ec55f622a731c43c9ac69baea37ec0633ee1",
+        "rank": 2,
+        "score": null,
+        "caption": "图2 情况1的流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a\\images\\f764b25c730e120c350c16dedaf2ec55f622a731c43c9ac69baea37ec0633ee1.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "f16431a810ef3d2e6ff14f3f5cf7972ed57bc101137b515847bab12d00657ef1",
+        "rank": 3,
+        "score": null,
+        "caption": "图3 情况2的流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a\\images\\f16431a810ef3d2e6ff14f3f5cf7972ed57bc101137b515847bab12d00657ef1.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "0668dd8d2a0e5cf7cc45ba194b77d944a5525a5a66f1f4e7e20f4f97ad8556b9",
+        "rank": 4,
+        "score": null,
+        "caption": "图4 情况3-1的流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a\\images\\0668dd8d2a0e5cf7cc45ba194b77d944a5525a5a66f1f4e7e20f4f97ad8556b9.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "5ee82327435f576fe84b42c0b43ef9631463e5f0c2bff59038d2d8e6d8f0d19c",
+        "rank": 5,
+        "score": null,
+        "caption": "图5 情况3-2的流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a\\images\\5ee82327435f576fe84b42c0b43ef9631463e5f0c2bff59038d2d8e6d8f0d19c.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "5bb2d99db01010ac716bbeb9a810fbd7833522d2556bed4997570eb9af9d0627",
+        "rank": 6,
+        "score": null,
+        "caption": "图6 情况1两种方法各组别成料数",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a\\images\\5bb2d99db01010ac716bbeb9a810fbd7833522d2556bed4997570eb9af9d0627.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "b3dbb6640ccd07c3a5eee121ed249308af871cace97e5af17425e838af297d27",
+        "rank": 7,
+        "score": null,
+        "caption": "图7 情况2两种方法各组别成料数",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a\\images\\b3dbb6640ccd07c3a5eee121ed249308af871cace97e5af17425e838af297d27.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "0668dd8d2a0e5cf7cc45ba194b77d944a5525a5a66f1f4e7e20f4f97ad8556b9",
+      "5ee82327435f576fe84b42c0b43ef9631463e5f0c2bff59038d2d8e6d8f0d19c",
+      "b75c754c6f427f3962d93eebca7cad5d66fe8163a1277618684324e361a1752a",
+      "f16431a810ef3d2e6ff14f3f5cf7972ed57bc101137b515847bab12d00657ef1",
+      "f764b25c730e120c350c16dedaf2ec55f622a731c43c9ac69baea37ec0633ee1"
+    ],
+    "retrieval_metrics": {
+      "ip@7": 0.714286,
+      "ir@7": 1.0,
+      "jaccard@7": 0.714286
+    },
+    "reference_summary": null,
+    "reference_sequence": null,
+    "pool_metadata": {
+      "pool_type": "all_figures",
+      "actual_candidate_count": 7
+    }
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_109",
+        "block_idx": 109,
+        "query_dimension": "分析",
+        "text": "实际生产生活中，工业流水线上存在多种不确定因素影响着正常生产，也影响了调度目标的实现。情况3指出CNC在加工过程中可能发生概率为1%的故障，故障发生时该机正在加工的物料即刻报废，人工排除故障需要 $10\\sim 20$ 分钟，排除故障后该机即刻加入作业序列。因此在规划RGV动态调度模型时，应考虑通过实时采集故障机信息，及时更新RGV作业指令，使得RGV工作不因故障机停滞，从而提高此智能加工系统的生产效率。"
+      },
+      {
+        "block_id": "b_11",
+        "block_idx": 11,
+        "query_dimension": "分析",
+        "text": "关于情况（1)：在智能加工系统中通过调度1台RGV对8台CNC进行上下料与清洗，RGV每次只能为一台CNC进行上下料与洗料，每轮作业RGV与8台CNC的关系可用0- 1逻辑变量表示，以所获成料数量最大作为目标函数，以RGV的调度路径作为决策变量，以智能加工系统中加工规则作为约束条件，以0- 1规划思想建立单目标规划模型，可以得到一道工序加工需求下的RGV动态调度模型。并根据以上思想，给出具有可行性的算法。"
+      },
+      {
+        "block_id": "b_18",
+        "block_idx": 18,
+        "query_dimension": "分析",
+        "text": "（1）因安全需要，系统启动后直到系统停止作业，中途不能更换刀具。（2）RGV运行至需要作业的某CNC处时，上料传送带将生料同时送到该CNC正前方，下料传送带将清洗后的成料能立刻送走。（3）CNC一旦发生故障，工作人员即刻开始排除故障。（4）RGV所有的计算处理时间为0，不会对系统产生任何影响。（5）除非系统因已连续工作8小时而停止作业，RGV的移动、上下料、清洗等操作不会被中途停止。"
+      },
+      {
+        "block_id": "b_230",
+        "block_idx": 230,
+        "query_dimension": "分析",
+        "text": "根据表7中的系统作业参数，对CNC概率故障情况下加工两道工序的物料进行最快获得最多成品的双目标规划，检验结果如表8："
+      },
+      {
+        "block_id": "b_12",
+        "block_idx": 12,
+        "query_dimension": "分析",
+        "text": "关于情况（2)：现实生产生活中，物料往往不止有一道工序，由于工序之间复杂度不同，加工耗时也会有差异。对有限加工资源的合理规划，能有效的解决这类问题。本文拟以所获成料数量最多、所获最多成品数量时RGV工作总时间最少作为目标函数，仍以RGV的调度路径作为决策变量，以智能加工系统中加工规则作为约束条件，根据0- 1规划思想建立双目标规划模型，可得到两道工序加工需求下的RGV动态规划模型，并给出具体可行的算法。"
+      },
+      {
+        "block_id": "b_7",
+        "block_idx": 7,
+        "query_dimension": "分析",
+        "text": "任务2：利用表1中3组系统作业参数分别检验模型的实用性与算法的有效性，给出RGV的调度策略与系统的作业效率，将具体结果填入附件2的EXCEL表中。"
+      },
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "分析",
+        "text": "1.1 问题的提出轨道式自动引导车（Rail Guide Vehicle, RGV）因为其无需人员操作且运行速度快的特点，能实现与系统快速连接并按照计划进行物料的传输等，在当今自动化物流系统与自动化仓库中有着重要应用，RGV的动态调度的研究对车间的高效作业有着重要意义。"
+      },
+      {
+        "block_id": "b_134",
+        "block_idx": 134,
+        "query_dimension": "分析",
+        "text": "为了模拟概率故障，在每一轮上料时刻，通过生成均布随机数来决定此物料是否有可能在未来的加工过程中发生故障，如果此物料的加工过程会发生故障，则分别生成均布随机数以决定故障的发生时刻和修复故障所需的时间，并记录这些信息。在每一次RGV完成上下料（和洗料）时刻、RGV完成移动时刻、RGV原地等待时段，处理已发生且未曾处理的故障，将此次故障与修复的概念等效转化为故障CNC正在加工物料，令此次加工时间等于修复时间，且此次加工结束（即完成修复）之后此CNC中不存在物料（即产生故障的物料被人为报废）。如果发生故障的CNC正好是RGV即将响应需求的CNC，则令RGV原地等待，并重新开始循环选择另一个需要被相应需求的CNC。"
+      },
+      {
+        "block_id": "b_70",
+        "block_idx": 70,
+        "query_dimension": "建模",
+        "text": "具有两道工序的物料，在加工过程中有生料、已加工一道工序的物料以及熟料三种工序状态。在一个班次中，一台CNC仅能使用一种刀具加工一道工序情况下，如何让RGV在上下料时“认识”机械臂所持物料正处于哪种工序状态并对其进行进一步处理（送至相应CNC进行后序加工、洗料）是一大难点。本文通过引入物料工序状态因子 $X^{(k)}$ 、CNC加工工序类型因子 $Y_{i}$ 。当这两种因子匹配成功时，RGV才能成功进行上下料。"
+      },
+      {
+        "block_id": "b_30",
+        "block_idx": 30,
+        "query_dimension": "建模",
+        "text": "任务一实际为在CNC有无发生故障的情况下分别对加工一道工序、两道工序的物料建立4种RGV动态调度模型。本模块下4种模型均在采用第一类RGV的基础上建立。"
+      },
+      {
+        "block_id": "b_105",
+        "block_idx": 105,
+        "query_dimension": "建模",
+        "text": "从0时刻（即系统启动时刻）开始，通过综合考虑所有历史需求信号和当轮需求信号，在所负责工序符合当前目标工序的CNC中，找出能最快完成上下料的CNC，并响应此CNC的当轮需求信号，对此CNC完成一轮上下料的过程，随后按照实际情况判断是否洗料以及是否改变目标工序。反复执行上述操作。当累计超过8小时，中止循环。最终依据双决策目标找出最优化刀具分布方案及相应的物料加工情况。"
+      },
+      {
+        "block_id": "b_15",
+        "block_idx": 15,
+        "query_dimension": "求解",
+        "text": "模型的可行性、CNC平均非有效工作时长，将算法的有效性分解为程序总运行时长、Matlab内存占用量。利用三组系统参数分别检验情况1、2、3的模型，讨论计算过程与结果的模型的实用性与算法的有效性。"
+      },
+      {
+        "block_id": "b_251",
+        "block_idx": 251,
+        "query_dimension": "求解",
+        "text": "（1）在实际生产中，延迟时间会由多种随机因素决定，因此使用一个固定的近似延迟时间来将其代替并纳入模型的计算，以尽可能减小误差。（2）当CNC数量增多时，使用遗传算法、蚁群算法等近似最优解算法来计算刀具分布方案，进而提高计算效率。（3）结合现实中的故障发生情况，制订更加接近真实情况的故障发生方案，使仿真结果更加符合真实情况。"
+      },
+      {
+        "block_id": "b_227",
+        "block_idx": 227,
+        "query_dimension": "求解",
+        "text": "为了进一步验证模型的实用性与算法的可行性，本文通过题给三组数据重新组合得到仿真数据，如表7"
+      },
+      {
+        "block_id": "b_253",
+        "block_idx": 253,
+        "query_dimension": "求解",
+        "text": "此次基于RGV的单RGV动态调度模型的建立与解决有着重要的现实意义，单RGV调度在工业生产、终端排序、云调度系统等领域具有灵活的、重要的应用价值。本文采用的启发式算法与循环遍历法在日常生活中的诸多问题中也有着广泛应用。"
+      },
+      {
+        "block_id": "b_168",
+        "block_idx": 168,
+        "query_dimension": "求解",
+        "text": "本文利用题给3组参数检验模型的实用性与算法的有效性。"
+      }
+    ],
+    "body_char_count": 63801
+  },
+  "generated_summary": "针对由8台CNC与1台RGV组成的智能加工系统动态调度问题，本文综合考虑单工序、双工序及CNC随机故障三种工况，构建了以最大化系统产量为目标的RGV动态调度模型。根据RGV信息处理能力差异，分别建立了考虑历史需求信号的预判型调度模型与仅依赖当轮信号的响应型调度模型 [Insert Figure C1]。针对单工序加工，采用0-1规划建立单目标模型；针对双工序加工，引入物料工序状态与CNC刀具类型匹配机制，建立兼顾产量最大与RGV工作时间最短的双目标规划模型，并通过循环遍历法求解最优刀具分布方案。对于CNC 1%概率随机故障，采用离散事件仿真模拟故障发生与修复过程，将故障维修时间等效转换为延长加工时间，实现调度指令的实时动态更新。模型求解设计了基于最短预期完成时间的启发式算法，通过迭代选择RGV下一作业目标CNC，高效获取近似最优调度策略。利用三组系统参数进行验证，结果表明预判型模型在各类工况下均优于响应型模型，单工序产量分别达到382、359、392件 [Insert Figure C6]，双工序产量为253、211、243件 [Insert Figure C7]，故障工况下产量波动可控。从实施可行性、经济性、普适性及CNC平均非有效工作时长等维度评价模型实用性，结合程序运行时间与内存占用评估算法有效性，证实所提模型与算法具有较高实用价值与计算效率。本研究为智能车间物料流转与设备协同调度提供了有效的理论支撑与决策依据。",
+  "inserted_figures": [
+    "b75c754c6f427f3962d93eebca7cad5d66fe8163a1277618684324e361a1752a",
+    "5bb2d99db01010ac716bbeb9a810fbd7833522d2556bed4997570eb9af9d0627",
+    "b3dbb6640ccd07c3a5eee121ed249308af871cace97e5af17425e838af297d27"
+  ],
+  "selected_image_hashes": [
+    "b75c754c6f427f3962d93eebca7cad5d66fe8163a1277618684324e361a1752a",
+    "5bb2d99db01010ac716bbeb9a810fbd7833522d2556bed4997570eb9af9d0627",
+    "b3dbb6640ccd07c3a5eee121ed249308af871cace97e5af17425e838af297d27"
+  ],
+  "placeholders": [
+    "[Insert Figure C1]",
+    "[Insert Figure C6]",
+    "[Insert Figure C7]"
+  ],
+  "rationale": "C1（模型思维导图）清晰展示了预判型与响应型模型的逻辑架构及差异，适合在介绍模型分类时插入以辅助理解；C6和C7分别为单工序和双工序的产量对比柱状图，直观展示了模型验证结果，适合在列举具体产量数据时插入，以增强结果的可信度和可读性。",
+  "text_rag_summary": "针对由8台CNC与1台RGV组成的智能加工系统动态调度问题，本文综合考虑单工序、双工序及CNC随机故障三种工况，构建了以最大化系统产量为目标的RGV动态调度模型。根据RGV信息处理能力差异，分别建立了考虑历史需求信号的预判型调度模型与仅依赖当轮信号的响应型调度模型。针对单工序加工，采用0-1规划建立单目标模型；针对双工序加工，引入物料工序状态与CNC刀具类型匹配机制，建立兼顾产量最大与RGV工作时间最短的双目标规划模型，并通过循环遍历法求解最优刀具分布方案。对于CNC 1%概率随机故障，采用离散事件仿真模拟故障发生与修复过程，将故障维修时间等效转换为延长加工时间，实现调度指令的实时动态更新。模型求解设计了基于最短预期完成时间的启发式算法，通过迭代选择RGV下一作业目标CNC，高效获取近似最优调度策略。利用三组系统参数进行验证，结果表明预判型模型在各类工况下均优于响应型模型，单工序产量分别达到382、359、392件，双工序产量为253、211、243件，故障工况下产量波动可控。从实施可行性、经济性、普适性及CNC平均非有效工作时长等维度评价模型实用性，结合程序运行时间与内存占用评估算法有效性，证实所提模型与算法具有较高实用价值与计算效率。本研究为智能车间物料流转与设备协同调度提供了有效的理论支撑与决策依据。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": false
+}

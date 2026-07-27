@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import base64
 import logging
+import time
 from collections import defaultdict
 from enum import Enum
 from http import HTTPStatus
@@ -33,6 +34,8 @@ DEFAULT_INSTRUCT_IMG_CAP_LINK = (
 MAX_IMAGES_PER_REQUEST = 40
 MAX_TEXT_DOCS_PER_REQUEST = 100
 MAX_IMAGE_BYTES = 2 * 1024 * 1024
+API_MAX_RETRIES = 5
+API_RETRY_BASE_SEC = 3.0
 
 
 class DocumentMode(str, Enum):
@@ -205,14 +208,33 @@ class DashScopeVLRerankClient:
         )
         effective_top_n = top_n if top_n is not None else len(documents)
 
-        resp = dashscope.TextReRank.call(
-            model=self.model,
-            query={"text": query_text},
-            documents=documents,
-            top_n=effective_top_n,
-            return_documents=False,
-            instruct=self.instruct,
-        )
+        last_error: Exception | None = None
+        for attempt in range(1, API_MAX_RETRIES + 1):
+            try:
+                resp = dashscope.TextReRank.call(
+                    model=self.model,
+                    query={"text": query_text},
+                    documents=documents,
+                    top_n=effective_top_n,
+                    return_documents=False,
+                    instruct=self.instruct,
+                )
+                break
+            except Exception as exc:
+                last_error = exc
+                if attempt >= API_MAX_RETRIES:
+                    raise
+                wait_sec = API_RETRY_BASE_SEC * attempt
+                logger.warning(
+                    "  [VL-Rerank] API 请求失败 (attempt %d/%d): %s; %.0fs 后重试",
+                    attempt,
+                    API_MAX_RETRIES,
+                    exc,
+                    wait_sec,
+                )
+                time.sleep(wait_sec)
+        else:
+            raise last_error  # pragma: no cover
 
         if resp.status_code != HTTPStatus.OK:
             request_id = getattr(resp, "request_id", "")

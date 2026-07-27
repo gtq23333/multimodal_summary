@@ -7,7 +7,7 @@ from m3sum.config import PipelineConfig
 from m3sum.pipeline.runner import PipelineRunner
 from m3sum.stage2_rerank.baselines.base import RankedFigure, Stage2Sample
 from m3sum.stage2_rerank.clip_utils import ClipImageEmbeddingCache, load_clip_model
-from m3sum.stage2_rerank.main_method import main_cluster_scorer, rank_main_method
+from m3sum.stage2_rerank.main_method import main_cluster_scorer, rank_main_method, stage2_query_config_matches
 
 logger = logging.getLogger(__name__)
 
@@ -64,6 +64,13 @@ class ProposedRanker:
         if not all_scores:
             return None
 
+        stored_kw = data.get("recall_debug", {}).get("query_use_keywords")
+        if stored_kw is None:
+            if self.config.query_use_keywords is not True:
+                return None
+        elif stored_kw != self.config.query_use_keywords:
+            return None
+
         has_cluster_fusion = bool(
             data.get("recall_debug", {}).get("main_method")
             or any("score_base" in item for item in all_scores)
@@ -99,17 +106,22 @@ class ProposedRanker:
             logger.debug("Proposed：从 stage2 缓存加载 %s", sample.paper_id)
             return ranked
 
-        if self.config.stage2_dir.joinpath(f"{sample.paper_id}.json").is_file():
-            embs = self._embeddings_for(sample)
-            ranked = rank_main_method(self.config, sample, embs)
-            if ranked:
-                return ranked
+        stage2_path = self.config.stage2_dir / f"{sample.paper_id}.json"
+        if stage2_path.is_file() and not stage2_query_config_matches(
+            self.config, sample.paper_id
+        ):
+            logger.info(
+                "Proposed：stage2 缓存 query 配置不匹配，重跑 run_stage2(%s)",
+                sample.paper_id,
+            )
+        else:
+            logger.info("Proposed：stage2 缓存缺失，fallback 运行 run_stage2(%s)", sample.paper_id)
 
-        logger.info("Proposed：stage2 缓存缺失，fallback 运行 run_stage2(%s)", sample.paper_id)
         self._get_runner().run_stage2(sample.paper_id)
         ranked = self._load_from_json(sample.paper_id)
         if ranked is not None:
             return ranked
+
         embs = self._embeddings_for(sample)
         ranked = rank_main_method(self.config, sample, embs)
         if not ranked:

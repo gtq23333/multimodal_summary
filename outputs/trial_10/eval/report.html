@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>M3-Sum 试跑报告</title>
+<style>
+body { font-family: system-ui, sans-serif; margin: 2rem; background: #f8f9fa; }
+.card { background: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+h1 { color: #1a1a2e; }
+h2 { color: #16213e; border-bottom: 2px solid #0f3460; padding-bottom: .3rem; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #dee2e6; padding: .5rem .75rem; text-align: left; }
+th { background: #0f3460; color: #fff; }
+.metric { display: inline-block; background: #e8f4fd; padding: .75rem 1.25rem; margin: .25rem; border-radius: 6px; }
+.metric b { font-size: 1.4rem; color: #0f3460; }
+.tag { display: inline-block; padding: .2rem .6rem; border-radius: 4px; font-size: .85rem; }
+.tag-dry { background: #fff3cd; }
+.tag-live { background: #d1e7dd; }
+</style>
+</head>
+<body>
+<h1>M3-Sum 试跑报告</h1>
+<p>
+  <span class="tag tag-live">live</span>
+  阶段: <b>2</b> |
+  VLM: <b>caption</b> |
+  样本: <b>10</b> |
+  生成: 2026-06-22T14:38:31
+</p>
+
+<div class="card">
+<h2>汇总指标</h2>
+<div>
+  <div class="metric">Hit@1<br><b>0.2</b></div>
+  <div class="metric">Hit@3<br><b>0.6</b></div>
+  <div class="metric">MRR<br><b>0.3833</b></div>
+  <div class="metric">GT Top-P召回<br><b>1.0</b></div>
+  <div class="metric">Insertion F1<br><b>0.1</b></div>
+  <div class="metric">ROUGE-L<br><b>1.0</b></div>
+</div>
+</div>
+
+<div class="card">
+<h2>当前运行范围说明</h2>
+<ul>
+  <li><b>stage=1</b>：赛题子查询构建</li>
+  <li><b>stage=2</b>：图表检索 + 布局重排（<b>图片选择验证</b>，不含摘要生成）</li>
+  <li><b>stage=3</b>：VLM描述 + 摘要改写 + 插入决策</li>
+  <li><b>stage=all</b>：上述三阶段完整多模态摘要管线</li>
+  <li><b>dry_run</b>：零 API 链路冒烟；<b>live</b>：真实 OpenAI 调用</li>
+</ul>
+<p>你当前的 dry-run + stage=all 跑的是<b>完整三阶段流程</b>，但 API 用 mock 数据，指标仅供链路验证。</p>
+</div>
+
+<div class="card">
+<h2>逐样本检索指标</h2>
+<table>
+<tr><th>paper_id</th><th>Hit@1</th><th>Hit@3</th><th>MRR</th><th>GT∈Top-P</th></tr>
+<tr><td>2016_G_A028.pdf-6e4c52f4-be1a-43fe-...</td><td>0.0</td><td>0.0</td><td>0.0000</td><td>1.0</td></tr>
+<tr><td>2016_G_B022.pdf-45c1977b-4052-4367-...</td><td>1.0</td><td>1.0</td><td>1.0000</td><td>1.0</td></tr>
+<tr><td>2016_G_B294.pdf-efa735c1-180d-4ef2-...</td><td>0.0</td><td>1.0</td><td>0.3333</td><td>1.0</td></tr>
+<tr><td>2017_G_B104.pdf-435f7107-40d7-45f1-...</td><td>1.0</td><td>1.0</td><td>1.0000</td><td>1.0</td></tr>
+<tr><td>2017_G_B154.pdf-6b295a37-7f1d-4087-...</td><td>0.0</td><td>1.0</td><td>0.5000</td><td>1.0</td></tr>
+<tr><td>2017_G_D035.pdf-dd7e65e6-ee52-4f20-...</td><td>0.0</td><td>0.0</td><td>0.0000</td><td>1.0</td></tr>
+<tr><td>2018_G_A229.pdf-b6d5ce70-0a39-4325-...</td><td>0.0</td><td>0.0</td><td>0.0000</td><td>1.0</td></tr>
+<tr><td>2018_G_A466.pdf-f42c5f5a-ee2d-4f66-...</td><td>0.0</td><td>0.0</td><td>0.0000</td><td>1.0</td></tr>
+<tr><td>2018_G_C008.pdf-3e10abb3-a9d0-4ecb-...</td><td>0.0</td><td>1.0</td><td>0.5000</td><td>1.0</td></tr>
+<tr><td>2018_G_D029.pdf-10d238b4-ee16-4891-...</td><td>0.0</td><td>1.0</td><td>0.5000</td><td>1.0</td></tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>逐样本 Top-3 预测</h2>
+<table>
+<tr><th>paper_id</th><th>Top-3 图表 hash</th><th>ROUGE-L</th></tr>
+<tr><td>2016_G_A028</td><td>117f08088aad..., 1cca10c8897c..., af0e8d4a4c0f...</td><td>1.0</td></tr>
+<tr><td>2016_G_B022</td><td>ffd57342253e..., 231d0f431e00..., fffc1c5e4473...</td><td>1.0</td></tr>
+<tr><td>2016_G_B294</td><td>5a3d5e16154b..., 957c9175f7b5..., 4c80655608c2...</td><td>1.0</td></tr>
+<tr><td>2017_G_B104</td><td>9a4b14c8e856..., edafb23ffa85..., 15f3cea67abd...</td><td>1.0</td></tr>
+<tr><td>2017_G_B154</td><td>bf1eaa91de97..., 1b8e42e424f3..., 83e6cc3c24f0...</td><td>1.0</td></tr>
+<tr><td>2017_G_D035</td><td>4f8401a644fa..., 4deff488b53a..., 4b5b0c143927...</td><td>1.0</td></tr>
+<tr><td>2018_G_A229</td><td>6786c53c31ef..., 8dd9cd6b37f4..., 241bd6e688b8...</td><td>1.0</td></tr>
+<tr><td>2018_G_A466</td><td>0124f34fde38..., eb9c23055ddd..., 9b5add204ed3...</td><td>1.0</td></tr>
+<tr><td>2018_G_C008</td><td>f1a7cd1c21d2..., 6e9ff918b201..., a3ddcdf0742c...</td><td>1.0</td></tr>
+<tr><td>2018_G_D029</td><td>12b6aa3ed6ab..., e03c8d26acae..., 1748643b5eeb...</td><td>1.0</td></tr>
+
+</table>
+</div>
+</body>
+</html>

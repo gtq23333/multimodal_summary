@@ -1,6 +1,6 @@
 {
   "md_corpus_root": "C:\\cursor_workspace\\multimodal_summary_20260620\\usable_data\\cleaned_excellent_paper_mds",
-  "total": 39,
+  "total": 52,
   "completed": [
     "2016_G_A028.pdf-6e4c52f4-be1a-43fe-9a4f-f2f6fb479a0c",
     "2016_G_B022.pdf-45c1977b-4052-4367-8a33-85a423730b3d",
@@ -21,8 +21,19 @@
     "2017_G_B248.pdf-ceeb3cc2-f05c-4906-833a-5eb02870f643",
     "2017_G_B315.pdf-11a42682-c012-4452-b69e-37bc3de34fc6",
     "2017_G_B447.pdf-bba1d9f9-3235-4893-aeb8-689cd6ed9376",
-    "2017_G_D002.pdf-34552dc9-fe7d-49e0-90b4-279a27481fa2"
+    "2017_G_D002.pdf-34552dc9-fe7d-49e0-90b4-279a27481fa2",
+    "2018_G_A440.pdf-065775f5-ff13-48f5-b12d-623da439971f",
+    "2018_G_B334.pdf-9618d410-024a-4368-8c34-abb687df4146",
+    "2023_G_A092.pdf-5db87c85-f001-44bb-9cd1-933c32b9efdf",
+    "2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c",
+    "2023_G_A175.pdf-8d4a4c05-3206-497f-bcd2-34719146185f",
+    "2023_G_B226.pdf-138a457c-a3d1-4dec-a2b6-3b5dc1265cc7",
+    "2023_G_B311.pdf-4c40818a-19f0-4e8f-bea2-d2c28c9a7a93",
+    "2023_G_C050.pdf-2049a35a-b3ce-49bb-a0db-827272b74086",
+    "2023_G_C228.pdf-b2387ac6-a2c5-4f0e-a228-e82e75c63418",
+    "2023_G_E032.pdf-a2ac9d24-a978-4750-bdfc-d48988ea3d38",
+    "2023_G_E176.pdf-6a7252f2-fcac-48bd-9de1-2adf091599c5"
   ],
   "skipped": [],
-  "current_index": 24
+  "current_index": 40
 }

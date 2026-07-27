@@ -1,0 +1,727 @@
+{
+  "paper_id": "2018_G_B203.pdf-cd92e332-dd42-40fe-9530-03ab83e77d3a",
+  "top3_figures": [
+    {
+      "image_hash": "f764b25c730e120c350c16dedaf2ec55f622a731c43c9ac69baea37ec0633ee1",
+      "caption": "图2 情况1的流程图",
+      "score": 0.6481,
+      "s_direct": 0.504669,
+      "s_link": 0.422512,
+      "s_co": 0.422512,
+      "p_layout": 0.63093,
+      "p_type": 1.5,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_66",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图中预计完成作业时间即  $T_{i}^{(k)} = \\max_{i} \\left(T_{i}^{(k)}, T_{i}^{(k)}, T_{i}^{(k)}"
+        },
+        {
+          "block_id": "b_68",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2无故障下加工两道工序的情况"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_68",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.603589,
+          "distance_weight": 0.7,
+          "s_link": 0.422512,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.46359,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 22,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_109",
+          "b_11",
+          "b_12",
+          "b_230",
+          "b_134"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.898588,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.825571,
+          "cluster_margin": 0.073017,
+          "cluster_prior_raw": 0.83744,
+          "cluster_prior": 0.83744,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.83744
+        }
+      },
+      "pos": 67,
+      "rank": 1,
+      "score_base": 0.43874
+    },
+    {
+      "image_hash": "b75c754c6f427f3962d93eebca7cad5d66fe8163a1277618684324e361a1752a",
+      "caption": "图1 模型思维导图",
+      "score": 0.596951,
+      "s_direct": 0.389378,
+      "s_link": 0.634483,
+      "s_co": 0.634483,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_27",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "具体的思维导图如图1："
+        },
+        {
+          "block_id": "b_29",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1任务一的模型建立——方法一：考虑历史信号的调度模型"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_30",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_29",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.634483,
+          "distance_weight": 1.0,
+          "s_link": 0.634483,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.511931,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 22,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_109",
+          "b_11",
+          "b_12",
+          "b_230",
+          "b_134"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.747967,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.733592,
+          "cluster_margin": 0.014375,
+          "cluster_prior_raw": 0.709722,
+          "cluster_prior": 0.340083,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.340083
+        }
+      },
+      "pos": 28,
+      "rank": 2,
+      "score_base": 0.511931
+    },
+    {
+      "image_hash": "f16431a810ef3d2e6ff14f3f5cf7972ed57bc101137b515847bab12d00657ef1",
+      "caption": "图3 情况2的流程图",
+      "score": 0.565398,
+      "s_direct": 0.475918,
+      "s_link": 0.477839,
+      "s_co": 0.477839,
+      "p_layout": 0.5,
+      "p_type": 1.5,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_105",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从0时刻（即系统启动时刻）开始，通过综合考虑所有历史需求信号和当轮需求信号，在所负责工序符合当前目标工序的CNC中，找出能最快完成上下料的CNC，并响应此CNC"
+        },
+        {
+          "block_id": "b_107",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.3概率故障下加工一道工序的情况"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_109",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_105",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.682627,
+          "distance_weight": 0.7,
+          "s_link": 0.477839,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.476878,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 22,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_109",
+          "b_11",
+          "b_12",
+          "b_230",
+          "b_134"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.890103,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.804951,
+          "cluster_margin": 0.085152,
+          "cluster_prior_raw": 0.830957,
+          "cluster_prior": 0.830957,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.830957
+        }
+      },
+      "pos": 106,
+      "rank": 3,
+      "score_base": 0.357659
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "f764b25c730e120c350c16dedaf2ec55f622a731c43c9ac69baea37ec0633ee1",
+      "caption": "图2 情况1的流程图",
+      "score": 0.6481,
+      "s_direct": 0.504669,
+      "s_link": 0.422512,
+      "s_co": 0.422512,
+      "p_layout": 0.63093,
+      "p_type": 1.5,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_66",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "图中预计完成作业时间即  $T_{i}^{(k)} = \\max_{i} \\left(T_{i}^{(k)}, T_{i}^{(k)}, T_{i}^{(k)}"
+        },
+        {
+          "block_id": "b_68",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2无故障下加工两道工序的情况"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_68",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.603589,
+          "distance_weight": 0.7,
+          "s_link": 0.422512,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.46359,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 22,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_109",
+          "b_11",
+          "b_12",
+          "b_230",
+          "b_134"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.898588,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.825571,
+          "cluster_margin": 0.073017,
+          "cluster_prior_raw": 0.83744,
+          "cluster_prior": 0.83744,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.83744
+        }
+      },
+      "pos": 67,
+      "rank": 1,
+      "score_base": 0.43874
+    },
+    {
+      "image_hash": "b75c754c6f427f3962d93eebca7cad5d66fe8163a1277618684324e361a1752a",
+      "caption": "图1 模型思维导图",
+      "score": 0.596951,
+      "s_direct": 0.389378,
+      "s_link": 0.634483,
+      "s_co": 0.634483,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_27",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "具体的思维导图如图1："
+        },
+        {
+          "block_id": "b_29",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1任务一的模型建立——方法一：考虑历史信号的调度模型"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_30",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_29",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.634483,
+          "distance_weight": 1.0,
+          "s_link": 0.634483,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.511931,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 22,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_109",
+          "b_11",
+          "b_12",
+          "b_230",
+          "b_134"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.747967,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.733592,
+          "cluster_margin": 0.014375,
+          "cluster_prior_raw": 0.709722,
+          "cluster_prior": 0.340083,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.340083
+        }
+      },
+      "pos": 28,
+      "rank": 2,
+      "score_base": 0.511931
+    },
+    {
+      "image_hash": "f16431a810ef3d2e6ff14f3f5cf7972ed57bc101137b515847bab12d00657ef1",
+      "caption": "图3 情况2的流程图",
+      "score": 0.565398,
+      "s_direct": 0.475918,
+      "s_link": 0.477839,
+      "s_co": 0.477839,
+      "p_layout": 0.5,
+      "p_type": 1.5,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_105",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从0时刻（即系统启动时刻）开始，通过综合考虑所有历史需求信号和当轮需求信号，在所负责工序符合当前目标工序的CNC中，找出能最快完成上下料的CNC，并响应此CNC"
+        },
+        {
+          "block_id": "b_107",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.3概率故障下加工一道工序的情况"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_109",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_105",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.682627,
+          "distance_weight": 0.7,
+          "s_link": 0.477839,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.476878,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 22,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_109",
+          "b_11",
+          "b_12",
+          "b_230",
+          "b_134"
+        ],
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.890103,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.804951,
+          "cluster_margin": 0.085152,
+          "cluster_prior_raw": 0.830957,
+          "cluster_prior": 0.830957,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.830957
+        }
+      },
+      "pos": 106,
+      "rank": 3,
+      "score_base": 0.357659
+    },
+    {
+      "image_hash": "0668dd8d2a0e5cf7cc45ba194b77d944a5525a5a66f1f4e7e20f4f97ad8556b9",
+      "caption": "图4 情况3-1的流程图",
+      "score": 0.513434,
+      "s_direct": 0.477745,
+      "s_link": 0.496999,
+      "s_co": 0.496999,
+      "p_layout": 0.430677,
+      "p_type": 1.5,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_135",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "反复执行上述操作。当累计超过8小时，中止循环。"
+        },
+        {
+          "block_id": "b_137",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.4概率故障下加工两道工序的情况"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_134",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_135",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.496999,
+          "distance_weight": 1.0,
+          "s_link": 0.496999,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.487372,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.854312,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.763812,
+          "cluster_margin": 0.0905,
+          "cluster_prior_raw": 0.794338,
+          "cluster_prior": 0.794338,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.794338
+        }
+      },
+      "pos": 136,
+      "rank": 4,
+      "score_base": 0.314849
+    },
+    {
+      "image_hash": "5ee82327435f576fe84b42c0b43ef9631463e5f0c2bff59038d2d8e6d8f0d19c",
+      "caption": "图5 情况3-2的流程图",
+      "score": 0.473946,
+      "s_direct": 0.469506,
+      "s_link": 0.476161,
+      "s_co": 0.476161,
+      "p_layout": 0.386853,
+      "p_type": 1.5,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_146",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "对于模拟概率故障，算法与上一种算法完全一致，不再赘述。当累计超过8小时，中止循环。"
+        },
+        {
+          "block_id": "b_148",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2任务一的模型建立——方法二：仅考虑当轮信号的调度模型"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_144",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_146",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.68023,
+          "distance_weight": 0.7,
+          "s_link": 0.476161,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.472834,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "4",
+          "cluster_top1_sim": 0.854654,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.773936,
+          "cluster_margin": 0.080719,
+          "cluster_prior_raw": 0.798283,
+          "cluster_prior": 0.798283,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.798283
+        }
+      },
+      "pos": 147,
+      "rank": 5,
+      "score_base": 0.274375
+    },
+    {
+      "image_hash": "5bb2d99db01010ac716bbeb9a810fbd7833522d2556bed4997570eb9af9d0627",
+      "caption": "图6 情况1两种方法各组别成料数",
+      "score": 0.352038,
+      "s_direct": 0.415356,
+      "s_link": 0.365246,
+      "s_co": 0.365246,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_218",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": true,
+          "text_snippet": "根据表4，利用柱状图表示其差异，如图6："
+        },
+        {
+          "block_id": "b_224",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "综上，由图6与图7可以得到，在情况1、2下，在一个班次内，方法一所产出的成料总数更加接近理想成料总数，因此方法一更优于方法二。"
+        },
+        {
+          "block_id": "b_220",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "表5：情况2中3组参量在两种方法下的成料数"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_229",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_224",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "6",
+          "raw_cosine": 0.52178,
+          "distance_weight": 0.7,
+          "s_link": 0.365246,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.390301,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.931891,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.860781,
+          "cluster_margin": 0.07111,
+          "cluster_prior_raw": 0.85204,
+          "cluster_prior": 0.85204,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.85204
+        }
+      },
+      "pos": 219,
+      "rank": 6,
+      "score_base": 0.139028
+    },
+    {
+      "image_hash": "b3dbb6640ccd07c3a5eee121ed249308af871cace97e5af17425e838af297d27",
+      "caption": "图7 情况2两种方法各组别成料数",
+      "score": 0.342151,
+      "s_direct": 0.414616,
+      "s_link": 0.365246,
+      "s_co": 0.365246,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_222",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "根据表5，利用柱状图表示其差异，如图7："
+        },
+        {
+          "block_id": "b_224",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "综上，由图6与图7可以得到，在情况1、2下，在一个班次内，方法一所产出的成料总数更加接近理想成料总数，因此方法一更优于方法二。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_229",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_224",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "7",
+          "raw_cosine": 0.52178,
+          "distance_weight": 0.7,
+          "s_link": 0.365246,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.389931,
+        "rerank_profile": "legacy",
+        "cluster": {
+          "cluster_top1_label": "7",
+          "cluster_top1_sim": 0.927731,
+          "cluster_top2_label": "6",
+          "cluster_top2_sim": 0.85524,
+          "cluster_margin": 0.072492,
+          "cluster_prior_raw": 0.848696,
+          "cluster_prior": 0.848696,
+          "cluster_gate_passed": true,
+          "cluster_fusion_mode": null
+        },
+        "cluster_fusion": {
+          "mode": "additive",
+          "beta": 0.25,
+          "cluster_prior": 0.848696
+        }
+      },
+      "pos": 223,
+      "rank": 7,
+      "score_base": 0.129977
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 43,
+    "query_block_pair_count": 60,
+    "cf_count": 22,
+    "caption_refs_sample": [
+      "图1",
+      "图1",
+      "图1",
+      "图2",
+      "图2",
+      "图3",
+      "图4",
+      "图5",
+      "图1",
+      "图1"
+    ],
+    "rerank_profile": "legacy",
+    "main_method": "LG-JSSF-Legacy+ClusterAdd"
+  }
+}

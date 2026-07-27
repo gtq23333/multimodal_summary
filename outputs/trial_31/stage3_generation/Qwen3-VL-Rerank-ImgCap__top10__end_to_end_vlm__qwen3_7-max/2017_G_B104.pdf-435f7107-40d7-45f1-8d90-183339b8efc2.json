@@ -1,0 +1,273 @@
+{
+  "schema_version": "0.1.0",
+  "experiment_id": "Qwen3-VL-Rerank-ImgCap__top10__end_to_end_vlm__qwen3_7-max",
+  "created_at": "2026-07-09T06:58:39.791265+00:00",
+  "paper_id": "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2",
+  "method_name": "Qwen3-VL-Rerank-ImgCap",
+  "pool_size": 10,
+  "strategy": "end_to_end_vlm",
+  "model": "qwen3.7-max",
+  "candidate_pool": {
+    "paper_id": "2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2",
+    "method_name": "Qwen3-VL-Rerank-ImgCap",
+    "pool_size": 10,
+    "candidates": [
+      {
+        "candidate_id": "C1",
+        "image_hash": "3f19f272ff71a13269fd149469bcdb8d16da73dab1a5b93c8df6f5c9b27ae948",
+        "rank": 1,
+        "score": 0.7992506930799458,
+        "caption": "图9打包前后任务完成情况对比图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\3f19f272ff71a13269fd149469bcdb8d16da73dab1a5b93c8df6f5c9b27ae948.jpg"
+      },
+      {
+        "candidate_id": "C2",
+        "image_hash": "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270",
+        "rank": 2,
+        "score": 0.7637435323276609,
+        "caption": "图7打包任务点的算法流程图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270.jpg"
+      },
+      {
+        "candidate_id": "C3",
+        "image_hash": "0f0018a9be78459dc0b7eff2c3b1766227c8f69cf0b96db5bf1e2006fc59bdac",
+        "rank": 3,
+        "score": 0.7501417198240147,
+        "caption": "图4未完成任务的定价评估状况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\0f0018a9be78459dc0b7eff2c3b1766227c8f69cf0b96db5bf1e2006fc59bdac.jpg"
+      },
+      {
+        "candidate_id": "C4",
+        "image_hash": "15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da",
+        "rank": 4,
+        "score": 0.7152639924407929,
+        "caption": "图1 任务分布情况图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da.jpg"
+      },
+      {
+        "candidate_id": "C5",
+        "image_hash": "b9166ba70baa55c24a4af80bb195ee6607c04f569b551b6b61072d3ce2898de4",
+        "rank": 5,
+        "score": 0.7123803922116547,
+        "caption": "图3定价模型拟合与实际定价对比图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\b9166ba70baa55c24a4af80bb195ee6607c04f569b551b6b61072d3ce2898de4.jpg"
+      },
+      {
+        "candidate_id": "C6",
+        "image_hash": "abe169c9b3ad8e61a053365d760e28783370d0a579a94aded1462138ff8b51a5",
+        "rank": 6,
+        "score": 0.7078704144175602,
+        "caption": "图8打包点的分布图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\abe169c9b3ad8e61a053365d760e28783370d0a579a94aded1462138ff8b51a5.jpg"
+      },
+      {
+        "candidate_id": "C7",
+        "image_hash": "9f8550f3a2f716509bb19f9846caa0f19a4ddaaa842e0cb353e0b8ee12a2c19a",
+        "rank": 7,
+        "score": 0.6856978723888544,
+        "caption": "图10 附件三任务点分布情况",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\9f8550f3a2f716509bb19f9846caa0f19a4ddaaa842e0cb353e0b8ee12a2c19a.jpg"
+      },
+      {
+        "candidate_id": "C8",
+        "image_hash": "ea5bdf8dd7ec1bc07de4b1d0314f8b7f596203072026261652db03f648ad4bf7",
+        "rank": 8,
+        "score": 0.6846059688102168,
+        "caption": "图11 新任务聚类分析图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\ea5bdf8dd7ec1bc07de4b1d0314f8b7f596203072026261652db03f648ad4bf7.jpg"
+      },
+      {
+        "candidate_id": "C9",
+        "image_hash": "edafb23ffa858042efcef27823786bd2f02e224a6ad90309044d1c101aed3b77",
+        "rank": 9,
+        "score": 0.6836302123069338,
+        "caption": "图2 会员分布聚类图",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\edafb23ffa858042efcef27823786bd2f02e224a6ad90309044d1c101aed3b77.jpg"
+      },
+      {
+        "candidate_id": "C10",
+        "image_hash": "8b16749a6b300925a31b29bbce5dfcdfc3323bd0ba1064882dc7a19805915c89",
+        "rank": 10,
+        "score": 0.682827697081975,
+        "caption": "图5线性价格战略的交易效率",
+        "source_type": "image",
+        "image_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2017_G_B104.pdf-435f7107-40d7-45f1-8d90-183339b8efc2\\images\\8b16749a6b300925a31b29bbce5dfcdfc3323bd0ba1064882dc7a19805915c89.jpg"
+      }
+    ],
+    "ground_truth_ids": [
+      "15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da",
+      "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270",
+      "9f8550f3a2f716509bb19f9846caa0f19a4ddaaa842e0cb353e0b8ee12a2c19a"
+    ],
+    "retrieval_metrics": {
+      "ip@10": 0.3,
+      "ir@10": 1.0,
+      "jaccard@10": 0.3,
+      "maxsim@10": 0.748863
+    },
+    "reference_summary": null,
+    "reference_sequence": null
+  },
+  "generation_context": {
+    "retrieved_evidence": [
+      {
+        "block_id": "b_6",
+        "block_idx": 6,
+        "query_dimension": "分析",
+        "text": "2.1 问题一的分析问题一需要根据附件一中的数据研究项目的任务定价规律，首先要找到任务定价的影响因素，分析附件一中所给数据，将会员信息和任务信息分别标注在地图上。根据会员分布划分区域，计算区域中心点，用于衡量任务的地理位置优劣。定义偏僻程度、会员密度、任务密度3个变量，建立定价的函数表达式，用最小二乘法计算各变量的系数，从而得到附件一的任务定价规律。比较未完成任务的"
+      },
+      {
+        "block_id": "b_3",
+        "block_idx": 3,
+        "query_dimension": "分析",
+        "text": "1.2 问题提出为了合理地进行“拍照赚钱”的任务定价，提出以下任务：1. 研究附件一中项目的任务定价规律，分析任务未完成的原因。2. 为附件一中的项目设计新的任务定价方案，并和原方案进行比较。3. 实际情况下，多个任务可能因为位置比较集中，导致用户会争相选择，一种考虑是将这些任务联合在一起打包发布。在这种考虑下，如何修改前面的定价模型，对最终的任务完成情况有什么影响？4. 对附件三中的新项目给出一个任务定价方案，并评价该方案的实施效果。"
+      },
+      {
+        "block_id": "b_78",
+        "block_idx": 78,
+        "query_dimension": "分析",
+        "text": "1. 任务未完成的主要原因是定价偏低，使会员积极性下降。2.存在地域特殊性，如深圳地区未完成任务情况普遍。3.可能存在不确定因素的影响，如天气不好、道路施工、交通堵塞、会员个人因素等，但不在本文的研究范围之内。"
+      },
+      {
+        "block_id": "b_7",
+        "block_idx": 7,
+        "query_dimension": "分析",
+        "text": "实际定价和根据已完成任务标准确定的定价，可以发现未完成任务的劣势，得到任务未完成原因。"
+      },
+      {
+        "block_id": "b_23",
+        "block_idx": 23,
+        "query_dimension": "分析",
+        "text": "劳务众包平台“拍拍赚”与本题有相同的应用背景，从官方网站上我们了解到，其任务的定价是算法驱动的，主要考虑了任务的复杂度、时间长短、门店的位置，以及会员分布情况等因素。根据我们的基本假设，附件一所给所有任务的复杂程度相同，因此，任务位置和会员分布是影响任务定价的两个主要因素。"
+      },
+      {
+        "block_id": "b_26",
+        "block_idx": 26,
+        "query_dimension": "分析",
+        "text": "广州市、佛山市、东莞市、深圳市四个城市，如图1所示（蓝色点代表任务已完成，橙色点表示任务未完成）。"
+      },
+      {
+        "block_id": "b_69",
+        "block_idx": 69,
+        "query_dimension": "分析",
+        "text": "# 任务未完成原因"
+      },
+      {
+        "block_id": "b_76",
+        "block_idx": 76,
+        "query_dimension": "分析",
+        "text": "我们发现 $89\\%$ 的未完成任务实际定价均小于计算定价，相比于已完成的任务点，他们的定价偏低。"
+      },
+      {
+        "block_id": "b_180",
+        "block_idx": 180,
+        "query_dimension": "建模",
+        "text": "本文模型的应用背景是基于智能手机和移动互联网的劳务众包平台，在相似背景下的应用众多，如外卖应用，滴滴打车，快递跑腿服务平台等都涉及到商品定价与地理位置、会员积极程度的关系。"
+      },
+      {
+        "block_id": "b_144",
+        "block_idx": 144,
+        "query_dimension": "建模",
+        "text": "设打包点内的3个任务定价平均值为 $\\overline{\\omega}$ ，设打包点的新定价为 $3\\overline{\\omega}, - 10$ ，这样一个信誉值稍差的用户受任务限额的限制变小，会员可以一次性完成大额任务，会员积极性提高，同时分散会员参与其他项目，理论上任务的完成程度将有进一步提高。"
+      },
+      {
+        "block_id": "b_9",
+        "block_idx": 9,
+        "query_dimension": "建模",
+        "text": "问题二是对第一问模型进行的修改。第一问中商家给出的定价策略并不十分合理，导致相当一部分任务没有被完成，同时某些任务定价过高成本过大。问题二中利用了附件二中会员信誉值的数据，考虑在某一小区域内对任务与会员相互的吸引竞争关系进行研究，引入贝叶斯- 纳什均衡理论，使平台与用户在最大程度上达到共赢的效果，并通过计算与原来的模型进行比较。"
+      },
+      {
+        "block_id": "b_11",
+        "block_idx": 11,
+        "query_dimension": "建模",
+        "text": "问题三是建立在第二问模型的基础上的。问题三要求考虑多个任务集中分布的问题建立相应的打包策略。首先仍考虑以任务点为圆心，1.5Km半径的圆域，当一个任务点周围超过2个其他任务点时认为任务点密集，需要打包。建立打包对象的挑选公式，符合要求的任务点将进行打包，遍历所有任务点可得到打包点的分布。对打包点的价格进行调整，最终评估区域内的任务完成情况。"
+      },
+      {
+        "block_id": "b_81",
+        "block_idx": 81,
+        "query_dimension": "建模",
+        "text": "问题一中的模型主要利用了附件二中会员的位置信息，没有考虑到会员信誉值的影响，在问题二中将主要讨论该因素与定价的关系。"
+      },
+      {
+        "block_id": "b_132",
+        "block_idx": 132,
+        "query_dimension": "建模",
+        "text": "1. 首先选取一个任务点，若 $m_{\\mathrm{i}} \\geq 2$ 则该点符合打包条件，该任务点将与其他两个任务点进行打包，否则按独立任务点计算。其他两个任务点的挑选原则：选取的3个任务点的平均任务完成概率大于给定指标即进行打包。已打包的任务点不再参与其他打包。2. 选取下一个任务点，忽略下一个任务点圆域内已打包点，进行1中的打包判断流程。3. 当全部任务点判断、打包完毕后进行重新定价。独立任务点定价不变，打包任务点定价进行适当调整。"
+      },
+      {
+        "block_id": "b_150",
+        "block_idx": 150,
+        "query_dimension": "求解",
+        "text": "问题四利用本文建立的模型对新任务进行定价并评价此方案的实施效果。"
+      },
+      {
+        "block_id": "b_13",
+        "block_idx": 13,
+        "query_dimension": "求解",
+        "text": "问题四将前三问建立的模型进行系统化阐述，首先将附件三中数据标注在地图上并对其进行聚类分析，划分出新的区域并找出新的中心点，通过代入之前建立的定价模型计算出相应的定价方案，并计算任务完成率，评价该方案的实施效果。"
+      },
+      {
+        "block_id": "b_126",
+        "block_idx": 126,
+        "query_dimension": "求解",
+        "text": "通过计算，新方案总价为64631元，原方案总价为57707元。任务定价上涨 $12\\%$ ，任务完成情况上涨 $23\\%$ 。由此可见，新方案在采用较少提价的前提下可以使任务完成率有较大提高，从而减小商品检查失败带来的损失，使利润大大增加，与旧方案相比有较大改进。"
+      },
+      {
+        "block_id": "b_98",
+        "block_idx": 98,
+        "query_dimension": "求解",
+        "text": "这种设计定价方案的问题类似于博奔问题。可以借助相关经济学理论进行研究[2][3]。"
+      },
+      {
+        "block_id": "b_71",
+        "block_idx": 71,
+        "query_dimension": "求解",
+        "text": "首先研究Z3中已完成任务的特点。根据Z3中已完成任务点的数据计算相应的 $z_{1}z_{2}z_{3}$ ，用最小二乘法拟合的方法重新计算(6)中的系数，得到新的定价规律："
+      },
+      {
+        "block_id": "b_0",
+        "block_idx": 0,
+        "query_dimension": "求解",
+        "text": "在大数据时代，传统的产品铺货率调查弊端越来越显著，“拍照赚钱”这种基于移动互联网的自助式劳务众包平台应运而生。它是基于智能手机和移动互联网下的一种自助式服务模式。用户下载相应的应用软件，注册会员，领取需要拍照的任务并赚取相应酬金。这种方式为企业提供各种商业检查和信息搜集，且助力于o2o大潮中的数据采集和产品推广，相比传统的市场调查方式可以大大节省调查成本，通过GPS、系统云时间、图片等手段来控制数据质量，有效地保证了调查数据真实性，缩短了调查的周期。因此APP成为该平台运行的核心，而APP中的任务定价又是其核心要素。如果定价不合理，有的任务就会无人问津，而导致商品检查的失败。"
+      },
+      {
+        "block_id": "b_124",
+        "block_idx": 124,
+        "query_dimension": "求解",
+        "text": "以任务完成概率进行估计，新方案预期任务完成率为 $89.5\\%$ ，相比与原方案有较大改善。"
+      }
+    ],
+    "body_char_count": 19829
+  },
+  "generated_summary": "针对“拍照赚钱”劳务众包平台任务定价问题，本文基于附件数据，综合考虑地理位置、会员分布及信誉值等因素，建立了多阶段任务定价与优化模型。\n\n首先，将任务点标注于地图，发现任务主要集中在广州、佛山、东莞、深圳四市 [Insert Figure C4]。通过K-means聚类划分区域，定义任务偏僻程度、会员密度、任务密度三个变量，利用最小二乘法建立定价回归模型。分析发现，89%的未完成任务实际定价低于理论定价，表明定价偏低是导致任务未完成的主要原因 [Insert Figure C3]。\n\n其次，引入会员信誉值作为新变量，并基于贝叶斯-纳什均衡理论构建博弈模型，优化平台与会员的定价策略。新方案在成本增加12%的情况下，使任务完成率提升了23%。\n\n针对位置密集的任务，提出打包发布策略。以1.5km为半径，当圆域内任务点超过2个时进行打包。设计了基于激励等级的打包算法流程 [Insert Figure C2]，并对打包任务进行价格调整。结果显示，打包策略使任务完成率进一步提高了3.7% [Insert Figure C1]。\n\n最后，将上述模型应用于新项目，通过聚类分析确定区域中心，计算得出平均定价为69.4元，预计任务完成率为93.7%，验证了模型的有效性。",
+  "inserted_figures": [
+    "15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da",
+    "0f0018a9be78459dc0b7eff2c3b1766227c8f69cf0b96db5bf1e2006fc59bdac",
+    "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270",
+    "3f19f272ff71a13269fd149469bcdb8d16da73dab1a5b93c8df6f5c9b27ae948"
+  ],
+  "selected_image_hashes": [
+    "15f3cea67abd9264154eb2f74f09c20075a1e52d841dff08ae319789a38ec2da",
+    "0f0018a9be78459dc0b7eff2c3b1766227c8f69cf0b96db5bf1e2006fc59bdac",
+    "9a4b14c8e85640912d0dba1cc3db825d9456f1acd8e3a5c7a91042a661f82270",
+    "3f19f272ff71a13269fd149469bcdb8d16da73dab1a5b93c8df6f5c9b27ae948"
+  ],
+  "placeholders": [
+    "[Insert Figure C4]",
+    "[Insert Figure C3]",
+    "[Insert Figure C2]",
+    "[Insert Figure C1]"
+  ],
+  "rationale": "C4展示了任务的空间分布，是模型建立的基础；C3直观量化了问题一的核心结论（定价偏低）；C2清晰展示了问题三打包算法的逻辑流程；C1直观对比了打包策略带来的效果提升。这四张图分别覆盖了数据基础、核心发现、方法流程和关键结果，具有显著的认知增益。",
+  "multimodal_model": "qwen3.6-27b",
+  "multimodal_model_fallback": true
+}

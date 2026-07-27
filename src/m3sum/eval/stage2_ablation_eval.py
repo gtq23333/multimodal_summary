@@ -13,6 +13,7 @@ from m3sum.eval.stage2_rerank_metrics import (
     compute_mrr,
     image_precision_at_k,
     image_recall_at_k,
+    image_recall_at_ks,
     jaccard_at_k,
     maxsim_at_k,
     r_precision,
@@ -37,6 +38,7 @@ def _metric_row(
     maxsim_cache: ClipImageEmbeddingCache | None,
     k_jaccard: int,
     k_maxsim: int,
+    recall_ks: list[int],
 ) -> dict[str, Any]:
     gold = sample.ground_truth_ids
     if maxsim_cache is None:
@@ -50,7 +52,7 @@ def _metric_row(
             sample.paper_id,
             k=k_maxsim,
         )
-    return {
+    row: dict[str, Any] = {
         "paper_id": sample.paper_id,
         "method_name": method_name,
         "r_precision": round(r_precision(ranked_ids, gold), 6),
@@ -61,6 +63,9 @@ def _metric_row(
         "map": round(average_precision(ranked_ids, gold), 6),
         "mrr": round(compute_mrr(ranked_ids, gold), 6),
     }
+    for k, score in image_recall_at_ks(ranked_ids, gold, recall_ks).items():
+        row[f"ir@{k}"] = round(score, 6)
+    return row
 
 
 def _evaluate_config(
@@ -88,13 +93,14 @@ def _evaluate_config(
                 maxsim_cache,
                 config.stage2_eval_jaccard_k,
                 config.stage2_eval_maxsim_k,
+                config.stage2_eval_recall_ks,
             )
         )
     return pd.DataFrame(rows)
 
 
-def _aggregate(df: pd.DataFrame) -> dict[str, float]:
-    return {
+def _aggregate(df: pd.DataFrame, recall_ks: list[int] | None = None) -> dict[str, float]:
+    result = {
         "r_precision": float(df["r_precision"].mean()),
         "ip@3": float(df["ip@3"].mean()),
         "ir@3": float(df["ir@3"].mean()),
@@ -103,6 +109,11 @@ def _aggregate(df: pd.DataFrame) -> dict[str, float]:
         "jaccard@3": float(df["jaccard@3"].mean()),
         "maxsim@3": float(df["maxsim@3"].mean()),
     }
+    for k in recall_ks or []:
+        col = f"ir@{k}"
+        if col in df.columns:
+            result[col] = float(df[col].mean())
+    return result
 
 
 def _best_grid_by_fusion(grid_df: pd.DataFrame) -> dict[str, dict[str, Any]]:
@@ -174,7 +185,7 @@ def run_stage2_ablation_eval(
                     image_embeddings_by_paper,
                     maxsim_cache,
                 )
-                agg = _aggregate(df)
+                agg = _aggregate(df, config.stage2_eval_recall_ks)
                 grid_rows.append(
                     {
                         "fusion_mode": fusion_mode,

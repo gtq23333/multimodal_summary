@@ -1,0 +1,1282 @@
+{
+  "paper_id": "2023_G_A127.pdf-c7af97bb-63f5-4e7a-ae28-7f7b3d4f016c",
+  "top3_figures": [
+    {
+      "image_hash": "c4aee13b666b07df759f8929f9036ab3e13715dfaf3621d16e723b33cba19939",
+      "caption": "图1：镜场坐标系示意图(左图)和镜面坐标系示意图(右图)",
+      "score": 0.443022,
+      "s_direct": 0.567244,
+      "s_link": 0.3188,
+      "s_co": 0.3188,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_32",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "定日镜场进行光热发电的关键在于定日镜对太阳光线的反射。为了更好地描述定日镜的工作过程，分别对圆形定日镜场和定日镜建立镜场坐标系  $XYZ$  和镜面坐标系  "
+        },
+        {
+          "block_id": "b_34",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "令圆形定日镜场的中心位置为原点  $O$ ，以正东方向为  $X$  轴的正方向，以正北方向为  $Y$  轴的正方向，以垂直地面向上方向为  $Z$  轴的正"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_1",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_32",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.797,
+          "distance_weight": 0.4,
+          "s_link": 0.3188,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.443022,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 87,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_392",
+          "b_386",
+          "b_380",
+          "b_5",
+          "b_383"
+        ]
+      },
+      "pos": 33,
+      "rank": 1
+    },
+    {
+      "image_hash": "06a0f674bed9d94b1ada85f06fe790ce652c98f7a8d2d574b43ffbb73a532caa",
+      "caption": "图3：影响  $E_{field}$  计算结果的变量逻辑框图",
+      "score": 0.382891,
+      "s_direct": 0.445469,
+      "s_link": 0.575574,
+      "s_co": 0.575574,
+      "p_layout": 0.5,
+      "p_type": 1.5,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_66",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "综上，定日镜场的输出热功率  $E_{field}$  是多个变量共同作用下的结果，影响  $E_{field}$  计算结果的变量逻辑框图如图3所示"
+        },
+        {
+          "block_id": "b_68",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "图3的变量共同影响定日镜场的输出功率。根据变量间的逻辑推导关系，求解  $E_{field}$  仅需明确定日镜光学效率  $\\eta_i$  、总数  $N$"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_68",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.822249,
+          "distance_weight": 0.7,
+          "s_link": 0.575574,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.510521,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 87,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_392",
+          "b_386",
+          "b_380",
+          "b_5",
+          "b_383"
+        ]
+      },
+      "pos": 67,
+      "rank": 2
+    },
+    {
+      "image_hash": "888c253c236f3cc4af3e9a7ee29ebfca794f7d6ef5e3ee38fac41ee27a013861",
+      "caption": "图13：变步长搜索法寻找最佳定日镜场参数流程图",
+      "score": 0.338583,
+      "s_direct": 0.718805,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.26265,
+      "p_type": 1.5,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_289",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": true,
+          "text_snippet": "本文采取变步长搜索法寻找最佳的定日镜场参数，在定日镜场额定功率达到60MW的前提下使得定日镜单位面积年平均输出热功率最大化。变步长搜索法寻找最佳定日镜场参数  "
+        },
+        {
+          "block_id": "b_291",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step1：初步选取大步长。各定日镜参数初始搜索步长设置如表6所示"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_289",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_289",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "13",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.859403,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 87,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_392",
+          "b_386",
+          "b_380",
+          "b_5",
+          "b_383"
+        ]
+      },
+      "pos": 290,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "c4aee13b666b07df759f8929f9036ab3e13715dfaf3621d16e723b33cba19939",
+      "caption": "图1：镜场坐标系示意图(左图)和镜面坐标系示意图(右图)",
+      "score": 0.443022,
+      "s_direct": 0.567244,
+      "s_link": 0.3188,
+      "s_co": 0.3188,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_32",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "定日镜场进行光热发电的关键在于定日镜对太阳光线的反射。为了更好地描述定日镜的工作过程，分别对圆形定日镜场和定日镜建立镜场坐标系  $XYZ$  和镜面坐标系  "
+        },
+        {
+          "block_id": "b_34",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "令圆形定日镜场的中心位置为原点  $O$ ，以正东方向为  $X$  轴的正方向，以正北方向为  $Y$  轴的正方向，以垂直地面向上方向为  $Z$  轴的正"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_1",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_32",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.797,
+          "distance_weight": 0.4,
+          "s_link": 0.3188,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.443022,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 87,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_392",
+          "b_386",
+          "b_380",
+          "b_5",
+          "b_383"
+        ]
+      },
+      "pos": 33,
+      "rank": 1
+    },
+    {
+      "image_hash": "06a0f674bed9d94b1ada85f06fe790ce652c98f7a8d2d574b43ffbb73a532caa",
+      "caption": "图3：影响  $E_{field}$  计算结果的变量逻辑框图",
+      "score": 0.382891,
+      "s_direct": 0.445469,
+      "s_link": 0.575574,
+      "s_co": 0.575574,
+      "p_layout": 0.5,
+      "p_type": 1.5,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_66",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "综上，定日镜场的输出热功率  $E_{field}$  是多个变量共同作用下的结果，影响  $E_{field}$  计算结果的变量逻辑框图如图3所示"
+        },
+        {
+          "block_id": "b_68",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "图3的变量共同影响定日镜场的输出功率。根据变量间的逻辑推导关系，求解  $E_{field}$  仅需明确定日镜光学效率  $\\eta_i$  、总数  $N$"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_68",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 0.822249,
+          "distance_weight": 0.7,
+          "s_link": 0.575574,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.510521,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 87,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_392",
+          "b_386",
+          "b_380",
+          "b_5",
+          "b_383"
+        ]
+      },
+      "pos": 67,
+      "rank": 2
+    },
+    {
+      "image_hash": "888c253c236f3cc4af3e9a7ee29ebfca794f7d6ef5e3ee38fac41ee27a013861",
+      "caption": "图13：变步长搜索法寻找最佳定日镜场参数流程图",
+      "score": 0.338583,
+      "s_direct": 0.718805,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.26265,
+      "p_type": 1.5,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_289",
+          "source": "explicit_ref",
+          "matched_ref": "13",
+          "also_local": true,
+          "text_snippet": "本文采取变步长搜索法寻找最佳的定日镜场参数，在定日镜场额定功率达到60MW的前提下使得定日镜单位面积年平均输出热功率最大化。变步长搜索法寻找最佳定日镜场参数  "
+        },
+        {
+          "block_id": "b_291",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step1：初步选取大步长。各定日镜参数初始搜索步长设置如表6所示"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_289",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_289",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "13",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.859403,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 87,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_392",
+          "b_386",
+          "b_380",
+          "b_5",
+          "b_383"
+        ]
+      },
+      "pos": 290,
+      "rank": 3
+    },
+    {
+      "image_hash": "71f9dd993043ed407486c9d5abaac4cccbc7e611c4dba8278e41637d0188612e",
+      "caption": "图2：镜场坐标系中入射光线示意图",
+      "score": 0.286304,
+      "s_direct": 0.588761,
+      "s_link": 0.3188,
+      "s_co": 0.3188,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_32",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": false,
+          "text_snippet": "定日镜场进行光热发电的关键在于定日镜对太阳光线的反射。为了更好地描述定日镜的工作过程，分别对圆形定日镜场和定日镜建立镜场坐标系  $XYZ$  和镜面坐标系  "
+        },
+        {
+          "block_id": "b_41",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "在镜场坐标系XYZ中，对入射至定日镜中心的光线研究。镜场坐标系中入射光线示意图如图2所示"
+        },
+        {
+          "block_id": "b_43",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "太阳高度角  $\\alpha_{s}$  为太阳光线与地平面的夹角，太阳方位角  $\\gamma_{s}$  为北方沿顺时针方向与太阳光线投影的夹角。根据几何关"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_1",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_32",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "2",
+          "raw_cosine": 0.797,
+          "distance_weight": 0.4,
+          "s_link": 0.3188,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.453781,
+        "rerank_profile": "legacy"
+      },
+      "pos": 42,
+      "rank": 4
+    },
+    {
+      "image_hash": "179d42ddcb4793f4f87182174f6618181bafcbbf4cb81c872e5135a902fe43cf",
+      "caption": "图18：问题三算法求解流程图",
+      "score": 0.274154,
+      "s_direct": 0.55278,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.235409,
+      "p_type": 1.5,
+      "figure_index": "18",
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_351",
+          "source": "explicit_ref",
+          "matched_ref": "18",
+          "also_local": true,
+          "text_snippet": "7.3 改进定日镜平均输出热功率优化模型的求解考虑到存在多个区域，若直接采用遍历法求解  $L_{0}$  、  $W_{a,k}$  和  $h_{i,k}$"
+        },
+        {
+          "block_id": "b_353",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "Step1：设置各定日镜场参数的遍历范围。根据改进定日镜平均输出热功率优化模型的约束条件，设置参数的遍历范围：  $L_{0}\\in [0,350]$  、  "
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_353",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_353",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.77639,
+        "rerank_profile": "legacy"
+      },
+      "pos": 352,
+      "rank": 5
+    },
+    {
+      "image_hash": "4ca8b90fcc25f0bacaaa2af4d362e89a9bf7a1becf89fa53f4dc62189203b318",
+      "caption": "图8：集热器截断效率求解图(左图)与阴影遮挡效率求解图(右图)",
+      "score": 0.262865,
+      "s_direct": 0.666527,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_201",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": true,
+          "text_snippet": "根据上文确定的计算方案，将附件中定日镜坐标等参数输入程序中，可以完成集热器截断效率与阴影遮挡效率的求解。以12月21日上午9:00为例，坐标  $P_{i} ="
+        },
+        {
+          "block_id": "b_203",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": true,
+          "text_snippet": "在同一时间内，该定日镜阴影遮挡效率求解图如图8右侧所示，全部数据详见支撑材料(文件十- 工作表5,6)。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_201",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_201",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "8",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.833264,
+        "rerank_profile": "legacy"
+      },
+      "pos": 202,
+      "rank": 6
+    },
+    {
+      "image_hash": "ee2a92f626acab83fac21aa39ea618c72b1e169f5b49bd6f67f9e51c122c7362",
+      "caption": "图5：集热器挡光阴影示意图(左图)与定日镜塔挡损失示意图(右图)",
+      "score": 0.24431,
+      "s_direct": 0.738743,
+      "s_link": 0.52432,
+      "s_co": 0.52432,
+      "p_layout": 0.386853,
+      "p_type": 1.0,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_100",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": true,
+          "text_snippet": "以4月21日15:00时定日镜场的工作情况为例进行说明，此时入射光线方向向量 $\\vec{I}_i = (- 0.6924,0.2831, - 0.6635)$"
+        },
+        {
+          "block_id": "b_106",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": false,
+          "text_snippet": "图5右侧为塔挡区域的定日镜分布情况，位于塔挡区域内定日镜中心(正方形)阴影"
+        },
+        {
+          "block_id": "b_102",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "太阳光线倾斜入射，圆柱形集热器阻挡部分太阳管线，形成矩形的塔挡区域。集热器对光线的遮挡可以等效为边长为圆柱母线和底面直径的矩形对光线的遮挡。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_96",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_100",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "5",
+          "raw_cosine": 0.749029,
+          "distance_weight": 0.7,
+          "s_link": 0.52432,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 3,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.631532,
+        "rerank_profile": "legacy"
+      },
+      "pos": 101,
+      "rank": 7
+    },
+    {
+      "image_hash": "d08b0895daa83d1e862699bc1eafaea839a4791cbdae72d6d78521706766467d",
+      "caption": "图10：春分日平均光学效率分布云图",
+      "score": 0.228945,
+      "s_direct": 0.584042,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_222",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": true,
+          "text_snippet": "为了提高定日镜平均输出热功率，需要使每一面定日镜尽可能多地接收到太阳光。以春分日全天内平均光学效率为例，从光学效率云图[8](图10)，明显可见最大光学效率区域"
+        },
+        {
+          "block_id": "b_224",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "因此，应将更多的定日镜布置在正北方向。为了使定日镜反射的太阳光尽可能多的指向集热器中心，本文制定了吸收塔选址策略：吸收塔应建设在正南方向上，且位于定日镜场所在的"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_222",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_222",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "10",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.792021,
+        "rerank_profile": "legacy"
+      },
+      "pos": 223,
+      "rank": 8
+    },
+    {
+      "image_hash": "b3f47488d3ff1312781403dc9bd9bf6e2a3df42e8fe3ef1159d7cde5ea3d152a",
+      "caption": "图4：太阳光线非垂直入射时定日镜工作状态示意图",
+      "score": 0.21912,
+      "s_direct": 0.704281,
+      "s_link": 0.31328,
+      "s_co": 0.31328,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_88",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "设与太阳光垂直的平面和第  $i$  面定日镜镜面之间的夹角为  $\\theta$ ，此时定日镜工作状态示意图如图4所示"
+        },
+        {
+          "block_id": "b_90",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "$\\vec{I}_{i}$  为入射光线方向向量， $\\vec{n}_{i}$  为第  $i$  面定日镜镜面法向量。根据几何关系， $\\theta$  等于"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_11",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_88",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "4",
+          "raw_cosine": 0.7832,
+          "distance_weight": 0.4,
+          "s_link": 0.31328,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.508781,
+        "rerank_profile": "legacy"
+      },
+      "pos": 89,
+      "rank": 9
+    },
+    {
+      "image_hash": "69640dd7bbd303b2f4ac4b899419ac65f32ff6809a7435470aeec1bbb496ac99",
+      "caption": "图21: 各种年平均光学效率随吸收塔高度的变化曲线图(左图)和定日镜场年平均输出热功率随吸收塔高度的变化曲线图(右图)",
+      "score": 0.160253,
+      "s_direct": 0.786589,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.224244,
+      "p_type": 0.8,
+      "figure_index": "21",
+      "layout_index": 21.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_381",
+          "source": "explicit_ref",
+          "matched_ref": "21",
+          "also_local": true,
+          "text_snippet": "各种年平均光学效率、定日镜场年平均输出热功率随吸收塔高度的变化曲线图如图21所示。"
+        },
+        {
+          "block_id": "b_383",
+          "source": "explicit_ref",
+          "matched_ref": "21",
+          "also_local": true,
+          "text_snippet": "从图21中可以看到，随着塔高的增加，各光学效率及年平均输出热功率总体均呈现上升趋势，各光学效率中余弦效率最为明显，增幅超过  $11.2\\%$  ，各种光学效率"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_383",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_383",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "21",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.893294,
+        "rerank_profile": "legacy"
+      },
+      "pos": 382,
+      "rank": 10
+    },
+    {
+      "image_hash": "61d29f5f7228e4b8020ccb877d3dd9753d78278871164169a6f34e22c28450ad",
+      "caption": "图20: 定日镜场年平均光学效率随集热器的高和底面直径的变化曲线图",
+      "score": 0.159721,
+      "s_direct": 0.753859,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.22767,
+      "p_type": 0.8,
+      "figure_index": "20",
+      "layout_index": 20.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_376",
+          "source": "explicit_ref",
+          "matched_ref": "20",
+          "also_local": true,
+          "text_snippet": "定日镜场年平均光学效率随集热器的高和底面直径的变化曲线图如图20所示。"
+        },
+        {
+          "block_id": "b_378",
+          "source": "explicit_ref",
+          "matched_ref": "20",
+          "also_local": true,
+          "text_snippet": "从图20中可以看到，改变集热器高度、直径，定日镜场的年平均光学效率的改变量在  $- 13.9\\% \\sim 0.51\\%$  、  $- 7.7\\% \\sim"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_378",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_378",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "20",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.87693,
+        "rerank_profile": "legacy"
+      },
+      "pos": 377,
+      "rank": 11
+    },
+    {
+      "image_hash": "2d46f183aac17838e6d37211c82b4f201a71dd92bbfabad5af42dbed4dc08cbd",
+      "caption": "图17：“定日镜规格分区域规划策略”示意图 [8]",
+      "score": 0.153144,
+      "s_direct": 0.677654,
+      "s_link": 0.599541,
+      "s_co": 0.599541,
+      "p_layout": 0.239812,
+      "p_type": 1.0,
+      "figure_index": "17",
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_326",
+          "source": "explicit_ref",
+          "matched_ref": "17",
+          "also_local": true,
+          "text_snippet": "为了提高定日镜的平均输出热功率，本文根据定日镜所处位置特点制定“定日镜规格分区域规划策略”：在同一区域内，定日镜规格（镜面宽度、镜面高度、安装高度）相同；在不同"
+        },
+        {
+          "block_id": "b_328",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "记第  $k$  个区域内定日镜的镜面宽度为  $W_{a,k}$ ，镜面高度为  $W_{b,k}$ ，安装高度为  $h_{i,k}$ 。将其简记为“定日镜"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_323",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_326",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "17",
+          "raw_cosine": 0.856487,
+          "distance_weight": 0.7,
+          "s_link": 0.599541,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.638597,
+        "rerank_profile": "legacy"
+      },
+      "pos": 327,
+      "rank": 12
+    },
+    {
+      "image_hash": "226c02af9e5f10ee542e249a33ebb11d45c833b5129b08c2b48489c4c70eeef5",
+      "caption": "图11：区域划分示意图",
+      "score": 0.146252,
+      "s_direct": 0.417899,
+      "s_link": 0.630718,
+      "s_co": 0.630718,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_229",
+          "source": "explicit_ref",
+          "matched_ref": "11",
+          "also_local": true,
+          "text_snippet": "通过本文所制定的同心圆规划策略，在给定  $W_a$ 、 $W_b$ 、 $h_0$ 、 $h_i$  和  $L_0$  的前提下，可以唯一确定定日镜场中定日"
+        },
+        {
+          "block_id": "b_231",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 6.2.1 第1个区域定日镜部署策略"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_227",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_229",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "11",
+          "raw_cosine": 0.901026,
+          "distance_weight": 0.7,
+          "s_link": 0.630718,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.524308,
+        "rerank_profile": "legacy"
+      },
+      "pos": 230,
+      "rank": 13
+    },
+    {
+      "image_hash": "c412874ccfa542265c77354353c48754d6c3bd4c15fe87e95594212fc62dc5d7",
+      "caption": "图12：分布在两层之间的定日镜约束示意图",
+      "score": 0.145717,
+      "s_direct": 0.743451,
+      "s_link": 0.334985,
+      "s_co": 0.334985,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_249",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": true,
+          "text_snippet": "在同一个区域中，分布在两层之间的定日镜需要满足“底座中心间的距离至少比镜面宽度长  $5\\mathrm{m}$  以上”的约束条件，即以底座中心为圆心、以“特征"
+        },
+        {
+          "block_id": "b_251",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": true,
+          "text_snippet": "如图12，两层之间的距离  $\\Delta R_{i,j}$  需要满足如下条件："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_333",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_249",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "12",
+          "raw_cosine": 0.837463,
+          "distance_weight": 0.4,
+          "s_link": 0.334985,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.539218,
+        "rerank_profile": "legacy"
+      },
+      "pos": 250,
+      "rank": 14
+    },
+    {
+      "image_hash": "aef7ec0e8b622e6ff55f796f7e277f975b6af65bc51bd08e22839894b3427fe6",
+      "caption": "图14：吸收塔及定日镜布局可视化",
+      "score": 0.127956,
+      "s_direct": 0.68662,
+      "s_link": 0.313197,
+      "s_co": 0.313197,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_304",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": true,
+          "text_snippet": "将表8定日镜最优参数遍历结果带回模型，可求得所有定日镜的位置坐标，将结果可视化后得到图14，全部坐标结果详见附录一文件三result2"
+        },
+        {
+          "block_id": "b_306",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "每月21日平均光学效率及输出功率部分结果如表9所示，具体求解结果见附录三。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_353",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_304",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "14",
+          "raw_cosine": 0.782993,
+          "distance_weight": 0.4,
+          "s_link": 0.313197,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.499908,
+        "rerank_profile": "legacy"
+      },
+      "pos": 305,
+      "rank": 15
+    },
+    {
+      "image_hash": "74124e754ae065300fcca3f59fa06980e4fb3cdc4f856cbf240172050f612800",
+      "caption": "图7:锥形光线离散化示意图",
+      "score": 0.126038,
+      "s_direct": 0.459147,
+      "s_link": 0.297084,
+      "s_co": 0.297084,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_145",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "通过径向方向离散和圆周方向离散，将锥形太阳反射光离散化为若干条光线，认为每条光线所包含的太阳辐射能相等，均为  $E$  。锥形光线离散化示意图如图7所示"
+        },
+        {
+          "block_id": "b_148",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": false,
+          "text_snippet": "对于第  $i$  面定日镜某一点的锥形反射光线，记径向第  $k$  份  $(k \\in [1, n_1])$  与周向第  $t$  份  $(t \\in"
+        },
+        {
+          "block_id": "b_151",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": false,
+          "text_snippet": "记高为一个长度单位的光锥底面对应半径的方位角为  $\\epsilon_{t,k,i}$  (如图7地面圆周的角度)。 $\\epsilon_{t,k,i}$  的"
+        },
+        {
+          "block_id": "b_147",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先，沿径向方向离散。将锥形光线底面直径作  $n_1$  等分，每一部分的长度  $\\Delta r = r / n_1$  。其次，沿底面圆周方向离散。将锥"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_11",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_148",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "7",
+          "raw_cosine": 0.742709,
+          "distance_weight": 0.4,
+          "s_link": 0.297084,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 4,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.378115,
+        "rerank_profile": "legacy"
+      },
+      "pos": 146,
+      "rank": 16
+    },
+    {
+      "image_hash": "5790f822212056450e26af81f2f10b9fa64448a7b6ea6f32b85408fb60dc4c0d",
+      "caption": "图6:俯仰角  $\\alpha_{Pa}$  和方位角  $\\gamma_{Pa}$  示意图",
+      "score": 0.121879,
+      "s_direct": 0.378849,
+      "s_link": 0.305465,
+      "s_co": 0.305465,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_118",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": true,
+          "text_snippet": "其中，  $\\alpha_{Pa}$  为镜面坐标系A对应定日镜的俯仰角；  $\\gamma_{Pa}$  为镜面坐标系A对应定日镜的方位角；  $\\alpha"
+        },
+        {
+          "block_id": "b_120",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": true,
+          "text_snippet": "图6中，  $\\alpha_{Pa}$  为定日镜的俯仰角，是镜面法向量  $\\vec{n}_{a}$  和镜场坐标系  $Z$  轴之间的夹角； $\\gamm"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_11",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_120",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "6",
+          "raw_cosine": 0.763664,
+          "distance_weight": 0.4,
+          "s_link": 0.305465,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.342157,
+        "rerank_profile": "legacy"
+      },
+      "pos": 119,
+      "rank": 17
+    },
+    {
+      "image_hash": "5d679e8066bb773bdda700d2f6da152e5ca1c12d2e383b90b6ea8e62d460f256",
+      "caption": "图16：不同部署效率下定日镜场光学效率折线图",
+      "score": 0.120283,
+      "s_direct": 0.746365,
+      "s_link": 0.482769,
+      "s_co": 0.482769,
+      "p_layout": 0.244651,
+      "p_type": 0.8,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_319",
+          "source": "explicit_ref",
+          "matched_ref": "16",
+          "also_local": true,
+          "text_snippet": "不同部署效率下定日镜场光学效率折线图如图16所示"
+        },
+        {
+          "block_id": "b_321",
+          "source": "explicit_ref",
+          "matched_ref": "16",
+          "also_local": true,
+          "text_snippet": "从图16中可以看出，本问最终采用的混合部署策略有着更高的平均光学效率、余弦效率、截断效率及阴影遮挡效率，策略优势明显。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_323",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_319",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "16",
+          "raw_cosine": 0.68967,
+          "distance_weight": 0.7,
+          "s_link": 0.482769,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.614567,
+        "rerank_profile": "legacy"
+      },
+      "pos": 320,
+      "rank": 18
+    },
+    {
+      "image_hash": "bef48770da46d8205da589796cfb9375bc401d91f37cc336a6aa22ec9ecd9416",
+      "caption": "图9：问题一每月21日平均光学效率折线图(左图)与输出功率折线图(右图)",
+      "score": 0.097007,
+      "s_direct": 0.608038,
+      "s_link": 0.197585,
+      "s_co": 0.197585,
+      "p_layout": 0.30103,
+      "p_type": 0.8,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_208",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": true,
+          "text_snippet": "将上述求解结果进行可视化展现如图9所示"
+        },
+        {
+          "block_id": "b_210",
+          "source": "explicit_ref",
+          "matched_ref": "9",
+          "also_local": true,
+          "text_snippet": "根据图9，我们可以得出如下结论："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_351",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_208",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "9",
+          "raw_cosine": 0.493964,
+          "distance_weight": 0.4,
+          "s_link": 0.197585,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.402812,
+        "rerank_profile": "legacy"
+      },
+      "pos": 209,
+      "rank": 19
+    },
+    {
+      "image_hash": "26a4bdd46dd08e99a7067576dedc963b2044e6da4a0dbf0ac75e63c825c910cb",
+      "caption": "图15: 问题二每月21日平均光学效率折线图(左图)与输出功率折线图(右图)",
+      "score": 0.095456,
+      "s_direct": 0.605887,
+      "s_link": 0.348675,
+      "s_co": 0.348675,
+      "p_layout": 0.25,
+      "p_type": 0.8,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_309",
+          "source": "explicit_ref",
+          "matched_ref": "15",
+          "also_local": true,
+          "text_snippet": "将上述求解结果进行可视化展现如图15所示"
+        },
+        {
+          "block_id": "b_311",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "将遍历得出的定日镜场参数代入至问题一所设计的计算方案中，可以得到年平均光学效率及输出功率的求解结果(如表10所示)"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_184",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_311",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.871687,
+          "distance_weight": 0.4,
+          "s_link": 0.348675,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.477281,
+        "rerank_profile": "legacy"
+      },
+      "pos": 310,
+      "rank": 20
+    },
+    {
+      "image_hash": "d60391a9981a38d567cdcd82f71f96b1e5da6e04b1a8728d435c7e4aca592653",
+      "caption": "图19: 问题二每月21日平均光学效率折线图(左图)与输出功率折线图(右图)",
+      "score": 0.085067,
+      "s_direct": 0.598253,
+      "s_link": 0.320884,
+      "s_co": 0.320884,
+      "p_layout": 0.231378,
+      "p_type": 0.8,
+      "figure_index": "19",
+      "layout_index": 19.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_365",
+          "source": "explicit_ref",
+          "matched_ref": "19",
+          "also_local": true,
+          "text_snippet": "将上述求解结果进行可视化展现如图19所示"
+        },
+        {
+          "block_id": "b_363",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "<table><tr><td>日期</td><td>光学效率</td><td>余弦效率</td><td>阴影遮挡效率</td><td>截断效率</td><td>"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_383",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_363",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.802211,
+          "distance_weight": 0.4,
+          "s_link": 0.320884,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.459569,
+        "rerank_profile": "legacy"
+      },
+      "pos": 364,
+      "rank": 21
+    },
+    {
+      "image_hash": "3f96128b985efd4d0ff34f1a56bfe6a51d3ae91e08520dbfc085908d0905e2be",
+      "caption": "图22:离散光线向量  $\\vec{e}_{t,k,i}$  计算示意图",
+      "score": 0.077573,
+      "s_direct": 0.425082,
+      "s_link": 0.276732,
+      "s_co": 0.276732,
+      "p_layout": 0.221065,
+      "p_type": 1.0,
+      "figure_index": "22",
+      "layout_index": 22.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_433",
+          "source": "explicit_ref",
+          "matched_ref": "22",
+          "also_local": true,
+          "text_snippet": "基于反射光线方向向量和定日镜法向量,本文利用向量间的关系得出每一条离散光线对应的向量  $\\vec{e}_{t,k,i}$ ,向量的符号定义见图22。"
+        },
+        {
+          "block_id": "b_435",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "设过锥形光线底面圆心的反射光线向量为  $\\vec{R}_{i}$ ,截面三角形斜边向量为  $\\vec{n}_{ti}$ 。根据几何关系,  $\\vec{R}"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_11",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_433",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "22",
+          "raw_cosine": 0.691831,
+          "distance_weight": 0.4,
+          "s_link": 0.276732,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.350907,
+        "rerank_profile": "legacy"
+      },
+      "pos": 434,
+      "rank": 22
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 39,
+    "query_block_pair_count": 60,
+    "cf_count": 87,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图1",
+      "图2",
+      "图3",
+      "图1",
+      "图2",
+      "图3",
+      "图2",
+      "图2"
+    ],
+    "rerank_profile": "legacy"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "paper_id": "2023_G_B311.pdf-4c40818a-19f0-4e8f-bea2-d2c28c9a7a93",
+  "source": {
+    "md_path": "C:\\cursor_workspace\\multimodal_summary_20260620\\usable_data\\cleaned_excellent_paper_mds\\2023_G_B311.pdf-4c40818a-19f0-4e8f-bea2-d2c28c9a7a93.md",
+    "content_list_path": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_B311.pdf-4c40818a-19f0-4e8f-bea2-d2c28c9a7a93\\96904a68-07b4-47f9-9b9b-a97c4fb404bf_content_list.json",
+    "mineru_dir": "C:\\Users\\32780\\Desktop\\数模论文信息\\minerU提取文件语料库\\国赛\\2023_G_B311.pdf-4c40818a-19f0-4e8f-bea2-d2c28c9a7a93"
+  },
+  "abstract": {
+    "original_text": "针对问题1，运用几何分析和正弦定理，求解海水深度  $D$  关于测线距中心点距离  $x$  的函数关系式，以及条带覆盖宽度  $W$  的函数表达式；得到海水深度  $D = D' - x \\tan \\alpha$ ，覆盖宽度\n\n$$\nW = \\frac{\\left(D' - x \\tan \\alpha\\right) \\sin \\theta \\cos \\alpha}{\\left(\\cos \\frac{\\theta}{2} \\cos \\alpha\\right)^2 - \\left(\\sin \\frac{\\theta}{2} \\sin \\alpha\\right)^2}\n$$\n\n对于斜坡上重叠率  $\\eta$  计算，本文依据两种重叠率定义，分别构建两种重叠率模型。\n\n利用Matlab计算海水深度  $D$  、覆盖宽度  $W$  和两种不同定义重叠率  $\\eta$  四者的结果。\n\n利用CAD作图，直观比较两种重叠率模型的优劣，选择更贴合本题的模型二，舍去重叠率模型一的结果，明确斜坡重叠率的定义。\n\n针对问题2，根据问题2的具体要求，对问题1的覆盖宽度  $W$  模型进行改进推广，以构建贴合问题2的模型。引入变量，测线在坡面上的投影与海平面的夹角  $\\nu$ ，来计算任意点的海水深度  $D$ ；用覆盖宽度与水平面形成的线面角  $\\epsilon$  代替问题1中  $W$  模型的坡度  $\\alpha$ 。使得问题2的  $W$  模型可以适用测线沿坡面任意方向延伸的情况。本文先对坡面上任意直线与水平面形成的线面角  $\\gamma$  与坡度  $\\alpha$  关系式进\n\n行推导，再根据  $\\beta$  将  $\\nu , \\epsilon$  用含有  $\\alpha , \\beta$  的关系式表达出来，最后带入问题1中的表达式进行求解。\n\n针对问题3，首先明确测线延伸方向。对问题2进行结果分析，推断平行测线应该沿等深线方向延伸。文献资料《海道测量规范》(GB12327- 2022)的规定为该判断提供佐证和支撑。接着计算测线分布位置。先构建待测海域最西侧的测线位置的表达式，运用Python计算，得出结果。再控制条带重叠率为最小临界值  $\\eta = 10\\%$ ，依靠Matlab，用递推法依次求出待测海域内的所有测线分布，经过检验处理最终确定该组测线的设计，利用Matlab绘制测线在待测海域上的分布图。该组测线方向均沿等深线延伸，共34条，总长度为68海里。\n\n针对问题4，本文将待测海域依据等高线将海底地形划分为三块测区。根据问题3将测线延伸方向定为等深线方向。对于题目中给出的多目标规划，本文采用主要目标法，选择漏测率最少作为主要目标，将重叠率作为约束条件，每个测区以一条等高线作为基准，找出下一条登高线深度与上一条的递推函数关系，利用Matlab画出航线图。并计算出测线总长度为  $466394.4 \\mathrm{~m}$ ，漏测率  $2.3\\%$ 。关键词：解三角形，类比法，递推法，多目标规划主要目标法",
+    "edited_text": "针对问题1，运用几何分析和正弦定理，求解海水深度  $D$  关于测线距中心点距离  $x$  的函数关系式，以及条带覆盖宽度  $W$  的函数表达式；得到海水深度  $D = D' - x \\tan \\alpha$ ，覆盖宽度\n\n$$\nW = \\frac{\\left(D' - x \\tan \\alpha\\right) \\sin \\theta \\cos \\alpha}{\\left(\\cos \\frac{\\theta}{2} \\cos \\alpha\\right)^2 - \\left(\\sin \\frac{\\theta}{2} \\sin \\alpha\\right)^2}\n$$\n\n对于斜坡上重叠率  $\\eta$  计算，本文依据两种重叠率定义，分别构建两种重叠率模型。\n\n利用Matlab计算海水深度  $D$  、覆盖宽度  $W$  和两种不同定义重叠率  $\\eta$  四者的结果。\n\n利用CAD作图，直观比较两种重叠率模型的优劣，选择更贴合本题的模型二，舍去重叠率模型一的结果，明确斜坡重叠率的定义。\n\n针对问题2，根据问题2的具体要求，对问题1的覆盖宽度  $W$  模型进行改进推广，以构建贴合问题2的模型。引入变量，测线在坡面上的投影与海平面的夹角  $\\nu$ ，来计算任意点的海水深度  $D$ ；用覆盖宽度与水平面形成的线面角  $\\epsilon$  代替问题1中  $W$  模型的坡度  $\\alpha$ 。使得问题2的  $W$  模型可以适用测线沿坡面任意方向延伸的情况。本文先对坡面上任意直线与水平面形成的线面角  $\\gamma$  与坡度  $\\alpha$  关系式进\n\n行推导，再根据  $\\beta$  将  $\\nu , \\epsilon$  用含有  $\\alpha , \\beta$  的关系式表达出来，最后带入问题1中的表达式进行求解。\n\n针对问题3，首先明确测线延伸方向。对问题2进行结果分析，推断平行测线应该沿等深线方向延伸。文献资料《海道测量规范》(GB12327- 2022)的规定为该判断提供佐证和支撑。接着计算测线分布位置。先构建待测海域最西侧的测线位置的表达式，运用Python计算，得出结果。再控制条带重叠率为最小临界值  $\\eta = 10\\%$ ，依靠Matlab，用递推法依次求出待测海域内的所有测线分布，经过检验处理最终确定该组测线的设计，利用Matlab绘制测线在待测海域上的分布图。该组测线方向均沿等深线延伸，共34条，总长度为68海里。\n\n针对问题4，本文将待测海域依据等高线将海底地形划分为三块测区。根据问题3将测线延伸方向定为等深线方向。对于题目中给出的多目标规划，本文采用主要目标法，选择漏测率最少作为主要目标，将重叠率作为约束条件，每个测区以一条等高线作为基准，找出下一条登高线深度与上一条的递推函数关系，利用Matlab画出航线图。并计算出测线总长度为  $466394.4 \\mathrm{~m}$ ，漏测率  $2.3\\%$ 。关键词：解三角形，类比法，递推法，多目标规划主要目标法",
+    "text_modified": false
+  },
+  "annotation_meta": {
+    "annotator": "",
+    "created_at": "2026-06-25T14:22:24.402384+08:00",
+    "updated_at": "2026-06-25T14:22:24.402384+08:00",
+    "tool_version": "0.1.0",
+    "filter_strategy": "body_with_caption",
+    "context_window_chars": 30
+  },
+  "insertions": [
+    {
+      "insertion_id": "ins_001",
+      "order": 0,
+      "image_hash": "f65b1a166b1284ade0225e0289f6718b43e3cb08db0088f9000751ec3c8d9e3f",
+      "image_filename": "f65b1a166b1284ade0225e0289f6718b43e3cb08db0088f9000751ec3c8d9e3f.jpg",
+      "img_path": "images/f65b1a166b1284ade0225e0289f6718b43e3cb08db0088f9000751ec3c8d9e3f.jpg",
+      "source_type": "image",
+      "caption": "图1 问题1的示意图",
+      "body_order": 0,
+      "position": {
+        "char_index": 458,
+        "index_basis": "edited_plain_text",
+        "context_window_chars": 30,
+        "text_before": "本题的模型二，舍去重叠率模型一的结果，明确斜坡重叠率的定义。",
+        "text_after": "\n\n针对问题2，根据问题2的具体要求，对问题1的覆盖宽度  "
+      }
+    },
+    {
+      "insertion_id": "ins_002",
+      "order": 1,
+      "image_hash": "12dc338b3f5568f11274f353a796640e743470e11c1bbac1173cf3e84ea9632c",
+      "image_filename": "12dc338b3f5568f11274f353a796640e743470e11c1bbac1173cf3e84ea9632c.jpg",
+      "img_path": "images/12dc338b3f5568f11274f353a796640e743470e11c1bbac1173cf3e84ea9632c.jpg",
+      "source_type": "image",
+      "caption": "图4 问题2的示意图",
+      "body_order": 3,
+      "position": {
+        "char_index": 797,
+        "index_basis": "edited_plain_text",
+        "context_window_chars": 30,
+        "text_before": "a$  的关系式表达出来，最后带入问题1中的表达式进行求解。",
+        "text_after": "\n\n针对问题3，首先明确测线延伸方向。对问题2进行结果分析，"
+      }
+    },
+    {
+      "insertion_id": "ins_003",
+      "order": 2,
+      "image_hash": "c86f827b7a32cd099e5a352e3f9aa99f48b30743d172809725b1fe70a8229ba8",
+      "image_filename": "c86f827b7a32cd099e5a352e3f9aa99f48b30743d172809725b1fe70a8229ba8.jpg",
+      "img_path": "images/c86f827b7a32cd099e5a352e3f9aa99f48b30743d172809725b1fe70a8229ba8.jpg",
+      "source_type": "image",
+      "caption": "图8 等高线与梯度线图",
+      "body_order": 7,
+      "position": {
+        "char_index": 1116,
+        "index_basis": "edited_plain_text",
+        "context_window_chars": 30,
+        "text_before": "地形划分为三块测区。根据问题3将测线延伸方向定为等深线方向。",
+        "text_after": "对于题目中给出的多目标规划，本文采用主要目标法，选择漏测率最"
+      }
+    }
+  ],
+  "multimodal_sequence": [
+    {
+      "type": "text",
+      "content": "针对问题1，运用几何分析和正弦定理，求解海水深度  $D$  关于测线距中心点距离  $x$  的函数关系式，以及条带覆盖宽度  $W$  的函数表达式；得到海水深度  $D = D' - x \\tan \\alpha$ ，覆盖宽度\n\n$$\nW = \\frac{\\left(D' - x \\tan \\alpha\\right) \\sin \\theta \\cos \\alpha}{\\left(\\cos \\frac{\\theta}{2} \\cos \\alpha\\right)^2 - \\left(\\sin \\frac{\\theta}{2} \\sin \\alpha\\right)^2}\n$$\n\n对于斜坡上重叠率  $\\eta$  计算，本文依据两种重叠率定义，分别构建两种重叠率模型。\n\n利用Matlab计算海水深度  $D$  、覆盖宽度  $W$  和两种不同定义重叠率  $\\eta$  四者的结果。\n\n利用CAD作图，直观比较两种重叠率模型的优劣，选择更贴合本题的模型二，舍去重叠率模型一的结果，明确斜坡重叠率的定义。"
+    },
+    {
+      "type": "image",
+      "image_hash": "f65b1a166b1284ade0225e0289f6718b43e3cb08db0088f9000751ec3c8d9e3f",
+      "image_filename": "f65b1a166b1284ade0225e0289f6718b43e3cb08db0088f9000751ec3c8d9e3f.jpg",
+      "img_path": "images/f65b1a166b1284ade0225e0289f6718b43e3cb08db0088f9000751ec3c8d9e3f.jpg",
+      "source_type": "image",
+      "caption": "图1 问题1的示意图"
+    },
+    {
+      "type": "text",
+      "content": "\n\n针对问题2，根据问题2的具体要求，对问题1的覆盖宽度  $W$  模型进行改进推广，以构建贴合问题2的模型。引入变量，测线在坡面上的投影与海平面的夹角  $\\nu$ ，来计算任意点的海水深度  $D$ ；用覆盖宽度与水平面形成的线面角  $\\epsilon$  代替问题1中  $W$  模型的坡度  $\\alpha$ 。使得问题2的  $W$  模型可以适用测线沿坡面任意方向延伸的情况。本文先对坡面上任意直线与水平面形成的线面角  $\\gamma$  与坡度  $\\alpha$  关系式进\n\n行推导，再根据  $\\beta$  将  $\\nu , \\epsilon$  用含有  $\\alpha , \\beta$  的关系式表达出来，最后带入问题1中的表达式进行求解。"
+    },
+    {
+      "type": "image",
+      "image_hash": "12dc338b3f5568f11274f353a796640e743470e11c1bbac1173cf3e84ea9632c",
+      "image_filename": "12dc338b3f5568f11274f353a796640e743470e11c1bbac1173cf3e84ea9632c.jpg",
+      "img_path": "images/12dc338b3f5568f11274f353a796640e743470e11c1bbac1173cf3e84ea9632c.jpg",
+      "source_type": "image",
+      "caption": "图4 问题2的示意图"
+    },
+    {
+      "type": "text",
+      "content": "\n\n针对问题3，首先明确测线延伸方向。对问题2进行结果分析，推断平行测线应该沿等深线方向延伸。文献资料《海道测量规范》(GB12327- 2022)的规定为该判断提供佐证和支撑。接着计算测线分布位置。先构建待测海域最西侧的测线位置的表达式，运用Python计算，得出结果。再控制条带重叠率为最小临界值  $\\eta = 10\\%$ ，依靠Matlab，用递推法依次求出待测海域内的所有测线分布，经过检验处理最终确定该组测线的设计，利用Matlab绘制测线在待测海域上的分布图。该组测线方向均沿等深线延伸，共34条，总长度为68海里。\n\n针对问题4，本文将待测海域依据等高线将海底地形划分为三块测区。根据问题3将测线延伸方向定为等深线方向。"
+    },
+    {
+      "type": "image",
+      "image_hash": "c86f827b7a32cd099e5a352e3f9aa99f48b30743d172809725b1fe70a8229ba8",
+      "image_filename": "c86f827b7a32cd099e5a352e3f9aa99f48b30743d172809725b1fe70a8229ba8.jpg",
+      "img_path": "images/c86f827b7a32cd099e5a352e3f9aa99f48b30743d172809725b1fe70a8229ba8.jpg",
+      "source_type": "image",
+      "caption": "图8 等高线与梯度线图"
+    },
+    {
+      "type": "text",
+      "content": "对于题目中给出的多目标规划，本文采用主要目标法，选择漏测率最少作为主要目标，将重叠率作为约束条件，每个测区以一条等高线作为基准，找出下一条登高线深度与上一条的递推函数关系，利用Matlab画出航线图。并计算出测线总长度为  $466394.4 \\mathrm{~m}$ ，漏测率  $2.3\\%$ 。关键词：解三角形，类比法，递推法，多目标规划主要目标法"
+    }
+  ]
+}

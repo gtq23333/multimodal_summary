@@ -1,0 +1,12 @@
+﻿method_name,metric_type,k,ir@k,gt_hits,gt_total,pool_k,pool_gt_coverage
+Union-Oracle-PQL,union_oracle_ir,3.0,0.6316,60.0,95.0,,
+Union-Oracle-PQL,union_oracle_ir,4.0,0.7263,69.0,95.0,,
+Union-Oracle-PQL,union_oracle_ir,5.0,0.7895,75.0,95.0,,
+Union-Oracle-PQL,union_oracle_ir,6.0,0.8211,78.0,95.0,,
+Union-Oracle-PQL,union_oracle_ir,7.0,0.8526,81.0,95.0,,
+Pool-Union-PQL,pool_coverage,,,86.0,95.0,8.0,0.9053
+Fusion-UnionRRF-PQL,fusion_pool_ir,3.0,0.5012,,,8.0,
+Fusion-UnionRRF-PQL,fusion_pool_ir,4.0,0.6205,,,8.0,
+Fusion-UnionRRF-PQL,fusion_pool_ir,5.0,0.6791,,,8.0,
+Fusion-UnionRRF-PQL,fusion_pool_ir,6.0,0.7047,,,8.0,
+Fusion-UnionRRF-PQL,fusion_pool_ir,7.0,0.7703,,,8.0,

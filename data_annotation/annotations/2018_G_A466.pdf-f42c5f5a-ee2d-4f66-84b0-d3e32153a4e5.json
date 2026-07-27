@@ -14,7 +14,7 @@
   "annotation_meta": {
     "annotator": "",
     "created_at": "2026-06-22T21:08:41.222217+08:00",
-    "updated_at": "2026-06-22T21:08:41.222217+08:00",
+    "updated_at": "2026-06-25T13:21:36.154249+08:00",
     "tool_version": "0.1.0",
     "filter_strategy": "body_with_caption",
     "context_window_chars": 30
@@ -23,6 +23,23 @@
     {
       "insertion_id": "ins_001",
       "order": 0,
+      "image_hash": "9e5d3a29abda580e73281d9aab85720a5a1d8e7de09bc3296791a238d6dc7ccd",
+      "image_filename": "9e5d3a29abda580e73281d9aab85720a5a1d8e7de09bc3296791a238d6dc7ccd.jpg",
+      "img_path": "images/9e5d3a29abda580e73281d9aab85720a5a1d8e7de09bc3296791a238d6dc7ccd.jpg",
+      "source_type": "image",
+      "caption": "图1：模型示意图",
+      "body_order": 0,
+      "position": {
+        "char_index": 192,
+        "index_basis": "edited_plain_text",
+        "context_window_chars": 30,
+        "text_before": "视为相互接触的平行无限大平板后，建立一维复合介质热传导方程。",
+        "text_after": "使用Crank－Nicholson方法进行求解并拟合附件2给"
+      }
+    },
+    {
+      "insertion_id": "ins_002",
+      "order": 1,
       "image_hash": "2c438777da1e87279ec9bb2634a1b0895b0eb62d1f53a8eb1c59ceb8df251e9c",
       "image_filename": "2c438777da1e87279ec9bb2634a1b0895b0eb62d1f53a8eb1c59ceb8df251e9c.jpg",
       "img_path": "images/2c438777da1e87279ec9bb2634a1b0895b0eb62d1f53a8eb1c59ceb8df251e9c.jpg",
@@ -41,7 +58,19 @@
   "multimodal_sequence": [
     {
       "type": "text",
-      "content": "如何根据环境条件设计相应的服装是专用服装设计面临的主要问题。本文通过建立一维复合介质热传导方程，对高温作业专用服中各分层间的传热过程进行模拟，确定不同环境条件下作业服中的温度分布。进而从降低研发成本、缩短研发周期的角度，求解约束条件下介质层的最优厚度，为实验测试提供参考。\n\n关于问题一从一般性热传导方程出发，将作业服各分层视为相互接触的平行无限大平板后，建立一维复合介质热传导方程。使用Crank－Nicholson方法进行求解并拟合附件2给出的实验数据，得到方程中涉及的实验室环境与I层、IV层与假人皮肤之间的对流换热系数  $h_I$  ，  $h_{IV}$  分别为  $117.41W / (m^2\\cdot^{\\circ}C)$  、  $8.36W / (m^2\\cdot^{\\circ}C)$  。进而将  $h_I$  、  $h_{IV}$  与附件1中提供的各分层参数代回原方程，在问题一提供的条件下进行求解，得到作业服各分层随时间与空间变化的温度分布。"
+      "content": "如何根据环境条件设计相应的服装是专用服装设计面临的主要问题。本文通过建立一维复合介质热传导方程，对高温作业专用服中各分层间的传热过程进行模拟，确定不同环境条件下作业服中的温度分布。进而从降低研发成本、缩短研发周期的角度，求解约束条件下介质层的最优厚度，为实验测试提供参考。\n\n关于问题一从一般性热传导方程出发，将作业服各分层视为相互接触的平行无限大平板后，建立一维复合介质热传导方程。"
+    },
+    {
+      "type": "image",
+      "image_hash": "9e5d3a29abda580e73281d9aab85720a5a1d8e7de09bc3296791a238d6dc7ccd",
+      "image_filename": "9e5d3a29abda580e73281d9aab85720a5a1d8e7de09bc3296791a238d6dc7ccd.jpg",
+      "img_path": "images/9e5d3a29abda580e73281d9aab85720a5a1d8e7de09bc3296791a238d6dc7ccd.jpg",
+      "source_type": "image",
+      "caption": "图1：模型示意图"
+    },
+    {
+      "type": "text",
+      "content": "使用Crank－Nicholson方法进行求解并拟合附件2给出的实验数据，得到方程中涉及的实验室环境与I层、IV层与假人皮肤之间的对流换热系数  $h_I$  ，  $h_{IV}$  分别为  $117.41W / (m^2\\cdot^{\\circ}C)$  、  $8.36W / (m^2\\cdot^{\\circ}C)$  。进而将  $h_I$  、  $h_{IV}$  与附件1中提供的各分层参数代回原方程，在问题一提供的条件下进行求解，得到作业服各分层随时间与空间变化的温度分布。"
     },
     {
       "type": "image",

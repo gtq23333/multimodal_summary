@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Literal
 
+from m3sum.stage2_rerank.query_text import sub_query_search_text
+
 
 @dataclass
 class Block:
@@ -35,6 +37,10 @@ class SubQuery:
     query: str
     keywords: list[str]
     embedding: list[float] | None = None
+
+    def search_text(self, *, use_keywords: bool = True) -> str:
+        """Stage-2 检索 query 文本。"""
+        return sub_query_search_text(self, use_keywords=use_keywords)
 
 
 @dataclass

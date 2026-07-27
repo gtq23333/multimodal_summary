@@ -31,6 +31,7 @@ class PipelineConfig:
     top_p: int
     bm25_weight: float
     vector_weight: float
+    query_use_keywords: bool
     alpha: float
     distance_tiers: list[float]
     caption_patterns: list[str]
@@ -53,6 +54,7 @@ class PipelineConfig:
     export_markdown_summary: bool
     stage2_eval_jaccard_k: int
     stage2_eval_maxsim_k: int
+    stage2_eval_recall_ks: list[int]
     stage2_eval_clip_model: str
     stage2_eval_methods: list[str]
     cluster_prior_enabled: bool
@@ -82,6 +84,10 @@ class PipelineConfig:
         return self.output_dir / "stage3"
 
     @property
+    def stage3_generation_dir(self) -> Path:
+        return self.output_dir / "stage3_generation"
+
+    @property
     def embed_cache_dir(self) -> Path:
         return self.output_dir / "cache" / "embeddings"
 
@@ -104,6 +110,58 @@ class PipelineConfig:
     @property
     def cluster_prior_cache_dir(self) -> Path:
         return self.output_dir / "cache" / "stage2_eval" / "cluster_prior_clip"
+
+    @property
+    def stage3_eval_cache_dir(self) -> Path:
+        return self.output_dir / "cache" / "stage3_eval"
+
+    @property
+    def stage3_generation_config(self) -> dict[str, Any]:
+        return dict(self.raw.get("stage3_generation", {}))
+
+    @property
+    def stage3_eval_config(self) -> dict[str, Any]:
+        return dict(self.raw.get("stage3_eval", {}))
+
+    @property
+    def stage3_pool_sizes(self) -> list[int]:
+        cfg = self.stage3_generation_config
+        return [int(k) for k in cfg.get("pool_sizes", [3, 6, 10])]
+
+    @property
+    def stage3_rerank_methods(self) -> list[str]:
+        cfg = self.stage3_generation_config
+        return list(cfg.get("rerank_methods", ["Qwen3-VL-Rerank-ImgCap", "Layout-Order"]))
+
+    @property
+    def stage3_reference_method(self) -> str:
+        cfg = self.stage3_generation_config
+        return str(cfg.get("reference_method", "Reference-Oracle"))
+
+    @property
+    def stage3_strategies(self) -> list[str]:
+        cfg = self.stage3_generation_config
+        return list(cfg.get("strategies", ["text_rag_then_rewrite", "end_to_end_vlm"]))
+
+    @property
+    def stage3_generation_models(self) -> list[str]:
+        cfg = self.stage3_generation_config
+        return list(cfg.get("models", [self.llm_model]))
+
+    @property
+    def stage3_multimodal_models(self) -> list[str]:
+        cfg = self.stage3_generation_config
+        return list(cfg.get("multimodal_models", [self.vlm_model]))
+
+    @property
+    def stage3_multimodal_fallback(self) -> str:
+        cfg = self.stage3_generation_config
+        return str(cfg.get("multimodal_fallback", self.vlm_model))
+
+    @property
+    def stage3_judge_model(self) -> str:
+        cfg = self.stage3_eval_config
+        return str(cfg.get("judge_model", self.llm_model))
 
     def resolved_sample_ids(self) -> list[str]:
         if self.sample_id:
@@ -175,6 +233,7 @@ def load_config(config_path: Path) -> PipelineConfig:
         top_p=raw["retrieval"]["top_p"],
         bm25_weight=raw["retrieval"]["bm25_weight"],
         vector_weight=raw["retrieval"]["vector_weight"],
+        query_use_keywords=bool(raw["retrieval"].get("query_use_keywords", True)),
         alpha=raw["rerank"]["alpha"],
         distance_tiers=raw["rerank"]["distance_tiers"],
         caption_patterns=raw["caption_regex"]["patterns"],
@@ -197,6 +256,7 @@ def load_config(config_path: Path) -> PipelineConfig:
         export_markdown_summary=bool(ev.get("export_markdown_summary", True)),
         stage2_eval_jaccard_k=int(s2ev.get("jaccard_k", 3)),
         stage2_eval_maxsim_k=int(s2ev.get("maxsim_k", 3)),
+        stage2_eval_recall_ks=[int(k) for k in s2ev.get("recall_ks", [4, 5, 6, 7, 8])],
         stage2_eval_clip_model=str(
             s2ev.get("clip_model", "OFA-Sys/chinese-clip-vit-base-patch16")
         ),
@@ -205,6 +265,7 @@ def load_config(config_path: Path) -> PipelineConfig:
                 "methods",
                 [
                     "Proposed",
+                    "Proposed-v2",
                     "Qwen3-VL-Rerank-ImgCap+Link",
                     "Qwen3-VL-Rerank-ImgCap",
                     "Qwen3-VL-Rerank-Img",

@@ -1,0 +1,1113 @@
+{
+  "paper_id": "2016_G_B294.pdf-efa735c1-180d-4ef2-b2e3-71ef259ee165",
+  "top3_figures": [
+    {
+      "image_hash": "4c80655608c268bfd0651ba6ce441cdccd9e62f16d483a5500a7761767742b18",
+      "caption": "图1层次分析图示",
+      "score": 0.723915,
+      "s_direct": 0.44783,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_44",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "将决策问题分解为三个层次，最上层为目标层M，即选择最合适的评价开放小区对周边道路通行的影响的关键指标；最下层为方案层，即九个影响因素P1，P2，P3，P4，P5"
+        },
+        {
+          "block_id": "b_46",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "2）模型求解。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_44",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_44",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.723915,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 16,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_11",
+          "b_67",
+          "b_259",
+          "b_12",
+          "b_15"
+        ]
+      },
+      "pos": 45,
+      "rank": 1
+    },
+    {
+      "image_hash": "a0be19bc875a90c38131f4c033d354f98cf7d281e6b16e6686939bbb26bfdeb2",
+      "caption": "图5车辆通行模型代码流程图",
+      "score": 0.498545,
+      "s_direct": 0.718293,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.5,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_116",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": true,
+          "text_snippet": "接下来，我们再将车辆通行能力简化成车辆密度与车辆平均速度的求取，根据元胞自动机模型理论以及交通流的相关参数，我们给出了车辆通行的模型代码（源代码见附录），代码流"
+        },
+        {
+          "block_id": "b_118",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过基于元胞自动机的车辆通行模型，输入小区的相关参数，我们便可以得到小区开放对其周边主路的道路通行能力的影响。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_116",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_116",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "5",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.859146,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 16,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_11",
+          "b_67",
+          "b_259",
+          "b_12",
+          "b_15"
+        ]
+      },
+      "pos": 117,
+      "rank": 2
+    },
+    {
+      "image_hash": "d75eec99d039666c9adef8a87404ee89e0088b124a7e8ae64473cb98478c214b",
+      "caption": "图3指标体系",
+      "score": 0.393372,
+      "s_direct": 0.573488,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_70",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "至此，我们建立起了评价小区开放对周边主路的影响的指标体系，如图3所示："
+        },
+        {
+          "block_id": "b_72",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.4结果分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_70",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.786744,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 16,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_11",
+          "b_67",
+          "b_259",
+          "b_12",
+          "b_15"
+        ]
+      },
+      "pos": 71,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "4c80655608c268bfd0651ba6ce441cdccd9e62f16d483a5500a7761767742b18",
+      "caption": "图1层次分析图示",
+      "score": 0.723915,
+      "s_direct": 0.44783,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_44",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "将决策问题分解为三个层次，最上层为目标层M，即选择最合适的评价开放小区对周边道路通行的影响的关键指标；最下层为方案层，即九个影响因素P1，P2，P3，P4，P5"
+        },
+        {
+          "block_id": "b_46",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "2）模型求解。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_44",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_44",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.723915,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 16,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_11",
+          "b_67",
+          "b_259",
+          "b_12",
+          "b_15"
+        ]
+      },
+      "pos": 45,
+      "rank": 1
+    },
+    {
+      "image_hash": "a0be19bc875a90c38131f4c033d354f98cf7d281e6b16e6686939bbb26bfdeb2",
+      "caption": "图5车辆通行模型代码流程图",
+      "score": 0.498545,
+      "s_direct": 0.718293,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.386853,
+      "p_type": 1.5,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_116",
+          "source": "explicit_ref",
+          "matched_ref": "5",
+          "also_local": true,
+          "text_snippet": "接下来，我们再将车辆通行能力简化成车辆密度与车辆平均速度的求取，根据元胞自动机模型理论以及交通流的相关参数，我们给出了车辆通行的模型代码（源代码见附录），代码流"
+        },
+        {
+          "block_id": "b_118",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "通过基于元胞自动机的车辆通行模型，输入小区的相关参数，我们便可以得到小区开放对其周边主路的道路通行能力的影响。"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_116",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_116",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "5",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.859146,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 16,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_11",
+          "b_67",
+          "b_259",
+          "b_12",
+          "b_15"
+        ]
+      },
+      "pos": 117,
+      "rank": 2
+    },
+    {
+      "image_hash": "d75eec99d039666c9adef8a87404ee89e0088b124a7e8ae64473cb98478c214b",
+      "caption": "图3指标体系",
+      "score": 0.393372,
+      "s_direct": 0.573488,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_70",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "至此，我们建立起了评价小区开放对周边主路的影响的指标体系，如图3所示："
+        },
+        {
+          "block_id": "b_72",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.4结果分析"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_70",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_70",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "3",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.786744,
+        "rerank_profile": "legacy",
+        "matched_caption_blocks": 16,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_11",
+          "b_67",
+          "b_259",
+          "b_12",
+          "b_15"
+        ]
+      },
+      "pos": 71,
+      "rank": 3
+    },
+    {
+      "image_hash": "b8eff37a98d8713c3cd4d1607aa13a8997876fd9702469dfa5ca98fa81cf85c4",
+      "caption": "图4交通流影响因素",
+      "score": 0.356473,
+      "s_direct": 0.655408,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_108",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在交通工程实践中，车辆密度是表现道路交通拥挤状况的最适合的指标。美国的《道路通行能力手册》中就用密度作为路段服务水平的描述指标。"
+        },
+        {
+          "block_id": "b_110",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.1.4基于元胞自动机的车辆通行模型的建立"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_110",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_110",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.827704,
+        "rerank_profile": "legacy"
+      },
+      "pos": 109,
+      "rank": 4
+    },
+    {
+      "image_hash": "f240a5907bd51db67666d9544d8c571f9859138a628c85ef69d0fb2ea1415090",
+      "caption": "图6车辆过信号灯交叉口的状态",
+      "score": 0.268034,
+      "s_direct": 0.504935,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_121",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": true,
+          "text_snippet": "在我国现行交通信号灯的控制下，观察车辆通过信号灯交叉口的实际运行状态，其全过程如图6："
+        },
+        {
+          "block_id": "b_123",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.2.2交叉口安全评价指标体系的构建"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_123",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_123",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.752467,
+        "rerank_profile": "legacy"
+      },
+      "pos": 122,
+      "rank": 5
+    },
+    {
+      "image_hash": "2b236898e616f881399ed76872fe04aa77c7c8c1b3ccd9f43d1bdb6e96fc171a",
+      "caption": "图7交叉口安全评价指标体系",
+      "score": 0.261793,
+      "s_direct": 0.712052,
+      "s_link": 0.858705,
+      "s_co": 0.858705,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_124",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "我们考虑到交叉口相对固定的物理特征，隐含交通安全性能特性的交通冲突，以及具有空间和时间变化性的交通特性，将基于安全服务水平的交叉口交通安全的评价指标体系划分为交"
+        },
+        {
+          "block_id": "b_126",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.2.3主模型的构建"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_123",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_124",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "7",
+          "raw_cosine": 0.858705,
+          "distance_weight": 1.0,
+          "s_link": 0.858705,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.785379,
+        "rerank_profile": "legacy"
+      },
+      "pos": 125,
+      "rank": 6
+    },
+    {
+      "image_hash": "957c9175f7b5a5bf567679cd2618b23b074eff6870ff8343ad02cbfddc341cea",
+      "caption": "图11 左为小区开放前 右为开放后",
+      "score": 0.225777,
+      "s_direct": 0.618801,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.278943,
+      "p_type": 1.0,
+      "figure_index": "11",
+      "layout_index": 11.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_207",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "最终运行结果："
+        },
+        {
+          "block_id": "b_209",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从运行结果来看，小区开放后道路通行能力提高了很多。而从实际情况出发，首先，我们注意到，该小区内部道路较宽，与小区外道路几乎无差异；其次，小区内部道路可以直通外界"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_209",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_209",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.8094,
+        "rerank_profile": "legacy"
+      },
+      "pos": 208,
+      "rank": 7
+    },
+    {
+      "image_hash": "21ecc9e9e87e42962325029eff2971bcfc5afbaabf8550b47b551bd85da51e55",
+      "caption": "图13 左为小区开放前 右为开放后",
+      "score": 0.214682,
+      "s_direct": 0.634738,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.26265,
+      "p_type": 1.0,
+      "figure_index": "13",
+      "layout_index": 13.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_214",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "最终运行结果："
+        },
+        {
+          "block_id": "b_216",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从运行结果来看，小区开放后道路通行能力有了明显的下降迹象。从实际情况出发，首先我们注意到小区内部的道路较窄，会降低整个道路体系的路宽修正系数，而且即便开放后能够"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_216",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_216",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.817369,
+        "rerank_profile": "legacy"
+      },
+      "pos": 215,
+      "rank": 8
+    },
+    {
+      "image_hash": "731c34cff0f15b0dd625b6a36df8a0b16f763a541055ff153ea4c639eba96c5d",
+      "caption": "表7 影响因素权重一览表 图2最终结果图示",
+      "score": 0.209366,
+      "s_direct": 0.570245,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 0.8,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_67",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "目标：评价对周边道路通行的影响指标体系"
+        },
+        {
+          "block_id": "b_69",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "将影响地下车位布局的三个指标的因素所占比重由大到小排序，我们选择前六个占权重大的因素作为指标体系的分支，即：交叉路口个数，拥堵系数，路旁干扰系数，区内支路饱和度"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_67",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_67",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.785123,
+        "rerank_profile": "legacy"
+      },
+      "pos": 68,
+      "rank": 9
+    },
+    {
+      "image_hash": "ef656d24ec45242146b8c744d2a3a872cbd59c462a28726ba3efde7d69351531",
+      "caption": "图17小区未开放时的交通运行状况",
+      "score": 0.197734,
+      "s_direct": 0.649073,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.239812,
+      "p_type": 1.0,
+      "figure_index": "17",
+      "layout_index": 17.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_245",
+          "source": "explicit_ref",
+          "matched_ref": "17",
+          "also_local": true,
+          "text_snippet": "为了评价该未开放小区在今后随着交通量的逐年增加的运行状态，以预测10年后的交通量为基准，分别以该基准的  $70\\%$  ，  $80\\%$  进行相应敏感度分"
+        },
+        {
+          "block_id": "b_247",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "由上图可以看出，随着今后道路投入运营，交通量也在逐年增加，该路段的运行状态逐年变差，箭筒刘运行的状况也在明显变差。因此我们得出：该小区开放后会缓"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_245",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_245",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "17",
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.824536,
+        "rerank_profile": "legacy"
+      },
+      "pos": 246,
+      "rank": 10
+    },
+    {
+      "image_hash": "5ce09ea1c92a63e403e78dc7b23a868c8a8a9b4e05e95fa511cb17d5f66f6aed",
+      "caption": "图18 判断矩阵计算流程图",
+      "score": 0.183418,
+      "s_direct": 0.462601,
+      "s_link": 0.576263,
+      "s_co": 0.576263,
+      "p_layout": 0.235409,
+      "p_type": 1.5,
+      "figure_index": "18",
+      "layout_index": 18.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_256",
+          "source": "explicit_ref",
+          "matched_ref": "18",
+          "also_local": true,
+          "text_snippet": "依据相对重要性指标组成的判断矩阵，即可计算各特征属性的权重，具体计算流程图如图18所示："
+        },
+        {
+          "block_id": "b_258",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 7.1.3 结合主成分分析法[5]的层次分析法改进与优化"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_259",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_258",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.576263,
+          "distance_weight": 1.0,
+          "s_link": 0.576263,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.519432,
+        "rerank_profile": "legacy"
+      },
+      "pos": 257,
+      "rank": 11
+    },
+    {
+      "image_hash": "54c1e74071a0c7acbf296199e789ab7360f555ea22a6f96ed066e96124012168",
+      "caption": "图14 小区五及周边道路情况",
+      "score": 0.180576,
+      "s_direct": 0.591983,
+      "s_link": 0.818996,
+      "s_co": 0.818996,
+      "p_layout": 0.255958,
+      "p_type": 1.0,
+      "figure_index": "14",
+      "layout_index": 14.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_217",
+          "source": "explicit_ref",
+          "matched_ref": "14",
+          "also_local": true,
+          "text_snippet": "故，仅从道路通行能力来讲，此类小区不开放较好。案例三：开放与否影响不显著以小区四为例，小区内部及周边道路如图14所示："
+        },
+        {
+          "block_id": "b_219",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "最终运行结果："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_216",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_217",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "14",
+          "raw_cosine": 0.818996,
+          "distance_weight": 1.0,
+          "s_link": 0.818996,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.70549,
+        "rerank_profile": "legacy"
+      },
+      "pos": 218,
+      "rank": 12
+    },
+    {
+      "image_hash": "fd24acea9365d5dcfbd6c0f96f21b15168902030b635b1bda86bdd46767ec909",
+      "caption": "图9 车辆密度与车辆平均速度关系图",
+      "score": 0.176546,
+      "s_direct": 0.657962,
+      "s_link": 0.514985,
+      "s_co": 0.514985,
+      "p_layout": 0.30103,
+      "p_type": 1.0,
+      "figure_index": "9",
+      "layout_index": 9.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_170",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在输入小区开放前后的相关数据后，我们得到了如下结果："
+        },
+        {
+          "block_id": "b_172",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "首先，从结果的关系图我们可以看出车辆平均速度随着车辆密度的增大现有一个快速的增大，之后减少，并随着车辆密度趋于1时，车辆平均速度趋于0。从实际角度来说，这个关系"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_174",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_172",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.735693,
+          "distance_weight": 0.7,
+          "s_link": 0.514985,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.586473,
+        "rerank_profile": "legacy"
+      },
+      "pos": 171,
+      "rank": 13
+    },
+    {
+      "image_hash": "26591574811c401b75ec9c610a4491f9f059fb496bb230055f8d71b6dae45578",
+      "caption": "图8 小区及周边道路示意图",
+      "score": 0.157679,
+      "s_direct": 0.560743,
+      "s_link": 0.438916,
+      "s_co": 0.438916,
+      "p_layout": 0.315465,
+      "p_type": 1.0,
+      "figure_index": "8",
+      "layout_index": 8.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_168",
+          "source": "explicit_ref",
+          "matched_ref": "8",
+          "also_local": true,
+          "text_snippet": "以如图8的小区为例，分析其车辆通行情况："
+        },
+        {
+          "block_id": "b_170",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "在输入小区开放前后的相关数据后，我们得到了如下结果："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_174",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_170",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.627023,
+          "distance_weight": 0.7,
+          "s_link": 0.438916,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.499829,
+        "rerank_profile": "legacy"
+      },
+      "pos": 169,
+      "rank": 14
+    },
+    {
+      "image_hash": "edbc4e137251d56a3ba171e03cb4a6800627b3cf308f5626eee640519ab8a697",
+      "caption": "图15 左为小区开放前 右为开放后",
+      "score": 0.157074,
+      "s_direct": 0.631823,
+      "s_link": 0.624767,
+      "s_co": 0.624767,
+      "p_layout": 0.25,
+      "p_type": 1.0,
+      "figure_index": "15",
+      "layout_index": 15.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_219",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "最终运行结果："
+        },
+        {
+          "block_id": "b_221",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "从运行结果来看，小区开放前后，道路通行能力相差甚微。而从实际情况出发，首先我们注意到，小区路网结构较好，道路消化能力较强，以道路自身情况，发生车辆堵塞现象的几率"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_216",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_221",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.892525,
+          "distance_weight": 0.7,
+          "s_link": 0.624767,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.628295,
+        "rerank_profile": "legacy"
+      },
+      "pos": 220,
+      "rank": 15
+    },
+    {
+      "image_hash": "5a3d5e16154bd1fb7dfc3a5f0a595b4877df4fa1673a546b2c7d53b5d6e9dd07",
+      "caption": "图10 小区三及周边道路情况",
+      "score": 0.150936,
+      "s_direct": 0.594532,
+      "s_link": 0.449777,
+      "s_co": 0.449777,
+      "p_layout": 0.289065,
+      "p_type": 1.0,
+      "figure_index": "10",
+      "layout_index": 10.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_205",
+          "source": "explicit_ref",
+          "matched_ref": "10",
+          "also_local": true,
+          "text_snippet": "以小区三为例，小区内部及周边道路如图10所示："
+        },
+        {
+          "block_id": "b_207",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "最终运行结果："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_209",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_205",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "10",
+          "raw_cosine": 0.642539,
+          "distance_weight": 0.7,
+          "s_link": 0.449777,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.522154,
+        "rerank_profile": "legacy"
+      },
+      "pos": 206,
+      "rank": 16
+    },
+    {
+      "image_hash": "6bb60d338e4cb2afb069709c4fe80fa77b1158dc898273edf04ac274054b54aa",
+      "caption": "图16 小区开放与否的评判准则",
+      "score": 0.143977,
+      "s_direct": 0.640926,
+      "s_link": 0.536076,
+      "s_co": 0.536076,
+      "p_layout": 0.244651,
+      "p_type": 1.0,
+      "figure_index": "16",
+      "layout_index": 16.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_232",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "若Q为正，且其值较大，则表明小区开放对交通产生的正面影响较大，适合开放；若Q为负，且其值较大，则表明小区开放对交通产生的负面影响较大，不适合开放；其他情况，说明"
+        },
+        {
+          "block_id": "b_234",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.4.2对城市规划部门和交通部门的建议"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_236",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_232",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.765823,
+          "distance_weight": 0.7,
+          "s_link": 0.536076,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.588501,
+        "rerank_profile": "legacy"
+      },
+      "pos": 233,
+      "rank": 17
+    },
+    {
+      "image_hash": "8391cef6c86d97a87c127c64c896c1326caf9c0be5279d4f6667b3cd23992c91",
+      "caption": "图12 小区五及周边道路情况",
+      "score": 0.141664,
+      "s_direct": 0.588712,
+      "s_link": 0.459727,
+      "s_co": 0.459727,
+      "p_layout": 0.270238,
+      "p_type": 1.0,
+      "figure_index": "12",
+      "layout_index": 12.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_212",
+          "source": "explicit_ref",
+          "matched_ref": "12",
+          "also_local": true,
+          "text_snippet": "以小区五为例，小区内部及周边道路如图12所示："
+        },
+        {
+          "block_id": "b_214",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "最终运行结果："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_209",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_212",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "12",
+          "raw_cosine": 0.656754,
+          "distance_weight": 0.7,
+          "s_link": 0.459727,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.52422,
+        "rerank_profile": "legacy"
+      },
+      "pos": 213,
+      "rank": 18
+    },
+    {
+      "image_hash": "7e26413c2a6fe94dbdcf1bfec47b2d17bfd5ea61615d210df55eeda0e4fa78d6",
+      "caption": "路网结构 图左为小区开放前 图右为小区开放后",
+      "score": 0.100549,
+      "s_direct": 0.641129,
+      "s_link": 0.268546,
+      "s_co": 0.268546,
+      "p_layout": 0.221065,
+      "p_type": 1.0,
+      "figure_index": null,
+      "layout_index": 22.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_401",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "9.3.3 不同的小区所对应的代码实现以及结果对比小区一："
+        },
+        {
+          "block_id": "b_403",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "代码："
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_203",
+          "matched_query_idx": 2,
+          "matched_evidence_block": "b_401",
+          "evidence_source": "local_prev",
+          "matched_ref": null,
+          "raw_cosine": 0.671365,
+          "distance_weight": 0.4,
+          "s_link": 0.268546,
+          "rerank_profile": "legacy"
+        },
+        "evidence_count": 2,
+        "effective_alpha": 0.5,
+        "semantic_base": 0.454838,
+        "rerank_profile": "legacy"
+      },
+      "pos": 402,
+      "rank": 19
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 40,
+    "query_block_pair_count": 60,
+    "cf_count": 16,
+    "caption_refs_sample": [
+      "图1",
+      "图3",
+      "图4",
+      "图6",
+      "图6",
+      "图3",
+      "图5",
+      "图6",
+      "图7",
+      "图8"
+    ],
+    "rerank_profile": "legacy"
+  }
+}

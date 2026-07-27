@@ -52,6 +52,15 @@ def image_precision_at_k(ranked_ids: list[str], gold: set[str], k: int = 3) -> f
     return len(set(rec) & gold) / k
 
 
+def image_recall_at_ks(
+    ranked_ids: list[str],
+    gold: set[str],
+    ks: list[int],
+) -> dict[int, float]:
+    """批量计算 IR@K，返回 {k: score}。"""
+    return {k: image_recall_at_k(ranked_ids, gold, k=k) for k in ks}
+
+
 def image_recall_at_k(ranked_ids: list[str], gold: set[str], k: int = 3) -> float:
     """
     Image Recall (IR@K) — MSMO / MMAE 标准图像指标，与 IP 成对使用。

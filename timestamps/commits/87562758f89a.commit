@@ -1,6 +1,0 @@
-repository: https://github.com/gtq23333/multimodal_summary.git
-commit: 87562758f89af93b5b9781f79289bdc6f92f0069
-tree: ce4ffc8912f60765397a52e673ddd840a9089e49
-author: gtq23333 <gtq23333@gmail.com>
-committer_date: 2026-06-24 13:50:44 +0800
-subject: Add Qwen3-VL rerank baseline and Stage-2 case study UI.

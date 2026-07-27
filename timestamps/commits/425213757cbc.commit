@@ -1,6 +1,0 @@
-repository: https://github.com/gtq23333/multimodal_summary.git
-commit: 425213757cbcc59a500f216430b466def1f558e8
-tree: c11f3b521b8aa51d9dc9cdae9df8262f10eaf307
-author: gtq23333 <gtq23333@gmail.com>
-committer_date: 2026-06-24 13:58:56 +0800
-subject: Add OpenTimestamps proofs for all git commits.

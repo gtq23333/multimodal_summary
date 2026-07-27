@@ -1,0 +1,536 @@
+{
+  "paper_id": "2017_G_D035.pdf-dd7e65e6-ee52-4f20-a6d6-e97d20729925",
+  "top3_figures": [
+    {
+      "image_hash": "471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8",
+      "caption": "图1 本文解题过程",
+      "score": 0.500939,
+      "s_direct": 0.477614,
+      "s_link": 0.524264,
+      "s_co": 0.524264,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_9",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "题目还要求巡检人员的工作量尽可能均衡，故可以通过轮岗、轮班方式来解决。解题过程如图1所示。"
+        },
+        {
+          "block_id": "b_11",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 三、符号说明"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_7",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_9",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 0.748948,
+          "distance_weight": 0.7,
+          "s_link": 0.524264
+        },
+        "evidence_count": 2,
+        "matched_caption_blocks": 118,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_232",
+          "b_2",
+          "b_114",
+          "b_19",
+          "b_43"
+        ]
+      },
+      "pos": 10,
+      "rank": 1
+    },
+    {
+      "image_hash": "9adc39d63a42c53f0fc395527c530a3e2c7829c02615bc2033eddb89cb94e317",
+      "caption": "图2 问题1的解题过程",
+      "score": 0.471693,
+      "s_direct": 0.49523,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_20",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "问题1的解题过程如图2所示。"
+        },
+        {
+          "block_id": "b_22",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2模型建立"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_22",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_22",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 2,
+        "matched_caption_blocks": 118,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_232",
+          "b_2",
+          "b_114",
+          "b_19",
+          "b_43"
+        ]
+      },
+      "pos": 21,
+      "rank": 2
+    },
+    {
+      "image_hash": "fad88141738f8bcc6edf31e9571af7f4c5d083d3ed85f6261ff80e0a23c57fdd",
+      "caption": "图4累计时间演示",
+      "score": 0.289292,
+      "s_direct": 0.343429,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_41",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "例如，巡检回路上有3个巡检点，依次为  $u_{1},u_{2},u_{3}$ ，它们对应的巡检耗时分别为3、4、2，走路时间分别为1、2，那么巡检点  $u_"
+        },
+        {
+          "block_id": "b_43",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "于是问题转化为：把时间区间  $[0,g_{n + 1}]$  分为若干段，使得每一段的时间间隔不超过这一段里所有巡检点的最小巡检周期的条件下，至少可分为几段？"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_43",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_43",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 2,
+        "matched_caption_blocks": 118,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_232",
+          "b_2",
+          "b_114",
+          "b_19",
+          "b_43"
+        ]
+      },
+      "pos": 42,
+      "rank": 3
+    }
+  ],
+  "all_scores": [
+    {
+      "image_hash": "471e0fe7e96a6bd0a1f356840b3a7becf8f51f1684a3163909510fddb38d2eb8",
+      "caption": "图1 本文解题过程",
+      "score": 0.500939,
+      "s_direct": 0.477614,
+      "s_link": 0.524264,
+      "s_co": 0.524264,
+      "p_layout": 1.0,
+      "p_type": 1.0,
+      "figure_index": "1",
+      "layout_index": 1.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_9",
+          "source": "explicit_ref",
+          "matched_ref": "1",
+          "also_local": true,
+          "text_snippet": "题目还要求巡检人员的工作量尽可能均衡，故可以通过轮岗、轮班方式来解决。解题过程如图1所示。"
+        },
+        {
+          "block_id": "b_11",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 三、符号说明"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_7",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_9",
+          "evidence_source": "explicit_ref",
+          "matched_ref": "1",
+          "raw_cosine": 0.748948,
+          "distance_weight": 0.7,
+          "s_link": 0.524264
+        },
+        "evidence_count": 2,
+        "matched_caption_blocks": 118,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_232",
+          "b_2",
+          "b_114",
+          "b_19",
+          "b_43"
+        ]
+      },
+      "pos": 10,
+      "rank": 1
+    },
+    {
+      "image_hash": "9adc39d63a42c53f0fc395527c530a3e2c7829c02615bc2033eddb89cb94e317",
+      "caption": "图2 问题1的解题过程",
+      "score": 0.471693,
+      "s_direct": 0.49523,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.63093,
+      "p_type": 1.0,
+      "figure_index": "2",
+      "layout_index": 2.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_20",
+          "source": "explicit_ref",
+          "matched_ref": "2",
+          "also_local": true,
+          "text_snippet": "问题1的解题过程如图2所示。"
+        },
+        {
+          "block_id": "b_22",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.2模型建立"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_22",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_22",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 2,
+        "matched_caption_blocks": 118,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_232",
+          "b_2",
+          "b_114",
+          "b_19",
+          "b_43"
+        ]
+      },
+      "pos": 21,
+      "rank": 2
+    },
+    {
+      "image_hash": "fad88141738f8bcc6edf31e9571af7f4c5d083d3ed85f6261ff80e0a23c57fdd",
+      "caption": "图4累计时间演示",
+      "score": 0.289292,
+      "s_direct": 0.343429,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.430677,
+      "p_type": 1.0,
+      "figure_index": "4",
+      "layout_index": 4.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_41",
+          "source": "explicit_ref",
+          "matched_ref": "4",
+          "also_local": true,
+          "text_snippet": "例如，巡检回路上有3个巡检点，依次为  $u_{1},u_{2},u_{3}$ ，它们对应的巡检耗时分别为3、4、2，走路时间分别为1、2，那么巡检点  $u_"
+        },
+        {
+          "block_id": "b_43",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "于是问题转化为：把时间区间  $[0,g_{n + 1}]$  分为若干段，使得每一段的时间间隔不超过这一段里所有巡检点的最小巡检周期的条件下，至少可分为几段？"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_43",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_43",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 2,
+        "matched_caption_blocks": 118,
+        "query_block_pairs": 60,
+        "top_cq_blocks": [
+          "b_232",
+          "b_2",
+          "b_114",
+          "b_19",
+          "b_43"
+        ]
+      },
+      "pos": 42,
+      "rank": 3
+    },
+    {
+      "image_hash": "4deff488b53af707c3aaeb93cbcbaab814a0214d566321d59f2defec5617bf62",
+      "caption": "图6 最短回路",
+      "score": 0.256631,
+      "s_direct": 0.440907,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.356207,
+      "p_type": 1.0,
+      "figure_index": "6",
+      "layout_index": 6.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_70",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": true,
+          "text_snippet": "将最短回路画图，如图6所示。起点与终点相同，是调度中心（巡检点XJ- 0022）。"
+        },
+        {
+          "block_id": "b_89",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "根据假设（1），每天三班的上班时间为：早班（8:00- 16:00）、中班（16:00- 24:00）、晚班（0:00- 8:00），每天工作8小时。再根据背包"
+        },
+        {
+          "block_id": "b_92",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "注：A1、A2、A3、A4是早班工作人员名称；巡检路线见图6"
+        },
+        {
+          "block_id": "b_95",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "注：B1、B2、B3、B4是中班工作人员名称；巡检路线见图6"
+        },
+        {
+          "block_id": "b_98",
+          "source": "explicit_ref",
+          "matched_ref": "6",
+          "also_local": false,
+          "text_snippet": "注：C1、C2、C3、C4是晚班工作人员名称；巡检路线见图6"
+        },
+        {
+          "block_id": "b_72",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.1.3.2背包模型求解"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_72",
+          "matched_query_idx": 0,
+          "matched_evidence_block": "b_72",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 6
+      },
+      "pos": 71,
+      "rank": 4
+    },
+    {
+      "image_hash": "fa804ec21386978ad171ec54676ebb182b89648a83ecf0272deaa14a61c4f7ba",
+      "caption": "图7 问题2的解题过程",
+      "score": 0.244855,
+      "s_direct": 0.46913,
+      "s_link": 1.0,
+      "s_co": 1.0,
+      "p_layout": 0.333333,
+      "p_type": 1.0,
+      "figure_index": "7",
+      "layout_index": 7.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_116",
+          "source": "explicit_ref",
+          "matched_ref": "7",
+          "also_local": true,
+          "text_snippet": "解题过程如图7所示。"
+        },
+        {
+          "block_id": "b_118",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "# 5.2.2模型建立与求解"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_118",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_118",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 1.0,
+          "distance_weight": 1.0,
+          "s_link": 1.0
+        },
+        "evidence_count": 2
+      },
+      "pos": 117,
+      "rank": 5
+    },
+    {
+      "image_hash": "4b5b0c143927eb4fd2f96fca41597b32d8afb17b04c9090ba4247ab768c8d9df",
+      "caption": "图3 巡检问题的无向赋权图",
+      "score": 0.215736,
+      "s_direct": 0.4502,
+      "s_link": 0.412745,
+      "s_co": 0.412745,
+      "p_layout": 0.5,
+      "p_type": 1.0,
+      "figure_index": "3",
+      "layout_index": 3.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_25",
+          "source": "explicit_ref",
+          "matched_ref": "3",
+          "also_local": true,
+          "text_snippet": "设无向赋权图  $G = (V,E)$ ， $V$  是顶点集，有  $n$  个顶点， $E$  是边集， $w(\\nu_i, \\nu_j)$  表示边  $"
+        },
+        {
+          "block_id": "b_27",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "我们取巡检点  $i$  到巡检点  $j$  的走路时间  $r_{ij}$  作为边  $(\\nu_i, \\nu_j)$  的权  $w_{ij}$ ，即"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_23",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_27",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.589635,
+          "distance_weight": 0.7,
+          "s_link": 0.412745
+        },
+        "evidence_count": 2
+      },
+      "pos": 26,
+      "rank": 6
+    },
+    {
+      "image_hash": "4f8401a644fa243b2e86109327a4fd2af63e8c183add1be0f2ba2b6bc96971f3",
+      "caption": "图5所示（程序和结果见附录1）。图5 起点  $22\\rightarrow$  终点12的最短路径",
+      "score": 0.145938,
+      "s_direct": 0.463163,
+      "s_link": 0.479945,
+      "s_co": 0.479945,
+      "p_layout": 0.386853,
+      "p_type": 0.8,
+      "figure_index": "5",
+      "layout_index": 5.0,
+      "evidence_blocks": [
+        {
+          "block_id": "b_64",
+          "source": "local_prev",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "第1步，把调度中心（XJ- 0022）设定为起点，从巡检点22出发，将终点设定为巡检点12，计算得最短路径为  $22\\rightarrow 23\\righta"
+        },
+        {
+          "block_id": "b_66",
+          "source": "local_next",
+          "matched_ref": null,
+          "also_local": false,
+          "text_snippet": "同理，可以得到  $12\\rightarrow 13$  ，  $13\\rightarrow 17$  ，  $17\\rightarrow 19$  的最短路径"
+        }
+      ],
+      "debug": {
+        "link": {
+          "matched_query_block": "b_62",
+          "matched_query_idx": 1,
+          "matched_evidence_block": "b_66",
+          "evidence_source": "local_next",
+          "matched_ref": null,
+          "raw_cosine": 0.685636,
+          "distance_weight": 0.7,
+          "s_link": 0.479945
+        },
+        "evidence_count": 2
+      },
+      "pos": 65,
+      "rank": 7
+    }
+  ],
+  "recall_debug": {
+    "cq_count": 56,
+    "query_block_pair_count": 60,
+    "cf_count": 118,
+    "caption_refs_sample": [
+      "图1",
+      "图2",
+      "图3",
+      "图4",
+      "图1",
+      "图1",
+      "图6",
+      "图2",
+      "图2",
+      "图3"
+    ]
+  }
+}

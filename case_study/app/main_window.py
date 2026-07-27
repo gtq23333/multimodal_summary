@@ -38,6 +38,7 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("Stage-2 Case Study")
         self.resize(1400, 900)
+        self.setMinimumSize(1024, 640)
 
         central = QWidget()
         self.setCentralWidget(central)
@@ -130,10 +131,12 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "数据缺失", str(exc))
             return
 
+        saved_size = self.size()
         self.current_bundle = bundle
         self.gt_panel.set_sequence(bundle.get("multimodal_sequence", []))
         self.method_panel.set_bundle_methods(bundle.get("methods", {}), self.current_k)
         self._update_metrics()
+        self.resize(saved_size)
 
     def _update_metrics(self) -> None:
         if not self.current_bundle:

@@ -65,7 +65,7 @@ def main() -> None:
 def _problem_key(paper_id: str) -> str:
     import re
 
-    m = re.match(r"(\d{4})_G_([A-D])", paper_id)
+    m = re.match(r"(\d{4})_G_([A-E])", paper_id)
     if not m:
         raise ValueError(paper_id)
     return f"{m.group(1)}_{m.group(2)}"

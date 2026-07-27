@@ -1,0 +1,5 @@
+input_dir: "C:/Users/32780/Desktop/数模论文信息/minerU提取文件语料库/其它比赛"
+output_dir: "../usable_data/cleaned_other_paper_mds"
+profile: other_competition
+separator: "##############"
+reports_dir: "./reports"
