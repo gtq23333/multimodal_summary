@@ -10,3 +10,9 @@ __pycache__/
 # 环境变量密钥
 .env
 .env.*
+
+# 不应上传的产出
+outputs_copy/
+scripts/
+.cursor/
+*.docx
